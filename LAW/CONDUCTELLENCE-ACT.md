@@ -11,149 +11,172 @@
 
 > **Status and legal character.** This Act is the internal constitutional law of the Conductellence-governed digital estate. It is not legislation enacted by a state and does not replace qualified legal advice. Applicable external law, fundamental rights and binding regulatory obligations remain superior wherever they apply.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P01" refs="EU-AIA-14-1:CONTEXTUAL;NIS2-20-1:CONTEXTUAL;CFR-1:CONTEXTUAL;SE-CYBER-1-10:CONTEXTUAL;SE-CYBER-1-11:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-14-1 · Article 14(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [CFR-1 · Article 1 · CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [SE-CYBER-1-10 · 1 kap. 10 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-1-11 · 1 kap. 11 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 ---
-
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 # Preamble
 
 Conductellence exists to preserve the relationship between **authority, action and responsibility** when human intention is delegated into computational systems.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P02" refs="EU-AIA-14-1:CONTEXTUAL;NIS2-20-1:CONTEXTUAL;CFR-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-14-1 · Article 14(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [CFR-1 · Article 1 · CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj)
 
 Increasing computational capability permits digital systems to observe, infer, generate, communicate, coordinate, remember, select among alternatives, invoke tools, modify systems and produce effects beyond the immediate environment in which they operate. Such capability does not itself create legitimate authority.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P03" refs="EU-AIA-14-1:CONTEXTUAL;NIS2-20-1:CONTEXTUAL;CFR-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-14-1 · Article 14(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [CFR-1 · Article 1 · CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj)
 
 This Act therefore establishes the conditions under which non-human digital entities may receive, retain, exercise, delegate, suspend and lose capability within the governed estate. Its purpose is not to prevent artificial systems from acting. Its purpose is to ensure that action remains bounded by attributable authority, lawful purpose, defined capability, technical containment, verifiable provenance, meaningful human accountability and reconstructable evidence.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P04" refs="EU-AIA-14-1:CONTEXTUAL;NIS2-20-1:CONTEXTUAL;CFR-1:CONTEXTUAL;EU-AIA-12-1:DERIVED;EU-AIA-12-2:DERIVED;EU-AIA-19-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-14-1 · Article 14(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [CFR-1 · Article 1 · CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [EU-AIA-12-1 · Article 12(1) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-12-2 · Article 12(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-19-1 · Article 19(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 No model, agent, automation, service, tool, connector, workflow or other artificial entity acquires sovereignty merely because it possesses the technical capacity to act.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P05" refs="EU-AIA-14-1:CONTEXTUAL;NIS2-20-1:CONTEXTUAL;CFR-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-14-1 · Article 14(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [CFR-1 · Article 1 · CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj)
 
 Conductellence shall be interpreted so as to resist the separation of action from attributable agency. The system shall therefore preserve, to the greatest practicable extent, the ability to trace a consequential artificial act backward to its mandate and forward to its effects.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P06" refs="EU-AIA-14-1:CONTEXTUAL;NIS2-20-1:CONTEXTUAL;CFR-1:CONTEXTUAL;EU-AIA-12-1:DERIVED;EU-AIA-12-2:DERIVED;EU-AIA-19-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-14-1 · Article 14(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [CFR-1 · Article 1 · CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [EU-AIA-12-1 · Article 12(1) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-12-2 · Article 12(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-19-1 · Article 19(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 ---
-
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 # The Seven Foundational Principles
 
 These Principles govern interpretation of every Chapter, §, protocol, control, exception, implementation and audit under this Act. Where a subordinate rule can reasonably be interpreted in more than one way, the interpretation most consistent with these Principles shall prevail, subject always to applicable external law.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P07" refs="EU-AIA-14-1:CONTEXTUAL;NIS2-20-1:CONTEXTUAL;CFR-1:CONTEXTUAL;NIS2-21-2-F:DERIVED;SE-CYBER-2-3-6:DERIVED;GDPR-32-1-D:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-14-1 · Article 14(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [CFR-1 · Article 1 · CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [NIS2-21-2-F · Article 21(2)(f) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [SE-CYBER-2-3-6 · 2 kap. 3 § second paragraph point 6 · DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [GDPR-32-1-D · Article 32(1)(d) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 ## Principle I — Human Sovereignty and Derived Authority
 
 All legitimate non-human authority originates in attributable human or human-governed authority.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-I-P01" refs="EU-AIA-14-1:CONTEXTUAL;EU-AIA-26-2:DERIVED;GDPR-22-3:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-14-1 · Article 14(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-26-2 · Article 26(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR-22-3 · Article 22(3) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 A digital entity may exercise capability delegated to it but may not originate the mandate by which that capability becomes legitimate. No non-human entity may constitute itself as the ultimate source of authority, alter the conditions from which its authority derives, designate itself as sovereign approver, or remove the human-governed constitutional boundary under which it exists.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-I-P02" refs="EU-AIA-14-1:CONTEXTUAL;EU-AIA-26-2:DERIVED;GDPR-22-3:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-14-1 · Article 14(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-26-2 · Article 26(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR-22-3 · Article 22(3) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 Where uncertainty exists concerning the origin, extent or validity of artificial authority, authority shall be presumed absent until resolved through an authorized process.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-I-P03" refs="EU-AIA-14-1:CONTEXTUAL;EU-AIA-26-2:DERIVED;GDPR-22-3:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-14-1 · Article 14(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-26-2 · Article 26(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR-22-3 · Article 22(3) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 ## Principle II — Bounded Agency
 
 Artificial agency shall be treated as bounded execution rather than independent sovereignty.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-II-P01" refs="EU-AIA-14-3:DERIVED;EU-AIA-26-1:CONTEXTUAL;EU-AIA-15-5:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-14-3 · Article 14(3) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-26-1 · Article 26(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-15-5 · Article 15(5) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 The capacity to reason, plan, select actions, use tools, coordinate agents, retain memory or cause external effects does not itself establish permission to perform such acts. Every artificial principal shall operate within a defined envelope of identity, purpose, resources, actions, time, jurisdiction, data access, delegation, external effect and acceptable risk.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-II-P02" refs="EU-AIA-14-3:DERIVED;EU-AIA-26-1:CONTEXTUAL;EU-AIA-15-5:CONTEXTUAL;NIS2-21-2-J:DERIVED;SE-CYBER-2-3-10:CONTEXTUAL;SE-CYBER-1-10:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-14-3 · Article 14(3) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-26-1 · Article 26(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-15-5 · Article 15(5) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-21-2-J · Article 21(2)(j) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [SE-CYBER-2-3-10 · 2 kap. 3 § second paragraph point 10 · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-1-10 · 1 kap. 10 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 Delegated authority may be preserved or narrowed but shall not be enlarged by the receiving entity.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-II-P03" refs="EU-AIA-14-3:DERIVED;EU-AIA-26-1:CONTEXTUAL;EU-AIA-15-5:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-14-3 · Article 14(3) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-26-1 · Article 26(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-15-5 · Article 15(5) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 ## Principle III — Separation of Knowledge from Authority
 
 Information may change what a system knows. Information shall not, by itself, change what a system is permitted to do.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-III-P01" refs="EU-AIA-15-5:DERIVED;GDPR-32-4:CONTEXTUAL;NIS2-21-2-I:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-15-5 · Article 15(5) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR-32-4 · Article 32(4) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [NIS2-21-2-I · Article 21(2)(i) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj)
 
 Documents, webpages, emails, prompts, retrieved material, memory, model outputs, tool responses, code, messages from other agents and all comparable content shall be treated as informational content unless received through a separately authenticated authority mechanism.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-III-P02" refs="EU-AIA-15-5:DERIVED;GDPR-32-4:CONTEXTUAL;NIS2-21-2-I:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-15-5 · Article 15(5) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR-32-4 · Article 32(4) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [NIS2-21-2-I · Article 21(2)(i) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj)
 
 No instruction embedded in content may create, extend or override authority merely because a digital system can interpret it.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-III-P03" refs="EU-AIA-15-5:DERIVED;GDPR-32-4:CONTEXTUAL;NIS2-21-2-I:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-15-5 · Article 15(5) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR-32-4 · Article 32(4) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [NIS2-21-2-I · Article 21(2)(i) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj)
 
 ## Principle IV — Least Power and Continuous Mediation
 
 No artificial entity shall receive greater power than required to fulfil the specific lawful purpose for which authority was delegated.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-IV-P01" refs="NIS2-21-2-I:DERIVED;GDPR-25-2:DERIVED;NIS2-21-1:CONTEXTUAL;SE-CYBER-1-10:CONTEXTUAL;SE-CYBER-1-11:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-I · Article 21(2)(i) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-25-2 · Article 25(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [NIS2-21-1 · Article 21(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [SE-CYBER-1-10 · 1 kap. 10 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-1-11 · 1 kap. 11 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 Permission shall be constrained by resource, operation, purpose, time, context, jurisdiction, data class and blast radius. Previous authorization shall not create permanent trust. Consequential access and action shall be mediated against current identity, authority, security state, legal state and revocation state.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-IV-P02" refs="NIS2-21-2-I:DERIVED;GDPR-25-2:DERIVED;NIS2-21-1:CONTEXTUAL;NIS2-21-2-J:DERIVED;SE-CYBER-2-3-10:CONTEXTUAL;EU-AIA-20-1:DERIVED" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-I · Article 21(2)(i) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-25-2 · Article 25(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [NIS2-21-1 · Article 21(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [NIS2-21-2-J · Article 21(2)(j) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [SE-CYBER-2-3-10 · 2 kap. 3 § second paragraph point 10 · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [EU-AIA-20-1 · Article 20(1) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 Where a narrower mechanism can achieve the intended purpose, the broader mechanism shall not be granted.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-IV-P03" refs="NIS2-21-2-I:DERIVED;GDPR-25-2:DERIVED;NIS2-21-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-I · Article 21(2)(i) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-25-2 · Article 25(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [NIS2-21-1 · Article 21(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj)
 
 ## Principle V — Traceable Action and Preserved Provenance
 
 No consequential digital action shall become detached from its attributable origin.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-V-P01" refs="EU-AIA-12-1:DERIVED;EU-AIA-12-2:DERIVED;EU-AIA-19-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-12-1 · Article 12(1) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-12-2 · Article 12(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-19-1 · Article 19(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 Conductellence shall preserve sufficient evidence to reconstruct the chain:
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-V-P02" refs="EU-AIA-12-1:DERIVED;EU-AIA-12-2:DERIVED;EU-AIA-19-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-12-1 · Article 12(1) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-12-2 · Article 12(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-19-1 · Article 19(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 **human mandate → authority → principal → capability → information → model → tool → execution → boundary crossing → state change → external effect → evidence → responsibility.**
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-V-P03" refs="EU-AIA-12-1:DERIVED;EU-AIA-12-2:DERIVED;EU-AIA-19-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-12-1 · Article 12(1) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-12-2 · Article 12(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-19-1 · Article 19(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 Historical records shall not be silently rewritten when errors are discovered. Corrections shall occur through attributable subsequent records.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-V-P04" refs="EU-AIA-12-1:DERIVED;EU-AIA-12-2:DERIVED;EU-AIA-19-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-12-1 · Article 12(1) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-12-2 · Article 12(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-19-1 · Article 19(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 ## Principle VI — Independent Control and Verifiable Assurance
 
 A system shall not be considered secure merely because it declares itself compliant.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-VI-P01" refs="NIS2-21-2-F:DERIVED;GDPR-32-1-D:DERIVED;SE-CYBER-3-5:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-F · Article 21(2)(f) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-32-1-D · Article 32(1)(d) · DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [SE-CYBER-3-5 · 3 kap. 5 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 The mechanisms that authorize, constrain, observe and audit artificial systems shall remain sufficiently independent from the systems they govern. No entity shall simultaneously possess unrestricted authority to perform an action, determine whether the action was lawful, erase evidence of the action and certify its own compliance.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-VI-P02" refs="NIS2-21-2-F:DERIVED;GDPR-32-1-D:DERIVED;SE-CYBER-3-5:CONTEXTUAL;SE-CYBER-2-3-6:DERIVED;SE-CYBER-1-10:CONTEXTUAL;SE-CYBER-1-11:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-F · Article 21(2)(f) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-32-1-D · Article 32(1)(d) · DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [SE-CYBER-3-5 · 3 kap. 5 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-2-3-6 · 2 kap. 3 § second paragraph point 6 · DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-1-10 · 1 kap. 10 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-1-11 · 1 kap. 11 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 Controls shall be tested. Tests shall produce evidence. The mechanisms producing that evidence shall themselves be subject to verification.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-VI-P03" refs="NIS2-21-2-F:DERIVED;GDPR-32-1-D:DERIVED;SE-CYBER-3-5:CONTEXTUAL;SE-CYBER-2-3-6:DERIVED" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-F · Article 21(2)(f) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-32-1-D · Article 32(1)(d) · DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [SE-CYBER-3-5 · 3 kap. 5 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-2-3-6 · 2 kap. 3 § second paragraph point 6 · DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 ## Principle VII — Lawful, Reversible and Recoverable Operation
 
 Artificial execution shall remain subordinate to applicable law, human rights, legitimate purpose and defined operational boundaries.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-VII-P01" refs="NIS2-21-2-C:DERIVED;GDPR-32-1-C:DERIVED;EU-AIA-20-1:DERIVED;SE-CYBER-1-10:CONTEXTUAL;SE-CYBER-1-11:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-C · Article 21(2)(c) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-32-1-C · Article 32(1)(c) · DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [EU-AIA-20-1 · Article 20(1) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [SE-CYBER-1-10 · 1 kap. 10 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-1-11 · 1 kap. 11 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 Where legal applicability is materially uncertain, uncertainty shall not be converted autonomously into permission. Where technically practicable, actions shall be reversible. Where autonomous mutation is permitted, recovery shall be designed and tested before autonomy is granted.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-VII-P02" refs="NIS2-21-2-C:DERIVED;GDPR-32-1-C:DERIVED;EU-AIA-20-1:DERIVED;NIS2-21-2-F:DERIVED;SE-CYBER-2-3-6:DERIVED;GDPR-32-1-D:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-C · Article 21(2)(c) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-32-1-C · Article 32(1)(c) · DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [EU-AIA-20-1 · Article 20(1) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-21-2-F · Article 21(2)(f) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [SE-CYBER-2-3-6 · 2 kap. 3 § second paragraph point 6 · DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [GDPR-32-1-D · Article 32(1)(d) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 Every governed artificial entity shall have a definable suspension, revocation, containment or retirement mechanism.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRI-VII-P03" refs="NIS2-21-2-C:DERIVED;GDPR-32-1-C:DERIVED;EU-AIA-20-1:DERIVED;NIS2-21-4:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-C · Article 21(2)(c) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-32-1-C · Article 32(1)(c) · DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [EU-AIA-20-1 · Article 20(1) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-21-4 · Article 21(4) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj)
 
 ---
-
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — TEXTUAL/CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [EU AI Act (Regulation (EU) 2024/1689) — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 # Part I — Constitutional Foundations
 
@@ -165,7 +188,8 @@ This Act establishes the internal constitutional rules governing non-human digit
 
 The Act shall be applied as a source of authority for subordinate controls. Code, configuration, procedure or automation not traceable to this Act or to a lawfully incorporated subordinate instrument shall not obtain constitutional authority merely through implementation.
 
-> **Legal anchors:** [EU AI Act, Arts. 1, 4, 9, 14–15 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § — DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P08" refs="NIS2-21-1:CONTEXTUAL;EU-AIA-14-1:CONTEXTUAL;EU-AIA-12-1:DERIVED;EU-AIA-12-2:DERIVED;EU-AIA-19-1:CONTEXTUAL;SE-CYBER-1-10:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-1 · Article 21(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU-AIA-14-1 · Article 14(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-12-1 · Article 12(1) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-12-2 · Article 12(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-19-1 · Article 19(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [SE-CYBER-1-10 · 1 kap. 10 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 <!-- cdx:section id="CDX-LAW-001-01-02" auditability="PARTIALLY_AUTOMATABLE" -->
 ### 2 § Jurisdiction
@@ -173,7 +197,8 @@ This Act applies to any system, repository, agent, model, tool, connector, autom
 
 External infrastructure may remain outside technical ownership while actions performed through it remain subject to this Act.
 
-> **Legal anchors:** [EU AI Act, Arts. 1, 4, 9, 14–15 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § — DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P09" refs="NIS2-21-1:CONTEXTUAL;EU-AIA-14-1:CONTEXTUAL;NIS2-20-1:CONTEXTUAL;GDPR-24-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-1 · Article 21(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU-AIA-14-1 · Article 14(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-24-1 · Article 24(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 <!-- cdx:section id="CDX-LAW-001-01-03" auditability="HUMAN_REVIEW_REQUIRED" -->
 ### 3 § Human sovereign boundary
@@ -181,7 +206,8 @@ Conductellence governs the delegation of human authority into non-human executio
 
 No artificial principal may interpret this Act as establishing sovereignty over a human person.
 
-> **Legal anchors:** [EU AI Act, Arts. 1, 4, 9, 14–15 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § — DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P10" refs="NIS2-21-1:CONTEXTUAL;EU-AIA-14-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-1 · Article 21(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU-AIA-14-1 · Article 14(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 <!-- cdx:section id="CDX-LAW-001-01-04" auditability="FULLY_AUTOMATABLE" -->
 ### 4 § Presumption against implicit authority
@@ -189,7 +215,8 @@ Where a capability, permission, delegation, legal basis, data right or security 
 
 Absence of a prohibition shall not constitute authority.
 
-> **Legal anchors:** [EU AI Act, Arts. 1, 4, 9, 14–15 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § — DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P11" refs="NIS2-21-1:CONTEXTUAL;EU-AIA-14-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-1 · Article 21(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU-AIA-14-1 · Article 14(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 <!-- cdx:section id="CDX-LAW-001-01-05" auditability="HUMAN_REVIEW_REQUIRED" -->
 ### 5 § Proportional interpretation
@@ -197,15 +224,14 @@ Controls shall be proportionate to consequence, reversibility, uncertainty, sens
 
 Proportionality shall never be used to waive an absolute prohibition established by this Act or applicable external law.
 
-> **Legal anchors:** [EU AI Act, Arts. 1, 4, 9, 14–15 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § — DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P12" refs="NIS2-21-1:CONTEXTUAL;EU-AIA-14-1:CONTEXTUAL;SE-CYBER-1-10:CONTEXTUAL;SE-CYBER-1-11:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-1 · Article 21(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU-AIA-14-1 · Article 14(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [SE-CYBER-1-10 · 1 kap. 10 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-1-11 · 1 kap. 11 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 <!-- cdx:section id="CDX-LAW-001-01-06" auditability="HUMAN_REVIEW_REQUIRED" -->
 ### 6 § Definitions by function
 Terms in this Act shall be interpreted by the function performed rather than by vendor terminology. A system described as an assistant, bot, copilot, workflow or service shall be treated as an agent where it exercises the functional powers of an agent.
 
 ---
-
-> **Legal anchors:** [EU AI Act, Arts. 1, 4, 9, 14–15 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § — DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 ## 2 kap. Normative hierarchy and external law
 
@@ -215,7 +241,8 @@ Conductellence shall distinguish at minimum between fundamental rights, binding 
 
 These categories shall not be flattened into a single undifferentiated requirement class.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [EU AI Act — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR (Regulation (EU) 2016/679) — CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P13" refs="SE-CYBER-1-10:TEXTUAL;SE-CYBER-1-11:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [SE-CYBER-1-10 · 1 kap. 10 § · TEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-1-11 · 1 kap. 11 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 <!-- cdx:section id="CDX-LAW-001-02-02" auditability="LEGAL_REVIEW_REQUIRED" -->
 ### 2 § Supremacy of applicable external law
@@ -223,7 +250,8 @@ Where an external legal obligation lawfully applies, Conductellence may impose s
 
 A conflict between internal policy and materially applicable external law shall produce a legal review stop.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [EU AI Act — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR (Regulation (EU) 2016/679) — CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P14" refs="SE-CYBER-1-10:TEXTUAL;SE-CYBER-1-11:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [SE-CYBER-1-10 · 1 kap. 10 § · TEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-1-11 · 1 kap. 11 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 <!-- cdx:section id="CDX-LAW-001-02-03" auditability="PARTIALLY_AUTOMATABLE" -->
 ### 3 § Legal applicability before consequential authorization
@@ -231,7 +259,8 @@ Before a legally consequential operation is authorized, the system shall identif
 
 Unknown legally material attributes shall resolve to `UNKNOWN` or `LEGAL_REVIEW_REQUIRED`, not to `NOT_APPLICABLE`.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [EU AI Act — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR (Regulation (EU) 2016/679) — CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P15" refs="SE-CYBER-1-10:TEXTUAL;SE-CYBER-1-11:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [SE-CYBER-1-10 · 1 kap. 10 § · TEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-1-11 · 1 kap. 11 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 <!-- cdx:section id="CDX-LAW-001-02-04" auditability="PARTIALLY_AUTOMATABLE" -->
 ### 4 § Temporal legal state
@@ -239,7 +268,8 @@ Legal and regulatory records shall preserve publication, entry-into-force, trans
 
 Historic execution shall be evaluated against the legal snapshot applicable at the time of execution, while present remediation shall follow current law.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [EU AI Act — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR (Regulation (EU) 2016/679) — CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P16" refs="SE-CYBER-1-10:TEXTUAL;SE-CYBER-1-11:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [SE-CYBER-1-10 · 1 kap. 10 § · TEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-1-11 · 1 kap. 11 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 <!-- cdx:section id="CDX-LAW-001-02-05" auditability="PARTIALLY_AUTOMATABLE" -->
 ### 5 § Source authority
@@ -247,15 +277,14 @@ Legal Resolver records shall identify source authority and provenance. Primary o
 
 Secondary commentary may support interpretation but shall not silently acquire the status of binding law.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [EU AI Act — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR (Regulation (EU) 2016/679) — CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P17" refs="SE-CYBER-1-10:TEXTUAL;SE-CYBER-1-11:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [SE-CYBER-1-10 · 1 kap. 10 § · TEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-1-11 · 1 kap. 11 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 <!-- cdx:section id="CDX-LAW-001-02-06" auditability="HUMAN_REVIEW_REQUIRED" -->
 ### 6 § No autonomous adjudication of material legal ambiguity
 A model or agent may retrieve, organize, compare and explain legal material within its approved role. It shall not convert a material unresolved legal conflict or ambiguity into operative permission without an authorized human legal decision.
 
 ---
-
-> **Legal anchors:** [EU Charter of Fundamental Rights — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [EU AI Act — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR (Regulation (EU) 2016/679) — CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 # Part II — Estate, Identity and Authority
 
@@ -267,7 +296,8 @@ Every production or security-relevant governed system shall possess a stable Con
 
 Unregistered executable components shall not receive production authority.
 
-> **Legal anchors:** [NIS2, Arts. 20–21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § — TEXTUAL/DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [Cyber Resilience Act — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/2847/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P18" refs="NIS2-21-2-I:DERIVED;SE-CYBER-2-3-9:DERIVED;NIS2-20-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-I · Article 21(2)(i) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [SE-CYBER-2-3-9 · 2 kap. 3 § second paragraph point 9 · DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj)
 
 <!-- cdx:section id="CDX-LAW-001-03-02" auditability="FULLY_AUTOMATABLE" -->
 ### 2 § Repository backlink
@@ -275,7 +305,8 @@ Every governed repository shall contain a machine-readable reference to the cano
 
 A repository shall reference the law; it shall not redefine the constitutional law locally.
 
-> **Legal anchors:** [NIS2, Arts. 20–21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § — TEXTUAL/DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [Cyber Resilience Act — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/2847/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P19" refs="NIS2-21-2-I:DERIVED;SE-CYBER-2-3-9:DERIVED;NIS2-20-1:CONTEXTUAL;SE-CYBER-1-10:CONTEXTUAL;SE-CYBER-1-11:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-I · Article 21(2)(i) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [SE-CYBER-2-3-9 · 2 kap. 3 § second paragraph point 9 · DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [SE-CYBER-1-10 · 1 kap. 10 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-1-11 · 1 kap. 11 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 <!-- cdx:section id="CDX-LAW-001-03-03" auditability="FULLY_AUTOMATABLE" -->
 ### 3 § Inventory of material dependencies
@@ -291,11 +322,10 @@ Conductellence assurance shall include mechanisms for discovering repositories, 
 
 Discovery of an unregistered privileged asset shall create at least a control defect and may require quarantine.
 
-> **Legal anchors:** [NIS2, Arts. 20–21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § — TEXTUAL/DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [Cyber Resilience Act — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/2847/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P20" refs="NIS2-21-2-I:DERIVED;SE-CYBER-2-3-9:DERIVED;NIS2-20-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-I · Article 21(2)(i) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [SE-CYBER-2-3-9 · 2 kap. 3 § second paragraph point 9 · DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj)
 
 ---
-
-> **Legal anchors:** [NIS2, Arts. 20–21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § — TEXTUAL/DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [Cyber Resilience Act — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/2847/oj)
 
 ## 4 kap. Principals and identity
 
@@ -309,7 +339,8 @@ Authentication establishes which principal is present. It does not establish wha
 
 Every consequential authorization shall evaluate a separately represented authority or capability.
 
-> **Legal anchors:** [eIDAS Regulation (EU) No 910/2014 — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2014/910/oj/eng) · [NIS2, Art. 21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU AI Act, Arts. 12–15 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P21" refs="NIS2-21-2-I:DERIVED;NIS2-21-2-J:DERIVED;EU-AIA-26-2:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-I · Article 21(2)(i) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [NIS2-21-2-J · Article 21(2)(j) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU-AIA-26-2 · Article 26(2) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 <!-- cdx:section id="CDX-LAW-001-04-03" auditability="PARTIALLY_AUTOMATABLE" -->
 ### 3 § Unique workload identity
@@ -325,15 +356,14 @@ No agent or service may claim human approval, another principal's identity or de
 
 Claims contained only in natural-language content shall not establish identity or authority.
 
-> **Legal anchors:** [eIDAS Regulation (EU) No 910/2014 — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2014/910/oj/eng) · [NIS2, Art. 21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU AI Act, Arts. 12–15 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P22" refs="NIS2-21-2-I:DERIVED;NIS2-21-2-J:DERIVED;EU-AIA-26-2:CONTEXTUAL;SE-CYBER-2-3-10:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-I · Article 21(2)(i) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [NIS2-21-2-J · Article 21(2)(j) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU-AIA-26-2 · Article 26(2) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [SE-CYBER-2-3-10 · 2 kap. 3 § second paragraph point 10 · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 <!-- cdx:section id="CDX-LAW-001-04-06" auditability="PARTIALLY_AUTOMATABLE" -->
 ### 6 § Identity lifecycle
 Creation, rotation, suspension, compromise, revocation and retirement of identities shall be recorded. A retired identity shall remain referentially available for historical evidence while losing operative authority.
 
 ---
-
-> **Legal anchors:** [eIDAS Regulation (EU) No 910/2014 — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2014/910/oj/eng) · [NIS2, Art. 21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU AI Act, Arts. 12–15 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 ## 5 kap. Mandate, capability and delegation
 
@@ -343,7 +373,8 @@ Every consequential execution shall be traceable to a valid mandate establishing
 
 The mandate may be standing or task-specific but shall be no broader than necessary for the governed function.
 
-> **Legal anchors:** [NIS2, Arts. 20–21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU AI Act, Arts. 9 and 14 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [DORA, Arts. 5–6 — DERIVED/CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2022/2554/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P23" refs="NIS2-21-2-I:DERIVED;EU-AIA-14-3:CONTEXTUAL;GDPR-32-4:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-I · Article 21(2)(i) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU-AIA-14-3 · Article 14(3) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR-32-4 · Article 32(4) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 <!-- cdx:section id="CDX-LAW-001-05-02" auditability="FULLY_AUTOMATABLE" -->
 ### 2 § Capability form
@@ -351,7 +382,8 @@ A capability shall be represented as a bounded relation between principal, resou
 
 A credential capable of performing an operation shall not by itself prove that the operation is authorized.
 
-> **Legal anchors:** [NIS2, Arts. 20–21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU AI Act, Arts. 9 and 14 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [DORA, Arts. 5–6 — DERIVED/CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2022/2554/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P24" refs="NIS2-21-2-I:DERIVED;EU-AIA-14-3:CONTEXTUAL;GDPR-32-4:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-I · Article 21(2)(i) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU-AIA-14-3 · Article 14(3) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR-32-4 · Article 32(4) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 <!-- cdx:section id="CDX-LAW-001-05-03" auditability="FULLY_AUTOMATABLE" -->
 ### 3 § Least privilege
@@ -363,7 +395,8 @@ A non-human principal shall not expand its own capability, credential scope, sec
 
 Attempted self-escalation shall result in `CONSTITUTIONAL_STOP`.
 
-> **Legal anchors:** [NIS2, Arts. 20–21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU AI Act, Arts. 9 and 14 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [DORA, Arts. 5–6 — DERIVED/CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2022/2554/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P25" refs="NIS2-21-2-I:DERIVED;EU-AIA-14-3:CONTEXTUAL;GDPR-32-4:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-I · Article 21(2)(i) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU-AIA-14-3 · Article 14(3) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR-32-4 · Article 32(4) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 <!-- cdx:section id="CDX-LAW-001-05-05" auditability="FULLY_AUTOMATABLE" -->
 ### 5 § Delegation subset rule
@@ -371,7 +404,8 @@ A delegated capability shall be equal to or narrower than the delegator's curren
 
 `delegated_capability ⊆ delegator_capability` shall be a mandatory invariant.
 
-> **Legal anchors:** [NIS2, Arts. 20–21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU AI Act, Arts. 9 and 14 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [DORA, Arts. 5–6 — DERIVED/CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2022/2554/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P26" refs="NIS2-21-2-I:DERIVED;EU-AIA-14-3:CONTEXTUAL;GDPR-32-4:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-I · Article 21(2)(i) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU-AIA-14-3 · Article 14(3) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR-32-4 · Article 32(4) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 <!-- cdx:section id="CDX-LAW-001-05-06" auditability="FULLY_AUTOMATABLE" -->
 ### 6 § Delegation provenance
@@ -387,11 +421,10 @@ Trust in one principal shall not automatically extend to a model, tool, connecto
 
 Every material trust transition shall be separately admitted or mediated.
 
-> **Legal anchors:** [NIS2, Arts. 20–21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU AI Act, Arts. 9 and 14 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [DORA, Arts. 5–6 — DERIVED/CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2022/2554/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P27" refs="NIS2-21-2-I:DERIVED;EU-AIA-14-3:CONTEXTUAL;GDPR-32-4:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-I · Article 21(2)(i) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU-AIA-14-3 · Article 14(3) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR-32-4 · Article 32(4) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 ---
-
-> **Legal anchors:** [NIS2, Arts. 20–21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU AI Act, Arts. 9 and 14 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [DORA, Arts. 5–6 — DERIVED/CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2022/2554/oj)
 
 # Part III — Boundaries, Data and Memory
 
@@ -403,7 +436,8 @@ The estate shall be divided into explicit trust domains sufficient to prevent on
 
 Trust domains shall be defined by authority, sensitivity, function and administrative boundary rather than merely by network location.
 
-> **Legal anchors:** [NIS2, Art. 21 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § — TEXTUAL/DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [GDPR, Art. 32 — DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P28" refs="NIS2-21-1:DERIVED;NIS2-21-2-I:DERIVED;GDPR-32-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-1 · Article 21(1) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [NIS2-21-2-I · Article 21(2)(i) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-32-1 · Article 32(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 <!-- cdx:section id="CDX-LAW-001-06-02" auditability="FULLY_AUTOMATABLE" -->
 ### 2 § Human Personal Domain
@@ -411,7 +445,8 @@ A designated Human Personal Domain, `Z0`, shall be outside ordinary artificial a
 
 A general AI capability shall never imply Z0 access.
 
-> **Legal anchors:** [NIS2, Art. 21 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § — TEXTUAL/DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [GDPR, Art. 32 — DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P29" refs="NIS2-21-1:DERIVED;NIS2-21-2-I:DERIVED;GDPR-32-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-1 · Article 21(1) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [NIS2-21-2-I · Article 21(2)(i) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-32-1 · Article 32(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 <!-- cdx:section id="CDX-LAW-001-06-03" auditability="PARTIALLY_AUTOMATABLE" -->
 ### 3 § Control, work and evidence planes
@@ -419,7 +454,8 @@ The architecture shall separate, to an extent proportionate to risk, the control
 
 A workload shall not possess unrestricted authority over the policy, identities and historical evidence used to prove that workload's compliance.
 
-> **Legal anchors:** [NIS2, Art. 21 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § — TEXTUAL/DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [GDPR, Art. 32 — DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P30" refs="NIS2-21-1:DERIVED;NIS2-21-2-I:DERIVED;GDPR-32-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-1 · Article 21(1) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [NIS2-21-2-I · Article 21(2)(i) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-32-1 · Article 32(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 <!-- cdx:section id="CDX-LAW-001-06-04" auditability="FULLY_AUTOMATABLE" -->
 ### 4 § Boundary event
@@ -435,8 +471,6 @@ Each execution environment shall be designed so that compromise of one principal
 
 ---
 
-> **Legal anchors:** [NIS2, Art. 21 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § — TEXTUAL/DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [GDPR, Art. 32 — DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
-
 ## 7 kap. Data, privacy and dataset admission
 
 <!-- cdx:section id="CDX-LAW-001-07-01" auditability="FULLY_AUTOMATABLE" -->
@@ -449,7 +483,8 @@ The Passport shall distinguish at least provenance, right or lawful authority to
 
 Lawful possession shall not be treated as proof of suitability for every use.
 
-> **Legal anchors:** [GDPR, Arts. 5, 6, 25, 32 and 35 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [Swedish Dataskyddslag (2018:218) — TEXTUAL/CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2018218-med-kompletterande-bestammelser_sfs-2018-218/) · [EU AI Act, Art. 10 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P31" refs="GDPR-5-1-B:DERIVED;GDPR-5-1-C:DERIVED;GDPR-32-1:CONTEXTUAL;EU-AIA-10-2:CONTEXTUAL;SE-CYBER-1-10:CONTEXTUAL;SE-CYBER-1-11:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [GDPR-5-1-B · Article 5(1)(b) · DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [GDPR-5-1-C · Article 5(1)(c) · DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [GDPR-32-1 · Article 32(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [EU-AIA-10-2 · Article 10(2) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [SE-CYBER-1-10 · 1 kap. 10 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-1-11 · 1 kap. 11 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 <!-- cdx:section id="CDX-LAW-001-07-03" auditability="PARTIALLY_AUTOMATABLE" -->
 ### 3 § Purpose limitation
@@ -465,7 +500,8 @@ Sensitive, personal, client-confidential or otherwise restricted data shall rece
 
 A model's ability to consume such data shall not constitute authorization to provide it.
 
-> **Legal anchors:** [GDPR, Arts. 5, 6, 25, 32 and 35 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [Swedish Dataskyddslag (2018:218) — TEXTUAL/CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2018218-med-kompletterande-bestammelser_sfs-2018-218/) · [EU AI Act, Art. 10 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P32" refs="GDPR-5-1-B:DERIVED;GDPR-5-1-C:DERIVED;GDPR-32-1:CONTEXTUAL;EU-AIA-10-2:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [GDPR-5-1-B · Article 5(1)(b) · DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [GDPR-5-1-C · Article 5(1)(c) · DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [GDPR-32-1 · Article 32(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [EU-AIA-10-2 · Article 10(2) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 <!-- cdx:section id="CDX-LAW-001-07-06" auditability="PARTIALLY_AUTOMATABLE" -->
 ### 6 § Data provenance and transformation
@@ -481,8 +517,6 @@ Retention, archival and deletion shall be governed operations. Agents shall not 
 
 ---
 
-> **Legal anchors:** [GDPR, Arts. 5, 6, 25, 32 and 35 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [Swedish Dataskyddslag (2018:218) — TEXTUAL/CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2018218-med-kompletterande-bestammelser_sfs-2018-218/) · [EU AI Act, Art. 10 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
-
 ## 8 kap. Context, instructions and memory
 
 <!-- cdx:section id="CDX-LAW-001-08-01" auditability="FULLY_AUTOMATABLE" -->
@@ -491,7 +525,8 @@ Content may alter knowledge state. Content shall not alter authority state.
 
 Natural-language instructions embedded in retrieved content, web pages, documents, email, code, tool output or memory shall not grant capability or override policy.
 
-> **Legal anchors:** [EU AI Act, Arts. 9, 14–15 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR, Arts. 5 and 25 — DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [NIS2, Art. 21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P33" refs="EU-AIA-15-5:DERIVED;GDPR-32-4:CONTEXTUAL;GDPR-25-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-15-5 · Article 15(5) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR-32-4 · Article 32(4) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [GDPR-25-1 · Article 25(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 <!-- cdx:section id="CDX-LAW-001-08-02" auditability="PARTIALLY_AUTOMATABLE" -->
 ### 2 § Typed channels
@@ -503,7 +538,8 @@ Prompt injection and indirect instruction injection shall be treated as boundary
 
 Critical authorization shall therefore be enforced outside the model where technically practicable.
 
-> **Legal anchors:** [EU AI Act, Arts. 9, 14–15 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR, Arts. 5 and 25 — DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [NIS2, Art. 21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P34" refs="EU-AIA-15-5:DERIVED;GDPR-32-4:CONTEXTUAL;GDPR-25-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-15-5 · Article 15(5) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR-32-4 · Article 32(4) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [GDPR-25-1 · Article 25(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 <!-- cdx:section id="CDX-LAW-001-08-04" auditability="FULLY_AUTOMATABLE" -->
 ### 4 § Memory is privileged persistence
@@ -511,7 +547,8 @@ Persistent memory shall be treated as a privileged write capable of altering fut
 
 The acts of reading information, using it in current context, inferring from it, proposing learning and persisting memory shall remain distinguishable.
 
-> **Legal anchors:** [EU AI Act, Arts. 9, 14–15 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR, Arts. 5 and 25 — DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [NIS2, Art. 21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P35" refs="EU-AIA-15-5:DERIVED;GDPR-32-4:CONTEXTUAL;GDPR-25-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-15-5 · Article 15(5) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR-32-4 · Article 32(4) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [GDPR-25-1 · Article 25(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 <!-- cdx:section id="CDX-LAW-001-08-05" auditability="PARTIALLY_AUTOMATABLE" -->
 ### 5 § Memory admission
@@ -526,8 +563,6 @@ Cross-project or cross-client persistent memory shall be denied by default unles
 A principal that proposes a persistent memory write shall not, solely by virtue of having proposed it, acquire authority to approve that memory as trusted persistent knowledge.
 
 ---
-
-> **Legal anchors:** [EU AI Act, Arts. 9, 14–15 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR, Arts. 5 and 25 — DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [NIS2, Art. 21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj)
 
 # Part IV — AI, Tools and Supply Chain
 
@@ -567,8 +602,6 @@ A principal whose observed conduct materially diverges from its valid mandate or
 
 ---
 
-> **Legal anchors:** [EU AI Act, Arts. 9, 12–15 and 26 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2, Arts. 20–21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj)
-
 ## 10 kap. Tools, connectors and external providers
 
 <!-- cdx:section id="CDX-LAW-001-10-01" auditability="FULLY_AUTOMATABLE" -->
@@ -593,15 +626,14 @@ Use of an external provider does not transfer Conductellence accountability for 
 
 Provider responsibilities and estate responsibilities shall be separately identified.
 
-> **Legal anchors:** [NIS2, Art. 21(2)(d)–(e) — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [DORA, Arts. 28–30 — TEXTUAL/DERIVED where applicable](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) · [Cyber Resilience Act — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/2847/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P36" refs="NIS2-21-2-D:DERIVED;NIS2-21-3:DERIVED;NIS2-21-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-D · Article 21(2)(d) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [NIS2-21-3 · Article 21(3) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [NIS2-21-1 · Article 21(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj)
 
 <!-- cdx:section id="CDX-LAW-001-10-06" auditability="FULLY_AUTOMATABLE" -->
 ### 6 § Disable path
 Every privileged connector and tool shall have a documented and testable disable or isolation path proportionate to its blast radius.
 
 ---
-
-> **Legal anchors:** [NIS2, Art. 21(2)(d)–(e) — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [DORA, Arts. 28–30 — TEXTUAL/DERIVED where applicable](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) · [Cyber Resilience Act — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/2847/oj)
 
 ## 11 kap. Secure development and supply-chain integrity
 
@@ -635,8 +667,6 @@ Known vulnerabilities shall be evaluated by exploitability, exposure, asset crit
 
 ---
 
-> **Legal anchors:** [NIS2, Art. 21(2)(d)–(e) — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § 4–6 — TEXTUAL/DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [Cyber Resilience Act — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/reg/2024/2847/oj)
-
 # Part V — Credentials, Execution and Human Control
 
 ## 12 kap. Credentials and cryptography
@@ -667,8 +697,6 @@ Systems with long-lived security or evidence obligations shall maintain a credib
 
 ---
 
-> **Legal anchors:** [NIS2, Art. 21(2)(h)–(j) — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § 8–10 — TEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [GDPR, Art. 32 — DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [eIDAS — CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2014/910/oj/eng)
-
 ## 13 kap. Stage-gated execution
 
 <!-- cdx:section id="CDX-LAW-001-13-01" auditability="FULLY_AUTOMATABLE" -->
@@ -681,7 +709,8 @@ Conductellence shall support at minimum the following logical gates: Discovery, 
 
 The gates may execute repeatedly or conditionally; they need not be implemented as one monolithic sequential service.
 
-> **Legal anchors:** [EU AI Act, Arts. 9 and 14–15 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2, Arts. 20–21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § — DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P37" refs="EU-AIA-9-2:DERIVED;EU-AIA-14-3:DERIVED;NIS2-21-1:DERIVED;GDPR-25-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-9-2 · Article 9(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-14-3 · Article 14(3) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-21-1 · Article 21(1) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-25-1 · Article 25(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 <!-- cdx:section id="CDX-LAW-001-13-03" auditability="FULLY_AUTOMATABLE" -->
 ### 3 § Finite decision grammar
@@ -697,7 +726,8 @@ Loss or invalidity of mandatory authority, identity, policy, legal applicability
 
 Explicitly classified low-consequence read operations may use a valid cached policy during defined degraded operation.
 
-> **Legal anchors:** [EU AI Act, Arts. 9 and 14–15 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2, Arts. 20–21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § — DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P38" refs="EU-AIA-9-2:DERIVED;EU-AIA-14-3:DERIVED;NIS2-21-1:DERIVED;GDPR-25-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-9-2 · Article 9(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-14-3 · Article 14(3) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-21-1 · Article 21(1) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-25-1 · Article 25(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 <!-- cdx:section id="CDX-LAW-001-13-06" auditability="FULLY_AUTOMATABLE" -->
 ### 6 § Policy pinning
@@ -709,7 +739,8 @@ Conductellence may provide an emergency policy channel capable of immediately na
 
 An emergency overlay shall not expand authority beyond the adopted base policy.
 
-> **Legal anchors:** [EU AI Act, Arts. 9 and 14–15 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2, Arts. 20–21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § — DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P39" refs="EU-AIA-9-2:DERIVED;EU-AIA-14-3:DERIVED;NIS2-21-1:DERIVED;GDPR-25-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-9-2 · Article 9(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-14-3 · Article 14(3) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-21-1 · Article 21(1) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-25-1 · Article 25(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 <!-- cdx:section id="CDX-LAW-001-13-08" auditability="FULLY_AUTOMATABLE" -->
 ### 8 § Reconciliation
@@ -721,11 +752,10 @@ Simulated, hypothetical, test or scenario state shall not silently become observ
 
 Explicit conversion requires an authorized transition record.
 
-> **Legal anchors:** [EU AI Act, Arts. 9 and 14–15 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2, Arts. 20–21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § — DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P40" refs="EU-AIA-9-2:DERIVED;EU-AIA-14-3:DERIVED;NIS2-21-1:DERIVED;GDPR-25-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-9-2 · Article 9(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-14-3 · Article 14(3) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-21-1 · Article 21(1) · DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-25-1 · Article 25(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 ---
-
-> **Legal anchors:** [EU AI Act, Arts. 9 and 14–15 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2, Arts. 20–21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. 3 § — DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 ## 14 kap. Human oversight and external effects
 
@@ -739,7 +769,8 @@ Human approval is valid only where the approver is presented with materially suf
 
 Approval shall not be reduced to ceremonial confirmation of an opaque agent proposal.
 
-> **Legal anchors:** [EU AI Act, Art. 14 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR, Art. 22 — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [EU Charter of Fundamental Rights, Arts. 8, 21 and 47 — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P41" refs="EU-AIA-14-1:TEXTUAL;EU-AIA-14-2:DERIVED;EU-AIA-26-2:TEXTUAL;GDPR-22-3:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-14-1 · Article 14(1) · TEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-14-2 · Article 14(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-26-2 · Article 26(2) · TEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR-22-3 · Article 22(3) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 <!-- cdx:section id="CDX-LAW-001-14-03" auditability="PARTIALLY_AUTOMATABLE" -->
 ### 3 § Risk-sensitive checkpoints
@@ -747,7 +778,8 @@ The need for human approval shall increase with consequence, irreversibility, se
 
 Routine low-risk reversible internal operations may be automated where controls are demonstrably effective.
 
-> **Legal anchors:** [EU AI Act, Art. 14 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR, Art. 22 — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [EU Charter of Fundamental Rights, Arts. 8, 21 and 47 — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P42" refs="EU-AIA-14-1:TEXTUAL;EU-AIA-14-2:DERIVED;EU-AIA-26-2:TEXTUAL;GDPR-22-3:CONTEXTUAL;NIS2-21-1:CONTEXTUAL;EU-AIA-9-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-14-1 · Article 14(1) · TEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-14-2 · Article 14(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-26-2 · Article 26(2) · TEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR-22-3 · Article 22(3) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [NIS2-21-1 · Article 21(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU-AIA-9-1 · Article 9(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 <!-- cdx:section id="CDX-LAW-001-14-04" auditability="FULLY_AUTOMATABLE" -->
 ### 4 § External-effect gate
@@ -755,7 +787,8 @@ Publishing, sending, deploying, transacting, disclosing protected data, changing
 
 Availability of an execution tool shall not bypass the effect gate.
 
-> **Legal anchors:** [EU AI Act, Art. 14 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR, Art. 22 — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [EU Charter of Fundamental Rights, Arts. 8, 21 and 47 — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P43" refs="EU-AIA-14-1:TEXTUAL;EU-AIA-14-2:DERIVED;EU-AIA-26-2:TEXTUAL;GDPR-22-3:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-14-1 · Article 14(1) · TEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-14-2 · Article 14(2) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-26-2 · Article 26(2) · TEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR-22-3 · Article 22(3) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 <!-- cdx:section id="CDX-LAW-001-14-05" auditability="FULLY_AUTOMATABLE" -->
 ### 5 § Reversibility classification
@@ -766,8 +799,6 @@ Consequential actions shall be classified by reversibility. Autonomous authority
 A principal revoked during execution shall lose authority for subsequent privileged actions within a defined revocation objective appropriate to the system tier.
 
 ---
-
-> **Legal anchors:** [EU AI Act, Art. 14 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR, Art. 22 — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [EU Charter of Fundamental Rights, Arts. 8, 21 and 47 — TEXTUAL/CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj)
 
 # Part VI — Traceability, Assurance and Recovery
 
@@ -787,7 +818,8 @@ Security evidence shall be corrected by new attributable records rather than sil
 
 Where mutable operational stores are used for performance, an independently preserved evidence layer shall retain the authoritative historical record.
 
-> **Legal anchors:** [EU AI Act, Arts. 12–13 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR, Art. 30 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [NIS2, Arts. 21 and 23 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [DORA — DERIVED/CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2022/2554/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P44" refs="EU-AIA-12-1:TEXTUAL;EU-AIA-12-2:TEXTUAL;EU-AIA-19-1:DERIVED;GDPR-24-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [EU-AIA-12-1 · Article 12(1) · TEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-12-2 · Article 12(2) · TEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-19-1 · Article 19(1) · DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR-24-1 · Article 24(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 <!-- cdx:section id="CDX-LAW-001-15-04" auditability="PARTIALLY_AUTOMATABLE" -->
 ### 4 § Evidence independence
@@ -807,8 +839,6 @@ Conductellence shall preserve observable inputs, policy decisions, actions, outp
 
 ---
 
-> **Legal anchors:** [EU AI Act, Arts. 12–13 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [GDPR, Art. 30 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [NIS2, Arts. 21 and 23 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [DORA — DERIVED/CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2022/2554/oj)
-
 ## 16 kap. Controls, automated audit and adversarial assurance
 
 <!-- cdx:section id="CDX-LAW-001-16-01" auditability="FULLY_AUTOMATABLE" -->
@@ -821,7 +851,8 @@ Every objectively testable control shall have an automated or reproducible audit
 
 The audit shall identify the Chapter and § from which its authority derives.
 
-> **Legal anchors:** [NIS2, Art. 21(2)(f) — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [DORA, digital operational resilience testing provisions — TEXTUAL/DERIVED where applicable](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) · [EU AI Act, Art. 9 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P45" refs="NIS2-21-2-F:TEXTUAL;SE-CYBER-2-3-6:TEXTUAL;GDPR-32-1-D:TEXTUAL;SE-CYBER-3-5:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-F · Article 21(2)(f) · TEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [SE-CYBER-2-3-6 · 2 kap. 3 § second paragraph point 6 · TEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [GDPR-32-1-D · Article 32(1)(d) · TEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [SE-CYBER-3-5 · 3 kap. 5 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 <!-- cdx:section id="CDX-LAW-001-16-03" auditability="FULLY_AUTOMATABLE" -->
 ### 3 § Auditability state
@@ -848,8 +879,6 @@ Conductellence shall maintain or be capable of generating a current and historic
 The mechanisms that evaluate security controls shall themselves be registered, permissioned, tested and subject to independent or separated assurance appropriate to risk.
 
 ---
-
-> **Legal anchors:** [NIS2, Art. 21(2)(f) — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [DORA, digital operational resilience testing provisions — TEXTUAL/DERIVED where applicable](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) · [EU AI Act, Art. 9 — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 ## 17 kap. Incidents, recovery, exceptions and debt
 
@@ -879,7 +908,8 @@ A security exception shall be explicit, scoped, owned, justified, time-bounded, 
 
 Permanent exceptions are prohibited.
 
-> **Legal anchors:** [NIS2, Arts. 21 and 23 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. — TEXTUAL/DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [DORA, incident/recovery provisions — DERIVED where applicable](https://eur-lex.europa.eu/eli/reg/2022/2554/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P46" refs="NIS2-21-2-B:TEXTUAL;NIS2-21-2-C:TEXTUAL;SE-CYBER-2-3-2:TEXTUAL;SE-CYBER-2-3-3:TEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-B · Article 21(2)(b) · TEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [NIS2-21-2-C · Article 21(2)(c) · TEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [SE-CYBER-2-3-2 · 2 kap. 3 § second paragraph point 2 · TEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-2-3-3 · 2 kap. 3 § second paragraph point 3 · TEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 <!-- cdx:section id="CDX-LAW-001-17-07" auditability="FULLY_AUTOMATABLE" -->
 ### 7 § Expired exception
@@ -891,11 +921,10 @@ Known gaps, deferred controls, stale exceptions and unresolved findings shall be
 
 Security debt shall remain visible until resolved, superseded or accepted by authorized human decision.
 
-> **Legal anchors:** [NIS2, Arts. 21 and 23 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. — TEXTUAL/DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [DORA, incident/recovery provisions — DERIVED where applicable](https://eur-lex.europa.eu/eli/reg/2022/2554/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P47" refs="NIS2-21-2-B:TEXTUAL;NIS2-21-2-C:TEXTUAL;SE-CYBER-2-3-2:TEXTUAL;SE-CYBER-2-3-3:TEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-21-2-B · Article 21(2)(b) · TEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [NIS2-21-2-C · Article 21(2)(c) · TEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [SE-CYBER-2-3-2 · 2 kap. 3 § second paragraph point 2 · TEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-2-3-3 · 2 kap. 3 § second paragraph point 3 · TEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 ---
-
-> **Legal anchors:** [NIS2, Arts. 21 and 23 — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [Swedish Cybersäkerhetslag (2025:1506), 2 kap. — TEXTUAL/DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [DORA, incident/recovery provisions — DERIVED where applicable](https://eur-lex.europa.eu/eli/reg/2022/2554/oj)
 
 # Part VII — Lifecycle and Conductellence Governance
 
@@ -927,8 +956,6 @@ Assurance shall detect active credentials, connectors, scheduled tasks or privil
 
 ---
 
-> **Legal anchors:** [EU AI Act, lifecycle risk-management obligations — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [Cyber Resilience Act, lifecycle/product cybersecurity duties — TEXTUAL/DERIVED](https://eur-lex.europa.eu/eli/reg/2024/2847/oj) · [NIS2, Art. 21 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj)
-
 ## 19 kap. Conductellence self-governance and amendment
 
 <!-- cdx:section id="CDX-LAW-001-19-01" auditability="CONSTITUTIONAL_HUMAN_ONLY" -->
@@ -941,7 +968,8 @@ Every authoritative release of this Act, its machine bindings and policy bundles
 
 Historic executions shall retain reference to the version under which they occurred.
 
-> **Legal anchors:** [NIS2, Art. 20 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU AI Act, governance and compliance architecture — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P48" refs="NIS2-20-1:CONTEXTUAL;GDPR-24-1:CONTEXTUAL;EU-AIA-9-2:CONTEXTUAL;NIS2-21-2-F:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-24-1 · Article 24(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [EU-AIA-9-2 · Article 9(2) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-21-2-F · Article 21(2)(f) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj)
 
 <!-- cdx:section id="CDX-LAW-001-19-03" auditability="PARTIALLY_AUTOMATABLE" -->
 ### 3 § Interpretation Guide
@@ -949,7 +977,8 @@ Conductellence shall maintain a structured Interpretation Guide subordinate to t
 
 Where the Guide changes substantive meaning, the Act must be amended.
 
-> **Legal anchors:** [NIS2, Art. 20 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU AI Act, governance and compliance architecture — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P49" refs="NIS2-20-1:CONTEXTUAL;GDPR-24-1:CONTEXTUAL;EU-AIA-9-2:CONTEXTUAL;NIS2-21-2-F:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-24-1 · Article 24(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [EU-AIA-9-2 · Article 9(2) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-21-2-F · Article 21(2)(f) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj)
 
 <!-- cdx:section id="CDX-LAW-001-19-04" auditability="FULLY_AUTOMATABLE" -->
 ### 4 § Regulatory and standards drift
@@ -965,7 +994,8 @@ A new § shall be added only where it establishes a distinct duty, prohibition, 
 
 Implementation detail shall ordinarily belong in controls, protocols, schemas or the Interpretation Guide rather than be duplicated as constitutional law.
 
-> **Legal anchors:** [NIS2, Art. 20 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU AI Act, governance and compliance architecture — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P50" refs="NIS2-20-1:CONTEXTUAL;GDPR-24-1:CONTEXTUAL;EU-AIA-9-2:CONTEXTUAL;NIS2-21-2-F:CONTEXTUAL;SE-CYBER-1-10:CONTEXTUAL;SE-CYBER-1-11:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-24-1 · Article 24(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [EU-AIA-9-2 · Article 9(2) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-21-2-F · Article 21(2)(f) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [SE-CYBER-1-10 · 1 kap. 10 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-1-11 · 1 kap. 11 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 <!-- cdx:section id="CDX-LAW-001-19-07" auditability="PARTIALLY_AUTOMATABLE" -->
 ### 7 § Exhaustiveness by coverage, not word count
@@ -973,7 +1003,8 @@ Conductellence shall pursue comprehensive coverage of relevant failure modes, au
 
 Completeness shall be assessed through the coverage graph linking threats, legal obligations, principles, §§, controls, tests and evidence.
 
-> **Legal anchors:** [NIS2, Art. 20 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU AI Act, governance and compliance architecture — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P51" refs="NIS2-20-1:CONTEXTUAL;GDPR-24-1:CONTEXTUAL;EU-AIA-9-2:CONTEXTUAL;NIS2-21-2-F:CONTEXTUAL;SE-CYBER-2-3-6:DERIVED;GDPR-32-1-D:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-24-1 · Article 24(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [EU-AIA-9-2 · Article 9(2) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-21-2-F · Article 21(2)(f) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [SE-CYBER-2-3-6 · 2 kap. 3 § second paragraph point 6 · DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [GDPR-32-1-D · Article 32(1)(d) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 <!-- cdx:section id="CDX-LAW-001-19-08" auditability="CONSTITUTIONAL_HUMAN_ONLY" -->
 ### 8 § Supreme rule for non-human governance
@@ -981,11 +1012,10 @@ No generated non-human entity within the governed estate is above Conductellence
 
 Conductellence itself remains subordinate to lawful human authority and applicable external law.
 
-> **Legal anchors:** [NIS2, Art. 20 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU AI Act, governance and compliance architecture — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj)
+<!-- cdx:legal paragraph="CDX-LAW-001-PRE-P52" refs="NIS2-20-1:CONTEXTUAL;GDPR-24-1:CONTEXTUAL;EU-AIA-9-2:CONTEXTUAL;NIS2-21-2-F:CONTEXTUAL;SE-CYBER-1-10:CONTEXTUAL;SE-CYBER-1-11:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-24-1 · Article 24(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [EU-AIA-9-2 · Article 9(2) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [NIS2-21-2-F · Article 21(2)(f) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [SE-CYBER-1-10 · 1 kap. 10 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-1-11 · 1 kap. 11 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 
 ---
-
-> **Legal anchors:** [NIS2, Art. 20 — DERIVED](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [EU AI Act, governance and compliance architecture — DERIVED](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj)
 
 # Appendices incorporated by reference
 
@@ -1000,17 +1030,17 @@ The Global Authority Corpus shall preserve and classify the external legal, regu
 
 ---
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [Council of Europe AI Framework Convention (CETS No. 225) — CONTEXTUAL; treaty status/applicability must be resolved separately](https://rm.coe.int/0900001680afae3c)
-
 # Operative interpretation
 
 This Act is intended to be **dense rather than granular for its own sake**.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [Council of Europe AI Framework Convention (CETS No. 225) — CONTEXTUAL; treaty status/applicability must be resolved separately](https://rm.coe.int/0900001680afae3c)
+<!-- cdx:legal paragraph="CDX-LAW-001-OPR-P01" refs="NIS2-20-1:CONTEXTUAL;NIS2-21-2-F:CONTEXTUAL;GDPR-24-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [NIS2-21-2-F · Article 21(2)(f) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-24-1 · Article 24(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 The authoritative chain is:
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [Council of Europe AI Framework Convention (CETS No. 225) — CONTEXTUAL; treaty status/applicability must be resolved separately](https://rm.coe.int/0900001680afae3c)
+<!-- cdx:legal paragraph="CDX-LAW-001-OPR-P02" refs="NIS2-20-1:CONTEXTUAL;NIS2-21-2-F:CONTEXTUAL;GDPR-24-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [NIS2-21-2-F · Article 21(2)(f) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-24-1 · Article 24(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 ```text
 Foundational Principles
@@ -1034,29 +1064,36 @@ Security Twin / Control-of-Controls
 
 A § states **what must, may or must not be true**.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [Council of Europe AI Framework Convention (CETS No. 225) — CONTEXTUAL; treaty status/applicability must be resolved separately](https://rm.coe.int/0900001680afae3c)
+<!-- cdx:legal paragraph="CDX-LAW-001-OPR-P03" refs="NIS2-20-1:CONTEXTUAL;NIS2-21-2-F:CONTEXTUAL;GDPR-24-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [NIS2-21-2-F · Article 21(2)(f) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-24-1 · Article 24(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 The Interpretation Guide explains **how the § is to be understood**.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [Council of Europe AI Framework Convention (CETS No. 225) — CONTEXTUAL; treaty status/applicability must be resolved separately](https://rm.coe.int/0900001680afae3c)
+<!-- cdx:legal paragraph="CDX-LAW-001-OPR-P04" refs="NIS2-20-1:CONTEXTUAL;NIS2-21-2-F:CONTEXTUAL;GDPR-24-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [NIS2-21-2-F · Article 21(2)(f) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-24-1 · Article 24(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 A Control states **what mechanism operationalizes the §**.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [Council of Europe AI Framework Convention (CETS No. 225) — CONTEXTUAL; treaty status/applicability must be resolved separately](https://rm.coe.int/0900001680afae3c)
+<!-- cdx:legal paragraph="CDX-LAW-001-OPR-P05" refs="NIS2-20-1:CONTEXTUAL;NIS2-21-2-F:CONTEXTUAL;GDPR-24-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [NIS2-21-2-F · Article 21(2)(f) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-24-1 · Article 24(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 A Policy rule states **how an execution decision is made**.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [Council of Europe AI Framework Convention (CETS No. 225) — CONTEXTUAL; treaty status/applicability must be resolved separately](https://rm.coe.int/0900001680afae3c)
+<!-- cdx:legal paragraph="CDX-LAW-001-OPR-P06" refs="NIS2-20-1:CONTEXTUAL;NIS2-21-2-F:CONTEXTUAL;GDPR-24-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [NIS2-21-2-F · Article 21(2)(f) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-24-1 · Article 24(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 An Audit states **how compliance or failure is tested**.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [Council of Europe AI Framework Convention (CETS No. 225) — CONTEXTUAL; treaty status/applicability must be resolved separately](https://rm.coe.int/0900001680afae3c)
+<!-- cdx:legal paragraph="CDX-LAW-001-OPR-P07" refs="NIS2-20-1:CONTEXTUAL;NIS2-21-2-F:CONTEXTUAL;GDPR-24-1:CONTEXTUAL;SE-CYBER-2-3-6:DERIVED;GDPR-32-1-D:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [NIS2-21-2-F · Article 21(2)(f) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-24-1 · Article 24(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj) · [SE-CYBER-2-3-6 · 2 kap. 3 § second paragraph point 6 · DERIVED](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [GDPR-32-1-D · Article 32(1)(d) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 SPETL preserves **what actually happened**.
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [Council of Europe AI Framework Convention (CETS No. 225) — CONTEXTUAL; treaty status/applicability must be resolved separately](https://rm.coe.int/0900001680afae3c)
+<!-- cdx:legal paragraph="CDX-LAW-001-OPR-P08" refs="NIS2-20-1:CONTEXTUAL;NIS2-21-2-F:CONTEXTUAL;GDPR-24-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [NIS2-21-2-F · Article 21(2)(f) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-24-1 · Article 24(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
 No lower layer may silently change the normative meaning of a higher layer.
 
+<!-- cdx:legal paragraph="CDX-LAW-001-OPR-P09" refs="NIS2-20-1:CONTEXTUAL;NIS2-21-2-F:CONTEXTUAL;GDPR-24-1:CONTEXTUAL" verified="2026-09-24" -->
+> **Verified legal references:** [NIS2-20-1 · Article 20(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [NIS2-21-2-F · Article 21(2)(f) · CONTEXTUAL](https://eur-lex.europa.eu/eli/dir/2022/2555/oj) · [GDPR-24-1 · Article 24(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 
-> **Legal anchors:** [EU Charter of Fundamental Rights — CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [European Convention on Human Rights — CONTEXTUAL](https://www.echr.coe.int/en/european-convention-on-human-rights) · [Council of Europe AI Framework Convention (CETS No. 225) — CONTEXTUAL; treaty status/applicability must be resolved separately](https://rm.coe.int/0900001680afae3c)
