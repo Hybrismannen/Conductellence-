@@ -72,3 +72,4 @@ jobs:
           name: regulatory-drift-${{ github.run_id }}
           path: .regulatory-drift-output/
           retention-days: 90
+          include-hidden-files: true
