@@ -1,0 +1,6 @@
+{
+  "schema": "cdx.legal-resolver.rules/v0.1",
+  "authority_ref": "CDX-CLR-LEGAL-BD-001",
+  "policy": "No APPLIES/DOES_NOT_APPLY/PARTIALLY_APPLIES/CONDITIONAL result may be emitted by deterministic automation unless an exact, reviewed rule exists here and all required facts are present. Absence of a rule returns UNKNOWN.",
+  "rules": []
+}
