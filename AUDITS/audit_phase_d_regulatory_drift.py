@@ -11,7 +11,8 @@ STATE=Path("REGULATORY-DRIFT/source-state.json")
 TEMPORAL=Path("REGULATORY-DRIFT/provision-temporal-state.json")
 CHANGES=Path("REGULATORY-DRIFT/confirmed-change-events.json")
 PROVISIONS=Path("LEGAL-REFERENCES/legal-provision-registry.json")
-CHECKER=Path("REGULATORY-DRIFT/check_source_reachability.py")\nIMPACT=Path("REGULATORY-DRIFT/build_impact_queue.py")
+CHECKER=Path("REGULATORY-DRIFT/check_source_reachability.py")
+IMPACT=Path("REGULATORY-DRIFT/build_impact_queue.py")
 
 def fail(msg):
     print("FAIL:",msg); raise SystemExit(1)
