@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://conductellence.local/schemas/legal-support-proof.schema.json",
+  "title": "Conductellence Legal Support Proof",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "proof_id",
+    "authority_ref",
+    "paragraph_id",
+    "provision_id",
+    "relationship",
+    "source_locator",
+    "source_url",
+    "source_verified_at",
+    "conductellence_proposition",
+    "external_legal_proposition",
+    "support_boundary",
+    "review_state"
+  ],
+  "properties": {
+    "proof_id": {
+      "type": "string",
+      "pattern": "^CDX-LSP-[A-Z0-9-]+$"
+    },
+    "authority_ref": {
+      "const": "CDX-CLR-LEGAL-BD-001"
+    },
+    "paragraph_id": {
+      "type": "string",
+      "pattern": "^CDX-LAW-001-"
+    },
+    "provision_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "relationship": {
+      "enum": [
+        "DERIVED",
+        "TEXTUAL"
+      ]
+    },
+    "source_locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "source_verified_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "conductellence_proposition": {
+      "type": "string",
+      "minLength": 1
+    },
+    "external_legal_proposition": {
+      "type": "string",
+      "minLength": 1
+    },
+    "support_bridge": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "support_boundary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "review_state": {
+      "enum": [
+        "DRAFT",
+        "LEGAL_REVIEW_REQUIRED",
+        "VERIFIED",
+        "REJECTED"
+      ]
+    },
+    "reviewed_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reviewed_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "relationship": {
+            "const": "DERIVED"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "support_bridge"
+        ],
+        "properties": {
+          "support_bridge": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "review_state": {
+            "const": "VERIFIED"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "reviewed_by",
+          "reviewed_at"
+        ]
+      }
+    }
+  ]
+}
