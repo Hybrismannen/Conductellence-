@@ -1,0 +1,18 @@
+{
+  "schema": "cdx.household.phase-record/v0.1",
+  "programme_id": "CDX-PROG-LEGAL-BD-001",
+  "authority_ref": "CDX-CLR-LEGAL-BD-001",
+  "phase": "B",
+  "record_type": "DISPATCH_RECORD",
+  "created_at": "2026-09-24",
+  "director_state": "DISPATCHED",
+  "janitor_scan_ref": null,
+  "handyman_repair_refs": [],
+  "ci_run_ref": null,
+  "committed_sha": "7806f9e1f6902fd759f7deef9292c6dde01f31db",
+  "hard_stops": [],
+  "unresolved_legal_review": [],
+  "acceptance_state": "IN_PROGRESS",
+  "accepted_at": null,
+  "note": "Phase B dispatched under continuous B→D clearance. This record is not acceptance evidence."
+}
