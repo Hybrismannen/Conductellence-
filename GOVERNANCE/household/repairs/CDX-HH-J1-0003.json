@@ -1,0 +1,17 @@
+{
+  "schema": "cdx.household.repair-record/v0.1",
+  "programme_id": "CDX-PROG-LEGAL-BD-001",
+  "authority_ref": "CDX-CLR-LEGAL-BD-001",
+  "repair_id": "CDX-HH-J1-0003",
+  "phase": "D",
+  "classification": "J1",
+  "finding_severity": "CONTROL_DEFECT",
+  "finding": "Phase D audit source contained a literal backslash-n token between CHECKER and IMPACT Path declarations, causing Python SyntaxError.",
+  "deterministic_basis": "The intended declarations are two independent Python statements; replacing the literal escape token with a newline changes no legal, control, or audit semantics.",
+  "allowed_paths": [
+    "AUDITS/audit_phase_d_regulatory_drift.py"
+  ],
+  "semantic_or_legal_judgment": false,
+  "status": "APPLIED_PENDING_RESCAN",
+  "applied_at": "2026-09-25"
+}
