@@ -32,7 +32,9 @@ if pids!=set(tmap):
 
 sources=state.get("sources",[])
 by_url={s["official_url"]:s for s in sources}
-if len(by_url)!=len(sources): fail("duplicate official source URL")\nsource_ids=[s["source_id"] for s in sources]\nif len(source_ids)!=len(set(source_ids)): fail("duplicate source_id in source-state registry")
+if len(by_url)!=len(sources): fail("duplicate official source URL")
+source_ids=[s["source_id"] for s in sources]
+if len(source_ids)!=len(set(source_ids)): fail("duplicate source_id in source-state registry")
 missing=[p["id"] for p in preg["provisions"] if p["official_url"] not in by_url]
 if missing: fail(f"{len(missing)} provisions lack source-state coverage")
 
