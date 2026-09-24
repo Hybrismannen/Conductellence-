@@ -3,7 +3,7 @@
   "programme_id": "CDX-PROG-LEGAL-BD-001",
   "authority_ref": "CDX-CLR-LEGAL-BD-001",
   "phase": "D",
-  "state": "IN_PROGRESS",
+  "state": "ACCEPTED_OPERATIONAL",
   "verified_at": "2026-09-25",
   "policy": {
     "source_failure": "SOURCE_UNREACHABLE finding only; never infer repeal/amendment/inapplicability.",
@@ -319,5 +319,8 @@
       "repair": "Reassigned source IDs deterministically by lexical official_url order.",
       "semantic_change": false
     }
-  ]
+  ],
+  "director_acceptance_ref": "GOVERNANCE/household/records/CDX-HH-D-ACCEPT-001.json",
+  "accepted_at": "2026-09-25",
+  "monitoring_workflow": ".github/workflows/regulatory-drift-monitor.yml"
 }
