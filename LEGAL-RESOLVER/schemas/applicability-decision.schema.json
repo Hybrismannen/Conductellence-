@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://conductellence.local/schemas/applicability-decision.schema.json",
+  "title": "Conductellence Legal Applicability Decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "decision_id",
+    "authority_ref",
+    "system_id",
+    "provision_id",
+    "legal_snapshot_date",
+    "facts",
+    "result",
+    "reasoning_state",
+    "evidence_refs"
+  ],
+  "properties": {
+    "decision_id": {
+      "type": "string",
+      "pattern": "^CDX-LAD-[A-Z0-9-]+$"
+    },
+    "authority_ref": {
+      "const": "CDX-CLR-LEGAL-BD-001"
+    },
+    "system_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "operation_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provision_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "legal_snapshot_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "facts": {
+      "type": "object",
+      "required": [
+        "jurisdiction",
+        "actor_role",
+        "sector",
+        "system_class",
+        "purpose"
+      ],
+      "properties": {
+        "jurisdiction": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "territorial_nexus": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "actor_role": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "entity_class": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sector": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "system_class": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "provider_deployer_role": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "data_categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "data_subject_location": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "purpose": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "external_effect": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "contractual_overlay": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "claimed_exemption": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "national_implementation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "unresolved_facts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "result": {
+      "enum": [
+        "APPLIES",
+        "DOES_NOT_APPLY",
+        "PARTIALLY_APPLIES",
+        "CONDITIONAL",
+        "UNKNOWN",
+        "LEGAL_REVIEW_REQUIRED"
+      ]
+    },
+    "reasoning_state": {
+      "enum": [
+        "DETERMINISTIC_RULE",
+        "HUMAN_LEGAL_REVIEW",
+        "MISSING_FACTS",
+        "NO_REGISTERED_RULE",
+        "CONFLICT"
+      ]
+    },
+    "rule_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reasoning_summary": {
+      "type": "string"
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "decided_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "decided_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  }
+}
