@@ -16,7 +16,8 @@ import sys
 
 ACT = Path("LAW/CONDUCTELLENCE-ACT.md")
 PROVISIONS = Path("LEGAL-REFERENCES/legal-provision-registry.json")
-PARA_MAP = Path("LEGAL-REFERENCES/paragraph-legal-map.json")\nPROOFS = Path("LEGAL-REFERENCES/legal-support-proofs.json")
+PARA_MAP = Path("LEGAL-REFERENCES/paragraph-legal-map.json")
+PROOFS = Path("LEGAL-REFERENCES/legal-support-proofs.json")
 
 ALLOWED_REL = {"CONTEXTUAL", "DERIVED", "TEXTUAL"}
 ALLOWED_DOMAINS = (
@@ -37,7 +38,8 @@ for p in (ACT, PROVISIONS, PARA_MAP, PROOFS):
 
 act = ACT.read_text(encoding="utf-8")
 preg = json.loads(PROVISIONS.read_text(encoding="utf-8"))
-pmap = json.loads(PARA_MAP.read_text(encoding="utf-8"))\nproofs_doc = json.loads(PROOFS.read_text(encoding="utf-8"))
+pmap = json.loads(PARA_MAP.read_text(encoding="utf-8"))
+proofs_doc = json.loads(PROOFS.read_text(encoding="utf-8"))
 
 provisions = preg.get("provisions", [])
 by_id = {}
