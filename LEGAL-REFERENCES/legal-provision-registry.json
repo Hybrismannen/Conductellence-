@@ -1,7 +1,7 @@
 {
   "schema": "cdx.legal-provisions/v0.2",
   "policy": "Only provision IDs in this registry may appear in Act citation blocks. Each record was checked against an official primary legal text on the verification date. The subject field is a conservative paraphrase, not a quotation and not an applicability determination.",
-  "verified_at": "2026-09-24",
+  "verified_at": "2026-09-25",
   "provisions": [
     {
       "id": "CFR-1",
@@ -12,6 +12,46 @@
       "verified_at": "2026-09-24",
       "verification_state": "VERIFIED_PRIMARY_TEXT",
       "subject": "Human dignity must be respected and protected."
+    },
+    {
+      "id": "CFR-21-1",
+      "instrument": "EU Charter of Fundamental Rights",
+      "locator": "Article 21(1)",
+      "title": "Non-discrimination",
+      "official_url": "https://eur-lex.europa.eu/eli/treaty/char_2016/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Prohibits discrimination on listed and comparable grounds."
+    },
+    {
+      "id": "CFR-47",
+      "instrument": "EU Charter of Fundamental Rights",
+      "locator": "Article 47",
+      "title": "Right to an effective remedy and to a fair trial",
+      "official_url": "https://eur-lex.europa.eu/eli/treaty/char_2016/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Recognises an effective remedy and fair hearing for violations of EU-law rights."
+    },
+    {
+      "id": "CFR-51-1",
+      "instrument": "EU Charter of Fundamental Rights",
+      "locator": "Article 51(1)",
+      "title": "Field of application",
+      "official_url": "https://eur-lex.europa.eu/eli/treaty/char_2016/art_51/oj/eng",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Addresses the Charter to Union institutions and to Member States only when implementing Union law."
+    },
+    {
+      "id": "CFR-51-2",
+      "instrument": "EU Charter of Fundamental Rights",
+      "locator": "Article 51(2)",
+      "title": "Field of application",
+      "official_url": "https://eur-lex.europa.eu/eli/treaty/char_2016/art_51/oj/eng",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "States that the Charter does not extend the field of application of Union law or create new Union competences."
     },
     {
       "id": "CFR-7",
@@ -54,46 +94,6 @@
       "subject": "Requires independent control of compliance with personal-data rules."
     },
     {
-      "id": "CFR-21-1",
-      "instrument": "EU Charter of Fundamental Rights",
-      "locator": "Article 21(1)",
-      "title": "Non-discrimination",
-      "official_url": "https://eur-lex.europa.eu/eli/treaty/char_2016/oj",
-      "verified_at": "2026-09-24",
-      "verification_state": "VERIFIED_PRIMARY_TEXT",
-      "subject": "Prohibits discrimination on listed and comparable grounds."
-    },
-    {
-      "id": "CFR-47",
-      "instrument": "EU Charter of Fundamental Rights",
-      "locator": "Article 47",
-      "title": "Right to an effective remedy and to a fair trial",
-      "official_url": "https://eur-lex.europa.eu/eli/treaty/char_2016/oj",
-      "verified_at": "2026-09-24",
-      "verification_state": "VERIFIED_PRIMARY_TEXT",
-      "subject": "Recognises an effective remedy and fair hearing for violations of EU-law rights."
-    },
-    {
-      "id": "EU-AIA-9-1",
-      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
-      "locator": "Article 9(1)",
-      "title": "Risk management system",
-      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
-      "verified_at": "2026-09-24",
-      "verification_state": "VERIFIED_PRIMARY_TEXT",
-      "subject": "Requires a risk-management system for high-risk AI systems."
-    },
-    {
-      "id": "EU-AIA-9-2",
-      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
-      "locator": "Article 9(2)",
-      "title": "Risk management system",
-      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
-      "verified_at": "2026-09-24",
-      "verification_state": "VERIFIED_PRIMARY_TEXT",
-      "subject": "Defines risk management as a continuous iterative lifecycle process with systematic review and updating."
-    },
-    {
       "id": "EU-AIA-10-1",
       "instrument": "Regulation (EU) 2024/1689 (AI Act)",
       "locator": "Article 10(1)",
@@ -112,6 +112,66 @@
       "verified_at": "2026-09-24",
       "verification_state": "VERIFIED_PRIMARY_TEXT",
       "subject": "Requires appropriate data-governance and management practices for intended purpose, including origin and preparation of data."
+    },
+    {
+      "id": "EU-AIA-113-A",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 113, third paragraph, point (a)",
+      "title": "Staged application — Chapters I and II",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Sets staged application for Chapters I and II, including the 2026 amendment's specified exceptions."
+    },
+    {
+      "id": "EU-AIA-113-B",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 113, third paragraph, point (b)",
+      "title": "Staged application — specified chapters/articles",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Sets 2 August 2025 application for specified chapters and Article 78, subject to the stated exception."
+    },
+    {
+      "id": "EU-AIA-113-C-I",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 113, third paragraph, point (c)(i)",
+      "title": "Staged application — Annex III high-risk systems",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Sets 2 December 2027 for Chapter III Sections 1–3, subject to the stated exception, for systems classified under Article 6(2) and Annex III."
+    },
+    {
+      "id": "EU-AIA-113-C-II",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 113, third paragraph, point (c)(ii)",
+      "title": "Staged application — Annex I high-risk systems",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Sets 2 August 2028 for Chapter III Sections 1–3, subject to the stated exception, for systems classified under Article 6(1) and Annex I."
+    },
+    {
+      "id": "EU-AIA-113-D",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 113, third paragraph, point (d)",
+      "title": "Staged application — Articles 102–110",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Sets 27 July 2026 for Articles 102–110."
+    },
+    {
+      "id": "EU-AIA-113-GENERAL",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 113, second paragraph",
+      "title": "General application date",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "States the general application date of 2 August 2026."
     },
     {
       "id": "EU-AIA-12-1",
@@ -224,6 +284,96 @@
       "subject": "Requires providers to keep Article 12 logs under their control for an appropriate period, subject to applicable law."
     },
     {
+      "id": "EU-AIA-2-1-A",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 2(1)(a)",
+      "title": "Scope",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies to providers placing AI systems into service or on the market, or placing GPAI models on the market, in the Union."
+    },
+    {
+      "id": "EU-AIA-2-1-B",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 2(1)(b)",
+      "title": "Scope",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies to deployers of AI systems established or located in the Union."
+    },
+    {
+      "id": "EU-AIA-2-1-C",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 2(1)(c)",
+      "title": "Scope",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies to third-country providers and deployers where AI-system output is used in the Union."
+    },
+    {
+      "id": "EU-AIA-2-1-D",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 2(1)(d)",
+      "title": "Scope",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies to importers and distributors of AI systems."
+    },
+    {
+      "id": "EU-AIA-2-1-E",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 2(1)(e)",
+      "title": "Scope",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies to specified product manufacturers placing on the market or putting into service an AI system with their product."
+    },
+    {
+      "id": "EU-AIA-2-1-F",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 2(1)(f)",
+      "title": "Scope",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies to authorised representatives of providers not established in the Union."
+    },
+    {
+      "id": "EU-AIA-2-1-G",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 2(1)(g)",
+      "title": "Scope",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies to affected persons located in the Union."
+    },
+    {
+      "id": "EU-AIA-2-10",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 2(10)",
+      "title": "Personal non-professional use exclusion",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Excludes obligations of deployers who are natural persons using AI systems in a purely personal non-professional activity."
+    },
+    {
+      "id": "EU-AIA-2-12",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 2(12)",
+      "title": "Free/open-source exclusion",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Excludes specified free/open-source AI systems unless placed on the market or put into service as high-risk or within Articles 5 or 50."
+    },
+    {
       "id": "EU-AIA-20-1",
       "instrument": "Regulation (EU) 2024/1689 (AI Act)",
       "locator": "Article 20(1)",
@@ -274,6 +424,46 @@
       "subject": "Requires monitoring of operation and suspension/use-related reporting when specified risks or serious incidents arise."
     },
     {
+      "id": "EU-AIA-3-1",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 3(1)",
+      "title": "Definition — AI system",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Defines AI system."
+    },
+    {
+      "id": "EU-AIA-3-3",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 3(3)",
+      "title": "Definition — provider",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Defines provider."
+    },
+    {
+      "id": "EU-AIA-3-4",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 3(4)",
+      "title": "Definition — deployer",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Defines deployer."
+    },
+    {
+      "id": "EU-AIA-3-8",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 3(8)",
+      "title": "Definition — operator",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Defines operator."
+    },
+    {
       "id": "EU-AIA-50-1",
       "instrument": "Regulation (EU) 2024/1689 (AI Act)",
       "locator": "Article 50(1)",
@@ -294,64 +484,64 @@
       "subject": "Requires certain AI-generated synthetic outputs to be machine-readably marked and detectable, subject to exceptions."
     },
     {
-      "id": "GDPR-5-1-A",
-      "instrument": "Regulation (EU) 2016/679 (GDPR)",
-      "locator": "Article 5(1)(a)",
-      "title": "Lawfulness, fairness and transparency",
-      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "id": "EU-AIA-9-1",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 9(1)",
+      "title": "Risk management system",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
       "verified_at": "2026-09-24",
       "verification_state": "VERIFIED_PRIMARY_TEXT",
-      "subject": "Requires personal data to be processed lawfully, fairly and transparently."
+      "subject": "Requires a risk-management system for high-risk AI systems."
     },
     {
-      "id": "GDPR-5-1-B",
-      "instrument": "Regulation (EU) 2016/679 (GDPR)",
-      "locator": "Article 5(1)(b)",
-      "title": "Purpose limitation",
-      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "id": "EU-AIA-9-2",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 9(2)",
+      "title": "Risk management system",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
       "verified_at": "2026-09-24",
       "verification_state": "VERIFIED_PRIMARY_TEXT",
-      "subject": "Requires specified, explicit and legitimate purposes and restricts incompatible further processing."
+      "subject": "Defines risk management as a continuous iterative lifecycle process with systematic review and updating."
     },
     {
-      "id": "GDPR-5-1-C",
+      "id": "GDPR-2-1",
       "instrument": "Regulation (EU) 2016/679 (GDPR)",
-      "locator": "Article 5(1)(c)",
-      "title": "Data minimisation",
-      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
-      "verified_at": "2026-09-24",
+      "locator": "Article 2(1)",
+      "title": "Material scope",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679",
+      "verified_at": "2026-09-25",
       "verification_state": "VERIFIED_PRIMARY_TEXT",
-      "subject": "Requires personal data to be adequate, relevant and limited to what is necessary."
+      "subject": "Applies the Regulation to wholly or partly automated processing of personal data and specified non-automated filing-system processing."
     },
     {
-      "id": "GDPR-5-1-D",
+      "id": "GDPR-2-2-A",
       "instrument": "Regulation (EU) 2016/679 (GDPR)",
-      "locator": "Article 5(1)(d)",
-      "title": "Accuracy",
-      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
-      "verified_at": "2026-09-24",
+      "locator": "Article 2(2)(a)",
+      "title": "Material-scope exclusion",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679",
+      "verified_at": "2026-09-25",
       "verification_state": "VERIFIED_PRIMARY_TEXT",
-      "subject": "Requires personal data accuracy and appropriate rectification/erasure of inaccurate data."
+      "subject": "Excludes processing in the course of an activity outside the scope of Union law."
     },
     {
-      "id": "GDPR-5-1-E",
+      "id": "GDPR-2-2-C",
       "instrument": "Regulation (EU) 2016/679 (GDPR)",
-      "locator": "Article 5(1)(e)",
-      "title": "Storage limitation",
-      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
-      "verified_at": "2026-09-24",
+      "locator": "Article 2(2)(c)",
+      "title": "Household-activity exclusion",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679",
+      "verified_at": "2026-09-25",
       "verification_state": "VERIFIED_PRIMARY_TEXT",
-      "subject": "Limits identifiable retention to what is necessary, subject to specified exceptions."
+      "subject": "Excludes processing by a natural person in the course of a purely personal or household activity."
     },
     {
-      "id": "GDPR-5-1-F",
+      "id": "GDPR-2-2-D",
       "instrument": "Regulation (EU) 2016/679 (GDPR)",
-      "locator": "Article 5(1)(f)",
-      "title": "Integrity and confidentiality",
-      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
-      "verified_at": "2026-09-24",
+      "locator": "Article 2(2)(d)",
+      "title": "Law-enforcement exclusion",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679",
+      "verified_at": "2026-09-25",
       "verification_state": "VERIFIED_PRIMARY_TEXT",
-      "subject": "Requires appropriate security against unauthorised/unlawful processing and accidental loss, destruction or damage."
+      "subject": "Excludes specified processing by competent authorities for criminal-law and public-security purposes."
     },
     {
       "id": "GDPR-22-1",
@@ -402,6 +592,46 @@
       "verified_at": "2026-09-24",
       "verification_state": "VERIFIED_PRIMARY_TEXT",
       "subject": "Requires by default only personal data necessary for each specific purpose to be processed, including limits on amount, extent, storage and accessibility."
+    },
+    {
+      "id": "GDPR-3-1",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 3(1)",
+      "title": "Territorial scope",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies to processing in the context of activities of an establishment of a controller or processor in the Union."
+    },
+    {
+      "id": "GDPR-3-2-A",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 3(2)(a)",
+      "title": "Territorial scope — offering goods/services",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies specified extraterritorially where processing relates to offering goods or services to data subjects in the Union."
+    },
+    {
+      "id": "GDPR-3-2-B",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 3(2)(b)",
+      "title": "Territorial scope — monitoring behaviour",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies specified extraterritorially where processing relates to monitoring behaviour in the Union."
+    },
+    {
+      "id": "GDPR-3-3",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 3(3)",
+      "title": "Territorial scope — public international law",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies to specified processing where Member State law applies by virtue of public international law."
     },
     {
       "id": "GDPR-32-1",
@@ -472,6 +702,226 @@
       "verified_at": "2026-09-24",
       "verification_state": "VERIFIED_PRIMARY_TEXT",
       "subject": "Requires controller notification of certain personal data breaches to the supervisory authority within the specified timeframe."
+    },
+    {
+      "id": "GDPR-4-1",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 4(1)",
+      "title": "Definition — personal data",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Defines personal data."
+    },
+    {
+      "id": "GDPR-4-2",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 4(2)",
+      "title": "Definition — processing",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Defines processing."
+    },
+    {
+      "id": "GDPR-4-7",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 4(7)",
+      "title": "Definition — controller",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Defines controller."
+    },
+    {
+      "id": "GDPR-4-8",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 4(8)",
+      "title": "Definition — processor",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Defines processor."
+    },
+    {
+      "id": "GDPR-5-1-A",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 5(1)(a)",
+      "title": "Lawfulness, fairness and transparency",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires personal data to be processed lawfully, fairly and transparently."
+    },
+    {
+      "id": "GDPR-5-1-B",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 5(1)(b)",
+      "title": "Purpose limitation",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires specified, explicit and legitimate purposes and restricts incompatible further processing."
+    },
+    {
+      "id": "GDPR-5-1-C",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 5(1)(c)",
+      "title": "Data minimisation",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires personal data to be adequate, relevant and limited to what is necessary."
+    },
+    {
+      "id": "GDPR-5-1-D",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 5(1)(d)",
+      "title": "Accuracy",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires personal data accuracy and appropriate rectification/erasure of inaccurate data."
+    },
+    {
+      "id": "GDPR-5-1-E",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 5(1)(e)",
+      "title": "Storage limitation",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Limits identifiable retention to what is necessary, subject to specified exceptions."
+    },
+    {
+      "id": "GDPR-5-1-F",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 5(1)(f)",
+      "title": "Integrity and confidentiality",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires appropriate security against unauthorised/unlawful processing and accidental loss, destruction or damage."
+    },
+    {
+      "id": "GDPR-99-2",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 99(2)",
+      "title": "Application date",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "States that the Regulation applies from 25 May 2018."
+    },
+    {
+      "id": "NIS2-2-1",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 2(1)",
+      "title": "Scope — general size/category rule",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies to specified Annex I/II entity types meeting the medium-size threshold or exceeding it and operating in the Union."
+    },
+    {
+      "id": "NIS2-2-2-A-I",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 2(2)(a)(i)",
+      "title": "Scope — regardless of size",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies regardless of size to providers of public electronic communications networks or publicly available electronic communications services."
+    },
+    {
+      "id": "NIS2-2-2-A-II",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 2(2)(a)(ii)",
+      "title": "Scope — regardless of size",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies regardless of size to trust service providers."
+    },
+    {
+      "id": "NIS2-2-2-A-III",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 2(2)(a)(iii)",
+      "title": "Scope — regardless of size",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies regardless of size to top-level domain name registries and DNS service providers."
+    },
+    {
+      "id": "NIS2-2-2-B",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 2(2)(b)",
+      "title": "Scope — regardless of size",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies regardless of size to specified sole providers of services essential for critical societal or economic activities."
+    },
+    {
+      "id": "NIS2-2-2-C",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 2(2)(c)",
+      "title": "Scope — regardless of size",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies regardless of size where service disruption could significantly impact public safety, public security or public health."
+    },
+    {
+      "id": "NIS2-2-2-D",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 2(2)(d)",
+      "title": "Scope — regardless of size",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies regardless of size where disruption could induce significant systemic risk, in particular cross-border risk."
+    },
+    {
+      "id": "NIS2-2-2-E",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 2(2)(e)",
+      "title": "Scope — regardless of size",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies regardless of size to specified entities critical due to national or regional importance."
+    },
+    {
+      "id": "NIS2-2-2-F-I",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 2(2)(f)(i)",
+      "title": "Scope — regardless of size",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies regardless of size to specified central-government public-administration entities."
+    },
+    {
+      "id": "NIS2-2-2-F-II",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 2(2)(f)(ii)",
+      "title": "Scope — regardless of size",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies regardless of size to specified regional public-administration entities following the stated risk-based assessment."
+    },
+    {
+      "id": "NIS2-2-3",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 2(3)",
+      "title": "Scope — critical entities",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies regardless of size to entities identified as critical entities under Directive (EU) 2022/2557."
     },
     {
       "id": "NIS2-20-1",
@@ -674,6 +1124,26 @@
       "subject": "Requires a progress report and later final report when an incident remains ongoing."
     },
     {
+      "id": "NIS2-41-1",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 41(1)",
+      "title": "Transposition",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Required Member States to adopt and publish transposition measures by 17 October 2024 and apply them from 18 October 2024."
+    },
+    {
+      "id": "NIS2-45",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 45",
+      "title": "Entry into force",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "States entry into force on the twentieth day after publication."
+    },
+    {
       "id": "SE-CYBER-1-10",
       "instrument": "Cybersäkerhetslag (2025:1506)",
       "locator": "1 kap. 10 §",
@@ -694,14 +1164,84 @@
       "subject": "Provides that Chapter 2 §§ 3–10 do not apply to operators covered by DORA, subject to the stated statutory rule."
     },
     {
-      "id": "SE-CYBER-2-3-P1",
+      "id": "SE-CYBER-1-12",
       "instrument": "Cybersäkerhetslag (2025:1506)",
-      "locator": "2 kap. 3 § first paragraph",
-      "title": "Säkerhetsåtgärder",
+      "locator": "1 kap. 12 §",
+      "title": "Scope / exclusion",
       "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
-      "verified_at": "2026-09-24",
+      "verified_at": "2026-09-25",
       "verification_state": "VERIFIED_PRIMARY_TEXT",
-      "subject": "Requires appropriate and proportionate technical, operational and organisational measures to protect network/information systems and physical environment against incidents."
+      "subject": "Contains exclusions/partial exclusions for specified security-sensitive activities and services, subject to the stated trust-service exception."
+    },
+    {
+      "id": "SE-CYBER-1-14",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "1 kap. 14 §",
+      "title": "Scope / exclusion",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Excludes the Government, Government Offices, foreign missions, committee system, authorities under the Riksdag, courts and specified adjudicative bodies; also specified political assemblies."
+    },
+    {
+      "id": "SE-CYBER-1-3",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "1 kap. 3 §",
+      "title": "Scope / exclusion",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies to specified state authorities and to regions, municipalities and municipal federations."
+    },
+    {
+      "id": "SE-CYBER-1-4",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "1 kap. 4 §",
+      "title": "Scope / exclusion",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies to specified Annex I/II or eligible education operators established in Sweden that meet the medium-or-larger size criterion."
+    },
+    {
+      "id": "SE-CYBER-1-5",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "1 kap. 5 §",
+      "title": "Scope / exclusion",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Extends scope to specified operators satisfying the stated sector/establishment conditions where sole-provider, significant-impact, systemic-risk/national-regional importance or trust-service criteria are met."
+    },
+    {
+      "id": "SE-CYBER-1-6",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "1 kap. 6 §",
+      "title": "Scope / exclusion",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies to operators in Sweden providing public electronic communications networks or publicly available electronic communications services."
+    },
+    {
+      "id": "SE-CYBER-1-7",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "1 kap. 7 §",
+      "title": "Scope / exclusion",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Applies to specified digital/service operators whose main establishment or representative is in Sweden and that satisfy the stated service conditions."
+    },
+    {
+      "id": "SE-CYBER-1-8",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "1 kap. 8 §",
+      "title": "Scope / exclusion",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Allows application to additional state authorities designated by the Government even when Sections 3–7 are not met."
     },
     {
       "id": "SE-CYBER-2-3-1",
@@ -712,6 +1252,16 @@
       "verified_at": "2026-09-24",
       "verification_state": "VERIFIED_PRIMARY_TEXT",
       "subject": "Requires security measures addressing risk-analysis and network/information-system security strategies."
+    },
+    {
+      "id": "SE-CYBER-2-3-10",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "2 kap. 3 § second paragraph point 10",
+      "title": "Säkerhetsåtgärder",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires security measures addressing authentication, secured communications and emergency communications when needed."
     },
     {
       "id": "SE-CYBER-2-3-2",
@@ -794,14 +1344,14 @@
       "subject": "Requires security measures addressing personnel security, access control and asset management."
     },
     {
-      "id": "SE-CYBER-2-3-10",
+      "id": "SE-CYBER-2-3-P1",
       "instrument": "Cybersäkerhetslag (2025:1506)",
-      "locator": "2 kap. 3 § second paragraph point 10",
+      "locator": "2 kap. 3 § first paragraph",
       "title": "Säkerhetsåtgärder",
       "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
       "verified_at": "2026-09-24",
       "verification_state": "VERIFIED_PRIMARY_TEXT",
-      "subject": "Requires security measures addressing authentication, secured communications and emergency communications when needed."
+      "subject": "Requires appropriate and proportionate technical, operational and organisational measures to protect network/information systems and physical environment against incidents."
     },
     {
       "id": "SE-CYBER-2-4",
@@ -882,6 +1432,16 @@
       "verified_at": "2026-09-24",
       "verification_state": "VERIFIED_PRIMARY_TEXT",
       "subject": "Authorises security scans in cooperation with the operator."
+    },
+    {
+      "id": "SE-CYBER-TRANS-1",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "Transitional provision 1",
+      "title": "Entry into force",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "States that the Act enters into force on 15 January 2026."
     }
   ]
 }
