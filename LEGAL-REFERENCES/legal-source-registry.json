@@ -1,0 +1,127 @@
+{
+  "schema": "cdx.legal-source-registry/v0.1",
+  "verified_at": "2026-09-24",
+  "policy": "Only primary/official legal sources may be used as mandatory legal anchors in the Conductellence Act. Standards and guidance may be mapped separately but do not satisfy the law-link requirement.",
+  "sources": [
+    {
+      "id": "EU-CHARTER",
+      "title": "Charter of Fundamental Rights of the European Union",
+      "jurisdiction": "EU",
+      "force": "PRIMARY_LAW",
+      "status": "IN_FORCE",
+      "url": "https://eur-lex.europa.eu/eli/treaty/char_2016/oj"
+    },
+    {
+      "id": "ECHR",
+      "title": "European Convention on Human Rights",
+      "jurisdiction": "Council of Europe / Sweden",
+      "force": "BINDING_TREATY",
+      "status": "IN_FORCE",
+      "url": "https://www.echr.coe.int/en/european-convention-on-human-rights"
+    },
+    {
+      "id": "EU-AI-ACT",
+      "title": "Regulation (EU) 2024/1689 — Artificial Intelligence Act",
+      "jurisdiction": "EU",
+      "force": "REGULATION",
+      "status": "IN_FORCE_WITH_STAGED_APPLICATION",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+    },
+    {
+      "id": "GDPR",
+      "title": "Regulation (EU) 2016/679 — General Data Protection Regulation",
+      "jurisdiction": "EU/EEA",
+      "force": "REGULATION",
+      "status": "IN_FORCE",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+    },
+    {
+      "id": "NIS2",
+      "title": "Directive (EU) 2022/2555 — NIS2",
+      "jurisdiction": "EU",
+      "force": "DIRECTIVE",
+      "status": "IN_FORCE",
+      "url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj"
+    },
+    {
+      "id": "SE-CYBER-2025-1506",
+      "title": "Cybersäkerhetslag (2025:1506)",
+      "jurisdiction": "Sweden",
+      "force": "NATIONAL_LAW",
+      "status": "IN_FORCE",
+      "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/"
+    },
+    {
+      "id": "SE-CYBER-FORORDNING-2025-1507",
+      "title": "Cybersäkerhetsförordning (2025:1507)",
+      "jurisdiction": "Sweden",
+      "force": "NATIONAL_REGULATION",
+      "status": "IN_FORCE",
+      "url": "https://svenskforfattningssamling.se/doc/20251507.html"
+    },
+    {
+      "id": "CRA",
+      "title": "Regulation (EU) 2024/2847 — Cyber Resilience Act",
+      "jurisdiction": "EU",
+      "force": "REGULATION",
+      "status": "IN_FORCE_WITH_STAGED_APPLICATION",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj"
+    },
+    {
+      "id": "DORA",
+      "title": "Regulation (EU) 2022/2554 — Digital Operational Resilience Act",
+      "jurisdiction": "EU",
+      "force": "REGULATION",
+      "status": "IN_FORCE",
+      "url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj"
+    },
+    {
+      "id": "DATA-ACT",
+      "title": "Regulation (EU) 2023/2854 — Data Act",
+      "jurisdiction": "EU",
+      "force": "REGULATION",
+      "status": "IN_FORCE",
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/2854/oj"
+    },
+    {
+      "id": "DSA",
+      "title": "Regulation (EU) 2022/2065 — Digital Services Act",
+      "jurisdiction": "EU",
+      "force": "REGULATION",
+      "status": "IN_FORCE",
+      "url": "https://eur-lex.europa.eu/eli/reg/2022/2065/oj"
+    },
+    {
+      "id": "EIDAS",
+      "title": "Regulation (EU) No 910/2014 — eIDAS",
+      "jurisdiction": "EU",
+      "force": "REGULATION",
+      "status": "IN_FORCE_AS_AMENDED",
+      "url": "https://eur-lex.europa.eu/eli/reg/2014/910/oj/eng"
+    },
+    {
+      "id": "SE-DATA-2018-218",
+      "title": "Lag (2018:218) med kompletterande bestämmelser till EU:s dataskyddsförordning",
+      "jurisdiction": "Sweden",
+      "force": "NATIONAL_LAW",
+      "status": "IN_FORCE",
+      "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2018218-med-kompletterande-bestammelser_sfs-2018-218/"
+    },
+    {
+      "id": "SE-SECURITY-2018-585",
+      "title": "Säkerhetsskyddslag (2018:585)",
+      "jurisdiction": "Sweden",
+      "force": "NATIONAL_LAW",
+      "status": "IN_FORCE",
+      "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sakerhetsskyddslag-2018585_sfs-2018-585/"
+    },
+    {
+      "id": "COE-AI-225",
+      "title": "Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law (CETS No. 225)",
+      "jurisdiction": "Council of Europe / parties",
+      "force": "TREATY",
+      "status": "OPEN_FOR_SIGNATURE; APPLICABILITY_DEPENDS_ON_RATIFICATION/ENTRY_INTO_FORCE",
+      "url": "https://rm.coe.int/0900001680afae3c"
+    }
+  ]
+}
