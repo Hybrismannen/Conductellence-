@@ -1,5 +1,5 @@
 {
-  "schema": "cdx.paragraph-legal-map/v0.4",
+  "schema": "cdx.paragraph-legal-map/v0.5",
   "law_id": "CDX-LAW-001",
   "law_version": "0.1.0-bootstrap",
   "generated_at": "2026-09-24",
@@ -3416,7 +3416,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-H",
-          "relationship": "TEXTUAL"
+          "relationship": "DERIVED"
         },
         {
           "provision_id": "NIS2-21-2-I",
@@ -3432,7 +3432,7 @@
         },
         {
           "provision_id": "SE-CYBER-2-3-8",
-          "relationship": "TEXTUAL"
+          "relationship": "DERIVED"
         },
         {
           "provision_id": "SE-CYBER-1-10",
@@ -3449,7 +3449,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-H",
-          "relationship": "TEXTUAL"
+          "relationship": "DERIVED"
         },
         {
           "provision_id": "NIS2-21-2-I",
@@ -3465,7 +3465,7 @@
         },
         {
           "provision_id": "SE-CYBER-2-3-8",
-          "relationship": "TEXTUAL"
+          "relationship": "DERIVED"
         }
       ]
     },
@@ -4900,11 +4900,11 @@
         },
         {
           "provision_id": "NIS2-21-2-H",
-          "relationship": "TEXTUAL"
+          "relationship": "DERIVED"
         },
         {
           "provision_id": "SE-CYBER-2-3-8",
-          "relationship": "TEXTUAL"
+          "relationship": "DERIVED"
         }
       ]
     },
@@ -5693,5 +5693,6 @@
         }
       ]
     }
-  ]
+  ],
+  "semantic_policy": "No TEXTUAL relationship is permitted until exact wording support is separately reviewed and recorded."
 }
