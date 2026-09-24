@@ -1,0 +1,26 @@
+{
+  "schema": "cdx.household.phase-record/v0.1",
+  "programme_id": "CDX-PROG-LEGAL-BD-001",
+  "authority_ref": "CDX-CLR-LEGAL-BD-001",
+  "record_type": "DIRECTOR_ACCEPTANCE",
+  "director_state": "ACCEPTED",
+  "janitor_scan_ref": "GHA-RUN-36073951738",
+  "ci_run_ref": "GHA-RUN-36073951738",
+  "committed_sha": "4006669a20dda8379a06a3af69128d017777a324",
+  "hard_stops": [],
+  "unresolved_legal_review": [],
+  "acceptance_state": "PASS",
+  "accepted_at": "2026-09-25",
+  "phase": "C",
+  "handyman_repair_refs": [
+    "CDX-HH-J1-0002"
+  ],
+  "acceptance_basis": [
+    "Five exact-source scope profiles are registered: CFR, GDPR, EU-AIA, NIS2 and SE-CYBER.",
+    "Resolver separates instrument scope, temporal applicability and provision-specific condition.",
+    "Missing/disputed facts resolve to UNKNOWN or LEGAL_REVIEW_REQUIRED.",
+    "NIS2 entity-facing scope remains conditional on national implementation.",
+    "Current AI Act amended application dates are enforced."
+  ],
+  "residual_boundary": "System-specific legal conclusions remain fact-dependent and may require qualified legal review."
+}
