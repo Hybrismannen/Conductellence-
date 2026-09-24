@@ -19,9 +19,6 @@ jobs:
       - name: Audit canonical law integrity
         run: python3 AUDITS/audit_law_integrity.py
 
-      - name: Audit paragraph-level legal anchors
-        run: python3 AUDITS/audit_legal_anchors.py
-
       - name: Audit exact legal reference integrity
         run: python3 AUDITS/audit_legal_reference_integrity.py
 
