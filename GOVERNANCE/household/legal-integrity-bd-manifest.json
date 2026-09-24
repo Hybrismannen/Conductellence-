@@ -115,7 +115,11 @@
   "acceptance_ci_run_ref": "GHA-RUN-36073951738",
   "operational_follow_through": {
     "regulatory_drift_workflow": ".github/workflows/regulatory-drift-monitor.yml",
-    "monitoring_state": "ACTIVATES_ON_DEFAULT_BRANCH_AFTER_MERGE",
-    "legal_change_auto_interpretation": false
+    "monitoring_state": "ACTIVE_DEFAULT_BRANCH",
+    "legal_change_auto_interpretation": false,
+    "activation_condition": "schedule OR relevant main-branch legal/drift change",
+    "daily_cron_utc": "17 3 * * *",
+    "default_branch_merge_sha": "e4be3a65a1c51c565e3606a302a271d88180fa68",
+    "default_branch_constitutional_run_ref": "GHA-RUN-36074146251"
   }
 }

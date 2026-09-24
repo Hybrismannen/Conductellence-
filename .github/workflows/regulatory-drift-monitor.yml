@@ -1,6 +1,13 @@
 name: Conductellence Regulatory Drift Monitor
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'REGULATORY-DRIFT/**'
+      - 'LEGAL-REFERENCES/legal-provision-registry.json'
+      - 'LEGAL-RESOLVER/**'
+      - '.github/workflows/regulatory-drift-monitor.yml'
   schedule:
     - cron: '17 3 * * *'
   workflow_dispatch:
