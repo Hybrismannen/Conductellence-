@@ -1,0 +1,1708 @@
+{
+  "schema": "cdx.regulatory-drift.provision-temporal-state/v0.1",
+  "authority_ref": "CDX-CLR-LEGAL-BD-001",
+  "verified_at": "2026-09-25",
+  "policy": "Temporal state answers when a provision is in force/applicable as represented by registered law. It does not establish actor/system scope or substantive provision conditions.",
+  "provisions": [
+    {
+      "provision_id": "CFR-1",
+      "mode": "FIXED_DATE",
+      "effective_from": "2009-12-01",
+      "current_state": "IN_FORCE",
+      "source_refs": [
+        "CFR-51-1"
+      ],
+      "note": "Charter applicability still depends on Article 51 field of application."
+    },
+    {
+      "provision_id": "CFR-21-1",
+      "mode": "FIXED_DATE",
+      "effective_from": "2009-12-01",
+      "current_state": "IN_FORCE",
+      "source_refs": [
+        "CFR-51-1"
+      ],
+      "note": "Charter applicability still depends on Article 51 field of application."
+    },
+    {
+      "provision_id": "CFR-47",
+      "mode": "FIXED_DATE",
+      "effective_from": "2009-12-01",
+      "current_state": "IN_FORCE",
+      "source_refs": [
+        "CFR-51-1"
+      ],
+      "note": "Charter applicability still depends on Article 51 field of application."
+    },
+    {
+      "provision_id": "CFR-51-1",
+      "mode": "FIXED_DATE",
+      "effective_from": "2009-12-01",
+      "current_state": "IN_FORCE",
+      "source_refs": [
+        "CFR-51-1"
+      ],
+      "note": "Charter applicability still depends on Article 51 field of application."
+    },
+    {
+      "provision_id": "CFR-51-2",
+      "mode": "FIXED_DATE",
+      "effective_from": "2009-12-01",
+      "current_state": "IN_FORCE",
+      "source_refs": [
+        "CFR-51-1"
+      ],
+      "note": "Charter applicability still depends on Article 51 field of application."
+    },
+    {
+      "provision_id": "CFR-7",
+      "mode": "FIXED_DATE",
+      "effective_from": "2009-12-01",
+      "current_state": "IN_FORCE",
+      "source_refs": [
+        "CFR-51-1"
+      ],
+      "note": "Charter applicability still depends on Article 51 field of application."
+    },
+    {
+      "provision_id": "CFR-8-1",
+      "mode": "FIXED_DATE",
+      "effective_from": "2009-12-01",
+      "current_state": "IN_FORCE",
+      "source_refs": [
+        "CFR-51-1"
+      ],
+      "note": "Charter applicability still depends on Article 51 field of application."
+    },
+    {
+      "provision_id": "CFR-8-2",
+      "mode": "FIXED_DATE",
+      "effective_from": "2009-12-01",
+      "current_state": "IN_FORCE",
+      "source_refs": [
+        "CFR-51-1"
+      ],
+      "note": "Charter applicability still depends on Article 51 field of application."
+    },
+    {
+      "provision_id": "CFR-8-3",
+      "mode": "FIXED_DATE",
+      "effective_from": "2009-12-01",
+      "current_state": "IN_FORCE",
+      "source_refs": [
+        "CFR-51-1"
+      ],
+      "note": "Charter applicability still depends on Article 51 field of application."
+    },
+    {
+      "provision_id": "EU-AIA-10-1",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "EU-AIA-10-2",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "EU-AIA-113-A",
+      "mode": "CURRENT_CONSOLIDATED_TEXT",
+      "effective_from": "2026-07-27",
+      "current_state": "IN_FORCE_CURRENT_TEXT",
+      "source_refs": [
+        "EU-AIA-113-A"
+      ],
+      "note": "Current Article 113 text reflects Regulation (EU) 2026/1744 from 27 July 2026."
+    },
+    {
+      "provision_id": "EU-AIA-113-B",
+      "mode": "CURRENT_CONSOLIDATED_TEXT",
+      "effective_from": "2026-07-27",
+      "current_state": "IN_FORCE_CURRENT_TEXT",
+      "source_refs": [
+        "EU-AIA-113-B"
+      ],
+      "note": "Current Article 113 text reflects Regulation (EU) 2026/1744 from 27 July 2026."
+    },
+    {
+      "provision_id": "EU-AIA-113-C-I",
+      "mode": "CURRENT_CONSOLIDATED_TEXT",
+      "effective_from": "2026-07-27",
+      "current_state": "IN_FORCE_CURRENT_TEXT",
+      "source_refs": [
+        "EU-AIA-113-C-I"
+      ],
+      "note": "Current Article 113 text reflects Regulation (EU) 2026/1744 from 27 July 2026."
+    },
+    {
+      "provision_id": "EU-AIA-113-C-II",
+      "mode": "CURRENT_CONSOLIDATED_TEXT",
+      "effective_from": "2026-07-27",
+      "current_state": "IN_FORCE_CURRENT_TEXT",
+      "source_refs": [
+        "EU-AIA-113-C-II"
+      ],
+      "note": "Current Article 113 text reflects Regulation (EU) 2026/1744 from 27 July 2026."
+    },
+    {
+      "provision_id": "EU-AIA-113-D",
+      "mode": "CURRENT_CONSOLIDATED_TEXT",
+      "effective_from": "2026-07-27",
+      "current_state": "IN_FORCE_CURRENT_TEXT",
+      "source_refs": [
+        "EU-AIA-113-D"
+      ],
+      "note": "Current Article 113 text reflects Regulation (EU) 2026/1744 from 27 July 2026."
+    },
+    {
+      "provision_id": "EU-AIA-113-GENERAL",
+      "mode": "CURRENT_CONSOLIDATED_TEXT",
+      "effective_from": "2026-07-27",
+      "current_state": "IN_FORCE_CURRENT_TEXT",
+      "source_refs": [
+        "EU-AIA-113-GENERAL"
+      ],
+      "note": "Current Article 113 text reflects Regulation (EU) 2026/1744 from 27 July 2026."
+    },
+    {
+      "provision_id": "EU-AIA-12-1",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "EU-AIA-12-2",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "EU-AIA-13-1",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "EU-AIA-13-2",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "EU-AIA-14-1",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "EU-AIA-14-2",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "EU-AIA-14-3",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "EU-AIA-15-1",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "EU-AIA-15-4",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "EU-AIA-15-5",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "EU-AIA-19-1",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "EU-AIA-2-1-A",
+      "mode": "FIXED_DATE",
+      "effective_from": "2025-02-02",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "EU-AIA-113-A"
+      ],
+      "note": "Chapter I application date."
+    },
+    {
+      "provision_id": "EU-AIA-2-1-B",
+      "mode": "FIXED_DATE",
+      "effective_from": "2025-02-02",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "EU-AIA-113-A"
+      ],
+      "note": "Chapter I application date."
+    },
+    {
+      "provision_id": "EU-AIA-2-1-C",
+      "mode": "FIXED_DATE",
+      "effective_from": "2025-02-02",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "EU-AIA-113-A"
+      ],
+      "note": "Chapter I application date."
+    },
+    {
+      "provision_id": "EU-AIA-2-1-D",
+      "mode": "FIXED_DATE",
+      "effective_from": "2025-02-02",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "EU-AIA-113-A"
+      ],
+      "note": "Chapter I application date."
+    },
+    {
+      "provision_id": "EU-AIA-2-1-E",
+      "mode": "FIXED_DATE",
+      "effective_from": "2025-02-02",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "EU-AIA-113-A"
+      ],
+      "note": "Chapter I application date."
+    },
+    {
+      "provision_id": "EU-AIA-2-1-F",
+      "mode": "FIXED_DATE",
+      "effective_from": "2025-02-02",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "EU-AIA-113-A"
+      ],
+      "note": "Chapter I application date."
+    },
+    {
+      "provision_id": "EU-AIA-2-1-G",
+      "mode": "FIXED_DATE",
+      "effective_from": "2025-02-02",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "EU-AIA-113-A"
+      ],
+      "note": "Chapter I application date."
+    },
+    {
+      "provision_id": "EU-AIA-2-10",
+      "mode": "FIXED_DATE",
+      "effective_from": "2025-02-02",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "EU-AIA-113-A"
+      ],
+      "note": "Chapter I application date."
+    },
+    {
+      "provision_id": "EU-AIA-2-12",
+      "mode": "FIXED_DATE",
+      "effective_from": "2025-02-02",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "EU-AIA-113-A"
+      ],
+      "note": "Chapter I application date."
+    },
+    {
+      "provision_id": "EU-AIA-2-6",
+      "mode": "FIXED_DATE",
+      "effective_from": "2025-02-02",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "EU-AIA-113-A"
+      ],
+      "note": "Chapter I application date."
+    },
+    {
+      "provision_id": "EU-AIA-2-8",
+      "mode": "FIXED_DATE",
+      "effective_from": "2025-02-02",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "EU-AIA-113-A"
+      ],
+      "note": "Chapter I application date."
+    },
+    {
+      "provision_id": "EU-AIA-20-1",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "EU-AIA-26-1",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "EU-AIA-26-2",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "EU-AIA-26-4",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "EU-AIA-26-5",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "EU-AIA-3-1",
+      "mode": "FIXED_DATE",
+      "effective_from": "2025-02-02",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "EU-AIA-113-A"
+      ],
+      "note": "Chapter I application date."
+    },
+    {
+      "provision_id": "EU-AIA-3-3",
+      "mode": "FIXED_DATE",
+      "effective_from": "2025-02-02",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "EU-AIA-113-A"
+      ],
+      "note": "Chapter I application date."
+    },
+    {
+      "provision_id": "EU-AIA-3-4",
+      "mode": "FIXED_DATE",
+      "effective_from": "2025-02-02",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "EU-AIA-113-A"
+      ],
+      "note": "Chapter I application date."
+    },
+    {
+      "provision_id": "EU-AIA-3-8",
+      "mode": "FIXED_DATE",
+      "effective_from": "2025-02-02",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "EU-AIA-113-A"
+      ],
+      "note": "Chapter I application date."
+    },
+    {
+      "provision_id": "EU-AIA-50-1",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-08-02",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "EU-AIA-113-GENERAL"
+      ],
+      "note": "Additional transition rules may apply to systems placed on the market before 2 August 2026; resolver may require legal review for those cases."
+    },
+    {
+      "provision_id": "EU-AIA-50-2",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-08-02",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "EU-AIA-113-GENERAL"
+      ],
+      "note": "Additional transition rules may apply to systems placed on the market before 2 August 2026; resolver may require legal review for those cases."
+    },
+    {
+      "provision_id": "EU-AIA-9-1",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "EU-AIA-9-2",
+      "mode": "AI_HIGH_RISK_SPLIT",
+      "current_state": "FUTURE_OR_SYSTEM_DEPENDENT",
+      "branches": [
+        {
+          "high_risk_basis": "ARTICLE_6_2_ANNEX_III",
+          "effective_from": "2027-12-02",
+          "source_refs": [
+            "EU-AIA-113-C-I"
+          ]
+        },
+        {
+          "high_risk_basis": "ARTICLE_6_1_ANNEX_I",
+          "effective_from": "2028-08-02",
+          "source_refs": [
+            "EU-AIA-113-C-II"
+          ]
+        }
+      ],
+      "note": "Chapter III Sections 1–3 application dates as amended by Regulation (EU) 2026/1744; Article 6(5) exception not relevant to these registered provisions."
+    },
+    {
+      "provision_id": "GDPR-2-1",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-2-2-A",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-2-2-C",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-2-2-D",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-22-1",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-22-3",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-24-1",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-25-1",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-25-2",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-3-1",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-3-2-A",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-3-2-B",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-3-3",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-32-1",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-32-1-B",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-32-1-C",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-32-1-D",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-32-2",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-32-4",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-33-1",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-4-1",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-4-2",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-4-7",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-4-8",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-5-1-A",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-5-1-B",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-5-1-C",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-5-1-D",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-5-1-E",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-5-1-F",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "GDPR-99-2",
+      "mode": "FIXED_DATE",
+      "effective_from": "2018-05-25",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "GDPR-99-2"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "NIS2-2-1",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-2-2-A-I",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-2-2-A-II",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-2-2-A-III",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-2-2-B",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-2-2-C",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-2-2-D",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-2-2-E",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-2-2-F-I",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-2-2-F-II",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-2-3",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-20-1",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-20-2",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-21-1",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-21-2-A",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-21-2-B",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-21-2-C",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-21-2-D",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-21-2-E",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-21-2-F",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-21-2-G",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-21-2-H",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-21-2-I",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-21-2-J",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-21-3",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-21-4",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-23-4-A",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-23-4-B",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-23-4-C",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-23-4-D",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-23-4-E",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-41-1",
+      "mode": "DIRECTIVE_TRANSPOSITION",
+      "effective_from": "2024-10-18",
+      "current_state": "NATIONAL_IMPLEMENTATION_REQUIRED",
+      "source_refs": [
+        "NIS2-41-1"
+      ],
+      "note": "Do not infer direct generic entity applicability from this temporal record."
+    },
+    {
+      "provision_id": "NIS2-45",
+      "mode": "IN_FORCE_REFERENCE",
+      "effective_from": "2023-01-16",
+      "current_state": "IN_FORCE",
+      "source_refs": [
+        "NIS2-45"
+      ],
+      "note": "Directive legal act in force; entity-facing duties are mediated through national implementation."
+    },
+    {
+      "provision_id": "SE-CYBER-1-10",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-1-11",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-1-12",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-1-14",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-1-3",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-1-4",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-1-5",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-1-6",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-1-7",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-1-8",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-2-3-1",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-2-3-10",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-2-3-2",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-2-3-3",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-2-3-4",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-2-3-5",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-2-3-6",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-2-3-7",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-2-3-8",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-2-3-9",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-2-3-P1",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-2-4",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-2-5",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-2-6",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-2-7",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-2-8",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-3-5",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-3-6",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-3-7",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    },
+    {
+      "provision_id": "SE-CYBER-TRANS-1",
+      "mode": "FIXED_DATE",
+      "effective_from": "2026-01-15",
+      "current_state": "APPLICABLE",
+      "source_refs": [
+        "SE-CYBER-TRANS-1"
+      ],
+      "note": null
+    }
+  ]
+}
