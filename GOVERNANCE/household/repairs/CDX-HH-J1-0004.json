@@ -1,0 +1,17 @@
+{
+  "schema": "cdx.household.repair-record/v0.1",
+  "programme_id": "CDX-PROG-LEGAL-BD-001",
+  "authority_ref": "CDX-CLR-LEGAL-BD-001",
+  "repair_id": "CDX-HH-J1-0004",
+  "phase": "D",
+  "classification": "J1",
+  "finding_severity": "CONTROL_DEFECT",
+  "finding": "Phase D audit contained two literal backslash-n tokens in the source-ID uniqueness assertion, causing Python SyntaxError.",
+  "deterministic_basis": "Replace literal escape text with actual line breaks; no condition or expected value changes.",
+  "allowed_paths": [
+    "AUDITS/audit_phase_d_regulatory_drift.py"
+  ],
+  "semantic_or_legal_judgment": false,
+  "status": "APPLIED_PENDING_RESCAN",
+  "applied_at": "2026-09-25"
+}
