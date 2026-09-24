@@ -1,0 +1,26 @@
+name: Conductellence Law Audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  constitutional-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Audit canonical law integrity
+        run: python3 AUDITS/audit_law_integrity.py
+
+      - name: Audit law-to-control coverage
+        run: python3 AUDITS/audit_binding_coverage.py
+
+      - name: Audit canonical root structure
+        run: python3 AUDITS/audit_root_structure.py
