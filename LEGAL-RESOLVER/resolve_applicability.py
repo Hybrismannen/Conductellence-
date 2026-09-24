@@ -103,12 +103,12 @@ def resolve(case):
     pmap={p["id"]:p for p in preg["provisions"]}; tmap={x["provision_id"]:x for x in temporal["provisions"]}
     pid=case.get("provision_id"); facts=case.get("facts") or {}; snap=case.get("legal_snapshot_date")
     if pid not in pmap:
-        return {"result":"LEGAL_REVIEW_REQUIRED","reasoning_state":"UNKNOWN_PROVISION","provision_id":pid,"scope":None,"temporal":None,"reasoning_summary":"Provision ID absent from exact verified registry."}
+        return {"result":"LEGAL_REVIEW_REQUIRED","reasoning_state":"UNKNOWN_PROVISION","provision_id":pid,"scope":None,"temporal":None,"applicability_inferred_from_citation":False,"reasoning_summary":"Provision ID absent from exact verified registry."}
     if not snap:
-        return {"result":"UNKNOWN","reasoning_state":"MISSING_SNAPSHOT_DATE","provision_id":pid,"scope":None,"temporal":None,"reasoning_summary":"legal_snapshot_date is required."}
+        return {"result":"UNKNOWN","reasoning_state":"MISSING_SNAPSHOT_DATE","provision_id":pid,"scope":None,"temporal":None,"applicability_inferred_from_citation":False,"reasoning_summary":"legal_snapshot_date is required."}
     profile=profile_for(pid,profiles)
     if not profile:
-        return {"result":"LEGAL_REVIEW_REQUIRED","reasoning_state":"NO_UNIQUE_SCOPE_PROFILE","provision_id":pid,"scope":None,"temporal":None,"reasoning_summary":"No unique admitted scope profile."}
+        return {"result":"LEGAL_REVIEW_REQUIRED","reasoning_state":"NO_UNIQUE_SCOPE_PROFILE","provision_id":pid,"scope":None,"temporal":None,"applicability_inferred_from_citation":False,"reasoning_summary":"No unique admitted scope profile."}
     scope=resolve_scope(profile,facts); temp=resolve_temporal(pid,snap,facts,tmap)
     result,state=combine(scope,temp,pid,profile,facts)
     return {
