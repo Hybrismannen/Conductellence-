@@ -30,3 +30,12 @@ jobs:
 
       - name: Audit canonical root structure
         run: python3 AUDITS/audit_root_structure.py
+
+      - name: Audit Phase B semantic review queue
+        run: python3 AUDITS/audit_phase_b_semantic_queue.py
+
+      - name: Audit Phase C fail-safe Legal Resolver
+        run: python3 AUDITS/audit_phase_c_legal_resolver.py
+
+      - name: Audit Phase D regulatory drift state
+        run: python3 AUDITS/audit_phase_d_regulatory_drift.py
