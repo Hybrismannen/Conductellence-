@@ -1,0 +1,17 @@
+{
+  "schema": "cdx.household.repair-record/v0.1",
+  "programme_id": "CDX-PROG-LEGAL-BD-001",
+  "authority_ref": "CDX-CLR-LEGAL-BD-001",
+  "repair_id": "CDX-HH-J1-0002",
+  "phase": "C",
+  "classification": "J1",
+  "finding_severity": "CONTROL_DEFECT",
+  "finding": "Fail-safe early-return applicability decisions omitted the explicit applicability_inferred_from_citation=false evidence field.",
+  "deterministic_basis": "All early-return paths occur before citation-based inference and already return UNKNOWN/LEGAL_REVIEW_REQUIRED. The canonical resolver contract requires the flag to be explicitly false on every result.",
+  "allowed_paths": [
+    "LEGAL-RESOLVER/resolve_applicability.py"
+  ],
+  "semantic_or_legal_judgment": false,
+  "status": "APPLIED_PENDING_RESCAN",
+  "applied_at": "2026-09-25"
+}
