@@ -374,6 +374,26 @@
       "subject": "Excludes specified free/open-source AI systems unless placed on the market or put into service as high-risk or within Articles 5 or 50."
     },
     {
+      "id": "EU-AIA-2-6",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 2(6)",
+      "title": "Scientific R&D exclusion",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Excludes AI systems or AI models, including their output, specifically developed and put into service for the sole purpose of scientific research and development."
+    },
+    {
+      "id": "EU-AIA-2-8",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act), consolidated 27 July 2026",
+      "locator": "Article 2(8)",
+      "title": "Pre-market research/testing/development exclusion",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+      "verified_at": "2026-09-25",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Excludes research, testing or development activities regarding AI systems/models before market placement or putting into service, except real-world testing as stated."
+    },
+    {
       "id": "EU-AIA-20-1",
       "instrument": "Regulation (EU) 2024/1689 (AI Act)",
       "locator": "Article 20(1)",
