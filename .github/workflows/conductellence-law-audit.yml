@@ -22,6 +22,9 @@ jobs:
       - name: Audit exact legal reference integrity
         run: python3 AUDITS/audit_legal_reference_integrity.py
 
+      - name: Audit Legal Integrity B-D clearance order
+        run: python3 AUDITS/audit_legal_phase_clearance.py
+
       - name: Audit law-to-control coverage
         run: python3 AUDITS/audit_binding_coverage.py
 
