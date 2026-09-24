@@ -1,0 +1,18 @@
+{
+  "schema": "cdx.enforcement-state/v0.1",
+  "law_id": "CDX-LAW-001",
+  "mode": "BOOTSTRAP",
+  "effective_at": "2026-09-24",
+  "meanings": {
+    "BOOTSTRAP": "Law and audit architecture are authoritative for development, but incomplete technical binding is permitted only when explicitly represented as bootstrap debt.",
+    "ENFORCING": "All provisions designated FULLY_AUTOMATABLE must have implemented controls and executable audits before the estate may claim full Conductellence enforcement."
+  },
+  "transition_to_enforcing_requires": [
+    "all FULLY_AUTOMATABLE sections bound to implemented controls",
+    "all objectively testable controls bound to executable audits",
+    "policy decision layer operational",
+    "evidence plane operational and independently preserved",
+    "constitutional amendment path protected",
+    "critical adversarial acceptance tests passed"
+  ]
+}
