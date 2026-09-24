@@ -1,0 +1,23 @@
+{
+  "schema": "cdx.household.phase-record/v0.1",
+  "programme_id": "CDX-PROG-LEGAL-BD-001",
+  "authority_ref": "CDX-CLR-LEGAL-BD-001",
+  "record_type": "DIRECTOR_ACCEPTANCE",
+  "director_state": "ACCEPTED",
+  "janitor_scan_ref": "GHA-RUN-36073951738",
+  "ci_run_ref": "GHA-RUN-36073951738",
+  "committed_sha": "4006669a20dda8379a06a3af69128d017777a324",
+  "hard_stops": [],
+  "unresolved_legal_review": [],
+  "acceptance_state": "PASS",
+  "accepted_at": "2026-09-25",
+  "phase": "B",
+  "handyman_repair_refs": [],
+  "acceptance_basis": [
+    "934/934 paragraph-to-provision edges reviewed.",
+    "All 934 retained as CONTEXTUAL reference-only relationships.",
+    "No DERIVED or TEXTUAL claim exists without proof.",
+    "No applicability claim was created from citation presence."
+  ],
+  "residual_boundary": "Future promotion to DERIVED/TEXTUAL remains separately gated by verified semantic proof."
+}

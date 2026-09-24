@@ -35,7 +35,7 @@
     {
       "phase": "B",
       "name": "Semantic Support Proof",
-      "state": "DISPATCHED",
+      "state": "PASS",
       "dependency": null,
       "objective": "Prove or withhold paragraph-by-provision support relationships without inferring applicability.",
       "required_outputs": [
@@ -49,12 +49,15 @@
         "Unresolved support remains CONTEXTUAL or unresolved",
         "Exact source locator and paragraph/provision identity pass CI",
         "No legal applicability claim inferred from support relation"
-      ]
+      ],
+      "accepted_at": "2026-09-25",
+      "accepted_implementation_sha": "4006669a20dda8379a06a3af69128d017777a324",
+      "acceptance_record": "GOVERNANCE/household/records/CDX-HH-B-ACCEPT-001.json"
     },
     {
       "phase": "C",
       "name": "Legal Applicability Resolver",
-      "state": "CLEARED_PENDING_B",
+      "state": "PASS",
       "dependency": "B:PASS",
       "objective": "Resolve system-specific legal applicability independently from citation relevance/support.",
       "result_grammar": [
@@ -76,12 +79,15 @@
         "UNKNOWN never silently becomes DOES_NOT_APPLY",
         "Every result records facts, legal state, time and reasoning path",
         "Disputed legal classification becomes LEGAL_REVIEW_REQUIRED"
-      ]
+      ],
+      "accepted_at": "2026-09-25",
+      "accepted_implementation_sha": "4006669a20dda8379a06a3af69128d017777a324",
+      "acceptance_record": "GOVERNANCE/household/records/CDX-HH-C-ACCEPT-001.json"
     },
     {
       "phase": "D",
       "name": "Regulatory Drift and Temporal Legal State",
-      "state": "CLEARED_PENDING_C",
+      "state": "PASS",
       "dependency": "C:PASS",
       "objective": "Detect and govern changes in external legal sources while preserving historical state.",
       "required_outputs": [
@@ -96,8 +102,20 @@
         "Source failure does not become legal-state change",
         "Drift events are attributable and append-oriented",
         "Material change triggers affected-object reassessment"
-      ]
+      ],
+      "accepted_at": "2026-09-25",
+      "accepted_implementation_sha": "4006669a20dda8379a06a3af69128d017777a324",
+      "acceptance_record": "GOVERNANCE/household/records/CDX-HH-D-ACCEPT-001.json"
     }
   ],
-  "audit_reference_statement": "Audit authority — CDX-CLR-LEGAL-BD-001: Human sovereign authority cleared continuous execution of Conductellence Legal Integrity Phases B–D under Household Family control. The clearance authorizes research, exact-source verification, semantic-proof work, applicability-engine development, temporal legal-state and regulatory-drift infrastructure, registered deterministic J1 repair, CI and sequential Director dispatch. It does not pre-authorize PASS, legal applicability judgments, disputed semantic equivalence, constitutional amendment, bypass of hard stops, or autonomous expansion of authority. Director acceptance is valid only for committed state under audit after required Janitor scan, permitted repair, re-scan and phase-specific acceptance gates."
+  "audit_reference_statement": "Audit authority — CDX-CLR-LEGAL-BD-001: Human sovereign authority cleared continuous execution of Conductellence Legal Integrity Phases B–D under Household Family control. The clearance authorizes research, exact-source verification, semantic-proof work, applicability-engine development, temporal legal-state and regulatory-drift infrastructure, registered deterministic J1 repair, CI and sequential Director dispatch. It does not pre-authorize PASS, legal applicability judgments, disputed semantic equivalence, constitutional amendment, bypass of hard stops, or autonomous expansion of authority. Director acceptance is valid only for committed state under audit after required Janitor scan, permitted repair, re-scan and phase-specific acceptance gates.",
+  "programme_state": "CLOSED",
+  "closed_at": "2026-09-25",
+  "accepted_implementation_sha": "4006669a20dda8379a06a3af69128d017777a324",
+  "acceptance_ci_run_ref": "GHA-RUN-36073951738",
+  "operational_follow_through": {
+    "regulatory_drift_workflow": ".github/workflows/regulatory-drift-monitor.yml",
+    "monitoring_state": "ACTIVATES_ON_DEFAULT_BRANCH_AFTER_MERGE",
+    "legal_change_auto_interpretation": false
+  }
 }

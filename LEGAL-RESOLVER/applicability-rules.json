@@ -1,0 +1,16 @@
+{
+  "schema": "cdx.legal-resolver.rules/v0.2",
+  "authority_ref": "CDX-CLR-LEGAL-BD-001",
+  "mode": "THREE_STAGE_EXACT_PROVISION_RESOLUTION",
+  "scope_profiles_ref": "LEGAL-RESOLVER/scope-profiles.json",
+  "temporal_state_ref": "REGULATORY-DRIFT/provision-temporal-state.json",
+  "exact_provision_registry_ref": "LEGAL-REFERENCES/legal-provision-registry.json",
+  "policy": [
+    "Citation presence cannot create applicability.",
+    "Instrument scope is evaluated only from registered exact scope provisions.",
+    "Temporal applicability is evaluated independently from scope.",
+    "Substantive provisions require provision_condition_met unless they are scope/temporal provisions.",
+    "Missing or disputed facts resolve to UNKNOWN or LEGAL_REVIEW_REQUIRED, never APPLIES."
+  ],
+  "rules": []
+}

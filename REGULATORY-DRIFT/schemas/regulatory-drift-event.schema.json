@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://conductellence.local/schemas/regulatory-drift-event.schema.json",
+  "title": "Conductellence Regulatory Drift Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "authority_ref",
+    "source_id",
+    "observed_at",
+    "event_type",
+    "prior_state_ref",
+    "evidence_refs",
+    "interpretation_state"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "pattern": "^CDX-RDE-[A-Z0-9-]+$"
+    },
+    "authority_ref": {
+      "const": "CDX-CLR-LEGAL-BD-001"
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^CDX-LSRC-[0-9]{3}$"
+    },
+    "observed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "event_type": {
+      "enum": [
+        "REACHABLE",
+        "SOURCE_UNREACHABLE",
+        "HTTP_METADATA_CHANGED",
+        "FINGERPRINT_CHANGED",
+        "SOURCE_REDIRECTED",
+        "VERIFICATION_STALE",
+        "MANUAL_LEGAL_CHANGE_CONFIRMED",
+        "NO_CHANGE_OBSERVED"
+      ]
+    },
+    "prior_state_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "http_status": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "observed_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "fingerprint_before": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fingerprint_after": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "interpretation_state": {
+      "enum": [
+        "NONE",
+        "DRIFT_CANDIDATE",
+        "LEGAL_REVIEW_REQUIRED",
+        "HUMAN_CONFIRMED"
+      ]
+    },
+    "affected_provision_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

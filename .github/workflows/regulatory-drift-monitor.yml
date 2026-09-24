@@ -1,0 +1,67 @@
+name: Conductellence Regulatory Drift Monitor
+
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  regulatory-drift:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Restore prior regulatory observation
+        uses: actions/cache@v4
+        with:
+          path: .regulatory-drift-cache
+          key: regulatory-drift-${{ github.run_id }}
+          restore-keys: |
+            regulatory-drift-
+
+      - name: Prepare output
+        run: mkdir -p .regulatory-drift-output .regulatory-drift-cache
+
+      - name: Observe official legal sources
+        run: |
+          PRIOR=""
+          if [ -f .regulatory-drift-cache/previous.json ]; then
+            PRIOR="--prior .regulatory-drift-cache/previous.json"
+          fi
+          python3 REGULATORY-DRIFT/check_source_reachability.py \
+            $PRIOR \
+            --output .regulatory-drift-output/observation.json
+
+      - name: Build deterministic impact queue
+        run: |
+          python3 REGULATORY-DRIFT/build_impact_queue.py \
+            .regulatory-drift-output/observation.json \
+            --output .regulatory-drift-output/impact-queue.json
+
+      - name: Preserve observation as next comparison baseline
+        run: cp .regulatory-drift-output/observation.json .regulatory-drift-cache/previous.json
+
+      - name: Write workflow summary
+        run: |
+          python3 - <<'PY'
+          import json, os
+          p=json.load(open(".regulatory-drift-output/impact-queue.json"))
+          c=p["counts"]
+          with open(os.environ["GITHUB_STEP_SUMMARY"],"a") as f:
+              f.write("## Conductellence regulatory drift\n\n")
+              f.write(f"- Drift sources: {c['drift_sources']}\n")
+              f.write(f"- Affected provisions: {c['affected_provisions']}\n")
+              f.write(f"- Affected Conductellence paragraphs: {c['affected_paragraphs']}\n")
+              f.write("- Legal change inferred automatically: **No**\n")
+          PY
+
+      - name: Upload regulatory drift evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: regulatory-drift-${{ github.run_id }}
+          path: .regulatory-drift-output/
+          retention-days: 90

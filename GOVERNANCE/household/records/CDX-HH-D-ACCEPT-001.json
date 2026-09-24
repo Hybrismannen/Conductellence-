@@ -1,0 +1,28 @@
+{
+  "schema": "cdx.household.phase-record/v0.1",
+  "programme_id": "CDX-PROG-LEGAL-BD-001",
+  "authority_ref": "CDX-CLR-LEGAL-BD-001",
+  "record_type": "DIRECTOR_ACCEPTANCE",
+  "director_state": "ACCEPTED",
+  "janitor_scan_ref": "GHA-RUN-36073951738",
+  "ci_run_ref": "GHA-RUN-36073951738",
+  "committed_sha": "4006669a20dda8379a06a3af69128d017777a324",
+  "hard_stops": [],
+  "unresolved_legal_review": [],
+  "acceptance_state": "PASS",
+  "accepted_at": "2026-09-25",
+  "phase": "D",
+  "handyman_repair_refs": [
+    "CDX-HH-J1-0001",
+    "CDX-HH-J1-0003",
+    "CDX-HH-J1-0004"
+  ],
+  "acceptance_basis": [
+    "All 146 exact legal provisions have temporal state.",
+    "All official source URLs are uniquely registered.",
+    "Confirmed AI Act 2026 amendment and Swedish Cybersecurity Act entry-into-force events are recorded.",
+    "Daily source observation and deterministic impact-queue machinery are implemented.",
+    "Source failure, redirect or fingerprint drift cannot automatically alter legal state."
+  ],
+  "residual_boundary": "Detected source drift requires reassessment; ambiguous substantive legal change remains human/legal review."
+}
