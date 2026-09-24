@@ -11,12 +11,12 @@ STATE=Path("REGULATORY-DRIFT/source-state.json")
 TEMPORAL=Path("REGULATORY-DRIFT/provision-temporal-state.json")
 CHANGES=Path("REGULATORY-DRIFT/confirmed-change-events.json")
 PROVISIONS=Path("LEGAL-REFERENCES/legal-provision-registry.json")
-CHECKER=Path("REGULATORY-DRIFT/check_source_reachability.py")
+CHECKER=Path("REGULATORY-DRIFT/check_source_reachability.py")\nIMPACT=Path("REGULATORY-DRIFT/build_impact_queue.py")
 
 def fail(msg):
     print("FAIL:",msg); raise SystemExit(1)
 
-for p in (STATE,TEMPORAL,CHANGES,PROVISIONS,CHECKER):
+for p in (STATE,TEMPORAL,CHANGES,PROVISIONS,CHECKER,IMPACT):
     if not p.exists(): fail(f"missing {p}")
 
 state=json.loads(STATE.read_text())
@@ -31,7 +31,7 @@ if pids!=set(tmap):
 
 sources=state.get("sources",[])
 by_url={s["official_url"]:s for s in sources}
-if len(by_url)!=len(sources): fail("duplicate official source URL")
+if len(by_url)!=len(sources): fail("duplicate official source URL")\nsource_ids=[s["source_id"] for s in sources]\nif len(source_ids)!=len(set(source_ids)): fail("duplicate source_id in source-state registry")
 missing=[p["id"] for p in preg["provisions"] if p["official_url"] not in by_url]
 if missing: fail(f"{len(missing)} provisions lack source-state coverage")
 
