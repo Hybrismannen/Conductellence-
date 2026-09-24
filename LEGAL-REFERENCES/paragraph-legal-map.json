@@ -1,5 +1,5 @@
 {
-  "schema": "cdx.paragraph-legal-map/v0.5",
+  "schema": "cdx.paragraph-legal-map/v0.6",
   "law_id": "CDX-LAW-001",
   "law_version": "0.1.0-bootstrap",
   "generated_at": "2026-09-24",
@@ -31,7 +31,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRE-P02",
@@ -42,7 +44,7 @@
       "references": [
         {
           "provision_id": "EU-AIA-14-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-20-1",
@@ -52,7 +54,9 @@
           "provision_id": "CFR-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRE-P03",
@@ -73,7 +77,9 @@
           "provision_id": "CFR-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRE-P04",
@@ -84,11 +90,11 @@
       "references": [
         {
           "provision_id": "EU-AIA-14-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-20-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "CFR-1",
@@ -96,17 +102,19 @@
         },
         {
           "provision_id": "EU-AIA-12-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-12-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-19-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRE-P05",
@@ -127,7 +135,9 @@
           "provision_id": "CFR-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRE-P06",
@@ -150,17 +160,19 @@
         },
         {
           "provision_id": "EU-AIA-12-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-12-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-19-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRE-P07",
@@ -183,7 +195,7 @@
         },
         {
           "provision_id": "NIS2-21-2-F",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-2-3-6",
@@ -193,7 +205,9 @@
           "provision_id": "GDPR-32-1-D",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-I-P01",
@@ -204,17 +218,19 @@
       "references": [
         {
           "provision_id": "EU-AIA-14-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-26-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-22-3",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-I-P02",
@@ -225,17 +241,19 @@
       "references": [
         {
           "provision_id": "EU-AIA-14-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-26-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-22-3",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-I-P03",
@@ -250,13 +268,15 @@
         },
         {
           "provision_id": "EU-AIA-26-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-22-3",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-II-P01",
@@ -277,7 +297,9 @@
           "provision_id": "EU-AIA-15-5",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-II-P02",
@@ -310,7 +332,9 @@
           "provision_id": "SE-CYBER-1-10",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-II-P03",
@@ -331,7 +355,9 @@
           "provision_id": "EU-AIA-15-5",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-III-P01",
@@ -352,7 +378,9 @@
           "provision_id": "NIS2-21-2-I",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-III-P02",
@@ -367,13 +395,15 @@
         },
         {
           "provision_id": "GDPR-32-4",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-2-I",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-III-P03",
@@ -388,13 +418,15 @@
         },
         {
           "provision_id": "GDPR-32-4",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-2-I",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-IV-P01",
@@ -423,7 +455,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-IV-P02",
@@ -434,7 +468,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-I",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-25-2",
@@ -456,7 +490,9 @@
           "provision_id": "EU-AIA-20-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-IV-P03",
@@ -477,7 +513,9 @@
           "provision_id": "NIS2-21-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-V-P01",
@@ -498,7 +536,9 @@
           "provision_id": "EU-AIA-19-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-V-P02",
@@ -519,7 +559,9 @@
           "provision_id": "EU-AIA-19-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-V-P03",
@@ -540,7 +582,9 @@
           "provision_id": "EU-AIA-19-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-V-P04",
@@ -561,7 +605,9 @@
           "provision_id": "EU-AIA-19-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-VI-P01",
@@ -582,7 +628,9 @@
           "provision_id": "SE-CYBER-3-5",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-VI-P02",
@@ -615,7 +663,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-VI-P03",
@@ -626,11 +676,11 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-F",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-32-1-D",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-3-5",
@@ -640,7 +690,9 @@
           "provision_id": "SE-CYBER-2-3-6",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-VII-P01",
@@ -669,7 +721,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-VII-P02",
@@ -684,7 +738,7 @@
         },
         {
           "provision_id": "GDPR-32-1-C",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-20-1",
@@ -700,9 +754,11 @@
         },
         {
           "provision_id": "GDPR-32-1-D",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-PRI-VII-P03",
@@ -727,7 +783,9 @@
           "provision_id": "NIS2-21-4",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-01-01-P01",
@@ -742,15 +800,15 @@
         },
         {
           "provision_id": "EU-AIA-14-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-2-E",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-2-3-5",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-2-F",
@@ -760,7 +818,9 @@
           "provision_id": "SE-CYBER-2-3-6",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-01-01-P02",
@@ -779,11 +839,11 @@
         },
         {
           "provision_id": "EU-AIA-12-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-12-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-19-1",
@@ -793,7 +853,9 @@
           "provision_id": "SE-CYBER-1-10",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-01-02-P01",
@@ -816,7 +878,7 @@
         },
         {
           "provision_id": "EU-AIA-10-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-2-E",
@@ -826,7 +888,9 @@
           "provision_id": "SE-CYBER-2-3-5",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-01-02-P02",
@@ -851,7 +915,9 @@
           "provision_id": "GDPR-24-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-01-03-P01",
@@ -866,7 +932,7 @@
         },
         {
           "provision_id": "EU-AIA-14-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-1-10",
@@ -876,7 +942,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-01-03-P02",
@@ -891,9 +959,11 @@
         },
         {
           "provision_id": "EU-AIA-14-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-01-04-P01",
@@ -918,7 +988,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-01-04-P02",
@@ -935,7 +1007,9 @@
           "provision_id": "EU-AIA-14-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-01-05-P01",
@@ -946,13 +1020,15 @@
       "references": [
         {
           "provision_id": "NIS2-21-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-14-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-01-05-P02",
@@ -977,7 +1053,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-01-06-P01",
@@ -996,17 +1074,19 @@
         },
         {
           "provision_id": "EU-AIA-12-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-12-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-19-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-02-01-P01",
@@ -1023,7 +1103,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-02-01-P02",
@@ -1040,7 +1122,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-02-02-P01",
@@ -1057,7 +1141,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-02-02-P02",
@@ -1074,7 +1160,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-02-03-P01",
@@ -1091,7 +1179,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-02-03-P02",
@@ -1108,7 +1198,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-02-04-P01",
@@ -1125,7 +1217,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-02-04-P02",
@@ -1142,7 +1236,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-02-05-P01",
@@ -1171,7 +1267,9 @@
           "provision_id": "EU-AIA-19-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-02-05-P02",
@@ -1188,7 +1286,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-02-06-P01",
@@ -1205,7 +1305,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-03-01-P01",
@@ -1230,7 +1332,9 @@
           "provision_id": "GDPR-24-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-03-01-P02",
@@ -1251,7 +1355,9 @@
           "provision_id": "NIS2-20-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-03-02-P01",
@@ -1272,7 +1378,9 @@
           "provision_id": "NIS2-20-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-03-02-P02",
@@ -1301,7 +1409,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-03-03-P01",
@@ -1328,9 +1438,11 @@
         },
         {
           "provision_id": "EU-AIA-10-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-03-04-P01",
@@ -1353,13 +1465,15 @@
         },
         {
           "provision_id": "NIS2-21-2-E",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-2-3-5",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-03-05-P01",
@@ -1386,13 +1500,15 @@
         },
         {
           "provision_id": "EU-AIA-10-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-2-F",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-03-05-P02",
@@ -1413,7 +1529,9 @@
           "provision_id": "NIS2-20-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-04-01-P01",
@@ -1440,9 +1558,11 @@
         },
         {
           "provision_id": "EU-AIA-10-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-04-02-P01",
@@ -1465,9 +1585,11 @@
         },
         {
           "provision_id": "SE-CYBER-2-3-10",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-04-02-P02",
@@ -1478,7 +1600,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-I",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-2-J",
@@ -1486,9 +1608,11 @@
         },
         {
           "provision_id": "EU-AIA-26-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-04-03-P01",
@@ -1511,7 +1635,7 @@
         },
         {
           "provision_id": "NIS2-21-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-9-1",
@@ -1521,7 +1645,9 @@
           "provision_id": "EU-AIA-9-2",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-04-04-P01",
@@ -1532,7 +1658,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-I",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-2-J",
@@ -1546,7 +1672,9 @@
           "provision_id": "SE-CYBER-2-3-10",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-04-05-P01",
@@ -1557,7 +1685,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-I",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-2-J",
@@ -1565,21 +1693,23 @@
         },
         {
           "provision_id": "EU-AIA-26-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-14-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-22-3",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-2-3-10",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-04-05-P02",
@@ -1590,7 +1720,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-I",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-2-J",
@@ -1598,13 +1728,15 @@
         },
         {
           "provision_id": "EU-AIA-26-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-2-3-10",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-04-06-P01",
@@ -1615,7 +1747,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-I",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-2-J",
@@ -1623,7 +1755,7 @@
         },
         {
           "provision_id": "EU-AIA-26-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-2-3-10",
@@ -1637,7 +1769,9 @@
           "provision_id": "NIS2-21-4",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-05-01-P01",
@@ -1656,21 +1790,23 @@
         },
         {
           "provision_id": "GDPR-32-4",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-12-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-12-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-19-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-05-01-P02",
@@ -1691,7 +1827,9 @@
           "provision_id": "GDPR-32-4",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-05-02-P01",
@@ -1702,7 +1840,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-I",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-14-3",
@@ -1712,7 +1850,9 @@
           "provision_id": "GDPR-32-4",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-05-02-P02",
@@ -1733,7 +1873,9 @@
           "provision_id": "GDPR-32-4",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-05-03-P01",
@@ -1754,7 +1896,9 @@
           "provision_id": "GDPR-32-4",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-05-04-P01",
@@ -1765,17 +1909,19 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-I",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-14-3",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-32-4",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-05-04-P02",
@@ -1796,7 +1942,9 @@
           "provision_id": "GDPR-32-4",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-05-05-P01",
@@ -1807,7 +1955,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-I",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-14-3",
@@ -1817,7 +1965,9 @@
           "provision_id": "GDPR-32-4",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-05-05-P02",
@@ -1828,7 +1978,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-I",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-14-3",
@@ -1838,7 +1988,9 @@
           "provision_id": "GDPR-32-4",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-05-06-P01",
@@ -1849,7 +2001,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-I",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-14-3",
@@ -1857,9 +2009,11 @@
         },
         {
           "provision_id": "GDPR-32-4",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-05-07-P01",
@@ -1880,7 +2034,9 @@
           "provision_id": "GDPR-32-4",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-05-08-P01",
@@ -1907,9 +2063,11 @@
         },
         {
           "provision_id": "EU-AIA-10-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-05-08-P02",
@@ -1930,7 +2088,9 @@
           "provision_id": "GDPR-32-4",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-06-01-P01",
@@ -1951,7 +2111,9 @@
           "provision_id": "GDPR-32-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-06-01-P02",
@@ -1972,7 +2134,9 @@
           "provision_id": "GDPR-32-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-06-02-P01",
@@ -1993,7 +2157,9 @@
           "provision_id": "GDPR-32-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-06-02-P02",
@@ -2008,13 +2174,15 @@
         },
         {
           "provision_id": "NIS2-21-2-I",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-32-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-06-03-P01",
@@ -2025,7 +2193,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-2-I",
@@ -2043,7 +2211,9 @@
           "provision_id": "EU-AIA-9-2",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-06-03-P02",
@@ -2064,7 +2234,9 @@
           "provision_id": "GDPR-32-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-06-04-P01",
@@ -2085,7 +2257,9 @@
           "provision_id": "GDPR-32-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-06-05-P01",
@@ -2108,13 +2282,15 @@
         },
         {
           "provision_id": "EU-AIA-15-4",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-15-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-06-06-P01",
@@ -2135,7 +2311,9 @@
           "provision_id": "GDPR-32-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-07-01-P01",
@@ -2158,7 +2336,7 @@
         },
         {
           "provision_id": "EU-AIA-10-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-10-1",
@@ -2166,9 +2344,11 @@
         },
         {
           "provision_id": "NIS2-21-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-07-02-P01",
@@ -2201,7 +2381,9 @@
           "provision_id": "EU-AIA-12-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-07-02-P02",
@@ -2234,7 +2416,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-07-03-P01",
@@ -2245,7 +2429,7 @@
       "references": [
         {
           "provision_id": "GDPR-5-1-B",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-5-1-C",
@@ -2259,7 +2443,9 @@
           "provision_id": "EU-AIA-10-2",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-07-04-P01",
@@ -2270,7 +2456,7 @@
       "references": [
         {
           "provision_id": "GDPR-5-1-B",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-5-1-C",
@@ -2284,7 +2470,9 @@
           "provision_id": "EU-AIA-10-2",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-07-05-P01",
@@ -2317,7 +2505,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-07-05-P02",
@@ -2342,7 +2532,9 @@
           "provision_id": "EU-AIA-10-2",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-07-06-P01",
@@ -2365,13 +2557,15 @@
         },
         {
           "provision_id": "EU-AIA-10-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-10-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-07-07-P01",
@@ -2394,7 +2588,7 @@
         },
         {
           "provision_id": "EU-AIA-10-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-10-1",
@@ -2404,7 +2598,9 @@
           "provision_id": "EU-AIA-12-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-07-08-P01",
@@ -2433,7 +2629,9 @@
           "provision_id": "GDPR-5-1-E",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-08-01-P01",
@@ -2448,13 +2646,15 @@
         },
         {
           "provision_id": "GDPR-32-4",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-25-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-08-01-P02",
@@ -2469,13 +2669,15 @@
         },
         {
           "provision_id": "GDPR-32-4",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-25-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-08-02-P01",
@@ -2490,7 +2692,7 @@
         },
         {
           "provision_id": "GDPR-32-4",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-25-1",
@@ -2498,17 +2700,19 @@
         },
         {
           "provision_id": "EU-AIA-12-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-12-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-19-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-08-03-P01",
@@ -2519,17 +2723,19 @@
       "references": [
         {
           "provision_id": "EU-AIA-15-5",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-32-4",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-25-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-08-03-P02",
@@ -2550,7 +2756,9 @@
           "provision_id": "GDPR-25-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-08-04-P01",
@@ -2571,7 +2779,9 @@
           "provision_id": "GDPR-25-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-08-04-P02",
@@ -2592,7 +2802,9 @@
           "provision_id": "GDPR-25-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-08-05-P01",
@@ -2607,7 +2819,7 @@
         },
         {
           "provision_id": "GDPR-32-4",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-25-1",
@@ -2625,7 +2837,9 @@
           "provision_id": "EU-AIA-12-2",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-08-06-P01",
@@ -2648,13 +2862,15 @@
         },
         {
           "provision_id": "EU-AIA-15-4",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-15-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-08-07-P01",
@@ -2669,13 +2885,15 @@
         },
         {
           "provision_id": "GDPR-32-4",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-25-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-09-01-P01",
@@ -2700,7 +2918,9 @@
           "provision_id": "EU-AIA-26-5",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-09-02-P01",
@@ -2725,7 +2945,9 @@
           "provision_id": "EU-AIA-26-5",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-09-03-P01",
@@ -2758,7 +2980,9 @@
           "provision_id": "NIS2-21-4",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-09-04-P01",
@@ -2783,7 +3007,9 @@
           "provision_id": "EU-AIA-26-5",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-09-05-P01",
@@ -2810,13 +3036,15 @@
         },
         {
           "provision_id": "NIS2-21-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-9-2",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-09-06-P01",
@@ -2841,7 +3069,9 @@
           "provision_id": "EU-AIA-26-5",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-09-07-P01",
@@ -2866,7 +3096,9 @@
           "provision_id": "EU-AIA-26-5",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-09-08-P01",
@@ -2891,7 +3123,9 @@
           "provision_id": "EU-AIA-26-5",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-10-01-P01",
@@ -2922,9 +3156,11 @@
         },
         {
           "provision_id": "EU-AIA-20-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-10-02-P01",
@@ -2945,7 +3181,9 @@
           "provision_id": "NIS2-21-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-10-03-P01",
@@ -2966,7 +3204,9 @@
           "provision_id": "NIS2-21-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-10-04-P01",
@@ -2985,7 +3225,7 @@
         },
         {
           "provision_id": "NIS2-21-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-9-1",
@@ -2995,7 +3235,9 @@
           "provision_id": "EU-AIA-9-2",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-10-05-P01",
@@ -3016,7 +3258,9 @@
           "provision_id": "NIS2-21-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-10-05-P02",
@@ -3037,7 +3281,9 @@
           "provision_id": "NIS2-21-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-10-06-P01",
@@ -3056,7 +3302,7 @@
         },
         {
           "provision_id": "NIS2-21-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-2-F",
@@ -3068,9 +3314,11 @@
         },
         {
           "provision_id": "GDPR-32-1-D",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-11-01-P01",
@@ -3095,7 +3343,9 @@
           "provision_id": "SE-CYBER-2-3-5",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-11-02-P01",
@@ -3120,7 +3370,9 @@
           "provision_id": "SE-CYBER-2-3-5",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-11-03-P01",
@@ -3153,7 +3405,9 @@
           "provision_id": "GDPR-32-1-D",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-11-04-P01",
@@ -3180,13 +3434,15 @@
         },
         {
           "provision_id": "NIS2-21-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-9-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-11-05-P01",
@@ -3219,7 +3475,9 @@
           "provision_id": "SE-CYBER-2-3-10",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-11-06-P01",
@@ -3250,9 +3508,11 @@
         },
         {
           "provision_id": "GDPR-32-1-D",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-11-07-P01",
@@ -3279,13 +3539,15 @@
         },
         {
           "provision_id": "EU-AIA-15-5",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-2-I",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-12-01-P01",
@@ -3300,7 +3562,7 @@
         },
         {
           "provision_id": "NIS2-21-2-I",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-2-J",
@@ -3314,7 +3576,9 @@
           "provision_id": "SE-CYBER-2-3-10",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-12-02-P01",
@@ -3329,7 +3593,7 @@
         },
         {
           "provision_id": "NIS2-21-2-I",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-2-J",
@@ -3339,7 +3603,9 @@
           "provision_id": "GDPR-32-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-12-03-P01",
@@ -3372,7 +3638,9 @@
           "provision_id": "NIS2-21-4",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-12-04-P01",
@@ -3399,13 +3667,15 @@
         },
         {
           "provision_id": "EU-AIA-12-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-12-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-12-05-P01",
@@ -3416,7 +3686,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-H",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-2-I",
@@ -3432,13 +3702,15 @@
         },
         {
           "provision_id": "SE-CYBER-2-3-8",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-1-10",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-12-06-P01",
@@ -3449,7 +3721,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-H",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-2-I",
@@ -3465,9 +3737,11 @@
         },
         {
           "provision_id": "SE-CYBER-2-3-8",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-13-01-P01",
@@ -3492,7 +3766,9 @@
           "provision_id": "GDPR-25-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-13-02-P01",
@@ -3519,13 +3795,15 @@
         },
         {
           "provision_id": "EU-AIA-12-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-12-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-13-02-P02",
@@ -3550,7 +3828,9 @@
           "provision_id": "GDPR-25-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-13-03-P01",
@@ -3565,7 +3845,7 @@
         },
         {
           "provision_id": "EU-AIA-14-3",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-1",
@@ -3583,7 +3863,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-13-04-P01",
@@ -3608,7 +3890,9 @@
           "provision_id": "GDPR-25-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-13-05-P01",
@@ -3641,7 +3925,9 @@
           "provision_id": "SE-CYBER-2-3-10",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-13-05-P02",
@@ -3666,7 +3952,9 @@
           "provision_id": "GDPR-25-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-13-06-P01",
@@ -3691,7 +3979,9 @@
           "provision_id": "GDPR-25-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-13-07-P01",
@@ -3716,7 +4006,9 @@
           "provision_id": "GDPR-25-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-13-07-P02",
@@ -3741,7 +4033,9 @@
           "provision_id": "GDPR-25-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-13-08-P01",
@@ -3766,7 +4060,9 @@
           "provision_id": "GDPR-25-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-13-09-P01",
@@ -3799,7 +4095,9 @@
           "provision_id": "SE-CYBER-2-3-6",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-13-09-P02",
@@ -3824,7 +4122,9 @@
           "provision_id": "GDPR-25-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-14-01-P01",
@@ -3835,15 +4135,15 @@
       "references": [
         {
           "provision_id": "EU-AIA-14-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-14-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-26-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-22-3",
@@ -3857,7 +4157,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-14-02-P01",
@@ -3868,11 +4170,11 @@
       "references": [
         {
           "provision_id": "EU-AIA-14-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-14-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-26-2",
@@ -3880,17 +4182,19 @@
         },
         {
           "provision_id": "GDPR-22-3",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-9-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-14-02-P02",
@@ -3915,7 +4219,9 @@
           "provision_id": "GDPR-22-3",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-14-03-P01",
@@ -3926,21 +4232,23 @@
       "references": [
         {
           "provision_id": "EU-AIA-14-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-14-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-26-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-22-3",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-14-03-P02",
@@ -3967,13 +4275,15 @@
         },
         {
           "provision_id": "NIS2-21-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-9-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-14-04-P01",
@@ -3998,7 +4308,9 @@
           "provision_id": "GDPR-22-3",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-14-04-P02",
@@ -4023,7 +4335,9 @@
           "provision_id": "GDPR-22-3",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-14-05-P01",
@@ -4034,21 +4348,23 @@
       "references": [
         {
           "provision_id": "EU-AIA-14-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-14-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-26-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-22-3",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-14-06-P01",
@@ -4067,7 +4383,7 @@
         },
         {
           "provision_id": "EU-AIA-26-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-22-3",
@@ -4075,13 +4391,15 @@
         },
         {
           "provision_id": "EU-AIA-20-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "NIS2-21-4",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-15-01-P01",
@@ -4092,11 +4410,11 @@
       "references": [
         {
           "provision_id": "EU-AIA-12-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-12-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-19-1",
@@ -4114,7 +4432,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-15-02-P01",
@@ -4139,7 +4459,9 @@
           "provision_id": "GDPR-24-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-15-03-P01",
@@ -4164,7 +4486,9 @@
           "provision_id": "GDPR-24-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-15-03-P02",
@@ -4183,13 +4507,15 @@
         },
         {
           "provision_id": "EU-AIA-19-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-24-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-15-04-P01",
@@ -4222,7 +4548,9 @@
           "provision_id": "SE-CYBER-2-3-6",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-15-05-P01",
@@ -4233,11 +4561,11 @@
       "references": [
         {
           "provision_id": "EU-AIA-12-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-12-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-19-1",
@@ -4247,7 +4575,9 @@
           "provision_id": "GDPR-24-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-15-06-P01",
@@ -4280,7 +4610,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-15-07-P01",
@@ -4313,7 +4645,9 @@
           "provision_id": "SE-CYBER-2-3-6",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-16-01-P01",
@@ -4324,7 +4658,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-F",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-2-3-6",
@@ -4338,7 +4672,9 @@
           "provision_id": "SE-CYBER-3-5",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-16-02-P01",
@@ -4349,7 +4685,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-F",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-2-3-6",
@@ -4357,13 +4693,15 @@
         },
         {
           "provision_id": "GDPR-32-1-D",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-3-5",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-16-02-P02",
@@ -4388,7 +4726,9 @@
           "provision_id": "SE-CYBER-3-5",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-16-03-P01",
@@ -4421,7 +4761,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-16-04-P01",
@@ -4432,21 +4774,23 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-F",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-2-3-6",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-32-1-D",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-3-5",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-16-05-P01",
@@ -4457,7 +4801,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-F",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-2-3-6",
@@ -4465,7 +4809,7 @@
         },
         {
           "provision_id": "GDPR-32-1-D",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-3-5",
@@ -4473,9 +4817,11 @@
         },
         {
           "provision_id": "EU-AIA-15-5",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-16-06-P01",
@@ -4494,13 +4840,15 @@
         },
         {
           "provision_id": "GDPR-32-1-D",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-3-5",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-16-07-P01",
@@ -4511,7 +4859,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-F",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-2-3-6",
@@ -4533,7 +4881,9 @@
           "provision_id": "SE-CYBER-2-3-2",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-16-08-P01",
@@ -4544,7 +4894,7 @@
       "references": [
         {
           "provision_id": "NIS2-21-2-F",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-2-3-6",
@@ -4552,7 +4902,7 @@
         },
         {
           "provision_id": "GDPR-32-1-D",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-3-5",
@@ -4560,13 +4910,15 @@
         },
         {
           "provision_id": "NIS2-21-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-9-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-17-01-P01",
@@ -4591,7 +4943,9 @@
           "provision_id": "SE-CYBER-2-3-3",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-17-02-P01",
@@ -4616,7 +4970,9 @@
           "provision_id": "SE-CYBER-2-3-3",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-17-03-P01",
@@ -4641,7 +4997,9 @@
           "provision_id": "SE-CYBER-2-3-3",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-17-04-P01",
@@ -4674,7 +5032,9 @@
           "provision_id": "SE-CYBER-2-3-6",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-17-05-P01",
@@ -4707,7 +5067,9 @@
           "provision_id": "SE-CYBER-2-3-6",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-17-06-P01",
@@ -4734,13 +5096,15 @@
         },
         {
           "provision_id": "NIS2-21-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-9-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-17-06-P02",
@@ -4765,7 +5129,9 @@
           "provision_id": "SE-CYBER-2-3-3",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-17-07-P01",
@@ -4790,7 +5156,9 @@
           "provision_id": "SE-CYBER-2-3-3",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-17-08-P01",
@@ -4815,7 +5183,9 @@
           "provision_id": "SE-CYBER-2-3-3",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-17-08-P02",
@@ -4840,7 +5210,9 @@
           "provision_id": "SE-CYBER-2-3-3",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-18-01-P01",
@@ -4873,7 +5245,9 @@
           "provision_id": "SE-CYBER-2-3-6",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-18-02-P01",
@@ -4900,13 +5274,15 @@
         },
         {
           "provision_id": "NIS2-21-2-H",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-2-3-8",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-18-03-P01",
@@ -4939,7 +5315,9 @@
           "provision_id": "SE-CYBER-2-3-10",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-18-04-P01",
@@ -4966,13 +5344,15 @@
         },
         {
           "provision_id": "NIS2-21-2-F",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-2-3-6",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-18-05-P01",
@@ -5005,7 +5385,9 @@
           "provision_id": "SE-CYBER-2-3-5",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-18-06-P01",
@@ -5038,7 +5420,9 @@
           "provision_id": "SE-CYBER-2-3-6",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-19-01-P01",
@@ -5069,9 +5453,11 @@
         },
         {
           "provision_id": "GDPR-32-1-D",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-19-02-P01",
@@ -5096,7 +5482,9 @@
           "provision_id": "NIS2-21-2-F",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-19-02-P02",
@@ -5121,7 +5509,9 @@
           "provision_id": "NIS2-21-2-F",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-19-03-P01",
@@ -5146,7 +5536,9 @@
           "provision_id": "NIS2-21-2-F",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-19-03-P02",
@@ -5171,7 +5563,9 @@
           "provision_id": "NIS2-21-2-F",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-19-04-P01",
@@ -5194,7 +5588,7 @@
         },
         {
           "provision_id": "NIS2-21-2-F",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-1-10",
@@ -5204,7 +5598,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-19-05-P01",
@@ -5231,13 +5627,15 @@
         },
         {
           "provision_id": "EU-AIA-12-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-12-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-19-06-P01",
@@ -5262,7 +5660,9 @@
           "provision_id": "NIS2-21-2-F",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-19-06-P02",
@@ -5285,7 +5685,7 @@
         },
         {
           "provision_id": "NIS2-21-2-F",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-1-10",
@@ -5295,7 +5695,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-19-07-P01",
@@ -5320,7 +5722,9 @@
           "provision_id": "NIS2-21-2-F",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-19-07-P02",
@@ -5343,17 +5747,19 @@
         },
         {
           "provision_id": "NIS2-21-2-F",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "SE-CYBER-2-3-6",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-32-1-D",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-19-08-P01",
@@ -5378,7 +5784,9 @@
           "provision_id": "NIS2-21-2-F",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-19-08-P02",
@@ -5411,7 +5819,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-APP-P01",
@@ -5430,9 +5840,11 @@
         },
         {
           "provision_id": "EU-AIA-14-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-APP-P02",
@@ -5455,17 +5867,19 @@
         },
         {
           "provision_id": "EU-AIA-12-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-12-2",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "EU-AIA-19-1",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-APP-P03",
@@ -5494,7 +5908,9 @@
           "provision_id": "SE-CYBER-1-11",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-OPR-P01",
@@ -5515,7 +5931,9 @@
           "provision_id": "GDPR-24-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-OPR-P02",
@@ -5536,7 +5954,9 @@
           "provision_id": "GDPR-24-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-OPR-P03",
@@ -5557,7 +5977,9 @@
           "provision_id": "GDPR-24-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-OPR-P04",
@@ -5578,7 +6000,9 @@
           "provision_id": "GDPR-24-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-OPR-P05",
@@ -5593,13 +6017,15 @@
         },
         {
           "provision_id": "NIS2-21-2-F",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         },
         {
           "provision_id": "GDPR-24-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-OPR-P06",
@@ -5620,7 +6046,9 @@
           "provision_id": "GDPR-24-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-OPR-P07",
@@ -5647,9 +6075,11 @@
         },
         {
           "provision_id": "GDPR-32-1-D",
-          "relationship": "DERIVED"
+          "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-OPR-P08",
@@ -5670,7 +6100,9 @@
           "provision_id": "GDPR-24-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     },
     {
       "paragraph_id": "CDX-LAW-001-OPR-P09",
@@ -5691,8 +6123,10 @@
           "provision_id": "GDPR-24-1",
           "relationship": "CONTEXTUAL"
         }
-      ]
+      ],
+      "support_state": "NOT_ASSERTED",
+      "applicability_state": "NOT_DETERMINED"
     }
   ],
-  "semantic_policy": "No TEXTUAL relationship is permitted until exact wording support is separately reviewed and recorded."
+  "semantic_policy": "Act citations identify exact verified legal provisions only. They do not assert that a provision supports the Conductellence paragraph or applies to a governed system. DERIVED/TEXTUAL relationships require a separate semantic proof record."
 }
