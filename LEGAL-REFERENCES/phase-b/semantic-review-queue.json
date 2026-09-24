@@ -3,7 +3,7 @@
   "programme_id": "CDX-PROG-LEGAL-BD-001",
   "authority_ref": "CDX-CLR-LEGAL-BD-001",
   "phase": "B",
-  "state": "COMPLETE_PENDING_DIRECTOR_ACCEPTANCE",
+  "state": "ACCEPTED",
   "generated_from": "LEGAL-REFERENCES/paragraph-legal-map.json",
   "generated_at": "2026-09-24",
   "policy": "No queue item may be promoted to DERIVED or TEXTUAL without a VERIFIED semantic proof record. KEEP_CONTEXTUAL and REMOVE_REFERENCE require recorded review disposition but do not assert external legal support.",
@@ -18707,5 +18707,7 @@
     "rule": "Resolve all currently exact, primary-source-verified links as contextual-only. Do not infer DERIVED/TEXTUAL support from relevance, shared vocabulary, instrument purpose, or chapter placement.",
     "stronger_claims_created": 0,
     "legal_applicability_created": 0
-  }
+  },
+  "director_acceptance_ref": "GOVERNANCE/household/records/CDX-HH-B-ACCEPT-001.json",
+  "accepted_at": "2026-09-25"
 }
