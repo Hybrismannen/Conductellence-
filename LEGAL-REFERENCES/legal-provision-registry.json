@@ -1,0 +1,887 @@
+{
+  "schema": "cdx.legal-provisions/v0.2",
+  "policy": "Only provision IDs in this registry may appear in Act citation blocks. Each record was checked against an official primary legal text on the verification date. The subject field is a conservative paraphrase, not a quotation and not an applicability determination.",
+  "verified_at": "2026-09-24",
+  "provisions": [
+    {
+      "id": "CFR-1",
+      "instrument": "EU Charter of Fundamental Rights",
+      "locator": "Article 1",
+      "title": "Human dignity",
+      "official_url": "https://eur-lex.europa.eu/eli/treaty/char_2016/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Human dignity must be respected and protected."
+    },
+    {
+      "id": "CFR-7",
+      "instrument": "EU Charter of Fundamental Rights",
+      "locator": "Article 7",
+      "title": "Respect for private and family life",
+      "official_url": "https://eur-lex.europa.eu/eli/treaty/char_2016/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Protects private and family life, home and communications."
+    },
+    {
+      "id": "CFR-8-1",
+      "instrument": "EU Charter of Fundamental Rights",
+      "locator": "Article 8(1)",
+      "title": "Protection of personal data",
+      "official_url": "https://eur-lex.europa.eu/eli/treaty/char_2016/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Recognises the right to protection of personal data."
+    },
+    {
+      "id": "CFR-8-2",
+      "instrument": "EU Charter of Fundamental Rights",
+      "locator": "Article 8(2)",
+      "title": "Protection of personal data",
+      "official_url": "https://eur-lex.europa.eu/eli/treaty/char_2016/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires fair processing for specified purposes and a lawful basis; recognises access and rectification."
+    },
+    {
+      "id": "CFR-8-3",
+      "instrument": "EU Charter of Fundamental Rights",
+      "locator": "Article 8(3)",
+      "title": "Protection of personal data",
+      "official_url": "https://eur-lex.europa.eu/eli/treaty/char_2016/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires independent control of compliance with personal-data rules."
+    },
+    {
+      "id": "CFR-21-1",
+      "instrument": "EU Charter of Fundamental Rights",
+      "locator": "Article 21(1)",
+      "title": "Non-discrimination",
+      "official_url": "https://eur-lex.europa.eu/eli/treaty/char_2016/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Prohibits discrimination on listed and comparable grounds."
+    },
+    {
+      "id": "CFR-47",
+      "instrument": "EU Charter of Fundamental Rights",
+      "locator": "Article 47",
+      "title": "Right to an effective remedy and to a fair trial",
+      "official_url": "https://eur-lex.europa.eu/eli/treaty/char_2016/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Recognises an effective remedy and fair hearing for violations of EU-law rights."
+    },
+    {
+      "id": "EU-AIA-9-1",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 9(1)",
+      "title": "Risk management system",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires a risk-management system for high-risk AI systems."
+    },
+    {
+      "id": "EU-AIA-9-2",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 9(2)",
+      "title": "Risk management system",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Defines risk management as a continuous iterative lifecycle process with systematic review and updating."
+    },
+    {
+      "id": "EU-AIA-10-1",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 10(1)",
+      "title": "Data and data governance",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires qualifying training, validation and testing datasets to meet Article 10 quality criteria for high-risk AI systems."
+    },
+    {
+      "id": "EU-AIA-10-2",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 10(2)",
+      "title": "Data and data governance",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires appropriate data-governance and management practices for intended purpose, including origin and preparation of data."
+    },
+    {
+      "id": "EU-AIA-12-1",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 12(1)",
+      "title": "Record-keeping",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires high-risk AI systems to technically allow automatic event logging over the system lifetime."
+    },
+    {
+      "id": "EU-AIA-12-2",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 12(2)",
+      "title": "Record-keeping",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires logging capabilities sufficient for purpose-appropriate traceability and specified monitoring/risk functions."
+    },
+    {
+      "id": "EU-AIA-13-1",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 13(1)",
+      "title": "Transparency and provision of information to deployers",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires sufficient transparency for deployers to interpret output and use the system appropriately."
+    },
+    {
+      "id": "EU-AIA-13-2",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 13(2)",
+      "title": "Transparency and provision of information to deployers",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires concise, complete, correct, clear, relevant, accessible and comprehensible instructions for use."
+    },
+    {
+      "id": "EU-AIA-14-1",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 14(1)",
+      "title": "Human oversight",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires high-risk AI systems to be designed for effective oversight by natural persons."
+    },
+    {
+      "id": "EU-AIA-14-2",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 14(2)",
+      "title": "Human oversight",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Human oversight aims to prevent or minimise health, safety and fundamental-rights risks."
+    },
+    {
+      "id": "EU-AIA-14-3",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 14(3)",
+      "title": "Human oversight",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires oversight measures commensurate with risks, autonomy and context of use."
+    },
+    {
+      "id": "EU-AIA-15-1",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 15(1)",
+      "title": "Accuracy, robustness and cybersecurity",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires appropriate accuracy, robustness and cybersecurity throughout the lifecycle of high-risk AI systems."
+    },
+    {
+      "id": "EU-AIA-15-4",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 15(4)",
+      "title": "Accuracy, robustness and cybersecurity",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires resilience to errors, faults and inconsistencies and addresses feedback-loop risks."
+    },
+    {
+      "id": "EU-AIA-15-5",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 15(5)",
+      "title": "Accuracy, robustness and cybersecurity",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires resilience against unauthorised attempts exploiting vulnerabilities and addresses AI-specific attacks including poisoning and adversarial examples."
+    },
+    {
+      "id": "EU-AIA-19-1",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 19(1)",
+      "title": "Automatically generated logs",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires providers to keep Article 12 logs under their control for an appropriate period, subject to applicable law."
+    },
+    {
+      "id": "EU-AIA-20-1",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 20(1)",
+      "title": "Corrective actions and duty of information",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires corrective action, withdrawal, disabling or recall where a provider considers a high-risk AI system non-conforming."
+    },
+    {
+      "id": "EU-AIA-26-1",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 26(1)",
+      "title": "Obligations of deployers of high-risk AI systems",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires deployers to take appropriate technical and organisational measures to use systems according to instructions."
+    },
+    {
+      "id": "EU-AIA-26-2",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 26(2)",
+      "title": "Obligations of deployers of high-risk AI systems",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires human oversight to be assigned to natural persons with necessary competence, training, authority and support."
+    },
+    {
+      "id": "EU-AIA-26-4",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 26(4)",
+      "title": "Obligations of deployers of high-risk AI systems",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires input data under deployer control to be relevant and sufficiently representative for intended purpose."
+    },
+    {
+      "id": "EU-AIA-26-5",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 26(5)",
+      "title": "Obligations of deployers of high-risk AI systems",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires monitoring of operation and suspension/use-related reporting when specified risks or serious incidents arise."
+    },
+    {
+      "id": "EU-AIA-50-1",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 50(1)",
+      "title": "Transparency obligations",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires certain direct-interaction AI systems to inform natural persons they are interacting with AI, subject to exceptions."
+    },
+    {
+      "id": "EU-AIA-50-2",
+      "instrument": "Regulation (EU) 2024/1689 (AI Act)",
+      "locator": "Article 50(2)",
+      "title": "Transparency obligations",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires certain AI-generated synthetic outputs to be machine-readably marked and detectable, subject to exceptions."
+    },
+    {
+      "id": "GDPR-5-1-A",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 5(1)(a)",
+      "title": "Lawfulness, fairness and transparency",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires personal data to be processed lawfully, fairly and transparently."
+    },
+    {
+      "id": "GDPR-5-1-B",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 5(1)(b)",
+      "title": "Purpose limitation",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires specified, explicit and legitimate purposes and restricts incompatible further processing."
+    },
+    {
+      "id": "GDPR-5-1-C",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 5(1)(c)",
+      "title": "Data minimisation",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires personal data to be adequate, relevant and limited to what is necessary."
+    },
+    {
+      "id": "GDPR-5-1-D",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 5(1)(d)",
+      "title": "Accuracy",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires personal data accuracy and appropriate rectification/erasure of inaccurate data."
+    },
+    {
+      "id": "GDPR-5-1-E",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 5(1)(e)",
+      "title": "Storage limitation",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Limits identifiable retention to what is necessary, subject to specified exceptions."
+    },
+    {
+      "id": "GDPR-5-1-F",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 5(1)(f)",
+      "title": "Integrity and confidentiality",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires appropriate security against unauthorised/unlawful processing and accidental loss, destruction or damage."
+    },
+    {
+      "id": "GDPR-22-1",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 22(1)",
+      "title": "Automated individual decision-making",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Recognises a right not to be subject to certain solely automated decisions producing legal or similarly significant effects."
+    },
+    {
+      "id": "GDPR-22-3",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 22(3)",
+      "title": "Safeguards for automated decisions",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires specified safeguards in certain permitted automated decisions, including the right to human intervention, expression of viewpoint and contestation."
+    },
+    {
+      "id": "GDPR-24-1",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 24(1)",
+      "title": "Responsibility of the controller",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires appropriate measures to ensure and demonstrate compliance, reviewed and updated where necessary."
+    },
+    {
+      "id": "GDPR-25-1",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 25(1)",
+      "title": "Data protection by design",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires appropriate technical and organisational measures integrating data-protection principles and safeguards."
+    },
+    {
+      "id": "GDPR-25-2",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 25(2)",
+      "title": "Data protection by default",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires by default only personal data necessary for each specific purpose to be processed, including limits on amount, extent, storage and accessibility."
+    },
+    {
+      "id": "GDPR-32-1",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 32(1)",
+      "title": "Security of processing",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires risk-appropriate technical and organisational security measures."
+    },
+    {
+      "id": "GDPR-32-1-B",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 32(1)(b)",
+      "title": "Security of processing — resilience",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires ability to ensure ongoing confidentiality, integrity, availability and resilience of processing systems and services."
+    },
+    {
+      "id": "GDPR-32-1-C",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 32(1)(c)",
+      "title": "Security of processing — restoration",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires ability to restore availability and access to personal data in a timely manner after an incident."
+    },
+    {
+      "id": "GDPR-32-1-D",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 32(1)(d)",
+      "title": "Security of processing — testing",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires a process for regularly testing, assessing and evaluating effectiveness of security measures."
+    },
+    {
+      "id": "GDPR-32-2",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 32(2)",
+      "title": "Security risk assessment",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires consideration of processing risks including destruction, loss, alteration, unauthorised disclosure or access."
+    },
+    {
+      "id": "GDPR-32-4",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 32(4)",
+      "title": "Processing under authority",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires persons under controller/processor authority with data access not to process except on instructions unless required by law."
+    },
+    {
+      "id": "GDPR-33-1",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "locator": "Article 33(1)",
+      "title": "Personal data breach notification",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires controller notification of certain personal data breaches to the supervisory authority within the specified timeframe."
+    },
+    {
+      "id": "NIS2-20-1",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 20(1)",
+      "title": "Governance",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires management bodies of in-scope entities to approve cybersecurity risk measures, oversee implementation and be subject to liability rules."
+    },
+    {
+      "id": "NIS2-20-2",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 20(2)",
+      "title": "Governance training",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires management-body cybersecurity training and encourages employee training."
+    },
+    {
+      "id": "NIS2-21-1",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 21(1)",
+      "title": "Cybersecurity risk-management measures",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires appropriate and proportionate technical, operational and organisational measures to manage cybersecurity risk and minimise incident impact."
+    },
+    {
+      "id": "NIS2-21-2-A",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 21(2)(a)",
+      "title": "Cybersecurity risk-management measures",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires measures addressing risk analysis and information-system security policies."
+    },
+    {
+      "id": "NIS2-21-2-B",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 21(2)(b)",
+      "title": "Cybersecurity risk-management measures",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires measures addressing incident handling."
+    },
+    {
+      "id": "NIS2-21-2-C",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 21(2)(c)",
+      "title": "Cybersecurity risk-management measures",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires measures addressing business continuity, backup/disaster recovery and crisis management."
+    },
+    {
+      "id": "NIS2-21-2-D",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 21(2)(d)",
+      "title": "Cybersecurity risk-management measures",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires measures addressing supply-chain security."
+    },
+    {
+      "id": "NIS2-21-2-E",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 21(2)(e)",
+      "title": "Cybersecurity risk-management measures",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires measures addressing security in acquisition, development and maintenance, including vulnerability handling/disclosure."
+    },
+    {
+      "id": "NIS2-21-2-F",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 21(2)(f)",
+      "title": "Cybersecurity risk-management measures",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires measures addressing policies and procedures to assess effectiveness of cybersecurity risk-management measures."
+    },
+    {
+      "id": "NIS2-21-2-G",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 21(2)(g)",
+      "title": "Cybersecurity risk-management measures",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires measures addressing basic cyber hygiene practices and cybersecurity training."
+    },
+    {
+      "id": "NIS2-21-2-H",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 21(2)(h)",
+      "title": "Cybersecurity risk-management measures",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires measures addressing cryptography and, where appropriate, encryption."
+    },
+    {
+      "id": "NIS2-21-2-I",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 21(2)(i)",
+      "title": "Cybersecurity risk-management measures",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires measures addressing human-resources security, access-control policies and asset management."
+    },
+    {
+      "id": "NIS2-21-2-J",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 21(2)(j)",
+      "title": "Cybersecurity risk-management measures",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires measures addressing multi-factor or continuous authentication and secured communications, where appropriate."
+    },
+    {
+      "id": "NIS2-21-3",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 21(3)",
+      "title": "Supply-chain risk",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires consideration of supplier/service-provider vulnerabilities and cybersecurity practices, including secure development."
+    },
+    {
+      "id": "NIS2-21-4",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 21(4)",
+      "title": "Corrective measures",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires necessary, appropriate and proportionate corrective measures without undue delay when non-compliance with paragraph 2 measures is found."
+    },
+    {
+      "id": "NIS2-23-4-A",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 23(4)(a)",
+      "title": "Early warning",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires specified early warning for significant incidents without undue delay and within 24 hours."
+    },
+    {
+      "id": "NIS2-23-4-B",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 23(4)(b)",
+      "title": "Incident notification",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires specified incident notification without undue delay and within 72 hours."
+    },
+    {
+      "id": "NIS2-23-4-C",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 23(4)(c)",
+      "title": "Intermediate report",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires an intermediate status report on request."
+    },
+    {
+      "id": "NIS2-23-4-D",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 23(4)(d)",
+      "title": "Final report",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires a final report with specified incident information within one month of incident notification."
+    },
+    {
+      "id": "NIS2-23-4-E",
+      "instrument": "Directive (EU) 2022/2555 (NIS2)",
+      "locator": "Article 23(4)(e)",
+      "title": "Ongoing-incident progress/final report",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires a progress report and later final report when an incident remains ongoing."
+    },
+    {
+      "id": "SE-CYBER-1-10",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "1 kap. 10 §",
+      "title": "Krav i andra författningar",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Provides that other statutory security/incident requirements apply when their effect at least corresponds to specified Chapter 2 duties."
+    },
+    {
+      "id": "SE-CYBER-1-11",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "1 kap. 11 §",
+      "title": "DORA carve-out",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Provides that Chapter 2 §§ 3–10 do not apply to operators covered by DORA, subject to the stated statutory rule."
+    },
+    {
+      "id": "SE-CYBER-2-3-P1",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "2 kap. 3 § first paragraph",
+      "title": "Säkerhetsåtgärder",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires appropriate and proportionate technical, operational and organisational measures to protect network/information systems and physical environment against incidents."
+    },
+    {
+      "id": "SE-CYBER-2-3-1",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "2 kap. 3 § second paragraph point 1",
+      "title": "Säkerhetsåtgärder",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires security measures addressing risk-analysis and network/information-system security strategies."
+    },
+    {
+      "id": "SE-CYBER-2-3-2",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "2 kap. 3 § second paragraph point 2",
+      "title": "Säkerhetsåtgärder",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires security measures addressing incident handling."
+    },
+    {
+      "id": "SE-CYBER-2-3-3",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "2 kap. 3 § second paragraph point 3",
+      "title": "Säkerhetsåtgärder",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires security measures addressing continuity and crisis management."
+    },
+    {
+      "id": "SE-CYBER-2-3-4",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "2 kap. 3 § second paragraph point 4",
+      "title": "Säkerhetsåtgärder",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires security measures addressing supply-chain security."
+    },
+    {
+      "id": "SE-CYBER-2-3-5",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "2 kap. 3 § second paragraph point 5",
+      "title": "Säkerhetsåtgärder",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires security measures addressing security in acquisition, development and maintenance."
+    },
+    {
+      "id": "SE-CYBER-2-3-6",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "2 kap. 3 § second paragraph point 6",
+      "title": "Säkerhetsåtgärder",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires security measures addressing strategies and procedures to assess effectiveness of security measures."
+    },
+    {
+      "id": "SE-CYBER-2-3-7",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "2 kap. 3 § second paragraph point 7",
+      "title": "Säkerhetsåtgärder",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires security measures addressing basic cyber hygiene and cybersecurity training."
+    },
+    {
+      "id": "SE-CYBER-2-3-8",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "2 kap. 3 § second paragraph point 8",
+      "title": "Säkerhetsåtgärder",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires security measures addressing cryptography and, when needed, encryption."
+    },
+    {
+      "id": "SE-CYBER-2-3-9",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "2 kap. 3 § second paragraph point 9",
+      "title": "Säkerhetsåtgärder",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires security measures addressing personnel security, access control and asset management."
+    },
+    {
+      "id": "SE-CYBER-2-3-10",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "2 kap. 3 § second paragraph point 10",
+      "title": "Säkerhetsåtgärder",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires security measures addressing authentication, secured communications and emergency communications when needed."
+    },
+    {
+      "id": "SE-CYBER-2-4",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "2 kap. 4 §",
+      "title": "Utbildning",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires management persons of in-scope operators to undergo security-measures training."
+    },
+    {
+      "id": "SE-CYBER-2-5",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "2 kap. 5 §",
+      "title": "Rapportering av betydande incidenter — initial information",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires notice of a significant incident without undue delay and at latest within 24 hours, with statutory significance criteria."
+    },
+    {
+      "id": "SE-CYBER-2-6",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "2 kap. 6 §",
+      "title": "Incident notification",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires an incident notification within statutory time limits after awareness."
+    },
+    {
+      "id": "SE-CYBER-2-7",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "2 kap. 7 §",
+      "title": "Intermediate report",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires a status-update report on authority request."
+    },
+    {
+      "id": "SE-CYBER-2-8",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "2 kap. 8 §",
+      "title": "Final/progress report",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Requires a final report within the statutory timeframe or a progress report if incident is ongoing."
+    },
+    {
+      "id": "SE-CYBER-3-5",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "3 kap. 5 §",
+      "title": "Regular security audits",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Authorises regular security audits of essential operators by supervisory authority or independent body."
+    },
+    {
+      "id": "SE-CYBER-3-6",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "3 kap. 6 §",
+      "title": "Targeted security audits",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Authorises targeted security audits where special reasons exist."
+    },
+    {
+      "id": "SE-CYBER-3-7",
+      "instrument": "Cybersäkerhetslag (2025:1506)",
+      "locator": "3 kap. 7 §",
+      "title": "Security scans",
+      "official_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+      "verified_at": "2026-09-24",
+      "verification_state": "VERIFIED_PRIMARY_TEXT",
+      "subject": "Authorises security scans in cooperation with the operator."
+    }
+  ]
+}
