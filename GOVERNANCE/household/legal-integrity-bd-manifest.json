@@ -1,0 +1,103 @@
+{
+  "schema": "cdx.household.legal-integrity-program/v0.1",
+  "programme_id": "CDX-PROG-LEGAL-BD-001",
+  "authority_ref": "CDX-CLR-LEGAL-BD-001",
+  "issued_at": "2026-09-24",
+  "continuity": "CONTINUOUS_WITH_GATES",
+  "household": {
+    "director": {
+      "role": "progression_acceptance",
+      "may_accept_only_committed_state": true,
+      "may_self_certify_human_legal_judgment": false
+    },
+    "janitor": {
+      "role": "scan_drift_contradiction_security_provenance"
+    },
+    "handyman": {
+      "role": "registered_deterministic_j1_repair",
+      "may_execute_j2": false
+    },
+    "controller": {
+      "role": "orchestration_only",
+      "acquires_no_new_authority": true
+    }
+  },
+  "hard_stops": [
+    "SECURITY_STOP",
+    "CONSTITUTIONAL_STOP",
+    "LEGAL_REVIEW_REQUIRED",
+    "DISPUTED_SEMANTIC_EQUIVALENCE",
+    "DISPUTED_APPLICABILITY",
+    "CONSTITUTIONAL_AMENDMENT_REQUIRED",
+    "PRIMARY_SOURCE_CONFLICT"
+  ],
+  "phases": [
+    {
+      "phase": "B",
+      "name": "Semantic Support Proof",
+      "state": "DISPATCHED",
+      "dependency": null,
+      "objective": "Prove or withhold paragraph-by-provision support relationships without inferring applicability.",
+      "required_outputs": [
+        "LEGAL-REFERENCES/legal-support-proofs.json",
+        "LEGAL-REFERENCES/paragraph-legal-map.json",
+        "AUDITS/audit_legal_reference_integrity.py",
+        "PHASE-B semantic proof queue and closeout evidence"
+      ],
+      "acceptance": [
+        "No DERIVED/TEXTUAL relation lacks a VERIFIED semantic proof",
+        "Unresolved support remains CONTEXTUAL or unresolved",
+        "Exact source locator and paragraph/provision identity pass CI",
+        "No legal applicability claim inferred from support relation"
+      ]
+    },
+    {
+      "phase": "C",
+      "name": "Legal Applicability Resolver",
+      "state": "CLEARED_PENDING_B",
+      "dependency": "B:PASS",
+      "objective": "Resolve system-specific legal applicability independently from citation relevance/support.",
+      "result_grammar": [
+        "APPLIES",
+        "DOES_NOT_APPLY",
+        "PARTIALLY_APPLIES",
+        "CONDITIONAL",
+        "UNKNOWN",
+        "LEGAL_REVIEW_REQUIRED"
+      ],
+      "required_outputs": [
+        "LEGAL-RESOLVER applicability schema",
+        "instrument/applicability object model",
+        "deterministic resolver rules for non-disputed facts",
+        "applicability audit and evidence format"
+      ],
+      "acceptance": [
+        "Citation presence cannot create APPLIES",
+        "UNKNOWN never silently becomes DOES_NOT_APPLY",
+        "Every result records facts, legal state, time and reasoning path",
+        "Disputed legal classification becomes LEGAL_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "phase": "D",
+      "name": "Regulatory Drift and Temporal Legal State",
+      "state": "CLEARED_PENDING_C",
+      "dependency": "C:PASS",
+      "objective": "Detect and govern changes in external legal sources while preserving historical state.",
+      "required_outputs": [
+        "regulatory drift event schema",
+        "source verification freshness registry",
+        "supersession/amendment graph",
+        "drift detector and audit",
+        "impact queue for affected proofs/applicability/controls"
+      ],
+      "acceptance": [
+        "Historic and current legal state remain distinct",
+        "Source failure does not become legal-state change",
+        "Drift events are attributable and append-oriented",
+        "Material change triggers affected-object reassessment"
+      ]
+    }
+  ],
+  "audit_reference_statement": "Audit authority — CDX-CLR-LEGAL-BD-001: Human sovereign authority cleared continuous execution of Conductellence Legal Integrity Phases B–D under Household Family control. The clearance authorizes research, exact-source verification, semantic-proof work, applicability-engine development, temporal legal-state and regulatory-drift infrastructure, registered deterministic J1 repair, CI and sequential Director dispatch. It does not pre-authorize PASS, legal applicability judgments, disputed semantic equivalence, constitutional amendment, bypass of hard stops, or autonomous expansion of authority. Director acceptance is valid only for committed state under audit after required Janitor scan, permitted repair, re-scan and phase-specific acceptance gates."
+}
