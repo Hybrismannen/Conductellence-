@@ -1,0 +1,24 @@
+{
+  "schema": "cdx.household.repair-record/v0.1",
+  "programme_id": "CDX-PROG-LEGAL-BD-001",
+  "authority_ref": "CDX-CLR-LEGAL-BD-001",
+  "repair_id": "CDX-HH-J1-0005",
+  "phase": "D",
+  "classification": "J1",
+  "finding_severity": "CONTROL_DEFECT",
+  "finding": "First live regulatory-drift run GHA-RUN-36074320131 produced valid observation and impact-queue output but upload-artifact did not retain them because the output directory name begins with a dot and hidden files were excluded by default.",
+  "deterministic_basis": "Enable include-hidden-files on the existing artifact upload step. Monitoring, legal interpretation, source results and drift semantics are unchanged.",
+  "allowed_paths": [
+    ".github/workflows/regulatory-drift-monitor.yml"
+  ],
+  "semantic_or_legal_judgment": false,
+  "discovery_run_ref": "GHA-RUN-36074320131",
+  "observed_monitor_result": {
+    "official_sources_reachable": 8,
+    "drift_candidates": 0,
+    "legal_change_inferred": false,
+    "artifact_preserved": false
+  },
+  "status": "APPLIED_PENDING_RESCAN",
+  "applied_at": "2026-09-25"
+}
