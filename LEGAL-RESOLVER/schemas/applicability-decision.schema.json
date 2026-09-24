@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://conductellence.local/schemas/applicability-decision.schema.json",
-  "title": "Conductellence Legal Applicability Decision",
+  "title": "Conductellence Exact-Provision Applicability Decision",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -43,105 +43,7 @@
     },
     "facts": {
       "type": "object",
-      "required": [
-        "jurisdiction",
-        "actor_role",
-        "sector",
-        "system_class",
-        "purpose"
-      ],
-      "properties": {
-        "jurisdiction": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "territorial_nexus": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "actor_role": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "entity_class": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "sector": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "system_class": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "provider_deployer_role": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "data_categories": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "data_subject_location": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "purpose": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "external_effect": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "contractual_overlay": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "claimed_exemption": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "national_implementation": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "unresolved_facts": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
-      }
+      "additionalProperties": true
     },
     "result": {
       "enum": [
@@ -154,19 +56,29 @@
       ]
     },
     "reasoning_state": {
-      "enum": [
-        "DETERMINISTIC_RULE",
-        "HUMAN_LEGAL_REVIEW",
-        "MISSING_FACTS",
-        "NO_REGISTERED_RULE",
-        "CONFLICT"
-      ]
+      "type": "string",
+      "minLength": 1
     },
-    "rule_id": {
+    "scope_result": {
       "type": [
         "string",
         "null"
       ]
+    },
+    "temporal_result": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provision_condition_met": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "applicability_inferred_from_citation": {
+      "const": false
     },
     "reasoning_summary": {
       "type": "string"
