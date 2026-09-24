@@ -1,0 +1,27 @@
+{
+  "schema": "cdx.legal-support-proofs/v0.1",
+  "policy": {
+    "purpose": "Permit stronger support labels only after proposition-level review against the exact official provision.",
+    "allowed_relationships": [
+      "DERIVED",
+      "TEXTUAL"
+    ],
+    "required_fields": [
+      "proof_id",
+      "paragraph_id",
+      "provision_id",
+      "relationship",
+      "source_locator",
+      "source_url",
+      "source_verified_at",
+      "conductellence_proposition",
+      "external_legal_proposition",
+      "support_boundary",
+      "review_state"
+    ],
+    "textual_rule": "TEXTUAL requires the external provision to materially state the same proposition without relying on unstated extensions.",
+    "derived_rule": "DERIVED requires an explicit, reviewable reasoning bridge from the external legal proposition to the Conductellence rule; the extension must be stated.",
+    "applicability_rule": "Neither TEXTUAL nor DERIVED determines legal applicability. Applicability is resolved separately."
+  },
+  "proofs": []
+}
