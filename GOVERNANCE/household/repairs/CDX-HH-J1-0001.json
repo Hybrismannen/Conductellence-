@@ -1,0 +1,18 @@
+{
+  "schema": "cdx.household.repair-record/v0.1",
+  "programme_id": "CDX-PROG-LEGAL-BD-001",
+  "authority_ref": "CDX-CLR-LEGAL-BD-001",
+  "repair_id": "CDX-HH-J1-0001",
+  "phase": "D",
+  "classification": "J1",
+  "finding_severity": "CONTRADICTION",
+  "finding": "REGULATORY-DRIFT/source-state.json contained duplicate source_id values across distinct official source URLs after registry expansion.",
+  "deterministic_basis": "Each source object has a unique official_url. Stable IDs can be regenerated deterministically from the lexically sorted official_url set without interpreting legal meaning.",
+  "allowed_paths": [
+    "REGULATORY-DRIFT/source-state.json",
+    "AUDITS/audit_phase_d_regulatory_drift.py"
+  ],
+  "semantic_or_legal_judgment": false,
+  "status": "APPLIED_PENDING_RESCAN",
+  "applied_at": "2026-09-25"
+}
