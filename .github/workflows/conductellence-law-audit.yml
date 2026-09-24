@@ -22,6 +22,9 @@ jobs:
       - name: Audit paragraph-level legal anchors
         run: python3 AUDITS/audit_legal_anchors.py
 
+      - name: Audit exact legal reference integrity
+        run: python3 AUDITS/audit_legal_reference_integrity.py
+
       - name: Audit law-to-control coverage
         run: python3 AUDITS/audit_binding_coverage.py
 
