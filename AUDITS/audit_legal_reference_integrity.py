@@ -16,7 +16,7 @@ import sys
 
 ACT = Path("LAW/CONDUCTELLENCE-ACT.md")
 PROVISIONS = Path("LEGAL-REFERENCES/legal-provision-registry.json")
-PARA_MAP = Path("LEGAL-REFERENCES/paragraph-legal-map.json")
+PARA_MAP = Path("LEGAL-REFERENCES/paragraph-legal-map.json")\nPROOFS = Path("LEGAL-REFERENCES/legal-support-proofs.json")
 
 ALLOWED_REL = {"CONTEXTUAL", "DERIVED", "TEXTUAL"}
 ALLOWED_DOMAINS = (
@@ -31,13 +31,13 @@ def fail(msg):
     print("FAIL:", msg)
     raise SystemExit(1)
 
-for p in (ACT, PROVISIONS, PARA_MAP):
+for p in (ACT, PROVISIONS, PARA_MAP, PROOFS):
     if not p.exists():
         fail(f"missing required file: {p}")
 
 act = ACT.read_text(encoding="utf-8")
 preg = json.loads(PROVISIONS.read_text(encoding="utf-8"))
-pmap = json.loads(PARA_MAP.read_text(encoding="utf-8"))
+pmap = json.loads(PARA_MAP.read_text(encoding="utf-8"))\nproofs_doc = json.loads(PROOFS.read_text(encoding="utf-8"))
 
 provisions = preg.get("provisions", [])
 by_id = {}
@@ -116,7 +116,7 @@ for i, line in enumerate(lines):
         section_para_ids.add(sec_id)
 
     # The next line must be the human-visible exact citation block.
-    if i + 1 >= len(lines) or not lines[i + 1].startswith("> **Verified legal references:** "):
+    if i + 1 >= len(lines) or not lines[i + 1].startswith("> **Exact legal provisions — reference only; support and applicability not asserted:** "):
         fail(f"{para_id} missing immediate visible legal-reference line")
     vr = lines[i + 1]
     links = link_re.findall(vr)
@@ -157,14 +157,38 @@ for pid, refs in paragraph_markers.items():
     if map_by_id[pid] != refs:
         fail(f"{pid} Act references differ from paragraph map")
 
-# TEXTUAL is a reserved high bar. Current policy requires zero until a separate
-# semantic proof record is implemented.
-textual = [(pid, rid) for pid, refs in paragraph_markers.items() for rid, rel in refs if rel == "TEXTUAL"]
-if textual:
-    fail(f"TEXTUAL support used without separate semantic proof records: {textual[:10]}")
+# Strong support labels require an explicit semantic proof object.
+proofs = {}
+for item in proofs_doc.get("proofs", []):
+    key = (item.get("paragraph_id"), item.get("provision_id"), item.get("relationship"))
+    if None in key:
+        fail(f"malformed legal support proof: {item}")
+    if key in proofs:
+        fail(f"duplicate legal support proof: {key}")
+    if item.get("review_state") != "VERIFIED":
+        fail(f"non-verified proof used in authoritative proof registry: {key}")
+    proofs[key] = item
+
+strong_claims = []
+for pid, refs in paragraph_markers.items():
+    for rid, rel in refs:
+        if rel in {"DERIVED", "TEXTUAL"}:
+            strong_claims.append((pid, rid, rel))
+            if (pid, rid, rel) not in proofs:
+                fail(f"{rel} support claim lacks semantic proof: {(pid, rid, rel)}")
+
+# During the current bootstrap state, every visible Act citation is expected to
+# remain reference-only unless a verified proof has explicitly promoted it.
+for pid, refs in paragraph_markers.items():
+    for rid, rel in refs:
+        if rel == "CONTEXTUAL":
+            continue
+        if (pid, rid, rel) not in proofs:
+            fail(f"non-contextual relation lacks proof: {(pid, rid, rel)}")
 
 print(f"PASS: {len(section_ids)} §§ all have independently cited operative paragraphs")
 print(f"PASS: {len(paragraph_markers)} paragraph legal markers are syntactically exact")
 print(f"PASS: {len(by_id)} exact provisions are primary-text verified and registered")
 print("PASS: Act and paragraph legal map match exactly")
-print("PASS: no generic/ranged citation syntax and no unproven TEXTUAL claims")
+print(f"PASS: {len(strong_claims)} stronger support claims have explicit semantic proofs")
+print("PASS: no generic/ranged citation syntax and no unsupported support/applicability claim")
