@@ -1,0 +1,1991 @@
+{
+  "schema": "cdx.paragraph-legal-map/v0.2",
+  "law_id": "CDX-LAW-001",
+  "law_version": "0.1.0-bootstrap",
+  "generated_at": "2026-09-24",
+  "paragraphs": [
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P01",
+      "chapter": null,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "> **Status and legal character.** This Act is the internal constitutional law of the Conductellence-governed digital estate. It is not legislation enacted by a state and does not replace qualified legal advice. Applicable external law, fund",
+      "references": [
+        {
+          "provision_id": "EU-AIA-14-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "CFR-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-10",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-11",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P02",
+      "chapter": null,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Conductellence exists to preserve the relationship between **authority, action and responsibility** when human intention is delegated into computational systems.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-14-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "CFR-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P03",
+      "chapter": null,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Increasing computational capability permits digital systems to observe, infer, generate, communicate, coordinate, remember, select among alternatives, invoke tools, modify systems and produce effects beyond the immediate environment in whic",
+      "references": [
+        {
+          "provision_id": "EU-AIA-14-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "CFR-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P04",
+      "chapter": null,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "This Act therefore establishes the conditions under which non-human digital entities may receive, retain, exercise, delegate, suspend and lose capability within the governed estate. Its purpose is not to prevent artificial systems from acti",
+      "references": [
+        {
+          "provision_id": "EU-AIA-14-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "CFR-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-12-1",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-12-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-19-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P05",
+      "chapter": null,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "No model, agent, automation, service, tool, connector, workflow or other artificial entity acquires sovereignty merely because it possesses the technical capacity to act.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-14-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "CFR-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P06",
+      "chapter": null,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Conductellence shall be interpreted so as to resist the separation of action from attributable agency. The system shall therefore preserve, to the greatest practicable extent, the ability to trace a consequential artificial act backward to ",
+      "references": [
+        {
+          "provision_id": "EU-AIA-14-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "CFR-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-12-1",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-12-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-19-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P07",
+      "chapter": null,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "These Principles govern interpretation of every Chapter, §, protocol, control, exception, implementation and audit under this Act. Where a subordinate rule can reasonably be interpreted in more than one way, the interpretation most consiste",
+      "references": [
+        {
+          "provision_id": "EU-AIA-14-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "CFR-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "SE-CYBER-2-3-6",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-1-D",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-I-P01",
+      "chapter": null,
+      "section_id": null,
+      "principle": "I",
+      "text_preview": "All legitimate non-human authority originates in attributable human or human-governed authority.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-14-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-26-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-22-3",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-I-P02",
+      "chapter": null,
+      "section_id": null,
+      "principle": "I",
+      "text_preview": "A digital entity may exercise capability delegated to it but may not originate the mandate by which that capability becomes legitimate. No non-human entity may constitute itself as the ultimate source of authority, alter the conditions from",
+      "references": [
+        {
+          "provision_id": "EU-AIA-14-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-26-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-22-3",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-I-P03",
+      "chapter": null,
+      "section_id": null,
+      "principle": "I",
+      "text_preview": "Where uncertainty exists concerning the origin, extent or validity of artificial authority, authority shall be presumed absent until resolved through an authorized process.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-14-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-26-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-22-3",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-II-P01",
+      "chapter": null,
+      "section_id": null,
+      "principle": "II",
+      "text_preview": "Artificial agency shall be treated as bounded execution rather than independent sovereignty.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-14-3",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-26-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-15-5",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-II-P02",
+      "chapter": null,
+      "section_id": null,
+      "principle": "II",
+      "text_preview": "The capacity to reason, plan, select actions, use tools, coordinate agents, retain memory or cause external effects does not itself establish permission to perform such acts. Every artificial principal shall operate within a defined envelop",
+      "references": [
+        {
+          "provision_id": "EU-AIA-14-3",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-26-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-15-5",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-J",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "SE-CYBER-2-3-10",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-10",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-II-P03",
+      "chapter": null,
+      "section_id": null,
+      "principle": "II",
+      "text_preview": "Delegated authority may be preserved or narrowed but shall not be enlarged by the receiving entity.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-14-3",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-26-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-15-5",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-III-P01",
+      "chapter": null,
+      "section_id": null,
+      "principle": "III",
+      "text_preview": "Information may change what a system knows. Information shall not, by itself, change what a system is permitted to do.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-15-5",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-4",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-I",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-III-P02",
+      "chapter": null,
+      "section_id": null,
+      "principle": "III",
+      "text_preview": "Documents, webpages, emails, prompts, retrieved material, memory, model outputs, tool responses, code, messages from other agents and all comparable content shall be treated as informational content unless received through a separately auth",
+      "references": [
+        {
+          "provision_id": "EU-AIA-15-5",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-4",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-I",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-III-P03",
+      "chapter": null,
+      "section_id": null,
+      "principle": "III",
+      "text_preview": "No instruction embedded in content may create, extend or override authority merely because a digital system can interpret it.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-15-5",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-4",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-I",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-IV-P01",
+      "chapter": null,
+      "section_id": null,
+      "principle": "IV",
+      "text_preview": "No artificial entity shall receive greater power than required to fulfil the specific lawful purpose for which authority was delegated.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-I",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-25-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "NIS2-21-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-10",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-11",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-IV-P02",
+      "chapter": null,
+      "section_id": null,
+      "principle": "IV",
+      "text_preview": "Permission shall be constrained by resource, operation, purpose, time, context, jurisdiction, data class and blast radius. Previous authorization shall not create permanent trust. Consequential access and action shall be mediated against cu",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-I",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-25-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "NIS2-21-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-J",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "SE-CYBER-2-3-10",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-20-1",
+          "relationship": "DERIVED"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-IV-P03",
+      "chapter": null,
+      "section_id": null,
+      "principle": "IV",
+      "text_preview": "Where a narrower mechanism can achieve the intended purpose, the broader mechanism shall not be granted.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-I",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-25-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "NIS2-21-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-V-P01",
+      "chapter": null,
+      "section_id": null,
+      "principle": "V",
+      "text_preview": "No consequential digital action shall become detached from its attributable origin.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-12-1",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-12-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-19-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-V-P02",
+      "chapter": null,
+      "section_id": null,
+      "principle": "V",
+      "text_preview": "Conductellence shall preserve sufficient evidence to reconstruct the chain:",
+      "references": [
+        {
+          "provision_id": "EU-AIA-12-1",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-12-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-19-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-V-P03",
+      "chapter": null,
+      "section_id": null,
+      "principle": "V",
+      "text_preview": "**human mandate → authority → principal → capability → information → model → tool → execution → boundary crossing → state change → external effect → evidence → responsibility.**",
+      "references": [
+        {
+          "provision_id": "EU-AIA-12-1",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-12-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-19-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-V-P04",
+      "chapter": null,
+      "section_id": null,
+      "principle": "V",
+      "text_preview": "Historical records shall not be silently rewritten when errors are discovered. Corrections shall occur through attributable subsequent records.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-12-1",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-12-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-19-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-VI-P01",
+      "chapter": null,
+      "section_id": null,
+      "principle": "VI",
+      "text_preview": "A system shall not be considered secure merely because it declares itself compliant.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-1-D",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "SE-CYBER-3-5",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-VI-P02",
+      "chapter": null,
+      "section_id": null,
+      "principle": "VI",
+      "text_preview": "The mechanisms that authorize, constrain, observe and audit artificial systems shall remain sufficiently independent from the systems they govern. No entity shall simultaneously possess unrestricted authority to perform an action, determine",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-1-D",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "SE-CYBER-3-5",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-2-3-6",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "SE-CYBER-1-10",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-11",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-VI-P03",
+      "chapter": null,
+      "section_id": null,
+      "principle": "VI",
+      "text_preview": "Controls shall be tested. Tests shall produce evidence. The mechanisms producing that evidence shall themselves be subject to verification.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-1-D",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "SE-CYBER-3-5",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-2-3-6",
+          "relationship": "DERIVED"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-VII-P01",
+      "chapter": null,
+      "section_id": null,
+      "principle": "VII",
+      "text_preview": "Artificial execution shall remain subordinate to applicable law, human rights, legitimate purpose and defined operational boundaries.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-C",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-1-C",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-20-1",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "SE-CYBER-1-10",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-11",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-VII-P02",
+      "chapter": null,
+      "section_id": null,
+      "principle": "VII",
+      "text_preview": "Where legal applicability is materially uncertain, uncertainty shall not be converted autonomously into permission. Where technically practicable, actions shall be reversible. Where autonomous mutation is permitted, recovery shall be design",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-C",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-1-C",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-20-1",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "SE-CYBER-2-3-6",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-1-D",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRI-VII-P03",
+      "chapter": null,
+      "section_id": null,
+      "principle": "VII",
+      "text_preview": "Every governed artificial entity shall have a definable suspension, revocation, containment or retirement mechanism.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-C",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-1-C",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-20-1",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "NIS2-21-4",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P08",
+      "chapter": 1,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "The Act shall be applied as a source of authority for subordinate controls. Code, configuration, procedure or automation not traceable to this Act or to a lawfully incorporated subordinate instrument shall not obtain constitutional authorit",
+      "references": [
+        {
+          "provision_id": "NIS2-21-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-14-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-12-1",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-12-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-19-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-10",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P09",
+      "chapter": 1,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "External infrastructure may remain outside technical ownership while actions performed through it remain subject to this Act.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-14-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-24-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P10",
+      "chapter": 1,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "No artificial principal may interpret this Act as establishing sovereignty over a human person.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-14-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P11",
+      "chapter": 1,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Absence of a prohibition shall not constitute authority.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-14-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P12",
+      "chapter": 1,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Proportionality shall never be used to waive an absolute prohibition established by this Act or applicable external law.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-14-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-10",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-11",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P13",
+      "chapter": 2,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "These categories shall not be flattened into a single undifferentiated requirement class.",
+      "references": [
+        {
+          "provision_id": "SE-CYBER-1-10",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-11",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P14",
+      "chapter": 2,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "A conflict between internal policy and materially applicable external law shall produce a legal review stop.",
+      "references": [
+        {
+          "provision_id": "SE-CYBER-1-10",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-11",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P15",
+      "chapter": 2,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Unknown legally material attributes shall resolve to `UNKNOWN` or `LEGAL_REVIEW_REQUIRED`, not to `NOT_APPLICABLE`.",
+      "references": [
+        {
+          "provision_id": "SE-CYBER-1-10",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-11",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P16",
+      "chapter": 2,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Historic execution shall be evaluated against the legal snapshot applicable at the time of execution, while present remediation shall follow current law.",
+      "references": [
+        {
+          "provision_id": "SE-CYBER-1-10",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-11",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P17",
+      "chapter": 2,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Secondary commentary may support interpretation but shall not silently acquire the status of binding law.",
+      "references": [
+        {
+          "provision_id": "SE-CYBER-1-10",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-11",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P18",
+      "chapter": 3,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Unregistered executable components shall not receive production authority.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-I",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "SE-CYBER-2-3-9",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P19",
+      "chapter": 3,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "A repository shall reference the law; it shall not redefine the constitutional law locally.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-I",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "SE-CYBER-2-3-9",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-10",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-11",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P20",
+      "chapter": 3,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Discovery of an unregistered privileged asset shall create at least a control defect and may require quarantine.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-I",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "SE-CYBER-2-3-9",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P21",
+      "chapter": 4,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Every consequential authorization shall evaluate a separately represented authority or capability.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-I",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "NIS2-21-2-J",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-26-2",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P22",
+      "chapter": 4,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Claims contained only in natural-language content shall not establish identity or authority.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-I",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "NIS2-21-2-J",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-26-2",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-2-3-10",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P23",
+      "chapter": 5,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "The mandate may be standing or task-specific but shall be no broader than necessary for the governed function.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-I",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-14-3",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-32-4",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P24",
+      "chapter": 5,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "A credential capable of performing an operation shall not by itself prove that the operation is authorized.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-I",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-14-3",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-32-4",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P25",
+      "chapter": 5,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Attempted self-escalation shall result in `CONSTITUTIONAL_STOP`.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-I",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-14-3",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-32-4",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P26",
+      "chapter": 5,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "`delegated_capability ⊆ delegator_capability` shall be a mandatory invariant.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-I",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-14-3",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-32-4",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P27",
+      "chapter": 5,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Every material trust transition shall be separately admitted or mediated.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-I",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-14-3",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-32-4",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P28",
+      "chapter": 6,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Trust domains shall be defined by authority, sensitivity, function and administrative boundary rather than merely by network location.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-1",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "NIS2-21-2-I",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P29",
+      "chapter": 6,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "A general AI capability shall never imply Z0 access.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-1",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "NIS2-21-2-I",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P30",
+      "chapter": 6,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "A workload shall not possess unrestricted authority over the policy, identities and historical evidence used to prove that workload's compliance.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-1",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "NIS2-21-2-I",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P31",
+      "chapter": 7,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Lawful possession shall not be treated as proof of suitability for every use.",
+      "references": [
+        {
+          "provision_id": "GDPR-5-1-B",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-5-1-C",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-10-2",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-10",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-11",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P32",
+      "chapter": 7,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "A model's ability to consume such data shall not constitute authorization to provide it.",
+      "references": [
+        {
+          "provision_id": "GDPR-5-1-B",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-5-1-C",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-10-2",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P33",
+      "chapter": 8,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Natural-language instructions embedded in retrieved content, web pages, documents, email, code, tool output or memory shall not grant capability or override policy.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-15-5",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-4",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-25-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P34",
+      "chapter": 8,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Critical authorization shall therefore be enforced outside the model where technically practicable.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-15-5",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-4",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-25-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P35",
+      "chapter": 8,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "The acts of reading information, using it in current context, inferring from it, proposing learning and persisting memory shall remain distinguishable.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-15-5",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-4",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-25-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P36",
+      "chapter": 10,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Provider responsibilities and estate responsibilities shall be separately identified.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-D",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "NIS2-21-3",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "NIS2-21-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P37",
+      "chapter": 13,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "The gates may execute repeatedly or conditionally; they need not be implemented as one monolithic sequential service.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-9-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-14-3",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "NIS2-21-1",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-25-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P38",
+      "chapter": 13,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Explicitly classified low-consequence read operations may use a valid cached policy during defined degraded operation.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-9-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-14-3",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "NIS2-21-1",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-25-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P39",
+      "chapter": 13,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "An emergency overlay shall not expand authority beyond the adopted base policy.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-9-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-14-3",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "NIS2-21-1",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-25-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P40",
+      "chapter": 13,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Explicit conversion requires an authorized transition record.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-9-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-14-3",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "NIS2-21-1",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-25-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P41",
+      "chapter": 14,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Approval shall not be reduced to ceremonial confirmation of an opaque agent proposal.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-14-1",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-14-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-26-2",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-22-3",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P42",
+      "chapter": 14,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Routine low-risk reversible internal operations may be automated where controls are demonstrably effective.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-14-1",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-14-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-26-2",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-22-3",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-9-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P43",
+      "chapter": 14,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Availability of an execution tool shall not bypass the effect gate.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-14-1",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-14-2",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "EU-AIA-26-2",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-22-3",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P44",
+      "chapter": 15,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Where mutable operational stores are used for performance, an independently preserved evidence layer shall retain the authoritative historical record.",
+      "references": [
+        {
+          "provision_id": "EU-AIA-12-1",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-12-2",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-19-1",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-24-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P45",
+      "chapter": 16,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "The audit shall identify the Chapter and § from which its authority derives.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-2-3-6",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-32-1-D",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-3-5",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P46",
+      "chapter": 17,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Permanent exceptions are prohibited.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-B",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-C",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-2-3-2",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-2-3-3",
+          "relationship": "TEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P47",
+      "chapter": 17,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Security debt shall remain visible until resolved, superseded or accepted by authorized human decision.",
+      "references": [
+        {
+          "provision_id": "NIS2-21-2-B",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-C",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-2-3-2",
+          "relationship": "TEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-2-3-3",
+          "relationship": "TEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P48",
+      "chapter": 19,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Historic executions shall retain reference to the version under which they occurred.",
+      "references": [
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-24-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-9-2",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P49",
+      "chapter": 19,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Where the Guide changes substantive meaning, the Act must be amended.",
+      "references": [
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-24-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-9-2",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P50",
+      "chapter": 19,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Implementation detail shall ordinarily belong in controls, protocols, schemas or the Interpretation Guide rather than be duplicated as constitutional law.",
+      "references": [
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-24-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-9-2",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-10",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-11",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P51",
+      "chapter": 19,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Completeness shall be assessed through the coverage graph linking threats, legal obligations, principles, §§, controls, tests and evidence.",
+      "references": [
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-24-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-9-2",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-2-3-6",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-1-D",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-PRE-P52",
+      "chapter": 19,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "Conductellence itself remains subordinate to lawful human authority and applicable external law.",
+      "references": [
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-24-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "EU-AIA-9-2",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-10",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-1-11",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-OPR-P01",
+      "chapter": null,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "This Act is intended to be **dense rather than granular for its own sake**.",
+      "references": [
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-24-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-OPR-P02",
+      "chapter": null,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "The authoritative chain is:",
+      "references": [
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-24-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-OPR-P03",
+      "chapter": null,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "A § states **what must, may or must not be true**.",
+      "references": [
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-24-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-OPR-P04",
+      "chapter": null,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "The Interpretation Guide explains **how the § is to be understood**.",
+      "references": [
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-24-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-OPR-P05",
+      "chapter": null,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "A Control states **what mechanism operationalizes the §**.",
+      "references": [
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-24-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-OPR-P06",
+      "chapter": null,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "A Policy rule states **how an execution decision is made**.",
+      "references": [
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-24-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-OPR-P07",
+      "chapter": null,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "An Audit states **how compliance or failure is tested**.",
+      "references": [
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-24-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "SE-CYBER-2-3-6",
+          "relationship": "DERIVED"
+        },
+        {
+          "provision_id": "GDPR-32-1-D",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-OPR-P08",
+      "chapter": null,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "SPETL preserves **what actually happened**.",
+      "references": [
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-24-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "CDX-LAW-001-OPR-P09",
+      "chapter": null,
+      "section_id": null,
+      "principle": null,
+      "text_preview": "No lower layer may silently change the normative meaning of a higher layer.",
+      "references": [
+        {
+          "provision_id": "NIS2-20-1",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "NIS2-21-2-F",
+          "relationship": "CONTEXTUAL"
+        },
+        {
+          "provision_id": "GDPR-24-1",
+          "relationship": "CONTEXTUAL"
+        }
+      ]
+    }
+  ]
+}
