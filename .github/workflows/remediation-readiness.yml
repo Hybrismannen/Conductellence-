@@ -15,6 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python3 AUDITS/audit_appendices_and_gac.py
+      - run: python3 AUDITS/audit_interpretation_records.py
       - run: python3 AUDITS/audit_fully_automatable_controls.py
       - run: python3 AUDITS/audit_spetl.py
       - run: python3 AUDITS/audit_security_twin.py
