@@ -1,0 +1,21 @@
+name: Conductellence Remediation Readiness
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  readiness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 AUDITS/audit_appendices_and_gac.py
+      - run: python3 AUDITS/audit_fully_automatable_controls.py
+      - run: python3 AUDITS/audit_spetl.py
+      - run: python3 AUDITS/audit_security_twin.py
+      - run: python3 AUDITS/audit_enforcement_readiness.py
