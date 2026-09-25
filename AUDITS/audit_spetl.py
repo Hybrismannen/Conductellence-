@@ -2,7 +2,7 @@
 from pathlib import Path
 import importlib.util,tempfile
 
-spec=importlib.util.spec_from_file_location("ledger",Path("SPETL/ledger.py"))
+spec=importlib.util.spec_from_file_location("ledger",Path("SPETL/spetl.py"))
 m=importlib.util.module_from_spec(spec)
 spec.loader.exec_module(m)
 
