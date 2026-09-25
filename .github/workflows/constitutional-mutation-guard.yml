@@ -1,0 +1,50 @@
+name: Conductellence Constitutional Mutation Guard
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  mutation-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Detect protected-surface changes
+        id: paths
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BASE="${{ github.event.pull_request.base.sha }}"
+            HEAD="${{ github.event.pull_request.head.sha }}"
+          else
+            BASE="${{ github.event.before }}"
+            HEAD="${{ github.sha }}"
+          fi
+          git diff --name-only "$BASE" "$HEAD" > changed.txt || true
+          if grep -Eq '^(LAW/|appendices/|POLICY/|CONTROL-CATALOGUE/|GOVERNANCE/enforcement-state\.json|LEGAL-REFERENCES/|LEGAL-RESOLVER/)' changed.txt; then
+            echo "protected=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "protected=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Enforce PR-only constitutional mutation on main
+        if: github.event_name == 'push' && steps.paths.outputs.protected == 'true'
+        shell: bash
+        run: |
+          PARENTS=$(git rev-list --parents -n 1 "${{ github.sha }}" | awk '{print NF-1}')
+          if [ "$PARENTS" -lt 2 ]; then
+            echo "Protected Conductellence surfaces were changed by a non-merge commit on main."
+            echo "Native branch protection is still required for pre-merge prevention."
+            exit 1
+          fi
+
+      - name: Confirm guarded path
+        run: echo "Constitutional mutation guard evaluated."
