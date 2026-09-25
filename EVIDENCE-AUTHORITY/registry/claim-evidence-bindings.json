@@ -1,0 +1,6 @@
+{
+  "schema": "cdx.claim-evidence-bindings/v0.1",
+  "system_id": "CDX-EVID-001",
+  "policy": "Every scientific support/contrast relationship is explicit. Scite metadata may inform a relationship but cannot create a substantive Conductellence evidence verdict by itself.",
+  "bindings": []
+}
