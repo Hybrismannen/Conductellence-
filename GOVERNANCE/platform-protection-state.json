@@ -1,0 +1,20 @@
+{
+  "schema": "cdx.platform-protection/v1.0",
+  "repository": "Hybrismannen/Conductellence-",
+  "default_branch": "main",
+  "observed_at": "2026-09-25",
+  "branch_protection_verified": false,
+  "ruleset_verified": false,
+  "connector_observation": {
+    "branch_protected_flag": false,
+    "rulesets_api": "FORBIDDEN_PRIVATE_REPO_PLAN_CAPABILITY",
+    "branch_protection_api": "NOT_ACCESSIBLE_BY_INTEGRATION"
+  },
+  "constitutional_effect": "ENFORCING_BLOCKER",
+  "in_repo_mitigations": [
+    ".github/CODEOWNERS",
+    "GOVERNANCE/constitutional-change-policy.md",
+    ".github/workflows/conductellence-law-audit.yml"
+  ],
+  "rule": "In-repo controls reduce risk but do not satisfy the production criterion 'constitutional amendment path protected'. ENFORCING shall remain prohibited until platform protection is externally enabled and verified."
+}
