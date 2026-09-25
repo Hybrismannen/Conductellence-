@@ -1,5 +1,95 @@
 {
   "schema": "cdx.scientific-publication-registry/v0.1",
   "system_id": "CDX-EVID-001",
-  "publications": []
+  "publications": [
+    {
+      "publication_id": "CDX-PUB-HO-KOULU-2020",
+      "doi": "10.1177/1023263x20978649",
+      "title": "Proceduralizing control and discretion: Human oversight in artificial intelligence policy",
+      "authors": [
+        "Riikka Koulu"
+      ],
+      "journal": "Maastricht Journal of European and Comparative Law",
+      "year": 2020,
+      "provider": "Scite",
+      "provider_observed_at": "2026-09-25",
+      "provider_query_ref": "CDX-SCITE-SEED-HUMAN-OVERSIGHT-001",
+      "scite_tally": {
+        "total": 13,
+        "supporting": 0,
+        "contrasting": 0,
+        "mentioning": 13,
+        "citing_publications": 75
+      },
+      "editorial_notices_observed": [],
+      "evidence_state": "SOURCED",
+      "review_state": "UNASSESSED",
+      "authority_state": "EVIDENCE_ONLY",
+      "domains": [
+        "human_oversight",
+        "ai_governance"
+      ]
+    },
+    {
+      "publication_id": "CDX-PUB-HO-LANGER-2023",
+      "doi": "10.31234/osf.io/ke256",
+      "title": "A signal detection perspective on error and unfairness detection as a critical aspect of human oversight of AI-based systems",
+      "authors": [
+        "Markus Langer",
+        "Kevin Baum",
+        "Nadine Schlicker"
+      ],
+      "year": 2023,
+      "provider": "Scite",
+      "provider_observed_at": "2026-09-25",
+      "provider_query_ref": "CDX-SCITE-SEED-HUMAN-OVERSIGHT-001",
+      "scite_tally": {
+        "total": 2,
+        "supporting": 0,
+        "contrasting": 0,
+        "mentioning": 2,
+        "citing_publications": 7
+      },
+      "editorial_notices_observed": [],
+      "evidence_state": "SOURCED",
+      "review_state": "UNASSESSED",
+      "authority_state": "EVIDENCE_ONLY",
+      "domains": [
+        "human_oversight",
+        "error_detection",
+        "human_factors"
+      ]
+    },
+    {
+      "publication_id": "CDX-PUB-HO-BIEWER-2024",
+      "doi": "10.1007/s10703-024-00445-2",
+      "title": "Software doping analysis for human oversight",
+      "authors": [
+        "Sebastian Biewer",
+        "Kevin Baum",
+        "Sarah Sterz"
+      ],
+      "journal": "Formal Methods in System Design",
+      "year": 2024,
+      "provider": "Scite",
+      "provider_observed_at": "2026-09-25",
+      "provider_query_ref": "CDX-SCITE-SEED-HUMAN-OVERSIGHT-001",
+      "scite_tally": {
+        "total": 0,
+        "supporting": 0,
+        "contrasting": 0,
+        "mentioning": 0,
+        "citing_publications": 6
+      },
+      "editorial_notices_observed": [],
+      "evidence_state": "SOURCED",
+      "review_state": "UNASSESSED",
+      "authority_state": "EVIDENCE_ONLY",
+      "domains": [
+        "human_oversight",
+        "formal_methods",
+        "software_assurance"
+      ]
+    }
+  ]
 }
