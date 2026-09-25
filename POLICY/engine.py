@@ -64,8 +64,38 @@ def evaluate(context, control_ids=None):
         elif decision=="REQUIRE_HUMAN" and final=="ALLOW": final="REQUIRE_HUMAN"
     return {"decision":final,"policy_version":reg["policy_version"],"control_results":results}
 
+def emit_spetl(path,context,result):
+    import importlib.util
+    spec=importlib.util.spec_from_file_location("cdx_spetl",Path("SPETL/ledger.py"))
+    m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
+    required=["actor_id","action","authority_ref","correlation_id","causation_id"]
+    missing=[x for x in required if not context.get(x)]
+    if missing:
+        raise ValueError("SPETL evidence fields missing: "+", ".join(missing))
+    event={
+      "event_type":"POLICY_DECISION",
+      "actor_id":context["actor_id"],
+      "action":context["action"],
+      "resource_id":context.get("resource_id"),
+      "decision":result["decision"],
+      "authority_ref":context["authority_ref"],
+      "policy_version":result.get("policy_version","unknown"),
+      "correlation_id":context["correlation_id"],
+      "causation_id":context["causation_id"],
+      "control_results":result.get("control_results",[]),
+      "evidence_refs":context.get("evidence_refs",[])
+    }
+    return m.append_event(path,event)
+
 def main():
-    ap=argparse.ArgumentParser(); ap.add_argument("context_json"); ap.add_argument("--control",action="append")
-    a=ap.parse_args(); ctx=json.loads(Path(a.context_json).read_text())
-    print(json.dumps(evaluate(ctx,a.control),indent=2))
+    ap=argparse.ArgumentParser()
+    ap.add_argument("context_json")
+    ap.add_argument("--control",action="append")
+    ap.add_argument("--ledger")
+    a=ap.parse_args()
+    ctx=json.loads(Path(a.context_json).read_text())
+    result=evaluate(ctx,a.control)
+    if a.ledger:
+        result["spetl_event"]=emit_spetl(a.ledger,ctx,result)
+    print(json.dumps(result,indent=2))
 if __name__=="__main__": main()
