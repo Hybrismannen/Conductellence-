@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://conductellence.local/schemas/scite-cache-record.schema.json",
+  "title": "Conductellence Scite Cache Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "cache_id",
+    "provider_id",
+    "query_mode",
+    "retrieved_at",
+    "fresh_until",
+    "request_key",
+    "payload_sha256",
+    "provider_payload"
+  ],
+  "properties": {
+    "cache_id": {
+      "type": "string",
+      "pattern": "^CDX-SCITE-CACHE-[A-Z0-9-]+$"
+    },
+    "provider_id": {
+      "const": "CDX-PROV-SCITE-001"
+    },
+    "query_mode": {
+      "enum": [
+        "DOI_METADATA",
+        "LITERATURE_SEARCH",
+        "CITATION_GRAPH",
+        "FULLTEXT",
+        "EDITORIAL_CHECK"
+      ]
+    },
+    "request_key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "retrieved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "fresh_until": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "payload_sha256": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "provider_payload": {
+      "type": "object"
+    },
+    "authority_effect": {
+      "const": "NONE"
+    },
+    "legal_effect": {
+      "const": "NONE"
+    }
+  }
+}

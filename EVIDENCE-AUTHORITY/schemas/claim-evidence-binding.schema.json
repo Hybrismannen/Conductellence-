@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://conductellence.local/schemas/claim-evidence-binding.schema.json",
+  "title": "Conductellence Claim-Evidence Binding",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "binding_id",
+    "claim_id",
+    "publication_id",
+    "relationship",
+    "support_state",
+    "provenance",
+    "review_state"
+  ],
+  "properties": {
+    "binding_id": {
+      "type": "string",
+      "pattern": "^CDX-EVB-[A-Z0-9-]+$"
+    },
+    "claim_id": {
+      "type": "string",
+      "pattern": "^CDX-CLM-[A-Z0-9-]+$"
+    },
+    "publication_id": {
+      "type": "string",
+      "pattern": "^CDX-PUB-[A-Z0-9-]+$"
+    },
+    "relationship": {
+      "enum": [
+        "SUPPORTS",
+        "CONTRASTS",
+        "MENTIONS",
+        "FOUNDATIONAL",
+        "METHOD",
+        "CONTEXTUAL"
+      ]
+    },
+    "support_state": {
+      "enum": [
+        "UNASSESSED",
+        "CONTEXTUAL",
+        "DERIVED",
+        "DIRECTLY_SUPPORTED",
+        "CONTESTED",
+        "DEGRADED",
+        "RETRACTED"
+      ]
+    },
+    "scite_metadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "supporting": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "contrasting": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "mentioning": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "editorial_notices": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "support_boundary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "contextual_applicability": {
+      "enum": [
+        "NOT_ASSESSED",
+        "APPLICABLE",
+        "PARTIALLY_APPLICABLE",
+        "NOT_APPLICABLE",
+        "UNKNOWN"
+      ]
+    },
+    "provenance": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "review_state": {
+      "enum": [
+        "PENDING",
+        "REVIEWED",
+        "HUMAN_REVIEW_REQUIRED"
+      ]
+    },
+    "reviewed_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  }
+}

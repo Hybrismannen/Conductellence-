@@ -1,0 +1,66 @@
+{
+  "schema": "cdx.scite-provider-policy/v0.1",
+  "system_id": "CDX-EVID-001",
+  "provider_id": "CDX-PROV-SCITE-001",
+  "provider": "Scite",
+  "authority_state": "EXTERNAL_EVIDENCE_PROVIDER_ONLY",
+  "collection_strategy": {
+    "mode": "LOCAL_REGISTRY_PRIMARY",
+    "external_collection_state": "DEFERRED_PAYMENT_REQUIRED",
+    "collection_name": "Conductellence Evidence Authority",
+    "collection_slug": null,
+    "domain_partitioning": "LOCAL_TAGS",
+    "reason": "Scite Collection creation requires a paid provider action. Conductellence remains fully operational without it; provider-side Collections are optional convenience, not architecture."
+  },
+  "budget_policy": {
+    "default_search_limit": 10,
+    "maximum_search_limit_without_explicit_override": 25,
+    "broad_discovery_requires_explicit_research_question": true,
+    "no_scheduled_literature_searches": true,
+    "prefer_exact_doi_lookup": true,
+    "prefer_cached_result": true,
+    "citation_graph_default_depth": 1,
+    "citation_graph_default_max_edges": 100,
+    "fulltext_only_after_shortlisting": true,
+    "provider_writes_default": "DENY_UNLESS_EXPLICITLY_JUSTIFIED",
+    "collection_creation_default": "DEFER",
+    "read_on_demand_only": true
+  },
+  "cache_policy": {
+    "metadata_days": 30,
+    "citation_tally_days": 30,
+    "citation_graph_days": 90,
+    "fulltext_excerpts_days": 90,
+    "editorial_notice_days_critical": 7,
+    "editorial_notice_days_standard": 30
+  },
+  "admission_policy": {
+    "accepted_identifiers": [
+      "DOI"
+    ],
+    "minimum_required": [
+      "title",
+      "provenance",
+      "retrieved_at"
+    ],
+    "stronger_claim_requires_binding": true,
+    "retracted_source_cannot_be_promoted_to_robust": true,
+    "contrasting_evidence_must_be_preserved": true
+  },
+  "prohibited_inferences": [
+    "citation_count_equals_truth",
+    "supporting_label_equals_truth",
+    "publication_exists_equals_claim_supported",
+    "claim_supported_equals_control_justified",
+    "scientific_evidence_equals_legal_authority",
+    "scite_output_equals_legal_applicability"
+  ],
+  "provider_capability_state": {
+    "search_literature": "AVAILABLE_ON_DEMAND",
+    "citation_graph": "AVAILABLE_ON_DEMAND",
+    "read_fulltext": "AVAILABLE_ON_DEMAND",
+    "editorial_notice_checks": "AVAILABLE_ON_DEMAND",
+    "collections": "OPTIONAL_DEFERRED_PAYMENT_REQUIRED",
+    "mandatory_for_core_operation": false
+  }
+}

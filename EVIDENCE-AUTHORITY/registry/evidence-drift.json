@@ -1,0 +1,12 @@
+{
+  "schema": "cdx.evidence-drift/v0.1",
+  "system_id": "CDX-EVID-001",
+  "policy": {
+    "retraction": "Create EVIDENCE_STOP for affected active support relationships and queue reassessment.",
+    "correction": "Create DRIFT finding and queue reassessment proportional to affected claim.",
+    "concern": "Mark evidence DEGRADED_PENDING_REVIEW; do not erase historic use.",
+    "citation_shift": "Informational/analytical only unless a human/registered rule determines materiality.",
+    "provider_failure": "Provider failure is not evidence change."
+  },
+  "events": []
+}

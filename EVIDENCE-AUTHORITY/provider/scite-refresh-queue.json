@@ -1,0 +1,6 @@
+{
+  "schema": "cdx.scite-refresh-queue/v0.1",
+  "generated_at": null,
+  "items": [],
+  "policy": "This queue never calls Scite. A provider refresh is an explicit evidence task."
+}
