@@ -39,3 +39,21 @@ jobs:
 
       - name: Audit Phase D regulatory drift state
         run: python3 AUDITS/audit_phase_d_regulatory_drift.py
+
+      - name: Audit foundational appendices and Global Authority Corpus
+        run: python3 AUDITS/audit_foundational_appendices.py
+
+      - name: Audit fully-automatable controls
+        run: python3 AUDITS/audit_fully_automatable_controls.py
+
+      - name: Audit SPETL evidence runtime
+        run: python3 AUDITS/audit_spetl.py
+
+      - name: Audit Security Twin
+        run: python3 AUDITS/audit_security_twin.py
+
+      - name: Audit Estate Registry
+        run: python3 AUDITS/audit_estate_registry.py
+
+      - name: Audit enforcement transition readiness
+        run: python3 AUDITS/audit_enforcement_transition.py
