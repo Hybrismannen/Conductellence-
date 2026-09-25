@@ -2,5 +2,48 @@
   "schema": "cdx.claim-evidence-bindings/v0.1",
   "system_id": "CDX-EVID-001",
   "policy": "Every scientific support/contrast relationship is explicit. Scite metadata may inform a relationship but cannot create a substantive Conductellence evidence verdict by itself.",
-  "bindings": []
+  "bindings": [
+    {
+      "binding_id": "CDX-EVB-HO-001",
+      "claim_id": "CDX-CLM-HO-001",
+      "publication_id": "CDX-PUB-HO-KOULU-2020",
+      "relationship": "CONTEXTUAL",
+      "support_state": "UNASSESSED",
+      "scite_metadata": {
+        "supporting": 0,
+        "contrasting": 0,
+        "mentioning": 13,
+        "editorial_notices": []
+      },
+      "support_boundary": "Relevant scholarship on the procedural meaning and limits of human oversight; no stronger support state is asserted without paper-level review.",
+      "contextual_applicability": "NOT_ASSESSED",
+      "provenance": [
+        "Scite search CDX-SCITE-SEED-HUMAN-OVERSIGHT-001",
+        "DOI:10.1177/1023263x20978649"
+      ],
+      "review_state": "PENDING",
+      "reviewed_at": null
+    },
+    {
+      "binding_id": "CDX-EVB-HO-002",
+      "claim_id": "CDX-CLM-HO-002",
+      "publication_id": "CDX-PUB-HO-LANGER-2023",
+      "relationship": "CONTEXTUAL",
+      "support_state": "UNASSESSED",
+      "scite_metadata": {
+        "supporting": 0,
+        "contrasting": 0,
+        "mentioning": 2,
+        "editorial_notices": []
+      },
+      "support_boundary": "Relevant because the source concerns error detection as a condition of effective oversight; no stronger support state is asserted without paper-level review.",
+      "contextual_applicability": "NOT_ASSESSED",
+      "provenance": [
+        "Scite search CDX-SCITE-SEED-HUMAN-OVERSIGHT-001",
+        "DOI:10.31234/osf.io/ke256"
+      ],
+      "review_state": "PENDING",
+      "reviewed_at": null
+    }
+  ]
 }
