@@ -61,7 +61,7 @@ Conductellence uses Scite only when needed:
 - **Editorial/retraction checks** refresh more often than citation tallies.
 - **No scheduled Scite search workflow.**
 - **No duplicate fetch when a fresh local cache exists.**
-- One master Scite Collection; domain classification stays local.
+- Provider-side Scite Collections are optional. Because Collection creation currently requires a paid provider action, Conductellence defaults to local registries and domain tags; Scite is read-on-demand only.
 
 ## Architecture
 
