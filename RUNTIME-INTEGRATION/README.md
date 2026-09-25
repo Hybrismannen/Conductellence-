@@ -34,6 +34,6 @@ intent
 - `BOUND_PENDING_RUNTIME_INTEGRATION`
 - `BOUND_CI_MONITORED`
 - `RUNTIME_GUARDED_UNVERIFIED`
-- `VERIFIED_RUNTIME_BOUND`
+- `VERIFIED_REFERENCE_RUNTIME` — local pinned policy bundle + tested repository guard; does not prove application runtime mediation.\n- `VERIFIED_RUNTIME_BOUND` — consequential application/runtime enforcement point verified with SPETL evidence
 
-Only the final state satisfies estate runtime enforcement readiness.
+`VERIFIED_REFERENCE_RUNTIME` satisfies reference-runtime distribution readiness. Only `VERIFIED_RUNTIME_BOUND` satisfies production estate runtime enforcement readiness.
