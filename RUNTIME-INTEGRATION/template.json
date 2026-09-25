@@ -1,0 +1,16 @@
+{
+  "schema": "cdx.runtime-integration/v1.0",
+  "system_id": "REPLACE",
+  "authority_ref": "CDX-SYS-001",
+  "state": "BOUND_CI_MONITORED",
+  "enforcement_points": [],
+  "policy_version": "1.0.0",
+  "spetl_mode": "REQUIRED",
+  "tests": {
+    "allow": false,
+    "deny": false,
+    "policy_unavailable": false
+  },
+  "verified_at": null,
+  "verification_evidence": []
+}
