@@ -1,0 +1,63 @@
+{
+  "schema": "cdx.technical-authorities/v0.1",
+  "corpus_id": "CDX-GAC-001",
+  "policy": "Metadata only; no entry becomes law or an operative control merely by inclusion.",
+  "authorities": [
+    {
+      "id": "NIST-CSF-2",
+      "class": "MANAGEMENT_RISK_STANDARD",
+      "title": "NIST Cybersecurity Framework 2.0",
+      "issuer": "NIST",
+      "state": "REFERENCE"
+    },
+    {
+      "id": "NIST-AI-RMF",
+      "class": "MANAGEMENT_RISK_STANDARD",
+      "title": "NIST AI Risk Management Framework",
+      "issuer": "NIST",
+      "state": "REFERENCE"
+    },
+    {
+      "id": "NIST-SP-800-53",
+      "class": "SECURITY_ENGINEERING_STANDARD",
+      "title": "NIST SP 800-53",
+      "issuer": "NIST",
+      "state": "REFERENCE"
+    },
+    {
+      "id": "NIST-SP-800-207",
+      "class": "SECURITY_ENGINEERING_STANDARD",
+      "title": "NIST SP 800-207 Zero Trust Architecture",
+      "issuer": "NIST",
+      "state": "ADOPTED_PRINCIPLE"
+    },
+    {
+      "id": "NIST-SSDF",
+      "class": "SECURITY_ENGINEERING_STANDARD",
+      "title": "NIST SP 800-218 Secure Software Development Framework",
+      "issuer": "NIST",
+      "state": "REFERENCE"
+    },
+    {
+      "id": "SLSA",
+      "class": "SECURITY_ENGINEERING_STANDARD",
+      "title": "SLSA software supply-chain framework",
+      "issuer": "OpenSSF",
+      "state": "REFERENCE"
+    },
+    {
+      "id": "SPIFFE",
+      "class": "SECURITY_ENGINEERING_STANDARD",
+      "title": "SPIFFE workload identity",
+      "issuer": "CNCF",
+      "state": "REFERENCE"
+    },
+    {
+      "id": "C2PA",
+      "class": "SECURITY_ENGINEERING_STANDARD",
+      "title": "C2PA Content Credentials",
+      "issuer": "C2PA",
+      "state": "REFERENCE"
+    }
+  ]
+}
