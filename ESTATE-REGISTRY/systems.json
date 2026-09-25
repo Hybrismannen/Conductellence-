@@ -169,6 +169,20 @@
       "binding_verified_at": "2026-09-25",
       "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
       "runtime_integration_state": "NOT_VERIFIED"
+    },
+    {
+      "system_id": "CDX-EST-017",
+      "repository": "Motherpher/CareerHubZero",
+      "repository_verified": true,
+      "visibility": "private",
+      "default_branch": "main",
+      "authority_ref": "CDX-SYS-001",
+      "binding_state": "BOUND_PENDING_RUNTIME_INTEGRATION",
+      "runtime_integration_state": "NOT_VERIFIED",
+      "binding_manifest": ".security/conductellence.json",
+      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
+      "security_state": "REGISTERED",
+      "last_verified_at": "2026-09-26"
     }
   ],
   "updated_at": "2026-09-25",
