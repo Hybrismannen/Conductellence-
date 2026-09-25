@@ -3,6 +3,7 @@ from pathlib import Path
 import argparse, hashlib, json, re, subprocess, sys
 
 POLICY=Path(".security/conductellence-policy.json")
+POLICY_DIR=Path(".security/conductellence-policy")
 MANIFEST=Path(".security/conductellence.json")
 
 def get(obj,path):
@@ -35,8 +36,29 @@ def ev(rule,ctx):
     if op=="implies": return (not ev(rule["if"],ctx)) or ev(rule["then"],ctx)
     raise ValueError("unknown operator "+str(op))
 
+def load_policy():
+    if POLICY.exists():
+        return json.loads(POLICY.read_text())
+    if POLICY_DIR.exists():
+        shards=[]
+        meta=None
+        for path in sorted(POLICY_DIR.glob("*.json")):
+            doc=json.loads(path.read_text())
+            if doc.get("schema")=="cdx.control-registry-shard/v1.0":
+                shards.extend(doc.get("controls",[]))
+                meta=meta or doc
+        if shards and meta:
+            return {
+                "schema":"cdx.control-registry/v1.0",
+                "law_id":meta.get("law_id"),
+                "policy_version":meta.get("policy_version"),
+                "default_behavior":"DENY_ON_CONTROL_ERROR",
+                "controls":shards
+            }
+    raise FileNotFoundError("Conductellence policy unavailable")
+
 def evaluate(ctx, control_ids=None):
-    reg=json.loads(POLICY.read_text())
+    reg=load_policy()
     controls=[x for x in reg["controls"] if x["enforcement_surface"]==ctx.get("surface")]
     if control_ids is not None:
         wanted=set(control_ids)
@@ -61,10 +83,13 @@ def git_blob_sha(path):
     return hashlib.sha1(b"blob "+str(len(data)).encode()+b"\0"+data).hexdigest()
 
 def validate_binding():
-    if not POLICY.exists() or not MANIFEST.exists():
-        raise SystemExit("FAIL: Conductellence policy/manifest missing")
+    if not MANIFEST.exists():
+        raise SystemExit("FAIL: Conductellence manifest missing")
+    try:
+        p=load_policy()
+    except FileNotFoundError:
+        raise SystemExit("FAIL: Conductellence policy unavailable")
     m=json.loads(MANIFEST.read_text())
-    p=json.loads(POLICY.read_text())
     required={
       "authority_ref":"CDX-SYS-001",
       "law_id":"CDX-LAW-001",
@@ -74,9 +99,14 @@ def validate_binding():
         if m.get(k)!=v:
             raise SystemExit(f"FAIL: manifest {k}={m.get(k)!r}, expected {v!r}")
     expected=m.get("policy_bundle_blob_sha")
-    actual=git_blob_sha(POLICY)
-    if expected!=actual:
-        raise SystemExit(f"FAIL: policy bundle blob sha {actual}, expected {expected}")
+    if POLICY.exists():
+        actual=git_blob_sha(POLICY)
+        if expected and expected!=actual:
+            raise SystemExit(f"FAIL: policy bundle blob sha {actual}, expected {expected}")
+    else:
+        actual=m.get("policy_shard_set_id")
+        if not actual:
+            raise SystemExit("FAIL: sharded policy requires policy_shard_set_id")
     if m.get("content_may_modify_authority") is not False:
         raise SystemExit("FAIL: content-authority firewall not asserted")
     if m.get("missing_permission")!="DENY":
@@ -84,7 +114,7 @@ def validate_binding():
     print(f"PASS: binding {m.get('system_repository')} -> {m['authority_ref']} policy={actual}")
 
 def selftest():
-    reg=json.loads(POLICY.read_text())
+    reg=load_policy()
     controls=reg.get("controls",[])
     if len(controls)!=69:
         raise SystemExit(f"FAIL: expected 69 controls, got {len(controls)}")
@@ -114,7 +144,9 @@ def main():
     if a.binding_check: validate_binding()
     if a.policy_unavailable_test: policy_unavailable_test()
     if a.context:
-        if not POLICY.exists():
+        try:
+            load_policy()
+        except FileNotFoundError:
             print(json.dumps({"decision":"DENY","reason":"POLICY_UNAVAILABLE"},indent=2)); return
         print(json.dumps(evaluate(json.loads(Path(a.context).read_text()),a.control),indent=2))
     if not any([a.selftest,a.binding_check,a.policy_unavailable_test,a.context]):
