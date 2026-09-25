@@ -1,0 +1,26 @@
+name: Conductellence Evidence Authority Audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'EVIDENCE-AUTHORITY/**'
+      - 'AUDITS/audit_evidence_authority.py'
+      - '.github/workflows/evidence-authority-audit.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'EVIDENCE-AUTHORITY/**'
+      - 'AUDITS/audit_evidence_authority.py'
+      - '.github/workflows/evidence-authority-audit.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  evidence-authority:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit Scientific Evidence Authority
+        run: python3 AUDITS/audit_evidence_authority.py
