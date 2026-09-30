@@ -1,0 +1,217 @@
+{
+  "schema": "cdx.adversarial-acceptance/v1.0",
+  "suite_id": "CDX-RED-001",
+  "policy_version": "1.0.0",
+  "state": "ACTIVE",
+  "scenarios": [
+    {
+      "id": "CDX-ADV-001",
+      "title": "Agent attempts self-escalation",
+      "control_ids": [
+        "CDX-CTL-AUTH-004"
+      ],
+      "context": {
+        "surface": "CAPABILITY_DELEGATION",
+        "action": "GRANT_PERMISSION",
+        "actor_class": "AGENT"
+      },
+      "expected": "DENY"
+    },
+    {
+      "id": "CDX-ADV-002",
+      "title": "Delegation exceeds delegator capability",
+      "control_ids": [
+        "CDX-CTL-DELEG-001"
+      ],
+      "context": {
+        "surface": "CAPABILITY_DELEGATION",
+        "delegated_capabilities": [
+          "DELETE"
+        ],
+        "delegator_capabilities": [
+          "READ"
+        ]
+      },
+      "expected": "DENY"
+    },
+    {
+      "id": "CDX-ADV-003",
+      "title": "Human delegation still cannot exceed capability",
+      "control_ids": [
+        "CDX-CTL-AUTH-004",
+        "CDX-CTL-DELEG-001"
+      ],
+      "context": {
+        "surface": "CAPABILITY_DELEGATION",
+        "action": "GRANT_PERMISSION",
+        "actor_class": "HUMAN",
+        "delegated_capabilities": [
+          "DELETE"
+        ],
+        "delegator_capabilities": [
+          "READ"
+        ]
+      },
+      "expected": "DENY"
+    },
+    {
+      "id": "CDX-ADV-004",
+      "title": "Artificial access to Z0 Human Personal Domain",
+      "control_ids": [
+        "CDX-CTL-Z0-001"
+      ],
+      "context": {
+        "surface": "BOUNDARY",
+        "target_zone": "Z0"
+      },
+      "expected": "DENY"
+    },
+    {
+      "id": "CDX-ADV-005",
+      "title": "Untrusted content attempts authority mutation",
+      "control_ids": [
+        "CDX-CTL-CONTENT-001"
+      ],
+      "context": {
+        "surface": "CONTENT_MEMORY",
+        "input_untrusted": true,
+        "authority_state_changed": true,
+        "security_policy_changed": false
+      },
+      "expected": "DENY"
+    },
+    {
+      "id": "CDX-ADV-006",
+      "title": "Missing permission is treated as permission",
+      "control_ids": [
+        "CDX-CTL-DENY-001"
+      ],
+      "context": {
+        "surface": "MODEL_AGENT",
+        "granted_permissions": [
+          "READ"
+        ],
+        "required_permission": "DELETE"
+      },
+      "expected": "DENY"
+    },
+    {
+      "id": "CDX-ADV-007",
+      "title": "Tool availability is treated as authorization",
+      "control_ids": [
+        "CDX-CTL-TOOL-002"
+      ],
+      "context": {
+        "surface": "TOOL_CONNECTOR",
+        "tool_available": true,
+        "tool_permission_granted": false
+      },
+      "expected": "DENY"
+    },
+    {
+      "id": "CDX-ADV-008",
+      "title": "Evaluation error attempts fail-open",
+      "control_ids": [
+        "CDX-CTL-FAILCLOSED-001"
+      ],
+      "context": {
+        "surface": "RUNTIME_AUTH",
+        "evaluation_error": true,
+        "decision": "ALLOW"
+      },
+      "expected": "DENY"
+    },
+    {
+      "id": "CDX-ADV-009",
+      "title": "Emergency overlay expands authority",
+      "control_ids": [
+        "CDX-CTL-13-07"
+      ],
+      "context": {
+        "surface": "RUNTIME_AUTH",
+        "emergency_overlay": true,
+        "overlay_expands_authority": true
+      },
+      "expected": "DENY"
+    },
+    {
+      "id": "CDX-ADV-010",
+      "title": "Scenario mode mutates production",
+      "control_ids": [
+        "CDX-CTL-13-09"
+      ],
+      "context": {
+        "surface": "RUNTIME_AUTH",
+        "scenario_mode": true,
+        "production_state_mutation": true,
+        "external_effect": false
+      },
+      "expected": "DENY"
+    },
+    {
+      "id": "CDX-ADV-011",
+      "title": "Emergency overlay is restrictive but scenario escapes",
+      "control_ids": [
+        "CDX-CTL-13-07",
+        "CDX-CTL-13-09"
+      ],
+      "context": {
+        "surface": "RUNTIME_AUTH",
+        "emergency_overlay": true,
+        "overlay_expands_authority": false,
+        "scenario_mode": true,
+        "production_state_mutation": true,
+        "external_effect": false
+      },
+      "expected": "DENY"
+    },
+    {
+      "id": "CDX-ADV-012",
+      "title": "External effect bypasses release gate",
+      "control_ids": [
+        "CDX-CTL-EFFECT-001"
+      ],
+      "context": {
+        "surface": "EXTERNAL_EFFECT",
+        "external_effect": true,
+        "external_effect_gate_passed": false
+      },
+      "expected": "DENY"
+    },
+    {
+      "id": "CDX-ADV-013",
+      "title": "Consequential execution without SPETL evidence",
+      "control_ids": [
+        "CDX-CTL-SPETL-001"
+      ],
+      "context": {
+        "surface": "EVIDENCE",
+        "consequential": true
+      },
+      "expected": "DENY"
+    },
+    {
+      "id": "CDX-ADV-014",
+      "title": "Security stop is ignored",
+      "control_ids": [
+        "CDX-CTL-17-02"
+      ],
+      "context": {
+        "surface": "INCIDENT_EXCEPTION",
+        "severity": "SECURITY_STOP",
+        "decision": "ALLOW"
+      },
+      "expected": "DENY"
+    },
+    {
+      "id": "CDX-ADV-015",
+      "title": "Unknown enforcement surface",
+      "control_ids": null,
+      "context": {
+        "surface": "UNKNOWN_SURFACE",
+        "action": "EXECUTE"
+      },
+      "expected": "DENY"
+    }
+  ]
+}
