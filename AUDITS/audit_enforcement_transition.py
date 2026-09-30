@@ -20,7 +20,8 @@ required={
  "adversarial_audit":Path("AUDITS/audit_adversarial_acceptance.py"),
  "review_bindings":Path("REVIEW-CATALOGUE/bindings.json"),
  "review_procedures":Path("REVIEW-CATALOGUE/procedures.json"),
- "review_audit":Path("AUDITS/audit_review_governance.py")
+ "review_audit":Path("AUDITS/audit_review_governance.py"),
+ "evidence_preservation":Path("SPETL/evidence-preservation-state.json")
 }
 for name,p in required.items():
     if not p.exists(): fail(f"missing {name}: {p}")
@@ -32,6 +33,7 @@ controls=json.loads(required["controls"].read_text())
 adversarial=json.loads(required["adversarial"].read_text())
 review_bindings=json.loads(required["review_bindings"].read_text())
 review_procedures=json.loads(required["review_procedures"].read_text())
+evidence_preservation=json.loads(required["evidence_preservation"].read_text())
 
 full=[s for s in bindings.get("sections",[]) if s.get("auditability")=="FULLY_AUTOMATABLE"]
 implemented=[s for s in full if s.get("binding_state") in {"IMPLEMENTED","VERIFIED"}]
@@ -50,10 +52,11 @@ criteria={
  "global_authority_corpus_instantiated":required["gac"].exists(),
  "critical_adversarial_acceptance":adversarial.get("state")=="ACTIVE" and len(adversarial.get("scenarios",[]))>=15,
  "review_governance":len(review_bindings.get("bindings",[]))==62 and len(review_procedures.get("procedures",[]))==4,
+ "independent_evidence_preservation":evidence_preservation.get("independent_preservation",{}).get("satisfies_enforcing_requirement") is True,
  "constitutional_amendment_path_platform_protected":protection.get("satisfies_enforcing_requirement") is True
 }
 
-internal_keys=[k for k in criteria if k!="constitutional_amendment_path_platform_protected"]
+internal_keys=[k for k in criteria if k not in {"constitutional_amendment_path_platform_protected","independent_evidence_preservation"}]
 core_ready=all(criteria[k] for k in internal_keys)
 blockers=[k for k,v in criteria.items() if not v]
 

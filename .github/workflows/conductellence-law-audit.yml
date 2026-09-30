@@ -52,6 +52,9 @@ jobs:
       - name: Audit SPETL evidence runtime
         run: python3 AUDITS/audit_spetl.py
 
+      - name: Audit independent evidence preservation state
+        run: python3 AUDITS/audit_evidence_preservation.py
+
       - name: Audit Security Twin
         run: python3 AUDITS/audit_security_twin.py
 

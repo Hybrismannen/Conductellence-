@@ -9,6 +9,7 @@ estate=json.loads(Path("ESTATE-REGISTRY/systems.json").read_text())
 adversarial=json.loads(Path("RED-TEAM/scenarios.json").read_text())
 review_bindings=json.loads(Path("REVIEW-CATALOGUE/bindings.json").read_text())
 review_procedures=json.loads(Path("REVIEW-CATALOGUE/procedures.json").read_text())
+evidence_preservation=json.loads(Path("SPETL/evidence-preservation-state.json").read_text())
 
 full=[s for s in bindings["sections"] if s["auditability"]=="FULLY_AUTOMATABLE"]
 implemented=[s for s in full if s.get("binding_state") in {"IMPLEMENTED","VERIFIED"} and s.get("controls") and s.get("audits")]
@@ -22,6 +23,7 @@ checks={
  "global_authority_corpus":Path("GLOBAL-AUTHORITY-CORPUS/authority-registry.json").exists(),
  "critical_adversarial_acceptance":adversarial.get("state")=="ACTIVE" and len(adversarial.get("scenarios",[]))>=15 and Path("AUDITS/audit_adversarial_acceptance.py").exists(),
  "review_governance":len(review_bindings.get("bindings",[]))==62 and len(review_procedures.get("procedures",[]))==4 and Path("AUDITS/audit_review_governance.py").exists(),
+ "independent_evidence_preservation":evidence_preservation.get("independent_preservation",{}).get("satisfies_enforcing_requirement") is True,
  "constitutional_amendment_path_protected":protection.get("satisfies_enforcing_requirement") is True,
  "estate_runtime_integration":all(s.get("security_state") in {"CONTROLLED","VERIFIED_RUNTIME_BOUND"} for s in estate.get("systems",[]))
 }
