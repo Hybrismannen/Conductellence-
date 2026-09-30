@@ -1,16 +1,28 @@
 {
-  "schema": "cdx.repository-protection-state/v1.0",
+  "schema": "cdx.repository-protection-state/v1.1",
   "repository": "Hybrismannen/Conductellence-",
   "default_branch": "main",
-  "observed_at": "2026-09-25",
+  "observed_at": "2026-09-26",
+  "observed_main_sha": "224c4be70dbc61fef2b9590a67464c77febcd28b",
   "native_branch_protection": false,
   "native_ruleset": false,
-  "connector_observation": "GitHub reported private-repository ruleset/protection capability unavailable through current plan/integration.",
+  "branch_protection_verified": false,
+  "ruleset_verified": false,
+  "connector_observation": {
+    "branch_protected_flag": false,
+    "rulesets_api": "FORBIDDEN_PRIVATE_REPO_PLAN_CAPABILITY",
+    "branch_protection_api": "NOT_ACCESSIBLE_BY_INTEGRATION",
+    "administration_capability": "UNAVAILABLE"
+  },
   "in_repo_controls": [
     ".github/CODEOWNERS",
     ".github/workflows/constitutional-mutation-guard.yml",
+    ".github/workflows/conductellence-law-audit.yml",
+    "GOVERNANCE/constitutional-change-policy.md",
     "GOVERNANCE/constitutional-mutation-policy.md"
   ],
+  "constitutional_effect": "ENFORCING_BLOCKER",
   "satisfies_enforcing_requirement": false,
-  "blocker_id": "CDX-BLOCK-REPO-PROTECTION-001"
+  "blocker_id": "CDX-BLOCK-REPO-PROTECTION-001",
+  "rule": "In-repo controls reduce mutation risk but do not satisfy the production criterion 'constitutional amendment path protected'. Conductellence shall remain non-ENFORCING until native branch protection or an equivalent verified GitHub ruleset is enabled and verified."
 }
