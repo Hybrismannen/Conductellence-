@@ -55,5 +55,8 @@ jobs:
       - name: Audit Estate Registry
         run: python3 AUDITS/audit_estate_registry.py
 
+      - name: Audit critical adversarial acceptance
+        run: python3 AUDITS/audit_adversarial_acceptance.py
+
       - name: Audit enforcement transition readiness
         run: python3 AUDITS/audit_enforcement_transition.py

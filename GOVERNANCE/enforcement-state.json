@@ -1,18 +1,46 @@
 {
-  "schema": "cdx.enforcement-state/v0.1",
+  "schema": "cdx.enforcement-state/v1.0",
   "law_id": "CDX-LAW-001",
   "mode": "BOOTSTRAP",
-  "effective_at": "2026-09-24",
+  "effective_at": "2026-09-30",
+  "core_reference_runtime_state": "REMEDIATED",
   "meanings": {
-    "BOOTSTRAP": "Law and audit architecture are authoritative for development, but incomplete technical binding is permitted only when explicitly represented as bootstrap debt.",
-    "ENFORCING": "All provisions designated FULLY_AUTOMATABLE must have implemented controls and executable audits before the estate may claim full Conductellence enforcement."
+    "BOOTSTRAP": "Conductellence law is authoritative for governed non-human development and the core reference runtime may be operational, but full estate enforcement shall not be claimed while any ENFORCING transition criterion remains unmet.",
+    "ENFORCING": "Conductellence may claim full estate enforcement only when all machine-enforceable law, assurance, platform protection and governed-estate runtime criteria pass."
   },
+  "satisfied_internal_criteria": [
+    "all FULLY_AUTOMATABLE sections bound to implemented controls",
+    "all FULLY_AUTOMATABLE controls have executable regression vectors",
+    "policy decision layer operational",
+    "SPETL reference evidence plane operational",
+    "Security Twin reference runtime operational",
+    "HCC and Ex-Inerta appendices admitted",
+    "Global Authority Corpus instantiated",
+    "critical adversarial acceptance suite installed and passing"
+  ],
+  "remaining_enforcing_blockers": [
+    {
+      "blocker_id": "CDX-BLOCK-REPO-PROTECTION-001",
+      "criterion": "constitutional amendment path protected",
+      "class": "EXTERNAL_PLATFORM",
+      "state": "OPEN"
+    },
+    {
+      "blocker_id": "CDX-BLOCK-ESTATE-RUNTIME-001",
+      "criterion": "governed estate production runtime integration verified",
+      "class": "ESTATE_DEPLOYMENT",
+      "state": "OPEN"
+    }
+  ],
   "transition_to_enforcing_requires": [
     "all FULLY_AUTOMATABLE sections bound to implemented controls",
     "all objectively testable controls bound to executable audits",
     "policy decision layer operational",
     "evidence plane operational and independently preserved",
-    "constitutional amendment path protected",
-    "critical adversarial acceptance tests passed"
+    "Security Twin operational",
+    "constitutional appendices and Global Authority Corpus admitted",
+    "critical adversarial acceptance tests passed",
+    "constitutional amendment path protected by native or equivalent verified platform controls",
+    "governed estate production runtime integration verified"
   ]
 }
