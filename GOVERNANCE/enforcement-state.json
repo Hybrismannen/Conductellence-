@@ -27,6 +27,12 @@
       "state": "OPEN"
     },
     {
+      "blocker_id": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001",
+      "criterion": "SPETL evidence independently preserved in a separate trust domain",
+      "class": "EVIDENCE_INFRASTRUCTURE",
+      "state": "OPEN"
+    },
+    {
       "blocker_id": "CDX-BLOCK-ESTATE-RUNTIME-001",
       "criterion": "governed estate production runtime integration verified",
       "class": "ESTATE_DEPLOYMENT",
