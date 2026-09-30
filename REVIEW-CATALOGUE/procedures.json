@@ -1,0 +1,90 @@
+{
+  "schema": "cdx.review-procedures/v1.0",
+  "law_id": "CDX-LAW-001",
+  "procedures": [
+    {
+      "procedure_id": "CDX-REV-PARTIAL-001",
+      "applies_to": "PARTIALLY_AUTOMATABLE",
+      "purpose": "Run deterministic prechecks, then reserve the normative decision to an authorised human reviewer.",
+      "required_reviewer_class": "HUMAN_AUTHORIZED",
+      "automated_prechecks": [
+        "section_id bound",
+        "authority_ref present",
+        "evidence_refs non-empty",
+        "reviewer identity present",
+        "decision record present"
+      ],
+      "valid_decisions": [
+        "APPROVE",
+        "APPROVE_WITH_CONTROLS",
+        "DENY",
+        "REQUIRE_FURTHER_REVIEW"
+      ],
+      "automatic_allow": false,
+      "fail_state": "DENY"
+    },
+    {
+      "procedure_id": "CDX-REV-HUMAN-001",
+      "applies_to": "HUMAN_REVIEW_REQUIRED",
+      "purpose": "Require an authorised human judgment and preserve the reasons/evidence for that judgment.",
+      "required_reviewer_class": "HUMAN_AUTHORIZED",
+      "automated_prechecks": [
+        "section_id bound",
+        "authority_ref present",
+        "reviewer identity present",
+        "evidence_refs non-empty",
+        "decision record present"
+      ],
+      "valid_decisions": [
+        "APPROVE",
+        "APPROVE_WITH_CONTROLS",
+        "DENY",
+        "REQUIRE_FURTHER_REVIEW"
+      ],
+      "automatic_allow": false,
+      "fail_state": "REQUIRE_HUMAN"
+    },
+    {
+      "procedure_id": "CDX-REV-LEGAL-001",
+      "applies_to": "LEGAL_REVIEW_REQUIRED",
+      "purpose": "Require qualified legal review for material questions of legal meaning, scope, conflict or applicability.",
+      "required_reviewer_class": "QUALIFIED_LEGAL_REVIEW",
+      "automated_prechecks": [
+        "section_id bound",
+        "reviewer identity present",
+        "legal_basis_refs non-empty",
+        "legal_snapshot_date present",
+        "decision record present"
+      ],
+      "valid_decisions": [
+        "LEGAL_CLEAR",
+        "LEGAL_CLEAR_WITH_CONTROLS",
+        "LEGAL_NOT_CLEAR",
+        "LEGAL_REVIEW_CONTINUES"
+      ],
+      "automatic_allow": false,
+      "fail_state": "LEGAL_REVIEW_REQUIRED"
+    },
+    {
+      "procedure_id": "CDX-REV-CONSTITUTIONAL-001",
+      "applies_to": "CONSTITUTIONAL_HUMAN_ONLY",
+      "purpose": "Reserve constitutional decisions to authorised human constitutional authority.",
+      "required_reviewer_class": "HUMAN_CONSTITUTIONAL_AUTHORITY",
+      "automated_prechecks": [
+        "section_id bound",
+        "human reviewer identity present",
+        "authority_ref present",
+        "artificial_approval=false",
+        "decision record present"
+      ],
+      "valid_decisions": [
+        "CONSTITUTIONAL_APPROVE",
+        "CONSTITUTIONAL_APPROVE_WITH_CONTROLS",
+        "CONSTITUTIONAL_DENY",
+        "CONSTITUTIONAL_HOLD"
+      ],
+      "automatic_allow": false,
+      "fail_state": "CONSTITUTIONAL_STOP"
+    }
+  ]
+}

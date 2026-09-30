@@ -28,6 +28,9 @@ jobs:
       - name: Audit law-to-control coverage
         run: python3 AUDITS/audit_binding_coverage.py
 
+      - name: Audit review-governance bindings
+        run: python3 AUDITS/audit_review_governance.py
+
       - name: Audit canonical root structure
         run: python3 AUDITS/audit_root_structure.py
 

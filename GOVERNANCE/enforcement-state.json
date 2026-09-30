@@ -11,6 +11,7 @@
   "satisfied_internal_criteria": [
     "all FULLY_AUTOMATABLE sections bound to implemented controls",
     "all FULLY_AUTOMATABLE controls have executable regression vectors",
+    "all non-FULLY_AUTOMATABLE sections bound to explicit review procedures",
     "policy decision layer operational",
     "SPETL reference evidence plane operational",
     "Security Twin reference runtime operational",
@@ -35,6 +36,7 @@
   "transition_to_enforcing_requires": [
     "all FULLY_AUTOMATABLE sections bound to implemented controls",
     "all objectively testable controls bound to executable audits",
+    "all non-machine-decidable sections bound to explicit review procedures",
     "policy decision layer operational",
     "evidence plane operational and independently preserved",
     "Security Twin operational",
