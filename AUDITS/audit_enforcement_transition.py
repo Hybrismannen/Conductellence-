@@ -7,7 +7,7 @@ def fail(m):
 
 required={
  "state":Path("GOVERNANCE/enforcement-state.json"),
- "protection":Path("GOVERNANCE/platform-protection-state.json"),
+ "protection":Path("GOVERNANCE/repository-protection-state.json"),
  "bindings":Path("CONTROL-CATALOGUE/law-bindings.json"),
  "controls":Path("POLICY/control-registry.json"),
  "spetl":Path("SPETL/spetl.py"),
@@ -40,7 +40,7 @@ criteria={
  "security_twin_reference_runtime_operational":required["twin"].exists(),
  "foundational_appendices_admitted":required["hcc"].exists() and required["ex"].exists(),
  "global_authority_corpus_instantiated":required["gac"].exists(),
- "constitutional_amendment_path_platform_protected":bool(protection.get("branch_protection_verified") and protection.get("ruleset_verified")),
+ "constitutional_amendment_path_platform_protected":bool(protection.get("satisfies_enforcing_requirement") is True),
 }
 
 blockers=[k for k,v in criteria.items() if not v]
