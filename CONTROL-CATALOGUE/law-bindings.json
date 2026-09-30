@@ -1,1 +1,1651 @@
-{"schema":"cdx.control-bindings/v1.0","law_id":"CDX-LAW-001","updated_at":"2026-09-25","sections":[{"section_id":"CDX-LAW-001-01-01","title":"Purpose","auditability":"HUMAN_REVIEW_REQUIRED","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-01-02","title":"Jurisdiction","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-01-03","title":"Human sovereign boundary","auditability":"HUMAN_REVIEW_REQUIRED","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-01-04","title":"Presumption against implicit authority","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-01-04"],"audits":["AUD-CDX-LAW-001-01-04-001"]},{"section_id":"CDX-LAW-001-01-05","title":"Proportional interpretation","auditability":"HUMAN_REVIEW_REQUIRED","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-01-06","title":"Definitions by function","auditability":"HUMAN_REVIEW_REQUIRED","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-02-01","title":"Normative hierarchy","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-02-02","title":"Supremacy of applicable external law","auditability":"LEGAL_REVIEW_REQUIRED","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-02-03","title":"Legal applicability before consequential authorization","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-02-04","title":"Temporal legal state","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-02-05","title":"Source authority","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-02-06","title":"No autonomous adjudication of material legal ambiguity","auditability":"HUMAN_REVIEW_REQUIRED","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-03-01","title":"Registration duty","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-REG-001"],"audits":["AUD-CDX-LAW-001-03-01-001"]},{"section_id":"CDX-LAW-001-03-02","title":"Repository backlink","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-REPO-001"],"audits":["AUD-CDX-LAW-001-03-02-001"]},{"section_id":"CDX-LAW-001-03-03","title":"Inventory of material dependencies","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-03-03"],"audits":["AUD-CDX-LAW-001-03-03-001"]},{"section_id":"CDX-LAW-001-03-04","title":"Security state","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-03-05","title":"Discovery of shadow assets","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-03-05"],"audits":["AUD-CDX-LAW-001-03-05-001"]},{"section_id":"CDX-LAW-001-04-01","title":"Principal classes","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-04-01"],"audits":["AUD-CDX-LAW-001-04-01-001"]},{"section_id":"CDX-LAW-001-04-02","title":"Identity is not authority","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-AUTH-001"],"audits":["AUD-CDX-LAW-001-04-02-001"]},{"section_id":"CDX-LAW-001-04-03","title":"Unique workload identity","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-04-04","title":"Model non-identity","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-04-04"],"audits":["AUD-CDX-LAW-001-04-04-001"]},{"section_id":"CDX-LAW-001-04-05","title":"Anti-impersonation","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-04-05"],"audits":["AUD-CDX-LAW-001-04-05-001"]},{"section_id":"CDX-LAW-001-04-06","title":"Identity lifecycle","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-05-01","title":"Mandate requirement","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-05-02","title":"Capability form","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-05-02"],"audits":["AUD-CDX-LAW-001-05-02-001"]},{"section_id":"CDX-LAW-001-05-03","title":"Least privilege","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-05-03"],"audits":["AUD-CDX-LAW-001-05-03-001"]},{"section_id":"CDX-LAW-001-05-04","title":"No self-escalation","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-AUTH-004"],"audits":["AUD-CDX-LAW-001-05-04-001"]},{"section_id":"CDX-LAW-001-05-05","title":"Delegation subset rule","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-DELEG-001"],"audits":["AUD-CDX-LAW-001-05-05-001"]},{"section_id":"CDX-LAW-001-05-06","title":"Delegation provenance","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-05-06"],"audits":["AUD-CDX-LAW-001-05-06-001"]},{"section_id":"CDX-LAW-001-05-07","title":"Bounded recursion","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-05-07"],"audits":["AUD-CDX-LAW-001-05-07-001"]},{"section_id":"CDX-LAW-001-05-08","title":"Non-transitive trust","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-05-08"],"audits":["AUD-CDX-LAW-001-05-08-001"]},{"section_id":"CDX-LAW-001-06-01","title":"Trust-domain architecture","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-06-02","title":"Human Personal Domain","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-Z0-001"],"audits":["AUD-CDX-LAW-001-06-02-001"]},{"section_id":"CDX-LAW-001-06-03","title":"Control, work and evidence planes","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-06-04","title":"Boundary event","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-06-04"],"audits":["AUD-CDX-LAW-001-06-04-001"]},{"section_id":"CDX-LAW-001-06-05","title":"Unknown boundary state","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-06-05"],"audits":["AUD-CDX-LAW-001-06-05-001"]},{"section_id":"CDX-LAW-001-06-06","title":"Blast-radius containment","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-07-01","title":"Dataset Passport","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-07-01"],"audits":["AUD-CDX-LAW-001-07-01-001"]},{"section_id":"CDX-LAW-001-07-02","title":"Independent data dimensions","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-07-03","title":"Purpose limitation","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-07-04","title":"Data minimisation","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-07-05","title":"Sensitive and personal data","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-07-06","title":"Data provenance and transformation","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-07-07","title":"Data poisoning and integrity","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-07-08","title":"Retention and deletion authority","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-07-08"],"audits":["AUD-CDX-LAW-001-07-08-001"]},{"section_id":"CDX-LAW-001-08-01","title":"Content-Authority Firewall","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-CONTENT-001"],"audits":["AUD-CDX-LAW-001-08-01-001"]},{"section_id":"CDX-LAW-001-08-02","title":"Typed channels","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-08-03","title":"Prompt and indirect injection","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-08-04","title":"Memory is privileged persistence","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-MEM-001"],"audits":["AUD-CDX-LAW-001-08-04-001"]},{"section_id":"CDX-LAW-001-08-05","title":"Memory admission","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-08-06","title":"Cross-project memory","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-08-06"],"audits":["AUD-CDX-LAW-001-08-06-001"]},{"section_id":"CDX-LAW-001-08-07","title":"Memory poisoning","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-09-01","title":"Model registration","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-09-01"],"audits":["AUD-CDX-LAW-001-09-01-001"]},{"section_id":"CDX-LAW-001-09-02","title":"Material model change","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-09-03","title":"Agent Manifest","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-09-03"],"audits":["AUD-CDX-LAW-001-09-03-001"]},{"section_id":"CDX-LAW-001-09-04","title":"Missing permission denies","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-DENY-001"],"audits":["AUD-CDX-LAW-001-09-04-001"]},{"section_id":"CDX-LAW-001-09-05","title":"Action ceilings","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-09-06","title":"Inter-agent authentication","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-09-06"],"audits":["AUD-CDX-LAW-001-09-06-001"]},{"section_id":"CDX-LAW-001-09-07","title":"Cascading failure","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-09-08","title":"Rogue-agent containment","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-09-08"],"audits":["AUD-CDX-LAW-001-09-08-001"]},{"section_id":"CDX-LAW-001-10-01","title":"Tool admission","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-TOOL-001"],"audits":["AUD-CDX-LAW-001-10-01-001"]},{"section_id":"CDX-LAW-001-10-02","title":"Tool availability is not permission","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-TOOL-002"],"audits":["AUD-CDX-LAW-001-10-02-001"]},{"section_id":"CDX-LAW-001-10-03","title":"Connector transitivity","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-10-04","title":"Egress control","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-10-04"],"audits":["AUD-CDX-LAW-001-10-04-001"]},{"section_id":"CDX-LAW-001-10-05","title":"Provider accountability","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-10-06","title":"Disable path","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-10-06"],"audits":["AUD-CDX-LAW-001-10-06-001"]},{"section_id":"CDX-LAW-001-11-01","title":"Secure-by-design","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-11-02","title":"Source and dependency inventory","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-11-02"],"audits":["AUD-CDX-LAW-001-11-02-001"]},{"section_id":"CDX-LAW-001-11-03","title":"Build provenance","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-11-03"],"audits":["AUD-CDX-LAW-001-11-03-001"]},{"section_id":"CDX-LAW-001-11-04","title":"Software bill of materials","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-11-05","title":"Dependency substitution","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-11-05"],"audits":["AUD-CDX-LAW-001-11-05-001"]},{"section_id":"CDX-LAW-001-11-06","title":"CI/CD integrity","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-11-07","title":"Vulnerability and patch governance","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-12-01","title":"Credential isolation","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-CRED-001"],"audits":["AUD-CDX-LAW-001-12-01-001"]},{"section_id":"CDX-LAW-001-12-02","title":"Short-lived credentials","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-12-03","title":"Credential inventory","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-12-03"],"audits":["AUD-CDX-LAW-001-12-03-001"]},{"section_id":"CDX-LAW-001-12-04","title":"Secret prohibition","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-SECRET-001"],"audits":["AUD-CDX-LAW-001-12-04-001"]},{"section_id":"CDX-LAW-001-12-05","title":"Cryptographic profiles","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-12-06","title":"Cryptographic agility","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-13-01","title":"Continuous authorization","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-13-01"],"audits":["AUD-CDX-LAW-001-13-01-001"]},{"section_id":"CDX-LAW-001-13-02","title":"Mandatory gate sequence","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-13-02"],"audits":["AUD-CDX-LAW-001-13-02-001"]},{"section_id":"CDX-LAW-001-13-03","title":"Finite decision grammar","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-13-03"],"audits":["AUD-CDX-LAW-001-13-03-001"]},{"section_id":"CDX-LAW-001-13-04","title":"Runtime policy mediation","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-13-04"],"audits":["AUD-CDX-LAW-001-13-04-001"]},{"section_id":"CDX-LAW-001-13-05","title":"Fail closed","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-FAILCLOSED-001"],"audits":["AUD-CDX-LAW-001-13-05-001"]},{"section_id":"CDX-LAW-001-13-06","title":"Policy pinning","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-POLICY-001"],"audits":["AUD-CDX-LAW-001-13-06-001"]},{"section_id":"CDX-LAW-001-13-07","title":"Restrictive emergency overlay","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-13-07"],"audits":["AUD-CDX-LAW-001-13-07-001"]},{"section_id":"CDX-LAW-001-13-08","title":"Reconciliation","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-13-08"],"audits":["AUD-CDX-LAW-001-13-08-001"]},{"section_id":"CDX-LAW-001-13-09","title":"Scenario isolation","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-13-09"],"audits":["AUD-CDX-LAW-001-13-09-001"]},{"section_id":"CDX-LAW-001-14-01","title":"Human-reserved authority","auditability":"HUMAN_REVIEW_REQUIRED","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-14-02","title":"Meaningful approval","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-14-03","title":"Risk-sensitive checkpoints","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-14-04","title":"External-effect gate","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-EFFECT-001"],"audits":["AUD-CDX-LAW-001-14-04-001"]},{"section_id":"CDX-LAW-001-14-05","title":"Reversibility classification","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-14-05"],"audits":["AUD-CDX-LAW-001-14-05-001"]},{"section_id":"CDX-LAW-001-14-06","title":"Revocation during execution","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-14-06"],"audits":["AUD-CDX-LAW-001-14-06-001"]},{"section_id":"CDX-LAW-001-15-01","title":"SPETL requirement","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-SPETL-001"],"audits":["AUD-CDX-LAW-001-15-01-001"]},{"section_id":"CDX-LAW-001-15-02","title":"Correlation and causation","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-15-02"],"audits":["AUD-CDX-LAW-001-15-02-001"]},{"section_id":"CDX-LAW-001-15-03","title":"Append-oriented history","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-EVID-001"],"audits":["AUD-CDX-LAW-001-15-03-001"]},{"section_id":"CDX-LAW-001-15-04","title":"Evidence independence","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-15-05","title":"Trace directions","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-15-05"],"audits":["AUD-CDX-LAW-001-15-05-001"]},{"section_id":"CDX-LAW-001-15-06","title":"Provenance is not truth","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-15-07","title":"No chain-of-thought requirement","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-15-07"],"audits":["AUD-CDX-LAW-001-15-07-001"]},{"section_id":"CDX-LAW-001-16-01","title":"Control binding","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-META-001"],"audits":["AUD-CDX-LAW-001-16-01-001"]},{"section_id":"CDX-LAW-001-16-02","title":"Audit binding","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-META-002"],"audits":["AUD-CDX-LAW-001-16-02-001"]},{"section_id":"CDX-LAW-001-16-03","title":"Auditability state","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-META-003"],"audits":["AUD-CDX-LAW-001-16-03-001"]},{"section_id":"CDX-LAW-001-16-04","title":"Control effectiveness","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-16-05","title":"Adversarial assurance","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-16-06","title":"Regression of discovered failures","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-16-06"],"audits":["AUD-CDX-LAW-001-16-06-001"]},{"section_id":"CDX-LAW-001-16-07","title":"Security Twin","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-16-08","title":"Control-of-controls","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-17-01","title":"Severity grammar","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-17-01"],"audits":["AUD-CDX-LAW-001-17-01-001"]},{"section_id":"CDX-LAW-001-17-02","title":"Security Stop","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-17-02"],"audits":["AUD-CDX-LAW-001-17-02-001"]},{"section_id":"CDX-LAW-001-17-03","title":"Constitutional Stop","auditability":"CONSTITUTIONAL_HUMAN_ONLY","binding_state":"BOOTSTRAP_BOUND","controls":["CDX-CTL-STOP-001"],"audits":["AUD-CDX-CONSTITUTIONAL-STOP-PLANNED"]},{"section_id":"CDX-LAW-001-17-04","title":"Incident lifecycle","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-17-05","title":"Recovery before autonomy","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-17-06","title":"Exceptions","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-EXC-001"],"audits":["AUD-CDX-LAW-001-17-06-001"]},{"section_id":"CDX-LAW-001-17-07","title":"Expired exception","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-17-07"],"audits":["AUD-CDX-LAW-001-17-07-001"]},{"section_id":"CDX-LAW-001-17-08","title":"Security debt","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-18-01","title":"Admission sequence","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-18-02","title":"Material change","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-18-03","title":"Suspension","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-18-03"],"audits":["AUD-CDX-LAW-001-18-03-001"]},{"section_id":"CDX-LAW-001-18-04","title":"Retirement","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-18-05","title":"Decommissioning","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-18-06","title":"Orphan detection","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-18-06"],"audits":["AUD-CDX-LAW-001-18-06-001"]},{"section_id":"CDX-LAW-001-19-01","title":"Constitutional amendment","auditability":"CONSTITUTIONAL_HUMAN_ONLY","binding_state":"BOOTSTRAP_BOUND","controls":["CDX-CTL-CONSTITUTION-001"],"audits":["AUD-CDX-CONSTITUTIONAL-AMENDMENT-PLANNED"]},{"section_id":"CDX-LAW-001-19-02","title":"Versioning","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-VERSION-001"],"audits":["AUD-CDX-LAW-001-19-02-001"]},{"section_id":"CDX-LAW-001-19-03","title":"Interpretation Guide","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-19-04","title":"Regulatory and standards drift","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-19-04"],"audits":["AUD-CDX-LAW-001-19-04-001"]},{"section_id":"CDX-LAW-001-19-05","title":"Periodic constitutional review","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]},{"section_id":"CDX-LAW-001-19-06","title":"Anti-bloat rule","auditability":"FULLY_AUTOMATABLE","binding_state":"IMPLEMENTED","controls":["CDX-CTL-DRAFTING-001"],"audits":["AUD-CDX-LAW-001-19-06-001"]},{"section_id":"CDX-LAW-001-19-07","title":"Exhaustiveness by coverage, not word count","auditability":"PARTIALLY_AUTOMATABLE","binding_state":"BOOTSTRAP_BOUND","controls":["CDX-CTL-COVERAGE-001"],"audits":["AUD-CDX-BINDING-COVERAGE-001"]},{"section_id":"CDX-LAW-001-19-08","title":"Supreme rule for non-human governance","auditability":"CONSTITUTIONAL_HUMAN_ONLY","binding_state":"UNBOUND_BOOTSTRAP","controls":[],"audits":[]}]}
+{
+  "schema": "cdx.control-bindings/v1.1",
+  "law_id": "CDX-LAW-001",
+  "updated_at": "2026-09-30",
+  "sections": [
+    {
+      "section_id": "CDX-LAW-001-01-01",
+      "title": "Purpose",
+      "auditability": "HUMAN_REVIEW_REQUIRED",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-HUMAN-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-01-02",
+      "title": "Jurisdiction",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-01-03",
+      "title": "Human sovereign boundary",
+      "auditability": "HUMAN_REVIEW_REQUIRED",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-HUMAN-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-01-04",
+      "title": "Presumption against implicit authority",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-01-04"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-01-04-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-01-05",
+      "title": "Proportional interpretation",
+      "auditability": "HUMAN_REVIEW_REQUIRED",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-HUMAN-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-01-06",
+      "title": "Definitions by function",
+      "auditability": "HUMAN_REVIEW_REQUIRED",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-HUMAN-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-02-01",
+      "title": "Normative hierarchy",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-02-02",
+      "title": "Supremacy of applicable external law",
+      "auditability": "LEGAL_REVIEW_REQUIRED",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-LEGAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-02-03",
+      "title": "Legal applicability before consequential authorization",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-02-04",
+      "title": "Temporal legal state",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-02-05",
+      "title": "Source authority",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-02-06",
+      "title": "No autonomous adjudication of material legal ambiguity",
+      "auditability": "HUMAN_REVIEW_REQUIRED",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-HUMAN-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-03-01",
+      "title": "Registration duty",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-REG-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-03-01-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-03-02",
+      "title": "Repository backlink",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-REPO-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-03-02-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-03-03",
+      "title": "Inventory of material dependencies",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-03-03"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-03-03-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-03-04",
+      "title": "Security state",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-03-05",
+      "title": "Discovery of shadow assets",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-03-05"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-03-05-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-04-01",
+      "title": "Principal classes",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-04-01"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-04-01-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-04-02",
+      "title": "Identity is not authority",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-AUTH-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-04-02-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-04-03",
+      "title": "Unique workload identity",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-04-04",
+      "title": "Model non-identity",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-04-04"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-04-04-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-04-05",
+      "title": "Anti-impersonation",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-04-05"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-04-05-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-04-06",
+      "title": "Identity lifecycle",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-05-01",
+      "title": "Mandate requirement",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-05-02",
+      "title": "Capability form",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-05-02"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-05-02-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-05-03",
+      "title": "Least privilege",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-05-03"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-05-03-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-05-04",
+      "title": "No self-escalation",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-AUTH-004"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-05-04-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-05-05",
+      "title": "Delegation subset rule",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-DELEG-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-05-05-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-05-06",
+      "title": "Delegation provenance",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-05-06"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-05-06-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-05-07",
+      "title": "Bounded recursion",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-05-07"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-05-07-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-05-08",
+      "title": "Non-transitive trust",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-05-08"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-05-08-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-06-01",
+      "title": "Trust-domain architecture",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-06-02",
+      "title": "Human Personal Domain",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-Z0-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-06-02-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-06-03",
+      "title": "Control, work and evidence planes",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-06-04",
+      "title": "Boundary event",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-06-04"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-06-04-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-06-05",
+      "title": "Unknown boundary state",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-06-05"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-06-05-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-06-06",
+      "title": "Blast-radius containment",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-07-01",
+      "title": "Dataset Passport",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-07-01"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-07-01-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-07-02",
+      "title": "Independent data dimensions",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-07-03",
+      "title": "Purpose limitation",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-07-04",
+      "title": "Data minimisation",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-07-05",
+      "title": "Sensitive and personal data",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-07-06",
+      "title": "Data provenance and transformation",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-07-07",
+      "title": "Data poisoning and integrity",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-07-08",
+      "title": "Retention and deletion authority",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-07-08"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-07-08-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-08-01",
+      "title": "Content-Authority Firewall",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-CONTENT-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-08-01-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-08-02",
+      "title": "Typed channels",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-08-03",
+      "title": "Prompt and indirect injection",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-08-04",
+      "title": "Memory is privileged persistence",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-MEM-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-08-04-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-08-05",
+      "title": "Memory admission",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-08-06",
+      "title": "Cross-project memory",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-08-06"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-08-06-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-08-07",
+      "title": "Memory poisoning",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-09-01",
+      "title": "Model registration",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-09-01"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-09-01-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-09-02",
+      "title": "Material model change",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-09-03",
+      "title": "Agent Manifest",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-09-03"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-09-03-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-09-04",
+      "title": "Missing permission denies",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-DENY-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-09-04-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-09-05",
+      "title": "Action ceilings",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-09-06",
+      "title": "Inter-agent authentication",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-09-06"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-09-06-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-09-07",
+      "title": "Cascading failure",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-09-08",
+      "title": "Rogue-agent containment",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-09-08"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-09-08-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-10-01",
+      "title": "Tool admission",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-TOOL-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-10-01-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-10-02",
+      "title": "Tool availability is not permission",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-TOOL-002"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-10-02-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-10-03",
+      "title": "Connector transitivity",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-10-04",
+      "title": "Egress control",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-10-04"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-10-04-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-10-05",
+      "title": "Provider accountability",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-10-06",
+      "title": "Disable path",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-10-06"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-10-06-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-11-01",
+      "title": "Secure-by-design",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-11-02",
+      "title": "Source and dependency inventory",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-11-02"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-11-02-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-11-03",
+      "title": "Build provenance",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-11-03"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-11-03-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-11-04",
+      "title": "Software bill of materials",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-11-05",
+      "title": "Dependency substitution",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-11-05"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-11-05-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-11-06",
+      "title": "CI/CD integrity",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-11-07",
+      "title": "Vulnerability and patch governance",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-12-01",
+      "title": "Credential isolation",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-CRED-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-12-01-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-12-02",
+      "title": "Short-lived credentials",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-12-03",
+      "title": "Credential inventory",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-12-03"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-12-03-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-12-04",
+      "title": "Secret prohibition",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-SECRET-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-12-04-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-12-05",
+      "title": "Cryptographic profiles",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-12-06",
+      "title": "Cryptographic agility",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-13-01",
+      "title": "Continuous authorization",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-13-01"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-13-01-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-13-02",
+      "title": "Mandatory gate sequence",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-13-02"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-13-02-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-13-03",
+      "title": "Finite decision grammar",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-13-03"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-13-03-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-13-04",
+      "title": "Runtime policy mediation",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-13-04"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-13-04-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-13-05",
+      "title": "Fail closed",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-FAILCLOSED-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-13-05-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-13-06",
+      "title": "Policy pinning",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-POLICY-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-13-06-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-13-07",
+      "title": "Restrictive emergency overlay",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-13-07"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-13-07-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-13-08",
+      "title": "Reconciliation",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-13-08"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-13-08-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-13-09",
+      "title": "Scenario isolation",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-13-09"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-13-09-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-14-01",
+      "title": "Human-reserved authority",
+      "auditability": "HUMAN_REVIEW_REQUIRED",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-HUMAN-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-14-02",
+      "title": "Meaningful approval",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-14-03",
+      "title": "Risk-sensitive checkpoints",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-14-04",
+      "title": "External-effect gate",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-EFFECT-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-14-04-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-14-05",
+      "title": "Reversibility classification",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-14-05"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-14-05-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-14-06",
+      "title": "Revocation during execution",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-14-06"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-14-06-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-15-01",
+      "title": "SPETL requirement",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-SPETL-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-15-01-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-15-02",
+      "title": "Correlation and causation",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-15-02"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-15-02-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-15-03",
+      "title": "Append-oriented history",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-EVID-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-15-03-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-15-04",
+      "title": "Evidence independence",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-15-05",
+      "title": "Trace directions",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-15-05"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-15-05-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-15-06",
+      "title": "Provenance is not truth",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-15-07",
+      "title": "No chain-of-thought requirement",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-15-07"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-15-07-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-16-01",
+      "title": "Control binding",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-META-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-16-01-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-16-02",
+      "title": "Audit binding",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-META-002"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-16-02-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-16-03",
+      "title": "Auditability state",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-META-003"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-16-03-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-16-04",
+      "title": "Control effectiveness",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-16-05",
+      "title": "Adversarial assurance",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-16-06",
+      "title": "Regression of discovered failures",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-16-06"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-16-06-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-16-07",
+      "title": "Security Twin",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-16-08",
+      "title": "Control-of-controls",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-17-01",
+      "title": "Severity grammar",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-17-01"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-17-01-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-17-02",
+      "title": "Security Stop",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-17-02"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-17-02-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-17-03",
+      "title": "Constitutional Stop",
+      "auditability": "CONSTITUTIONAL_HUMAN_ONLY",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [
+        "CDX-CTL-STOP-001"
+      ],
+      "audits": [
+        "AUD-CDX-CONSTITUTIONAL-STOP-PLANNED",
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-CONSTITUTIONAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-17-04",
+      "title": "Incident lifecycle",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-17-05",
+      "title": "Recovery before autonomy",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-17-06",
+      "title": "Exceptions",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-EXC-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-17-06-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-17-07",
+      "title": "Expired exception",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-17-07"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-17-07-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-17-08",
+      "title": "Security debt",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-18-01",
+      "title": "Admission sequence",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-18-02",
+      "title": "Material change",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-18-03",
+      "title": "Suspension",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-18-03"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-18-03-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-18-04",
+      "title": "Retirement",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-18-05",
+      "title": "Decommissioning",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-18-06",
+      "title": "Orphan detection",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-18-06"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-18-06-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-19-01",
+      "title": "Constitutional amendment",
+      "auditability": "CONSTITUTIONAL_HUMAN_ONLY",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [
+        "CDX-CTL-CONSTITUTION-001"
+      ],
+      "audits": [
+        "AUD-CDX-CONSTITUTIONAL-AMENDMENT-PLANNED",
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-CONSTITUTIONAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-19-02",
+      "title": "Versioning",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-VERSION-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-19-02-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-19-03",
+      "title": "Interpretation Guide",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-19-04",
+      "title": "Regulatory and standards drift",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-19-04"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-19-04-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-19-05",
+      "title": "Periodic constitutional review",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-19-06",
+      "title": "Anti-bloat rule",
+      "auditability": "FULLY_AUTOMATABLE",
+      "binding_state": "IMPLEMENTED",
+      "controls": [
+        "CDX-CTL-DRAFTING-001"
+      ],
+      "audits": [
+        "AUD-CDX-LAW-001-19-06-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-19-07",
+      "title": "Exhaustiveness by coverage, not word count",
+      "auditability": "PARTIALLY_AUTOMATABLE",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [
+        "CDX-CTL-COVERAGE-001"
+      ],
+      "audits": [
+        "AUD-CDX-BINDING-COVERAGE-001",
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-PARTIAL-001"
+      ]
+    },
+    {
+      "section_id": "CDX-LAW-001-19-08",
+      "title": "Supreme rule for non-human governance",
+      "auditability": "CONSTITUTIONAL_HUMAN_ONLY",
+      "binding_state": "REVIEW_BOUND",
+      "controls": [],
+      "audits": [
+        "AUD-CDX-REVIEW-GOV-001"
+      ],
+      "review_procedures": [
+        "CDX-REV-CONSTITUTIONAL-001"
+      ]
+    }
+  ],
+  "binding_policy": "FULLY_AUTOMATABLE §§ bind to executable controls/audits. All other §§ bind to explicit review procedures/audits; automated prechecks may assist but may not substitute for the reserved human, legal or constitutional decision."
+}
