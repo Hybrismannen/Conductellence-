@@ -1,0 +1,20 @@
+{
+  "schema": "cdx.runtime-integration/v1.0",
+  "system_id": "REPLACE",
+  "authority_ref": "CDX-SYS-001",
+  "state": "VERIFIED_REFERENCE_RUNTIME",
+  "enforcement_points": [],
+  "policy_version": "1.0.0",
+  "spetl_mode": "REQUIRED",
+  "tests": {
+    "allow": true,
+    "deny": true,
+    "policy_unavailable": true
+  },
+  "verified_at": null,
+  "verification_evidence": [],
+  "coverage_scope": [
+    "REPOSITORY_CI"
+  ],
+  "runtime_class": "REFERENCE_REPOSITORY_GUARD"
+}

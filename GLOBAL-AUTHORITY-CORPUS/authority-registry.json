@@ -1,0 +1,50 @@
+{
+  "schema": "cdx.global-authority-corpus/v0.1",
+  "corpus_id": "CDX-GAC-001",
+  "state": "INSTANTIATED",
+  "source_classes": [
+    {
+      "rank": "L0",
+      "class": "FUNDAMENTAL_RIGHTS"
+    },
+    {
+      "rank": "L1",
+      "class": "BINDING_LAW"
+    },
+    {
+      "rank": "L2",
+      "class": "TREATY_REGULATORY"
+    },
+    {
+      "rank": "L3",
+      "class": "OFFICIAL_GUIDANCE"
+    },
+    {
+      "rank": "L4",
+      "class": "MANAGEMENT_RISK_STANDARD"
+    },
+    {
+      "rank": "L5",
+      "class": "SECURITY_ENGINEERING_STANDARD"
+    },
+    {
+      "rank": "L6",
+      "class": "THREAT_CONTROL_FRAMEWORK"
+    },
+    {
+      "rank": "L7",
+      "class": "ETHICAL_NORMATIVE_FRAMEWORK"
+    },
+    {
+      "rank": "L8",
+      "class": "CONDUCTELLENCE_INTERNAL_LAW"
+    }
+  ],
+  "canonical_surfaces": {
+    "legal": "LEGAL-REFERENCES/legal-provision-registry.json",
+    "applicability": "LEGAL-RESOLVER/",
+    "legal_drift": "REGULATORY-DRIFT/",
+    "scientific_evidence": "EVIDENCE-AUTHORITY/",
+    "technical": "GLOBAL-AUTHORITY-CORPUS/technical-authorities.json"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "schema": "cdx.estate-registry/v1.0",
+  "authority_ref": "CDX-SYS-001",
+  "generated_at": "2026-09-25",
+  "systems": [
+    {
+      "system_id": "CDX-SYS-001",
+      "repository": "Hybrismannen/Conductellence-",
+      "authority_ref": "CDX-SYS-001",
+      "security_state": "CONTROLLED",
+      "binding_manifest": ".security/conductellence.json"
+    },
+    {
+      "system_id": "CDX-EST-001",
+      "repository": "Hybrismannen/form-flode",
+      "authority_ref": "CDX-SYS-001",
+      "security_state": "BOUND_CI_MONITORED",
+      "binding_manifest": ".security/conductellence.json",
+      "binding_verified_at": "2026-09-25",
+      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
+      "runtime_integration_state": "NOT_VERIFIED"
+    },
+    {
+      "system_id": "CDX-EST-002",
+      "repository": "Hybrismannen/form-flode-dna",
+      "authority_ref": "CDX-SYS-001",
+      "security_state": "BOUND_CI_MONITORED",
+      "binding_manifest": ".security/conductellence.json",
+      "binding_verified_at": "2026-09-25",
+      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
+      "runtime_integration_state": "NOT_VERIFIED"
+    },
+    {
+      "system_id": "CDX-EST-003",
+      "repository": "Hybrismannen/pius-universe",
+      "authority_ref": "CDX-SYS-001",
+      "security_state": "BOUND_CI_MONITORED",
+      "binding_manifest": ".security/conductellence.json",
+      "binding_verified_at": "2026-09-25",
+      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
+      "runtime_integration_state": "NOT_VERIFIED"
+    },
+    {
+      "system_id": "CDX-EST-004",
+      "repository": "Hybrismannen/pius-pwe",
+      "authority_ref": "CDX-SYS-001",
+      "security_state": "BOUND_CI_MONITORED",
+      "binding_manifest": ".security/conductellence.json",
+      "binding_verified_at": "2026-09-25",
+      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
+      "runtime_integration_state": "NOT_VERIFIED"
+    },
+    {
+      "system_id": "CDX-EST-005",
+      "repository": "Hybrismannen/pius-codex-5",
+      "authority_ref": "CDX-SYS-001",
+      "security_state": "BOUND_CI_MONITORED",
+      "binding_manifest": ".security/conductellence.json",
+      "binding_verified_at": "2026-09-25",
+      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
+      "runtime_integration_state": "NOT_VERIFIED"
+    },
+    {
+      "system_id": "CDX-EST-006",
+      "repository": "Hybrismannen/pius-lifetime-audit-2026",
+      "authority_ref": "CDX-SYS-001",
+      "security_state": "BOUND_CI_MONITORED",
+      "binding_manifest": ".security/conductellence.json",
+      "binding_verified_at": "2026-09-25",
+      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
+      "runtime_integration_state": "NOT_VERIFIED"
+    },
+    {
+      "system_id": "CDX-EST-007",
+      "repository": "Hybrismannen/udl-twin",
+      "authority_ref": "CDX-SYS-001",
+      "security_state": "BOUND_CI_MONITORED",
+      "binding_manifest": ".security/conductellence.json",
+      "binding_verified_at": "2026-09-25",
+      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
+      "runtime_integration_state": "NOT_VERIFIED"
+    },
+    {
+      "system_id": "CDX-EST-008",
+      "repository": "Hybrismannen/green-bell-statsvault",
+      "authority_ref": "CDX-SYS-001",
+      "security_state": "BOUND_CI_MONITORED",
+      "binding_manifest": ".security/conductellence.json",
+      "binding_verified_at": "2026-09-25",
+      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
+      "runtime_integration_state": "NOT_VERIFIED"
+    },
+    {
+      "system_id": "CDX-EST-009",
+      "repository": "Hybrismannen/RFSU-godex",
+      "authority_ref": "CDX-SYS-001",
+      "security_state": "BOUND_CI_MONITORED",
+      "binding_manifest": ".security/conductellence.json",
+      "binding_verified_at": "2026-09-25",
+      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
+      "runtime_integration_state": "NOT_VERIFIED"
+    },
+    {
+      "system_id": "CDX-EST-010",
+      "repository": "Hybrismannen/RFSU-godex-FF",
+      "authority_ref": "CDX-SYS-001",
+      "security_state": "BOUND_CI_MONITORED",
+      "binding_manifest": ".security/conductellence.json",
+      "binding_verified_at": "2026-09-25",
+      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
+      "runtime_integration_state": "NOT_VERIFIED"
+    },
+    {
+      "system_id": "CDX-EST-011",
+      "repository": "Hybrismannen/Hy",
+      "authority_ref": "CDX-SYS-001",
+      "security_state": "BOUND_CI_MONITORED",
+      "binding_manifest": ".security/conductellence.json",
+      "binding_verified_at": "2026-09-25",
+      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
+      "runtime_integration_state": "NOT_VERIFIED"
+    },
+    {
+      "system_id": "CDX-EST-012",
+      "repository": "Hybrismannen/livicity-cwvs-reference",
+      "authority_ref": "CDX-SYS-001",
+      "security_state": "BOUND_CI_MONITORED",
+      "binding_manifest": ".security/conductellence.json",
+      "binding_verified_at": "2026-09-25",
+      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
+      "runtime_integration_state": "NOT_VERIFIED"
+    },
+    {
+      "system_id": "CDX-EST-013",
+      "repository": "Hybrismannen/nsliengine",
+      "authority_ref": "CDX-SYS-001",
+      "security_state": "BOUND_CI_MONITORED",
+      "binding_manifest": ".security/conductellence.json",
+      "binding_verified_at": "2026-09-25",
+      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
+      "runtime_integration_state": "NOT_VERIFIED"
+    },
+    {
+      "system_id": "CDX-EST-014",
+      "repository": "Hybrismannen/Digital-Apartheid",
+      "authority_ref": "CDX-SYS-001",
+      "security_state": "BOUND_CI_MONITORED",
+      "binding_manifest": ".security/conductellence.json",
+      "binding_verified_at": "2026-09-25",
+      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
+      "runtime_integration_state": "NOT_VERIFIED"
+    },
+    {
+      "system_id": "CDX-EST-015",
+      "repository": "Hybrismannen/NSLI",
+      "authority_ref": "CDX-SYS-001",
+      "security_state": "BOUND_CI_MONITORED",
+      "binding_manifest": ".security/conductellence.json",
+      "binding_verified_at": "2026-09-25",
+      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
+      "runtime_integration_state": "NOT_VERIFIED"
+    },
+    {
+      "system_id": "CDX-EST-016",
+      "repository": "Hybrismannen/metoyo",
+      "authority_ref": "CDX-SYS-001",
+      "security_state": "BOUND_PENDING_RUNTIME_INTEGRATION",
+      "binding_manifest": ".security/conductellence.json",
+      "binding_verified_at": "2026-09-25",
+      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
+      "runtime_integration_state": "NOT_VERIFIED"
+    },
+    {
+      "system_id": "CDX-EST-017",
+      "repository": "Motherpher/CareerHubZero",
+      "repository_verified": true,
+      "visibility": "private",
+      "default_branch": "main",
+      "authority_ref": "CDX-SYS-001",
+      "binding_state": "BOUND_PENDING_RUNTIME_INTEGRATION",
+      "runtime_integration_state": "NOT_VERIFIED",
+      "binding_manifest": ".security/conductellence.json",
+      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
+      "security_state": "REGISTERED",
+      "last_verified_at": "2026-09-26"
+    }
+  ],
+  "updated_at": "2026-09-25",
+  "audit_note": "Repository states reflect verified .security/conductellence.json manifests and binding-workflow presence; runtime integration remains NOT_VERIFIED unless independently proven."
+}

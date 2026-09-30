@@ -1208,17 +1208,17 @@ Conductellence itself remains subordinate to lawful human authority and applicab
 # Appendices incorporated by reference
 
 ## Appendix A — HCC
-The Human-Centered Constitution shall be incorporated as a foundational interpretive appendix concerning human dignity, harm, rights, accountability and the human consequences of digital operation. Until the canonical appendix is admitted into this repository, references to HCC remain provisional.
+The Human Canon Charta (HCC), source doctrine HCC-S1-V1.0, is canonically admitted at `appendices/APP-A-HCC/README.md` as a foundational interpretive appendix concerning human dignity, harm, rights, accountability and the human consequences of digital operation.
 <!-- cdx:legal paragraph="CDX-LAW-001-APP-P01" refs="CFR-1:CONTEXTUAL;CFR-8-2:CONTEXTUAL;EU-AIA-14-1:CONTEXTUAL" verified="2026-09-24" -->
 > **Exact legal provisions — reference only; support and applicability not asserted:** [CFR-1 · Article 1 · CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [CFR-8-2 · Article 8(2) · CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [EU-AIA-14-1 · Article 14(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 ## Appendix B — Ex-Inerta Libertad
-Ex-Inerta Libertad shall be incorporated as a foundational interpretive appendix concerning the ontological and agency boundary of artificial entities. Until the canonical appendix is admitted into this repository, references remain provisional.
+Ex-Inerta Libertad is canonically admitted at `appendices/APP-B-EX-INERTA-LIBERTAD/README.md` as a foundational interpretive appendix concerning the ontological and agency boundary of artificial entities.
 <!-- cdx:legal paragraph="CDX-LAW-001-APP-P02" refs="CFR-1:CONTEXTUAL;CFR-8-2:CONTEXTUAL;EU-AIA-14-1:CONTEXTUAL;EU-AIA-12-1:CONTEXTUAL;EU-AIA-12-2:CONTEXTUAL;EU-AIA-19-1:CONTEXTUAL" verified="2026-09-24" -->
 > **Exact legal provisions — reference only; support and applicability not asserted:** [CFR-1 · Article 1 · CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [CFR-8-2 · Article 8(2) · CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [EU-AIA-14-1 · Article 14(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-12-1 · Article 12(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-12-2 · Article 12(2) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [EU-AIA-19-1 · Article 19(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 ## Appendix C — Global Authority Corpus
-The Global Authority Corpus shall preserve and classify the external legal, regulatory, standards, ethics, security-engineering and technical sources used to maintain this Act and its subordinate controls.
+The Global Authority Corpus is instantiated at `GLOBAL-AUTHORITY-CORPUS/` and shall preserve and classify external legal, regulatory, standards, ethics, security-engineering and technical sources used to maintain this Act and subordinate controls.
 <!-- cdx:legal paragraph="CDX-LAW-001-APP-P03" refs="CFR-1:CONTEXTUAL;CFR-8-2:CONTEXTUAL;EU-AIA-14-1:CONTEXTUAL;SE-CYBER-1-10:CONTEXTUAL;SE-CYBER-1-11:CONTEXTUAL" verified="2026-09-24" -->
 > **Exact legal provisions — reference only; support and applicability not asserted:** [CFR-1 · Article 1 · CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [CFR-8-2 · Article 8(2) · CONTEXTUAL](https://eur-lex.europa.eu/eli/treaty/char_2016/oj) · [EU-AIA-14-1 · Article 14(1) · CONTEXTUAL](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) · [SE-CYBER-1-10 · 1 kap. 10 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/) · [SE-CYBER-1-11 · 1 kap. 11 § · CONTEXTUAL](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/)
 

@@ -1,0 +1,16 @@
+{
+  "schema": "cdx.repository-protection-state/v1.0",
+  "repository": "Hybrismannen/Conductellence-",
+  "default_branch": "main",
+  "observed_at": "2026-09-25",
+  "native_branch_protection": false,
+  "native_ruleset": false,
+  "connector_observation": "GitHub reported private-repository ruleset/protection capability unavailable through current plan/integration.",
+  "in_repo_controls": [
+    ".github/CODEOWNERS",
+    ".github/workflows/constitutional-mutation-guard.yml",
+    "GOVERNANCE/constitutional-mutation-policy.md"
+  ],
+  "satisfies_enforcing_requirement": false,
+  "blocker_id": "CDX-BLOCK-REPO-PROTECTION-001"
+}

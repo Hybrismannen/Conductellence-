@@ -1,0 +1,43 @@
+# Constitutional Change Policy
+
+**Policy ID:** CDX-CONST-CHANGE-001  
+**Authority:** HUMAN_SOVEREIGN_AUTHORITY  
+**Applies to:** Conductellence constitutional and enforcement surfaces.
+
+## Protected surfaces
+
+Changes to the following are constitutionally material:
+
+- `LAW/**`
+- `appendices/**`
+- `GOVERNANCE/**`
+- `CONTROL-CATALOGUE/**`
+- `POLICY/**`
+- `SPETL/**`
+- `SECURITY-TWIN/**`
+- `GLOBAL-AUTHORITY-CORPUS/**`
+- `LEGAL-REFERENCES/**`
+- `LEGAL-RESOLVER/**`
+- `REGULATORY-DRIFT/**`
+- `.github/workflows/**`
+
+## Required path
+
+Constitutionally material change shall use:
+
+```text
+human-authorised proposal
+→ non-authoritative branch
+→ pull request
+→ constitutional/technical CI
+→ human review
+→ merge
+```
+
+Direct mutation of `main` is non-conforming even where GitHub account capabilities do not technically prevent it.
+
+## Platform limitation
+
+Repository-side policy cannot substitute for GitHub branch protection. Until branch protection/rulesets are externally enabled and verified, Conductellence shall remain unable to satisfy the production-enforcement criterion `constitutional amendment path protected`.
+
+CI therefore treats the lack of verified platform protection as an **ENFORCING blocker**, not as permission to weaken the rule.

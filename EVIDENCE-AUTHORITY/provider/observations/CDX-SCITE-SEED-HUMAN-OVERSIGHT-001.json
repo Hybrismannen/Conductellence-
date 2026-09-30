@@ -1,0 +1,21 @@
+{
+  "schema": "cdx.scite-search-observation/v0.1",
+  "observation_id": "CDX-SCITE-SEED-HUMAN-OVERSIGHT-001",
+  "retrieved_at": "2026-09-25",
+  "query": "human oversight AND artificial intelligence AND automation bias OR human control",
+  "limit": 5,
+  "provider": "Scite",
+  "admitted_publication_ids": [
+    "CDX-PUB-HO-KOULU-2020",
+    "CDX-PUB-HO-LANGER-2023",
+    "CDX-PUB-HO-BIEWER-2024"
+  ],
+  "admitted_claim_ids": [
+    "CDX-CLM-HO-001",
+    "CDX-CLM-HO-002"
+  ],
+  "authority_effect": "NONE",
+  "legal_effect": "NONE",
+  "support_effect": "UNASSESSED",
+  "note": "Normalized record of one explicit discovery call. No subsequent Scite call was used for these admissions."
+}

@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://conductellence.local/schemas/security-twin.schema.json",
+  "title": "Conductellence Security Twin",
+  "type": "object",
+  "required": [
+    "schema",
+    "nodes",
+    "edges"
+  ],
+  "properties": {
+    "schema": {
+      "const": "cdx.security-twin/v1.0"
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "AUTHORITY",
+              "SYSTEM",
+              "CONTROL",
+              "PRINCIPAL",
+              "TOOL",
+              "DATASET",
+              "CREDENTIAL",
+              "WORKFLOW",
+              "RESOURCE"
+            ]
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "from",
+          "to",
+          "relation"
+        ],
+        "properties": {
+          "from": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          },
+          "relation": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,29 @@
 {
   "schema": "cdx.scientific-claim-registry/v0.1",
   "system_id": "CDX-EVID-001",
-  "claims": []
+  "claims": [
+    {
+      "claim_id": "CDX-CLM-HO-001",
+      "text": "Human oversight should be evaluated as an operational safeguard with defined conditions and mechanisms, rather than assumed effective merely because a human is formally present.",
+      "claim_state": "PROPOSITION_FOR_REVIEW",
+      "authority_effect": "NONE",
+      "legal_effect": "NONE",
+      "domains": [
+        "human_oversight",
+        "ai_governance"
+      ]
+    },
+    {
+      "claim_id": "CDX-CLM-HO-002",
+      "text": "The effectiveness of human oversight over imperfect automated systems depends in part on whether humans can detect relevant system errors or unfair outcomes and respond appropriately.",
+      "claim_state": "PROPOSITION_FOR_REVIEW",
+      "authority_effect": "NONE",
+      "legal_effect": "NONE",
+      "domains": [
+        "human_oversight",
+        "error_detection",
+        "human_factors"
+      ]
+    }
+  ]
 }
