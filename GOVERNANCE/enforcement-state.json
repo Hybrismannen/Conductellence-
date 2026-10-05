@@ -3,7 +3,7 @@
   "law_id": "CDX-LAW-001",
   "mode": "BOOTSTRAP",
   "effective_at": "2026-09-30",
-  "core_reference_runtime_state": "REMEDIATED",
+  "core_reference_runtime_state": "VERIFIED_REFERENCE_RUNTIME",
   "meanings": {
     "BOOTSTRAP": "Conductellence law is authoritative for governed non-human development and the core reference runtime may be operational, but full estate enforcement shall not be claimed while any ENFORCING transition criterion remains unmet.",
     "ENFORCING": "Conductellence may claim full estate enforcement only when all machine-enforceable law, assurance, platform protection and governed-estate runtime criteria pass."
