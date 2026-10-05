@@ -4,6 +4,20 @@
 **Canonical law:** `CDX-LAW-001`  
 **Current law version:** `0.1.0-bootstrap`
 
+## Current system state
+
+Conductellence state is represented on independent axes rather than by one overloaded label.
+
+- **Constitutional state:** `FOUNDATIONAL_DRAFT`
+- **Core runtime state:** `VERIFIED_REFERENCE_RUNTIME`
+- **Release state:** `PRE_RELEASE`
+- **Enforcement state:** `BOOTSTRAP`
+- **Estate integration state:** `PENDING_RUNTIME_BINDINGS`
+
+Canonical machine-readable state is held in [`GOVERNANCE/system-state.json`](GOVERNANCE/system-state.json). State semantics are defined in [`GOVERNANCE/state-model.md`](GOVERNANCE/state-model.md).
+
+**Maturity is not enforcement. Release is not integration. Integration is not estate-wide enforcement.**
+
 Conductellence is the root constitutional, security, legal-governance, assurance and traceability authority for governed non-human digital operation across the estate.
 
 It is deliberately **not** a universal super-admin. Its governing model is:
