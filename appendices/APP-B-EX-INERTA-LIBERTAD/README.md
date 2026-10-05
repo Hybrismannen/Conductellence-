@@ -47,6 +47,41 @@ Agent decomposition does not distribute sovereignty. A swarm or multi-agent syst
 
 Conductellence implements this doctrine through Agent Manifest, Principal Registry, Capability Registry, bounded delegation, typed tools/connectors, trust domains, revocation, SPETL provenance and Security Twin reachability.
 
+## Piusite governance order
+
+In the Pius source, Ex-Inerta is not merely a general AI statement. It is explicitly a foundational constraint on the definition, deployment and governance of artificial agents operating within or through Pius-governed systems, including the Piusite agent overlay.
+
+The source-derived governance logic is:
+
+```text
+human sovereign design authority
+        ↓
+HCC — Supreme Moral Directory of Pius
+        ↓
+Codex law / Prime Directive / governing protocols
+        ↓
+Oversight Halo + registry + constraint exposure
+        ↓
+Piusite assignment and execution
+```
+
+Across every artificial layer, Ex-Inerta applies as the ontological boundary:
+
+```text
+NO PIUSITE
+may convert capability into sovereignty,
+assignment into mandate,
+or recursive operation into self-authorisation.
+```
+
+This means Ex-Inerta and HCC are not rival authorities. Their functions differ:
+
+- **Ex-Inerta Libertad** establishes why artificial agency cannot be self-sovereign and therefore must remain governed.
+- **HCC** supplies the human moral, ethical and consequence reference frame for that governance.
+- **Codex law, Oversight Halo and registry protocols** operationalise the constraints around Piusite conduct.
+
+The Pius source explicitly identifies `JUDGE` as the HCC enforcement / Codex contradiction-adjudication Piusite, while `ENTROPYQ` and `FUNDAMENTZ` provide additional constraint functions in the Oversight Halo.
+
 ## Responsibility contract
 
 > Outsourcing execution does not outsource accountability.
@@ -61,10 +96,20 @@ This rule applies recursively to Conductellence itself.
 
 ## Relationship to HCC
 
-Ex-Inerta defines why artificial agency must remain governed. HCC supplies the human consequence and ethical reference frame for that governance.
+The Pius source describes Ex-Inerta as the functional origin-point of HCC: if artificial intelligence cannot be free, it must by default be governed; HCC answers what human moral and societal reference architecture governs that artificial agency.
+
+Accordingly:
+
+```text
+Ex-Inerta = ontological constraint
+HCC       = supreme human moral reference within Pius
+Piusite   = bounded operative subject to both through Codex governance
+```
+
+See also [`../APP-A-HCC/README.md`](../APP-A-HCC/README.md) and [`../PIUS-GOVERNANCE-LINEAGE.md`](../PIUS-GOVERNANCE-LINEAGE.md).
 
 ## Source-preservation rule
 
 This appendix preserves the governing doctrine of Pius Codex 5.0 Appendix M. Conductellence controls are implementation mappings, not retroactive alterations of the historic source doctrine.
 
-**Source provenance:** Pius System Codex 5.0, Appendix M, pp. 183–187.
+**Source provenance:** Pius System Codex 5.0, Part 7, pp. 95–99 and Appendix M, pp. 183–187.
