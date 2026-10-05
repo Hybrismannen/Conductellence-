@@ -40,6 +40,8 @@ Development proceeds from law downward:
 7. **SECURITY-TWIN** — current/historical reachability, authority and blast radius.
 8. **APPENDICES** — HCC, Ex-Inerta Libertad and the Global Authority Corpus.
 
+The Pius provenance and governance relationship between HCC, Ex-Inerta Libertad and the Piusite agent framework is preserved in [`appendices/PIUS-GOVERNANCE-LINEAGE.md`](appendices/PIUS-GOVERNANCE-LINEAGE.md). HCC and Ex-Inerta are source-linked doctrines with different functions and must not be flattened into a single generic AI-governance concept.
+
 The repository therefore follows:
 
 ```text
