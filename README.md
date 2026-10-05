@@ -1,5 +1,6 @@
 # Conductellence
 
+**Name derivation:** **Code of Conduct + Excellence**  
 **Canonical system:** `CDX-SYS-001`  
 **Canonical law:** `CDX-LAW-001`  
 **Current law version:** `0.1.0-bootstrap`
