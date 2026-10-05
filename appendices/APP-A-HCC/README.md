@@ -16,7 +16,47 @@ The Pius source identifies HCC as:
 
 The governing source doctrine establishes HCC as the moral and consequence-oriented oversight layer above functional optimisation. Its central concern is not whether a system can act, but whether the consequences of action remain compatible with human dignity, justice, epistemic fairness, ecological integrity and accountable human design.
 
-## 2. Governing source doctrine
+## 2. Pius governance lineage
+
+HCC is not an isolated ethical appendix. In the Pius source it is linked directly to the ontological constraint on artificial agency and to the governance of Piusites.
+
+The source establishes two related but different orders:
+
+### Ontological derivation
+
+```text
+Ex-Inerta Libertad
+        ↓
+artificial agency cannot be self-sovereign
+        ↓
+artificial agency must remain governed
+        ↓
+HCC supplies the human moral and consequence frame
+```
+
+Ex-Inerta therefore explains **why** artificial agency must remain governed. HCC establishes the supreme moral reference **by which** that governance is judged.
+
+### Pius operational governance precedence
+
+```text
+human sovereign design authority
+        ↓
+HCC — Supreme Moral Directory
+        ↓
+Codex law / Prime Directive / governing protocols
+        ↓
+Oversight Halo + registration + constraint exposure
+        ↓
+Piusite assignment and execution
+```
+
+Pius Codex 5 describes Piusites as bounded system-embedded operatives with no functional sovereignty. Their governance includes Codex law, registration and the Oversight Halo; `JUDGE` is explicitly identified as the HCC enforcement / contradiction-adjudication Piusite. Ex-Inerta remains a non-waivable ontological boundary across the artificial-agent layers rather than a competing authority above HCC.
+
+Conductellence preserves this distinction. HCC and Ex-Inerta are source-linked doctrines with different functions: HCC governs consequence and moral clearance; Ex-Inerta constrains claims of artificial freedom, self-sovereignty and self-authorisation.
+
+See also [`../APP-B-EX-INERTA-LIBERTAD/README.md`](../APP-B-EX-INERTA-LIBERTAD/README.md) and [`../PIUS-GOVERNANCE-LINEAGE.md`](../PIUS-GOVERNANCE-LINEAGE.md).
+
+## 3. Governing source doctrine
 
 The following source propositions are incorporated into Conductellence as controlling interpretive doctrine:
 
@@ -29,7 +69,7 @@ The following source propositions are incorporated into Conductellence as contro
 7. **Historic findings shall be remembered rather than erased when the system is corrected.**
 8. **The moral frame may learn from new human knowledge, but learning does not grant an artificial system authority to redefine human sovereignty.**
 
-## 3. Sanctum Protocol incorporation
+## 4. Sanctum Protocol incorporation
 
 The Pius source defines a six-layer HCC governance protocol. Conductellence incorporates its functions as follows:
 
@@ -44,7 +84,7 @@ The Pius source defines a six-layer HCC governance protocol. Conductellence inco
 
 Conductellence shall not interpret S6 as permission for autonomous constitutional mutation. New ethical material may enter the evidence and interpretation layers; constitutional authority remains human-reserved.
 
-## 4. Conductellence HCC decision grammar
+## 5. Conductellence HCC decision grammar
 
 HCC may produce:
 
@@ -56,7 +96,7 @@ HCC may produce:
 
 `HCC_STOP` is restrictive. It may suspend or block non-human execution within its assigned scope but may not create new capability, permissions or legal authority.
 
-## 5. Required HCC evidence
+## 6. Required HCC evidence
 
 Every HCC decision shall identify:
 
@@ -71,11 +111,11 @@ Every HCC decision shall identify:
 - reviewer/authority where human review is required;
 - SPETL event reference.
 
-## 6. Relationship to law
+## 7. Relationship to law
 
 HCC is not a substitute for external law. A lawful action can still require HCC restriction. An HCC clearance cannot make an unlawful action lawful.
 
-The ordering is:
+The Conductellence ordering is:
 
 ```text
 applicable external law
@@ -87,10 +127,12 @@ HCC consequence/ethical interpretation
 policy/control decision
 ```
 
+This Conductellence legal ordering does not erase the Pius source lineage above. It specifies how an admitted HCC doctrine operates inside Conductellence after incorporation.
+
 Where HCC identifies a material rights or legal concern that cannot be resolved mechanically, the result shall include `LEGAL_REVIEW_REQUIRED`.
 
-## 7. Source-preservation rule
+## 8. Source-preservation rule
 
 This appendix incorporates the source doctrine into Conductellence without claiming that every historic Pius implementation detail is already deployed in Conductellence. Historic Pius-specific names, examples and internal modules remain provenance, not automatically current Conductellence runtime components.
 
-**Source provenance:** Pius System Codex 5.0, Part 5, pp. 59–77 in the source document.
+**Source provenance:** Pius System Codex 5.0, Part 5, pp. 59–77; Part 7, pp. 95–99; Appendix M, pp. 183–187 in the source document.
