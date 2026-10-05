@@ -1,0 +1,27 @@
+{
+  "schema": "cdx.system-state/v1.0",
+  "system_id": "CDX-SYS-001",
+  "system_name": "Conductellence",
+  "effective_at": "2026-10-05",
+  "constitutional_state": "FOUNDATIONAL_DRAFT",
+  "core_runtime_state": "VERIFIED_REFERENCE_RUNTIME",
+  "release_state": "PRE_RELEASE",
+  "enforcement_state": "BOOTSTRAP",
+  "estate_integration_state": "PENDING_RUNTIME_BINDINGS",
+  "core_release_blockers": [
+    "CDX-BLOCK-REPO-PROTECTION-001",
+    "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001"
+  ],
+  "estate_enforcement_blockers": [
+    "CDX-BLOCK-ESTATE-RUNTIME-001"
+  ],
+  "consumer_bindings": {
+    "Motherpher/FFOS": "NOT_STARTED"
+  },
+  "canonical_rule": "Maturity is not enforcement. Release is not integration. Integration is not estate-wide enforcement.",
+  "notes": [
+    "Conductellence remains canonical in its own repository.",
+    "FFOS runtime binding must not begin before Conductellence release closure and a versioned integration contract are available.",
+    "Individual consumer runtimes may reach VERIFIED_RUNTIME_BOUND without implying estate-wide ENFORCING state."
+  ]
+}
