@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://conductellence.local/schema/cdx-anchor/v1",
+  "title": "CDX Estate Anchor",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "system_short_name",
+    "governed_surface",
+    "cdx_authority",
+    "law_id",
+    "binding_mode",
+    "policy_pin",
+    "binding_state",
+    "local_enforcement",
+    "verification"
+  ],
+  "properties": {
+    "schema": {"const": "cdx.anchor/v1"},
+    "system_short_name": {"const": "CDX"},
+    "governed_surface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "identity"],
+      "properties": {
+        "kind": {"enum": ["REPOSITORY", "RUNTIME", "SERVICE", "WORKSPACE", "OTHER"]},
+        "identity": {"type": "string", "minLength": 1},
+        "repository": {"type": "string"},
+        "system_id": {"type": "string"}
+      }
+    },
+    "cdx_authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "canonical_name"],
+      "properties": {
+        "repository": {"const": "Hybrismannen/Conductellence-"},
+        "canonical_name": {"const": "Conductellence"},
+        "short_name": {"const": "CDX"}
+      }
+    },
+    "law_id": {"const": "CDX-LAW-001"},
+    "binding_mode": {"enum": ["PINNED_RELEASE", "PINNED_COMMIT", "TRACKING"]},
+    "policy_pin": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ref_type", "ref"],
+      "properties": {
+        "ref_type": {"enum": ["RELEASE", "TAG", "COMMIT", "POLICY_DIGEST"]},
+        "ref": {"type": "string", "minLength": 1},
+        "digest": {"type": "string"}
+      }
+    },
+    "binding_state": {
+      "enum": [
+        "UNBOUND",
+        "ANCHOR_DECLARED",
+        "CDX_BOUND",
+        "CDX_CI_MONITORED",
+        "CDX_RUNTIME_GUARDED",
+        "CDX_RUNTIME_VERIFIED",
+        "CDX_DEGRADED",
+        "CDX_REVOKED"
+      ]
+    },
+    "authority_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "authority_ref_required": {"type": "boolean"},
+        "mandate_ref_required": {"type": "boolean"}
+      }
+    },
+    "local_enforcement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["owner", "points"],
+      "properties": {
+        "owner": {"type": "string", "minLength": 1},
+        "points": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1},
+          "uniqueItems": true
+        },
+        "fail_closed_for_consequential_effects": {"type": "boolean"}
+      }
+    },
+    "conformance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ci_workflow": {"type": "string"},
+        "adapter_contract": {"type": "string"},
+        "runtime_state": {"type": "string"}
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "spetl_required": {"type": "boolean"},
+        "preservation_target": {"type": "string"},
+        "reconciliation_surface": {"type": "string"}
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["last_verified_at", "verification_state"],
+      "properties": {
+        "last_verified_at": {"type": ["string", "null"], "format": "date-time"},
+        "verification_state": {"enum": ["NOT_VERIFIED", "PASS", "DEGRADED", "FAIL", "REVOKED"]},
+        "verified_against": {"type": ["string", "null"]}
+      }
+    }
+  }
+}
