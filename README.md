@@ -1,12 +1,12 @@
 # Conductellence
 
-**Canonical short name:** `CEX`  
+**Canonical short name:** `CDX`  
 **Name derivation:** **Code of Conduct + Excellence**  
 **Canonical system:** `CDX-SYS-001`  
 **Canonical law:** `CDX-LAW-001`  
 **Current law version:** `0.1.0-bootstrap`
 
-> `CEX` is the canonical short name for Conductellence in architecture, governance and integration language. Existing `CDX-*` identifiers remain stable technical IDs and are not renamed retroactively.
+> `CDX` is the sole canonical short name for Conductellence in architecture, governance, identifiers and integration language.
 
 ## Current system state
 
@@ -26,24 +26,24 @@ Conductellence is the root constitutional, security, legal-governance, assurance
 
 It is deliberately **not** a universal super-admin. Its governing model is:
 
-> **CEX publishes constitutional authority and signed/versioned policy outward; every governed work surface maintains a local technical anchor back to CEX.**
+> **CDX publishes constitutional authority and signed/versioned policy outward; every governed work surface maintains a local technical anchor back to CDX.**
 
 The canonical estate direction is therefore:
 
 ```text
-CEX  ──publishes/pushes governance──>  ALL GOVERNED WORK
-CEX  <────local anchor / hook────────  ALL GOVERNED WORK
+CDX  ──publishes/pushes governance──>  ALL GOVERNED WORK
+CDX  <────local anchor / hook────────  ALL GOVERNED WORK
 ```
 
 This is an **asymmetrical bidirectional governance model**:
 
-- CEX is the source of constitutional law, policy contracts, governance versions and conformance requirements.
-- Governed repositories own their local enforcement points and must carry an explicit CEX anchor.
-- CEX does not normally mutate downstream repositories directly. It publishes governance artifacts; repositories bind to an explicit version and prove conformance.
-- Every governed repository must be discoverable from the CEX estate registry, but registry membership does not replace the local anchor.
-- A repository without a valid CEX anchor is not considered governance-bound, even if it is listed centrally.
+- CDX is the source of constitutional law, policy contracts, governance versions and conformance requirements.
+- Governed repositories own their local enforcement points and must carry an explicit CDX anchor.
+- CDX does not normally mutate downstream repositories directly. It publishes governance artifacts; repositories bind to an explicit version and prove conformance.
+- Every governed repository must be discoverable from the CDX estate registry, but registry membership does not replace the local anchor.
+- A repository without a valid CDX anchor is not considered governance-bound, even if it is listed centrally.
 
-The normative specification is [`GOVERNANCE/CEX-ESTATE-ANCHOR-STANDARD.md`](GOVERNANCE/CEX-ESTATE-ANCHOR-STANDARD.md).
+The normative specification is [`GOVERNANCE/CDX-ESTATE-ANCHOR-STANDARD.md`](GOVERNANCE/CDX-ESTATE-ANCHOR-STANDARD.md).
 
 Human sovereign authority remains superior. Conductellence governs the boundary at which human authority is delegated into non-human execution.
 
