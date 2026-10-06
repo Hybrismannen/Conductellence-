@@ -1,0 +1,136 @@
+{
+  "schema": "cex.anchor-registry/v1",
+  "authority": {
+    "canonical_name": "Conductellence",
+    "short_name": "CEX",
+    "repository": "Hybrismannen/Conductellence-",
+    "law_id": "CDX-LAW-001"
+  },
+  "governance_standard": "CEX-GOV-ANCHOR-001",
+  "canonical_local_anchor": ".cex/anchor.json",
+  "migration_source": "ESTATE-REGISTRY/systems.json",
+  "updated_at": "2026-10-06T19:08:15Z",
+  "entries": [
+    {
+      "repository": "Hybrismannen/Conductellence-",
+      "system_id": "CDX-SYS-001",
+      "role": "CEX_AUTHORITY",
+      "anchor_state": "AUTHORITY_SOURCE",
+      "legacy_manifest": null
+    },
+    {
+      "repository": "Hybrismannen/form-flode",
+      "system_id": "CDX-EST-001",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/form-flode-dna",
+      "system_id": "CDX-EST-002",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/pius-universe",
+      "system_id": "CDX-EST-003",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/pius-pwe",
+      "system_id": "CDX-EST-004",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/pius-codex-5",
+      "system_id": "CDX-EST-005",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/pius-lifetime-audit-2026",
+      "system_id": "CDX-EST-006",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/udl-twin",
+      "system_id": "CDX-EST-007",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/green-bell-statsvault",
+      "system_id": "CDX-EST-008",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/RFSU-godex",
+      "system_id": "CDX-EST-009",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/RFSU-godex-FF",
+      "system_id": "CDX-EST-010",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/Hy",
+      "system_id": "CDX-EST-011",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/livicity-cwvs-reference",
+      "system_id": "CDX-EST-012",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/nsliengine",
+      "system_id": "CDX-EST-013",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/Digital-Apartheid",
+      "system_id": "CDX-EST-014",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/NSLI",
+      "system_id": "CDX-EST-015",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/metoyo",
+      "system_id": "CDX-EST-016",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Motherpher/CareerHubZero",
+      "system_id": "CDX-EST-017",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Motherpher/FFOS",
+      "system_id": "FFOS",
+      "role": "CONTROL_PLANE",
+      "anchor_state": "CEX_CI_MONITORED",
+      "anchor_manifest": ".cex/anchor.json",
+      "binding_mode": "PINNED_COMMIT",
+      "cex_ref": "a6a2a7d856ea206dc31e99f0065c0b9e25d96f0b",
+      "binding_audit_workflow": ".github/workflows/cex-binding-audit.yml",
+      "runtime_integration_state": "BOUND_PENDING_RUNTIME_INTEGRATION",
+      "last_verified_at": "2026-10-06T19:08:15Z"
+    }
+  ]
+}
