@@ -6,7 +6,7 @@
 **Canonical law:** `CDX-LAW-001`  
 **Current law version:** `0.1.0-bootstrap`
 
-> `CDX` is the sole canonical short name for Conductellence in architecture, governance, identifiers and integration language.
+> `CDX` is the sole canonical short name for Conductellence in architecture, governance, identifiers and integration language. No parallel system shorthand is permitted.
 
 ## Current system state
 
