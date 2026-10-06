@@ -9,7 +9,7 @@
   "governance_standard": "CDX-GOV-ANCHOR-001",
   "canonical_local_anchor": ".cdx/anchor.json",
   "migration_source": "ESTATE-REGISTRY/systems.json",
-  "updated_at": "2026-10-06T19:08:15Z",
+  "updated_at": "2026-10-06T19:56:34Z",
   "entries": [
     {"repository":"Hybrismannen/Conductellence-","system_id":"CDX-SYS-001","role":"CDX_AUTHORITY","anchor_state":"AUTHORITY_SOURCE","legacy_manifest":null},
     {"repository":"Hybrismannen/form-flode","system_id":"CDX-EST-001","anchor_state":"MIGRATION_PENDING","legacy_manifest":".security/conductellence.json"},
@@ -39,7 +39,7 @@
       "cdx_ref": "7edbc47899af23b415114628469aca2970779ea1",
       "binding_audit_workflow": ".github/workflows/cdx-binding-audit.yml",
       "runtime_integration_state": "BOUND_PENDING_RUNTIME_INTEGRATION",
-      "last_verified_at": "2026-10-06T19:08:15Z"
+      "last_verified_at": "2026-10-06T19:56:34Z"
     }
   ]
 }
