@@ -1,0 +1,57 @@
+{
+  "schema": "cdx.repository-protection-target/v1.0",
+  "target_id": "CDX-REPO-PROTECT-TARGET-001",
+  "repository": "Hybrismannen/Conductellence-",
+  "branch": "main",
+  "required_capability": "NATIVE_OR_PLATFORM_EQUIVALENT_PREMERGE_PROTECTION",
+  "pull_request": {
+    "required": true,
+    "approving_reviews": 1,
+    "require_code_owner_review": true,
+    "dismiss_stale_reviews": true,
+    "require_conversation_resolution": true,
+    "rationale": "Protected constitutional mutations require a human approval event before merge."
+  },
+  "required_status_checks": {
+    "strict_up_to_date_branch": true,
+    "checks": [
+      {
+        "context": "constitutional-audit",
+        "workflow": "Conductellence Law Audit"
+      },
+      {
+        "context": "mutation-guard",
+        "workflow": "Conductellence Constitutional Mutation Guard"
+      },
+      {
+        "context": "readiness",
+        "workflow": "Conductellence Remediation Readiness"
+      },
+      {
+        "context": "state-reconciliation",
+        "workflow": "CDX Estate Registry Consistency"
+      }
+    ]
+  },
+  "history_integrity": {
+    "allow_force_pushes": false,
+    "allow_deletions": false
+  },
+  "bypass": {
+    "allow_admin_bypass": false,
+    "allow_actor_bypass": false,
+    "rationale": "A bypassable rule cannot satisfy the constitutional amendment-path protection criterion."
+  },
+  "closure_evidence_required": [
+    "platform protection/ruleset identifier",
+    "independent platform re-read",
+    "pull request requirement active",
+    "one human approval active",
+    "constitutional-audit required",
+    "mutation-guard required",
+    "force push disabled",
+    "branch deletion disabled",
+    "no uncontrolled bypass path"
+  ],
+  "current_state": "PENDING_PLATFORM_CAPABILITY"
+}
