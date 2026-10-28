@@ -1,5 +1,6 @@
 * @Hybrismannen
 /LAW/ @Hybrismannen
+/INTERPRETATION/ @Hybrismannen
 /appendices/ @Hybrismannen
 /GOVERNANCE/ @Hybrismannen
 /CONTROL-CATALOGUE/ @Hybrismannen
@@ -11,5 +12,11 @@
 /LEGAL-RESOLVER/ @Hybrismannen
 /REGULATORY-DRIFT/ @Hybrismannen
 /EVIDENCE-AUTHORITY/ @Hybrismannen
+/REVIEW-CATALOGUE/ @Hybrismannen
+/RED-TEAM/ @Hybrismannen
+/DISTRIBUTION/ @Hybrismannen
+/RUNTIME-INTEGRATION/ @Hybrismannen
 /ESTATE-REGISTRY/ @Hybrismannen
+/AUDITS/ @Hybrismannen
+/.github/CODEOWNERS @Hybrismannen
 /.github/workflows/ @Hybrismannen
