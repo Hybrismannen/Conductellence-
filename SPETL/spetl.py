@@ -15,13 +15,14 @@ EFFECT_STATUSES = {"NOT_ATTEMPTED", "PERMITTED", "BLOCKED", "FAILED"}
 REQUIRED_INPUT_FIELDS = {
     "event_type", "actor_id", "subject_ref", "action", "attempted_effect",
     "effect_status", "decision", "authority_ref", "mandate_ref",
-    "policy_version", "policy_digest", "correlation_id", "causation_id",
+    "policy_ref", "policy_version", "policy_digest", "request_id", "correlation_id", "causation_id",
     "run_id", "trace_ref", "reviewer_ref", "data_minimization",
     "control_results", "evidence_refs"
 }
 REQUIRED_STORED_FIELDS = REQUIRED_INPUT_FIELDS | {
     "schema_version", "event_id", "recorded_at", "previous_hash", "event_hash"
 }
+ALLOWED_EVENT_FIELDS = REQUIRED_STORED_FIELDS | {"resource_id"}
 
 def canonical(obj):
     return json.dumps(obj, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
@@ -44,6 +45,9 @@ def validate_event(event, stored=False):
     missing = sorted(k for k in required if k not in event)
     if missing:
         raise ValueError("missing required SPETL field(s): " + ", ".join(missing))
+    unexpected = sorted(k for k in event if k not in ALLOWED_EVENT_FIELDS)
+    if unexpected:
+        raise ValueError("unexpected SPETL field(s): " + ", ".join(unexpected))
 
     if stored and event.get("schema_version") != SCHEMA_VERSION:
         raise ValueError("unsupported schema_version")
@@ -54,7 +58,7 @@ def validate_event(event, stored=False):
 
     for key in (
         "event_type", "actor_id", "action", "authority_ref", "mandate_ref",
-        "policy_version", "correlation_id", "causation_id", "run_id", "trace_ref"
+        "policy_ref", "policy_version", "request_id", "correlation_id", "causation_id", "run_id", "trace_ref"
     ):
         _require_string(event, key)
 
@@ -89,6 +93,22 @@ def validate_event(event, stored=False):
         raise ValueError("control_results must be an array")
     if not isinstance(event.get("evidence_refs"), list):
         raise ValueError("evidence_refs must be an array")
+
+    decision = event.get("decision")
+    effect_status = event.get("effect_status")
+    deny_like = {"DENY", "REQUIRE_HUMAN", "QUARANTINE", "SECURITY_STOP", "CONSTITUTIONAL_STOP"}
+    allow_like = {"ALLOW", "ALLOW_WITH_CONTROLS"}
+    if effect_status == "PERMITTED" and decision not in allow_like:
+        raise ValueError("non-allow decision cannot have PERMITTED effect_status")
+    if decision in deny_like and effect_status == "PERMITTED":
+        raise ValueError("deny/stop decision cannot permit an effect")
+    if decision in allow_like and effect_status == "BLOCKED":
+        raise ValueError("allow decision cannot report BLOCKED effect_status")
+    if policy_digest == "UNAVAILABLE":
+        if decision not in {"SECURITY_STOP", "DENY"}:
+            raise ValueError("unavailable policy must fail closed")
+        if effect_status not in {"BLOCKED", "NOT_ATTEMPTED"}:
+            raise ValueError("unavailable policy cannot permit or execute an effect")
 
     if stored:
         _require_string(event, "event_id")
@@ -203,13 +223,21 @@ def verify_custody_bundle(bundle, expected_producer=None, allowed_authorities=No
             return False, f"event {idx}: event_hash mismatch"
         if allowed_authorities is not None and event.get("authority_ref") not in allowed_authorities:
             return False, f"event {idx}: untrusted authority_ref"
+        if event["event_id"] in seen:
+            return False, f"event {idx}: duplicate event_id"
         seen.add(event["event_id"])
         previous = event["event_hash"]
 
-    expected = set(bundle.get("expected_event_ids") or [])
+    expected_list = bundle.get("expected_event_ids") or []
+    expected = set(expected_list)
     missing = sorted(expected - seen)
+    unexpected = sorted(seen - expected)
     if missing:
         return False, "withheld evidence: " + ", ".join(missing)
+    if unexpected:
+        return False, "injected evidence: " + ", ".join(unexpected)
+    if expected_list != [event["event_id"] for event in events]:
+        return False, "evidence order/identity manifest mismatch"
 
     retention = bundle.get("retention")
     if not isinstance(retention, dict) or retention.get("deletion_mode") != "GOVERNED_TOMBSTONE_AND_AUTHORIZED_ADMIN_ACTION":
