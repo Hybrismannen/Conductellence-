@@ -90,7 +90,7 @@
           ]
         }
       },
-      "additionalProperties": true
+      "additionalProperties": false
     },
     "effect_status": {
       "enum": [
@@ -198,5 +198,5 @@
       "minLength": 1
     }
   },
-  "additionalProperties": true
+  "additionalProperties": false
 }
