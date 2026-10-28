@@ -4,7 +4,7 @@
   "target_release": "CDX 1.0",
   "state": "FROZEN_FOR_CLOSURE",
   "effective_at": "2026-10-28",
-  "baseline_main_sha": "749823c4f3a9a6b73fc608666c065c50530d14a9",
+  "baseline_main_sha": "ada82874fd0a018241a0b7b77fa0b796a63483a1",
   "authority": "HUMAN_SOVEREIGN_AUTHORITY",
   "purpose": "Freeze the Conductellence 1.0 core system boundary so WP03-WP07 close existing obligations without architectural feature expansion.",
   "canonical_identities": {
