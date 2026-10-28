@@ -30,8 +30,16 @@ verified=ind.get("satisfies_enforcing_requirement") is True
 if verified:
     if ind.get("state")!="VERIFIED":
         fail("independent preservation claims satisfaction without VERIFIED state")
-    if not ind.get("verification_evidence"):
+    evidence=ind.get("verification_evidence")
+    if not isinstance(evidence,dict):
         fail("VERIFIED independent preservation lacks verification evidence")
+    if evidence.get("approved_profile")!="CDX-CUSTODY-GHA-001":
+        fail("VERIFIED preservation does not name the approved reference custody profile")
+    for key in ("producer_run_id","custodian_run_id","verifier_run_id","custody_artifact_id","verification_artifact_id"):
+        if not evidence.get(key):
+            fail("VERIFIED preservation evidence missing "+key)
+    if not evidence.get("custody_artifact_digest") or not evidence.get("verification_artifact_digest"):
+        fail("VERIFIED preservation lacks platform artifact digests")
 else:
     if ind.get("blocker_id")!="CDX-BLOCK-EVIDENCE-INDEPENDENCE-001":
         fail("open independent-preservation state lacks canonical blocker id")
