@@ -9,6 +9,7 @@
 Changes to the following are constitutionally material:
 
 - `LAW/**`
+- `INTERPRETATION/**`
 - `appendices/**`
 - `GOVERNANCE/**`
 - `CONTROL-CATALOGUE/**`
@@ -19,6 +20,14 @@ Changes to the following are constitutionally material:
 - `LEGAL-REFERENCES/**`
 - `LEGAL-RESOLVER/**`
 - `REGULATORY-DRIFT/**`
+- `EVIDENCE-AUTHORITY/**`
+- `REVIEW-CATALOGUE/**`
+- `RED-TEAM/**`
+- `DISTRIBUTION/**`
+- `RUNTIME-INTEGRATION/**`
+- `ESTATE-REGISTRY/**`
+- `AUDITS/**`
+- `.github/CODEOWNERS`
 - `.github/workflows/**`
 
 ## Required path
