@@ -41,3 +41,17 @@ Direct mutation of `main` is non-conforming even where GitHub account capabiliti
 Repository-side policy cannot substitute for GitHub branch protection. Until branch protection/rulesets are externally enabled and verified, Conductellence shall remain unable to satisfy the production-enforcement criterion `constitutional amendment path protected`.
 
 CI therefore treats the lack of verified platform protection as an **ENFORCING blocker**, not as permission to weaken the rule.
+
+## Constitutional adoption process
+
+Constitutional maturity transitions use the canonical state sequence:
+
+```text
+FOUNDATIONAL_DRAFT
+→ CONSTITUTIONAL_CANDIDATE
+→ STABLE_CANDIDATE
+→ ADOPTED
+→ AMENDED
+```
+
+Adoption requires explicit `HUMAN_SOVEREIGN_AUTHORITY`, a frozen release boundary, passing constitutional/technical CI and a preserved adoption record. Candidate and adopted constitutional states do not imply system release or production enforcement. Final adoption shall be recorded by a machine-readable order in `GOVERNANCE/orders/` and shall not waive independent release/enforcement blockers.
