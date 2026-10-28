@@ -1,6 +1,6 @@
 # CDX-WP03 — RC-02 Constitutional Closure
 
-Status: IN EXECUTION — STABLE CANDIDATE  
+Status: COMPLETE ON FINAL ADOPTION MERGE — ADOPTED  
 Date: 2026-10-28  
 Adoption record: `CDX-CONST-ADOPT-001`
 
@@ -93,3 +93,18 @@ Constitutional adoption does not waive:
 - `CDX-BLOCK-ESTATE-RUNTIME-001`
 
 These remain independent programme gates under WP04/WP05 and later estate WPs.
+
+## 8. Final adoption
+
+The stable candidate passed all required gates and merged as PR #27 / commit `9dc5591a0be3cf7b331a658e130dccc0ce373c3d`.
+
+The final adoption order is `GOVERNANCE/orders/CDX-CONSTITUTIONAL-ADOPTION-001.json`. On merge of the final WP03 adoption PR with all required gates passing:
+
+- constitutional state becomes `ADOPTED`;
+- `CDX-LAW-001` becomes constitutional law version `1.0.0`;
+- WP03 is complete;
+- release remains `PRE_RELEASE`;
+- enforcement remains `BOOTSTRAP`;
+- the three independent blockers remain open.
+
+The next core-closure package is `CDX-WP04`: independent SPETL evidence custody and attestation.
