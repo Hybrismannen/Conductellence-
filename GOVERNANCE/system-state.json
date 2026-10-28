@@ -32,16 +32,33 @@
       "state": "CDX_CI_MONITORED",
       "local_anchor_ref": "Motherpher/FFOS/.cdx/anchor.json",
       "observed_at": "2026-10-06T19:56:34Z",
+      "verification": "PASS",
       "runtime_enforcement": "BOUND_PENDING_RUNTIME_INTEGRATION",
       "source": "ESTATE-REGISTRY/cdx-anchors.json"
     },
-    "Motherpher/form-flode": {
+    "Hybrismannen/pius-universe": {
       "state": "ANCHOR_DECLARED",
-      "source": "FFC draft PR #34 (not merged)",
+      "local_anchor_ref": "Hybrismannen/pius-universe/.cdx/anchor.json",
+      "observed_at": "2026-10-28",
       "verification": "NOT_VERIFIED",
-      "registry_admission": "PENDING_PR_MERGE_AND_VERIFICATION"
+      "runtime_enforcement": "VERIFIED_REFERENCE_RUNTIME_REPOSITORY_CI_ONLY",
+      "estate_admission_state": "PENDING_INDEPENDENT_VERIFICATION",
+      "source": "ESTATE-REGISTRY/cdx-anchors.json"
     }
   },
-  "reconciliation_note": "The field consumer_bindings describes CONSEQUENTIAL APPLICATION RUNTIME integration, not repository anchor registration. FFOS runtime NOT_STARTED and FFOS repository anchor CDX_CI_MONITORED refer to different axes and are not contradictory; neither proves verified runtime enforcement. FFC Motherpher/form-flode is a pending developmental anchor only. Repo protections and CDX release remain blockers.",
-  "updated_at": "2026-10-28"
+  "reconciliation_note": "consumer_bindings describes consequential application-runtime integration. Repository anchors are a separate axis. FFOS is CDX_CI_MONITORED but remains BOUND_PENDING_RUNTIME_INTEGRATION. Pius has a canonical anchor on main but remains ANCHOR_DECLARED / NOT_VERIFIED and repository-CI-only. Motherpher/form-flode has no canonical anchor on main; draft PR #34 is only a candidate, and its live legacy manifest identifies Hybrismannen/form-flode, so it must not be treated as admitted FFC binding. Core release and enforcement blockers remain open.",
+  "updated_at": "2026-10-28",
+  "pending_anchor_candidates": {
+    "Motherpher/form-flode": {
+      "main_branch_anchor_state": "UNBOUND",
+      "main_branch_anchor_present": false,
+      "draft_anchor_state": "ANCHOR_DECLARED",
+      "source": "FFC draft PR #34",
+      "verification": "NOT_VERIFIED",
+      "registry_admission": "PENDING_PR_MERGE_AND_VERIFICATION",
+      "legacy_manifest_present": true,
+      "legacy_manifest_repository_identity": "Hybrismannen/form-flode",
+      "identity_reconciliation": "REQUIRED_BEFORE_ADMISSION"
+    }
+  }
 }
