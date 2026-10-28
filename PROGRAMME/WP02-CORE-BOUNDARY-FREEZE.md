@@ -130,6 +130,8 @@ The audit verifies:
 
 The audit is wired into both the Law Audit and Remediation Readiness workflows.
 
+**WP02 assurance hardening:** the boundary audit also freezes the exact 131 section IDs, auditability-class set, enforcement-surface set, four review-procedure IDs and fail-closed default policy behavior. This prevents a one-for-one semantic substitution from evading the original count-based topology checks. It is a stricter test of the same RC-01 boundary, not a scope expansion.
+
 The Constitutional Mutation Guard is also broadened to treat all frozen core governance/release surfaces as protected for the existing PR-only tripwire. This does **not** solve the native repository-protection blocker; it only aligns the in-repo degraded control with the frozen release boundary.
 
 ## 9. State effect
