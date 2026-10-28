@@ -27,7 +27,8 @@
     "ProjectHub is a subsystem in the FFOS repository and shares that repository anchor; actual ProjectHub A3/A4/A5 enforcement must be independently verified.",
     "CDX 1.0 core boundary is frozen for WP03-WP07 closure; estate execution WP08-WP14 remains outside the core-release closure boundary.",
     "WP04 custody code and contracts do not close the independent-evidence blocker; external Vercel custody provisioning and observed tests are required.",
-    "WP04 external custody provisioning is blocked by Vercel team billing state (HTTP 402 resource_creation_blocked). Existing unrelated Vercel projects were not repurposed because that would weaken trust-domain independence."
+    "WP04 external custody provisioning is blocked by Vercel team billing state (HTTP 402 resource_creation_blocked). Existing unrelated Vercel projects were not repurposed because that would weaken trust-domain independence.",
+    "WP05 native repository protection is blocked by the current private-repository GitHub plan/capability and connector administration access. CDX will not make the repository public or alter plan/billing automatically."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
@@ -110,5 +111,15 @@
     "external_blocker": "VERCEL_RESOURCE_CREATION_BLOCKED_OVERDUE_BALANCE",
     "user_action_required": true,
     "safe_workaround_available": false
+  },
+  "wp05_repository_protection": {
+    "state": "PLATFORM_PLAN_GATE_BLOCKED",
+    "blocker_id": "CDX-BLOCK-REPO-PROTECTION-001",
+    "blocker_closed": false,
+    "observed_at": "2026-10-28",
+    "rulesets_api": "FORBIDDEN_403_UPGRADE_TO_GITHUB_PRO_OR_MAKE_PUBLIC",
+    "administration_capability": "UNAVAILABLE",
+    "safe_automatic_remediation": false,
+    "state_ref": "GOVERNANCE/repository-protection-state.json"
   }
 }
