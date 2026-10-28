@@ -1,0 +1,59 @@
+{
+  "schema": "cdx.constitutional-adoption-candidate/v1.0",
+  "candidate_id": "CDX-CONST-CAND-001",
+  "decision_order_id": "CDX-CONST-ADOPT-001",
+  "law_id": "CDX-LAW-001",
+  "system_id": "CDX-SYS-001",
+  "state": "READY_FOR_HUMAN_DECISION",
+  "prepared_at": "2026-10-28",
+  "source_snapshot": {
+    "repository": "Hybrismannen/Conductellence-",
+    "main_sha": "d411649e00aefa02ff09bcc90edfd97888584f6e",
+    "law_path": "LAW/CONDUCTELLENCE-ACT.md",
+    "law_blob_sha": "8ecb490b08295bfedf085d11e9c94b145e6d49fa",
+    "source_law_version": "0.1.0-bootstrap",
+    "source_constitutional_state": "FOUNDATIONAL_DRAFT",
+    "boundary_id": "CDX-RC01-BOUNDARY-001"
+  },
+  "adoption_target": {
+    "law_version": "1.0.0",
+    "constitutional_state": "ADOPTED",
+    "law_status_text": "ADOPTED — canonical internal constitutional source for Conductellence; system release and estate enforcement remain separately gated.",
+    "release_state_after_adoption": "PRE_RELEASE",
+    "enforcement_state_after_adoption": "BOOTSTRAP",
+    "estate_integration_state_after_adoption": "PENDING_RUNTIME_BINDINGS"
+  },
+  "readiness_basis": [
+    "RC-01 core boundary is FROZEN_FOR_CLOSURE and exact semantic sets are frozen.",
+    "Legal Integrity phases B, C and D each have Director ACCEPTED / PASS records.",
+    "Core remediation closeout records the reference runtime as REMEDIATED.",
+    "131 law sections, 7 Foundational Principles, 69 fully automatable and 62 review-governed sections are closed under the existing architecture.",
+    "Constitutional adoption is independent from release, enforcement and estate integration."
+  ],
+  "residual_non_constitutional_blockers": [
+    "CDX-BLOCK-REPO-PROTECTION-001",
+    "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001",
+    "CDX-BLOCK-ESTATE-RUNTIME-001",
+    "CDX-ANCHOR-ESTATE-001"
+  ],
+  "decision_semantics": {
+    "authority_required": "HUMAN_SOVEREIGN_AUTHORITY",
+    "allowed_decisions": [
+      "APPROVED",
+      "RETURN_FOR_AMENDMENT",
+      "REJECTED"
+    ],
+    "generic_continue_or_proceed_is_approval": false,
+    "approval_must_explicitly_reference": "CDX-CONST-ADOPT-001",
+    "effect_of_approval": "Authorizes a subsequent protected PR to change the Act header/version and constitutional_state to ADOPTED without altering the frozen RC-01 law-section topology.",
+    "effect_of_return": "Candidate remains non-adopted and may be corrected inside RC-01.",
+    "effect_of_rejection": "Candidate is closed without constitutional promotion."
+  },
+  "no_implicit_effects": [
+    "Does not release CDX 1.0.",
+    "Does not move enforcement beyond BOOTSTRAP.",
+    "Does not close repository-protection or evidence-independence blockers.",
+    "Does not establish consumer runtime integration.",
+    "Does not authorize estate-wide ENFORCING."
+  ]
+}
