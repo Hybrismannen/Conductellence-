@@ -28,3 +28,19 @@ See:
 - `PROGRAMME/WP04-INDEPENDENT-SPETL-EVIDENCE-CUSTODY.md`
 
 The blocker remains open until external provisioning and verification are observed.
+
+
+## Canonical custody event contract
+
+SPETL custody schema version `1.1` requires request/correlation/causation identity, authority and mandate references, policy reference/version/digest, decision, attempted effect and effect status, run/trace identity, reviewer reference, pseudonymous subject reference, data-minimization metadata and the event hash chain.
+
+A policy-unavailable event must fail closed; it cannot record a permitted effect.
+
+## Independent custody profiles
+
+WP04 defines two approved custody profiles:
+
+- `CDX-CUSTODY-GHA-001` — executable reference custody using three separate GitHub workflow runs (producer → custodian → verifier) with immutable Actions artifacts, SHA-256 custody receipts and 90-day reference retention.
+- `CDX-CUSTODY-001` — long-lived Vercel private-Blob custody target with GitHub OIDC source authentication, non-overwrite writes and authenticated read/verify.
+
+The reference profile may satisfy the core release evidence-independence gate only after actual workflow/artifact provenance is observed and recorded. Source code or local tests alone do not close the blocker.
