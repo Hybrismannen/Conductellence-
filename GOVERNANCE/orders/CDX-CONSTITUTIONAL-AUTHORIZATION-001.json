@@ -1,0 +1,27 @@
+{
+  "schema": "cdx.constitutional-authorization/v1.0",
+  "authorization_id": "CDX-CONST-AUTH-001",
+  "authority": "HUMAN_SOVEREIGN_AUTHORITY",
+  "authority_source": "DIRECT_HUMAN_DIRECTIVE",
+  "directive_ref": "CONDUCTELLENCE_MASTER_CONTROL_WP03_2026-10-28",
+  "directive": "EXECUTE_CDX_WP03",
+  "authorized_process": "CDX-WP03-RC02-CONSTITUTIONAL-CLOSURE",
+  "authorized_transition_path": [
+    "FOUNDATIONAL_DRAFT",
+    "CONSTITUTIONAL_CANDIDATE",
+    "STABLE_CANDIDATE",
+    "ADOPTED"
+  ],
+  "conditions": [
+    "CDX-RC01-BOUNDARY-001 remains FROZEN_FOR_CLOSURE",
+    "frozen constitutional topology and semantic grammars remain unchanged",
+    "Conductellence Law Audit passes at each transition",
+    "Constitutional Mutation Guard passes at each transition",
+    "Remediation Readiness passes at each transition",
+    "no constitutional conflict is introduced",
+    "system release and enforcement axes are not promoted by constitutional adoption"
+  ],
+  "final_adoption_authorized_if_conditions_pass": true,
+  "decision_date": "2026-10-28",
+  "note": "This authorization governs the internal CDX constitutional state only. It is not state legislation, external legal certification, system release approval or estate-enforcement approval."
+}
