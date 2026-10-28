@@ -102,6 +102,15 @@ if state=="ADOPTED":
     o=json.loads(order.read_text(encoding="utf-8"))
     if o.get("decision")!="ADOPT" or o.get("authority")!="HUMAN_SOVEREIGN_AUTHORITY":
         fail("final adoption order is not valid")
+    if o.get("constitutional_version")!="1.0.0":
+        fail("final adoption order version mismatch")
+    if o.get("effective_condition")!="MERGE_OF_FINAL_ADOPTION_PR_WITH_ALL_REQUIRED_GATES_PASSING":
+        fail("final adoption order has unexpected effective condition")
+    stable=o.get("evidence",{}).get("candidate_to_stable",{})
+    if stable.get("merge_commit")!="9dc5591a0be3cf7b331a658e130dccc0ce373c3d" or stable.get("gates")!="PASS":
+        fail("final adoption order lacks stable-candidate gate provenance")
+    if adoption.get("final_adoption",{}).get("order_ref")!="GOVERNANCE/orders/CDX-CONSTITUTIONAL-ADOPTION-001.json":
+        fail("adoption state does not bind the final adoption order")
 else:
     if "**Version:** 0.1.0-bootstrap" not in law[:1200]:
         fail("pre-adoption candidate must retain bootstrap law version")

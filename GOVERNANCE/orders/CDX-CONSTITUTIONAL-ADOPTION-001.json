@@ -1,0 +1,46 @@
+{
+  "schema": "cdx.constitutional-adoption-order/v1.0",
+  "order_id": "CDX-CONSTITUTIONAL-ADOPTION-001",
+  "adoption_id": "CDX-CONST-ADOPT-001",
+  "authority": "HUMAN_SOVEREIGN_AUTHORITY",
+  "authority_source": "DIRECT_HUMAN_DIRECTIVE",
+  "directive_ref": "CONDUCTELLENCE_MASTER_CONTROL_WP03_2026-10-28",
+  "decision": "ADOPT",
+  "subject": "CDX-LAW-001",
+  "constitutional_version": "1.0.0",
+  "effective_condition": "MERGE_OF_FINAL_ADOPTION_PR_WITH_ALL_REQUIRED_GATES_PASSING",
+  "decision_date": "2026-10-28",
+  "evidence": {
+    "foundational_to_candidate": {
+      "pr": "Hybrismannen/Conductellence-#25",
+      "merge_commit": "4e238ef93a944cbaa9cf082f39587d8bd02750b8",
+      "gates": "PASS"
+    },
+    "candidate_to_stable": {
+      "pr": "Hybrismannen/Conductellence-#27",
+      "merge_commit": "9dc5591a0be3cf7b331a658e130dccc0ce373c3d",
+      "gates": "PASS"
+    },
+    "release_boundary": "CDX-RC01-BOUNDARY-001",
+    "constitutional_conflicts": 0
+  },
+  "scope": {
+    "establishes": [
+      "internal constitutional adoption of CDX-LAW-001",
+      "constitutional law version 1.0.0"
+    ],
+    "does_not_establish": [
+      "CDX system release",
+      "production enforcement",
+      "independent SPETL custody",
+      "native repository protection",
+      "estate-wide runtime verification"
+    ]
+  },
+  "blockers_preserved": [
+    "CDX-BLOCK-REPO-PROTECTION-001",
+    "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001",
+    "CDX-BLOCK-ESTATE-RUNTIME-001"
+  ],
+  "note": "The adoption order is effective only through the governed final WP03 merge. It is internal constitutional authority and is not state legislation or external legal certification."
+}

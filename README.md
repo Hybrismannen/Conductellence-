@@ -4,7 +4,7 @@
 **Name derivation:** **Code of Conduct + Excellence**  
 **Canonical system:** `CDX-SYS-001`  
 **Canonical law:** `CDX-LAW-001`  
-**Current law version:** `0.1.0-bootstrap` *(stable constitutional candidate; system remains pre-release)*
+**Current law version:** `1.0.0` *(constitutional law adopted; Conductellence system remains pre-release)*
 
 > `CDX` is the sole canonical short name for Conductellence in architecture, governance, identifiers and integration language. No parallel system shorthand is permitted.
 
@@ -12,7 +12,7 @@
 
 Conductellence state is represented on independent axes rather than by one overloaded label.
 
-- **Constitutional state:** `STABLE_CANDIDATE`
+- **Constitutional state:** `ADOPTED`
 - **Core runtime state:** `VERIFIED_REFERENCE_RUNTIME`
 - **Release state:** `PRE_RELEASE`
 - **Enforcement state:** `BOOTSTRAP`
@@ -119,4 +119,4 @@ The Act contains a dense constitutional rule set. The Interpretation Guide, cont
 
 Conductellence is an **internal constitutional and control system**, not legislation enacted by a state and not a substitute for qualified legal advice. Applicable external law and fundamental rights remain superior wherever they apply.
 
-The bootstrap law is authoritative for further repository development, but a provision is not represented as technically enforced until its mapped controls and audits have passed their defined acceptance gates.
+The adopted constitutional law is authoritative for governed Conductellence development. Constitutional adoption does not itself establish technical enforcement: a provision is represented as technically enforced only when its mapped controls, runtime gates and evidence requirements have passed their defined acceptance criteria.

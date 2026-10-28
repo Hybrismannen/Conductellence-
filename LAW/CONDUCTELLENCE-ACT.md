@@ -4,9 +4,10 @@
 
 **Canonical law:** `CDX-LAW-001`  
 **Canonical system:** `CDX-SYS-001`  
-**Version:** 0.1.0-bootstrap  
-**Status:** STABLE CANDIDATE — constitutional closure gates passed at candidate stage; awaiting final human adoption; not system-released or production-enforced  
+**Version:** 1.0.0  
+**Status:** ADOPTED — internally authoritative constitutional source; system release and production enforcement remain separate gated states  
 **Initial repository admission:** 24 September 2026  
+**Constitutionally adopted:** 28 October 2026  
 **Language:** English
 
 > **Status and legal character.** This Act is the internal constitutional law of the Conductellence-governed digital estate. It is not legislation enacted by a state and does not replace qualified legal advice. Applicable external law, fundamental rights and binding regulatory obligations remain superior wherever they apply.
