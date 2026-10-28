@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - run: python3 AUDITS/audit_constitutional_adoption_readiness.py
       - run: python3 AUDITS/audit_release_boundary.py
       - run: python3 AUDITS/audit_appendices_and_gac.py
       - run: python3 AUDITS/audit_interpretation_records.py
