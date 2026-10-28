@@ -26,13 +26,18 @@
       "legacy_manifest_observed_on_main": false,
       "reconciled_at": "2026-10-28",
       "reconciliation_status": "STALE_LEGACY_BINDING_CLAIM",
-      "note": "Historical registration retained, but the declared legacy manifest was absent on main during WP01 live reconciliation. Requires repair or canonical anchor migration before bound status may be claimed."
+      "note": "Historical registration retained, but the declared legacy manifest was absent on main during WP01 live reconciliation. Requires repair or canonical anchor migration before bound status may be claimed.",
+      "legacy_binding_observation": "NOT_LIVE_VERIFIED_CURRENT_SNAPSHOT",
+      "legacy_ci_observation": "NOT_LIVE_VERIFIED_CURRENT_SNAPSHOT"
     },
     {
       "repository": "Hybrismannen/form-flode-dna",
       "system_id": "CDX-EST-002",
-      "anchor_state": "MIGRATION_PENDING",
-      "legacy_manifest": ".security/conductellence.json"
+      "anchor_state": "UNBOUND",
+      "legacy_manifest": ".security/conductellence.json",
+      "migration_state": "MIGRATION_PENDING",
+      "legacy_binding_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28",
+      "legacy_ci_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28"
     },
     {
       "repository": "Hybrismannen/pius-universe",
@@ -58,32 +63,47 @@
     {
       "repository": "Hybrismannen/pius-pwe",
       "system_id": "CDX-EST-004",
-      "anchor_state": "MIGRATION_PENDING",
-      "legacy_manifest": ".security/conductellence.json"
+      "anchor_state": "UNBOUND",
+      "legacy_manifest": ".security/conductellence.json",
+      "migration_state": "MIGRATION_PENDING",
+      "legacy_binding_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28",
+      "legacy_ci_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28"
     },
     {
       "repository": "Hybrismannen/pius-codex-5",
       "system_id": "CDX-EST-005",
-      "anchor_state": "MIGRATION_PENDING",
-      "legacy_manifest": ".security/conductellence.json"
+      "anchor_state": "UNBOUND",
+      "legacy_manifest": ".security/conductellence.json",
+      "migration_state": "MIGRATION_PENDING",
+      "legacy_binding_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28",
+      "legacy_ci_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28"
     },
     {
       "repository": "Hybrismannen/pius-lifetime-audit-2026",
       "system_id": "CDX-EST-006",
-      "anchor_state": "MIGRATION_PENDING",
-      "legacy_manifest": ".security/conductellence.json"
+      "anchor_state": "UNBOUND",
+      "legacy_manifest": ".security/conductellence.json",
+      "migration_state": "MIGRATION_PENDING",
+      "legacy_binding_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28",
+      "legacy_ci_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28"
     },
     {
       "repository": "Hybrismannen/udl-twin",
       "system_id": "CDX-EST-007",
-      "anchor_state": "MIGRATION_PENDING",
-      "legacy_manifest": ".security/conductellence.json"
+      "anchor_state": "UNBOUND",
+      "legacy_manifest": ".security/conductellence.json",
+      "migration_state": "MIGRATION_PENDING",
+      "legacy_binding_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28",
+      "legacy_ci_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28"
     },
     {
       "repository": "Hybrismannen/green-bell-statsvault",
       "system_id": "CDX-EST-008",
-      "anchor_state": "MIGRATION_PENDING",
-      "legacy_manifest": ".security/conductellence.json"
+      "anchor_state": "UNBOUND",
+      "legacy_manifest": ".security/conductellence.json",
+      "migration_state": "MIGRATION_PENDING",
+      "legacy_binding_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28",
+      "legacy_ci_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28"
     },
     {
       "repository": "Hybrismannen/RFSU-godex",
@@ -93,55 +113,82 @@
       "legacy_manifest_observed_on_main": false,
       "reconciled_at": "2026-10-28",
       "reconciliation_status": "STALE_LEGACY_BINDING_CLAIM",
-      "note": "Historical registration retained, but the declared legacy manifest was absent on main during WP01 live reconciliation. Requires repair or canonical anchor migration before bound status may be claimed."
+      "note": "Historical registration retained, but the declared legacy manifest was absent on main during WP01 live reconciliation. Requires repair or canonical anchor migration before bound status may be claimed.",
+      "legacy_binding_observation": "MISSING_ON_LIVE_MAIN_2026-10-28",
+      "legacy_ci_observation": "MISSING_ON_LIVE_MAIN_2026-10-28",
+      "drift_state": "DRIFT_DETECTED"
     },
     {
       "repository": "Hybrismannen/RFSU-godex-FF",
       "system_id": "CDX-EST-010",
-      "anchor_state": "MIGRATION_PENDING",
-      "legacy_manifest": ".security/conductellence.json"
+      "anchor_state": "UNBOUND",
+      "legacy_manifest": ".security/conductellence.json",
+      "migration_state": "MIGRATION_PENDING",
+      "legacy_binding_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28",
+      "legacy_ci_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28"
     },
     {
       "repository": "Hybrismannen/Hy",
       "system_id": "CDX-EST-011",
-      "anchor_state": "MIGRATION_PENDING",
-      "legacy_manifest": ".security/conductellence.json"
+      "anchor_state": "UNBOUND",
+      "legacy_manifest": ".security/conductellence.json",
+      "migration_state": "MIGRATION_PENDING",
+      "legacy_binding_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28",
+      "legacy_ci_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28"
     },
     {
       "repository": "Hybrismannen/livicity-cwvs-reference",
       "system_id": "CDX-EST-012",
-      "anchor_state": "MIGRATION_PENDING",
-      "legacy_manifest": ".security/conductellence.json"
+      "anchor_state": "UNBOUND",
+      "legacy_manifest": ".security/conductellence.json",
+      "migration_state": "MIGRATION_PENDING",
+      "legacy_binding_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28",
+      "legacy_ci_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28"
     },
     {
       "repository": "Hybrismannen/nsliengine",
       "system_id": "CDX-EST-013",
-      "anchor_state": "MIGRATION_PENDING",
-      "legacy_manifest": ".security/conductellence.json"
+      "anchor_state": "UNBOUND",
+      "legacy_manifest": ".security/conductellence.json",
+      "migration_state": "MIGRATION_PENDING",
+      "legacy_binding_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28",
+      "legacy_ci_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28"
     },
     {
       "repository": "Hybrismannen/Digital-Apartheid",
       "system_id": "CDX-EST-014",
-      "anchor_state": "MIGRATION_PENDING",
-      "legacy_manifest": ".security/conductellence.json"
+      "anchor_state": "UNBOUND",
+      "legacy_manifest": ".security/conductellence.json",
+      "migration_state": "MIGRATION_PENDING",
+      "legacy_binding_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28",
+      "legacy_ci_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28"
     },
     {
       "repository": "Hybrismannen/NSLI",
       "system_id": "CDX-EST-015",
-      "anchor_state": "MIGRATION_PENDING",
-      "legacy_manifest": ".security/conductellence.json"
+      "anchor_state": "UNBOUND",
+      "legacy_manifest": ".security/conductellence.json",
+      "migration_state": "MIGRATION_PENDING",
+      "legacy_binding_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28",
+      "legacy_ci_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28"
     },
     {
       "repository": "Hybrismannen/metoyo",
       "system_id": "CDX-EST-016",
-      "anchor_state": "MIGRATION_PENDING",
-      "legacy_manifest": ".security/conductellence.json"
+      "anchor_state": "UNBOUND",
+      "legacy_manifest": ".security/conductellence.json",
+      "migration_state": "MIGRATION_PENDING",
+      "legacy_binding_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28",
+      "legacy_ci_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28"
     },
     {
       "repository": "Motherpher/CareerHubZero",
       "system_id": "CDX-EST-017",
-      "anchor_state": "MIGRATION_PENDING",
-      "legacy_manifest": ".security/conductellence.json"
+      "anchor_state": "UNBOUND",
+      "legacy_manifest": ".security/conductellence.json",
+      "migration_state": "MIGRATION_PENDING",
+      "legacy_binding_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28",
+      "legacy_ci_observation": "MISSING_ON_LIVE_MAIN_2026-10-28"
     },
     {
       "repository": "Motherpher/FFOS",
@@ -174,14 +221,21 @@
       "legacy_manifest_present": true,
       "legacy_manifest_repository_identity": "Hybrismannen/form-flode",
       "identity_reconciliation": "REQUIRED_BEFORE_ADMISSION",
-      "note": "Draft PR #34 proposes a canonical anchor, but no .cdx/anchor.json exists on main. Existing legacy manifest identifies Hybrismannen/form-flode and is not valid evidence of Motherpher/form-flode binding."
+      "note": "Draft PR #34 proposes a canonical anchor, but no .cdx/anchor.json exists on main. Existing legacy manifest identifies Hybrismannen/form-flode and is not valid evidence of Motherpher/form-flode binding.",
+      "main_branch_anchor_state": "UNBOUND",
+      "main_branch_legacy_manifest": ".security/conductellence.json",
+      "main_branch_legacy_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28",
+      "development_anchor_source": "DRAFT_PR_34_ONLY"
     }
   ],
   "registration_semantics": {
     "effective_entries": "entries reflects already admitted surfaces and their last available source evidence",
     "pending_entries": "pending_admissions are NOT admitted/bound until their PR merges, anchor is independently verified and estate registration receives approval",
     "repository_anchor_vs_runtime": "FFOS CDX_CI_MONITORED is repository-level CI monitoring; actual runtime BOUND_PENDING_RUNTIME_INTEGRATION remains unverified",
-    "projecthub_scope": "ProjectHub is inside Motherpher/FFOS and is covered by its repository anchor; consequential ProjectHub effects require separate local enforcement evidence"
+    "projecthub_scope": "ProjectHub is inside Motherpher/FFOS and is covered by its repository anchor; consequential ProjectHub effects require separate local enforcement evidence",
+    "master_catalog": "The master repository catalogue records all 31 known repositories before governance applicability/admission. Catalogue inclusion is not a CDX governance, binding or enforcement claim.",
+    "anchor_state_vocabulary": "MIGRATION_PENDING is a migration_state, not a canonical anchor_state. Legacy-only admitted repositories are therefore UNBOUND until .cdx/anchor.json (or a formally registered adapter) is verified."
   },
-  "reconciled_at": "2026-10-28"
+  "reconciled_at": "2026-10-28",
+  "master_catalog": "ESTATE-REGISTRY/repository-catalog.json"
 }
