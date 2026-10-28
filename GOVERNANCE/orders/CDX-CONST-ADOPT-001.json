@@ -1,0 +1,29 @@
+{
+  "schema": "cdx.constitutional-decision/v1.0",
+  "order_id": "CDX-CONST-ADOPT-001",
+  "candidate_id": "CDX-CONST-CAND-001",
+  "authority_required": "HUMAN_SOVEREIGN_AUTHORITY",
+  "state": "PENDING_HUMAN_DECISION",
+  "decision": null,
+  "decision_by": null,
+  "decision_at": null,
+  "adopted_version_if_approved": "1.0.0",
+  "candidate_snapshot": {
+    "main_sha": "d411649e00aefa02ff09bcc90edfd97888584f6e",
+    "law_blob_sha": "8ecb490b08295bfedf085d11e9c94b145e6d49fa",
+    "boundary_id": "CDX-RC01-BOUNDARY-001"
+  },
+  "allowed_decisions": [
+    "APPROVED",
+    "RETURN_FOR_AMENDMENT",
+    "REJECTED"
+  ],
+  "approval_rule": "Only an explicit human-sovereign approval of CDX-CONST-ADOPT-001 authorizes constitutional adoption. Preparation, CI PASS, merge of this candidate package, generic 'proceed', agent action, or downstream pressure is not approval.",
+  "post_approval_required_changes": [
+    "LAW/CONDUCTELLENCE-ACT.md header: Version 1.0.0 and adopted constitutional status",
+    "GOVERNANCE/system-state.json constitutional_state: ADOPTED",
+    "GOVERNANCE/constitutional-adoption-candidate.json state: ADOPTED",
+    "this order: decision APPROVED with human attribution/date",
+    "README current constitutional state synchronized"
+  ]
+}
