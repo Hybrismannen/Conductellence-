@@ -23,6 +23,7 @@ Protected constitutional surfaces:
 - `RUNTIME-INTEGRATION/**`
 - `ESTATE-REGISTRY/**`
 - `AUDITS/**`
+- `.github/CODEOWNERS`
 - `.github/workflows/**`
 
 Required process:
