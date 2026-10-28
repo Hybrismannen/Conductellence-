@@ -22,6 +22,10 @@ Canonical machine-readable state is held in [`GOVERNANCE/system-state.json`](GOV
 
 **Maturity is not enforcement. Release is not integration. Integration is not estate-wide enforcement.**
 
+## CDX 1.0 closure boundary
+
+The CDX 1.0 core is currently **FROZEN_FOR_CLOSURE** under [`CDX-RC01-BOUNDARY-001`](GOVERNANCE/release-boundary-v1.json). WP03–WP07 may close and harden existing obligations but may not expand the first-class architecture without an explicit human-approved boundary exception. Estate classification, anchor migration and downstream runtime propagation remain WP08–WP14.
+
 Conductellence is the root constitutional, security, legal-governance, assurance and traceability authority for governed non-human digital operation across the estate.
 
 It is deliberately **not** a universal super-admin. Its governing model is:
