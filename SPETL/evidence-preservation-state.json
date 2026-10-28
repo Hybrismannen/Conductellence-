@@ -9,7 +9,7 @@
     "schema_version": "1.1"
   },
   "independent_preservation": {
-    "state": "IMPLEMENTED_NOT_PROVISIONED",
+    "state": "PROVISIONING_BLOCKED_EXTERNAL_ACCOUNT",
     "satisfies_enforcing_requirement": false,
     "blocker_id": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001",
     "required_properties": [
@@ -33,7 +33,8 @@
     "target_store": "cdx-spetl-evidence",
     "source_authentication": "GITHUB_ACTIONS_OIDC",
     "storage_authentication": "VERCEL_OIDC",
-    "external_verification": "NOT_RUN"
+    "external_verification": "BLOCKED_BEFORE_PROVISIONING",
+    "provisioning_blocker": "VERCEL_RESOURCE_CREATION_BLOCKED_OVERDUE_BALANCE"
   },
   "rule": "Local SPETL semantics plus a custody-service implementation do not satisfy independent preservation until a separately provisioned custody project/store passes the external positive/negative verification matrix."
 }

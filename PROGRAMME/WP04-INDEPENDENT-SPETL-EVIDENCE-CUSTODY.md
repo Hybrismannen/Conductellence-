@@ -87,3 +87,23 @@ Until the external Vercel project/store are provisioned and the full matrix is o
 5. Run the external positive/negative matrix.
 6. Record project/store/deployment identifiers and receipts.
 7. Only if all tests pass: set custody `VERIFIED_EXTERNAL`, set independent preservation `VERIFIED`, remove blocker #17, and rerun all release gates.
+
+
+## 9. External provisioning result — BLOCKED
+
+On 2026-10-28, provisioning of the dedicated Vercel project `cdx-spetl-custody` from merged source was attempted in team `linus-fasts-projects`.
+
+Vercel returned HTTP 402 `resource_creation_blocked` because the team account has an overdue balance. This is an external account-control gate; Conductellence cannot and must not alter billing automatically.
+
+The visible Vercel project inventory was reviewed. No existing project is a safe custody substitute: each is linked to an active or historically meaningful application/repository. Repurposing one to bypass billing would contaminate the separate-trust-domain requirement.
+
+Therefore:
+
+- custody implementation remains merged and valid;
+- deployment state becomes `PROVISIONING_BLOCKED_EXTERNAL_ACCOUNT`;
+- external verification remains unrun;
+- `CDX-BLOCK-EVIDENCE-INDEPENDENCE-001` remains open;
+- release remains `PRE_RELEASE`;
+- enforcement remains `BOOTSTRAP`.
+
+Required external action: restore the Vercel team's billing/payment status. After that, resume at provisioning step 2 without redesigning WP04.

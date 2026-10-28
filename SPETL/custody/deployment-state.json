@@ -1,7 +1,7 @@
 {
   "schema": "cdx.spetl.custody-deployment-state/v1.0",
   "custody_id": "CDX-CUSTODY-001",
-  "state": "IMPLEMENTED_NOT_PROVISIONED",
+  "state": "PROVISIONING_BLOCKED_EXTERNAL_ACCOUNT",
   "observed_at": "2026-10-28",
   "implementation": {
     "service_root": "SPETL/custody-service",
@@ -17,12 +17,29 @@
     "region": "fra1"
   },
   "external_verification": {
-    "state": "NOT_RUN",
+    "state": "BLOCKED_BEFORE_PROVISIONING",
     "endpoint": null,
     "project_id": null,
     "store_id": null,
     "tests": {}
   },
   "satisfies_enforcing_requirement": false,
-  "blocker_id": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001"
+  "blocker_id": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001",
+  "provisioning_blocker": {
+    "provider": "Vercel",
+    "error_code": "resource_creation_blocked",
+    "http_status": 402,
+    "cause": "TEAM_OVERDUE_BALANCE",
+    "affected_team_id": "team_3CWSOO9ePljnKvDPHctIaNCy",
+    "affected_team_slug": "linus-fasts-projects",
+    "attempted_project": "cdx-spetl-custody",
+    "attempted_root_directory": "SPETL/custody-service",
+    "attempted_action": "CREATE_GIT_PROJECT_AND_DEPLOY",
+    "observed_at": "2026-10-28",
+    "remediation_actor": "USER_ACCOUNT_OWNER",
+    "required_action": "Restore Vercel team billing/payment status so new project and private storage resources may be created.",
+    "retry_rule": "Do not retry unchanged until the provider account gate has been resolved.",
+    "workaround_assessment": "NO_SAFE_EXISTING_RESOURCE",
+    "workaround_reason": "All visible existing Vercel projects are linked to active or historically meaningful workloads; repurposing one would contaminate the independent-custody trust boundary."
+  }
 }
