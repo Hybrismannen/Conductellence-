@@ -1,14 +1,15 @@
 {
   "schema": "cdx.spetl.evidence-preservation-state/v1.0",
   "system_id": "CDX-SYS-002",
-  "observed_at": "2026-09-30",
+  "observed_at": "2026-10-28",
   "reference_runtime": {
     "state": "OPERATIONAL",
     "implementation": "SPETL/spetl.py",
-    "semantics": "APPEND_ONLY_HASH_CHAIN"
+    "semantics": "APPEND_ONLY_HASH_CHAIN",
+    "schema_version": "1.1"
   },
   "independent_preservation": {
-    "state": "NOT_CONFIGURED",
+    "state": "IMPLEMENTED_NOT_PROVISIONED",
     "satisfies_enforcing_requirement": false,
     "blocker_id": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001",
     "required_properties": [
@@ -23,7 +24,16 @@
       "separate restricted evidence repository with independent administration",
       "object storage with immutability/WORM and independent credentials",
       "dedicated audit/evidence service with signed or hash-linked records"
-    ]
+    ],
+    "custody_id": "CDX-CUSTODY-001",
+    "custody_policy": "SPETL/custody/custody-policy.json",
+    "deployment_state": "SPETL/custody/deployment-state.json",
+    "target_provider": "Vercel",
+    "target_project": "cdx-spetl-custody",
+    "target_store": "cdx-spetl-evidence",
+    "source_authentication": "GITHUB_ACTIONS_OIDC",
+    "storage_authentication": "VERCEL_OIDC",
+    "external_verification": "NOT_RUN"
   },
-  "rule": "The local SPETL reference runtime proves event semantics and tamper detection. It does not, by itself, satisfy independent production evidence preservation."
+  "rule": "Local SPETL semantics plus a custody-service implementation do not satisfy independent preservation until a separately provisioned custody project/store passes the external positive/negative verification matrix."
 }
