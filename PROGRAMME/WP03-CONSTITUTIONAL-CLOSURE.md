@@ -108,3 +108,11 @@ The final adoption order is `GOVERNANCE/orders/CDX-CONSTITUTIONAL-ADOPTION-001.j
 - the three independent blockers remain open.
 
 The next core-closure package is `CDX-WP04`: independent SPETL evidence custody and attestation.
+
+## 9. Post-merge mutation-guard repair
+
+After final adoption PR #28 merged, the PR-side gate set had passed, but the push-triggered Constitutional Mutation Guard failed. Investigation showed a **control false positive**, not an unauthorized constitutional mutation: the guard assumed every legitimate PR merge produces a two-parent Git merge commit. Conductellence uses squash merge, which produces a one-parent commit.
+
+WP03 therefore includes a final control repair: the guard now verifies that a protected-surface commit is associated through GitHub metadata with a **closed, merged PR targeting the default branch**. Failure to retrieve or prove that provenance fails closed.
+
+This repair does not change the adopted constitution or waive the native branch-protection blocker. It corrects the degraded in-repository tripwire so legitimate squash merges are distinguished from direct main mutations.

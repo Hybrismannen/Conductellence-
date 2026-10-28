@@ -91,5 +91,20 @@
     "constitutional_version": "1.0.0",
     "decision": "ADOPT",
     "effective_condition": "MERGE_OF_FINAL_ADOPTION_PR_WITH_ALL_REQUIRED_GATES_PASSING"
+  },
+  "post_adoption_assurance": {
+    "initial_main_push_run": {
+      "workflow": "Conductellence Constitutional Mutation Guard",
+      "run_id": 40779290408,
+      "conclusion": "FAILURE",
+      "diagnosis": "FALSE_POSITIVE_SQUASH_MERGE_PARENT_COUNT_ASSUMPTION",
+      "constitutional_violation_detected": false
+    },
+    "repair": {
+      "class": "CONTROL_DEFECT_REPAIR_WITHIN_FROZEN_BOUNDARY",
+      "change": "Replace Git-parent-count heuristic with GitHub commit-to-merged-PR provenance verification.",
+      "state": "RESOLVED_ON_MERGE_AND_PASS_OF_WP03_4",
+      "adoption_state_effect": "NONE"
+    }
   }
 }
