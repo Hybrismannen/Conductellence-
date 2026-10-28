@@ -50,6 +50,24 @@ assert_check(ffc.get("verification_state") == "NOT_VERIFIED",
              "FFC pending declaration must not claim verified binding")
 assert_check("Motherpher/form-flode" not in entries,
              "FFC development PR cannot become admitted by premature registry entry")
+legacy_ff = sys_entries.get("Hybrismannen/form-flode", {})
+legacy_ff_anchor = entries.get("Hybrismannen/form-flode", {})
+assert_check(legacy_ff.get("record_state") == "HISTORICAL_ALIAS",
+             "Historical form-flode systems record must be marked HISTORICAL_ALIAS")
+assert_check(legacy_ff.get("canonical_repository") == "Motherpher/form-flode",
+             "Historical form-flode canonical repository mismatch")
+assert_check(legacy_ff.get("repository_id") == "1379622813",
+             "Historical form-flode repository id mismatch")
+assert_check(legacy_ff_anchor.get("record_state") == "HISTORICAL_ALIAS",
+             "Historical form-flode anchor record must be provenance-only alias")
+assert_check(legacy_ff_anchor.get("anchor_state") == "UNBOUND",
+             "Historical form-flode alias cannot claim canonical binding")
+assert_check(ffc.get("repository_id") == "1379622813",
+             "FFC pending repository id mismatch")
+assert_check(ffc.get("historical_alias") == "Hybrismannen/form-flode",
+             "FFC pending record missing historical repository alias")
+assert_check(ffc.get("migration_kind") == "REPOSITORY_IDENTITY_MIGRATION",
+             "FFC must be represented as repository identity migration")
 assert_check(ffos.get("binding_mode") == "PINNED_COMMIT",
              "Pre-release FFOS anchor source pin altered unexpectedly")
 assert_check(bool(ffos.get("cdx_ref")), "FFOS pinned CDX ref missing")
