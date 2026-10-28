@@ -46,9 +46,16 @@ The current enforcement state remains `BOOTSTRAP`.
 
 Describes the deployment of Conductellence into governed consumer runtimes.
 
-`NOT_STARTED → CONTRACT_AVAILABLE → BINDINGS_IN_PROGRESS → PARTIALLY_BOUND → VERIFIED_RUNTIME_BOUND`
+`NOT_STARTED → PENDING_RUNTIME_BINDINGS → CONTRACT_AVAILABLE → BINDINGS_IN_PROGRESS → PARTIALLY_BOUND → VERIFIED_RUNTIME_BOUND`
 
-The current estate integration state is `PENDING_RUNTIME_BINDINGS`, used as the pre-binding aggregate state while the first governed runtime contracts are not yet active.
+- `NOT_STARTED`: no estate-integration programme has been initiated.
+- `PENDING_RUNTIME_BINDINGS`: the estate is registered for integration work, but no governed consequential runtime has yet completed a versioned CDX binding.
+- `CONTRACT_AVAILABLE`: a versioned runtime-integration contract is available for consumer implementation.
+- `BINDINGS_IN_PROGRESS`: one or more governed consumers are actively implementing the runtime contract.
+- `PARTIALLY_BOUND`: at least one declared governed runtime has reached verified binding while the declared estate scope is incomplete.
+- `VERIFIED_RUNTIME_BOUND`: the declared estate-integration scope has satisfied its verified runtime-binding criteria.
+
+The current estate integration state is `PENDING_RUNTIME_BINDINGS`. This value is an aggregate pre-binding state and does not imply release or enforcement readiness.
 
 ## Separation rule
 
