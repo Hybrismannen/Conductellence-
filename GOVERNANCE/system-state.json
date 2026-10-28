@@ -26,9 +26,9 @@
     "Repository anchor CI monitoring and runtime enforcement are distinct; never promote one from the other.",
     "ProjectHub is a subsystem in the FFOS repository and shares that repository anchor; actual ProjectHub A3/A4/A5 enforcement must be independently verified.",
     "CDX 1.0 core boundary is frozen for WP03-WP07 closure; estate execution WP08-WP14 remains outside the core-release closure boundary.",
-    "WP04 custody code and contracts do not close the independent-evidence blocker; external Vercel custody provisioning and observed tests are required.",
     "WP04 external custody provisioning is blocked by Vercel team billing state (HTTP 402 resource_creation_blocked). Existing unrelated Vercel projects were not repurposed because that would weaken trust-domain independence.",
-    "WP05 native repository protection is blocked by the current private-repository GitHub plan/capability and connector administration access. CDX will not make the repository public or alter plan/billing automatically."
+    "WP05 native repository protection is blocked by the current private-repository GitHub plan/capability and connector administration access. CDX will not make the repository public or alter plan/billing automatically.",
+    "WP04 now has an approved executable cross-workflow reference-custody profile, but blocker #17 remains open until the producer → separate custodian → separate verifier chain is observed on main and concrete artifact provenance is recorded."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
@@ -101,16 +101,25 @@
     "adoption_order_ref": "GOVERNANCE/orders/CDX-CONSTITUTIONAL-ADOPTION-001.json"
   },
   "wp04_evidence_custody": {
-    "custody_id": "CDX-CUSTODY-001",
-    "state": "PROVISIONING_BLOCKED_EXTERNAL_ACCOUNT",
-    "policy_ref": "SPETL/custody/custody-policy.json",
+    "programme": "CDX-WP04",
+    "approval_ref": "GOVERNANCE/orders/CDX-EVIDENCE-CUSTODY-APPROVAL-001.json",
+    "reference_profile": {
+      "custody_id": "CDX-CUSTODY-GHA-001",
+      "state": "IMPLEMENTED_PENDING_OBSERVED_VERIFICATION",
+      "policy_ref": "SPETL/custody/github-actions-reference-profile.json",
+      "storage_principal": "GITHUB_ACTIONS_ARTIFACT_SERVICE",
+      "retention_days": 90
+    },
+    "long_lived_target": {
+      "custody_id": "CDX-CUSTODY-001",
+      "provider": "Vercel",
+      "state": "PROVISIONING_BLOCKED_EXTERNAL_ACCOUNT",
+      "policy_ref": "SPETL/custody/custody-policy.json"
+    },
     "deployment_state_ref": "SPETL/custody/deployment-state.json",
+    "preservation_state_ref": "SPETL/evidence-preservation-state.json",
     "release_blocker": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001",
-    "blocker_closed": false,
-    "provider": "Vercel",
-    "external_blocker": "VERCEL_RESOURCE_CREATION_BLOCKED_OVERDUE_BALANCE",
-    "user_action_required": true,
-    "safe_workaround_available": false
+    "blocker_closed": false
   },
   "wp05_repository_protection": {
     "state": "PLATFORM_PLAN_GATE_BLOCKED",
