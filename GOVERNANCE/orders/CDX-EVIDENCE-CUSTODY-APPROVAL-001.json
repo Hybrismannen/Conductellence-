@@ -1,0 +1,28 @@
+{
+  "schema": "cdx.evidence-custody-approval/v1.0",
+  "approval_id": "CDX-EVIDENCE-CUSTODY-APPROVAL-001",
+  "authority": "HUMAN_SOVEREIGN_AUTHORITY",
+  "authority_source": "DIRECT_HUMAN_DIRECTIVE",
+  "directive_ref": "CONDUCTELLENCE_MASTER_CONTROL_WP04_2026-10-28",
+  "decision": "APPROVE_CUSTODY_PROFILES_FOR_VERIFICATION",
+  "reference_profile": {
+    "custody_id": "CDX-CUSTODY-GHA-001",
+    "principal": "GITHUB_ACTIONS_CROSS_WORKFLOW_CUSTODIAN",
+    "storage_principal": "GITHUB_ACTIONS_ARTIFACT_SERVICE",
+    "approved_scope": "CDX reference evidence pipeline and core-release evidence-independence gate",
+    "approval_condition": "actual separate-workflow write/read/verify provenance plus full negative matrix must be observed before VERIFIED"
+  },
+  "long_lived_target_profile": {
+    "custody_id": "CDX-CUSTODY-001",
+    "principal": "VERCEL_SEPARATE_CUSTODY_PROJECT",
+    "storage_principal": "VERCEL_PRIVATE_BLOB",
+    "approved_scope": "long-lived production evidence target",
+    "state": "CONDITIONAL_ON_EXTERNAL_PROVISIONING"
+  },
+  "non_waiver": [
+    "CDX-BLOCK-REPO-PROTECTION-001",
+    "CDX-BLOCK-ESTATE-RUNTIME-001"
+  ],
+  "decision_date": "2026-10-28",
+  "note": "Approval selects acceptable custody principals and trust boundaries. It does not itself verify custody or close CDX-BLOCK-EVIDENCE-INDEPENDENCE-001."
+}
