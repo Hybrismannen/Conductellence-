@@ -1,0 +1,52 @@
+{
+  "schema": "cdx.spetl.custody-policy/v1.0",
+  "custody_id": "CDX-CUSTODY-001",
+  "system_id": "CDX-SYS-002",
+  "purpose": "Independent preservation and verification of SPETL evidence outside the governed runtime executor's unrestricted write capability.",
+  "trust_model": {
+    "custody_principal": "VERCEL_SEPARATE_CUSTODY_PROJECT",
+    "target_project": "cdx-spetl-custody",
+    "target_store": "cdx-spetl-evidence",
+    "storage_access": "PRIVATE",
+    "source_authentication": "GITHUB_ACTIONS_OIDC",
+    "source_audience": "cdx-spetl-custody",
+    "trusted_source_repository": "Hybrismannen/Conductellence-",
+    "trusted_source_ref": "refs/heads/main",
+    "trusted_source_workflow": ".github/workflows/spetl-evidence-publish.yml",
+    "storage_authentication": "VERCEL_OIDC",
+    "runtime_has_storage_admin_credential": false,
+    "runtime_has_delete_credential": false
+  },
+  "write_semantics": {
+    "append_only_service": true,
+    "object_path": "evidence/<utc-date>/<bundle_id>-<bundle_sha256>.json",
+    "allow_overwrite": false,
+    "delete_endpoint_exposed": false,
+    "bundle_hash_required": true,
+    "event_hash_chain_required": true
+  },
+  "read_verify_semantics": {
+    "authenticated_verify_endpoint": true,
+    "origin_consistent_private_read": true,
+    "loss_detection": "requested evidence object missing => EVIDENCE_LOSS",
+    "tamper_detection": "bundle hash + complete event hash-chain verification"
+  },
+  "retention_and_rights": {
+    "personal_data_default": "PROHIBITED_BY_DESIGN; use pseudonymous subject_ref and data minimization metadata",
+    "default_retention": "PRESERVE_UNTIL_GOVERNED_DISPOSITION",
+    "automated_delete": false,
+    "deletion_mode": "GOVERNED_TOMBSTONE_AND_AUTHORIZED_ADMIN_ACTION",
+    "deletion_requires": [
+      "human privacy/legal review where applicable",
+      "recorded authority and reason",
+      "non-content tombstone retained where lawful"
+    ],
+    "legal_hold_supported": true
+  },
+  "credential_rotation": {
+    "github_sender": "short-lived GitHub OIDC token per workflow run",
+    "vercel_storage": "short-lived Vercel OIDC token scoped to custody project",
+    "long_lived_storage_secret_required": false
+  },
+  "closure_rule": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001 may close only after the separate custody project/store are provisioned and external allow/deny/policy-unavailable, denied-write, tamper, withheld/loss and identity tests are observed and recorded."
+}
