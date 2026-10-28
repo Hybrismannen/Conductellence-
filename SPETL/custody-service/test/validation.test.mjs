@@ -9,8 +9,9 @@ function event() {
     schema_version:"1.1", event_id:"E1", event_type:"POLICY_DECISION",
     recorded_at:"2026-10-28T20:00:00Z", actor_id:"A", subject_ref:"S", action:"WRITE",
     attempted_effect:{surface:"test",operation:"write",target_ref:"T"}, effect_status:"PERMITTED",
-    decision:"ALLOW", authority_ref:"CDX-LAW-001", mandate_ref:"M1", policy_version:"1.0.0",
-    policy_digest:"sha256:"+"a".repeat(64), correlation_id:"C", causation_id:"ROOT", run_id:"R",
+    decision:"ALLOW", authority_ref:"CDX-LAW-001", mandate_ref:"M1",
+    policy_ref:"DISTRIBUTION/conductellence-policy.json", policy_version:"1.0.0",
+    policy_digest:"sha256:"+"a".repeat(64), request_id:"REQ", correlation_id:"C", causation_id:"ROOT", run_id:"R",
     trace_ref:"TR", reviewer_ref:null,
     data_minimization:{personal_data_present:false,redacted_fields:[],rationale:"synthetic"},
     control_results:[], evidence_refs:[], previous_hash:null
@@ -50,4 +51,21 @@ test("trusted GitHub OIDC claims pass",()=>{
 test("different repository is denied",()=>{
   const claims={repository:"attacker/repo",ref:"refs/heads/main",workflow_ref:"x",run_id:"1"};
   assert.throws(()=>validateGithubClaims(claims,{repository:"Hybrismannen/Conductellence-",ref:"refs/heads/main",workflowRef:"x"}),/untrusted repository/);
+});
+
+test("deny cannot report permitted effect",()=>{
+  const b=bundle(); b.events[0].decision="DENY"; b.events[0].effect_status="PERMITTED";
+  const eventPayload=Object.fromEntries(Object.entries(b.events[0]).filter(([k])=>k!=="event_hash"));
+  b.events[0].event_hash=sha256Object(eventPayload);
+  const payload=Object.fromEntries(Object.entries(b).filter(([k])=>k!=="bundle_hash"));
+  b.bundle_hash=sha256Object(payload);
+  assert.throws(()=>validateBundle(b),/cannot permit effect/);
+});
+test("policy unavailable fails closed",()=>{
+  const b=bundle(); b.events[0].policy_digest="UNAVAILABLE"; b.events[0].decision="SECURITY_STOP"; b.events[0].effect_status="BLOCKED";
+  const eventPayload=Object.fromEntries(Object.entries(b.events[0]).filter(([k])=>k!=="event_hash"));
+  b.events[0].event_hash=sha256Object(eventPayload);
+  const payload=Object.fromEntries(Object.entries(b).filter(([k])=>k!=="bundle_hash"));
+  b.bundle_hash=sha256Object(payload);
+  assert.equal(validateBundle(b),true);
 });
