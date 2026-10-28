@@ -1,0 +1,71 @@
+{
+  "schema": "cdx.release-preflight/v1.0",
+  "preflight_id": "CDX-RELEASE-PREFLIGHT-1.0.0",
+  "target_release": "1.0.0",
+  "observed_at": "2026-10-28",
+  "decision": "BLOCKED_EXTERNAL_GATES",
+  "release_authorized": false,
+  "state_before_release": {
+    "constitutional_state": "ADOPTED",
+    "core_runtime_state": "VERIFIED_REFERENCE_RUNTIME",
+    "release_state": "PRE_RELEASE",
+    "enforcement_state": "BOOTSTRAP",
+    "estate_integration_state": "PENDING_RUNTIME_BINDINGS"
+  },
+  "satisfied_internal_conditions": [
+    "CDX-LAW-001 constitutional version 1.0.0 ADOPTED",
+    "CDX-RC01-BOUNDARY-001 FROZEN_FOR_CLOSURE with no active exceptions",
+    "CDX-RUNTIME-001 contract version 1.0.0 frozen release candidate",
+    "CDX-DIST-1.0.0-RC1 package pinned by Git blob SHA and reproducibly verified",
+    "69 fully automatable controls pass reference-runtime self-tests",
+    "SPETL v1.1 canonical and portable runtime compatibility verified",
+    "canonical .cdx/anchor.json binding contract defined"
+  ],
+  "blocking_core_conditions": [
+    {
+      "blocker_id": "CDX-BLOCK-REPO-PROTECTION-001",
+      "state": "PLATFORM_PLAN_GATE_BLOCKED",
+      "owner_action_required": true,
+      "required_action": "Enable and independently verify native/equivalent pre-merge protection for private main."
+    },
+    {
+      "blocker_id": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001",
+      "state": "PROVISIONING_BLOCKED_EXTERNAL_ACCOUNT",
+      "owner_action_required": true,
+      "required_action": "Restore Vercel team billing/payment status, provision CDX-CUSTODY-001, and pass the external custody verification matrix."
+    }
+  ],
+  "non_blocking_repository_hygiene": [
+    {
+      "issue": "#14",
+      "state": "OPEN",
+      "item": "Repository description still uses superseded 'Conduct of Excellence' derivation.",
+      "canonical": "Code of Conduct + Excellence",
+      "mutation_capability": "NOT_AVAILABLE_THROUGH_CURRENT_GITHUB_CONNECTOR"
+    },
+    {
+      "issue": null,
+      "state": "OWNER_REVIEW",
+      "item": "Repository homepage currently points to https://udl-twin.vercel.app.",
+      "treatment": "Do not change automatically; verify intended Conductellence homepage or clear the field."
+    }
+  ],
+  "final_release_gate": {
+    "required_before_decision": [
+      "both core_release_blockers absent from GOVERNANCE/system-state.json",
+      "repository protection state verifies required pre-merge controls",
+      "independent evidence preservation state is VERIFIED and satisfies_enforcing_requirement=true",
+      "custody external matrix PASS",
+      "CDX-DIST-1.0.0-RC1 artifact blob verification PASS",
+      "all CDX CI gates PASS on the final release-decision PR",
+      "explicit human-sovereign release decision for CDX 1.0.0"
+    ],
+    "prohibited_while_blocked": [
+      "create/publish CDX 1.0.0 release tag",
+      "set release_state=RELEASED",
+      "set enforcement_state=ENFORCEMENT_READY or ENFORCING",
+      "begin WP08 estate rollout as if core release were closed"
+    ]
+  },
+  "next_state_if_external_gates_close": "READY_FOR_HUMAN_RELEASE_DECISION"
+}
