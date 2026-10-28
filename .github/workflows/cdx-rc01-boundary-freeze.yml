@@ -1,0 +1,19 @@
+name: CDX RC-01 Boundary Freeze
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  boundary-freeze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit frozen CDX 1.0 capability boundary
+        run: python3 AUDITS/audit_release_candidate_boundary.py
