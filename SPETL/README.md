@@ -19,7 +19,7 @@ Production deployments should preserve the same event semantics in an independen
 
 ## Independent custody profile — CDX-CUSTODY-001
 
-WP04 adds an implementation target under `SPETL/custody-service` for independent preservation in a separate Vercel project/private Blob store. It uses short-lived GitHub OIDC for source authentication and Vercel OIDC for storage access. The governed runtime does not receive Blob administration credentials and the service exposes no delete/update endpoint.
+WP04 adds an implementation target under `SPETL/custody-service` for independent preservation in a separate Vercel project/private Blob store. It uses short-lived GitHub OIDC for source authentication and a Vercel project-to-private-Blob binding for storage access. The governed runtime does not receive Blob administration credentials and the service exposes no delete/update endpoint.
 
 See:
 - `SPETL/custody/custody-policy.json`
@@ -28,3 +28,12 @@ See:
 - `PROGRAMME/WP04-INDEPENDENT-SPETL-EVIDENCE-CUSTODY.md`
 
 The blocker remains open until external provisioning and verification are observed.
+
+
+## Independent reference custody — CDX-CUSTODY-GHA-001
+
+WP04 also provides an executable cross-workflow reference custody chain:
+
+`SPETL Evidence Producer → SPETL Independent Custodian → SPETL Custody Verifier`.
+
+Each stage is a separate GitHub Actions workflow run. The custodian/verifier use trusted `main` code, read-only repository permissions, immutable artifact handoff and SHA-256 custody/verification receipts. The profile remains non-verified until actual main-branch workflow/artifact provenance is observed and recorded.
