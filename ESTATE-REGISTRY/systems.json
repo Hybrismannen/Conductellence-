@@ -14,15 +14,23 @@
       "system_id": "CDX-EST-001",
       "repository": "Hybrismannen/form-flode",
       "authority_ref": "CDX-SYS-001",
-      "security_state": "REGISTERED_LEGACY_BINDING_MISSING",
+      "security_state": "REGISTERED_IDENTITY_DRIFT",
       "binding_manifest": ".security/conductellence.json",
       "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
       "runtime_integration_state": "NOT_VERIFIED",
       "historical_binding_verified_at": "2026-09-25",
-      "manifest_observed_on_main": false,
+      "manifest_observed_on_main": true,
       "reconciled_at": "2026-10-28",
-      "reconciliation_status": "STALE_LEGACY_BINDING_CLAIM",
-      "reconciliation_note": "Central registry retains historical registration, but declared legacy binding manifest was not present on main during WP01 live reconciliation. Do not treat as currently governance-bound until repaired or canonically migrated."
+      "reconciliation_status": "HISTORICAL_ALIAS_IDENTITY_MIGRATION_REQUIRED",
+      "reconciliation_note": "GitHub resolves Hybrismannen/form-flode to Motherpher/form-flode with repository id 1379622813. The legacy manifest exists on current main but still names the historical path. Preserve this entry as provenance; do not model it as a second current repository.",
+      "repository_id": "1379622813",
+      "canonical_repository": "Motherpher/form-flode",
+      "repository_aliases": [
+        "Hybrismannen/form-flode"
+      ],
+      "record_state": "HISTORICAL_ALIAS",
+      "manifest_observed_via_repository": "Motherpher/form-flode",
+      "manifest_internal_repository_identity": "Hybrismannen/form-flode"
     },
     {
       "system_id": "CDX-EST-002",
@@ -192,12 +200,18 @@
       "visibility": "private",
       "default_branch": "main",
       "authority_ref": "CDX-SYS-001",
-      "binding_state": "BOUND_PENDING_RUNTIME_INTEGRATION",
+      "binding_state": "LEGACY_PRESENT_UNMONITORED",
       "runtime_integration_state": "NOT_VERIFIED",
       "binding_manifest": ".security/conductellence.json",
-      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
       "security_state": "REGISTERED",
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-26",
+      "historical_binding_state": "BOUND_PENDING_RUNTIME_INTEGRATION",
+      "legacy_manifest_observed_on_main": true,
+      "legacy_audit_workflow_observed_on_main": false,
+      "historical_binding_audit_workflow_claim": ".github/workflows/conductellence-binding-audit.yml",
+      "reconciled_at": "2026-10-28",
+      "reconciliation_status": "LEGACY_CI_DRIFT",
+      "reconciliation_note": "Legacy Conductellence manifest is present on main, but the historically recorded conductellence-binding-audit workflow was not observed. Runtime remains NOT_VERIFIED."
     },
     {
       "system_id": "FFOS",
@@ -215,12 +229,12 @@
     }
   ],
   "updated_at": "2026-10-28",
-  "audit_note": "This systems registry retains legacy bindings and adds explicit FFOS repository-level anchor evidence. The pending FFC source is not yet admitted. No entry certifies consequential runtime enforcement without CDX-RUNTIME-001 evidence.",
+  "audit_note": "Admitted-system registry preserves historical binding provenance while distinguishing canonical identity, anchor and runtime state. Hybrismannen/form-flode is a historical alias of Motherpher/form-flode (same GitHub repository id 1379622813), not a second repository. No entry certifies consequential runtime enforcement without CDX-RUNTIME-001 evidence.",
   "pending_admissions": [
     {
       "repository": "Motherpher/form-flode",
       "system_id": "FFC",
-      "status": "PENDING_MERGE_AND_CDX_REGISTRATION",
+      "status": "PENDING_CANONICAL_IDENTITY_MIGRATION_AND_CDX_VERIFICATION",
       "evidence": "https://github.com/Motherpher/form-flode/pull/34",
       "anchor_state": "UNBOUND",
       "runtime_integration_state": "NOT_VERIFIED",
@@ -228,7 +242,11 @@
       "main_branch_anchor_present": false,
       "legacy_manifest_present": true,
       "legacy_manifest_repository_identity": "Hybrismannen/form-flode",
-      "identity_reconciliation": "REQUIRED_BEFORE_ADMISSION"
+      "identity_reconciliation": "REQUIRED_BEFORE_CANONICAL_READMISSION",
+      "repository_id": "1379622813",
+      "historical_alias": "Hybrismannen/form-flode",
+      "migration_kind": "REPOSITORY_IDENTITY_MIGRATION",
+      "note": "Same GitHub repository object as historical Hybrismannen/form-flode. Draft PR #34 proposes FFC canonical identity/anchor; current main remains legacy-identified and not canonically anchored."
     }
   ],
   "reconciled_at": "2026-10-28"
