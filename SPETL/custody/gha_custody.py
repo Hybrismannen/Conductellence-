@@ -52,6 +52,8 @@ def verify_bundle_claims(bundle, expected_source_commit=None, expected_producer_
             fail(f"event {idx}: request/correlation identity missing")
         if not event.get("policy_ref") or not event.get("policy_digest"):
             fail(f"event {idx}: policy pin/digest missing")
+        if event.get("data_minimization",{}).get("personal_data_present") is not False:
+            fail(f"event {idx}: direct personal data is prohibited in reference custody")
     return events
 
 def receive(bundle_path,out_dir,expected_source_commit,expected_producer_run_id,custody_run_id,custody_run_attempt):
