@@ -1,13 +1,15 @@
 {
   "schema": "cdx.spetl.custody-deployment-state/v1.0",
   "custody_id": "CDX-CUSTODY-001",
-  "state": "IMPLEMENTED_NOT_PROVISIONED",
+  "state": "REFERENCE_PROFILE_IMPLEMENTED_PENDING_OBSERVED_VERIFICATION",
   "observed_at": "2026-10-28",
   "implementation": {
     "service_root": "SPETL/custody-service",
     "policy_ref": "SPETL/custody/custody-policy.json",
     "event_schema_ref": "SPETL/schemas/event.schema.json",
-    "bundle_schema_ref": "SPETL/schemas/custody-bundle.schema.json"
+    "bundle_schema_ref": "SPETL/schemas/custody-bundle.schema.json",
+    "reference_profile": "SPETL/custody/github-actions-reference-profile.json",
+    "reference_custody_runtime": "SPETL/custody/gha_custody.py"
   },
   "target": {
     "provider": "Vercel",
@@ -18,11 +20,44 @@
   },
   "external_verification": {
     "state": "NOT_RUN",
-    "endpoint": null,
-    "project_id": null,
-    "store_id": null,
-    "tests": {}
+    "approved_profile": null,
+    "tests": {
+      "allow": "NOT_RUN",
+      "deny": "NOT_RUN",
+      "policy_unavailable": "NOT_RUN",
+      "denied_write": "NOT_RUN",
+      "invalid_event": "NOT_RUN",
+      "tamper": "NOT_RUN",
+      "withheld_or_loss": "NOT_RUN",
+      "different_identity": "NOT_RUN",
+      "forged_authority": "NOT_RUN",
+      "write_read_verify_provenance": "NOT_RUN"
+    }
   },
   "satisfies_enforcing_requirement": false,
-  "blocker_id": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001"
+  "blocker_id": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001",
+  "profiles": {
+    "github_actions_reference": {
+      "custody_id": "CDX-CUSTODY-GHA-001",
+      "state": "IMPLEMENTED_PENDING_OBSERVED_VERIFICATION",
+      "producer_workflow": ".github/workflows/spetl-evidence-producer.yml",
+      "custodian_workflow": ".github/workflows/spetl-independent-custodian.yml",
+      "verifier_workflow": ".github/workflows/spetl-custody-verifier.yml",
+      "storage_principal": "GITHUB_ACTIONS_ARTIFACT_SERVICE",
+      "retention_days": 90,
+      "observed_provenance": null,
+      "satisfies_enforcing_requirement": false
+    },
+    "vercel_long_lived_target": {
+      "custody_id": "CDX-CUSTODY-001",
+      "state": "IMPLEMENTED_NOT_PROVISIONED",
+      "provider": "Vercel",
+      "project_name": "cdx-spetl-custody",
+      "store_name": "cdx-spetl-evidence",
+      "store_access": "private",
+      "region": "fra1",
+      "provisioning_observation": "EXTERNAL_RESOURCE_CREATION_UNAVAILABLE",
+      "satisfies_enforcing_requirement": false
+    }
+  }
 }
