@@ -1,0 +1,85 @@
+{
+  "schema": "cdx.distribution-package/v1.0",
+  "package_id": "CDX-DIST-1.0.0-RC1",
+  "candidate_version": "1.0.0-rc1",
+  "target_release": "1.0.0",
+  "status": "RELEASE_CANDIDATE_NOT_RELEASED",
+  "built_from_commit": "e903119a877461d0ce32ac92caa2cafdf085a81d",
+  "boundary_id": "CDX-RC01-BOUNDARY-001",
+  "system_id": "CDX-SYS-001",
+  "law_id": "CDX-LAW-001",
+  "constitutional_state": "ADOPTED",
+  "constitutional_version": "1.0.0",
+  "runtime_contract_id": "CDX-RUNTIME-001",
+  "runtime_contract_version": "1.0.0",
+  "policy_version": "1.0.0",
+  "evidence_schema_version": "1.1",
+  "release_authorized": false,
+  "release_gate": {
+    "required_core_blockers_closed": [
+      "CDX-BLOCK-REPO-PROTECTION-001",
+      "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001"
+    ],
+    "current_state": "BLOCKED_EXTERNAL_GATES",
+    "rule": "This package may be built and tested while blockers are open, but it may not be tagged, published as CDX 1.0, or used to set release_state=RELEASED until WP07 verifies both blockers closed."
+  },
+  "artifacts": [
+    {
+      "role": "portable_runtime",
+      "source": "DISTRIBUTION/conductellence-runtime.py",
+      "git_blob_sha": "00ac9994d93e6db7ed1b9023d1fd87878b68044b",
+      "target": ".security/conductellence-runtime.py",
+      "required": true
+    },
+    {
+      "role": "policy_bundle",
+      "source": "DISTRIBUTION/conductellence-policy.json",
+      "git_blob_sha": "55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+      "target": ".security/conductellence-policy.json",
+      "required": true
+    },
+    {
+      "role": "spetl_runtime",
+      "source": "SPETL/spetl.py",
+      "git_blob_sha": "720d2461ad6c8899d0ea8ddc679edcd96e852ac2",
+      "target": ".security/conductellence-spetl.py",
+      "required": true
+    },
+    {
+      "role": "spetl_event_schema",
+      "source": "SPETL/schemas/event.schema.json",
+      "git_blob_sha": "2809554a2a1e672d2859a1ff28819ec64d8affeb",
+      "target": ".security/spetl-event.schema.json",
+      "required": true
+    },
+    {
+      "role": "anchor_schema",
+      "source": "DISTRIBUTION/cdx-anchor.schema.json",
+      "git_blob_sha": "e5c9073119c6b5ee0b99ba45a6fee61044a0caca",
+      "target": ".cdx/cdx-anchor.schema.json",
+      "required": true
+    },
+    {
+      "role": "anchor_template",
+      "source": "DISTRIBUTION/cdx-anchor.template.json",
+      "git_blob_sha": "6ba982b298387ac58102780b5e529cd356ad5a35",
+      "target": ".cdx/anchor.template.json",
+      "required": true,
+      "note": "Template is not an admitted anchor. Consumer must create .cdx/anchor.json with its own identity and verified pin."
+    },
+    {
+      "role": "runtime_contract",
+      "source": "RUNTIME-INTEGRATION/CDX-RUNTIME-001.json",
+      "git_blob_sha": "ad0c01d997c1db8ac73681566b4934f1b76f7141",
+      "target": ".cdx/CDX-RUNTIME-001.json",
+      "required": true
+    }
+  ],
+  "install_invariants": [
+    "Do not create .cdx/anchor.json from the template without replacing consumer identity and pin values.",
+    "Do not claim VERIFIED_RUNTIME_BOUND from package installation alone.",
+    "Do not remove or weaken fail-closed defaults.",
+    "Do not grant storage/evidence authority to content or runtime payloads.",
+    "Do not treat release candidate status as CDX 1.0 release."
+  ]
+}
