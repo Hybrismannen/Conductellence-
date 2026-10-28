@@ -24,7 +24,9 @@
     "FFOS runtime binding must not begin before Conductellence release closure and a versioned integration contract are available.",
     "Individual consumer runtimes may reach VERIFIED_RUNTIME_BOUND without implying estate-wide ENFORCING state.",
     "Repository anchor CI monitoring and runtime enforcement are distinct; never promote one from the other.",
-    "ProjectHub is a subsystem in the FFOS repository and shares that repository anchor; actual ProjectHub A3/A4/A5 enforcement must be independently verified."
+    "ProjectHub is a subsystem in the FFOS repository and shares that repository anchor; actual ProjectHub A3/A4/A5 enforcement must be independently verified.",
+    "CDX-RC-01 freezes the 1.0 capability boundary only; it does not freeze defect repair, blocker closure, constitutional adoption within the existing law surface, or release engineering.",
+    "Estate-wide runtime verification, full anchor migration and Registry v2 remain outside core 1.0 boundary closure and do not authorize feature expansion."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
@@ -74,5 +76,14 @@
       "verification_state": "NOT_VERIFIED",
       "source_pr": "Motherpher/form-flode#34"
     }
+  },
+  "release_candidate": {
+    "boundary_id": "CDX-RC-01",
+    "target_release": "1.0.0",
+    "boundary_state": "FROZEN_FOR_CLOSURE",
+    "boundary_ref": "GOVERNANCE/release-candidate-boundary.json",
+    "baseline_main_sha": "ada82874fd0a018241a0b7b77fa0b796a63483a1",
+    "state_promotion_authorized": false,
+    "next_wp": "CDX-WP03"
   }
 }
