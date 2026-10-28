@@ -1,8 +1,8 @@
 # CDX-WP04 — Independent SPETL Evidence Custody
 
-**Status:** IMPLEMENTATION STAGED — EXTERNAL PROVISIONING REQUIRED  
+**Status:** REFERENCE CUSTODY IMPLEMENTED — OBSERVED VERIFICATION REQUIRED  
 **Blocker:** `CDX-BLOCK-EVIDENCE-INDEPENDENCE-001`  
-**Custody profile:** `CDX-CUSTODY-001`  
+**Custody profiles:** `CDX-CUSTODY-GHA-001` (reference) + `CDX-CUSTODY-001` (long-lived target)  
 **Date:** 2026-10-28
 
 ## 1. Objective
@@ -37,7 +37,7 @@ A verified event chain is packaged as `cdx.spetl.custody-bundle/v1.0` with produ
 
 The target is a Vercel project `cdx-spetl-custody` with private Blob store `cdx-spetl-evidence`.
 
-The runtime receives no Blob credential. GitHub Actions authenticates to the gateway using short-lived OIDC. The Vercel service uses Vercel OIDC for storage.
+The runtime receives no Blob administrator credential. GitHub Actions authenticates to the gateway using short-lived OIDC. The Vercel custody project accesses its connected private Blob store through the project-to-Blob binding; the governed runtime does not receive that storage binding.
 
 The service exposes only:
 - POST `/api/v1/evidence`
@@ -107,3 +107,60 @@ Therefore:
 - enforcement remains `BOOTSTRAP`.
 
 Required external action: restore the Vercel team's billing/payment status. After that, resume at provisioning step 2 without redesigning WP04.
+
+
+## 10. Executable independent reference custody — CDX-CUSTODY-GHA-001
+
+Because long-lived Vercel provisioning is externally blocked, WP04 also defines a separately approved **reference custody** profile rather than weakening or bypassing the evidence-independence requirement.
+
+The reference chain is:
+
+```text
+SPETL Evidence Producer
+        ↓ immutable producer artifact
+separate workflow_run
+SPETL Independent Custodian
+        ↓ custody bundle + SHA-256 receipt
+separate workflow_run
+SPETL Custody Verifier
+        ↓ verification report
+GitHub Actions artifact service
+```
+
+The producer, custodian and verifier are separate workflow runs. The custodian and verifier check out trusted `main` code, have only read permissions to repository contents/actions, and do not execute code supplied in the producer artifact. The producer has no custodian storage-administrator credential.
+
+Integrity is layered through the SPETL event hash chain, custody-bundle SHA-256, custody-receipt SHA-256, immutable artifact digest and workflow-run provenance.
+
+Reference artifacts use 90-day retention. Direct personal data is prohibited in this reference profile; evidence uses pseudonymous subject references and explicit data-minimization metadata. Long-lived evidence must be exported to an approved long-lived custodian before expiry when preservation beyond the reference window is required.
+
+Human approval of both custody profiles is recorded in `GOVERNANCE/orders/CDX-EVIDENCE-CUSTODY-APPROVAL-001.json`.
+
+## 11. Canonical event-contract hardening
+
+The SPETL v1.1 contract now also requires:
+- `request_id`;
+- explicit `policy_ref` in addition to policy version/digest;
+- exact event-field grammar;
+- exact expected event identity/order in custody bundles.
+
+Fail-closed semantic rules reject:
+- DENY/STOP decisions reported as `PERMITTED`;
+- ALLOW decisions reported as `BLOCKED`;
+- policy-unavailable evidence that does not stop/deny the effect;
+- duplicate, injected or withheld event identities;
+- arbitrary extra top-level event payload fields.
+
+## 12. Reference-profile verification gate
+
+The reference profile does **not** close blocker #17 merely by merging.
+
+Closure requires an actual main-branch observation of:
+1. successful producer workflow;
+2. successful separate custodian workflow;
+3. custody artifact ID and platform digest;
+4. successful separate verifier workflow;
+5. verification artifact ID and platform digest;
+6. successful re-read of the custody receipt and verification report;
+7. PASS for ALLOW, DENY, policy-unavailable, denied-effect contradiction, invalid event, tamper, withheld/loss, different runtime identity, forged authority and write/read/verify provenance.
+
+Only after those observations may the independent-preservation state become `VERIFIED` and blocker #17 be removed. The Vercel profile remains the preferred long-lived production target when external provisioning becomes available.
