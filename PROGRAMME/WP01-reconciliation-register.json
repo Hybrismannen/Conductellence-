@@ -1,0 +1,224 @@
+{
+  "schema": "cdx.wp01-reconciliation/v1.0",
+  "wp_id": "CDX-WP01",
+  "observed_at": "2026-10-28",
+  "source_main_sha": "834f477bb5fd34465395ff5f831bed5b2d2ecfee",
+  "canonical_state": {
+    "constitutional_state": "FOUNDATIONAL_DRAFT",
+    "core_runtime_state": "VERIFIED_REFERENCE_RUNTIME",
+    "release_state": "PRE_RELEASE",
+    "enforcement_state": "BOOTSTRAP",
+    "estate_integration_state": "PENDING_RUNTIME_BINDINGS",
+    "promotion_authorized": false
+  },
+  "blockers": {
+    "CDX-BLOCK-REPO-PROTECTION-001": {
+      "state": "OPEN",
+      "live_observation": "main protected=false; rulesets unavailable under current private-repo plan/capability"
+    },
+    "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001": {
+      "state": "OPEN",
+      "live_observation": "SPETL independent preservation NOT_CONFIGURED"
+    },
+    "CDX-BLOCK-ESTATE-RUNTIME-001": {
+      "state": "OPEN",
+      "live_observation": "no central evidence of VERIFIED_RUNTIME_BOUND estate runtime"
+    }
+  },
+  "live_bindings": {
+    "Motherpher/FFOS": {
+      "anchor_on_main": true,
+      "binding_state": "CDX_CI_MONITORED",
+      "verification_state": "PASS",
+      "runtime_state": "BOUND_PENDING_RUNTIME_INTEGRATION",
+      "classification": "CANONICAL_REPOSITORY_BINDING_NOT_RUNTIME_VERIFICATION"
+    },
+    "Hybrismannen/pius-universe": {
+      "anchor_on_main": true,
+      "binding_state": "ANCHOR_DECLARED",
+      "verification_state": "NOT_VERIFIED",
+      "runtime_state": "VERIFIED_REFERENCE_RUNTIME_REPOSITORY_CI_ONLY",
+      "classification": "DECLARED_CANONICAL_ANCHOR_PENDING_INDEPENDENT_VERIFICATION"
+    },
+    "Motherpher/form-flode": {
+      "anchor_on_main": false,
+      "binding_state": "UNBOUND",
+      "draft_anchor_state": "ANCHOR_DECLARED",
+      "verification_state": "NOT_VERIFIED",
+      "legacy_manifest_present": true,
+      "legacy_manifest_identity": "Hybrismannen/form-flode",
+      "classification": "PENDING_ADMISSION_WITH_LEGACY_IDENTITY_MISMATCH"
+    },
+    "Hybrismannen/form-flode": {
+      "anchor_on_main": false,
+      "legacy_manifest_present": false,
+      "classification": "REGISTERED_LEGACY_BINDING_CLAIM_STALE"
+    },
+    "Hybrismannen/RFSU-godex": {
+      "anchor_on_main": false,
+      "legacy_manifest_present": false,
+      "classification": "REGISTERED_LEGACY_BINDING_CLAIM_STALE"
+    }
+  },
+  "estate_topology": {
+    "known_repository_count": 31,
+    "admitted_registry_records": 19,
+    "pending_admissions": 1,
+    "outside_central_registry_count": 11,
+    "topology_rule": "31 known repositories -> 31 registry records -> applicability classification -> canonical anchor where applicable -> verification -> CDX 1.0 propagation",
+    "outside_central_registry": [
+      {
+        "repository": "Hybrismannen/Barnombudet",
+        "wp01_status": "EXCLUDED_BY_DECISION_PENDING_REGISTRY_V2"
+      },
+      {
+        "repository": "Motherpher/wpb",
+        "wp01_status": "UNCLASSIFIED_FOR_WP08"
+      },
+      {
+        "repository": "Motherpher/Gracey",
+        "wp01_status": "UNCLASSIFIED_FOR_WP08"
+      },
+      {
+        "repository": "Motherpher/CareerHub-LinusF",
+        "wp01_status": "UNCLASSIFIED_FOR_WP08"
+      },
+      {
+        "repository": "Motherpher/Politent",
+        "wp01_status": "UNCLASSIFIED_FOR_WP08"
+      },
+      {
+        "repository": "Motherpher/FF-Spatial",
+        "wp01_status": "UNCLASSIFIED_FOR_WP08"
+      },
+      {
+        "repository": "Motherpher/BDNA",
+        "wp01_status": "UNCLASSIFIED_FOR_WP08"
+      },
+      {
+        "repository": "Motherpher/MusicGenea",
+        "wp01_status": "UNCLASSIFIED_FOR_WP08"
+      },
+      {
+        "repository": "Motherpher/Re-Eco",
+        "wp01_status": "UNCLASSIFIED_FOR_WP08"
+      },
+      {
+        "repository": "Motherpher/GreenBell",
+        "wp01_status": "UNCLASSIFIED_FOR_WP08"
+      },
+      {
+        "repository": "Motherpher/Vitalitet",
+        "wp01_status": "UNCLASSIFIED_FOR_WP08"
+      }
+    ]
+  },
+  "metadata_drift": [
+    {
+      "surface": "GitHub repository description",
+      "observed": "Conduct of Excellence",
+      "canonical": "Code of Conduct + Excellence",
+      "remediation": "Issue #14 remains open; metadata mutation unavailable through current connector"
+    }
+  ],
+  "model_drift": [
+    {
+      "surface": "GOVERNANCE/state-model.md",
+      "issue": "PENDING_RUNTIME_BINDINGS used by canonical state but omitted from transition vocabulary",
+      "remediation": "Add as explicit pre-contract/pre-first-runtime-binding aggregate state"
+    }
+  ],
+  "decision_reconciliation": [
+    {
+      "id": "D-001",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "D-002",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "D-003",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "D-004",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "D-005",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "D-006",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "D-007",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "D-008",
+      "status": "CONFIRMED_BLOCKER_OPEN"
+    },
+    {
+      "id": "D-009",
+      "status": "CONFIRMED_BLOCKER_OPEN"
+    },
+    {
+      "id": "D-010",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "D-011",
+      "status": "CONFIRMED_WITH_METADATA_DRIFT"
+    },
+    {
+      "id": "D-012",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "D-013",
+      "status": "CONFIRMED_IMPLEMENTATION_INCOMPLETE"
+    },
+    {
+      "id": "D-014",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "D-015",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "D-016",
+      "status": "CONFIRMED_BOUNDARY"
+    },
+    {
+      "id": "D-017",
+      "status": "CONFIRMED_EXCLUSION_NOT_YET_REGISTRY_REPRESENTED"
+    },
+    {
+      "id": "D-018",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "D-019",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "D-020",
+      "status": "CONFIRMED_BUT_FFC_MAIN_UNBOUND_IDENTITY_DRIFT"
+    },
+    {
+      "id": "D-021",
+      "status": "CONFIRMED_IMPLEMENTATION_INCOMPLETE"
+    },
+    {
+      "id": "D-022",
+      "status": "CONFIRMED_IMPLEMENTATION_INCOMPLETE"
+    }
+  ],
+  "constitutional_conflicts_found": 0,
+  "state_promotions_authorized": 0,
+  "next_wp": "CDX-WP02"
+}
