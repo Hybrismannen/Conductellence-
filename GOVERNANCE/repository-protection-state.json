@@ -2,17 +2,19 @@
   "schema": "cdx.repository-protection-state/v1.1",
   "repository": "Hybrismannen/Conductellence-",
   "default_branch": "main",
-  "observed_at": "2026-09-26",
-  "observed_main_sha": "224c4be70dbc61fef2b9590a67464c77febcd28b",
+  "observed_at": "2026-10-28",
+  "observed_main_sha": "f7e7d120add4572b80b8dbddefe95d6a25c9b0cc",
   "native_branch_protection": false,
   "native_ruleset": false,
   "branch_protection_verified": false,
   "ruleset_verified": false,
   "connector_observation": {
     "branch_protected_flag": false,
-    "rulesets_api": "FORBIDDEN_PRIVATE_REPO_PLAN_CAPABILITY",
-    "branch_protection_api": "NOT_ACCESSIBLE_BY_INTEGRATION",
-    "administration_capability": "UNAVAILABLE"
+    "rulesets_api": "FORBIDDEN_403_UPGRADE_TO_GITHUB_PRO_OR_MAKE_PUBLIC",
+    "rulesets_api_message": "Upgrade to GitHub Pro or make this repository public to enable this feature.",
+    "branch_protection_api": "FORBIDDEN_403_RESOURCE_NOT_ACCESSIBLE_BY_INTEGRATION",
+    "administration_capability": "UNAVAILABLE",
+    "safe_automatic_remediation": false
   },
   "in_repo_controls": [
     ".github/CODEOWNERS",
@@ -24,5 +26,26 @@
   "constitutional_effect": "ENFORCING_BLOCKER",
   "satisfies_enforcing_requirement": false,
   "blocker_id": "CDX-BLOCK-REPO-PROTECTION-001",
-  "rule": "In-repo controls reduce mutation risk but do not satisfy the production criterion 'constitutional amendment path protected'. Conductellence shall remain non-ENFORCING until native branch protection or an equivalent verified GitHub ruleset is enabled and verified."
+  "rule": "In-repo controls remain degraded post-push detection. Blocker closes only when native/equivalent pre-merge protection for private main is enabled and independently verified. Platform plan/administration gates may not be redefined away.",
+  "provisioning_state": "PLATFORM_PLAN_GATE_BLOCKED",
+  "required_external_action": {
+    "actor": "REPOSITORY_OWNER",
+    "options": [
+      "Upgrade the GitHub account/repository capability so native rulesets/branch protection are available for this private repository.",
+      "Alternatively change repository visibility only if the human owner explicitly decides that public visibility is acceptable."
+    ],
+    "automatic_action_prohibited": [
+      "Do not make the repository public automatically.",
+      "Do not alter GitHub billing/plan automatically."
+    ]
+  },
+  "closure_test": [
+    "main requires pull request before merge",
+    "Conductellence Law Audit required",
+    "Constitutional Mutation Guard required",
+    "human approval required",
+    "force push disabled",
+    "branch deletion disabled",
+    "native/equivalent protection independently re-read and verified"
+  ]
 }
