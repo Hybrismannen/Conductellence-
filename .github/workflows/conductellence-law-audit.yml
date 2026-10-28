@@ -67,6 +67,9 @@ jobs:
       - name: Audit runtime distribution contract
         run: python3 AUDITS/audit_runtime_distribution.py
 
+      - name: Audit CDX 1.0 release preflight
+        run: python3 AUDITS/audit_release_preflight.py
+
       - name: Audit Security Twin
         run: python3 AUDITS/audit_security_twin.py
 
