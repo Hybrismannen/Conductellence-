@@ -59,8 +59,11 @@ for s in systems:
             fail(f"{sid}: pinned CDX source mismatch")
         if state!=a.get("runtime_integration_state"):
             fail(f"{sid}: conflicting runtime status")
-        if state not in {"BOUND_PENDING_RUNTIME_INTEGRATION","RUNTIME_GUARDED_UNVERIFIED",
-                         "VERIFIED_REFERENCE_RUNTIME","VERIFIED_RUNTIME_BOUND"}:
+        if state=="NOT_VERIFIED":
+            if a.get("anchor_state")!="ANCHOR_DECLARED":
+                fail(f"{sid}: NOT_VERIFIED runtime state is only valid for an unverified ANCHOR_DECLARED binding")
+        elif state not in {"BOUND_PENDING_RUNTIME_INTEGRATION","RUNTIME_GUARDED_UNVERIFIED",
+                           "VERIFIED_REFERENCE_RUNTIME","VERIFIED_RUNTIME_BOUND"}:
             fail(f"{sid}: invalid canonical-anchor runtime state {state}")
         if state=="VERIFIED_RUNTIME_BOUND":
             if s.get("consequential_enforcement_verified") is not True:
