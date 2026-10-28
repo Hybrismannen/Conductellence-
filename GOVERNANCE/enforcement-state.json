@@ -2,7 +2,7 @@
   "schema": "cdx.enforcement-state/v1.0",
   "law_id": "CDX-LAW-001",
   "mode": "BOOTSTRAP",
-  "effective_at": "2026-09-30",
+  "effective_at": "2026-10-28",
   "core_reference_runtime_state": "VERIFIED_REFERENCE_RUNTIME",
   "meanings": {
     "BOOTSTRAP": "Conductellence law is authoritative for governed non-human development and the core reference runtime may be operational, but full estate enforcement shall not be claimed while any ENFORCING transition criterion remains unmet.",
@@ -17,19 +17,14 @@
     "Security Twin reference runtime operational",
     "HCC and Ex-Inerta appendices admitted",
     "Global Authority Corpus instantiated",
-    "critical adversarial acceptance suite installed and passing"
+    "critical adversarial acceptance suite installed and passing",
+    "SPETL evidence independently preserved in approved separate workflow-run custody profile with observed write/read/verify provenance"
   ],
   "remaining_enforcing_blockers": [
     {
       "blocker_id": "CDX-BLOCK-REPO-PROTECTION-001",
       "criterion": "constitutional amendment path protected",
       "class": "EXTERNAL_PLATFORM",
-      "state": "OPEN"
-    },
-    {
-      "blocker_id": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001",
-      "criterion": "SPETL evidence independently preserved in a separate trust domain",
-      "class": "EVIDENCE_INFRASTRUCTURE",
       "state": "OPEN"
     },
     {
@@ -50,5 +45,15 @@
     "critical adversarial acceptance tests passed",
     "constitutional amendment path protected by native or equivalent verified platform controls",
     "governed estate production runtime integration verified"
-  ]
+  ],
+  "evidence_custody_verification": {
+    "profile_id": "CDX-CUSTODY-GHA-001",
+    "state": "VERIFIED",
+    "source_commit": "9aa8b034e82283a19e6e0106a7ef0ed8e5fdef15",
+    "producer_run_id": "40782930399",
+    "custodian_run_id": "40782954827",
+    "verifier_run_id": "40782987339",
+    "custody_artifact_digest": "sha256:22a8b97e50e6dec3f203135555f570576f68b13419d4c68d53ca1838a7a0462c",
+    "verification_artifact_digest": "sha256:50b14a79fc3bb7b46611f5e32e0a1681c02149cb61e3b74e5ddcf3f3c6817f10"
+  }
 }

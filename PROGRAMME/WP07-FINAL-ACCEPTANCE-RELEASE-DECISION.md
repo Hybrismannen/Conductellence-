@@ -13,7 +13,7 @@ The preflight result is nevertheless:
 
 `BLOCKED_EXTERNAL_GATES`
 
-This is not a failure of the CDX architecture. It is the correct fail-closed result because two release-critical controls cannot yet be independently proven.
+This is not a failure of the CDX architecture. After WP04 verification, the release remains correctly fail-closed because one release-critical control — native/equivalent repository protection — is still not independently proven.
 
 ## 2. Internal conditions now satisfied
 
@@ -38,9 +38,9 @@ GitHub reports that rulesets for this private repository require an upgraded cap
 
 ### #17 — Independent SPETL evidence custody
 
-State: `PROVISIONING_BLOCKED_EXTERNAL_ACCOUNT`.
+State: **CLOSED / VERIFIED REFERENCE CUSTODY**.
 
-The custody architecture and service are implemented, but Vercel resource creation is blocked because the team account has an overdue balance. No unrelated project is reused as a workaround because that would compromise trust-domain independence.
+`CDX-CUSTODY-GHA-001` was verified through an observed main-branch producer → separate custodian → separate verifier chain with immutable artifact digests, custody receipt, re-read verification and the required negative matrix. The long-lived Vercel target remains an optional stronger retention target and is still externally provisioning-blocked, but it is no longer a core-release evidence blocker.
 
 ## 4. Release order
 
@@ -48,7 +48,7 @@ WP07 creates `CDX-RELEASE-1.0.0` in state:
 
 `PENDING_BLOCKER_CLOSURE`
 
-No human release decision is requested yet. The decision becomes legitimately requestable only after both blockers close and all final gates pass.
+No human release decision is requested yet. The decision becomes legitimately requestable only after the remaining repository-protection blocker closes and all final gates pass.
 
 ## 5. Repository metadata hygiene
 
@@ -67,15 +67,14 @@ CDX must not:
 - set `release_state=RELEASED`;
 - set `enforcement_state=ENFORCEMENT_READY` or `ENFORCING`;
 - begin WP08 estate rollout as if the core release were complete;
-- redefine either external blocker to make the preflight pass.
+- redefine the remaining external blocker to make the preflight pass.
 
 ## 7. Resume path
 
 After owner-side platform actions:
 
-1. resume WP04 provisioning and external custody verification;
-2. resume WP05 native repository-protection verification;
-3. merge blocker-closure evidence;
-4. rerun WP07 preflight;
-5. if PASS, request explicit human-sovereign decision on `CDX-RELEASE-1.0.0`;
-6. only after that decision and final protected PR: publish CDX 1.0.0 and proceed to WP08.
+1. complete WP05 native/equivalent repository-protection verification;
+2. merge the repository-protection closure evidence;
+3. rerun WP07 preflight;
+4. if PASS, request explicit human-sovereign decision on `CDX-RELEASE-1.0.0`;
+5. only after that decision and final protected PR: publish CDX 1.0.0 and proceed to WP08.

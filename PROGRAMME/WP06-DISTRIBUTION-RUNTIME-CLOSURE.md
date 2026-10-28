@@ -68,7 +68,7 @@ After the runtime consistency audit passes, WP06 creates a reproducible candidat
 
 `DISTRIBUTION/releases/1.0.0-rc1/`
 
-The package pins source artifact Git blob SHAs and target install paths. It is a candidate package only. WP07 may convert it into a release only when the two core release blockers are actually closed.
+The package pins source artifact Git blob SHAs and target install paths. It is a candidate package only. WP07 may convert it into a release only when all core release blockers are actually closed. At WP06 closure those blockers were #5 and #17; WP04 subsequently verified and closed #17.
 
 ## 6. Runtime acceptance
 
@@ -88,7 +88,7 @@ WP06 may reach `RUNTIME_CONTRACT_CLOSED / RELEASE_CANDIDATE_PACKAGED` while:
 
 - release remains `PRE_RELEASE`;
 - enforcement remains `BOOTSTRAP`;
-- WP04 blocker #17 remains open;
+- at WP06 closure, WP04 blocker #17 was still open;
 - WP05 blocker #5 remains open.
 
 No distribution artifact may erase those external gates.
@@ -103,10 +103,10 @@ The WP06 candidate now consists of:
 - canonical `.cdx/anchor.json` binding requirement;
 - reproducible package builder;
 - `CDX-DIST-1.0.0-RC1` manifest with exact Git blob pins;
-- release gate that explicitly preserves blockers #5 and #17.
+- release gate that initially preserved blockers #5 and #17; WP04 subsequently closed #17 through verified reference custody.
 
 If the WP06 PR passes all CDX gates, WP06 is complete as:
 
 `RUNTIME_CONTRACT_CLOSED / RELEASE_CANDIDATE_PACKAGED`
 
-This does not authorize release. WP07 remains blocked until WP04 and WP05 external gates are closed.
+This does not authorize release. WP07 remains blocked until every remaining core gate is closed; after WP04 verification, #5 repository protection is the remaining core-release blocker.

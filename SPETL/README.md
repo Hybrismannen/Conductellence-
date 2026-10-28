@@ -38,4 +38,4 @@ WP04 also provides an executable three-run custody chain:
 
 The custodian/verifier run separately from the evidence producer, check out trusted `main` code, use read-only repository permissions, preserve immutable artifacts for 90 days, and bind the evidence to SHA-256 custody receipts and workflow-run provenance.
 
-This profile remains non-verified until the actual main-branch workflow and artifact chain has been observed and recorded.
+This profile is **VERIFIED** for the CDX reference evidence pipeline. The observed producer → custodian → verifier chain and artifact digests are recorded in `SPETL/custody/deployment-state.json` and `PROGRAMME/WP04-INDEPENDENT-SPETL-EVIDENCE-CUSTODY.md`.

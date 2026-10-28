@@ -35,24 +35,41 @@ if builder.returncode!=0:
     print(builder.stdout);print(builder.stderr,file=sys.stderr);fail("release candidate artifact verification failed")
 
 blockers=set(state.get("core_release_blockers",[]))
-expected={"CDX-BLOCK-REPO-PROTECTION-001","CDX-BLOCK-EVIDENCE-INDEPENDENCE-001"}
-if blockers!=expected: fail(f"unexpected core release blocker set: {sorted(blockers)}")
+repo_ok=prot.get("satisfies_enforcing_requirement") is True
+pres_ok=pres.get("independent_preservation",{}).get("satisfies_enforcing_requirement") is True
+custody_ok=custody.get("satisfies_enforcing_requirement") is True
+if pres_ok != custody_ok:
+    fail("evidence preservation and custody verification states diverge")
 
-if prot.get("satisfies_enforcing_requirement") is not False or prot.get("blocker_id") not in blockers:
-    fail("repository protection blocker state inconsistent")
-if pres.get("independent_preservation",{}).get("satisfies_enforcing_requirement") is not False:
-    fail("evidence preservation incorrectly satisfies release gate")
-if custody.get("satisfies_enforcing_requirement") is not False:
-    fail("custody incorrectly satisfies release gate")
+expected=set()
+if not repo_ok:
+    expected.add("CDX-BLOCK-REPO-PROTECTION-001")
+if not (pres_ok and custody_ok):
+    expected.add("CDX-BLOCK-EVIDENCE-INDEPENDENCE-001")
+if blockers!=expected:
+    fail(f"core release blocker set does not match live gate state: blockers={sorted(blockers)} expected={sorted(expected)}")
 
-if state.get("release_state")!="PRE_RELEASE": fail("blocked preflight must remain PRE_RELEASE")
-if state.get("enforcement_state")!="BOOTSTRAP": fail("blocked preflight must remain BOOTSTRAP")
-if pre.get("decision")!="BLOCKED_EXTERNAL_GATES" or pre.get("release_authorized") is not False:
-    fail("preflight must remain blocked while core blockers are open")
-if order.get("state")!="PENDING_BLOCKER_CLOSURE" or order.get("decision") is not None:
-    fail("release order must remain pending blocker closure")
+pre_blockers={x.get("blocker_id") for x in pre.get("blocking_core_conditions",[])}
+if pre_blockers!=blockers:
+    fail(f"release preflight blocker register diverges: {sorted(pre_blockers)} != {sorted(blockers)}")
+if set(order.get("blockers",[]))!=blockers:
+    fail("pending release order blocker set diverges from canonical state")
+
+if state.get("release_state")!="PRE_RELEASE": fail("preflight must remain PRE_RELEASE before human release decision")
+if state.get("enforcement_state")!="BOOTSTRAP": fail("preflight must remain BOOTSTRAP before later enforcement gates")
+
+if blockers:
+    if pre.get("decision")!="BLOCKED_EXTERNAL_GATES" or pre.get("release_authorized") is not False:
+        fail("preflight must remain blocked while core blockers are open")
+    if order.get("state")!="PENDING_BLOCKER_CLOSURE" or order.get("decision") is not None:
+        fail("release order must remain pending blocker closure")
+else:
+    if pre.get("decision")!="READY_FOR_HUMAN_RELEASE_DECISION" or pre.get("release_authorized") is not False:
+        fail("zero-blocker preflight must hand off to explicit human release decision")
+    if order.get("state")!="READY_FOR_DECISION" or order.get("decision") is not None:
+        fail("zero-blocker release order must remain undecided but ready")
 
 print("PASS: all internal CDX 1.0 release-candidate conditions are coherent")
-print("PASS: exact two core external blockers remain and release is fail-closed")
+print(f"PASS: live core blocker set derived from verified gate state: {sorted(blockers)}")
 print("PASS: release_state PRE_RELEASE / enforcement_state BOOTSTRAP preserved")
-print("INFO: final release decision is not yet requestable")
+print("INFO: human release decision is only requestable when the blocker set is empty")

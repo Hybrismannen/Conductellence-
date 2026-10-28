@@ -2,7 +2,7 @@
   "schema": "cdx.spetl.gha-reference-custody/v1.0",
   "custody_id": "CDX-CUSTODY-GHA-001",
   "role": "INDEPENDENT_REFERENCE_EVIDENCE_CUSTODY",
-  "state": "IMPLEMENTED_PENDING_OBSERVED_VERIFICATION",
+  "state": "VERIFIED",
   "trust_separation": {
     "evaluated_executor_workflow": ".github/workflows/spetl-evidence-producer.yml",
     "custodian_workflow": ".github/workflows/spetl-independent-custodian.yml",
@@ -43,5 +43,19 @@
     "rotation": "new platform-scoped job credentials are issued per workflow execution; no runtime-held storage administrator credential is used"
   },
   "scope_limit": "This profile verifies independent custody for the CDX reference evidence pipeline. It does not prove downstream estate runtime binding or replace repository-protection blocker CDX-BLOCK-REPO-PROTECTION-001.",
-  "verification_required_before_blocker_close": true
+  "verification_required_before_blocker_close": false,
+  "observed_verification": {
+    "source_commit": "9aa8b034e82283a19e6e0106a7ef0ed8e5fdef15",
+    "producer_run_id": "40782930399",
+    "producer_artifact_id": "12857213700",
+    "producer_artifact_digest": "sha256:5a4658f301858067b27e6edbed14c398f4cb4db98641a3e74ece64933600cec7",
+    "custodian_run_id": "40782954827",
+    "custody_artifact_id": "12857114760",
+    "custody_artifact_digest": "sha256:22a8b97e50e6dec3f203135555f570576f68b13419d4c68d53ca1838a7a0462c",
+    "verifier_run_id": "40782987339",
+    "verification_artifact_id": "12857499066",
+    "verification_artifact_digest": "sha256:50b14a79fc3bb7b46611f5e32e0a1681c02149cb61e3b74e5ddcf3f3c6817f10",
+    "verified_at": "2026-10-28T22:50:32.269589+00:00"
+  },
+  "blocker_closed": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001"
 }

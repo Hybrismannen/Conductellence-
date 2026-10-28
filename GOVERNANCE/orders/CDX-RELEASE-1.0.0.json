@@ -10,10 +10,9 @@
   "candidate_package": "CDX-DIST-1.0.0-RC1",
   "preflight_ref": "GOVERNANCE/release-preflight-state.json",
   "blockers": [
-    "CDX-BLOCK-REPO-PROTECTION-001",
-    "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001"
+    "CDX-BLOCK-REPO-PROTECTION-001"
   ],
-  "approval_rule": "Release decision may only be requested after both core blockers are closed and all final release gates pass. A generic proceed instruction before those conditions is not a release approval.",
+  "approval_rule": "Release decision may only be requested after all remaining core blockers are closed and all final release gates pass. A generic proceed instruction before those conditions is not a release approval.",
   "allowed_decisions": [
     "RELEASE_1_0_0",
     "HOLD",

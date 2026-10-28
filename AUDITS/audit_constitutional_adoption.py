@@ -21,6 +21,8 @@ required={
     "wp01":Path("PROGRAMME/WP01-reconciliation-register.json"),
     "bindings":Path("CONTROL-CATALOGUE/law-bindings.json"),
     "reviews":Path("REVIEW-CATALOGUE/bindings.json"),
+    "protection":Path("GOVERNANCE/repository-protection-state.json"),
+    "preservation":Path("SPETL/evidence-preservation-state.json"),
 }
 for name,path in required.items():
     if not path.exists():
@@ -34,6 +36,8 @@ boundary=json.loads(required["boundary"].read_text(encoding="utf-8"))
 wp01=json.loads(required["wp01"].read_text(encoding="utf-8"))
 bindings=json.loads(required["bindings"].read_text(encoding="utf-8"))
 reviews=json.loads(required["reviews"].read_text(encoding="utf-8"))
+protection=json.loads(required["protection"].read_text(encoding="utf-8"))
+preservation=json.loads(required["preservation"].read_text(encoding="utf-8"))
 
 if adoption.get("adoption_id")!="CDX-CONST-ADOPT-001":
     fail("wrong adoption record")
@@ -125,18 +129,27 @@ for key,val in expected_other.items():
     if system.get(key)!=val:
         fail(f"constitutional transition improperly changed {key}: {system.get(key)}")
 
-required_blockers={
-    "CDX-BLOCK-REPO-PROTECTION-001",
-    "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001",
-    "CDX-BLOCK-ESTATE-RUNTIME-001",
-}
-observed=set(system.get("core_release_blockers",[]))|set(system.get("estate_enforcement_blockers",[]))
-if not required_blockers.issubset(observed):
-    fail("constitutional transition waived an independent release/enforcement blocker")
+core_blockers=set(system.get("core_release_blockers",[]))
+estate_blockers=set(system.get("estate_enforcement_blockers",[]))
+
+repo_protected=protection.get("satisfies_enforcing_requirement") is True
+evidence_verified=preservation.get("independent_preservation",{}).get("satisfies_enforcing_requirement") is True
+
+expected_core=set()
+if not repo_protected:
+    expected_core.add("CDX-BLOCK-REPO-PROTECTION-001")
+if not evidence_verified:
+    expected_core.add("CDX-BLOCK-EVIDENCE-INDEPENDENCE-001")
+if core_blockers!=expected_core:
+    fail(f"constitutional state sees blocker drift unrelated to verified gate state: {sorted(core_blockers)} != {sorted(expected_core)}")
+
+if system.get("estate_integration_state")!="VERIFIED_RUNTIME_BOUND":
+    if "CDX-BLOCK-ESTATE-RUNTIME-001" not in estate_blockers:
+        fail("estate-runtime blocker removed before verified estate runtime binding")
 
 print(f"PASS: constitutional state={state}")
 print("PASS: explicit HUMAN_SOVEREIGN_AUTHORITY authorization present")
 print("PASS: frozen constitutional topology remains 7/131/69/62")
 print("PASS: no WP01 constitutional conflict")
 print("PASS: release/enforcement/integration axes remain independent")
-print("PASS: independent blockers remain open")
+print("PASS: independent blocker state tracks verified external gate state")

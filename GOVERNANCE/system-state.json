@@ -9,8 +9,7 @@
   "enforcement_state": "BOOTSTRAP",
   "estate_integration_state": "PENDING_RUNTIME_BINDINGS",
   "core_release_blockers": [
-    "CDX-BLOCK-REPO-PROTECTION-001",
-    "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001"
+    "CDX-BLOCK-REPO-PROTECTION-001"
   ],
   "estate_enforcement_blockers": [
     "CDX-BLOCK-ESTATE-RUNTIME-001"
@@ -26,12 +25,11 @@
     "Repository anchor CI monitoring and runtime enforcement are distinct; never promote one from the other.",
     "ProjectHub is a subsystem in the FFOS repository and shares that repository anchor; actual ProjectHub A3/A4/A5 enforcement must be independently verified.",
     "CDX 1.0 core boundary is frozen for WP03-WP07 closure; estate execution WP08-WP14 remains outside the core-release closure boundary.",
-    "WP04 custody code and contracts do not close the independent-evidence blocker; external Vercel custody provisioning and observed tests are required.",
-    "WP04 external custody provisioning is blocked by Vercel team billing state (HTTP 402 resource_creation_blocked). Existing unrelated Vercel projects were not repurposed because that would weaken trust-domain independence.",
     "WP05 native repository protection is blocked by the current private-repository GitHub plan/capability and connector administration access. CDX will not make the repository public or alter plan/billing automatically.",
     "WP06 found and is repairing a SPETL v1.1 compatibility defect in the canonical/distributed runtime before assembling the CDX 1.0 release candidate.",
-    "WP07 preflight confirms internal CDX 1.0 candidate readiness but release remains blocked by repository protection and independent evidence custody external gates.",
-    "Repository metadata hygiene: description derivation remains stale (issue #14); homepage currently points to udl-twin.vercel.app and requires owner review."
+    "WP07 preflight remains blocked by repository protection after WP04 independently verified evidence custody.",
+    "Repository metadata hygiene: description derivation remains stale (issue #14); homepage currently points to udl-twin.vercel.app and requires owner review.",
+    "WP04 independent evidence custody is VERIFIED through CDX-CUSTODY-GHA-001 with observed producer → separate custodian → separate verifier provenance. The long-lived Vercel custody target remains externally blocked but is not required to keep the verified reference-custody gate open."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
@@ -106,13 +104,21 @@
   "wp04_evidence_custody": {
     "programme": "CDX-WP04",
     "approval_ref": "GOVERNANCE/orders/CDX-EVIDENCE-CUSTODY-APPROVAL-001.json",
-    "state": "REFERENCE_PROFILE_IMPLEMENTED_PENDING_OBSERVED_VERIFICATION",
+    "state": "VERIFIED_REFERENCE_CUSTODY",
     "reference_profile": {
       "custody_id": "CDX-CUSTODY-GHA-001",
-      "state": "IMPLEMENTED_PENDING_OBSERVED_VERIFICATION",
+      "state": "VERIFIED",
       "policy_ref": "SPETL/custody/github-actions-reference-profile.json",
       "storage_principal": "GITHUB_ACTIONS_ARTIFACT_SERVICE",
-      "retention_days": 90
+      "retention_days": 90,
+      "verification": {
+        "source_commit": "9aa8b034e82283a19e6e0106a7ef0ed8e5fdef15",
+        "producer_run_id": "40782930399",
+        "custodian_run_id": "40782954827",
+        "verifier_run_id": "40782987339",
+        "custody_artifact_id": "12857114760",
+        "verification_artifact_id": "12857499066"
+      }
     },
     "long_lived_target": {
       "custody_id": "CDX-CUSTODY-001",
@@ -123,7 +129,7 @@
     "deployment_state_ref": "SPETL/custody/deployment-state.json",
     "preservation_state_ref": "SPETL/evidence-preservation-state.json",
     "release_blocker": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001",
-    "blocker_closed": false
+    "blocker_closed": true
   },
   "wp05_repository_protection": {
     "state": "PLATFORM_PLAN_GATE_BLOCKED",
@@ -145,8 +151,7 @@
     "wp06_closure_if_ci_passes": true,
     "release_authorized": false,
     "external_core_blockers_still_required": [
-      "CDX-BLOCK-REPO-PROTECTION-001",
-      "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001"
+      "CDX-BLOCK-REPO-PROTECTION-001"
     ],
     "wp06_closed": true
   },
@@ -158,8 +163,7 @@
     "release_authorized": false,
     "internal_candidate_ready": true,
     "external_core_blockers": [
-      "CDX-BLOCK-REPO-PROTECTION-001",
-      "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001"
+      "CDX-BLOCK-REPO-PROTECTION-001"
     ],
     "next_state_if_cleared": "READY_FOR_HUMAN_RELEASE_DECISION"
   }
