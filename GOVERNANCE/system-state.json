@@ -27,7 +27,7 @@
     "CDX 1.0 core boundary is frozen for WP03-WP07 closure; estate execution WP08-WP14 remains outside the core-release closure boundary.",
     "WP05 native repository protection is blocked by the current private-repository GitHub plan/capability and connector administration access. CDX will not make the repository public or alter plan/billing automatically.",
     "WP06 found and is repairing a SPETL v1.1 compatibility defect in the canonical/distributed runtime before assembling the CDX 1.0 release candidate.",
-    "WP07 preflight confirms internal CDX 1.0 candidate readiness but release remains blocked by repository protection and independent evidence custody external gates.",
+    "WP07 preflight remains blocked by repository protection after WP04 independently verified evidence custody.",
     "Repository metadata hygiene: description derivation remains stale (issue #14); homepage currently points to udl-twin.vercel.app and requires owner review.",
     "WP04 independent evidence custody is VERIFIED through CDX-CUSTODY-GHA-001 with observed producer → separate custodian → separate verifier provenance. The long-lived Vercel custody target remains externally blocked but is not required to keep the verified reference-custody gate open."
   ],
