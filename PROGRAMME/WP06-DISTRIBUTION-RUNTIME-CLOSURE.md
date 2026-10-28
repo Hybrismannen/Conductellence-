@@ -1,6 +1,6 @@
 # CDX-WP06 — Distribution Package & CDX-RUNTIME-001 Closure
 
-**Status:** IMPLEMENTATION IN PROGRESS  
+**Status:** RELEASE CANDIDATE PACKAGED FOR REVIEW  
 **Runtime contract:** `CDX-RUNTIME-001`  
 **Target:** CDX 1.0 release candidate  
 **Date:** 2026-10-28
@@ -92,3 +92,21 @@ WP06 may reach `RUNTIME_CONTRACT_CLOSED / RELEASE_CANDIDATE_PACKAGED` while:
 - WP05 blocker #5 remains open.
 
 No distribution artifact may erase those external gates.
+
+
+## 8. WP06 closure result
+
+The WP06 candidate now consists of:
+
+- frozen machine-readable `CDX-RUNTIME-001 v1.0.0`;
+- canonical and portable runtimes aligned to SPETL v1.1;
+- canonical `.cdx/anchor.json` binding requirement;
+- reproducible package builder;
+- `CDX-DIST-1.0.0-RC1` manifest with exact Git blob pins;
+- release gate that explicitly preserves blockers #5 and #17.
+
+If the WP06 PR passes all CDX gates, WP06 is complete as:
+
+`RUNTIME_CONTRACT_CLOSED / RELEASE_CANDIDATE_PACKAGED`
+
+This does not authorize release. WP07 remains blocked until WP04 and WP05 external gates are closed.
