@@ -27,7 +27,7 @@
     "read": "custody verifier downloads the custody artifact from the custodian workflow run using actions:read",
     "verify": "trusted-main custody code revalidates event chain, bundle hash, receipt hash, source commit, producer run identity and custody run identity",
     "loss_detection": "missing producer or custody artifact causes workflow failure and no verification PASS",
-    "denied_write": "invalid bundle, forged authority, unexpected runtime identity, missing event or contradictory effect semantics are rejected before custody receipt creation"
+    "denied_write": "custodian rejects restrictive decisions reported as PERMITTED, policy-unavailable non-stop behavior, invalid bundles, forged authority, unexpected runtime identity and missing evidence before custody receipt creation"
   },
   "retention": {
     "class": "REFERENCE_CUSTODY_90D",
