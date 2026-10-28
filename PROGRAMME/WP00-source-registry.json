@@ -1,0 +1,368 @@
+{
+  "wp_id": "CDX-WP00",
+  "title": "Historical Source Consolidation",
+  "generated_on": "2026-10-28",
+  "canonical_repository": "Hybrismannen/Conductellence-",
+  "branch": "wp00-historical-source-consolidation",
+  "evidence_policy": {
+    "current_state_precedence": [
+      "current_main_repository_state",
+      "merged_pull_requests_and_committed_artifacts",
+      "explicit_user_decisions_in_prior_conversations",
+      "historical_assistant_summaries_when_original_thread_metadata_is_unrecoverable"
+    ],
+    "rule": "historical_chat_intent_must_not_override_later_canonical_repository_state"
+  },
+  "sources": [
+    {
+      "id": "CHAT-001",
+      "date": "2026-09-23/24",
+      "class": "PRECURSOR",
+      "title": "FFC/FFOS Household governance / Director-Handyman-Janitor precursor",
+      "title_confidence": "reconstructed",
+      "contribution": [
+        "human constitutional authority",
+        "role separation",
+        "typed intents",
+        "provenance",
+        "immutable audit/dispatch",
+        "scenario isolation",
+        "cross-estate SPETL concept"
+      ],
+      "treatment": "LINEAGE_ONLY"
+    },
+    {
+      "id": "CHAT-002",
+      "date": "2026-09-24T18:11Z",
+      "class": "CORE",
+      "title": null,
+      "title_confidence": "not_recovered",
+      "contribution": [
+        "independent Conductellence root",
+        "CDX namespace",
+        "HCC and Ex-Inerta appendices",
+        "SPETL",
+        "registries",
+        "gates",
+        "assurance",
+        "legal corpus"
+      ],
+      "treatment": "FOUNDATIONAL_SOURCE"
+    },
+    {
+      "id": "CHAT-003",
+      "date": "2026-09-24T19:18Z/20:16Z",
+      "class": "CORE",
+      "title": "Conductellence Act and legal citation integrity",
+      "title_confidence": "reconstructed",
+      "contribution": [
+        "law-first architecture",
+        "7 principles",
+        "19 chapters",
+        "131 sections",
+        "real-law citation requirement",
+        "granular legal audit"
+      ],
+      "treatment": "CANONICALIZED"
+    },
+    {
+      "id": "CHAT-004",
+      "date": "2026-09-24/25",
+      "class": "CORE",
+      "title": "Legal Integrity B-D / Household governed implementation",
+      "title_confidence": "reconstructed",
+      "contribution": [
+        "88 exact primary-source provisions",
+        "217 paragraphs",
+        "934 contextual links",
+        "CDX-CLR-LEGAL-BD-001",
+        "no auto-judgment",
+        "no hard-stop bypass"
+      ],
+      "treatment": "CANONICALIZED_PRS_1_3"
+    },
+    {
+      "id": "CHAT-005",
+      "date": "2026-09-25",
+      "class": "CORE",
+      "title": "Scientific Evidence Authority",
+      "title_confidence": "reconstructed",
+      "contribution": [
+        "CDX-EVID-001",
+        "scientific evidence separated from legal authority",
+        "DOI/cache-first evidence model",
+        "correction/retraction governance"
+      ],
+      "treatment": "CANONICALIZED_PR_4"
+    },
+    {
+      "id": "CHAT-006",
+      "date": "2026-09-25/30",
+      "class": "CORE",
+      "title": "Full remediation / hardening",
+      "title_confidence": "reconstructed",
+      "contribution": [
+        "control coverage",
+        "appendices/GAC",
+        "Security Twin",
+        "SPETL",
+        "CODEOWNERS",
+        "adversarial acceptance",
+        "review governance",
+        "repository protection state"
+      ],
+      "treatment": "CANONICALIZED_PRS_6_8_13"
+    },
+    {
+      "id": "CHAT-007",
+      "date": "2026-09-25T22:52Z",
+      "class": "ESTATE_STRATEGY",
+      "title": "Estate rollout priority",
+      "title_confidence": "reconstructed",
+      "contribution": [
+        "CDX-first rollout ordering"
+      ],
+      "treatment": "ROLLOUT_REFERENCE"
+    },
+    {
+      "id": "CHAT-008",
+      "date": "2026-09-30",
+      "class": "CORE",
+      "title": "Core remediation closeout",
+      "title_confidence": "reconstructed",
+      "contribution": [
+        "69/69 automatable sections controlled/tested",
+        "62 sections review-governed",
+        "131/131 operational paths",
+        "BOOTSTRAP retained"
+      ],
+      "treatment": "CANONICALIZED_PRS_11_13"
+    },
+    {
+      "id": "CHAT-009",
+      "date": "2026-10-05T16:22Z",
+      "class": "CORE_BOUNDARY",
+      "title": "Conductellence to FFOS status audit",
+      "title_confidence": "high",
+      "contribution": [
+        "CDX autonomous from FFOS",
+        "finish CDX before FFOS binding",
+        "VERIFIED_RUNTIME_BOUND target"
+      ],
+      "treatment": "BINDING_ARCHITECTURAL_BOUNDARY"
+    },
+    {
+      "id": "CHAT-010",
+      "date": "2026-10-05T19:20Z",
+      "class": "LINEAGE",
+      "title": "Pius governance lineage integration",
+      "title_confidence": "reconstructed",
+      "contribution": [
+        "Ex-Inerta lineage",
+        "HCC lineage",
+        "Codex/Piusites/Oversight Halo provenance"
+      ],
+      "treatment": "CANONICALIZED_APPENDIX"
+    },
+    {
+      "id": "CHAT-011",
+      "date": "2026-10-05/06",
+      "class": "CORE",
+      "title": "Naming and anchor normalization",
+      "title_confidence": "reconstructed",
+      "contribution": [
+        "Code of Conduct + Excellence",
+        "CDX sole shorthand",
+        "CEX removed",
+        ".cdx/anchor.json canonical"
+      ],
+      "treatment": "BINDING_NAMING_AND_ANCHOR_DECISION"
+    },
+    {
+      "id": "CHAT-012",
+      "date": "2026-10-06T19:50Z",
+      "class": "INTEGRATION",
+      "title": "FFOS CDX anchor integration",
+      "title_confidence": "reconstructed",
+      "contribution": [
+        "first canonical anchor",
+        "local enforcement ownership",
+        "outward governance/local anchor topology"
+      ],
+      "treatment": "LINKED_INTEGRATION_SOURCE"
+    },
+    {
+      "id": "CHAT-013",
+      "date": "2026-10-06",
+      "class": "INTEGRATION",
+      "title": "Grace/CareerHub Conductellence gate",
+      "title_confidence": "reconstructed",
+      "contribution": [
+        "data minimization",
+        "verified professional evidence",
+        "quarantine/deny",
+        "manual gate only"
+      ],
+      "treatment": "LINKED_DOWNSTREAM_USE_CASE"
+    },
+    {
+      "id": "CHAT-014",
+      "date": "2026-10-06/07",
+      "class": "INTEGRATION",
+      "title": "Weronika Portfolio / CareerHub evidence bridge",
+      "title_confidence": "reconstructed",
+      "contribution": [
+        "deny-by-default evidence bridge",
+        "provenance separation"
+      ],
+      "treatment": "LINKED_DOWNSTREAM_USE_CASE"
+    },
+    {
+      "id": "CHAT-015",
+      "date": "2026-10-27",
+      "class": "EXCLUSION",
+      "title": "Budget Buddy / Barnombudet architecture",
+      "title_confidence": "high",
+      "contribution": [
+        "Barnombudet no CDX dependency",
+        "no sync/control binding",
+        "concepts may be independently re-expressed"
+      ],
+      "treatment": "EXCLUSION_BOUNDARY"
+    },
+    {
+      "id": "CHAT-016",
+      "date": "2026-10-28",
+      "class": "INTEGRATION",
+      "title": "Pius Universe reconciliation",
+      "title_confidence": "reconstructed",
+      "contribution": [
+        "Pius canonical anchor declared",
+        "lineage reconciliation",
+        "repository CI reference state not runtime enforcement"
+      ],
+      "treatment": "LINKED_INTEGRATION_SOURCE"
+    },
+    {
+      "id": "CHAT-017",
+      "date": "2026-10-28",
+      "class": "CORE_ESTATE",
+      "title": "Estate source reconciliation / PR #16",
+      "title_confidence": "high",
+      "contribution": [
+        "FFOS/Pius/FFC source reconciliation",
+        "anchor axis separated from runtime axis",
+        "no runtime promotion"
+      ],
+      "treatment": "CANONICALIZED_PR_16"
+    }
+  ],
+  "repository_evidence": [
+    {
+      "type": "PR",
+      "number": 1,
+      "title": "CDX Legal Integrity Phases B-D — Household governed implementation"
+    },
+    {
+      "type": "PR",
+      "number": 2,
+      "title": "Activate Conductellence regulatory drift monitoring and closeout"
+    },
+    {
+      "type": "PR",
+      "number": 3,
+      "title": "Repair Phase D drift evidence artifact retention"
+    },
+    {
+      "type": "PR",
+      "number": 4,
+      "title": "Add CDX-EVID-001 Scientific Evidence Authority with credit-efficient Scite adapter"
+    },
+    {
+      "type": "PR",
+      "number": 6,
+      "title": "CDX full remediation 2026-09-25"
+    },
+    {
+      "type": "PR",
+      "number": 8,
+      "title": "Canonicalize Conductellence repository protection state"
+    },
+    {
+      "type": "PR",
+      "number": 9,
+      "title": "Add Conductellence adversarial acceptance gate"
+    },
+    {
+      "type": "PR",
+      "number": 10,
+      "title": "Canonicalize SPETL reference runtime"
+    },
+    {
+      "type": "PR",
+      "number": 11,
+      "title": "Record Conductellence core remediation closeout"
+    },
+    {
+      "type": "PR",
+      "number": 12,
+      "title": "Bind all non-machine-decidable Conductellence law to review governance"
+    },
+    {
+      "type": "PR",
+      "number": 13,
+      "title": "Make independent SPETL evidence preservation an explicit enforcement gate"
+    },
+    {
+      "type": "PR",
+      "number": 16,
+      "title": "CDX estate source reconciliation: FFOS, FFC pending and Pius declared anchors (no runtime promotion)"
+    }
+  ],
+  "superseded": [
+    {
+      "concept": "CEX shorthand",
+      "canonical": "CDX only"
+    },
+    {
+      "concept": "Conduct of Excellence name derivation",
+      "canonical": "Code of Conduct + Excellence"
+    },
+    {
+      "concept": "CDX as FFOS subsystem",
+      "canonical": "CDX independent; FFOS consumer/integration target"
+    },
+    {
+      "concept": "repository binding equals runtime enforcement",
+      "canonical": "state axes remain separate"
+    },
+    {
+      "concept": "local SPETL hash chain equals independent production evidence custody",
+      "canonical": "independent preservation required"
+    },
+    {
+      "concept": ".security/conductellence.json canonical hook",
+      "canonical": ".cdx/anchor.json; legacy preserved only as provenance"
+    },
+    {
+      "concept": "Pius lineage automatically equals CDX runtime components",
+      "canonical": "lineage/provenance unless separately bound"
+    },
+    {
+      "concept": "downstream Conductellence approved label equals automatic certificate",
+      "canonical": "manual downstream gate only"
+    }
+  ],
+  "wp01_handoff": [
+    "estate_registry_vs_live_repo_state",
+    "repository_description_name_drift",
+    "release_language_vs_PRE_RELEASE_BOOTSTRAP_axes",
+    "pius_anchor_declared_NOT_VERIFIED_vs_historical_wording",
+    "ffos_anchor_PASS_vs_BOUND_PENDING_RUNTIME_INTEGRATION",
+    "ffc_pending_admission_vs_legacy_manifest_only",
+    "independent_spetl_custody_blocker",
+    "native_repository_protection_blocker",
+    "estate_runtime_enforcement_blocker",
+    "canonical_anchor_migration_backlog"
+  ]
+}
