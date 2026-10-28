@@ -6,165 +6,154 @@ Authority repository: `Hybrismannen/Conductellence-`
 
 ## 1. Purpose
 
-WP01 reconciles the historical source/decision register created by WP00 against the actual current Conductellence repository, open blockers, live downstream anchors and the known repository estate.
-
-WP01 is a state-reconciliation work package. It does **not** adopt the constitution, release CDX 1.0, enable estate enforcement, or migrate all anchors. Those are later WPs.
+WP01 reconciles the WP00 historical decision register against current Conductellence state, live repository evidence, open blockers and the known estate. It repairs state representation only. It does **not** adopt the constitution, release CDX 1.0, enable estate enforcement, create Registry v2 or migrate downstream runtimes.
 
 ## 2. Canonical state determination
 
-The current state remains:
-
 | Axis | Canonical state | WP01 finding |
 |---|---|---|
-| Constitutional | `FOUNDATIONAL_DRAFT` | Correct; no adoption decision has occurred. |
-| Core runtime | `VERIFIED_REFERENCE_RUNTIME` | Correct; internal reference-runtime gates exist and are audited. |
-| Release | `PRE_RELEASE` | Correct; no stable CDX 1.0 release exists. |
-| Enforcement | `BOOTSTRAP` | Correct; repository protection, independent evidence custody and estate runtime integration remain open. |
-| Estate integration | `PENDING_RUNTIME_BINDINGS` | Correct as the current aggregate state; vocabulary normalized in the state model by this WP. |
+| Constitutional | `FOUNDATIONAL_DRAFT` | unchanged |
+| Core runtime | `VERIFIED_REFERENCE_RUNTIME` | unchanged |
+| Release | `PRE_RELEASE` | unchanged |
+| Enforcement | `BOOTSTRAP` | unchanged |
+| Estate integration | `PENDING_RUNTIME_BINDINGS` | unchanged; vocabulary normalized by WP01 |
 
-No state promotion is authorized by WP01.
+No state promotion is authorized.
 
-## 3. Open blockers confirmed live
+## 3. Open blockers confirmed
 
-### CDX-BLOCK-REPO-PROTECTION-001
-Confirmed open. On 2026-10-28, GitHub reports `main.protected=false`. The repository rulesets API returns a plan/capability restriction. Existing CODEOWNERS and CI guards reduce risk but do not satisfy the native/equivalent constitutional protection criterion.
+- **#5 — CDX-BLOCK-REPO-PROTECTION-001:** constitutional `main` lacks the required native/equivalent protection.
+- **#17 — CDX-BLOCK-EVIDENCE-INDEPENDENCE-001:** independent SPETL evidence preservation remains unimplemented.
+- **#7 — CDX-BLOCK-ESTATE-RUNTIME-001:** consequential runtime mediation across the estate remains unverified.
+- **#15 — CDX-ANCHOR-ESTATE-001:** canonical anchor migration remains incomplete.
 
-### CDX-BLOCK-EVIDENCE-INDEPENDENCE-001
-Confirmed open. `SPETL/evidence-preservation-state.json` reports independent preservation `NOT_CONFIGURED` and `satisfies_enforcing_requirement=false`.
-
-### CDX-BLOCK-ESTATE-RUNTIME-001
-Confirmed open. No governed estate runtime is established by central evidence as `VERIFIED_RUNTIME_BOUND`. Repository/CI binding is not application-runtime effect mediation.
+Repository/CI evidence does not close any of these blockers.
 
 ## 4. Repository metadata drift
 
-The GitHub repository description still contains the superseded phrase **“Conduct of Excellence”**. Canonical derivation is **“Code of Conduct + Excellence.”**
-
-Issue #14 remains the correct remediation record. No repository-metadata mutation capability is available through the current connected GitHub interface, so WP01 records but does not falsely claim correction.
+The GitHub repository description still contains the superseded phrase **“Conduct of Excellence.”** Canonical derivation is **“Code of Conduct + Excellence.”** Issue #14 remains the correct remediation record. The current connected GitHub interface does not expose repository-description mutation, so WP01 records the drift without claiming correction.
 
 ## 5. State-model vocabulary drift
 
-Before WP01, `GOVERNANCE/state-model.md` described the estate-integration sequence without the value `PENDING_RUNTIME_BINDINGS`, while `system-state.json` and README used that value.
+Before WP01, `PENDING_RUNTIME_BINDINGS` was used by canonical machine state and README but omitted from the estate-integration transition vocabulary. WP01 adds it explicitly as the pre-contract/pre-first-runtime-binding aggregate state. This is vocabulary repair, not maturity promotion.
 
-WP01 normalizes this by explicitly adding `PENDING_RUNTIME_BINDINGS` as the pre-contract/pre-first-runtime-binding aggregate state. This is a vocabulary correction, not a maturity promotion.
-
-## 6. Live anchor reconciliation
+## 6. Live binding reconciliation
 
 ### Motherpher/FFOS
-
 - canonical `.cdx/anchor.json`: present;
-- binding state: `CDX_CI_MONITORED`;
+- repository state: `CDX_CI_MONITORED`;
 - verification: `PASS`;
 - runtime: `BOUND_PENDING_RUNTIME_INTEGRATION`;
-- local enforcement points array: empty.
-
-Finding: **repository binding confirmed; consequential runtime enforcement not verified.**
+- consequential runtime enforcement: **not verified**.
 
 ### Hybrismannen/pius-universe
-
-- canonical `.cdx/anchor.json`: present;
-- binding state: `ANCHOR_DECLARED`;
+- canonical anchor: present;
+- state: `ANCHOR_DECLARED`;
 - verification: `NOT_VERIFIED`;
-- runtime claim: `VERIFIED_REFERENCE_RUNTIME_REPOSITORY_CI_ONLY`;
-- local enforcement point: `REPOSITORY_CI_BINDING`.
+- repository CI/reference-runtime evidence exists but does not prove consequential runtime enforcement.
 
-Finding: **anchor declaration confirmed; central/independent verification and consequential runtime enforcement remain unverified.**
+### Motherpher/form-flode / historical Hybrismannen/form-flode
 
-WP01 corrects `system-state.json` and the legacy systems registry so Pius is represented on the canonical-anchor axis rather than only as a legacy manifest.
+WP01 initially treated these names as two repositories because the estate registry preserved the historical path while FFC work used the Motherpher path. Live identity verification corrected that assumption:
 
-### Motherpher/form-flode (FFC)
+```text
+Hybrismannen/form-flode
+        ↓ GitHub redirect / transfer
+Motherpher/form-flode
+repository id = 1379622813
+```
 
-- canonical `.cdx/anchor.json` on `main`: absent;
-- draft PR #34 remains the source of the proposed anchor;
-- legacy `.security/conductellence.json` exists on `main`, but its internal `system_repository` identifies **`Hybrismannen/form-flode`**, not `Motherpher/form-flode`.
+They are the **same GitHub repository object**.
 
-Finding: **FFC is not admitted and is not canonically anchored on main. Its live legacy manifest has a repository-identity mismatch and cannot be treated as evidence of a valid FFC binding.**
+Current `Motherpher/form-flode/main`:
+- `.cdx/anchor.json`: absent;
+- legacy `.security/conductellence.json`: present;
+- legacy manifest internal identity: `Hybrismannen/form-flode`.
 
-WP01 therefore records FFC as `UNBOUND` on main with a separate `DRAFT_ANCHOR_DECLARED` candidate state.
+Draft PR #34 proposes:
+- canonical repository identity `Motherpher/form-flode`;
+- system identity `FFC`;
+- canonical anchor state `ANCHOR_DECLARED / NOT_VERIFIED`.
 
-### Hybrismannen/form-flode
-
-The central registry claimed a legacy binding, but live `.security/conductellence.json` is absent on main.
-
-Finding: **stale legacy-binding claim / registry drift.**
+Finding: the correct model is **repository/system identity migration**, not a second repository admission. `CDX-EST-001` is retained as historical provenance; FFC remains `UNBOUND` on `main` and pending canonical identity migration plus CDX verification.
 
 ### Hybrismannen/RFSU-godex
-
-The central registry claimed a legacy binding, but live `.security/conductellence.json` is absent on main.
-
-Finding: **stale legacy-binding claim / registry drift.**
+The central legacy-binding claim does not match live `main`: the declared legacy manifest was not observed. This remains **stale binding / registry drift**.
 
 ## 7. Estate topology reconciliation
 
-Accepted target rule:
+The accepted estate coverage rule remains:
 
-> **31 known repositories → 31 registry records → applicability classification → canonical anchor where applicable → verification → CDX 1.0 propagation.**
+> **31 known repository identifiers → 31 registry records → applicability classification → canonical anchor where applicable → verification → CDX 1.0 propagation.**
 
-Observed estate:
+WP01 adds one required identity-normalization step because repository names can change:
 
-- **19** currently admitted/registered central records, including CDX itself;
-- **1** pending admission: `Motherpher/form-flode`;
-- **11** known repositories currently outside the central registry model.
+> **31 known identifiers → 31 records → identity/alias normalization → 30 unique current repository objects → applicability → anchor → verification → propagation.**
 
-The 11 are:
+Observed topology:
+- **31** known repository identifiers in the historical/current horizon;
+- **30** unique current GitHub repository objects;
+- **1** historical alias record: `Hybrismannen/form-flode → Motherpher/form-flode`;
+- **19** central admitted system records, one of which is keyed by the historical alias but maps to the same current repository object;
+- **1** pending canonical identity migration for FFC, not an additional repository;
+- **11** unique current repositories outside the central registry model.
 
-- `Hybrismannen/Barnombudet` — explicit `EXCLUDED_BY_DECISION`; to be represented as such in Registry v2, not silently omitted.
-- `Motherpher/wpb`
-- `Motherpher/Gracey`
-- `Motherpher/CareerHub-LinusF`
-- `Motherpher/Politent`
-- `Motherpher/FF-Spatial`
-- `Motherpher/BDNA`
-- `Motherpher/MusicGenea`
-- `Motherpher/Re-Eco`
-- `Motherpher/GreenBell`
-- `Motherpher/Vitalitet`
+The 11 outside the central registry are:
+- `Hybrismannen/Barnombudet` — explicit `EXCLUDED_BY_DECISION`, to be represented in Registry v2;
+- `Motherpher/wpb`;
+- `Motherpher/Gracey`;
+- `Motherpher/CareerHub-LinusF`;
+- `Motherpher/Politent`;
+- `Motherpher/FF-Spatial`;
+- `Motherpher/BDNA`;
+- `Motherpher/MusicGenea`;
+- `Motherpher/Re-Eco`;
+- `Motherpher/GreenBell`;
+- `Motherpher/Vitalitet`.
 
-Except for Barnombudet's explicit exclusion, WP01 does **not** decide the governance applicability of these repositories. They are `UNCLASSIFIED_FOR_WP08`.
+Except for Barnombudet's explicit exclusion, WP01 does not decide governance applicability for those repositories. They remain `UNCLASSIFIED_FOR_WP08`.
 
 ## 8. WP00 decision reconciliation
 
-WP01 tested the 22 WP00 decisions against current canonical state.
+The 22 WP00 decisions remain materially valid. The new identity evidence refines rather than reverses them:
 
-- **16 decisions confirmed without material conflict.**
-- **2 active blockers confirmed**: independent SPETL custody and constitutional repository protection.
-- **4 decisions are valid but incompletely implemented at estate level**: canonical anchor migration, Barnombudet exclusion representation, full-estate registry topology, and FFC admission.
-- No genuine constitutional conflict was found.
-- No WP00 decision required reversal.
+- **D-020:** FFC remains pending, now correctly modeled as canonical identity migration of the same underlying repository.
+- **D-021:** registry inclusion remains distinct from governance/enforcement.
+- **D-022:** the 31-record rule remains, with identity normalization showing 30 unique current repositories plus one historical alias.
 
-The machine-readable result is in `PROGRAMME/WP01-reconciliation-register.json`.
+No constitutional conflict was found.
 
 ## 9. Corrections made by WP01
 
-WP01 changes state representation only:
-
-1. adds Pius Universe canonical anchor state to `GOVERNANCE/system-state.json`;
-2. removes the implication that FFC has a canonical anchor on `main`, replacing it with an explicit pending-candidate record;
-3. marks the FFC legacy repository-identity mismatch;
-4. converts the Pius estate system entry from legacy-manifest representation to canonical-anchor representation while preserving legacy provenance;
-5. marks stale legacy binding claims for `Hybrismannen/form-flode` and `Hybrismannen/RFSU-godex`;
-6. reconciles the same states in `ESTATE-REGISTRY/cdx-anchors.json`;
+WP01 now:
+1. reconciles Pius to its canonical `ANCHOR_DECLARED / NOT_VERIFIED` state;
+2. keeps FFOS repository binding separate from runtime enforcement;
+3. keeps FFC `UNBOUND` on `main` while recording the draft anchor separately;
+4. corrects the false two-repository interpretation of `Hybrismannen/form-flode` and `Motherpher/form-flode`;
+5. preserves `CDX-EST-001` as historical alias/provenance and records the pending migration to FFC identity;
+6. records RFSU-godex stale legacy-binding drift;
 7. normalizes `PENDING_RUNTIME_BINDINGS` in the state vocabulary.
 
-## 10. What WP01 deliberately does not do
+## 10. Deliberate non-actions
 
 WP01 does not:
-
 - change `CDX-LAW-001`;
-- move constitutional state beyond `FOUNDATIONAL_DRAFT`;
+- move beyond `FOUNDATIONAL_DRAFT`, `PRE_RELEASE` or `BOOTSTRAP`;
 - close any enforcement blocker;
-- create independent SPETL custody;
-- enable GitHub repository protection;
-- admit FFC;
-- promote FFOS or Pius to `VERIFIED_RUNTIME_BOUND`;
+- enable branch protection;
+- implement independent SPETL custody;
+- admit/verify the FFC canonical anchor;
+- promote FFOS or Pius runtime status;
 - create the full 31-record Registry v2;
+- decide the ten unclassified repository applicability cases;
 - migrate downstream repositories.
 
-## 11. Closure determination
+## 11. Closure and handoff
 
-After the state corrections in this WP, the canonical baseline is coherent enough to begin the CDX 1.0 closure sequence.
+WP01 is complete when its branch passes Conductellence Law Audit, Constitutional Mutation Guard, Remediation Readiness and estate-registry consistency checks and is merged.
 
 Next work package:
 
 **CDX-WP02 — RC-01 Core Boundary Freeze**
 
-Its job is to freeze the 1.0 system boundary and prevent feature expansion while WP03–WP07 close the constitution, trust infrastructure, release integrity and distribution/runtime contracts.
+WP02 freezes the CDX 1.0 system boundary so WP03–WP07 can close constitutional, trust, release-integrity and distribution/runtime prerequisites without feature expansion. Registry v2/applicability work remains reserved for WP08.
