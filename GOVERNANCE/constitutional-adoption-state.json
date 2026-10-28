@@ -4,8 +4,8 @@
   "law_id": "CDX-LAW-001",
   "system_id": "CDX-SYS-001",
   "target_constitutional_version": "1.0.0",
-  "current_constitutional_state": "STABLE_CANDIDATE",
-  "prior_constitutional_state": "CONSTITUTIONAL_CANDIDATE",
+  "current_constitutional_state": "ADOPTED",
+  "prior_constitutional_state": "STABLE_CANDIDATE",
   "target_state": "ADOPTED",
   "transition_sequence": [
     "FOUNDATIONAL_DRAFT",
@@ -35,6 +35,22 @@
       "candidate_evidence": {
         "pr": "Hybrismannen/Conductellence-#25",
         "merge_commit": "4e238ef93a944cbaa9cf082f39587d8bd02750b8"
+      },
+      "evidence": {
+        "pr": "Hybrismannen/Conductellence-#27",
+        "merge_commit": "9dc5591a0be3cf7b331a658e130dccc0ce373c3d",
+        "required_gates": "PASS"
+      }
+    },
+    {
+      "from": "STABLE_CANDIDATE",
+      "to": "ADOPTED",
+      "date": "2026-10-28",
+      "authority_ref": "GOVERNANCE/orders/CDX-CONSTITUTIONAL-ADOPTION-001.json",
+      "basis": "Stable candidate passed all constitutional closure gates; final adoption authorized by direct human WP03 directive and effective through governed merge.",
+      "stable_candidate_evidence": {
+        "pr": "Hybrismannen/Conductellence-#27",
+        "merge_commit": "9dc5591a0be3cf7b331a658e130dccc0ce373c3d"
       }
     }
   ],
@@ -69,5 +85,11 @@
     "candidate_gates": "PASS",
     "scope_change": false,
     "boundary_exceptions": 0
+  },
+  "final_adoption": {
+    "order_ref": "GOVERNANCE/orders/CDX-CONSTITUTIONAL-ADOPTION-001.json",
+    "constitutional_version": "1.0.0",
+    "decision": "ADOPT",
+    "effective_condition": "MERGE_OF_FINAL_ADOPTION_PR_WITH_ALL_REQUIRED_GATES_PASSING"
   }
 }
