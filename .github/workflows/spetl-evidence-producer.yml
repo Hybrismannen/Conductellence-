@@ -1,0 +1,46 @@
+name: SPETL Evidence Producer
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  produce-reference-evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout trusted source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Run SPETL custody regression suite
+        run: |
+          python3 AUDITS/audit_spetl.py
+          python3 AUDITS/audit_spetl_custody.py
+
+      - name: Generate minimized reference evidence bundle
+        run: |
+          mkdir -p _spetl_producer
+          python3 AUDITS/generate_spetl_reference_bundle.py \
+            --output _spetl_producer/evidence-bundle.json \
+            --source-commit "${GITHUB_SHA}" \
+            --workflow-run-id "${GITHUB_RUN_ID}" \
+            --workflow-run-attempt "${GITHUB_RUN_ATTEMPT}"
+
+      - name: Verify producer bundle before handoff
+        run: |
+          python3 SPETL/spetl.py verify-bundle \
+            _spetl_producer/evidence-bundle.json \
+            --expected-producer CDX-REFERENCE-RUNTIME
+
+      - name: Hand off producer artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: spetl-producer-${{ github.run_id }}-${{ github.run_attempt }}
+          path: _spetl_producer/evidence-bundle.json
+          if-no-files-found: error
+          retention-days: 90
