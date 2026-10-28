@@ -139,6 +139,8 @@ The audit checks that:
 
 The audit runs on pull requests and pushes to `main`.
 
+WP02 also aligns the Constitutional Mutation Guard with the already-governing protected-surface list in `CDX-CONST-CHANGE-001`. In particular, `GOVERNANCE/**`, SPETL/Security Twin/Global Authority Corpus, regulatory-drift surfaces and GitHub workflows are no longer silently omitted from the mutation tripwire. This strengthens internal change control but **does not** close the external/native repository-protection blocker.
+
 ## 8. Amendment path
 
 A legitimate reason may emerge to change the boundary before 1.0. That is allowed only through an explicit boundary amendment:
