@@ -8,12 +8,16 @@ TARGET=Path("GOVERNANCE/repository-protection-target.json")
 SYSTEM=Path("GOVERNANCE/system-state.json")
 PREFLIGHT=Path("GOVERNANCE/release-preflight-state.json")
 ORDER=Path("GOVERNANCE/orders/CDX-RELEASE-1.0.0.json")
+CODEOWNERS=Path(".github/CODEOWNERS")
+GUARD=Path(".github/workflows/constitutional-mutation-guard.yml")
+MUTATION_POLICY=Path("GOVERNANCE/constitutional-mutation-policy.md")
+CHANGE_POLICY=Path("GOVERNANCE/constitutional-change-policy.md")
 
 def fail(msg):
     print("FAIL:",msg)
     raise SystemExit(1)
 
-for p in (STATE,VERIFY,TARGET,SYSTEM,PREFLIGHT,ORDER):
+for p in (STATE,VERIFY,TARGET,SYSTEM,PREFLIGHT,ORDER,CODEOWNERS,GUARD,MUTATION_POLICY,CHANGE_POLICY):
     if not p.exists():
         fail(f"missing {p}")
 
@@ -45,6 +49,27 @@ if target.get("history_integrity",{}).get("allow_deletions") is not False:
     fail("target profile permits branch deletion")
 if target.get("bypass",{}).get("allow_admin_bypass") is not False:
     fail("target profile permits admin bypass")
+
+codeowners=CODEOWNERS.read_text()
+required_owner_paths=[
+    "/LAW/","/INTERPRETATION/","/GOVERNANCE/","/CONTROL-CATALOGUE/","/POLICY/",
+    "/SPETL/","/SECURITY-TWIN/","/GLOBAL-AUTHORITY-CORPUS/","/LEGAL-REFERENCES/",
+    "/LEGAL-RESOLVER/","/REGULATORY-DRIFT/","/EVIDENCE-AUTHORITY/","/REVIEW-CATALOGUE/",
+    "/RED-TEAM/","/DISTRIBUTION/","/RUNTIME-INTEGRATION/","/ESTATE-REGISTRY/","/AUDITS/",
+    "/.github/CODEOWNERS","/.github/workflows/"
+]
+missing_owner=[p for p in required_owner_paths if p not in codeowners]
+if missing_owner:
+    fail("CODEOWNERS coverage drift: "+", ".join(missing_owner))
+
+guard=GUARD.read_text()
+if "\\.github/CODEOWNERS$" not in guard or "\\.github/workflows/" not in guard:
+    fail("constitutional mutation guard does not protect CODEOWNERS/workflow control paths")
+
+for policy_path in (MUTATION_POLICY,CHANGE_POLICY):
+    policy=policy_path.read_text()
+    if ".github/CODEOWNERS" not in policy:
+        fail(f"{policy_path} does not protect CODEOWNERS")
 
 verified=state.get("satisfies_enforcing_requirement") is True
 criteria=verify.get("criteria",{})
