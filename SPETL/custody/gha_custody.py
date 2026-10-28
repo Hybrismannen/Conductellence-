@@ -52,6 +52,14 @@ def verify_bundle_claims(bundle, expected_source_commit=None, expected_producer_
             fail(f"event {idx}: request/correlation provenance missing")
         if not event.get("policy_version") or not event.get("policy_digest"):
             fail(f"event {idx}: policy pin/digest missing")
+        restrictive={"REQUIRE_HUMAN","QUARANTINE","DENY","SECURITY_STOP","CONSTITUTIONAL_STOP"}
+        if event.get("decision") in restrictive and event.get("effect_status")=="PERMITTED":
+            fail(f"event {idx}: restrictive decision cannot report PERMITTED effect")
+        if event.get("policy_digest")=="UNAVAILABLE":
+            if event.get("decision") not in {"SECURITY_STOP","DENY"}:
+                fail(f"event {idx}: unavailable policy did not fail closed")
+            if event.get("effect_status") not in {"BLOCKED","NOT_ATTEMPTED"}:
+                fail(f"event {idx}: unavailable policy cannot permit effect")
         if event.get("data_minimization",{}).get("personal_data_present") is not False:
             fail(f"event {idx}: direct personal data is prohibited in reference custody")
     return events
