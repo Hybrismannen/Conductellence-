@@ -24,10 +24,7 @@
     "FFOS runtime binding must not begin before Conductellence release closure and a versioned integration contract are available.",
     "Individual consumer runtimes may reach VERIFIED_RUNTIME_BOUND without implying estate-wide ENFORCING state.",
     "Repository anchor CI monitoring and runtime enforcement are distinct; never promote one from the other.",
-    "ProjectHub is a subsystem in the FFOS repository and shares that repository anchor; actual ProjectHub A3/A4/A5 enforcement must be independently verified.",
-    "The 31-repository master catalogue is an inventory layer; catalogue inclusion does not imply CDX governance, binding, runtime verification or enforcement.",
-    "Pius current canonical anchor state is ANCHOR_DECLARED / NOT_VERIFIED; legacy CI history must not promote it.",
-    "RFSU-godex has live binding drift recorded centrally; CareerHubZero has a live legacy manifest but no observed legacy binding-audit workflow."
+    "ProjectHub is a subsystem in the FFOS repository and shares that repository anchor; actual ProjectHub A3/A4/A5 enforcement must be independently verified."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
@@ -63,16 +60,5 @@
       "legacy_manifest_repository_identity": "Hybrismannen/form-flode",
       "identity_reconciliation": "REQUIRED_BEFORE_ADMISSION"
     }
-  },
-  "estate_catalog": {
-    "source": "ESTATE-REGISTRY/repository-catalog.json",
-    "known_repositories": 31,
-    "live_accessible_repositories": 30,
-    "historical_known_not_in_current_access_list": 1,
-    "admitted_governed_systems": 19,
-    "pending_admissions": 1,
-    "explicit_exclusions": 1,
-    "unassessed_repositories": 10,
-    "rule": "Registry inclusion is inventory only. Governance applicability, admission, binding, runtime verification and enforcement are separate states."
   }
 }
