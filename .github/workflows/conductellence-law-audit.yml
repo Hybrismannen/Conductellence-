@@ -40,6 +40,9 @@ jobs:
       - name: Audit constitutional adoption state
         run: python3 AUDITS/audit_constitutional_adoption.py
 
+      - name: Audit repository protection state
+        run: python3 AUDITS/audit_repository_protection.py
+
       - name: Audit Phase B semantic review queue
         run: python3 AUDITS/audit_phase_b_semantic_queue.py
 
