@@ -61,6 +61,14 @@
       "anchor_on_main": false,
       "legacy_manifest_present": false,
       "classification": "REGISTERED_LEGACY_BINDING_CLAIM_STALE"
+    },
+    "Motherpher/CareerHubZero": {
+      "anchor_on_main": false,
+      "legacy_manifest_present": true,
+      "legacy_binding_audit_workflow_present": false,
+      "binding_state": "LEGACY_PRESENT_UNMONITORED",
+      "runtime_state": "NOT_VERIFIED",
+      "classification": "LEGACY_BINDING_PRESENT_WITH_CI_DRIFT"
     }
   },
   "estate_topology": {
