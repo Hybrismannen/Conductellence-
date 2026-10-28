@@ -246,5 +246,13 @@
     "Estate-wide ENFORCING transition"
   ],
   "amendment_rule": "Any change to a frozen dimension requires an explicit Director-approved boundary amendment, a new release-candidate boundary ID (RC-02 or later), and a documented reason. Silent editing of RC-01 to absorb feature expansion is non-conforming.",
-  "no_state_promotion": "FROZEN_FOR_CLOSURE is a programme/release-candidate boundary state only. It does not change constitutional_state, release_state, enforcement_state, or estate_integration_state."
+  "no_state_promotion": "FROZEN_FOR_CLOSURE is a programme/release-candidate boundary state only. It does not change constitutional_state, release_state, enforcement_state, or estate_integration_state.",
+  "change_control": {
+    "constitutional_change_policy": "CDX-CONST-CHANGE-001",
+    "constitutional_mutation_policy": "CDX-GOV-CONST-MUT-001",
+    "mutation_guard_workflow": ".github/workflows/constitutional-mutation-guard.yml",
+    "protected_surface_alignment": "ALIGNED_BY_WP02",
+    "native_premerge_repository_protection": "NOT_SATISFIED",
+    "note": "In-repository guard alignment strengthens detection but does not close CDX-BLOCK-REPO-PROTECTION-001."
+  }
 }
