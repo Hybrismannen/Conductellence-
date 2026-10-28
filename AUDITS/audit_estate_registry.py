@@ -81,6 +81,30 @@ if ffc and ffc.get("verification_state")!="NOT_VERIFIED":
 if ffc and "Motherpher/form-flode" in repos:
     fail("pending FFC development branch admitted without verification")
 
+# Historical Form & Flöde path is a provenance alias of the current Motherpher repository,
+# not a second repository. Both identities must remain explicitly reconciled.
+legacy_ff=next((s for s in systems if s.get("repository")=="Hybrismannen/form-flode"),None)
+legacy_ff_anchor=anchors.get("Hybrismannen/form-flode")
+if legacy_ff:
+    if legacy_ff.get("record_state")!="HISTORICAL_ALIAS":
+        fail("historical form-flode system record must be marked HISTORICAL_ALIAS")
+    if legacy_ff.get("canonical_repository")!="Motherpher/form-flode":
+        fail("historical form-flode canonical repository mismatch")
+    if legacy_ff.get("repository_id")!="1379622813":
+        fail("historical form-flode repository id mismatch")
+if legacy_ff_anchor:
+    if legacy_ff_anchor.get("record_state")!="HISTORICAL_ALIAS":
+        fail("historical form-flode anchor record must be marked HISTORICAL_ALIAS")
+    if legacy_ff_anchor.get("anchor_state")!="UNBOUND":
+        fail("historical alias cannot claim canonical CDX binding")
+if ffc:
+    if ffc.get("repository_id")!="1379622813":
+        fail("FFC pending record repository id mismatch")
+    if ffc.get("historical_alias")!="Hybrismannen/form-flode":
+        fail("FFC pending record must preserve historical alias")
+    if ffc.get("migration_kind")!="REPOSITORY_IDENTITY_MIGRATION":
+        fail("FFC must be modeled as repository identity migration")
+
 print(f"PASS: Estate Registry contains {len(systems)} unique governed repository records")
 print(f"PASS: {legacy} legacy bindings + {canonical} canonical anchors differentiated")
 print("PASS: repository binding separate from application-runtime evidence")

@@ -46,7 +46,7 @@
       "source": "ESTATE-REGISTRY/cdx-anchors.json"
     }
   },
-  "reconciliation_note": "consumer_bindings describes consequential application-runtime integration. Repository anchors are a separate axis. FFOS is CDX_CI_MONITORED but remains BOUND_PENDING_RUNTIME_INTEGRATION. Pius has a canonical anchor on main but remains ANCHOR_DECLARED / NOT_VERIFIED and repository-CI-only. Motherpher/form-flode has no canonical anchor on main; draft PR #34 is only a candidate, and its live legacy manifest identifies Hybrismannen/form-flode, so it must not be treated as admitted FFC binding. Core release and enforcement blockers remain open.",
+  "reconciliation_note": "consumer_bindings describes consequential application-runtime integration. Repository anchors are a separate axis. FFOS is CDX_CI_MONITORED but remains BOUND_PENDING_RUNTIME_INTEGRATION. Pius has a canonical anchor on main but remains ANCHOR_DECLARED / NOT_VERIFIED and repository-CI-only. GitHub identity reconciliation confirms Hybrismannen/form-flode is the historical alias of Motherpher/form-flode (repository id 1379622813), so FFC is an identity/anchor migration of the same repository rather than a second repository. Core release and enforcement blockers remain open.",
   "updated_at": "2026-10-28",
   "pending_anchor_candidates": {
     "Motherpher/form-flode": {
@@ -59,6 +59,20 @@
       "legacy_manifest_present": true,
       "legacy_manifest_repository_identity": "Hybrismannen/form-flode",
       "identity_reconciliation": "REQUIRED_BEFORE_ADMISSION"
+    }
+  },
+  "repository_identity_reconciliation": {
+    "Motherpher/form-flode": {
+      "repository_id": "1379622813",
+      "historical_alias": "Hybrismannen/form-flode",
+      "historical_system_id": "CDX-EST-001",
+      "target_system_id": "FFC",
+      "relation": "SAME_GITHUB_REPOSITORY_OBJECT",
+      "state": "PENDING_CANONICAL_IDENTITY_MIGRATION",
+      "main_anchor_state": "UNBOUND",
+      "draft_anchor_state": "ANCHOR_DECLARED",
+      "verification_state": "NOT_VERIFIED",
+      "source_pr": "Motherpher/form-flode#34"
     }
   }
 }
