@@ -22,6 +22,7 @@ REQUIRED_INPUT_FIELDS = {
 REQUIRED_STORED_FIELDS = REQUIRED_INPUT_FIELDS | {
     "schema_version", "event_id", "recorded_at", "previous_hash", "event_hash"
 }
+ALLOWED_EVENT_FIELDS = REQUIRED_STORED_FIELDS | {"resource_id"}
 
 def canonical(obj):
     return json.dumps(obj, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
@@ -44,6 +45,9 @@ def validate_event(event, stored=False):
     missing = sorted(k for k in required if k not in event)
     if missing:
         raise ValueError("missing required SPETL field(s): " + ", ".join(missing))
+    unexpected = sorted(k for k in event if k not in ALLOWED_EVENT_FIELDS)
+    if unexpected:
+        raise ValueError("unexpected SPETL field(s): " + ", ".join(unexpected))
 
     if stored and event.get("schema_version") != SCHEMA_VERSION:
         raise ValueError("unsupported schema_version")
@@ -219,13 +223,21 @@ def verify_custody_bundle(bundle, expected_producer=None, allowed_authorities=No
             return False, f"event {idx}: event_hash mismatch"
         if allowed_authorities is not None and event.get("authority_ref") not in allowed_authorities:
             return False, f"event {idx}: untrusted authority_ref"
+        if event["event_id"] in seen:
+            return False, f"event {idx}: duplicate event_id"
         seen.add(event["event_id"])
         previous = event["event_hash"]
 
-    expected = set(bundle.get("expected_event_ids") or [])
+    expected_list = bundle.get("expected_event_ids") or []
+    expected = set(expected_list)
     missing = sorted(expected - seen)
+    unexpected = sorted(seen - expected)
     if missing:
         return False, "withheld evidence: " + ", ".join(missing)
+    if unexpected:
+        return False, "injected evidence: " + ", ".join(unexpected)
+    if expected_list != [event["event_id"] for event in events]:
+        return False, "evidence order/identity manifest mismatch"
 
     retention = bundle.get("retention")
     if not isinstance(retention, dict) or retention.get("deletion_mode") != "GOVERNED_TOMBSTONE_AND_AUTHORIZED_ADMIN_ACTION":
