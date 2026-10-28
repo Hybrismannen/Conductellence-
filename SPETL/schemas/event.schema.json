@@ -1,40 +1,101 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://conductellence.local/schemas/spetl-event.schema.json",
+  "title": "Conductellence SPETL Event",
   "type": "object",
   "required": [
+    "schema_version",
     "event_id",
     "event_type",
     "recorded_at",
     "actor_id",
+    "subject_ref",
     "action",
+    "attempted_effect",
+    "effect_status",
     "decision",
     "authority_ref",
+    "mandate_ref",
     "policy_version",
+    "policy_digest",
     "correlation_id",
-    "causation_id"
+    "causation_id",
+    "run_id",
+    "trace_ref",
+    "reviewer_ref",
+    "data_minimization",
+    "control_results",
+    "evidence_refs",
+    "previous_hash",
+    "event_hash"
   ],
   "properties": {
+    "schema_version": {
+      "const": "1.1"
+    },
     "event_id": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "event_type": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "recorded_at": {
       "type": "string",
       "format": "date-time"
     },
     "actor_id": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
+    },
+    "subject_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "action": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "resource_id": {
       "type": [
         "string",
         "null"
+      ]
+    },
+    "attempted_effect": {
+      "type": "object",
+      "required": [
+        "surface",
+        "operation",
+        "target_ref"
+      ],
+      "properties": {
+        "surface": {
+          "type": "string",
+          "minLength": 1
+        },
+        "operation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "effect_status": {
+      "enum": [
+        "NOT_ATTEMPTED",
+        "PERMITTED",
+        "BLOCKED",
+        "FAILED"
       ]
     },
     "decision": {
@@ -49,16 +110,66 @@
       ]
     },
     "authority_ref": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
+    },
+    "mandate_ref": {
+      "type": "string",
+      "minLength": 1
     },
     "policy_version": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
+    },
+    "policy_digest": {
+      "type": "string",
+      "pattern": "^(sha256:[0-9a-f]{64}|UNAVAILABLE)$"
     },
     "correlation_id": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "causation_id": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trace_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewer_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "data_minimization": {
+      "type": "object",
+      "required": [
+        "personal_data_present",
+        "redacted_fields",
+        "rationale"
+      ],
+      "properties": {
+        "personal_data_present": {
+          "type": "boolean"
+        },
+        "redacted_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
     },
     "control_results": {
       "type": "array"
@@ -73,7 +184,9 @@
       ]
     },
     "event_hash": {
-      "type": "string"
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
     }
-  }
+  },
+  "additionalProperties": true
 }
