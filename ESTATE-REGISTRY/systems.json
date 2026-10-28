@@ -22,7 +22,9 @@
       "manifest_observed_on_main": false,
       "reconciled_at": "2026-10-28",
       "reconciliation_status": "STALE_LEGACY_BINDING_CLAIM",
-      "reconciliation_note": "Central registry retains historical registration, but declared legacy binding manifest was not present on main during WP01 live reconciliation. Do not treat as currently governance-bound until repaired or canonically migrated."
+      "reconciliation_note": "Central registry retains historical registration, but declared legacy binding manifest was not present on main during WP01 live reconciliation. Do not treat as currently governance-bound until repaired or canonically migrated.",
+      "live_repository_observation": "NOT_IN_CURRENT_ACCESSIBLE_REPOSITORY_LIST_2026-10-28",
+      "registry_record_semantics": "HISTORICAL_ADMITTED_RECORD_PENDING_LIVE_REVERIFICATION"
     },
     {
       "system_id": "CDX-EST-002",
@@ -40,8 +42,6 @@
       "authority_ref": "CDX-SYS-001",
       "security_state": "ANCHOR_DECLARED",
       "binding_manifest": ".cdx/anchor.json",
-      "binding_verified_at": "2026-09-25",
-      "binding_audit_workflow": ".github/workflows/pius-cdx-anchor-precheck.yml",
       "runtime_integration_state": "NOT_VERIFIED",
       "legacy_manifest": ".security/conductellence.json",
       "binding_mode": "PINNED_COMMIT",
@@ -49,7 +49,10 @@
       "anchor_verification_state": "NOT_VERIFIED",
       "estate_admission_state": "PENDING_INDEPENDENT_VERIFICATION",
       "consequential_enforcement_verified": false,
-      "reconciliation_note": "Canonical .cdx anchor exists on main; legacy manifest preserved as provenance. Repository CI/reference state does not prove consequential runtime enforcement."
+      "reconciliation_note": "Canonical .cdx anchor exists on main; legacy manifest preserved as provenance. Repository CI/reference state does not prove consequential runtime enforcement.",
+      "legacy_binding_verified_at": "2026-09-25",
+      "legacy_binding_audit_workflow": ".github/workflows/pius-cdx-anchor-precheck.yml",
+      "repository_ci_workflow": ".github/workflows/pius-cdx-anchor-precheck.yml"
     },
     {
       "system_id": "CDX-EST-004",
@@ -105,7 +108,7 @@
       "system_id": "CDX-EST-009",
       "repository": "Hybrismannen/RFSU-godex",
       "authority_ref": "CDX-SYS-001",
-      "security_state": "REGISTERED_LEGACY_BINDING_MISSING",
+      "security_state": "REGISTERED_BINDING_DRIFT",
       "binding_manifest": ".security/conductellence.json",
       "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
       "runtime_integration_state": "NOT_VERIFIED",
@@ -113,7 +116,10 @@
       "manifest_observed_on_main": false,
       "reconciled_at": "2026-10-28",
       "reconciliation_status": "STALE_LEGACY_BINDING_CLAIM",
-      "reconciliation_note": "Central registry retains historical registration, but declared legacy binding manifest was not present on main during WP01 live reconciliation. Do not treat as currently governance-bound until repaired or canonically migrated."
+      "reconciliation_note": "Central registry retains historical registration, but declared legacy binding manifest was not present on main during WP01 live reconciliation. Do not treat as currently governance-bound until repaired or canonically migrated.",
+      "legacy_binding_observation": "MISSING_ON_LIVE_MAIN_2026-10-28",
+      "legacy_workflow_observation": "MISSING_ON_LIVE_MAIN_2026-10-28",
+      "binding_manifest_semantics": "HISTORICAL_EXPECTATION_NOT_LIVE_CONFIRMED"
     },
     {
       "system_id": "CDX-EST-010",
@@ -192,12 +198,14 @@
       "visibility": "private",
       "default_branch": "main",
       "authority_ref": "CDX-SYS-001",
-      "binding_state": "BOUND_PENDING_RUNTIME_INTEGRATION",
+      "binding_state": "LEGACY_PRESENT_UNMONITORED",
       "runtime_integration_state": "NOT_VERIFIED",
       "binding_manifest": ".security/conductellence.json",
-      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
       "security_state": "REGISTERED",
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-26",
+      "legacy_binding_observation": "PRESENT_ON_LIVE_MAIN_2026-10-28",
+      "legacy_audit_workflow_observation": "MISSING_ON_LIVE_MAIN_2026-10-28",
+      "historical_binding_audit_workflow_claim": ".github/workflows/conductellence-binding-audit.yml"
     },
     {
       "system_id": "FFOS",
@@ -215,7 +223,7 @@
     }
   ],
   "updated_at": "2026-10-28",
-  "audit_note": "This systems registry retains legacy bindings and adds explicit FFOS repository-level anchor evidence. The pending FFC source is not yet admitted. No entry certifies consequential runtime enforcement without CDX-RUNTIME-001 evidence.",
+  "audit_note": "Admitted governed-system registry only. WP01 separates the 31-repository master catalogue from governance admission. Pius current canonical anchor is ANCHOR_DECLARED/NOT_VERIFIED; RFSU-godex live legacy-binding drift and CareerHubZero missing legacy CI workflow are recorded explicitly. No record certifies consequential runtime enforcement without CDX-RUNTIME-001 evidence.",
   "pending_admissions": [
     {
       "repository": "Motherpher/form-flode",
