@@ -29,7 +29,7 @@ jobs:
             HEAD="${{ github.sha }}"
           fi
           git diff --name-only "$BASE" "$HEAD" > changed.txt || true
-          if grep -Eq '^(LAW/|appendices/|POLICY/|CONTROL-CATALOGUE/|GOVERNANCE/enforcement-state\.json|LEGAL-REFERENCES/|LEGAL-RESOLVER/)' changed.txt; then
+          if grep -Eq '^(LAW/|appendices/|POLICY/|CONTROL-CATALOGUE/|GOVERNANCE/|LEGAL-REFERENCES/|LEGAL-RESOLVER/|INTERPRETATION/|SPETL/|SECURITY-TWIN/|GLOBAL-AUTHORITY-CORPUS/|REGULATORY-DRIFT/|EVIDENCE-AUTHORITY/|REVIEW-CATALOGUE/|RED-TEAM/|DISTRIBUTION/|RUNTIME-INTEGRATION/|ESTATE-REGISTRY/|AUDITS/|\.github/workflows/)' changed.txt; then
             echo "protected=true" >> "$GITHUB_OUTPUT"
           else
             echo "protected=false" >> "$GITHUB_OUTPUT"

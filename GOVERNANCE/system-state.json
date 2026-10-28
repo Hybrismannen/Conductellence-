@@ -24,7 +24,8 @@
     "FFOS runtime binding must not begin before Conductellence release closure and a versioned integration contract are available.",
     "Individual consumer runtimes may reach VERIFIED_RUNTIME_BOUND without implying estate-wide ENFORCING state.",
     "Repository anchor CI monitoring and runtime enforcement are distinct; never promote one from the other.",
-    "ProjectHub is a subsystem in the FFOS repository and shares that repository anchor; actual ProjectHub A3/A4/A5 enforcement must be independently verified."
+    "ProjectHub is a subsystem in the FFOS repository and shares that repository anchor; actual ProjectHub A3/A4/A5 enforcement must be independently verified.",
+    "CDX 1.0 core boundary is frozen for WP03-WP07 closure; estate execution WP08-WP14 remains outside the core-release closure boundary."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
@@ -74,5 +75,13 @@
       "verification_state": "NOT_VERIFIED",
       "source_pr": "Motherpher/form-flode#34"
     }
+  },
+  "release_boundary": {
+    "boundary_id": "CDX-RC01-BOUNDARY-001",
+    "target_release": "CDX 1.0",
+    "state": "FROZEN_FOR_CLOSURE",
+    "baseline_main_sha": "ada82874fd0a018241a0b7b77fa0b796a63483a1",
+    "policy_ref": "GOVERNANCE/release-boundary-v1.json",
+    "scope_change_requires": "HUMAN_APPROVED_BOUNDARY_EXCEPTION"
   }
 }
