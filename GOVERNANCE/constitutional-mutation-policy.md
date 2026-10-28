@@ -8,9 +8,16 @@ Protected constitutional surfaces:
 - `appendices/**`
 - `POLICY/**`
 - `CONTROL-CATALOGUE/**`
-- `GOVERNANCE/enforcement-state.json`
+- `GOVERNANCE/**`
+- `SPETL/**`
+- `SECURITY-TWIN/**`
+- `GLOBAL-AUTHORITY-CORPUS/**`
 - `LEGAL-REFERENCES/**`
 - `LEGAL-RESOLVER/**`
+- `REGULATORY-DRIFT/**`
+- `.github/workflows/**`
+
+This list is intentionally aligned with `CDX-CONST-CHANGE-001`; a narrower mutation guard must not silently exempt governance or assurance surfaces that the governing change policy treats as constitutionally material.
 
 Required process:
 
