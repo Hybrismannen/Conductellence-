@@ -2,7 +2,7 @@
   "schema": "cdx.release-preflight/v1.0",
   "preflight_id": "CDX-RELEASE-PREFLIGHT-1.0.0",
   "target_release": "1.0.0",
-  "observed_at": "2026-10-28",
+  "observed_at": "2026-10-29",
   "decision": "BLOCKED_EXTERNAL_GATES",
   "release_authorized": false,
   "state_before_release": {
@@ -25,9 +25,10 @@
   "blocking_core_conditions": [
     {
       "blocker_id": "CDX-BLOCK-REPO-PROTECTION-001",
-      "state": "PLATFORM_PLAN_GATE_BLOCKED",
+      "state": "MAXIMUM_IN_REPO_HARDENING_COMPLETE_PLATFORM_PLAN_GATE_BLOCKED",
       "owner_action_required": true,
-      "required_action": "Enable and independently verify native/equivalent pre-merge protection for private main."
+      "required_action": "Enable private-repository native/equivalent pre-merge protection, apply CDX-REPO-PROTECT-TARGET-001 to main, then independently re-read and verify the platform rule.",
+      "target_profile": "GOVERNANCE/repository-protection-target.json"
     }
   ],
   "non_blocking_repository_hygiene": [
