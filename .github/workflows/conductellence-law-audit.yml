@@ -64,6 +64,9 @@ jobs:
       - name: Audit SPETL independent custody contract
         run: python3 AUDITS/audit_spetl_custody.py
 
+      - name: Audit runtime distribution contract
+        run: python3 AUDITS/audit_runtime_distribution.py
+
       - name: Audit Security Twin
         run: python3 AUDITS/audit_security_twin.py
 
