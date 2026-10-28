@@ -26,5 +26,20 @@
   "all_criteria_verified": false,
   "satisfies_enforcing_requirement": false,
   "blocker_id": "CDX-BLOCK-REPO-PROTECTION-001",
-  "note": "Populate VERIFIED values only from a fresh platform re-read after native/equivalent pre-merge protection is enabled. Repository-local edits are not sufficient evidence."
+  "note": "Populate VERIFIED values only from a fresh platform re-read after native/equivalent pre-merge protection is enabled. Repository-local edits are not sufficient evidence.",
+  "human_approval_control_test": {
+    "state": "PASS",
+    "observed_at": "2026-10-29",
+    "test_pr": 38,
+    "test_pr_head_sha": "c9b06c2e3fcff17e4a57d7bc4fddd5a5d616b324",
+    "workflow_run_id": "40788804123",
+    "workflow_name": "Conductellence Human Sovereign Approval",
+    "command": "/cdx-approve",
+    "approver": "Hybrismannen",
+    "status_context": "human-sovereign-approval",
+    "status_state": "success",
+    "target_url": "https://github.com/Hybrismannen/Conductellence-/pull/38#issuecomment-6483591573",
+    "disposition": "TEST_PR_CLOSED_UNMERGED",
+    "note": "This verifies the approval-status mechanism only. It does not make the status required before merge; native/equivalent branch protection is still absent."
+  }
 }

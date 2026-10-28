@@ -135,3 +135,22 @@ The remaining step is an **owner-controlled GitHub account/platform action**, no
 Therefore the correct state remains:
 
 `MAXIMUM_IN_REPO_HARDENING_COMPLETE / PLATFORM_PLAN_GATE_BLOCKED`
+
+
+## 10. Human approval control observation
+
+A disposable pull request (#38) was created solely to test the owner-bound approval mechanism and was not merged.
+
+Observed evidence:
+
+- PR head: `c9b06c2e3fcff17e4a57d7bc4fddd5a5d616b324`;
+- owner command: `/cdx-approve`;
+- workflow: `Conductellence Human Sovereign Approval`;
+- workflow run: `40788804123` — PASS;
+- approver: `Hybrismannen`;
+- emitted context: `human-sovereign-approval`;
+- emitted state: `success`;
+- status bound to the exact PR head SHA;
+- test PR closed unmerged.
+
+This proves the human-approval control itself works. It does **not** close #5 because GitHub still does not require that status, the constitutional audits or PR-only mutation before merge.
