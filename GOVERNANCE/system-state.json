@@ -22,6 +22,26 @@
   "notes": [
     "Conductellence remains canonical in its own repository.",
     "FFOS runtime binding must not begin before Conductellence release closure and a versioned integration contract are available.",
-    "Individual consumer runtimes may reach VERIFIED_RUNTIME_BOUND without implying estate-wide ENFORCING state."
-  ]
+    "Individual consumer runtimes may reach VERIFIED_RUNTIME_BOUND without implying estate-wide ENFORCING state.",
+    "Repository anchor CI monitoring and runtime enforcement are distinct; never promote one from the other.",
+    "ProjectHub is a subsystem in the FFOS repository and shares that repository anchor; actual ProjectHub A3/A4/A5 enforcement must be independently verified."
+  ],
+  "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
+  "repository_anchor_bindings": {
+    "Motherpher/FFOS": {
+      "state": "CDX_CI_MONITORED",
+      "local_anchor_ref": "Motherpher/FFOS/.cdx/anchor.json",
+      "observed_at": "2026-10-06T19:56:34Z",
+      "runtime_enforcement": "BOUND_PENDING_RUNTIME_INTEGRATION",
+      "source": "ESTATE-REGISTRY/cdx-anchors.json"
+    },
+    "Motherpher/form-flode": {
+      "state": "ANCHOR_DECLARED",
+      "source": "FFC draft PR #34 (not merged)",
+      "verification": "NOT_VERIFIED",
+      "registry_admission": "PENDING_PR_MERGE_AND_VERIFICATION"
+    }
+  },
+  "reconciliation_note": "The field consumer_bindings describes CONSEQUENTIAL APPLICATION RUNTIME integration, not repository anchor registration. FFOS runtime NOT_STARTED and FFOS repository anchor CDX_CI_MONITORED refer to different axes and are not contradictory; neither proves verified runtime enforcement. FFC Motherpher/form-flode is a pending developmental anchor only. Repo protections and CDX release remain blockers.",
+  "updated_at": "2026-10-28"
 }

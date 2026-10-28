@@ -1,0 +1,26 @@
+name: CDX Estate Registry Consistency
+
+on:
+  pull_request:
+    paths:
+      - 'ESTATE-REGISTRY/**'
+      - 'GOVERNANCE/system-state.json'
+      - '.github/workflows/cdx-estate-registry-consistency.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'ESTATE-REGISTRY/**'
+      - 'GOVERNANCE/system-state.json'
+      - '.github/workflows/cdx-estate-registry-consistency.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  state-reconciliation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify repository binding versus runtime integration without false promotion
+        run: python3 ESTATE-REGISTRY/verify-cdx-registry.py

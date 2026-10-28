@@ -183,8 +183,32 @@
       "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
       "security_state": "REGISTERED",
       "last_verified_at": "2026-09-26"
+    },
+    {
+      "system_id": "FFOS",
+      "repository": "Motherpher/FFOS",
+      "authority_ref": "CDX-SYS-001",
+      "security_state": "CDX_CI_MONITORED",
+      "binding_manifest": ".cdx/anchor.json",
+      "binding_mode": "PINNED_COMMIT",
+      "cdx_ref": "7edbc47899af23b415114628469aca2970779ea1",
+      "binding_audit_workflow": ".github/workflows/cdx-binding-audit.yml",
+      "repository_binding_verification_source": "ESTATE-REGISTRY/cdx-anchors.json",
+      "runtime_integration_state": "BOUND_PENDING_RUNTIME_INTEGRATION",
+      "consequential_enforcement_verified": false,
+      "anchor_last_verified_at": "2026-10-06T19:56:34Z"
     }
   ],
-  "updated_at": "2026-09-25",
-  "audit_note": "Repository states reflect verified .security/conductellence.json manifests and binding-workflow presence; runtime integration remains NOT_VERIFIED unless independently proven."
+  "updated_at": "2026-10-28",
+  "audit_note": "This systems registry retains legacy bindings and adds explicit FFOS repository-level anchor evidence. The pending FFC source is not yet admitted. No entry certifies consequential runtime enforcement without CDX-RUNTIME-001 evidence.",
+  "pending_admissions": [
+    {
+      "repository": "Motherpher/form-flode",
+      "system_id": "FFC",
+      "status": "PENDING_MERGE_AND_CDX_REGISTRATION",
+      "evidence": "https://github.com/Motherpher/form-flode/pull/34",
+      "anchor_state": "ANCHOR_DECLARED",
+      "runtime_integration_state": "NOT_VERIFIED"
+    }
+  ]
 }
