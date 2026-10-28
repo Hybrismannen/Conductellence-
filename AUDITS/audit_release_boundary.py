@@ -48,8 +48,8 @@ if ids!=expected_ids:
 topology=b.get("frozen_constitutional_topology",{})
 section_markers=re.findall(r'<!-- cdx:section id="([^"]+)" auditability="([^"]+)" -->',law)
 principles=re.findall(r'^## Principle [IVX]+ — ',law,flags=re.MULTILINE)
-if len(section_markers)!=topology.get("law_sections")!=131:
-    fail(f"invalid law section topology: observed={len(section_markers)} boundary={topology.get('law_sections')}")
+if topology.get("law_sections")!=131:
+    fail(f"boundary law section baseline changed: {topology.get('law_sections')} != 131")
 if len(section_markers)!=131:
     fail(f"law section count changed: {len(section_markers)} != 131")
 if len(principles)!=7 or topology.get("foundational_principles")!=7:
