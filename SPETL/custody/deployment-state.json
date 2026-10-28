@@ -1,13 +1,15 @@
 {
   "schema": "cdx.spetl.custody-deployment-state/v1.0",
   "custody_id": "CDX-CUSTODY-001",
-  "state": "PROVISIONING_BLOCKED_EXTERNAL_ACCOUNT",
+  "state": "REFERENCE_PROFILE_IMPLEMENTED_PENDING_OBSERVED_VERIFICATION",
   "observed_at": "2026-10-28",
   "implementation": {
     "service_root": "SPETL/custody-service",
     "policy_ref": "SPETL/custody/custody-policy.json",
     "event_schema_ref": "SPETL/schemas/event.schema.json",
-    "bundle_schema_ref": "SPETL/schemas/custody-bundle.schema.json"
+    "bundle_schema_ref": "SPETL/schemas/custody-bundle.schema.json",
+    "reference_profile": "SPETL/custody/github-actions-reference-profile.json",
+    "reference_custody_runtime": "SPETL/custody/gha_custody.py"
   },
   "target": {
     "provider": "Vercel",
@@ -17,11 +19,20 @@
     "region": "fra1"
   },
   "external_verification": {
-    "state": "BLOCKED_BEFORE_PROVISIONING",
-    "endpoint": null,
-    "project_id": null,
-    "store_id": null,
-    "tests": {}
+    "state": "NOT_RUN",
+    "approved_profile": null,
+    "tests": {
+      "allow": "NOT_RUN",
+      "deny": "NOT_RUN",
+      "policy_unavailable": "NOT_RUN",
+      "denied_write": "NOT_RUN",
+      "invalid_event": "NOT_RUN",
+      "tamper": "NOT_RUN",
+      "withheld_or_loss": "NOT_RUN",
+      "different_identity": "NOT_RUN",
+      "forged_authority": "NOT_RUN",
+      "write_read_verify_provenance": "NOT_RUN"
+    }
   },
   "satisfies_enforcing_requirement": false,
   "blocker_id": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001",
@@ -41,5 +52,47 @@
     "retry_rule": "Do not retry unchanged until the provider account gate has been resolved.",
     "workaround_assessment": "NO_SAFE_EXISTING_RESOURCE",
     "workaround_reason": "All visible existing Vercel projects are linked to active or historically meaningful workloads; repurposing one would contaminate the independent-custody trust boundary."
+  },
+  "profiles": {
+    "github_actions_reference": {
+      "custody_id": "CDX-CUSTODY-GHA-001",
+      "state": "IMPLEMENTED_PENDING_OBSERVED_VERIFICATION",
+      "producer_workflow": ".github/workflows/spetl-evidence-producer.yml",
+      "custodian_workflow": ".github/workflows/spetl-independent-custodian.yml",
+      "verifier_workflow": ".github/workflows/spetl-custody-verifier.yml",
+      "storage_principal": "GITHUB_ACTIONS_ARTIFACT_SERVICE",
+      "retention_days": 90,
+      "observed_provenance": null,
+      "satisfies_enforcing_requirement": false
+    },
+    "vercel_long_lived_target": {
+      "custody_id": "CDX-CUSTODY-001",
+      "state": "PROVISIONING_BLOCKED_EXTERNAL_ACCOUNT",
+      "target": {
+        "provider": "Vercel",
+        "project_name": "cdx-spetl-custody",
+        "store_name": "cdx-spetl-evidence",
+        "store_access": "private",
+        "region": "fra1"
+      },
+      "provisioning_blocker": {
+        "provider": "Vercel",
+        "error_code": "resource_creation_blocked",
+        "http_status": 402,
+        "cause": "TEAM_OVERDUE_BALANCE",
+        "affected_team_id": "team_3CWSOO9ePljnKvDPHctIaNCy",
+        "affected_team_slug": "linus-fasts-projects",
+        "attempted_project": "cdx-spetl-custody",
+        "attempted_root_directory": "SPETL/custody-service",
+        "attempted_action": "CREATE_GIT_PROJECT_AND_DEPLOY",
+        "observed_at": "2026-10-28",
+        "remediation_actor": "USER_ACCOUNT_OWNER",
+        "required_action": "Restore Vercel team billing/payment status so new project and private storage resources may be created.",
+        "retry_rule": "Do not retry unchanged until the provider account gate has been resolved.",
+        "workaround_assessment": "NO_SAFE_EXISTING_RESOURCE",
+        "workaround_reason": "All visible existing Vercel projects are linked to active or historically meaningful workloads; repurposing one would contaminate the independent-custody trust boundary."
+      },
+      "satisfies_enforcing_requirement": false
+    }
   }
 }
