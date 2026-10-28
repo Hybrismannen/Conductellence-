@@ -26,7 +26,8 @@
     "Repository anchor CI monitoring and runtime enforcement are distinct; never promote one from the other.",
     "ProjectHub is a subsystem in the FFOS repository and shares that repository anchor; actual ProjectHub A3/A4/A5 enforcement must be independently verified.",
     "CDX 1.0 core boundary is frozen for WP03-WP07 closure; estate execution WP08-WP14 remains outside the core-release closure boundary.",
-    "WP04 custody code and contracts do not close the independent-evidence blocker; external Vercel custody provisioning and observed tests are required."
+    "WP04 independent reference custody is implemented but the evidence-independence blocker remains open until an observed main-branch producer → separate custodian → separate verifier chain passes and artifact provenance is recorded.",
+    "The Vercel long-lived custody target is implemented in source but external resource provisioning is currently unavailable; this does not count as verified custody."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
@@ -99,9 +100,13 @@
     "adoption_order_ref": "GOVERNANCE/orders/CDX-CONSTITUTIONAL-ADOPTION-001.json"
   },
   "wp04_evidence_custody": {
-    "custody_id": "CDX-CUSTODY-001",
-    "state": "IMPLEMENTED_NOT_PROVISIONED",
-    "policy_ref": "SPETL/custody/custody-policy.json",
+    "custody_programme": "CDX-WP04",
+    "approval_ref": "GOVERNANCE/orders/CDX-EVIDENCE-CUSTODY-APPROVAL-001.json",
+    "reference_profile_id": "CDX-CUSTODY-GHA-001",
+    "reference_profile_state": "IMPLEMENTED_PENDING_OBSERVED_VERIFICATION",
+    "long_lived_target_id": "CDX-CUSTODY-001",
+    "long_lived_target_state": "IMPLEMENTED_NOT_PROVISIONED",
+    "preservation_state_ref": "SPETL/evidence-preservation-state.json",
     "deployment_state_ref": "SPETL/custody/deployment-state.json",
     "release_blocker": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001",
     "blocker_closed": false
