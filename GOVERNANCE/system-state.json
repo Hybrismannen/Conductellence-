@@ -124,12 +124,17 @@
     "state_ref": "GOVERNANCE/repository-protection-state.json"
   },
   "wp06_distribution_runtime": {
-    "state": "IMPLEMENTATION_IN_PROGRESS",
+    "state": "RELEASE_CANDIDATE_PACKAGED_FOR_REVIEW",
     "contract_id": "CDX-RUNTIME-001",
-    "target_contract_version": "1.0.0",
-    "release_candidate": "1.0.0-rc1",
-    "runtime_contract_ref": "RUNTIME-INTEGRATION/CDX-RUNTIME-001.json",
-    "blocker_closed": false,
-    "state_promotion_authorized": false
+    "contract_version": "1.0.0",
+    "release_candidate": "CDX-DIST-1.0.0-RC1",
+    "candidate_manifest": "DISTRIBUTION/releases/1.0.0-rc1/manifest.json",
+    "candidate_status": "RELEASE_CANDIDATE_NOT_RELEASED",
+    "wp06_closure_if_ci_passes": true,
+    "release_authorized": false,
+    "external_core_blockers_still_required": [
+      "CDX-BLOCK-REPO-PROTECTION-001",
+      "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001"
+    ]
   }
 }
