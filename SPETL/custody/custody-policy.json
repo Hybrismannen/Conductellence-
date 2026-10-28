@@ -13,9 +13,10 @@
     "trusted_source_repository": "Hybrismannen/Conductellence-",
     "trusted_source_ref": "refs/heads/main",
     "trusted_source_workflow": ".github/workflows/spetl-evidence-publish.yml",
-    "storage_authentication": "VERCEL_OIDC",
+    "storage_authentication": "VERCEL_PROJECT_BLOB_BINDING",
     "runtime_has_storage_admin_credential": false,
-    "runtime_has_delete_credential": false
+    "runtime_has_delete_credential": false,
+    "reference_custody_profile": "CDX-CUSTODY-GHA-001"
   },
   "write_semantics": {
     "append_only_service": true,
@@ -45,8 +46,16 @@
   },
   "credential_rotation": {
     "github_sender": "short-lived GitHub OIDC token per workflow run",
-    "vercel_storage": "short-lived Vercel OIDC token scoped to custody project",
+    "vercel_storage": "Vercel-managed project-to-Blob binding scoped to the custody project; no storage credential is held by the governed runtime executor.",
     "long_lived_storage_secret_required": false
   },
-  "closure_rule": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001 may close only after the separate custody project/store are provisioned and external allow/deny/policy-unavailable, denied-write, tamper, withheld/loss and identity tests are observed and recorded."
+  "closure_rule": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001 may close only after an approved independent custody profile has actual observed write/read/verify provenance and the complete allow/deny/policy-unavailable, denied-write, invalid-event, tamper, withheld/loss, different-runtime and forged-authority matrix passes. The Vercel project is the long-lived production target profile but is not required to misrepresent the reference custody profile as unverified when a separate approved profile is actually observed.",
+  "reference_profile": {
+    "profile_id": "CDX-CUSTODY-GHA-001",
+    "policy_ref": "SPETL/custody/github-actions-reference-profile.json",
+    "storage_principal": "GITHUB_ACTIONS_ARTIFACT_SERVICE",
+    "trust_separation": "producer, custodian and verifier execute as separate workflow runs; custodian/verifier read trusted main code and have no repository write permission",
+    "retention_days": 90,
+    "role": "core-release independent reference custody"
+  }
 }
