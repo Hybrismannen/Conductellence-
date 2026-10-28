@@ -1,7 +1,7 @@
 {
   "schema": "cdx.spetl.custody-deployment-state/v1.0",
-  "custody_id": "CDX-CUSTODY-001",
-  "state": "REFERENCE_PROFILE_IMPLEMENTED_PENDING_OBSERVED_VERIFICATION",
+  "custody_id": "CDX-CUSTODY-GHA-001",
+  "state": "VERIFIED_REFERENCE_CUSTODY",
   "observed_at": "2026-10-28",
   "implementation": {
     "service_root": "SPETL/custody-service",
@@ -19,22 +19,42 @@
     "region": "fra1"
   },
   "external_verification": {
-    "state": "NOT_RUN",
-    "approved_profile": null,
+    "state": "VERIFIED",
+    "approved_profile": "CDX-CUSTODY-GHA-001",
     "tests": {
-      "allow": "NOT_RUN",
-      "deny": "NOT_RUN",
-      "policy_unavailable": "NOT_RUN",
-      "denied_write": "NOT_RUN",
-      "invalid_event": "NOT_RUN",
-      "tamper": "NOT_RUN",
-      "withheld_or_loss": "NOT_RUN",
-      "different_identity": "NOT_RUN",
-      "forged_authority": "NOT_RUN",
-      "write_read_verify_provenance": "NOT_RUN"
+      "allow": "PASS",
+      "deny": "PASS",
+      "policy_unavailable": "PASS",
+      "denied_write": "PASS",
+      "invalid_event": "PASS",
+      "tamper": "PASS",
+      "withheld_or_loss": "PASS",
+      "different_identity": "PASS",
+      "forged_authority": "PASS",
+      "write_read_verify_provenance": "PASS"
+    },
+    "provenance": {
+      "source_commit": "9aa8b034e82283a19e6e0106a7ef0ed8e5fdef15",
+      "producer_run_id": "40782930399",
+      "producer_artifact_id": "12857213700",
+      "producer_artifact_digest": "sha256:5a4658f301858067b27e6edbed14c398f4cb4db98641a3e74ece64933600cec7",
+      "custodian_run_id": "40782954827",
+      "custody_artifact_id": "12857114760",
+      "custody_artifact_digest": "sha256:22a8b97e50e6dec3f203135555f570576f68b13419d4c68d53ca1838a7a0462c",
+      "verifier_run_id": "40782987339",
+      "verification_artifact_id": "12857499066",
+      "verification_artifact_digest": "sha256:50b14a79fc3bb7b46611f5e32e0a1681c02149cb61e3b74e5ddcf3f3c6817f10",
+      "bundle_id": "CDX-BUNDLE-9D4792365BC245D28592DB6517F3109E",
+      "bundle_hash": "sha256:0184925aff123ddd6bd8a83f147329ff3249f9462ccd936f7de639d0920929fc",
+      "receipt_id": "CDX-GHA-RCPT-912543631795420AA036980BDD7E2793",
+      "receipt_hash": "sha256:6090c6fcb8b3392b98e5696d2858c63f444914b39e0c9726dfcf664e222c39d9",
+      "verification_id": "CDX-GHA-VERIFY-80FA56D50B214E8E994EDE3E88C5EB55",
+      "verification_report_hash": "sha256:ead380c23a2e0f56ec688d45b609e9676e2c77c090cefcecd45fed59c38f1e73",
+      "event_count": 3,
+      "verified_at": "2026-10-28T22:50:32.269589+00:00"
     }
   },
-  "satisfies_enforcing_requirement": false,
+  "satisfies_enforcing_requirement": true,
   "blocker_id": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001",
   "provisioning_blocker": {
     "provider": "Vercel",
@@ -56,14 +76,33 @@
   "profiles": {
     "github_actions_reference": {
       "custody_id": "CDX-CUSTODY-GHA-001",
-      "state": "IMPLEMENTED_PENDING_OBSERVED_VERIFICATION",
+      "state": "VERIFIED",
       "producer_workflow": ".github/workflows/spetl-evidence-producer.yml",
       "custodian_workflow": ".github/workflows/spetl-independent-custodian.yml",
       "verifier_workflow": ".github/workflows/spetl-custody-verifier.yml",
       "storage_principal": "GITHUB_ACTIONS_ARTIFACT_SERVICE",
       "retention_days": 90,
-      "observed_provenance": null,
-      "satisfies_enforcing_requirement": false
+      "observed_provenance": {
+        "source_commit": "9aa8b034e82283a19e6e0106a7ef0ed8e5fdef15",
+        "producer_run_id": "40782930399",
+        "producer_artifact_id": "12857213700",
+        "producer_artifact_digest": "sha256:5a4658f301858067b27e6edbed14c398f4cb4db98641a3e74ece64933600cec7",
+        "custodian_run_id": "40782954827",
+        "custody_artifact_id": "12857114760",
+        "custody_artifact_digest": "sha256:22a8b97e50e6dec3f203135555f570576f68b13419d4c68d53ca1838a7a0462c",
+        "verifier_run_id": "40782987339",
+        "verification_artifact_id": "12857499066",
+        "verification_artifact_digest": "sha256:50b14a79fc3bb7b46611f5e32e0a1681c02149cb61e3b74e5ddcf3f3c6817f10",
+        "bundle_id": "CDX-BUNDLE-9D4792365BC245D28592DB6517F3109E",
+        "bundle_hash": "sha256:0184925aff123ddd6bd8a83f147329ff3249f9462ccd936f7de639d0920929fc",
+        "receipt_id": "CDX-GHA-RCPT-912543631795420AA036980BDD7E2793",
+        "receipt_hash": "sha256:6090c6fcb8b3392b98e5696d2858c63f444914b39e0c9726dfcf664e222c39d9",
+        "verification_id": "CDX-GHA-VERIFY-80FA56D50B214E8E994EDE3E88C5EB55",
+        "verification_report_hash": "sha256:ead380c23a2e0f56ec688d45b609e9676e2c77c090cefcecd45fed59c38f1e73",
+        "event_count": 3,
+        "verified_at": "2026-10-28T22:50:32.269589+00:00"
+      },
+      "satisfies_enforcing_requirement": true
     },
     "vercel_long_lived_target": {
       "custody_id": "CDX-CUSTODY-001",
@@ -94,5 +133,6 @@
       },
       "satisfies_enforcing_requirement": false
     }
-  }
+  },
+  "blocker_state": "CLOSED"
 }
