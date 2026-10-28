@@ -9,26 +9,117 @@
   "governance_standard": "CDX-GOV-ANCHOR-001",
   "canonical_local_anchor": ".cdx/anchor.json",
   "migration_source": "ESTATE-REGISTRY/systems.json",
-  "updated_at": "2026-10-06T19:56:34Z",
+  "updated_at": "2026-10-28",
   "entries": [
-    {"repository":"Hybrismannen/Conductellence-","system_id":"CDX-SYS-001","role":"CDX_AUTHORITY","anchor_state":"AUTHORITY_SOURCE","legacy_manifest":null},
-    {"repository":"Hybrismannen/form-flode","system_id":"CDX-EST-001","anchor_state":"MIGRATION_PENDING","legacy_manifest":".security/conductellence.json"},
-    {"repository":"Hybrismannen/form-flode-dna","system_id":"CDX-EST-002","anchor_state":"MIGRATION_PENDING","legacy_manifest":".security/conductellence.json"},
-    {"repository":"Hybrismannen/pius-universe","system_id":"CDX-EST-003","anchor_state":"MIGRATION_PENDING","legacy_manifest":".security/conductellence.json"},
-    {"repository":"Hybrismannen/pius-pwe","system_id":"CDX-EST-004","anchor_state":"MIGRATION_PENDING","legacy_manifest":".security/conductellence.json"},
-    {"repository":"Hybrismannen/pius-codex-5","system_id":"CDX-EST-005","anchor_state":"MIGRATION_PENDING","legacy_manifest":".security/conductellence.json"},
-    {"repository":"Hybrismannen/pius-lifetime-audit-2026","system_id":"CDX-EST-006","anchor_state":"MIGRATION_PENDING","legacy_manifest":".security/conductellence.json"},
-    {"repository":"Hybrismannen/udl-twin","system_id":"CDX-EST-007","anchor_state":"MIGRATION_PENDING","legacy_manifest":".security/conductellence.json"},
-    {"repository":"Hybrismannen/green-bell-statsvault","system_id":"CDX-EST-008","anchor_state":"MIGRATION_PENDING","legacy_manifest":".security/conductellence.json"},
-    {"repository":"Hybrismannen/RFSU-godex","system_id":"CDX-EST-009","anchor_state":"MIGRATION_PENDING","legacy_manifest":".security/conductellence.json"},
-    {"repository":"Hybrismannen/RFSU-godex-FF","system_id":"CDX-EST-010","anchor_state":"MIGRATION_PENDING","legacy_manifest":".security/conductellence.json"},
-    {"repository":"Hybrismannen/Hy","system_id":"CDX-EST-011","anchor_state":"MIGRATION_PENDING","legacy_manifest":".security/conductellence.json"},
-    {"repository":"Hybrismannen/livicity-cwvs-reference","system_id":"CDX-EST-012","anchor_state":"MIGRATION_PENDING","legacy_manifest":".security/conductellence.json"},
-    {"repository":"Hybrismannen/nsliengine","system_id":"CDX-EST-013","anchor_state":"MIGRATION_PENDING","legacy_manifest":".security/conductellence.json"},
-    {"repository":"Hybrismannen/Digital-Apartheid","system_id":"CDX-EST-014","anchor_state":"MIGRATION_PENDING","legacy_manifest":".security/conductellence.json"},
-    {"repository":"Hybrismannen/NSLI","system_id":"CDX-EST-015","anchor_state":"MIGRATION_PENDING","legacy_manifest":".security/conductellence.json"},
-    {"repository":"Hybrismannen/metoyo","system_id":"CDX-EST-016","anchor_state":"MIGRATION_PENDING","legacy_manifest":".security/conductellence.json"},
-    {"repository":"Motherpher/CareerHubZero","system_id":"CDX-EST-017","anchor_state":"MIGRATION_PENDING","legacy_manifest":".security/conductellence.json"},
+    {
+      "repository": "Hybrismannen/Conductellence-",
+      "system_id": "CDX-SYS-001",
+      "role": "CDX_AUTHORITY",
+      "anchor_state": "AUTHORITY_SOURCE",
+      "legacy_manifest": null
+    },
+    {
+      "repository": "Hybrismannen/form-flode",
+      "system_id": "CDX-EST-001",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/form-flode-dna",
+      "system_id": "CDX-EST-002",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/pius-universe",
+      "system_id": "CDX-EST-003",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/pius-pwe",
+      "system_id": "CDX-EST-004",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/pius-codex-5",
+      "system_id": "CDX-EST-005",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/pius-lifetime-audit-2026",
+      "system_id": "CDX-EST-006",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/udl-twin",
+      "system_id": "CDX-EST-007",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/green-bell-statsvault",
+      "system_id": "CDX-EST-008",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/RFSU-godex",
+      "system_id": "CDX-EST-009",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/RFSU-godex-FF",
+      "system_id": "CDX-EST-010",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/Hy",
+      "system_id": "CDX-EST-011",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/livicity-cwvs-reference",
+      "system_id": "CDX-EST-012",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/nsliengine",
+      "system_id": "CDX-EST-013",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/Digital-Apartheid",
+      "system_id": "CDX-EST-014",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/NSLI",
+      "system_id": "CDX-EST-015",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Hybrismannen/metoyo",
+      "system_id": "CDX-EST-016",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
+    {
+      "repository": "Motherpher/CareerHubZero",
+      "system_id": "CDX-EST-017",
+      "anchor_state": "MIGRATION_PENDING",
+      "legacy_manifest": ".security/conductellence.json"
+    },
     {
       "repository": "Motherpher/FFOS",
       "system_id": "FFOS",
@@ -41,5 +132,26 @@
       "runtime_integration_state": "BOUND_PENDING_RUNTIME_INTEGRATION",
       "last_verified_at": "2026-10-06T19:56:34Z"
     }
-  ]
+  ],
+  "pending_admissions": [
+    {
+      "repository": "Motherpher/form-flode",
+      "system_id": "FFC",
+      "status": "PENDING_PR_MERGE_AND_CDX_VERIFICATION",
+      "source_branch": "feat/projecthub-dual-agents-forma-floda-20261028",
+      "source_pr": "https://github.com/Motherpher/form-flode/pull/34",
+      "anchor_manifest": ".cdx/anchor.json",
+      "anchor_state": "ANCHOR_DECLARED",
+      "verification_state": "NOT_VERIFIED",
+      "binding_mode": "PINNED_COMMIT",
+      "cdx_ref": "7edbc47899af23b415114628469aca2970779ea1",
+      "historical_name_note": "Different repository from existing Hybrismannen/form-flode legacy registration; do not silently merge or overwrite historical identity."
+    }
+  ],
+  "registration_semantics": {
+    "effective_entries": "entries reflects already admitted surfaces and their last available source evidence",
+    "pending_entries": "pending_admissions are NOT admitted/bound until their PR merges, anchor is independently verified and estate registration receives approval",
+    "repository_anchor_vs_runtime": "FFOS CDX_CI_MONITORED is repository-level CI monitoring; actual runtime BOUND_PENDING_RUNTIME_INTEGRATION remains unverified",
+    "projecthub_scope": "ProjectHub is inside Motherpher/FFOS and is covered by its repository anchor; consequential ProjectHub effects require separate local enforcement evidence"
+  }
 }
