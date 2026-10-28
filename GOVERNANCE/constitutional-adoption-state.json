@@ -4,8 +4,8 @@
   "law_id": "CDX-LAW-001",
   "system_id": "CDX-SYS-001",
   "target_constitutional_version": "1.0.0",
-  "current_constitutional_state": "CONSTITUTIONAL_CANDIDATE",
-  "prior_constitutional_state": "FOUNDATIONAL_DRAFT",
+  "current_constitutional_state": "STABLE_CANDIDATE",
+  "prior_constitutional_state": "CONSTITUTIONAL_CANDIDATE",
   "target_state": "ADOPTED",
   "transition_sequence": [
     "FOUNDATIONAL_DRAFT",
@@ -19,7 +19,23 @@
       "to": "CONSTITUTIONAL_CANDIDATE",
       "date": "2026-10-28",
       "authority_ref": "GOVERNANCE/orders/CDX-CONSTITUTIONAL-AUTHORIZATION-001.json",
-      "basis": "WP03 initiated after WP00-WP02 consolidation, reconciliation and frozen-boundary closure."
+      "basis": "WP03 initiated after WP00-WP02 consolidation, reconciliation and frozen-boundary closure.",
+      "evidence": {
+        "pr": "Hybrismannen/Conductellence-#25",
+        "merge_commit": "4e238ef93a944cbaa9cf082f39587d8bd02750b8",
+        "required_gates": "PASS"
+      }
+    },
+    {
+      "from": "CONSTITUTIONAL_CANDIDATE",
+      "to": "STABLE_CANDIDATE",
+      "date": "2026-10-28",
+      "authority_ref": "GOVERNANCE/orders/CDX-CONSTITUTIONAL-AUTHORIZATION-001.json",
+      "basis": "CONSTITUTIONAL_CANDIDATE merged after Law Audit, Constitutional Mutation Guard, Remediation Readiness and Estate Registry Consistency all passed.",
+      "candidate_evidence": {
+        "pr": "Hybrismannen/Conductellence-#25",
+        "merge_commit": "4e238ef93a944cbaa9cf082f39587d8bd02750b8"
+      }
     }
   ],
   "authorization_ref": "GOVERNANCE/orders/CDX-CONSTITUTIONAL-AUTHORIZATION-001.json",
@@ -46,5 +62,12 @@
     "CDX-BLOCK-ESTATE-RUNTIME-001"
   ],
   "adoption_effect": "Constitutional adoption establishes the internal normative status of CDX-LAW-001 only. It does not establish production enforcement, stable system release, independent evidence custody, repository protection or estate runtime verification.",
-  "updated_at": "2026-10-28"
+  "updated_at": "2026-10-28",
+  "stable_candidate_basis": {
+    "candidate_merge_commit": "4e238ef93a944cbaa9cf082f39587d8bd02750b8",
+    "candidate_pr": 25,
+    "candidate_gates": "PASS",
+    "scope_change": false,
+    "boundary_exceptions": 0
+  }
 }
