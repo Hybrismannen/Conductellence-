@@ -29,7 +29,9 @@
     "WP04 custody code and contracts do not close the independent-evidence blocker; external Vercel custody provisioning and observed tests are required.",
     "WP04 external custody provisioning is blocked by Vercel team billing state (HTTP 402 resource_creation_blocked). Existing unrelated Vercel projects were not repurposed because that would weaken trust-domain independence.",
     "WP05 native repository protection is blocked by the current private-repository GitHub plan/capability and connector administration access. CDX will not make the repository public or alter plan/billing automatically.",
-    "WP06 found and is repairing a SPETL v1.1 compatibility defect in the canonical/distributed runtime before assembling the CDX 1.0 release candidate."
+    "WP06 found and is repairing a SPETL v1.1 compatibility defect in the canonical/distributed runtime before assembling the CDX 1.0 release candidate.",
+    "WP07 preflight confirms internal CDX 1.0 candidate readiness but release remains blocked by repository protection and independent evidence custody external gates.",
+    "Repository metadata hygiene: description derivation remains stale (issue #14); homepage currently points to udl-twin.vercel.app and requires owner review."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
@@ -124,7 +126,7 @@
     "state_ref": "GOVERNANCE/repository-protection-state.json"
   },
   "wp06_distribution_runtime": {
-    "state": "RELEASE_CANDIDATE_PACKAGED_FOR_REVIEW",
+    "state": "RUNTIME_CONTRACT_CLOSED_RELEASE_CANDIDATE_PACKAGED",
     "contract_id": "CDX-RUNTIME-001",
     "contract_version": "1.0.0",
     "release_candidate": "CDX-DIST-1.0.0-RC1",
@@ -135,6 +137,20 @@
     "external_core_blockers_still_required": [
       "CDX-BLOCK-REPO-PROTECTION-001",
       "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001"
-    ]
+    ],
+    "wp06_closed": true
+  },
+  "wp07_release_preflight": {
+    "state": "BLOCKED_EXTERNAL_GATES",
+    "preflight_id": "CDX-RELEASE-PREFLIGHT-1.0.0",
+    "target_release": "1.0.0",
+    "release_order": "CDX-RELEASE-1.0.0",
+    "release_authorized": false,
+    "internal_candidate_ready": true,
+    "external_core_blockers": [
+      "CDX-BLOCK-REPO-PROTECTION-001",
+      "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001"
+    ],
+    "next_state_if_cleared": "READY_FOR_HUMAN_RELEASE_DECISION"
   }
 }
