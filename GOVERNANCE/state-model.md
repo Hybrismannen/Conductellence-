@@ -10,7 +10,9 @@ Describes the maturity and formal status of the Conductellence constitutional so
 
 `FOUNDATIONAL_DRAFT → CONSTITUTIONAL_CANDIDATE → STABLE_CANDIDATE → ADOPTED → AMENDED`
 
-The current constitutional state remains `FOUNDATIONAL_DRAFT` until a separate constitutional adoption decision changes it.
+`CONSTITUTIONAL_CANDIDATE` means the frozen constitutional corpus has entered the governed adoption process. `STABLE_CANDIDATE` means the candidate has passed its constitutional closure gates without scope change. `ADOPTED` means explicit human constitutional authority has adopted the internal constitutional source.
+
+The current constitutional state is `CONSTITUTIONAL_CANDIDATE` under `CDX-WP03`. Constitutional maturity is independent of system release and enforcement.
 
 ### Core runtime state
 
@@ -74,3 +76,7 @@ Core release closure may complete when the constitutional source, reference runt
 ## FFOS boundary
 
 `Motherpher/FFOS` is a consumer control plane, not the canonical home of Conductellence. Conductellence is completed and released in its own repository first. FFOS integration may then move through its own binding states until `VERIFIED_RUNTIME_BOUND` is achieved.
+
+## Constitutional adoption separation
+
+A transition to `ADOPTED` establishes the internal normative status of `CDX-LAW-001`. It does not by itself move the core runtime, release, enforcement or estate-integration axes. Constitutional adoption therefore cannot be used to bypass repository protection, independent evidence preservation, runtime integration or release acceptance gates.
