@@ -9,7 +9,7 @@
     "schema_version": "1.1"
   },
   "independent_preservation": {
-    "state": "PROVISIONING_BLOCKED_EXTERNAL_ACCOUNT",
+    "state": "REFERENCE_PROFILE_IMPLEMENTED_PENDING_OBSERVED_VERIFICATION",
     "satisfies_enforcing_requirement": false,
     "blocker_id": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001",
     "required_properties": [
@@ -25,16 +25,40 @@
       "object storage with immutability/WORM and independent credentials",
       "dedicated audit/evidence service with signed or hash-linked records"
     ],
-    "custody_id": "CDX-CUSTODY-001",
-    "custody_policy": "SPETL/custody/custody-policy.json",
+    "custody_id": "CDX-CUSTODY-GHA-001",
+    "custody_policy": "SPETL/custody/github-actions-reference-profile.json",
     "deployment_state": "SPETL/custody/deployment-state.json",
     "target_provider": "Vercel",
     "target_project": "cdx-spetl-custody",
     "target_store": "cdx-spetl-evidence",
-    "source_authentication": "GITHUB_ACTIONS_OIDC",
-    "storage_authentication": "VERCEL_OIDC",
-    "external_verification": "BLOCKED_BEFORE_PROVISIONING",
-    "provisioning_blocker": "VERCEL_RESOURCE_CREATION_BLOCKED_OVERDUE_BALANCE"
+    "source_authentication": "SEPARATE_GITHUB_WORKFLOW_RUN_PROVENANCE",
+    "storage_authentication": "GITHUB_ACTIONS_ARTIFACT_SERVICE",
+    "external_verification": "NOT_RUN",
+    "provisioning_blocker": "VERCEL_RESOURCE_CREATION_BLOCKED_OVERDUE_BALANCE",
+    "approved_profiles": [
+      {
+        "profile_id": "CDX-CUSTODY-GHA-001",
+        "state": "IMPLEMENTED_PENDING_OBSERVED_VERIFICATION",
+        "policy_ref": "SPETL/custody/github-actions-reference-profile.json",
+        "storage_principal": "GITHUB_ACTIONS_ARTIFACT_SERVICE",
+        "retention_days": 90,
+        "scope": "CDX reference evidence pipeline / core-release evidence-independence gate"
+      },
+      {
+        "profile_id": "CDX-CUSTODY-001",
+        "state": "PROVISIONING_BLOCKED_EXTERNAL_ACCOUNT",
+        "policy_ref": "SPETL/custody/custody-policy.json",
+        "storage_principal": "VERCEL_PRIVATE_BLOB",
+        "scope": "long-lived production evidence target"
+      }
+    ],
+    "long_lived_target": {
+      "provider": "Vercel",
+      "project": "cdx-spetl-custody",
+      "store": "cdx-spetl-evidence",
+      "provisioning_state": "PROVISIONING_BLOCKED_EXTERNAL_ACCOUNT"
+    },
+    "rule": "At least one human-approved custody profile must demonstrate actual independent write/read/verify provenance and the full negative matrix before CDX-BLOCK-EVIDENCE-INDEPENDENCE-001 may close. Implementation alone never satisfies the requirement."
   },
-  "rule": "Local SPETL semantics plus a custody-service implementation do not satisfy independent preservation until a separately provisioned custody project/store passes the external positive/negative verification matrix."
+  "rule": "At least one human-approved custody profile must demonstrate actual independent write/read/verify provenance and the full negative matrix before CDX-BLOCK-EVIDENCE-INDEPENDENCE-001 may close. Implementation alone never satisfies the requirement."
 }
