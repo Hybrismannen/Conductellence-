@@ -4,7 +4,7 @@
 **Name derivation:** **Code of Conduct + Excellence**  
 **Canonical system:** `CDX-SYS-001`  
 **Canonical law:** `CDX-LAW-001`  
-**Current law version:** `0.1.0-bootstrap` *(constitutional candidate; system remains pre-release)*
+**Current law version:** `0.1.0-bootstrap` *(stable constitutional candidate; system remains pre-release)*
 
 > `CDX` is the sole canonical short name for Conductellence in architecture, governance, identifiers and integration language. No parallel system shorthand is permitted.
 
@@ -12,7 +12,7 @@
 
 Conductellence state is represented on independent axes rather than by one overloaded label.
 
-- **Constitutional state:** `CONSTITUTIONAL_CANDIDATE`
+- **Constitutional state:** `STABLE_CANDIDATE`
 - **Core runtime state:** `VERIFIED_REFERENCE_RUNTIME`
 - **Release state:** `PRE_RELEASE`
 - **Enforcement state:** `BOOTSTRAP`

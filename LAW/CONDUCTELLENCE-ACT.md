@@ -5,7 +5,7 @@
 **Canonical law:** `CDX-LAW-001`  
 **Canonical system:** `CDX-SYS-001`  
 **Version:** 0.1.0-bootstrap  
-**Status:** CONSTITUTIONAL CANDIDATE — frozen for governed constitutional closure; not yet system-released or production-enforced  
+**Status:** STABLE CANDIDATE — constitutional closure gates passed at candidate stage; awaiting final human adoption; not system-released or production-enforced  
 **Initial repository admission:** 24 September 2026  
 **Language:** English
 

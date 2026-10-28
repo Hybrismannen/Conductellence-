@@ -12,7 +12,7 @@ Describes the maturity and formal status of the Conductellence constitutional so
 
 `CONSTITUTIONAL_CANDIDATE` means the frozen constitutional corpus has entered the governed adoption process. `STABLE_CANDIDATE` means the candidate has passed its constitutional closure gates without scope change. `ADOPTED` means explicit human constitutional authority has adopted the internal constitutional source.
 
-The current constitutional state is `CONSTITUTIONAL_CANDIDATE` under `CDX-WP03`. Constitutional maturity is independent of system release and enforcement.
+The current constitutional state is `STABLE_CANDIDATE` under `CDX-WP03`. Constitutional maturity is independent of system release and enforcement.
 
 ### Core runtime state
 

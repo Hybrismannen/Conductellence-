@@ -86,6 +86,13 @@ header={
 if header not in law[:1200]:
     fail(f"Act header does not match {state}")
 
+if state in {"STABLE_CANDIDATE","ADOPTED"}:
+    stable=adoption.get("stable_candidate_basis",{})
+    if stable.get("candidate_merge_commit")!="4e238ef93a944cbaa9cf082f39587d8bd02750b8":
+        fail("stable/adopted state lacks verified constitutional-candidate merge provenance")
+    if stable.get("candidate_gates")!="PASS" or stable.get("scope_change") is not False:
+        fail("stable/adopted state lacks clean candidate gate evidence")
+
 if state=="ADOPTED":
     if "**Version:** 1.0.0" not in law[:1200]:
         fail("adopted Act must be constitutional version 1.0.0")
