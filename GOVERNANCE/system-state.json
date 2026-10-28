@@ -104,16 +104,26 @@
     "adoption_order_ref": "GOVERNANCE/orders/CDX-CONSTITUTIONAL-ADOPTION-001.json"
   },
   "wp04_evidence_custody": {
-    "custody_id": "CDX-CUSTODY-001",
-    "state": "PROVISIONING_BLOCKED_EXTERNAL_ACCOUNT",
-    "policy_ref": "SPETL/custody/custody-policy.json",
+    "programme": "CDX-WP04",
+    "approval_ref": "GOVERNANCE/orders/CDX-EVIDENCE-CUSTODY-APPROVAL-001.json",
+    "state": "REFERENCE_PROFILE_IMPLEMENTED_PENDING_OBSERVED_VERIFICATION",
+    "reference_profile": {
+      "custody_id": "CDX-CUSTODY-GHA-001",
+      "state": "IMPLEMENTED_PENDING_OBSERVED_VERIFICATION",
+      "policy_ref": "SPETL/custody/github-actions-reference-profile.json",
+      "storage_principal": "GITHUB_ACTIONS_ARTIFACT_SERVICE",
+      "retention_days": 90
+    },
+    "long_lived_target": {
+      "custody_id": "CDX-CUSTODY-001",
+      "provider": "Vercel",
+      "state": "PROVISIONING_BLOCKED_EXTERNAL_ACCOUNT",
+      "policy_ref": "SPETL/custody/custody-policy.json"
+    },
     "deployment_state_ref": "SPETL/custody/deployment-state.json",
+    "preservation_state_ref": "SPETL/evidence-preservation-state.json",
     "release_blocker": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001",
-    "blocker_closed": false,
-    "provider": "Vercel",
-    "external_blocker": "VERCEL_RESOURCE_CREATION_BLOCKED_OVERDUE_BALANCE",
-    "user_action_required": true,
-    "safe_workaround_available": false
+    "blocker_closed": false
   },
   "wp05_repository_protection": {
     "state": "PLATFORM_PLAN_GATE_BLOCKED",
