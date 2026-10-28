@@ -1,0 +1,144 @@
+{
+  "schema": "cdx.release-boundary/v1.0",
+  "boundary_id": "CDX-RC01-BOUNDARY-001",
+  "target_release": "CDX 1.0",
+  "state": "FROZEN_FOR_CLOSURE",
+  "effective_at": "2026-10-28",
+  "baseline_main_sha": "749823c4f3a9a6b73fc608666c065c50530d14a9",
+  "authority": "HUMAN_SOVEREIGN_AUTHORITY",
+  "purpose": "Freeze the Conductellence 1.0 core system boundary so WP03-WP07 close existing obligations without architectural feature expansion.",
+  "canonical_identities": {
+    "system": "CDX-SYS-001",
+    "law": "CDX-LAW-001",
+    "runtime_contract": "CDX-RUNTIME-001",
+    "estate_anchor_standard": "CDX-GOV-ANCHOR-001",
+    "scientific_evidence_authority": "CDX-EVID-001",
+    "short_name": "CDX",
+    "name_derivation": "Code of Conduct + Excellence"
+  },
+  "frozen_constitutional_topology": {
+    "foundational_principles": 7,
+    "law_sections": 131,
+    "fully_automatable_sections": 69,
+    "review_governed_sections": 62,
+    "rule": "Counts are frozen for CDX 1.0 closure. A change requires an approved boundary exception before merge."
+  },
+  "in_scope_core_domains": [
+    "LAW",
+    "INTERPRETATION",
+    "CONTROL-CATALOGUE",
+    "POLICY",
+    "AUDITS",
+    "SPETL",
+    "SECURITY-TWIN",
+    "appendices",
+    "GLOBAL-AUTHORITY-CORPUS",
+    "LEGAL-REFERENCES",
+    "LEGAL-RESOLVER",
+    "REGULATORY-DRIFT",
+    "EVIDENCE-AUTHORITY",
+    "REVIEW-CATALOGUE",
+    "RED-TEAM",
+    "DISTRIBUTION",
+    "RUNTIME-INTEGRATION",
+    "GOVERNANCE",
+    "ESTATE-REGISTRY",
+    "PROGRAMME",
+    ".github"
+  ],
+  "closure_obligations": [
+    {
+      "wp": "CDX-WP03",
+      "obligation": "Constitutional closure/adoption process using the existing CDX-LAW-001 topology",
+      "may_expand_scope": false
+    },
+    {
+      "wp": "CDX-WP04",
+      "obligation": "Independent SPETL evidence custody, attestation and verification",
+      "may_expand_scope": false
+    },
+    {
+      "wp": "CDX-WP05",
+      "obligation": "Constitutional repository/release protection",
+      "may_expand_scope": false
+    },
+    {
+      "wp": "CDX-WP06",
+      "obligation": "Distribution package and CDX-RUNTIME-001 closure",
+      "may_expand_scope": false
+    },
+    {
+      "wp": "CDX-WP07",
+      "obligation": "Final acceptance, release packaging and CDX 1.0 release decision",
+      "may_expand_scope": false
+    }
+  ],
+  "allowed_during_freeze": [
+    "correct defects or contradictions inside existing domains",
+    "harden existing controls, audits, schemas, contracts and evidence paths",
+    "implement independent evidence custody required by existing blockers",
+    "enable or evidence repository protection required by existing blockers",
+    "refine distribution and runtime contracts without creating a new authority class",
+    "perform existing state transitions when their already-defined gates are satisfied",
+    "prepare release artifacts, compatibility declarations and migration instructions",
+    "update programme/audit evidence for WP03-WP07"
+  ],
+  "prohibited_without_boundary_exception": [
+    "add a new first-class top-level CDX subsystem/domain",
+    "add or remove a Foundational Principle",
+    "add or remove a CDX-LAW-001 section",
+    "replace any canonical identity listed in canonical_identities",
+    "introduce a parallel Conductellence shorthand",
+    "create non-human sovereignty or authority above human sovereign authority",
+    "turn CDX into a universal super-admin with unrestricted downstream write authority",
+    "collapse repository binding, runtime verification, release and enforcement into one state",
+    "remove an open blocker by redefining the requirement instead of satisfying it",
+    "bring product-specific downstream business logic into the CDX core"
+  ],
+  "explicitly_not_core_1_0_execution": [
+    {
+      "wp": "CDX-WP08",
+      "work": "Full 31-repository Registry v2 applicability classification"
+    },
+    {
+      "wp": "CDX-WP09",
+      "work": "Canonical anchor migration across applicable repositories"
+    },
+    {
+      "wp": "CDX-WP10",
+      "work": "Estate anchor verification and reconciliation"
+    },
+    {
+      "wp": "CDX-WP11",
+      "work": "FFOS first verified runtime binding"
+    },
+    {
+      "wp": "CDX-WP12",
+      "work": "Pius binding verification"
+    },
+    {
+      "wp": "CDX-WP13",
+      "work": "FFC admission"
+    },
+    {
+      "wp": "CDX-WP14",
+      "work": "Estate-wide CDX 1.0 propagation"
+    }
+  ],
+  "boundary_exception_process": {
+    "required": true,
+    "authority": "HUMAN_SOVEREIGN_AUTHORITY",
+    "record_path_pattern": "GOVERNANCE/orders/CDX-BOUNDARY-EXCEPTION-*.json",
+    "minimum_record": [
+      "exception_id",
+      "requested_change",
+      "reason",
+      "affected_frozen_element",
+      "human_decision",
+      "decision_date"
+    ],
+    "rule": "An exception must be explicit and reviewed before the frozen element changes. Silence, implementation convenience or downstream pressure is not approval."
+  },
+  "active_exceptions": [],
+  "release_rule": "CDX 1.0 closure is completion of the frozen core, not expansion of the core."
+}
