@@ -1,0 +1,91 @@
+name: Conductellence Human Sovereign Approval
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  pull-requests: read
+  statuses: write
+
+jobs:
+  human-sovereign-approval:
+    if: >
+      github.event.issue.pull_request &&
+      github.event.comment.author_association == 'OWNER' &&
+      (github.event.comment.body == '/cdx-approve' || github.event.comment.body == '/cdx-revoke')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bind approval decision to exact PR head
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.issue.number }}
+          COMMAND: ${{ github.event.comment.body }}
+          APPROVER: ${{ github.event.comment.user.login }}
+          COMMENT_URL: ${{ github.event.comment.html_url }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          repo=os.environ["REPOSITORY"]
+          pr_number=os.environ["PR_NUMBER"]
+          command=os.environ["COMMAND"]
+          approver=os.environ["APPROVER"]
+          comment_url=os.environ["COMMENT_URL"]
+          token=os.environ["GH_TOKEN"]
+
+          def api(url, method="GET", payload=None):
+              data=None if payload is None else json.dumps(payload).encode()
+              req=urllib.request.Request(
+                  url,
+                  data=data,
+                  method=method,
+                  headers={
+                      "Authorization": f"Bearer {token}",
+                      "Accept": "application/vnd.github+json",
+                      "Content-Type": "application/json",
+                      "X-GitHub-Api-Version": "2022-11-28",
+                      "User-Agent": "conductellence-human-sovereign-approval",
+                  },
+              )
+              with urllib.request.urlopen(req, timeout=20) as response:
+                  return json.load(response)
+
+          pr=api(f"https://api.github.com/repos/{repo}/pulls/{pr_number}")
+          if pr.get("state")!="open":
+              raise SystemExit("FAIL: approval target PR is not open")
+          if pr.get("base",{}).get("ref")!="main":
+              raise SystemExit("FAIL: approval target is not main")
+          head=pr.get("head",{}).get("sha")
+          if not head:
+              raise SystemExit("FAIL: PR head SHA unavailable")
+
+          if command=="/cdx-approve":
+              state="success"
+              description=f"Human sovereign approval by {approver}"
+          else:
+              state="failure"
+              description=f"Human sovereign approval revoked by {approver}"
+
+          result=api(
+              f"https://api.github.com/repos/{repo}/statuses/{head}",
+              method="POST",
+              payload={
+                  "state":state,
+                  "context":"human-sovereign-approval",
+                  "description":description[:140],
+                  "target_url":comment_url,
+              },
+          )
+          print(json.dumps({
+              "context":result.get("context"),
+              "state":result.get("state"),
+              "sha":result.get("sha"),
+              "approver":approver,
+              "command":command,
+          },indent=2))
+          PY
