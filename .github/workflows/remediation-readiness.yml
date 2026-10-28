@@ -16,6 +16,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: python3 AUDITS/audit_release_boundary.py
       - run: python3 AUDITS/audit_constitutional_adoption.py
+      - run: python3 AUDITS/audit_repository_protection.py
       - run: python3 AUDITS/audit_appendices_and_gac.py
       - run: python3 AUDITS/audit_interpretation_records.py
       - run: python3 AUDITS/audit_fully_automatable_controls.py
