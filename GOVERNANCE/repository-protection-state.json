@@ -2,8 +2,8 @@
   "schema": "cdx.repository-protection-state/v1.1",
   "repository": "Hybrismannen/Conductellence-",
   "default_branch": "main",
-  "observed_at": "2026-10-28",
-  "observed_main_sha": "f7e7d120add4572b80b8dbddefe95d6a25c9b0cc",
+  "observed_at": "2026-10-29",
+  "observed_main_sha": "77ef95644c81471c0a3253d4dc4cb85ca8c33756",
   "native_branch_protection": false,
   "native_ruleset": false,
   "branch_protection_verified": false,
@@ -14,14 +14,21 @@
     "rulesets_api_message": "Upgrade to GitHub Pro or make this repository public to enable this feature.",
     "branch_protection_api": "FORBIDDEN_403_RESOURCE_NOT_ACCESSIBLE_BY_INTEGRATION",
     "administration_capability": "UNAVAILABLE",
-    "safe_automatic_remediation": false
+    "safe_automatic_remediation": false,
+    "repository_admin_permission": true,
+    "github_app_administration_scope": "UNAVAILABLE",
+    "alternative_plugin_search": "NO_ALTERNATIVE_GITHUB_ADMINISTRATION_CONNECTOR"
   },
   "in_repo_controls": [
     ".github/CODEOWNERS",
     ".github/workflows/constitutional-mutation-guard.yml",
     ".github/workflows/conductellence-law-audit.yml",
+    ".github/workflows/remediation-readiness.yml",
     "GOVERNANCE/constitutional-change-policy.md",
-    "GOVERNANCE/constitutional-mutation-policy.md"
+    "GOVERNANCE/constitutional-mutation-policy.md",
+    "GOVERNANCE/repository-protection-target.json",
+    "GOVERNANCE/repository-protection-verification.json",
+    "AUDITS/audit_repository_protection.py"
   ],
   "constitutional_effect": "ENFORCING_BLOCKER",
   "satisfies_enforcing_requirement": false,
@@ -47,5 +54,18 @@
     "force push disabled",
     "branch deletion disabled",
     "native/equivalent protection independently re-read and verified"
+  ],
+  "hardening_state": "MAXIMUM_IN_REPO_HARDENING_COMPLETE",
+  "target_profile_ref": "GOVERNANCE/repository-protection-target.json",
+  "platform_verification_ref": "GOVERNANCE/repository-protection-verification.json",
+  "audit_ref": "AUDITS/audit_repository_protection.py",
+  "maximum_safe_hardening_completed": [
+    "protected-surface CODEOWNERS coverage reconciled",
+    "CODEOWNERS itself added to protected mutation path",
+    "canonical target protection profile defined",
+    "separate platform verification record defined",
+    "repository-protection promotion audit added",
+    "Law Audit and Remediation Readiness wired to repository-protection audit",
+    "release remains fail-closed while platform protection is unverified"
   ]
 }
