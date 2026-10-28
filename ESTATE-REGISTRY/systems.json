@@ -200,12 +200,18 @@
       "visibility": "private",
       "default_branch": "main",
       "authority_ref": "CDX-SYS-001",
-      "binding_state": "BOUND_PENDING_RUNTIME_INTEGRATION",
+      "binding_state": "LEGACY_PRESENT_UNMONITORED",
       "runtime_integration_state": "NOT_VERIFIED",
       "binding_manifest": ".security/conductellence.json",
-      "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
       "security_state": "REGISTERED",
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-26",
+      "historical_binding_state": "BOUND_PENDING_RUNTIME_INTEGRATION",
+      "legacy_manifest_observed_on_main": true,
+      "legacy_audit_workflow_observed_on_main": false,
+      "historical_binding_audit_workflow_claim": ".github/workflows/conductellence-binding-audit.yml",
+      "reconciled_at": "2026-10-28",
+      "reconciliation_status": "LEGACY_CI_DRIFT",
+      "reconciliation_note": "Legacy Conductellence manifest is present on main, but the historically recorded conductellence-binding-audit workflow was not observed. Runtime remains NOT_VERIFIED."
     },
     {
       "system_id": "FFOS",
