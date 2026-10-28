@@ -1,0 +1,47 @@
+{
+  "schema": "cdx.spetl.gha-reference-custody/v1.0",
+  "custody_id": "CDX-CUSTODY-GHA-001",
+  "role": "INDEPENDENT_REFERENCE_EVIDENCE_CUSTODY",
+  "state": "IMPLEMENTED_PENDING_OBSERVED_VERIFICATION",
+  "trust_separation": {
+    "evaluated_executor_workflow": ".github/workflows/spetl-evidence-producer.yml",
+    "custodian_workflow": ".github/workflows/spetl-independent-custodian.yml",
+    "verifier_workflow": ".github/workflows/spetl-custody-verifier.yml",
+    "custody_storage_principal": "GITHUB_ACTIONS_ARTIFACT_SERVICE",
+    "separate_workflow_run_required": true,
+    "producer_has_custodian_credentials": false,
+    "custodian_executes_producer_code": false,
+    "custodian_checks_out_trusted_main_code": true,
+    "verifier_checks_out_trusted_main_code": true,
+    "repository_write_permission": false
+  },
+  "integrity_chain": [
+    "SPETL_EVENT_HASH_CHAIN",
+    "CUSTODY_BUNDLE_SHA256",
+    "CUSTODY_RECEIPT_SHA256",
+    "IMMUTABLE_ACTIONS_ARTIFACT_DIGEST",
+    "GITHUB_WORKFLOW_RUN_PROVENANCE"
+  ],
+  "write_read_verify": {
+    "write": "producer artifact is handed off to a separate workflow_run custodian; only validated bundles are re-preserved as custody artifacts",
+    "read": "custody verifier downloads the custody artifact from the custodian workflow run using actions:read",
+    "verify": "trusted-main custody code revalidates event chain, bundle hash, receipt hash, source commit, producer run identity and custody run identity",
+    "loss_detection": "missing producer or custody artifact causes workflow failure and no verification PASS",
+    "denied_write": "invalid bundle, forged authority, unexpected runtime identity, missing event or contradictory effect semantics are rejected before custody receipt creation"
+  },
+  "retention": {
+    "class": "REFERENCE_CUSTODY_90D",
+    "days": 90,
+    "automatic_expiry": true,
+    "legal_hold_rule": "If evidence must outlive the reference retention window, export to an approved long-lived custodian before expiry.",
+    "deletion_rule": "Deletion/expiry is a custody lifecycle action; historical receipt metadata must not be rewritten to imply evidence never existed.",
+    "personal_data_default": "PROHIBITED_BY_DESIGN; use pseudonymous subject_ref and minimization metadata only"
+  },
+  "credential_lifecycle": {
+    "long_lived_custody_key_required": false,
+    "model": "JOB_SCOPED_PLATFORM_CREDENTIALS",
+    "rotation": "new platform-scoped job credentials are issued per workflow execution; no runtime-held storage administrator credential is used"
+  },
+  "scope_limit": "This profile verifies independent custody for the CDX reference evidence pipeline. It does not prove downstream estate runtime binding or replace repository-protection blocker CDX-BLOCK-REPO-PROTECTION-001.",
+  "verification_required_before_blocker_close": true
+}
