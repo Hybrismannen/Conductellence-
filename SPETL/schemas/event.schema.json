@@ -16,8 +16,10 @@
     "decision",
     "authority_ref",
     "mandate_ref",
+    "policy_ref",
     "policy_version",
     "policy_digest",
+    "request_id",
     "correlation_id",
     "causation_id",
     "run_id",
@@ -186,6 +188,14 @@
     "event_hash": {
       "type": "string",
       "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "policy_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "request_id": {
+      "type": "string",
+      "minLength": 1
     }
   },
   "additionalProperties": true
