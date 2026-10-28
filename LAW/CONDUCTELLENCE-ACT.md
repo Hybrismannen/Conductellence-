@@ -5,8 +5,8 @@
 **Canonical law:** `CDX-LAW-001`  
 **Canonical system:** `CDX-SYS-001`  
 **Version:** 0.1.0-bootstrap  
-**Status:** FOUNDATIONAL DRAFT — internally authoritative for further Conductellence development, not yet production-enforced  
-**Adopted into repository:** 24 September 2026  
+**Status:** CONSTITUTIONAL CANDIDATE — frozen for governed constitutional closure; not yet system-released or production-enforced  
+**Initial repository admission:** 24 September 2026  
 **Language:** English
 
 > **Status and legal character.** This Act is the internal constitutional law of the Conductellence-governed digital estate. It is not legislation enacted by a state and does not replace qualified legal advice. Applicable external law, fundamental rights and binding regulatory obligations remain superior wherever they apply.

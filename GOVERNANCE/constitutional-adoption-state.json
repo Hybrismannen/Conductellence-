@@ -1,0 +1,50 @@
+{
+  "schema": "cdx.constitutional-adoption-state/v1.0",
+  "adoption_id": "CDX-CONST-ADOPT-001",
+  "law_id": "CDX-LAW-001",
+  "system_id": "CDX-SYS-001",
+  "target_constitutional_version": "1.0.0",
+  "current_constitutional_state": "CONSTITUTIONAL_CANDIDATE",
+  "prior_constitutional_state": "FOUNDATIONAL_DRAFT",
+  "target_state": "ADOPTED",
+  "transition_sequence": [
+    "FOUNDATIONAL_DRAFT",
+    "CONSTITUTIONAL_CANDIDATE",
+    "STABLE_CANDIDATE",
+    "ADOPTED"
+  ],
+  "transition_history": [
+    {
+      "from": "FOUNDATIONAL_DRAFT",
+      "to": "CONSTITUTIONAL_CANDIDATE",
+      "date": "2026-10-28",
+      "authority_ref": "GOVERNANCE/orders/CDX-CONSTITUTIONAL-AUTHORIZATION-001.json",
+      "basis": "WP03 initiated after WP00-WP02 consolidation, reconciliation and frozen-boundary closure."
+    }
+  ],
+  "authorization_ref": "GOVERNANCE/orders/CDX-CONSTITUTIONAL-AUTHORIZATION-001.json",
+  "release_boundary_ref": "GOVERNANCE/release-boundary-v1.json",
+  "candidate_basis": {
+    "foundational_principles": 7,
+    "law_sections": 131,
+    "fully_automatable_sections": 69,
+    "review_governed_sections": 62,
+    "constitutional_conflicts": 0,
+    "law_integrity_required": true,
+    "review_governance_required": true,
+    "release_boundary_required": "FROZEN_FOR_CLOSURE"
+  },
+  "independent_axes": {
+    "core_runtime_state": "VERIFIED_REFERENCE_RUNTIME",
+    "release_state": "PRE_RELEASE",
+    "enforcement_state": "BOOTSTRAP",
+    "estate_integration_state": "PENDING_RUNTIME_BINDINGS"
+  },
+  "blockers_not_waived": [
+    "CDX-BLOCK-REPO-PROTECTION-001",
+    "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001",
+    "CDX-BLOCK-ESTATE-RUNTIME-001"
+  ],
+  "adoption_effect": "Constitutional adoption establishes the internal normative status of CDX-LAW-001 only. It does not establish production enforcement, stable system release, independent evidence custody, repository protection or estate runtime verification.",
+  "updated_at": "2026-10-28"
+}

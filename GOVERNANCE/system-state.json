@@ -3,7 +3,7 @@
   "system_id": "CDX-SYS-001",
   "system_name": "Conductellence",
   "effective_at": "2026-10-05",
-  "constitutional_state": "FOUNDATIONAL_DRAFT",
+  "constitutional_state": "CONSTITUTIONAL_CANDIDATE",
   "core_runtime_state": "VERIFIED_REFERENCE_RUNTIME",
   "release_state": "PRE_RELEASE",
   "enforcement_state": "BOOTSTRAP",
@@ -83,5 +83,14 @@
     "baseline_main_sha": "ada82874fd0a018241a0b7b77fa0b796a63483a1",
     "policy_ref": "GOVERNANCE/release-boundary-v1.json",
     "scope_change_requires": "HUMAN_APPROVED_BOUNDARY_EXCEPTION"
+  },
+  "constitutional_closure": {
+    "adoption_id": "CDX-CONST-ADOPT-001",
+    "state": "CONSTITUTIONAL_CANDIDATE",
+    "authorization_ref": "GOVERNANCE/orders/CDX-CONSTITUTIONAL-AUTHORIZATION-001.json",
+    "adoption_state_ref": "GOVERNANCE/constitutional-adoption-state.json",
+    "target_state": "ADOPTED",
+    "target_constitutional_version": "1.0.0",
+    "release_effect": "NONE"
   }
 }

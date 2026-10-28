@@ -37,6 +37,9 @@ jobs:
       - name: Audit CDX 1.0 release boundary
         run: python3 AUDITS/audit_release_boundary.py
 
+      - name: Audit constitutional adoption state
+        run: python3 AUDITS/audit_constitutional_adoption.py
+
       - name: Audit Phase B semantic review queue
         run: python3 AUDITS/audit_phase_b_semantic_queue.py
 
