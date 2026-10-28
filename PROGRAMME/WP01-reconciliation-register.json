@@ -41,18 +41,21 @@
       "classification": "DECLARED_CANONICAL_ANCHOR_PENDING_INDEPENDENT_VERIFICATION"
     },
     "Motherpher/form-flode": {
+      "repository_id": "1379622813",
       "anchor_on_main": false,
       "binding_state": "UNBOUND",
       "draft_anchor_state": "ANCHOR_DECLARED",
       "verification_state": "NOT_VERIFIED",
       "legacy_manifest_present": true,
       "legacy_manifest_identity": "Hybrismannen/form-flode",
-      "classification": "PENDING_ADMISSION_WITH_LEGACY_IDENTITY_MISMATCH"
+      "historical_alias": "Hybrismannen/form-flode",
+      "classification": "PENDING_CANONICAL_IDENTITY_MIGRATION"
     },
     "Hybrismannen/form-flode": {
-      "anchor_on_main": false,
-      "legacy_manifest_present": false,
-      "classification": "REGISTERED_LEGACY_BINDING_CLAIM_STALE"
+      "repository_id": "1379622813",
+      "canonical_repository": "Motherpher/form-flode",
+      "classification": "HISTORICAL_ALIAS_SAME_REPOSITORY_OBJECT",
+      "provenance_only": true
     },
     "Hybrismannen/RFSU-godex": {
       "anchor_on_main": false,
@@ -61,11 +64,21 @@
     }
   },
   "estate_topology": {
-    "known_repository_count": 31,
+    "known_repository_identifiers": 31,
+    "unique_current_repository_objects": 30,
+    "historical_alias_records": 1,
     "admitted_registry_records": 19,
-    "pending_admissions": 1,
+    "admitted_unique_repository_objects": 19,
+    "pending_canonical_identity_migrations": 1,
     "outside_central_registry_count": 11,
-    "topology_rule": "31 known repositories -> 31 registry records -> applicability classification -> canonical anchor where applicable -> verification -> CDX 1.0 propagation",
+    "topology_rule": "31 known repository identifiers -> 31 registry records -> identity/alias normalization -> 30 unique current repositories -> applicability classification -> canonical anchor where applicable -> verification -> CDX 1.0 propagation",
+    "alias_resolution": {
+      "historical_repository": "Hybrismannen/form-flode",
+      "canonical_repository": "Motherpher/form-flode",
+      "repository_id": "1379622813",
+      "relation": "SAME_GITHUB_REPOSITORY_OBJECT",
+      "treatment": "HISTORICAL_ALIAS_PROVENANCE_PLUS_PENDING_CANONICAL_IDENTITY_MIGRATION"
+    },
     "outside_central_registry": [
       {
         "repository": "Hybrismannen/Barnombudet",
@@ -207,7 +220,7 @@
     },
     {
       "id": "D-020",
-      "status": "CONFIRMED_BUT_FFC_MAIN_UNBOUND_IDENTITY_DRIFT"
+      "status": "CONFIRMED_WITH_REPOSITORY_IDENTITY_MIGRATION"
     },
     {
       "id": "D-021",
@@ -215,10 +228,20 @@
     },
     {
       "id": "D-022",
-      "status": "CONFIRMED_IMPLEMENTATION_INCOMPLETE"
+      "status": "CONFIRMED_WITH_IDENTITY_NORMALIZATION_31_IDENTIFIERS_30_UNIQUE_REPOSITORIES"
     }
   ],
   "constitutional_conflicts_found": 0,
   "state_promotions_authorized": 0,
-  "next_wp": "CDX-WP02"
+  "next_wp": "CDX-WP02",
+  "identity_findings": [
+    {
+      "finding_id": "WP01-ID-001",
+      "historical_repository": "Hybrismannen/form-flode",
+      "canonical_repository": "Motherpher/form-flode",
+      "repository_id": "1379622813",
+      "evidence": "GitHub get_repo for historical path resolves to canonical Motherpher owner with same repository id",
+      "consequence": "Do not count historical and canonical names as two repositories; preserve old CDX-EST-001 as provenance while FFC canonical identity migration remains pending."
+    }
+  ]
 }
