@@ -34,6 +34,9 @@ jobs:
       - name: Audit canonical root structure
         run: python3 AUDITS/audit_root_structure.py
 
+      - name: Audit constitutional adoption readiness
+        run: python3 AUDITS/audit_constitutional_adoption_readiness.py
+
       - name: Audit CDX 1.0 release boundary
         run: python3 AUDITS/audit_release_boundary.py
 
