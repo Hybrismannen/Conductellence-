@@ -76,6 +76,14 @@
     "revoke_command": "/cdx-revoke",
     "required_context": "human-sovereign-approval",
     "binding": "EXACT_PR_HEAD_SHA",
-    "enforcement_state": "DEFINED_NOT_PLATFORM_REQUIRED"
+    "enforcement_state": "CONTROL_VERIFIED_NOT_PLATFORM_REQUIRED",
+    "control_test": {
+      "state": "PASS",
+      "pr": 38,
+      "head_sha": "c9b06c2e3fcff17e4a57d7bc4fddd5a5d616b324",
+      "workflow_run_id": "40788804123",
+      "status_context": "human-sovereign-approval",
+      "status_state": "success"
+    }
   }
 }
