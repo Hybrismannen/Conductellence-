@@ -1,0 +1,100 @@
+{
+  "schema": "cdx.runtime-contract/v1.0",
+  "contract_id": "CDX-RUNTIME-001",
+  "contract_version": "1.0.0",
+  "status": "FROZEN_RELEASE_CANDIDATE",
+  "system_id": "CDX-SYS-001",
+  "law_id": "CDX-LAW-001",
+  "constitutional_version": "1.0.0",
+  "policy_version": "1.0.0",
+  "boundary_id": "CDX-RC01-BOUNDARY-001",
+  "authority_model": {
+    "human_sovereign_authority_superior": true,
+    "explicit_authority_ref_required": true,
+    "explicit_mandate_ref_required": true,
+    "content_may_grant_authority": false,
+    "local_system_owns_enforcement_point": true
+  },
+  "repository_binding": {
+    "anchor_standard": "CDX-GOV-ANCHOR-001",
+    "anchor_path": ".cdx/anchor.json",
+    "anchor_schema": "cdx.anchor/v1",
+    "legacy_security_manifest_satisfies_canonical_binding": false,
+    "runtime_requires_non_revoked_anchor": true
+  },
+  "decision_input_required": [
+    "surface",
+    "actor_id",
+    "action",
+    "authority_ref",
+    "mandate_ref",
+    "correlation_id",
+    "causation_id",
+    "run_id",
+    "trace_ref",
+    "attempted_effect",
+    "data_minimization"
+  ],
+  "decision_output": {
+    "decisions": [
+      "ALLOW",
+      "ALLOW_WITH_CONTROLS",
+      "REQUIRE_HUMAN",
+      "QUARANTINE",
+      "DENY",
+      "SECURITY_STOP",
+      "CONSTITUTIONAL_STOP"
+    ],
+    "fail_closed_on": [
+      "POLICY_UNAVAILABLE",
+      "POLICY_PARSE_ERROR",
+      "UNKNOWN_OPERATOR",
+      "NO_APPLICABLE_CONTROL",
+      "ANCHOR_INVALID",
+      "SPETL_UNAVAILABLE_WHEN_EVIDENCE_REQUIRED"
+    ]
+  },
+  "evidence": {
+    "event_schema": "cdx.spetl.event/1.1",
+    "canonical_schema_path": "SPETL/schemas/event.schema.json",
+    "required_before_consequential_completion": true,
+    "policy_decision_effect_status": {
+      "permissive": "NOT_ATTEMPTED",
+      "restrictive": "BLOCKED"
+    },
+    "independent_preservation_required_for_release": true,
+    "custody_profile": "CDX-CUSTODY-001"
+  },
+  "adapter_requirements": [
+    "fail_closed",
+    "explicit_authority_and_mandate",
+    "pinned_policy_context",
+    "SPETL_v1_1_evidence",
+    "external_effect_mediation",
+    "revocation_check",
+    "content_authority_separation",
+    "local_enforcement_ownership",
+    "allow_deny_policy_unavailable_tests",
+    "canonical_anchor_continuity"
+  ],
+  "integration_states": [
+    "BOUND_PENDING_RUNTIME_INTEGRATION",
+    "BOUND_CI_MONITORED",
+    "RUNTIME_GUARDED_UNVERIFIED",
+    "VERIFIED_REFERENCE_RUNTIME",
+    "VERIFIED_RUNTIME_BOUND"
+  ],
+  "claim_rules": {
+    "repository_anchor_is_not_runtime_enforcement": true,
+    "VERIFIED_REFERENCE_RUNTIME_is_not_application_runtime_mediation": true,
+    "VERIFIED_RUNTIME_BOUND_requires_consequential_effect_test": true,
+    "estate_wide_ENFORCING_requires_declared_scope_complete": true
+  },
+  "distribution": {
+    "runtime_source": "DISTRIBUTION/conductellence-runtime.py",
+    "policy_source": "DISTRIBUTION/conductellence-policy.json",
+    "spetl_source": "SPETL/spetl.py",
+    "anchor_schema_source": "DISTRIBUTION/cdx-anchor.schema.json",
+    "anchor_template_source": "DISTRIBUTION/cdx-anchor.template.json"
+  }
+}
