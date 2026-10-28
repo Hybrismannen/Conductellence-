@@ -25,7 +25,8 @@
     "Individual consumer runtimes may reach VERIFIED_RUNTIME_BOUND without implying estate-wide ENFORCING state.",
     "Repository anchor CI monitoring and runtime enforcement are distinct; never promote one from the other.",
     "ProjectHub is a subsystem in the FFOS repository and shares that repository anchor; actual ProjectHub A3/A4/A5 enforcement must be independently verified.",
-    "CDX 1.0 core boundary is frozen for WP03-WP07 closure; estate execution WP08-WP14 remains outside the core-release closure boundary."
+    "CDX 1.0 core boundary is frozen for WP03-WP07 closure; estate execution WP08-WP14 remains outside the core-release closure boundary.",
+    "WP03 constitutional adoption candidate is decision-ready, but constitutional_state remains FOUNDATIONAL_DRAFT until explicit HUMAN_SOVEREIGN_AUTHORITY approval of CDX-CONST-ADOPT-001."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
@@ -83,5 +84,16 @@
     "baseline_main_sha": "ada82874fd0a018241a0b7b77fa0b796a63483a1",
     "policy_ref": "GOVERNANCE/release-boundary-v1.json",
     "scope_change_requires": "HUMAN_APPROVED_BOUNDARY_EXCEPTION"
+  },
+  "constitutional_adoption_candidate": {
+    "candidate_id": "CDX-CONST-CAND-001",
+    "decision_order_id": "CDX-CONST-ADOPT-001",
+    "state": "READY_FOR_HUMAN_DECISION",
+    "source_law_version": "0.1.0-bootstrap",
+    "target_law_version": "1.0.0",
+    "source_law_blob_sha": "8ecb490b08295bfedf085d11e9c94b145e6d49fa",
+    "boundary_id": "CDX-RC01-BOUNDARY-001",
+    "state_promotion_authorized": false,
+    "explicit_human_decision_required": true
   }
 }
