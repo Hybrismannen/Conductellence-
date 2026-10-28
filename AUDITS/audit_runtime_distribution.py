@@ -15,12 +15,14 @@ POLICY=ROOT/"POLICY/control-registry.json"
 DIST_POLICY=ROOT/"DISTRIBUTION/conductellence-policy.json"
 SPETL=ROOT/"SPETL/spetl.py"
 CONTRACT=ROOT/"RUNTIME-INTEGRATION/CDX-RUNTIME-001.json"
+PACKAGE=ROOT/"DISTRIBUTION/releases/1.0.0-rc1/manifest.json"
+BUILDER=ROOT/"DISTRIBUTION/build_release_package.py"
 
 def fail(msg):
     print("FAIL:",msg)
     raise SystemExit(1)
 
-for p in (ENGINE,DIST,POLICY,DIST_POLICY,SPETL,CONTRACT):
+for p in (ENGINE,DIST,POLICY,DIST_POLICY,SPETL,CONTRACT,PACKAGE,BUILDER):
     if not p.exists(): fail(f"missing {p}")
 
 if POLICY.read_bytes()!=DIST_POLICY.read_bytes():
@@ -43,6 +45,22 @@ if contract.get("repository_binding",{}).get("legacy_security_manifest_satisfies
     fail("legacy manifest incorrectly satisfies canonical runtime binding")
 if contract.get("evidence",{}).get("event_schema")!="cdx.spetl.event/1.1":
     fail("runtime contract not aligned to SPETL v1.1")
+
+package=json.loads(PACKAGE.read_text(encoding="utf-8"))
+if package.get("package_id")!="CDX-DIST-1.0.0-RC1":
+    fail("unexpected distribution candidate package id")
+if package.get("status")!="RELEASE_CANDIDATE_NOT_RELEASED" or package.get("release_authorized") is not False:
+    fail("WP06 package must remain an unreleased candidate")
+if package.get("runtime_contract_id")!="CDX-RUNTIME-001" or package.get("evidence_schema_version")!="1.1":
+    fail("package identity does not match runtime/evidence contract")
+if sorted(package.get("release_gate",{}).get("required_core_blockers_closed",[]))!=sorted([
+    "CDX-BLOCK-REPO-PROTECTION-001","CDX-BLOCK-EVIDENCE-INDEPENDENCE-001"
+]):
+    fail("package release gate does not preserve both core blockers")
+
+proc=subprocess.run([sys.executable,str(BUILDER),"--verify-only"],text=True,capture_output=True)
+if proc.returncode!=0:
+    print(proc.stdout);print(proc.stderr,file=sys.stderr);fail("distribution package blob verification failed")
 
 # Canonical engine must emit a v1.1 event.
 spec=importlib.util.spec_from_file_location("engine",ENGINE)
@@ -133,3 +151,5 @@ print("PASS: canonical and portable runtime emit SPETL v1.1")
 print("PASS: distribution policy exactly matches canonical policy")
 print("PASS: canonical .cdx anchor required; legacy manifest is not canonical binding")
 print("PASS: portable runtime allow and policy-unavailable paths are fail-closed/evidenced")
+
+print("PASS: CDX-DIST-1.0.0-RC1 artifact blob set is pinned and reproducible")
