@@ -11,11 +11,14 @@ export const REQUIRED_EVENT_FIELDS = [
   "policy_digest","request_id","correlation_id","causation_id","run_id","trace_ref","reviewer_ref",
   "data_minimization","control_results","evidence_refs","previous_hash","event_hash"
 ];
+export const ALLOWED_EVENT_FIELDS = new Set([...REQUIRED_EVENT_FIELDS,"resource_id"]);
 
 export function validateEvent(event) {
   if (!event || typeof event !== "object" || Array.isArray(event)) throw new Error("event must be an object");
   const missing = REQUIRED_EVENT_FIELDS.filter((key) => !(key in event));
   if (missing.length) throw new Error("missing event fields: " + missing.join(","));
+  const unexpected = Object.keys(event).filter((key) => !ALLOWED_EVENT_FIELDS.has(key));
+  if (unexpected.length) throw new Error("unexpected event fields: " + unexpected.join(","));
   if (event.schema_version !== "1.1") throw new Error("unsupported event schema");
   if (!DECISIONS.has(event.decision)) throw new Error("invalid decision");
   if (!EFFECT_STATUSES.has(event.effect_status)) throw new Error("invalid effect_status");
@@ -72,7 +75,11 @@ export function validateBundle(bundle) {
   if (sha256Object(payload) !== claimed) throw new Error("bundle_hash mismatch");
   const seen = verifyEventChain(bundle.events);
   const missing = bundle.expected_event_ids.filter((id) => !seen.has(id));
+  const unexpected = [...seen].filter((id) => !bundle.expected_event_ids.includes(id));
   if (missing.length) throw new Error("withheld evidence: " + missing.join(","));
+  if (unexpected.length) throw new Error("injected evidence: " + unexpected.join(","));
+  const ordered = bundle.events.map((event) => event.event_id);
+  if (JSON.stringify(ordered) !== JSON.stringify(bundle.expected_event_ids)) throw new Error("evidence order/identity manifest mismatch");
   if (bundle.retention?.deletion_mode !== "GOVERNED_TOMBSTONE_AND_AUTHORIZED_ADMIN_ACTION") throw new Error("invalid deletion mode");
   return true;
 }
