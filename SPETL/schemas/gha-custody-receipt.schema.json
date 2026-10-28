@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://conductellence.local/schemas/spetl-gha-custody-receipt.schema.json",
+  "title": "Conductellence GitHub Actions Custody Receipt",
+  "type": "object",
+  "required": [
+    "schema",
+    "receipt_id",
+    "custody_id",
+    "received_at",
+    "source_commit",
+    "producer_workflow_run_id",
+    "custody_workflow_run_id",
+    "bundle_id",
+    "bundle_hash",
+    "event_count",
+    "first_event_hash",
+    "last_event_hash",
+    "retention_days",
+    "storage_principal",
+    "receipt_hash"
+  ],
+  "properties": {
+    "schema": {
+      "const": "cdx.spetl.gha-custody-receipt/v1.0"
+    },
+    "receipt_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "custody_id": {
+      "const": "CDX-CUSTODY-GHA-001"
+    },
+    "received_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "producer_workflow_run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "custody_workflow_run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "bundle_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "bundle_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "event_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "first_event_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "last_event_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "retention_days": {
+      "const": 90
+    },
+    "storage_principal": {
+      "const": "GITHUB_ACTIONS_ARTIFACT_SERVICE"
+    },
+    "receipt_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": true
+}
