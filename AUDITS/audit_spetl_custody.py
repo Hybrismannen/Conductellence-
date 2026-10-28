@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
+import copy
+import importlib.util
 import json
 import subprocess
 import sys
@@ -161,6 +163,54 @@ with tempfile.TemporaryDirectory() as td:
     ],capture_output=True,text=True)
     if wrong.returncode==0:
         fail("wrong custody-run provenance was accepted")
+
+    # The independent custodian must reject a DENY that claims an effect was permitted,
+    # even if an attacker recomputes the local hash chain and outer bundle hash.
+    sp_spec=importlib.util.spec_from_file_location("spetl_wp04",ROOT/"SPETL/spetl.py")
+    spetl=importlib.util.module_from_spec(sp_spec); sp_spec.loader.exec_module(spetl)
+    original=json.loads(bundle.read_text(encoding="utf-8"))
+    contradictory=copy.deepcopy(original)
+    contradictory["events"][1]["effect_status"]="PERMITTED"
+    previous=None
+    for event in contradictory["events"]:
+        event["previous_hash"]=previous
+        event["event_hash"]=spetl.sha256_obj({k:v for k,v in event.items() if k!="event_hash"})
+        previous=event["event_hash"]
+    contradictory["bundle_hash"]=spetl.sha256_obj({k:v for k,v in contradictory.items() if k!="bundle_hash"})
+    denied_bundle=td/"denied-write.json"
+    denied_bundle.write_text(json.dumps(contradictory),encoding="utf-8")
+    denied=subprocess.run([
+        sys.executable,"SPETL/custody/gha_custody.py","receive",
+        str(denied_bundle),str(td/"denied-package"),
+        "--expected-source-commit","1"*40,
+        "--expected-producer-run-id","101",
+        "--custody-run-id","203",
+        "--custody-run-attempt","1",
+    ],capture_output=True,text=True)
+    if denied.returncode==0 or "restrictive decision cannot report PERMITTED effect" not in denied.stdout:
+        fail("contradictory denied-write evidence was accepted")
+
+    # Reference custody is minimized: direct personal-data payloads are refused.
+    personal=copy.deepcopy(original)
+    personal["events"][0]["data_minimization"]["personal_data_present"]=True
+    previous=None
+    for event in personal["events"]:
+        event["previous_hash"]=previous
+        event["event_hash"]=spetl.sha256_obj({k:v for k,v in event.items() if k!="event_hash"})
+        previous=event["event_hash"]
+    personal["bundle_hash"]=spetl.sha256_obj({k:v for k,v in personal.items() if k!="bundle_hash"})
+    personal_bundle=td/"personal-data.json"
+    personal_bundle.write_text(json.dumps(personal),encoding="utf-8")
+    personal_result=subprocess.run([
+        sys.executable,"SPETL/custody/gha_custody.py","receive",
+        str(personal_bundle),str(td/"personal-package"),
+        "--expected-source-commit","1"*40,
+        "--expected-producer-run-id","101",
+        "--custody-run-id","204",
+        "--custody-run-attempt","1",
+    ],capture_output=True,text=True)
+    if personal_result.returncode==0 or "direct personal data is prohibited" not in personal_result.stdout:
+        fail("reference custody accepted direct personal-data evidence")
 
     (package/"evidence-bundle.json").unlink()
     lost=subprocess.run([
