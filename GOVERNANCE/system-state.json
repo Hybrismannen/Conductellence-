@@ -28,7 +28,8 @@
     "CDX 1.0 core boundary is frozen for WP03-WP07 closure; estate execution WP08-WP14 remains outside the core-release closure boundary.",
     "WP04 custody code and contracts do not close the independent-evidence blocker; external Vercel custody provisioning and observed tests are required.",
     "WP04 external custody provisioning is blocked by Vercel team billing state (HTTP 402 resource_creation_blocked). Existing unrelated Vercel projects were not repurposed because that would weaken trust-domain independence.",
-    "WP05 native repository protection is blocked by the current private-repository GitHub plan/capability and connector administration access. CDX will not make the repository public or alter plan/billing automatically."
+    "WP05 native repository protection is blocked by the current private-repository GitHub plan/capability and connector administration access. CDX will not make the repository public or alter plan/billing automatically.",
+    "WP06 found and is repairing a SPETL v1.1 compatibility defect in the canonical/distributed runtime before assembling the CDX 1.0 release candidate."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
@@ -121,5 +122,14 @@
     "administration_capability": "UNAVAILABLE",
     "safe_automatic_remediation": false,
     "state_ref": "GOVERNANCE/repository-protection-state.json"
+  },
+  "wp06_distribution_runtime": {
+    "state": "IMPLEMENTATION_IN_PROGRESS",
+    "contract_id": "CDX-RUNTIME-001",
+    "target_contract_version": "1.0.0",
+    "release_candidate": "1.0.0-rc1",
+    "runtime_contract_ref": "RUNTIME-INTEGRATION/CDX-RUNTIME-001.json",
+    "blocker_closed": false,
+    "state_promotion_authorized": false
   }
 }
