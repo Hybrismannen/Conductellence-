@@ -21,12 +21,18 @@
     {
       "repository": "Hybrismannen/form-flode",
       "system_id": "CDX-EST-001",
-      "anchor_state": "MIGRATION_SOURCE_MISSING",
+      "anchor_state": "UNBOUND",
       "legacy_manifest": ".security/conductellence.json",
-      "legacy_manifest_observed_on_main": false,
+      "legacy_manifest_observed_on_main": true,
       "reconciled_at": "2026-10-28",
-      "reconciliation_status": "STALE_LEGACY_BINDING_CLAIM",
-      "note": "Historical registration retained, but the declared legacy manifest was absent on main during WP01 live reconciliation. Requires repair or canonical anchor migration before bound status may be claimed."
+      "reconciliation_status": "HISTORICAL_ALIAS_IDENTITY_MIGRATION_REQUIRED",
+      "note": "GitHub resolves this historical path to Motherpher/form-flode with repository id 1379622813. Keep as provenance only; canonical current identity remains unbound until the FFC anchor/identity migration is admitted and verified.",
+      "repository_id": "1379622813",
+      "canonical_repository": "Motherpher/form-flode",
+      "record_state": "HISTORICAL_ALIAS",
+      "migration_state": "IDENTITY_MIGRATION_REQUIRED",
+      "legacy_manifest_observed_via_repository": "Motherpher/form-flode",
+      "legacy_manifest_repository_identity": "Hybrismannen/form-flode"
     },
     {
       "repository": "Hybrismannen/form-flode-dna",
@@ -160,7 +166,7 @@
     {
       "repository": "Motherpher/form-flode",
       "system_id": "FFC",
-      "status": "PENDING_PR_MERGE_AND_CDX_VERIFICATION",
+      "status": "PENDING_CANONICAL_IDENTITY_MIGRATION_AND_CDX_VERIFICATION",
       "source_branch": "feat/projecthub-dual-agents-forma-floda-20261028",
       "source_pr": "https://github.com/Motherpher/form-flode/pull/34",
       "anchor_manifest": ".cdx/anchor.json",
@@ -168,20 +174,24 @@
       "verification_state": "NOT_VERIFIED",
       "binding_mode": "PINNED_COMMIT",
       "cdx_ref": "7edbc47899af23b415114628469aca2970779ea1",
-      "historical_name_note": "Different repository from existing Hybrismannen/form-flode legacy registration; do not silently merge or overwrite historical identity.",
+      "historical_name_note": "Hybrismannen/form-flode is the historical path of the same GitHub repository object, not a different repository.",
       "draft_anchor_state": "ANCHOR_DECLARED",
       "main_branch_anchor_present": false,
       "legacy_manifest_present": true,
       "legacy_manifest_repository_identity": "Hybrismannen/form-flode",
-      "identity_reconciliation": "REQUIRED_BEFORE_ADMISSION",
-      "note": "Draft PR #34 proposes a canonical anchor, but no .cdx/anchor.json exists on main. Existing legacy manifest identifies Hybrismannen/form-flode and is not valid evidence of Motherpher/form-flode binding."
+      "identity_reconciliation": "REQUIRED_BEFORE_CANONICAL_READMISSION",
+      "note": "Draft PR #34 proposes the canonical FFC anchor. Current main has no .cdx/anchor.json and its legacy manifest still identifies Hybrismannen/form-flode; this is a repository/system identity migration, not a second repository admission.",
+      "repository_id": "1379622813",
+      "historical_alias": "Hybrismannen/form-flode",
+      "migration_kind": "REPOSITORY_IDENTITY_MIGRATION"
     }
   ],
   "registration_semantics": {
     "effective_entries": "entries reflects already admitted surfaces and their last available source evidence",
     "pending_entries": "pending_admissions are NOT admitted/bound until their PR merges, anchor is independently verified and estate registration receives approval",
     "repository_anchor_vs_runtime": "FFOS CDX_CI_MONITORED is repository-level CI monitoring; actual runtime BOUND_PENDING_RUNTIME_INTEGRATION remains unverified",
-    "projecthub_scope": "ProjectHub is inside Motherpher/FFOS and is covered by its repository anchor; consequential ProjectHub effects require separate local enforcement evidence"
+    "projecthub_scope": "ProjectHub is inside Motherpher/FFOS and is covered by its repository anchor; consequential ProjectHub effects require separate local enforcement evidence",
+    "repository_identity_aliases": "Historical repository names resolving to the same GitHub repository object are provenance aliases, not distinct current repositories."
   },
   "reconciled_at": "2026-10-28"
 }
