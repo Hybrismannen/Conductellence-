@@ -1,0 +1,54 @@
+name: SPETL Independent Custodian
+
+on:
+  workflow_run:
+    workflows: ["SPETL Evidence Producer"]
+    types: [completed]
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  preserve:
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout trusted default-branch custody code
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: Read producer artifact from separate workflow run
+        uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          run-id: ${{ github.event.workflow_run.id }}
+          path: incoming
+          merge-multiple: true
+
+      - name: Validate and receive evidence into custody package
+        run: |
+          python3 SPETL/custody/gha_custody.py receive \
+            incoming/evidence-bundle.json \
+            custody-package \
+            --expected-source-commit "${{ github.event.workflow_run.head_sha }}" \
+            --expected-producer-run-id "${{ github.event.workflow_run.id }}" \
+            --custody-run-id "${{ github.run_id }}" \
+            --custody-run-attempt "${{ github.run_attempt }}"
+
+      - name: Preserve immutable custody artifact
+        id: custody_artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: spetl-custody-${{ github.run_id }}-${{ github.run_attempt }}
+          path: custody-package/
+          if-no-files-found: error
+          retention-days: 90
+
+      - name: Record platform artifact digest
+        run: |
+          echo "custody_artifact_id=${{ steps.custody_artifact.outputs.artifact-id }}"
+          echo "custody_artifact_digest=${{ steps.custody_artifact.outputs.artifact-digest }}"
