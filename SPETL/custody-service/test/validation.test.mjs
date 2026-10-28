@@ -51,3 +51,20 @@ test("different repository is denied",()=>{
   const claims={repository:"attacker/repo",ref:"refs/heads/main",workflow_ref:"x",run_id:"1"};
   assert.throws(()=>validateGithubClaims(claims,{repository:"Hybrismannen/Conductellence-",ref:"refs/heads/main",workflowRef:"x"}),/untrusted repository/);
 });
+
+test("deny cannot report permitted effect",()=>{
+  const b=bundle(); b.events[0].decision="DENY"; b.events[0].effect_status="PERMITTED";
+  const eventPayload=Object.fromEntries(Object.entries(b.events[0]).filter(([k])=>k!=="event_hash"));
+  b.events[0].event_hash=sha256Object(eventPayload);
+  const payload=Object.fromEntries(Object.entries(b).filter(([k])=>k!=="bundle_hash"));
+  b.bundle_hash=sha256Object(payload);
+  assert.throws(()=>validateBundle(b),/cannot permit effect/);
+});
+test("policy unavailable fails closed",()=>{
+  const b=bundle(); b.events[0].policy_digest="UNAVAILABLE"; b.events[0].decision="SECURITY_STOP"; b.events[0].effect_status="BLOCKED";
+  const eventPayload=Object.fromEntries(Object.entries(b.events[0]).filter(([k])=>k!=="event_hash"));
+  b.events[0].event_hash=sha256Object(eventPayload);
+  const payload=Object.fromEntries(Object.entries(b).filter(([k])=>k!=="bundle_hash"));
+  b.bundle_hash=sha256Object(payload);
+  assert.equal(validateBundle(b),true);
+});
