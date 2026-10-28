@@ -6,11 +6,16 @@
   "required_capability": "NATIVE_OR_PLATFORM_EQUIVALENT_PREMERGE_PROTECTION",
   "pull_request": {
     "required": true,
-    "approving_reviews": 1,
-    "require_code_owner_review": true,
+    "approving_reviews": 0,
+    "require_code_owner_review": false,
     "dismiss_stale_reviews": true,
     "require_conversation_resolution": true,
-    "rationale": "Protected constitutional mutations require a human approval event before merge."
+    "rationale": "Protected constitutional mutations require a human approval event before merge.",
+    "human_approval_mode": "OWNER_COMMENT_STATUS",
+    "human_approval_command": "/cdx-approve",
+    "human_approval_context": "human-sovereign-approval",
+    "human_approval_workflow": ".github/workflows/human-sovereign-approval.yml",
+    "human_approval_rule": "Approval must be emitted by the default-branch issue_comment workflow from an OWNER comment and is bound to the exact PR head SHA. Any new commit requires a new approval."
   },
   "required_status_checks": {
     "strict_up_to_date_branch": true,
@@ -30,6 +35,10 @@
       {
         "context": "state-reconciliation",
         "workflow": "CDX Estate Registry Consistency"
+      },
+      {
+        "context": "human-sovereign-approval",
+        "workflow": "Conductellence Human Sovereign Approval"
       }
     ]
   },
@@ -46,7 +55,7 @@
     "platform protection/ruleset identifier",
     "independent platform re-read",
     "pull request requirement active",
-    "one human approval active",
+    "human-sovereign-approval status active on exact PR head SHA",
     "constitutional-audit required",
     "mutation-guard required",
     "force push disabled",
