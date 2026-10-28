@@ -23,8 +23,10 @@ def base_event(decision="ALLOW", effect_status="PERMITTED", policy_digest=None):
         "decision":decision,
         "authority_ref":"CDX-LAW-001",
         "mandate_ref":"CDX-TEST-MANDATE-001",
+        "policy_ref":"DISTRIBUTION/conductellence-policy.json",
         "policy_version":"1.0.0",
         "policy_digest":policy_digest,
+        "request_id":"REQ-001",
         "correlation_id":"CORR-001",
         "causation_id":"ROOT",
         "run_id":"RUN-001",
@@ -43,10 +45,12 @@ with tempfile.TemporaryDirectory() as td:
     p=Path(td)/"events.jsonl"
     allow=m.append_event(p,base_event())
     deny_event=base_event("DENY","BLOCKED")
+    deny_event["request_id"]="REQ-002"
     deny_event["correlation_id"]="CORR-002"
     deny_event["run_id"]="RUN-002"
     deny=m.append_event(p,deny_event)
     unavailable_event=base_event("SECURITY_STOP","BLOCKED","UNAVAILABLE")
+    unavailable_event["request_id"]="REQ-003"
     unavailable_event["correlation_id"]="CORR-003"
     unavailable_event["run_id"]="RUN-003"
     unavailable=m.append_event(p,unavailable_event)
@@ -94,6 +98,20 @@ with tempfile.TemporaryDirectory() as td:
     ok,error=m.verify_custody_bundle(bundle,expected_producer="DIFFERENT-RUNTIME",allowed_authorities={"CDX-LAW-001"})
     if ok or "unexpected producer runtime identity" not in str(error):
         raise SystemExit("FAIL: different runtime identity was not rejected")
+
+    contradictory=base_event("DENY","PERMITTED")
+    try:
+        m.append_event(Path(td)/"contradictory.jsonl",contradictory)
+        raise SystemExit("FAIL: denied effect was incorrectly permitted")
+    except ValueError:
+        pass
+
+    unavailable_permitted=base_event("SECURITY_STOP","PERMITTED","UNAVAILABLE")
+    try:
+        m.append_event(Path(td)/"unavailable-permitted.jsonl",unavailable_permitted)
+        raise SystemExit("FAIL: policy-unavailable effect was incorrectly permitted")
+    except ValueError:
+        pass
 
     missing=base_event()
     del missing["trace_ref"]
