@@ -1,6 +1,6 @@
 # CDX-WP05 — Native Repository Protection
 
-**Status:** EXTERNAL PLATFORM GATE — BLOCKER REMAINS OPEN  
+**Status:** MAXIMUM IN-REPO HARDENING COMPLETE — EXTERNAL PLATFORM GATE REMAINS  
 **Blocker:** `CDX-BLOCK-REPO-PROTECTION-001`  
 **Date:** 2026-10-28
 
@@ -57,10 +57,81 @@ Blocker #5 may close only after the repository owner enables native/equivalent p
 
 ## 6. Programme state
 
-WP05 implementation analysis is complete, but the blocker remains open under:
+WP05 repository-side hardening is complete, but the blocker remains open under:
 
 `PLATFORM_PLAN_GATE_BLOCKED`
 
 No release or enforcement promotion follows.
 
 Required external action: enable private-repository GitHub protection capability (e.g. GitHub Pro or another owner-approved configuration) and then resume WP05 verification.
+
+
+## 7. WP05 execution — 2026-10-29
+
+A fresh platform re-read confirmed:
+
+- repository visibility: `private`;
+- repository owner permission: `admin`;
+- `main.protected=false`;
+- branch protection API: HTTP 403 `Resource not accessible by integration`;
+- rulesets API: HTTP 403 `Upgrade to GitHub Pro or make this repository public to enable this feature`;
+- the installed ChatGPT GitHub integration exposes no branch/ruleset administration action;
+- plugin discovery found no alternative GitHub administration connector.
+
+No public-visibility or billing/plan mutation was attempted.
+
+### Repository-side hardening completed
+
+WP05 now adds:
+
+- canonical target profile: `GOVERNANCE/repository-protection-target.json`;
+- platform verification record: `GOVERNANCE/repository-protection-verification.json`;
+- dedicated fail-closed audit: `AUDITS/audit_repository_protection.py`;
+- protection audit wired into Law Audit and Remediation Readiness;
+- reconciled CODEOWNERS coverage across all protected constitutional surfaces;
+- `.github/CODEOWNERS` itself included in the mutation guard;
+- owner-bound human approval workflow: `.github/workflows/human-sovereign-approval.yml`;
+- approval context: `human-sovereign-approval`.
+
+### Human approval without a second reviewer account
+
+For a protected PR, the repository owner may comment:
+
+`/cdx-approve`
+
+The default-branch approval workflow emits `human-sovereign-approval=success` on the PR's exact head SHA. A later commit changes the SHA and requires a new approval. `/cdx-revoke` marks the same context failed.
+
+This becomes enforceable only when the branch protection/ruleset requires that context before merge.
+
+## 8. Exact platform configuration required
+
+Once private-repository protection is available, configure `main` to require:
+
+1. pull request before merge;
+2. required status `constitutional-audit`;
+3. required status `mutation-guard`;
+4. required status `readiness`;
+5. required status `state-reconciliation`;
+6. required status `human-sovereign-approval`;
+7. current branch before merge / strict status evaluation;
+8. no force push;
+9. no branch deletion;
+10. no uncontrolled administrator/actor bypass.
+
+Then perform an independent platform re-read and populate `GOVERNANCE/repository-protection-verification.json`.
+
+Only after that re-read may:
+
+- `satisfies_enforcing_requirement=true`;
+- `CDX-BLOCK-REPO-PROTECTION-001` close;
+- WP07 move from `BLOCKED_EXTERNAL_GATES` to `READY_FOR_HUMAN_RELEASE_DECISION`.
+
+## 9. Current determination
+
+WP05 has completed every safe repository-side action available through the connected tooling.
+
+The remaining step is an **owner-controlled GitHub account/platform action**, not missing Conductellence code.
+
+Therefore the correct state remains:
+
+`MAXIMUM_IN_REPO_HARDENING_COMPLETE / PLATFORM_PLAN_GATE_BLOCKED`

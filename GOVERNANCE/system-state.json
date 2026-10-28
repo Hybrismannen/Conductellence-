@@ -25,7 +25,7 @@
     "Repository anchor CI monitoring and runtime enforcement are distinct; never promote one from the other.",
     "ProjectHub is a subsystem in the FFOS repository and shares that repository anchor; actual ProjectHub A3/A4/A5 enforcement must be independently verified.",
     "CDX 1.0 core boundary is frozen for WP03-WP07 closure; estate execution WP08-WP14 remains outside the core-release closure boundary.",
-    "WP05 native repository protection is blocked by the current private-repository GitHub plan/capability and connector administration access. CDX will not make the repository public or alter plan/billing automatically.",
+    "WP05 maximum repository-side hardening is complete; native/equivalent pre-merge enforcement remains blocked by the private-repository GitHub plan/capability and connector administration scope.",
     "WP06 found and is repairing a SPETL v1.1 compatibility defect in the canonical/distributed runtime before assembling the CDX 1.0 release candidate.",
     "WP07 preflight remains blocked by repository protection after WP04 independently verified evidence custody.",
     "Repository metadata hygiene: description derivation remains stale (issue #14); homepage currently points to udl-twin.vercel.app and requires owner review.",
@@ -52,7 +52,7 @@
     }
   },
   "reconciliation_note": "consumer_bindings describes consequential application-runtime integration. Repository anchors are a separate axis. FFOS is CDX_CI_MONITORED but remains BOUND_PENDING_RUNTIME_INTEGRATION. Pius has a canonical anchor on main but remains ANCHOR_DECLARED / NOT_VERIFIED and repository-CI-only. GitHub identity reconciliation confirms Hybrismannen/form-flode is the historical alias of Motherpher/form-flode (repository id 1379622813), so FFC is an identity/anchor migration of the same repository rather than a second repository. Core release and enforcement blockers remain open.",
-  "updated_at": "2026-10-28",
+  "updated_at": "2026-10-29",
   "pending_anchor_candidates": {
     "Motherpher/form-flode": {
       "main_branch_anchor_state": "UNBOUND",
@@ -132,13 +132,20 @@
     "blocker_closed": true
   },
   "wp05_repository_protection": {
-    "state": "PLATFORM_PLAN_GATE_BLOCKED",
+    "state": "MAXIMUM_IN_REPO_HARDENING_COMPLETE_PLATFORM_PLAN_GATE_BLOCKED",
     "blocker_id": "CDX-BLOCK-REPO-PROTECTION-001",
     "blocker_closed": false,
-    "observed_at": "2026-10-28",
+    "observed_at": "2026-10-29",
+    "observed_main_sha": "77ef95644c81471c0a3253d4dc4cb85ca8c33756",
+    "branch_protected": false,
     "rulesets_api": "FORBIDDEN_403_UPGRADE_TO_GITHUB_PRO_OR_MAKE_PUBLIC",
+    "branch_protection_api": "FORBIDDEN_403_RESOURCE_NOT_ACCESSIBLE_BY_INTEGRATION",
     "administration_capability": "UNAVAILABLE",
     "safe_automatic_remediation": false,
+    "target_profile_ref": "GOVERNANCE/repository-protection-target.json",
+    "verification_ref": "GOVERNANCE/repository-protection-verification.json",
+    "audit_ref": "AUDITS/audit_repository_protection.py",
+    "human_approval_context": "human-sovereign-approval",
     "state_ref": "GOVERNANCE/repository-protection-state.json"
   },
   "wp06_distribution_runtime": {

@@ -1,0 +1,30 @@
+{
+  "schema": "cdx.repository-protection-verification/v1.0",
+  "verification_id": "CDX-REPO-PROTECT-VERIFY-001",
+  "repository": "Hybrismannen/Conductellence-",
+  "branch": "main",
+  "state": "PENDING_PLATFORM_CAPABILITY",
+  "observed_at": "2026-10-29",
+  "observed_main_sha": "77ef95644c81471c0a3253d4dc4cb85ca8c33756",
+  "source": "GITHUB_PLATFORM_API",
+  "platform_evidence": {
+    "branch_protected_flag": false,
+    "branch_protection_api": "FORBIDDEN_403_RESOURCE_NOT_ACCESSIBLE_BY_INTEGRATION",
+    "rulesets_api": "FORBIDDEN_403_UPGRADE_TO_GITHUB_PRO_OR_MAKE_PUBLIC",
+    "ruleset_id": null,
+    "protection_rule_id": null
+  },
+  "criteria": {
+    "pull_request_required": false,
+    "human_approval_required": false,
+    "constitutional_audit_required": false,
+    "mutation_guard_required": false,
+    "force_push_disabled": false,
+    "branch_deletion_disabled": false,
+    "uncontrolled_bypass_absent": false
+  },
+  "all_criteria_verified": false,
+  "satisfies_enforcing_requirement": false,
+  "blocker_id": "CDX-BLOCK-REPO-PROTECTION-001",
+  "note": "Populate VERIFIED values only from a fresh platform re-read after native/equivalent pre-merge protection is enabled. Repository-local edits are not sufficient evidence."
+}
