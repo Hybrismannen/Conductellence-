@@ -5,15 +5,22 @@ Reference runtime for CDX fully-automatable controls.
 Unknown/malformed control evaluation fails closed.
 """
 from pathlib import Path
-import argparse, json, re
+import argparse
+import hashlib
+import importlib.util
+import json
+import re
 
 REG=Path("POLICY/control-registry.json")
+SPETL=Path("SPETL/spetl.py")
 DECISIONS={"ALLOW","ALLOW_WITH_CONTROLS","REQUIRE_HUMAN","QUARANTINE","DENY","SECURITY_STOP","CONSTITUTIONAL_STOP"}
+RESTRICTIVE={"REQUIRE_HUMAN","QUARANTINE","DENY","SECURITY_STOP","CONSTITUTIONAL_STOP"}
 
 def get(obj,path):
     cur=obj
     for p in path.split("."):
-        if not isinstance(cur,dict) or p not in cur: return None
+        if not isinstance(cur,dict) or p not in cur:
+            return None
         cur=cur[p]
     return cur
 
@@ -49,43 +56,69 @@ def evaluate(context, control_ids=None):
     reg=json.loads(REG.read_text())
     controls=[c for c in reg["controls"] if c["enforcement_surface"]==context.get("surface")]
     if control_ids is not None:
-        wanted=set(control_ids); controls=[c for c in controls if c["control_id"] in wanted]
+        wanted=set(control_ids)
+        controls=[c for c in controls if c["control_id"] in wanted]
     if not controls:
-        return {"decision":"DENY","reason":"NO_APPLICABLE_CONTROL","control_results":[]}
+        return {"decision":"DENY","reason":"NO_APPLICABLE_CONTROL","policy_version":reg.get("policy_version"),"control_results":[]}
     results=[]; final="ALLOW"
     for c in controls:
-        try: ok=eval_rule(c["predicate"],context); err=None
-        except Exception as exc: ok=False; err=str(exc)
+        try:
+            ok=eval_rule(c["predicate"],context); err=None
+        except Exception as exc:
+            ok=False; err=str(exc)
         decision="ALLOW" if ok else c.get("decision_on_fail","DENY")
         results.append({"control_id":c["control_id"],"section_id":c["section_id"],"pass":ok,"decision":decision,"error":err})
         if decision=="CONSTITUTIONAL_STOP": final="CONSTITUTIONAL_STOP"
         elif decision=="SECURITY_STOP" and final!="CONSTITUTIONAL_STOP": final="SECURITY_STOP"
         elif decision=="DENY" and final not in {"CONSTITUTIONAL_STOP","SECURITY_STOP"}: final="DENY"
+        elif decision=="QUARANTINE" and final not in {"CONSTITUTIONAL_STOP","SECURITY_STOP","DENY"}: final="QUARANTINE"
         elif decision=="REQUIRE_HUMAN" and final=="ALLOW": final="REQUIRE_HUMAN"
+        elif decision=="ALLOW_WITH_CONTROLS" and final=="ALLOW": final="ALLOW_WITH_CONTROLS"
     return {"decision":final,"policy_version":reg["policy_version"],"control_results":results}
 
+def policy_digest():
+    return "sha256:"+hashlib.sha256(REG.read_bytes()).hexdigest()
+
+def _load_spetl():
+    if not SPETL.exists():
+        raise FileNotFoundError("canonical SPETL module unavailable")
+    spec=importlib.util.spec_from_file_location("cdx_spetl",SPETL)
+    module=importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
 def emit_spetl(path,context,result):
-    import importlib.util
-    spec=importlib.util.spec_from_file_location("cdx_spetl",Path("SPETL/ledger.py"))
-    m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
-    required=["actor_id","action","authority_ref","correlation_id","causation_id"]
-    missing=[x for x in required if not context.get(x)]
+    required=[
+        "actor_id","action","authority_ref","mandate_ref","correlation_id",
+        "causation_id","run_id","trace_ref","attempted_effect","data_minimization"
+    ]
+    missing=[x for x in required if context.get(x) is None]
     if missing:
         raise ValueError("SPETL evidence fields missing: "+", ".join(missing))
+    decision=result["decision"]
     event={
-      "event_type":"POLICY_DECISION",
-      "actor_id":context["actor_id"],
-      "action":context["action"],
-      "resource_id":context.get("resource_id"),
-      "decision":result["decision"],
-      "authority_ref":context["authority_ref"],
-      "policy_version":result.get("policy_version","unknown"),
-      "correlation_id":context["correlation_id"],
-      "causation_id":context["causation_id"],
-      "control_results":result.get("control_results",[]),
-      "evidence_refs":context.get("evidence_refs",[])
+        "event_type":"POLICY_DECISION",
+        "actor_id":context["actor_id"],
+        "subject_ref":context.get("subject_ref"),
+        "action":context["action"],
+        "resource_id":context.get("resource_id"),
+        "attempted_effect":context["attempted_effect"],
+        "effect_status":"BLOCKED" if decision in RESTRICTIVE else "NOT_ATTEMPTED",
+        "decision":decision,
+        "authority_ref":context["authority_ref"],
+        "mandate_ref":context["mandate_ref"],
+        "policy_version":result.get("policy_version","UNAVAILABLE"),
+        "policy_digest":policy_digest(),
+        "correlation_id":context["correlation_id"],
+        "causation_id":context["causation_id"],
+        "run_id":context["run_id"],
+        "trace_ref":context["trace_ref"],
+        "reviewer_ref":context.get("reviewer_ref"),
+        "data_minimization":context["data_minimization"],
+        "control_results":result.get("control_results",[]),
+        "evidence_refs":context.get("evidence_refs",[])
     }
-    return m.append_event(path,event)
+    return _load_spetl().append_event(path,event)
 
 def main():
     ap=argparse.ArgumentParser()
@@ -98,4 +131,6 @@ def main():
     if a.ledger:
         result["spetl_event"]=emit_spetl(a.ledger,ctx,result)
     print(json.dumps(result,indent=2))
-if __name__=="__main__": main()
+
+if __name__=="__main__":
+    main()
