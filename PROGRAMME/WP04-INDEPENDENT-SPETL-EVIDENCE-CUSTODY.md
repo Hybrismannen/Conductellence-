@@ -1,8 +1,8 @@
 # CDX-WP04 — Independent SPETL Evidence Custody
 
-**Status:** IMPLEMENTATION STAGED — EXTERNAL PROVISIONING REQUIRED  
+**Status:** REFERENCE CUSTODY IMPLEMENTED — OBSERVED VERIFICATION REQUIRED  
 **Blocker:** `CDX-BLOCK-EVIDENCE-INDEPENDENCE-001`  
-**Custody profile:** `CDX-CUSTODY-001`  
+**Custody profiles:** `CDX-CUSTODY-GHA-001` (reference) + `CDX-CUSTODY-001` (long-lived target)  
 **Date:** 2026-10-28
 
 ## 1. Objective
@@ -107,3 +107,45 @@ Therefore:
 - enforcement remains `BOOTSTRAP`.
 
 Required external action: restore the Vercel team's billing/payment status. After that, resume at provisioning step 2 without redesigning WP04.
+
+
+## 10. Executable reference custody profile
+
+WP04 now includes an independently executed reference profile, `CDX-CUSTODY-GHA-001`, without weakening the blocked long-lived Vercel target.
+
+The reference chain is:
+
+```text
+SPETL Evidence Producer
+        ↓ immutable producer artifact
+separate workflow_run
+SPETL Independent Custodian
+        ↓ custody bundle + SHA-256 receipt
+separate workflow_run
+SPETL Custody Verifier
+        ↓ verification report
+GitHub Actions artifact service
+```
+
+Producer, custodian and verifier are separate workflow runs. The custodian/verifier check out trusted `main` code, have no repository write permission, and do not execute producer-supplied code. The governed runtime receives no custodian storage-administrator credential.
+
+The integrity chain combines the canonical SPETL event hash chain, custody-bundle SHA-256, custody-receipt SHA-256, immutable artifact digest and GitHub workflow-run provenance.
+
+Reference artifacts retain for 90 days. Direct personal data is rejected by the reference custodian; pseudonymous subject references and explicit minimization metadata are required.
+
+Human approval of the reference and long-lived profiles is recorded in `GOVERNANCE/orders/CDX-EVIDENCE-CUSTODY-APPROVAL-001.json`.
+
+## 11. Verification gate
+
+Merging this implementation does not close blocker #17.
+
+Closure requires observed main-branch provenance for:
+1. the producer workflow;
+2. the separate custodian workflow;
+3. the custody artifact ID and digest;
+4. the separate verifier workflow;
+5. the verification artifact ID and digest;
+6. successful custody-package re-read and verification;
+7. PASS evidence for ALLOW, DENY, policy unavailable, denied-effect contradiction, invalid event, tamper, withheld/loss, different runtime identity, forged authority and write/read/verify provenance.
+
+Only after that observed chain may independent preservation move to `VERIFIED` and `CDX-BLOCK-EVIDENCE-INDEPENDENCE-001` be removed. The Conductellence system remains `PRE_RELEASE` and `BOOTSTRAP` throughout WP04.
