@@ -147,7 +147,12 @@
       "repository": "Motherpher/CareerHubZero",
       "system_id": "CDX-EST-017",
       "anchor_state": "MIGRATION_PENDING",
-      "legacy_manifest": ".security/conductellence.json"
+      "legacy_manifest": ".security/conductellence.json",
+      "legacy_manifest_observed_on_main": true,
+      "legacy_audit_workflow_observed_on_main": false,
+      "reconciled_at": "2026-10-28",
+      "reconciliation_status": "LEGACY_CI_DRIFT",
+      "note": "Legacy manifest remains present, but the historical binding-audit workflow was not observed on main. Canonical .cdx migration remains pending and runtime is not verified."
     },
     {
       "repository": "Motherpher/FFOS",
