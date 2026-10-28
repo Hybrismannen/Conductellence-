@@ -1,6 +1,6 @@
 # CDX-WP03 — RC-02 Constitutional Closure
 
-Status: IN EXECUTION — CONSTITUTIONAL CANDIDATE  
+Status: IN EXECUTION — STABLE CANDIDATE  
 Date: 2026-10-28  
 Adoption record: `CDX-CONST-ADOPT-001`
 
@@ -78,12 +78,11 @@ That version is the version of `CDX-LAW-001`, not the release state of the Condu
 
 ## 6. Remaining WP03 transitions
 
-After this candidate stage passes and merges:
+`CONSTITUTIONAL_CANDIDATE` passed all required gates and merged as PR #25 / commit `4e238ef93a944cbaa9cf082f39587d8bd02750b8`.
 
-1. a new governed PR moves the constitution to `STABLE_CANDIDATE`;
-2. after that state passes, a final governed PR records the adoption order and moves the constitution to `ADOPTED`.
+The current transition is `STABLE_CANDIDATE`. If this PR passes the same gate set and merges without scope drift, WP03 may create the final human adoption order and move the constitutional axis to `ADOPTED`.
 
-The final adoption order is not created before stable-candidate evidence exists.
+The final adoption order is deliberately withheld until this stable-candidate evidence exists.
 
 ## 7. Blockers preserved
 
