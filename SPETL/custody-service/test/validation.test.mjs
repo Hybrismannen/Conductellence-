@@ -9,8 +9,9 @@ function event() {
     schema_version:"1.1", event_id:"E1", event_type:"POLICY_DECISION",
     recorded_at:"2026-10-28T20:00:00Z", actor_id:"A", subject_ref:"S", action:"WRITE",
     attempted_effect:{surface:"test",operation:"write",target_ref:"T"}, effect_status:"PERMITTED",
-    decision:"ALLOW", authority_ref:"CDX-LAW-001", mandate_ref:"M1", policy_version:"1.0.0",
-    policy_digest:"sha256:"+"a".repeat(64), correlation_id:"C", causation_id:"ROOT", run_id:"R",
+    decision:"ALLOW", authority_ref:"CDX-LAW-001", mandate_ref:"M1",
+    policy_ref:"DISTRIBUTION/conductellence-policy.json", policy_version:"1.0.0",
+    policy_digest:"sha256:"+"a".repeat(64), request_id:"REQ", correlation_id:"C", causation_id:"ROOT", run_id:"R",
     trace_ref:"TR", reviewer_ref:null,
     data_minimization:{personal_data_present:false,redacted_fields:[],rationale:"synthetic"},
     control_results:[], evidence_refs:[], previous_hash:null
