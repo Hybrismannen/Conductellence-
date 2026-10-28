@@ -77,6 +77,14 @@ Draft PR #34 proposes:
 
 Finding: the correct model is **repository/system identity migration**, not a second repository admission. `CDX-EST-001` is retained as historical provenance; FFC remains `UNBOUND` on `main` and pending canonical identity migration plus CDX verification.
 
+### Motherpher/CareerHubZero
+- canonical `.cdx/anchor.json`: absent;
+- legacy `.security/conductellence.json`: present;
+- historically recorded `conductellence-binding-audit.yml`: not observed on current `main`;
+- runtime: `NOT_VERIFIED`.
+
+Finding: the legacy binding evidence exists, but the recorded CI monitor has drifted. WP01 records this as `LEGACY_PRESENT_UNMONITORED`; it is not canonical binding and does not establish runtime enforcement.
+
 ### Hybrismannen/RFSU-godex
 The central legacy-binding claim does not match live `main`: the declared legacy manifest was not observed. This remains **stale binding / registry drift**.
 
@@ -132,7 +140,8 @@ WP01 now:
 4. corrects the false two-repository interpretation of `Hybrismannen/form-flode` and `Motherpher/form-flode`;
 5. preserves `CDX-EST-001` as historical alias/provenance and records the pending migration to FFC identity;
 6. records RFSU-godex stale legacy-binding drift;
-7. normalizes `PENDING_RUNTIME_BINDINGS` in the state vocabulary.
+7. records CareerHubZero legacy CI drift without promoting its binding;
+8. normalizes `PENDING_RUNTIME_BINDINGS` in the state vocabulary.
 
 ## 10. Deliberate non-actions
 
