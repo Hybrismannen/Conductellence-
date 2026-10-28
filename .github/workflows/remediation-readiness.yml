@@ -24,6 +24,7 @@ jobs:
       - run: python3 AUDITS/audit_evidence_preservation.py
       - run: python3 AUDITS/audit_spetl_custody.py
       - run: python3 AUDITS/audit_runtime_distribution.py
+      - run: python3 AUDITS/audit_release_preflight.py
       - run: python3 AUDITS/audit_security_twin.py
       - run: python3 AUDITS/audit_adversarial_acceptance.py
       - run: python3 AUDITS/audit_enforcement_readiness.py
