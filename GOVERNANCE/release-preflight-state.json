@@ -19,7 +19,8 @@
     "CDX-DIST-1.0.0-RC1 package pinned by Git blob SHA and reproducibly verified",
     "69 fully automatable controls pass reference-runtime self-tests",
     "SPETL v1.1 canonical and portable runtime compatibility verified",
-    "canonical .cdx/anchor.json binding contract defined"
+    "canonical .cdx/anchor.json binding contract defined",
+    "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001 closed by VERIFIED CDX-CUSTODY-GHA-001 independent write/read/verify provenance"
   ],
   "blocking_core_conditions": [
     {
@@ -27,12 +28,6 @@
       "state": "PLATFORM_PLAN_GATE_BLOCKED",
       "owner_action_required": true,
       "required_action": "Enable and independently verify native/equivalent pre-merge protection for private main."
-    },
-    {
-      "blocker_id": "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001",
-      "state": "PROVISIONING_BLOCKED_EXTERNAL_ACCOUNT",
-      "owner_action_required": true,
-      "required_action": "Restore Vercel team billing/payment status, provision CDX-CUSTODY-001, and pass the external custody verification matrix."
     }
   ],
   "non_blocking_repository_hygiene": [
@@ -52,7 +47,7 @@
   ],
   "final_release_gate": {
     "required_before_decision": [
-      "both core_release_blockers absent from GOVERNANCE/system-state.json",
+      "all core_release_blockers absent from GOVERNANCE/system-state.json",
       "repository protection state verifies required pre-merge controls",
       "independent evidence preservation state is VERIFIED and satisfies_enforcing_requirement=true",
       "custody external matrix PASS",
