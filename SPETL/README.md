@@ -28,3 +28,14 @@ See:
 - `PROGRAMME/WP04-INDEPENDENT-SPETL-EVIDENCE-CUSTODY.md`
 
 The blocker remains open until external provisioning and verification are observed.
+
+
+## Independent reference custody — CDX-CUSTODY-GHA-001
+
+WP04 also provides an executable three-run custody chain:
+
+`SPETL Evidence Producer → SPETL Independent Custodian → SPETL Custody Verifier`.
+
+The custodian/verifier run separately from the evidence producer, check out trusted `main` code, use read-only repository permissions, preserve immutable artifacts for 90 days, and bind the evidence to SHA-256 custody receipts and workflow-run provenance.
+
+This profile remains non-verified until the actual main-branch workflow and artifact chain has been observed and recorded.
