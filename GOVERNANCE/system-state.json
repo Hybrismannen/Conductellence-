@@ -7,13 +7,14 @@
   "core_runtime_state": "VERIFIED_REFERENCE_RUNTIME",
   "release_state": "RELEASED",
   "enforcement_state": "BOOTSTRAP",
-  "estate_integration_state": "PENDING_RUNTIME_BINDINGS",
+  "estate_integration_state": "BINDINGS_IN_PROGRESS",
   "core_release_blockers": [],
   "estate_enforcement_blockers": [
-    "CDX-BLOCK-ESTATE-RUNTIME-001"
+    "CDX-BLOCK-ESTATE-RUNTIME-001",
+    "CDX-BLOCK-WP11-FFOS-EXECUTION-001"
   ],
   "consumer_bindings": {
-    "Motherpher/FFOS": "NOT_STARTED"
+    "Motherpher/FFOS": "IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED"
   },
   "canonical_rule": "Maturity is not enforcement. Release is not integration. Integration is not estate-wide enforcement.",
   "notes": [
@@ -60,7 +61,7 @@
       "verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     }
   },
-  "reconciliation_note": "WP10 completed independent verification and default-branch reconciliation for all 28 governed consumer anchors. Repository anchor standing is CDX_BOUND / PASS. FFOS runtime remains pending WP11; Pius dedicated runtime verification remains WP12; FFC formal admission remains WP13; estate-wide enforcement blocker remains open.",
+  "reconciliation_note": "WP11 implementation is staged in Motherpher/FFOS PR #29 against CDX-RUNTIME-001@1.0.0. Verification and production deployment are externally blocked; no VERIFIED_RUNTIME_BOUND claim is permitted. Estate integration is BINDINGS_IN_PROGRESS.",
   "updated_at": "2026-10-29",
   "pending_anchor_candidates": {
     "Motherpher/form-flode": {
@@ -256,5 +257,40 @@
     "ffos_runtime_state": "BOUND_PENDING_RUNTIME_INTEGRATION",
     "next_wp": "CDX-WP11",
     "state_effect": "ANCHOR_AXIS_ONLY"
+  },
+  "wp11_ffos_runtime_binding": {
+    "programme": "CDX-WP11",
+    "state": "IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED",
+    "observed_at": "2026-10-29",
+    "ffos_repository": "Motherpher/FFOS",
+    "implementation_pr": 29,
+    "implementation_head": "8c98fc70aff1705fd490977489be2cda8069a07c",
+    "target_contract": "CDX-RUNTIME-001@1.0.0",
+    "target_effect": "ISSUE_DIRECTOR_SESSION",
+    "proposed_anchor_state": "CDX_RUNTIME_GUARDED",
+    "proposed_runtime_state": "RUNTIME_GUARDED_UNVERIFIED",
+    "production_deployment_state": "NOT_DEPLOYED",
+    "production_current_commit": "3a93eb3d7a5195232acc850c7d301bf901014306",
+    "blockers": [
+      {
+        "id": "FFOS-GHA-RUNNER-001",
+        "kind": "EXTERNAL_EXECUTION_INFRASTRUCTURE",
+        "evidence": "FFOS GitHub Actions workflows fail before runner steps execute across WP11 and unrelated AMA PRs; last observed successful FFOS workflows were 2026-10-29T14:04Z."
+      },
+      {
+        "id": "VERCEL-BILLING-001",
+        "kind": "EXTERNAL_ACCOUNT",
+        "evidence": "Vercel create deployment rejected with HTTP 402 resource_creation_blocked: team has overdue balance."
+      }
+    ],
+    "completion_requires": [
+      "FFOS PR #29 acceptance workflow executes and passes",
+      "Exact FFOS WP11 commit builds successfully",
+      "Reviewed implementation merges to FFOS main",
+      "Production deployment of merged main commit reaches READY",
+      "Runtime evidence demonstrates ALLOW, DENY, POLICY_UNAVAILABLE and consequential effect mediation",
+      "FFOS anchor/runtime state independently promoted to CDX_RUNTIME_VERIFIED / VERIFIED_RUNTIME_BOUND"
+    ],
+    "state_effect": "ESTATE_INTEGRATION_ADVANCED_TO_BINDINGS_IN_PROGRESS_ONLY"
   }
 }
