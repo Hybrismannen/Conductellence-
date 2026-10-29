@@ -3,8 +3,8 @@
   "preflight_id": "CDX-RELEASE-PREFLIGHT-1.0.0",
   "target_release": "1.0.0",
   "observed_at": "2026-10-29",
-  "decision": "READY_FOR_HUMAN_RELEASE_DECISION",
-  "release_authorized": false,
+  "decision": "PUBLICATION_AUTHORIZED_PENDING_EXECUTION",
+  "release_authorized": true,
   "state_before_release": {
     "constitutional_state": "ADOPTED",
     "core_runtime_state": "VERIFIED_REFERENCE_RUNTIME",
@@ -54,7 +54,11 @@
       "set release_state=RELEASED before independent final release gate and human decision",
       "set enforcement_state=ENFORCEMENT_READY or ENFORCING from repository protection alone",
       "begin WP08 estate rollout as if core release were closed"
-    ]
+    ],
+    "authorization_recorded": true
   },
-  "next_state_if_external_gates_close": "READY_FOR_HUMAN_RELEASE_DECISION"
+  "next_state_if_external_gates_close": "READY_FOR_HUMAN_RELEASE_DECISION",
+  "publication_authorized": true,
+  "publication_authorization_ref": "GOVERNANCE/orders/CDX-PUBLICATION-1.0.0-AUTHORIZATION-2026-10-29.json",
+  "remaining_gate": "PROTECTED_PUBLICATION_EXECUTION_AND_POST_PUBLICATION_VERIFICATION"
 }
