@@ -3,30 +3,48 @@
   "verification_id": "CDX-REPO-PROTECT-VERIFY-001",
   "repository": "Hybrismannen/Conductellence-",
   "branch": "main",
-  "state": "PENDING_PLATFORM_CAPABILITY",
+  "state": "VERIFIED",
   "observed_at": "2026-10-29",
   "observed_main_sha": "77ef95644c81471c0a3253d4dc4cb85ca8c33756",
   "source": "GITHUB_PLATFORM_API",
   "platform_evidence": {
-    "branch_protected_flag": false,
-    "branch_protection_api": "FORBIDDEN_403_RESOURCE_NOT_ACCESSIBLE_BY_INTEGRATION",
-    "rulesets_api": "FORBIDDEN_403_UPGRADE_TO_GITHUB_PRO_OR_MAKE_PUBLIC",
+    "branch_protected_flag": true,
+    "branch_protection_api": "AUTHENTICATED_OWNER_GH_CLI_200_JSON",
+    "rulesets_api": "NOT_REQUIRED_CLASSIC_BRANCH_PROTECTION",
     "ruleset_id": null,
-    "protection_rule_id": null
+    "protection_rule_id": "CLASSIC_BRANCH_RULE_MAIN",
+    "strict": true,
+    "required_status_contexts": [
+      "constitutional-audit",
+      "human-sovereign-approval",
+      "mutation-guard",
+      "state-reconciliation",
+      "readiness"
+    ],
+    "required_checks_app_id": 15368,
+    "enforce_admins": true,
+    "allow_force_pushes": false,
+    "allow_deletions": false,
+    "required_conversation_resolution": true,
+    "required_approving_review_count": 0,
+    "dismiss_stale_reviews": false,
+    "api_response_sha256": "7a1cc17239a34dde4a6145f2f98a7b048b2a131999bad005396db2d6e18b799f",
+    "source_authentication": "OWNER_CLI_REST_RESPONSE_UPLOAD",
+    "rule_identifier_note": "CLASSIC_BRANCH_RULE_MAIN denotes GitHub main branch endpoint; GitHub response does not provide numeric rule ID"
   },
   "criteria": {
-    "pull_request_required": false,
-    "human_approval_required": false,
-    "constitutional_audit_required": false,
-    "mutation_guard_required": false,
-    "force_push_disabled": false,
-    "branch_deletion_disabled": false,
-    "uncontrolled_bypass_absent": false
+    "pull_request_required": true,
+    "human_approval_required": true,
+    "constitutional_audit_required": true,
+    "mutation_guard_required": true,
+    "force_push_disabled": true,
+    "branch_deletion_disabled": true,
+    "uncontrolled_bypass_absent": true
   },
-  "all_criteria_verified": false,
-  "satisfies_enforcing_requirement": false,
-  "blocker_id": "CDX-BLOCK-REPO-PROTECTION-001",
-  "note": "Populate VERIFIED values only from a fresh platform re-read after native/equivalent pre-merge protection is enabled. Repository-local edits are not sufficient evidence.",
+  "all_criteria_verified": true,
+  "satisfies_enforcing_requirement": true,
+  "blocker_id": null,
+  "note": "Acceptance candidate based on owner-authenticated GitHub API snapshot and non-draft PR #41 negative gating (two required statuses missing), plus PR #40 five checks passing exact head with owner approval; requires independent PR review before canonical promotion.",
   "human_approval_control_test": {
     "state": "PASS",
     "observed_at": "2026-10-29",
@@ -41,5 +59,13 @@
     "target_url": "https://github.com/Hybrismannen/Conductellence-/pull/38#issuecomment-6483591573",
     "disposition": "TEST_PR_CLOSED_UNMERGED",
     "note": "This verifies the approval-status mechanism only. It does not make the status required before merge; native/equivalent branch protection is still absent."
-  }
+  },
+  "negative_gate_test": {
+    "pr": 41,
+    "head_sha": "503796552ce7bc94320c5f4d1c49171c7a77678b",
+    "result": "MERGE_BUTTON_DISABLED_WHILE_TWO_REQUIRED_STATUSES_MISSING",
+    "closed_unmerged": true,
+    "limitation": "Human sovereign approval was not isolated; state-reconciliation also absent on test PR"
+  },
+  "approved_evidence_pr": 40
 }
