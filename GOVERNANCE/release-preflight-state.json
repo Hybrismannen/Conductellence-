@@ -3,7 +3,7 @@
   "preflight_id": "CDX-RELEASE-PREFLIGHT-1.0.0",
   "target_release": "1.0.0",
   "observed_at": "2026-10-29",
-  "decision": "PENDING_FINAL_PREFLIGHT_AND_HUMAN_RELEASE_DECISION",
+  "decision": "READY_FOR_HUMAN_RELEASE_DECISION",
   "release_authorized": false,
   "state_before_release": {
     "constitutional_state": "ADOPTED",
