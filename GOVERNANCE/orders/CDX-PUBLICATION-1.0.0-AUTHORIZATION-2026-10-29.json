@@ -10,7 +10,7 @@
   "authority": "HUMAN_SOVEREIGN_AUTHORITY",
   "authority_attribution": "Hybrismannen",
   "authorization_date": "2026-10-29",
-  "state": "AUTHORIZED_PENDING_PROTECTED_MERGE_AND_EXECUTION",
+  "state": "EXECUTED_AND_VERIFIED",
   "canonical_effect": "Effective only after this record passes the protected main branch path and is merged.",
   "execution_scope": [
     "record publication authorization",
@@ -27,5 +27,12 @@
     "rewriting published tag or release history"
   ],
   "readiness_ref": "GOVERNANCE/release/CDX-1.0-PUBLICATION-READINESS-2026-10-29.json",
-  "publication_workflow": ".github/workflows/cdx-1-publish.yml"
+  "publication_workflow": ".github/workflows/cdx-1-publish.yml",
+  "execution_result": {
+    "publication_commit": "6e275dea737d77349ddd1264c4f6ef900904995f",
+    "tag": "1.0.0",
+    "github_release_id": 427882220,
+    "publication_workflow_run_id": 40879564779,
+    "evidence_ref": "GOVERNANCE/release/CDX-1.0-PUBLICATION-EVIDENCE-2026-10-29.json"
+  }
 }
