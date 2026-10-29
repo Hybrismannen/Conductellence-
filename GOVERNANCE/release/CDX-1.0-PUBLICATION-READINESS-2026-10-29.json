@@ -6,8 +6,8 @@
   "observed_main_sha": "c3c751733dbace3e051c628f3d68dc706427eb6f",
   "observed_at": "2026-10-29",
   "sovereign_release_decision": "RELEASE_1_0_0",
-  "publication_authorized": false,
-  "publication_state": "AWAITING_EXPLICIT_HUMAN_SOVEREIGN_AUTHORIZATION",
+  "publication_authorized": true,
+  "publication_state": "AUTHORIZED_PENDING_PROTECTED_EXECUTION",
   "verification": {
     "core_release_blockers": [],
     "release_preflight": "PASS",
@@ -38,5 +38,6 @@
     "runtime_contract": "RUNTIME-INTEGRATION/CDX-RUNTIME-001.json"
   },
   "rollback_incident_rule": "Publication creates an immutable provenance boundary. If defects are found after publication, preserve the tag/release evidence, open an incident/remediation record, and issue a superseding patch or withdrawal notice rather than rewriting published history.",
-  "remaining_gate": "EXPLICIT_HUMAN_SOVEREIGN_AUTHORIZATION_TO_PUBLISH_CDX_1_0"
+  "remaining_gate": "PROTECTED_PUBLICATION_EXECUTION_AND_POST_PUBLICATION_VERIFICATION",
+  "authorization_ref": "GOVERNANCE/orders/CDX-PUBLICATION-1.0.0-AUTHORIZATION-2026-10-29.json"
 }
