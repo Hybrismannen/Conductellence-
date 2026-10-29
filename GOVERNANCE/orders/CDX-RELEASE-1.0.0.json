@@ -2,16 +2,14 @@
   "schema": "cdx.release-decision/v1.0",
   "order_id": "CDX-RELEASE-1.0.0",
   "target_release": "1.0.0",
-  "state": "PENDING_BLOCKER_CLOSURE",
+  "state": "READY_FOR_DECISION",
   "decision": null,
   "decision_by": null,
   "decision_at": null,
   "authority_required": "HUMAN_SOVEREIGN_AUTHORITY",
   "candidate_package": "CDX-DIST-1.0.0-RC1",
   "preflight_ref": "GOVERNANCE/release-preflight-state.json",
-  "blockers": [
-    "CDX-BLOCK-REPO-PROTECTION-001"
-  ],
+  "blockers": [],
   "approval_rule": "Release decision may only be requested after all remaining core blockers are closed and all final release gates pass. A generic proceed instruction before those conditions is not a release approval.",
   "allowed_decisions": [
     "RELEASE_1_0_0",

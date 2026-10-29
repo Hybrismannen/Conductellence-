@@ -8,9 +8,7 @@
   "release_state": "PRE_RELEASE",
   "enforcement_state": "BOOTSTRAP",
   "estate_integration_state": "PENDING_RUNTIME_BINDINGS",
-  "core_release_blockers": [
-    "CDX-BLOCK-REPO-PROTECTION-001"
-  ],
+  "core_release_blockers": [],
   "estate_enforcement_blockers": [
     "CDX-BLOCK-ESTATE-RUNTIME-001"
   ],
@@ -25,11 +23,10 @@
     "Repository anchor CI monitoring and runtime enforcement are distinct; never promote one from the other.",
     "ProjectHub is a subsystem in the FFOS repository and shares that repository anchor; actual ProjectHub A3/A4/A5 enforcement must be independently verified.",
     "CDX 1.0 core boundary is frozen for WP03-WP07 closure; estate execution WP08-WP14 remains outside the core-release closure boundary.",
-    "WP05 maximum repository-side hardening is complete; native/equivalent pre-merge enforcement remains blocked by the private-repository GitHub plan/capability and connector administration scope.",
     "WP06 found and is repairing a SPETL v1.1 compatibility defect in the canonical/distributed runtime before assembling the CDX 1.0 release candidate.",
-    "WP07 preflight remains blocked by repository protection after WP04 independently verified evidence custody.",
     "Repository metadata hygiene: description derivation remains stale (issue #14); homepage currently points to udl-twin.vercel.app and requires owner review.",
-    "WP04 independent evidence custody is VERIFIED through CDX-CUSTODY-GHA-001 with observed producer → separate custodian → separate verifier provenance. The long-lived Vercel custody target remains externally blocked but is not required to keep the verified reference-custody gate open."
+    "WP04 independent evidence custody is VERIFIED through CDX-CUSTODY-GHA-001 with observed producer → separate custodian → separate verifier provenance. The long-lived Vercel custody target remains externally blocked but is not required to keep the verified reference-custody gate open.",
+    "WP05 native classic main protection verified by owner-authenticated GitHub API and negative-gate PR #41; staged closure requires this PR's independent approval and passing CI. WP07 remains subject to final preflight and distinct explicit human sovereign release decision."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
@@ -132,15 +129,15 @@
     "blocker_closed": true
   },
   "wp05_repository_protection": {
-    "state": "MAXIMUM_IN_REPO_HARDENING_COMPLETE_PLATFORM_PLAN_GATE_BLOCKED",
+    "state": "VERIFIED_NATIVE_PROTECTION",
     "blocker_id": "CDX-BLOCK-REPO-PROTECTION-001",
-    "blocker_closed": false,
+    "blocker_closed": true,
     "observed_at": "2026-10-29",
     "observed_main_sha": "77ef95644c81471c0a3253d4dc4cb85ca8c33756",
-    "branch_protected": false,
-    "rulesets_api": "FORBIDDEN_403_UPGRADE_TO_GITHUB_PRO_OR_MAKE_PUBLIC",
-    "branch_protection_api": "FORBIDDEN_403_RESOURCE_NOT_ACCESSIBLE_BY_INTEGRATION",
-    "administration_capability": "UNAVAILABLE",
+    "branch_protected": true,
+    "rulesets_api": "NOT_REQUIRED_CLASSIC_PROTECTION",
+    "branch_protection_api": "OWNER_AUTHENTICATED_READBACK_VERIFIED",
+    "administration_capability": "OWNER_CLI_VERIFIED",
     "safe_automatic_remediation": false,
     "target_profile_ref": "GOVERNANCE/repository-protection-target.json",
     "verification_ref": "GOVERNANCE/repository-protection-verification.json",
@@ -163,15 +160,13 @@
     "wp06_closed": true
   },
   "wp07_release_preflight": {
-    "state": "BLOCKED_EXTERNAL_GATES",
+    "state": "PENDING_FINAL_RELEASE_PREFLIGHT_AND_HUMAN_DECISION",
     "preflight_id": "CDX-RELEASE-PREFLIGHT-1.0.0",
     "target_release": "1.0.0",
     "release_order": "CDX-RELEASE-1.0.0",
     "release_authorized": false,
     "internal_candidate_ready": true,
-    "external_core_blockers": [
-      "CDX-BLOCK-REPO-PROTECTION-001"
-    ],
+    "external_core_blockers": [],
     "next_state_if_cleared": "READY_FOR_HUMAN_RELEASE_DECISION"
   }
 }
