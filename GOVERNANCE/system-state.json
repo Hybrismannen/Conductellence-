@@ -28,42 +28,47 @@
     "WP04 independent evidence custody is VERIFIED through CDX-CUSTODY-GHA-001 with observed producer → separate custodian → separate verifier provenance. The long-lived Vercel custody target remains externally blocked but is not required to keep the verified reference-custody gate open.",
     "WP05 COMPLETE: native classic main protection is VERIFIED; PR #42 promoted the verified protection state and removed CDX-BLOCK-REPO-PROTECTION-001 from the core release blocker set.",
     "WP07 COMPLETE: CDX 1.0.0 published and independently verified at tag 1.0.0, publication commit 6e275dea737d77349ddd1264c4f6ef900904995f, GitHub Release 427882220. Release does not imply estate-wide enforcement or runtime integration.",
-    "WP08 COMPLETE: Registry v2 classifies all 31 known repository identifiers / 30 current objects. 28 current consumer repositories are CDX-applicable, Barnombudet remains explicitly excluded, and the historical Hybrismannen/form-flode alias is provenance-only. WP09 is the canonical anchor migration handoff.",
-    "WP08 COMPLETE: Registry v2 classifies all 31 known repository identifiers / 30 current objects. Barnombudet remains explicitly excluded and Hybrismannen/form-flode remains provenance-only. WP09 is the canonical anchor migration handoff."
+    "WP08 COMPLETE: Registry v2 classifies 31 identifiers / 30 current repository objects, with 28 governed consumers, one explicit Barnombudet exclusion and one historical Form & Flöde alias.",
+    "WP09 COMPLETE: all 28 governed consumer repositories carry .cdx/anchor.json on their default branch, pinned to CDX release 1.0.0; all remain ANCHOR_DECLARED / NOT_VERIFIED and are handed to WP10."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
     "Motherpher/FFOS": {
-      "state": "CDX_CI_MONITORED",
+      "state": "ANCHOR_DECLARED",
       "local_anchor_ref": "Motherpher/FFOS/.cdx/anchor.json",
-      "observed_at": "2026-10-06T19:56:34Z",
-      "verification": "PASS",
+      "observed_at": "2026-10-29",
+      "verification": "NOT_VERIFIED",
+      "binding_mode": "PINNED_RELEASE",
+      "state_source_pin": "1.0.0",
       "runtime_enforcement": "BOUND_PENDING_RUNTIME_INTEGRATION",
       "source": "ESTATE-REGISTRY/cdx-anchors.json"
     },
     "Hybrismannen/pius-universe": {
       "state": "ANCHOR_DECLARED",
       "local_anchor_ref": "Hybrismannen/pius-universe/.cdx/anchor.json",
-      "observed_at": "2026-10-28",
+      "observed_at": "2026-10-29",
       "verification": "NOT_VERIFIED",
+      "binding_mode": "PINNED_RELEASE",
+      "state_source_pin": "1.0.0",
       "runtime_enforcement": "VERIFIED_REFERENCE_RUNTIME_REPOSITORY_CI_ONLY",
       "estate_admission_state": "PENDING_INDEPENDENT_VERIFICATION",
       "source": "ESTATE-REGISTRY/cdx-anchors.json"
     }
   },
-  "reconciliation_note": "consumer_bindings describes consequential application-runtime integration. Repository anchors are a separate axis. FFOS is CDX_CI_MONITORED but remains BOUND_PENDING_RUNTIME_INTEGRATION. Pius has a canonical anchor on main but remains ANCHOR_DECLARED / NOT_VERIFIED and repository-CI-only. GitHub identity reconciliation confirms Hybrismannen/form-flode is the historical alias of Motherpher/form-flode (repository id 1379622813), so FFC is an identity/anchor migration of the same repository rather than a second repository. Core release blockers are closed; the distinct estate enforcement blocker remains open, and release/enforcement/integration states remain separate.",
+  "reconciliation_note": "WP09 completed canonical anchor migration across all 28 governed consumers. Repository anchors are now release-pinned declarations, not verified bindings. FFC canonical identity migration is established but admission remains WP13; FFOS runtime binding remains pending WP11; estate-wide enforcement blocker remains open.",
   "updated_at": "2026-10-29",
   "pending_anchor_candidates": {
     "Motherpher/form-flode": {
-      "main_branch_anchor_state": "UNBOUND",
-      "main_branch_anchor_present": false,
-      "draft_anchor_state": "ANCHOR_DECLARED",
-      "source": "FFC draft PR #34",
+      "main_branch_anchor_state": "ANCHOR_DECLARED",
+      "main_branch_anchor_present": true,
+      "source": "Motherpher/form-flode PR #37",
       "verification": "NOT_VERIFIED",
-      "registry_admission": "PENDING_PR_MERGE_AND_VERIFICATION",
+      "registry_admission": "PENDING_WP10_VERIFICATION_AND_WP13_ADMISSION",
       "legacy_manifest_present": true,
       "legacy_manifest_repository_identity": "Hybrismannen/form-flode",
-      "identity_reconciliation": "REQUIRED_BEFORE_ADMISSION"
+      "identity_reconciliation": "CANONICAL_REPOSITORY_IDENTITY_ESTABLISHED",
+      "binding_mode": "PINNED_RELEASE",
+      "cdx_ref": "1.0.0"
     }
   },
   "repository_identity_reconciliation": {
@@ -73,11 +78,10 @@
       "historical_system_id": "CDX-EST-001",
       "target_system_id": "FFC",
       "relation": "SAME_GITHUB_REPOSITORY_OBJECT",
-      "state": "PENDING_CANONICAL_IDENTITY_MIGRATION",
-      "main_anchor_state": "UNBOUND",
-      "draft_anchor_state": "ANCHOR_DECLARED",
+      "state": "CANONICAL_IDENTITY_MIGRATED_ANCHOR_VERIFICATION_PENDING",
+      "main_anchor_state": "ANCHOR_DECLARED",
       "verification_state": "NOT_VERIFIED",
-      "source_pr": "Motherpher/form-flode#34"
+      "source_pr": "Motherpher/form-flode#37"
     }
   },
   "release_boundary": {
@@ -211,5 +215,21 @@
     "classification_state": "COMPLETE",
     "anchor_binding_registry": "ESTATE-REGISTRY/cdx-anchors.json",
     "legacy_system_registry": "ESTATE-REGISTRY/systems.json"
+  },
+  "wp09_anchor_migration": {
+    "programme": "CDX-WP09",
+    "state": "COMPLETE_ANCHORS_MIGRATED",
+    "completed_at": "2026-10-29",
+    "governed_consumers_expected": 28,
+    "governed_consumers_migrated": 28,
+    "default_branch_readbacks_passed": 28,
+    "binding_mode": "PINNED_RELEASE",
+    "release_ref": "1.0.0",
+    "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+    "post_migration_anchor_state": "ANCHOR_DECLARED",
+    "verification_state": "NOT_VERIFIED",
+    "evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+    "next_wp": "CDX-WP10",
+    "state_effect": "NONE_ON_RUNTIME_OR_ESTATE_ENFORCEMENT"
   }
 }
