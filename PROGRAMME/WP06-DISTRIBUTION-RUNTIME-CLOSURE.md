@@ -89,7 +89,7 @@ WP06 may reach `RUNTIME_CONTRACT_CLOSED / RELEASE_CANDIDATE_PACKAGED` while:
 - release remains `PRE_RELEASE`;
 - enforcement remains `BOOTSTRAP`;
 - at WP06 closure, WP04 blocker #17 was still open;
-- WP05 blocker #5 remains open.
+- WP05 blocker #5 was subsequently closed by verified native protection in WP05 / PR #42.
 
 No distribution artifact may erase those external gates.
 
@@ -109,4 +109,4 @@ If the WP06 PR passes all CDX gates, WP06 is complete as:
 
 `RUNTIME_CONTRACT_CLOSED / RELEASE_CANDIDATE_PACKAGED`
 
-This does not authorize release. WP07 remains blocked until every remaining core gate is closed; after WP04 verification, #5 repository protection is the remaining core-release blocker.
+This does not authorize release. WP07 remained blocked until every remaining core gate closed. WP05 subsequently verified native repository protection and closed #5, leaving the core release blocker set empty and handing control to the distinct WP07 human release-decision gate.
