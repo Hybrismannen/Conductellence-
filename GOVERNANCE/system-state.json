@@ -26,7 +26,7 @@
     "WP06 found and is repairing a SPETL v1.1 compatibility defect in the canonical/distributed runtime before assembling the CDX 1.0 release candidate.",
     "Repository metadata hygiene: description derivation remains stale (issue #14); homepage currently points to udl-twin.vercel.app and requires owner review.",
     "WP04 independent evidence custody is VERIFIED through CDX-CUSTODY-GHA-001 with observed producer → separate custodian → separate verifier provenance. The long-lived Vercel custody target remains externally blocked but is not required to keep the verified reference-custody gate open.",
-    "WP05 native classic main protection verified by owner-authenticated GitHub API and negative-gate PR #41; staged closure requires this PR's independent approval and passing CI. WP07 remains subject to final preflight and distinct explicit human sovereign release decision."
+    "WP05 COMPLETE: native classic main protection is VERIFIED; PR #42 promoted the verified protection state and removed CDX-BLOCK-REPO-PROTECTION-001 from the core release blocker set."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
@@ -48,7 +48,7 @@
       "source": "ESTATE-REGISTRY/cdx-anchors.json"
     }
   },
-  "reconciliation_note": "consumer_bindings describes consequential application-runtime integration. Repository anchors are a separate axis. FFOS is CDX_CI_MONITORED but remains BOUND_PENDING_RUNTIME_INTEGRATION. Pius has a canonical anchor on main but remains ANCHOR_DECLARED / NOT_VERIFIED and repository-CI-only. GitHub identity reconciliation confirms Hybrismannen/form-flode is the historical alias of Motherpher/form-flode (repository id 1379622813), so FFC is an identity/anchor migration of the same repository rather than a second repository. Core release and enforcement blockers remain open.",
+  "reconciliation_note": "consumer_bindings describes consequential application-runtime integration. Repository anchors are a separate axis. FFOS is CDX_CI_MONITORED but remains BOUND_PENDING_RUNTIME_INTEGRATION. Pius has a canonical anchor on main but remains ANCHOR_DECLARED / NOT_VERIFIED and repository-CI-only. GitHub identity reconciliation confirms Hybrismannen/form-flode is the historical alias of Motherpher/form-flode (repository id 1379622813), so FFC is an identity/anchor migration of the same repository rather than a second repository. Core release blockers are closed; the distinct estate enforcement blocker remains open, and release/enforcement/integration states remain separate.",
   "updated_at": "2026-10-29",
   "pending_anchor_candidates": {
     "Motherpher/form-flode": {
@@ -143,7 +143,17 @@
     "verification_ref": "GOVERNANCE/repository-protection-verification.json",
     "audit_ref": "AUDITS/audit_repository_protection.py",
     "human_approval_context": "human-sovereign-approval",
-    "state_ref": "GOVERNANCE/repository-protection-state.json"
+    "state_ref": "GOVERNANCE/repository-protection-state.json",
+    "closure_pr": 42,
+    "closure_merge_commit": "a6b916e7c3fa33a7c5638b9f119be1dfce17c130",
+    "live_readback_main_sha": "4e7133cb47f0fd569338e6e03a249142e43f560f",
+    "live_required_status_contexts": [
+      "constitutional-audit",
+      "human-sovereign-approval",
+      "mutation-guard",
+      "state-reconciliation",
+      "readiness"
+    ]
   },
   "wp06_distribution_runtime": {
     "state": "RUNTIME_CONTRACT_CLOSED_RELEASE_CANDIDATE_PACKAGED",
@@ -154,9 +164,7 @@
     "candidate_status": "RELEASE_CANDIDATE_NOT_RELEASED",
     "wp06_closure_if_ci_passes": true,
     "release_authorized": false,
-    "external_core_blockers_still_required": [
-      "CDX-BLOCK-REPO-PROTECTION-001"
-    ],
+    "external_core_blockers_still_required": [],
     "wp06_closed": true
   },
   "wp07_release_preflight": {
