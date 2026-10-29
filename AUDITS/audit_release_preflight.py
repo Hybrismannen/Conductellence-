@@ -66,10 +66,28 @@ if blockers:
 else:
     if pre.get("decision")!="READY_FOR_HUMAN_RELEASE_DECISION" or pre.get("release_authorized") is not False:
         fail("zero-blocker preflight must hand off to explicit human release decision")
-    if order.get("state")!="READY_FOR_DECISION" or order.get("decision") is not None:
-        fail("zero-blocker release order must remain undecided but ready")
+    if order.get("state")=="READY_FOR_DECISION":
+        if order.get("decision") is not None:
+            fail("undecided release order has a decision")
+    elif order.get("state")=="DECISION_RECORDED_PENDING_PUBLICATION":
+        att=load("GOVERNANCE/orders/CDX-RELEASE-1.0.0-SOVEREIGN-ATTESTATION-2026-10-29.json")
+        if (order.get("decision")!="RELEASE_1_0_0"
+            or order.get("decision_by")!="Hybrismannen"
+            or order.get("decision_approval_pr")!=45
+            or order.get("decision_attestation_ref")!="GOVERNANCE/orders/CDX-RELEASE-1.0.0-SOVEREIGN-ATTESTATION-2026-10-29.json"
+            or att.get("decision")!=order.get("decision")
+            or att.get("decision_approval_pr")!=45
+            or att.get("recorded_in_canonical_order") is not True
+            or att.get("publication_authorized") is not False):
+            fail("recorded sovereign decision lacks matching approved attestation")
+        if (order.get("release_authorized") is not False
+            or order.get("publication_authorized") is not False
+            or order.get("publication_state")!="NOT_AUTHORIZED"):
+            fail("recorded release decision improperly authorizes publication")
+    else:
+        fail("unexpected zero-blocker release order state")
 
 print("PASS: all internal CDX 1.0 release-candidate conditions are coherent")
 print(f"PASS: live core blocker set derived from verified gate state: {sorted(blockers)}")
 print("PASS: release_state PRE_RELEASE / enforcement_state BOOTSTRAP preserved")
-print("INFO: human release decision is only requestable when the blocker set is empty")
+print("INFO: human release decision recorded separately from publication authority; publication remains prohibited")
