@@ -28,7 +28,7 @@ jobs:
         shell: bash
         run: |
           python3 - <<'PY'
-          import json
+          import json, os
           from pathlib import Path
           order=json.loads(Path("GOVERNANCE/orders/CDX-RELEASE-1.0.0.json").read_text())
           auth=json.loads(Path("GOVERNANCE/orders/CDX-PUBLICATION-1.0.0-AUTHORIZATION-2026-10-29.json").read_text())
@@ -51,7 +51,7 @@ jobs:
               raise SystemExit("FAIL: publication authorization missing")
           if auth.get("authorization_text")!="I authorize publication of CDX 1.0.0.":
               raise SystemExit("FAIL: exact sovereign publication authorization missing")
-          with open("$GITHUB_OUTPUT","a") as f:
+          with open(os.environ["GITHUB_OUTPUT"],"a") as f:
               f.write("publish=true\n")
           print("PASS: explicit human-sovereign CDX 1.0.0 publication authority is canonical")
           PY
