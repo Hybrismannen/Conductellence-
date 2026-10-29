@@ -122,11 +122,22 @@ else:
 expected_other={
     "core_runtime_state":"VERIFIED_REFERENCE_RUNTIME",
     "enforcement_state":"BOOTSTRAP",
-    "estate_integration_state":"PENDING_RUNTIME_BINDINGS",
 }
 for key,val in expected_other.items():
     if system.get(key)!=val:
         fail(f"constitutional transition improperly changed {key}: {system.get(key)}")
+
+estate_state=system.get("estate_integration_state")
+if estate_state not in {"PENDING_RUNTIME_BINDINGS","BINDINGS_IN_PROGRESS"}:
+    fail(f"estate integration axis exceeds current governed rollout boundary: {estate_state}")
+if estate_state=="BINDINGS_IN_PROGRESS":
+    wp11=system.get("wp11_ffos_runtime_binding",{})
+    if wp11.get("state")!="IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED":
+        fail("BINDINGS_IN_PROGRESS lacks explicit WP11 staged/blocker evidence")
+    if wp11.get("production_deployment_state")!="NOT_DEPLOYED":
+        fail("WP11 staged state cannot claim production deployment")
+    if system.get("consumer_bindings",{}).get("Motherpher/FFOS")!="IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED":
+        fail("FFOS consumer binding state does not match WP11 staged state")
 
 release_state=system.get("release_state")
 if release_state not in {"PRE_RELEASE","RELEASED"}:
