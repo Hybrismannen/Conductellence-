@@ -47,3 +47,7 @@ Authorized repository administrator / independently authorized verifier should:
 - **CDX frozen topology:** unchanged; no policy, authority class, constitutional section or canonical state redefinition.
 
 This record must not be represented as a closure attestation.
+
+## Required-check workflow repair (same draft PR)
+
+The mandatory `state-reconciliation` check was pending because `.github/workflows/cdx-estate-registry-consistency.yml` previously restricted pull-request triggers to `ESTATE-REGISTRY/**`, `GOVERNANCE/system-state.json` and the workflow itself. An `AUDITS/**`-only PR could never receive that required check. The workflow's `pull_request` trigger now covers every PR against `main`, retaining its `verify-cdx-registry.py` execution and unchanged path-scoped `push` trigger. This is a candidate fix only: exact-head GitHub Actions results have not yet been verified. The approval status must be reissued for the final head by the human owner, and no release/blocker status is promoted.
