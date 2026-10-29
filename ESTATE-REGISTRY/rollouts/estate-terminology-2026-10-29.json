@@ -14,7 +14,7 @@
   "historical_alias": [
     "Hybrismannen/form-flode"
   ],
-  "notice": "Central policy and 25 consumer PRs are merged; 3 remaining consumer PRs need authorized manual merge. Documentation references do not install anchors, authorize effects, or prove live runtime enforcement.",
+  "notice": "Canonical policy and all 28 applicable consumer documentation PRs merged and policy files verified on main. This establishes terminology adoption, not anchor installation, effect authority, or live runtime enforcement.",
   "repositories": [
     {
       "repository": "Motherpher/form-flode",
@@ -32,7 +32,8 @@
       "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
       "pr_url": "https://github.com/Hybrismannen/form-flode-dna/pull/2",
       "pr_number": 2,
-      "state": "PR_OPEN_MERGE_ACTION_BLOCKED_BY_TOOL_SAFETY"
+      "state": "MERGED_TO_MAIN_VERIFIED",
+      "verification_note": "Confirmed local Estate policy on main after manual merge, 2026-10-29"
     },
     {
       "repository": "Hybrismannen/pius-universe",
@@ -140,7 +141,8 @@
       "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
       "pr_url": "https://github.com/Hybrismannen/Digital-Apartheid/pull/7",
       "pr_number": 7,
-      "state": "PR_OPEN_MERGE_ACTION_BLOCKED_BY_TOOL_SAFETY"
+      "state": "MERGED_TO_MAIN_VERIFIED",
+      "verification_note": "Confirmed local Estate policy on main after manual merge, 2026-10-29"
     },
     {
       "repository": "Hybrismannen/NSLI",
@@ -176,7 +178,8 @@
       "runtime_screening": "REQUIRED",
       "pr_url": "https://github.com/Motherpher/FFOS/pull/23",
       "pr_number": 23,
-      "state": "PR_OPEN_MERGE_ACTION_BLOCKED_BY_TOOL_SAFETY"
+      "state": "MERGED_TO_MAIN_VERIFIED",
+      "verification_note": "Confirmed local Estate policy on main after manual merge, 2026-10-29"
     },
     {
       "repository": "Motherpher/wpb",
@@ -270,11 +273,11 @@
     }
   ],
   "canonical_policy_merge_commit": "fccf0058ab8ecc2c3145e25f2725c2a7d359d50d",
-  "rollout_status": "PARTIALLY_MERGED_MANUAL_ACTION_REQUIRED",
+  "rollout_status": "MERGED_ALL_CURRENT_APPLICABLE_CONSUMERS",
   "current_default_branch_verification": {
-    "merged_and_verified": 25,
-    "unmerged": 3,
+    "merged_and_verified": 28,
+    "unmerged": 0,
     "verification_method": "FETCH_REPOSITORY_FILE_AT_MAIN",
-    "blocked_merge_action": "TOOL_SAFETY_RESTRICTION"
+    "notes": "Final three repositories verified after manual owner merges; prior 25 already verified."
   }
 }
