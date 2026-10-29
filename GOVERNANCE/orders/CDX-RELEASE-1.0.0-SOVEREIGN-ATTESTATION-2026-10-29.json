@@ -7,10 +7,10 @@
   "decision_source": "EXPLICIT_USER_INSTRUCTION_IN_GOVERNING_CONVERSATION",
   "decision_date": "2026-10-29",
   "decision_authority": "HUMAN_SOVEREIGN_AUTHORITY",
-  "decision_attribution": "REPOSITORY_OWNER_CLAIM_PENDING_GITHUB_PR_APPROVAL_BINDING",
+  "decision_attribution": "Hybrismannen — GitHub PR #45 owner exact-head /cdx-approve verified",
   "decision_scope": "Authorize the governed CDX 1.0 release decision, subject to final protected-PR verification and separate publication/deployment authorization.",
-  "execution_state": "PROPOSED_PENDING_PROTECTED_PR_APPROVAL_AND_MERGE",
-  "recorded_in_canonical_order": false,
+  "execution_state": "DECISION_RECORDED_PENDING_PUBLICATION",
+  "recorded_in_canonical_order": true,
   "release_authorized": false,
   "publication_authorized": false,
   "deployment_authorized": false,
@@ -30,5 +30,6 @@
     "GOVERNANCE/release-preflight-state.json"
   ],
   "interpretation": "This attestation is a proposed canonical evidence record of a distinct sovereign release choice. PR review and merge do not publish a release, and cannot be conflated with any further publication authorization. Canonical release order remains READY_FOR_DECISION until a separately gated transition resolves the pre-release audit invariants.",
-  "post_merge_next_gate": "Review controlled release-order transition allowing human decision recorded with PRE_RELEASE and release_authorized=false; rerun final artifact and custody verification; require distinct explicit publication authorization."
+  "post_merge_next_gate": "Review controlled release-order transition allowing human decision recorded with PRE_RELEASE and release_authorized=false; rerun final artifact and custody verification; require distinct explicit publication authorization.",
+  "decision_approval_pr": 45
 }

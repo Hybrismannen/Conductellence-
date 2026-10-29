@@ -2,10 +2,10 @@
   "schema": "cdx.release-decision/v1.0",
   "order_id": "CDX-RELEASE-1.0.0",
   "target_release": "1.0.0",
-  "state": "READY_FOR_DECISION",
-  "decision": null,
-  "decision_by": null,
-  "decision_at": null,
+  "state": "DECISION_RECORDED_PENDING_PUBLICATION",
+  "decision": "RELEASE_1_0_0",
+  "decision_by": "Hybrismannen",
+  "decision_at": "2026-10-29",
   "authority_required": "HUMAN_SOVEREIGN_AUTHORITY",
   "candidate_package": "CDX-DIST-1.0.0-RC1",
   "preflight_ref": "GOVERNANCE/release-preflight-state.json",
@@ -15,5 +15,11 @@
     "RELEASE_1_0_0",
     "HOLD",
     "RETURN_FOR_REMEDIATION"
-  ]
+  ],
+  "decision_attestation_ref": "GOVERNANCE/orders/CDX-RELEASE-1.0.0-SOVEREIGN-ATTESTATION-2026-10-29.json",
+  "decision_approval_pr": 45,
+  "release_authorized": false,
+  "publication_authorized": false,
+  "publication_state": "NOT_AUTHORIZED",
+  "decision_scope": "GOVERNED_RELEASE_DECISION_ONLY_NO_TAG_OR_PUBLICATION"
 }
