@@ -29,46 +29,52 @@
     "WP05 COMPLETE: native classic main protection is VERIFIED; PR #42 promoted the verified protection state and removed CDX-BLOCK-REPO-PROTECTION-001 from the core release blocker set.",
     "WP07 COMPLETE: CDX 1.0.0 published and independently verified at tag 1.0.0, publication commit 6e275dea737d77349ddd1264c4f6ef900904995f, GitHub Release 427882220. Release does not imply estate-wide enforcement or runtime integration.",
     "WP08 COMPLETE: Registry v2 classifies 31 identifiers / 30 current repository objects, with 28 governed consumers, one explicit Barnombudet exclusion and one historical Form & Flöde alias.",
-    "WP09 COMPLETE: all 28 governed consumer repositories carry .cdx/anchor.json on their default branch, pinned to CDX release 1.0.0; all remain ANCHOR_DECLARED / NOT_VERIFIED and are handed to WP10."
+    "WP09 COMPLETE: all 28 governed consumer repositories carry .cdx/anchor.json on their default branch, pinned to CDX release 1.0.0; all remain ANCHOR_DECLARED / NOT_VERIFIED and are handed to WP10.",
+    "WP10 COMPLETE: all 28 governed consumer anchors independently verified against Registry v2 and CDX 1.0.0, reconciled on default branches as CDX_BOUND / PASS. Runtime, CI-monitoring, FFC admission and estate enforcement remain separate and unadvanced."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
     "Motherpher/FFOS": {
-      "state": "ANCHOR_DECLARED",
+      "state": "CDX_BOUND",
       "local_anchor_ref": "Motherpher/FFOS/.cdx/anchor.json",
       "observed_at": "2026-10-29",
-      "verification": "NOT_VERIFIED",
+      "verification": "PASS",
       "binding_mode": "PINNED_RELEASE",
       "state_source_pin": "1.0.0",
       "runtime_enforcement": "BOUND_PENDING_RUNTIME_INTEGRATION",
-      "source": "ESTATE-REGISTRY/cdx-anchors.json"
+      "source": "ESTATE-REGISTRY/cdx-anchors.json",
+      "verified_at": "2026-10-29T15:19:00Z",
+      "verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     },
     "Hybrismannen/pius-universe": {
-      "state": "ANCHOR_DECLARED",
+      "state": "CDX_BOUND",
       "local_anchor_ref": "Hybrismannen/pius-universe/.cdx/anchor.json",
       "observed_at": "2026-10-29",
-      "verification": "NOT_VERIFIED",
+      "verification": "PASS",
       "binding_mode": "PINNED_RELEASE",
       "state_source_pin": "1.0.0",
       "runtime_enforcement": "VERIFIED_REFERENCE_RUNTIME_REPOSITORY_CI_ONLY",
       "estate_admission_state": "PENDING_INDEPENDENT_VERIFICATION",
-      "source": "ESTATE-REGISTRY/cdx-anchors.json"
+      "source": "ESTATE-REGISTRY/cdx-anchors.json",
+      "verified_at": "2026-10-29T15:19:00Z",
+      "verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     }
   },
-  "reconciliation_note": "WP09 completed canonical anchor migration across all 28 governed consumers. Repository anchors are now release-pinned declarations, not verified bindings. FFC canonical identity migration is established but admission remains WP13; FFOS runtime binding remains pending WP11; estate-wide enforcement blocker remains open.",
+  "reconciliation_note": "WP10 completed independent verification and default-branch reconciliation for all 28 governed consumer anchors. Repository anchor standing is CDX_BOUND / PASS. FFOS runtime remains pending WP11; Pius dedicated runtime verification remains WP12; FFC formal admission remains WP13; estate-wide enforcement blocker remains open.",
   "updated_at": "2026-10-29",
   "pending_anchor_candidates": {
     "Motherpher/form-flode": {
-      "main_branch_anchor_state": "ANCHOR_DECLARED",
+      "main_branch_anchor_state": "CDX_BOUND",
       "main_branch_anchor_present": true,
       "source": "Motherpher/form-flode PR #37",
-      "verification": "NOT_VERIFIED",
-      "registry_admission": "PENDING_WP10_VERIFICATION_AND_WP13_ADMISSION",
+      "verification": "PASS",
+      "registry_admission": "PENDING_WP13_FORMAL_ADMISSION",
       "legacy_manifest_present": true,
       "legacy_manifest_repository_identity": "Hybrismannen/form-flode",
       "identity_reconciliation": "CANONICAL_REPOSITORY_IDENTITY_ESTABLISHED",
       "binding_mode": "PINNED_RELEASE",
-      "cdx_ref": "1.0.0"
+      "cdx_ref": "1.0.0",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED"
     }
   },
   "repository_identity_reconciliation": {
@@ -78,9 +84,9 @@
       "historical_system_id": "CDX-EST-001",
       "target_system_id": "FFC",
       "relation": "SAME_GITHUB_REPOSITORY_OBJECT",
-      "state": "CANONICAL_IDENTITY_MIGRATED_ANCHOR_VERIFICATION_PENDING",
-      "main_anchor_state": "ANCHOR_DECLARED",
-      "verification_state": "NOT_VERIFIED",
+      "state": "CANONICAL_IDENTITY_MIGRATED_ANCHOR_VERIFIED_ADMISSION_PENDING",
+      "main_anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
       "source_pr": "Motherpher/form-flode#37"
     }
   },
@@ -231,5 +237,24 @@
     "evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
     "next_wp": "CDX-WP10",
     "state_effect": "NONE_ON_RUNTIME_OR_ESTATE_ENFORCEMENT"
+  },
+  "wp10_anchor_verification": {
+    "programme": "CDX-WP10",
+    "state": "COMPLETE_ANCHORS_VERIFIED_RECONCILED",
+    "completed_at": "2026-10-29",
+    "governed_consumers_expected": 28,
+    "governed_consumers_verified": 28,
+    "local_reconciliation_prs_merged": 28,
+    "default_branch_readbacks_passed": 28,
+    "anchor_state": "CDX_BOUND",
+    "verification_state": "PASS",
+    "release_ref": "1.0.0",
+    "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+    "evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+    "verification_evidence_commit": "ad26ea289ab71c86bea2461e0509c5b4bec9a32e",
+    "ffc_admission_state": "PENDING_WP13",
+    "ffos_runtime_state": "BOUND_PENDING_RUNTIME_INTEGRATION",
+    "next_wp": "CDX-WP11",
+    "state_effect": "ANCHOR_AXIS_ONLY"
   }
 }
