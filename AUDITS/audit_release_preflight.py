@@ -127,7 +127,7 @@ else:
             or order.get("publication_authorized") is not True
             or order.get("publication_state")!="PUBLISHED_VERIFIED"):
             fail("published release order is inconsistent")
-        if (evidence.get("tag")!="1.0.0"
+        if (evidence.get("tag",{}).get("name")!="1.0.0"
             or evidence.get("release_published") is not True
             or evidence.get("publication_verified") is not True
             or not evidence.get("publication_commit")):

@@ -1,0 +1,66 @@
+{
+  "schema": "cdx.publication-evidence/v1.0",
+  "evidence_id": "CDX-1.0-PUBLICATION-EVIDENCE-2026-10-29",
+  "system_id": "CDX-SYS-001",
+  "law_id": "CDX-LAW-001",
+  "release": "1.0.0",
+  "publication_verified": true,
+  "release_published": true,
+  "observed_at": "2026-10-29",
+  "publication_commit": "6e275dea737d77349ddd1264c4f6ef900904995f",
+  "tag": {
+    "name": "1.0.0",
+    "ref": "refs/tags/1.0.0",
+    "object_type": "annotated_tag",
+    "tag_object_sha": "c0233574e7fb850cb3e358f869c31cb38fe822b9",
+    "target_commit": "6e275dea737d77349ddd1264c4f6ef900904995f",
+    "tagger": "github-actions[bot]",
+    "tagger_date": "2026-10-29T13:10:56Z",
+    "signature_verified": false,
+    "signature_reason": "unsigned",
+    "signature_requirement_for_1_0": "NOT_REQUIRED"
+  },
+  "github_release": {
+    "id": 427882220,
+    "name": "CDX 1.0.0",
+    "tag_name": "1.0.0",
+    "html_url": "https://github.com/Hybrismannen/Conductellence-/releases/tag/1.0.0",
+    "draft": false,
+    "prerelease": false,
+    "author": "github-actions[bot]",
+    "published_at": "2026-10-29T13:10:59Z",
+    "assets": [
+      {
+        "id": 688609451,
+        "name": "cdx-1.0.0-publication-provenance.json",
+        "label": "CDX-1.0.0-publication-provenance.json",
+        "digest": "sha256:a3ac18df7e436a4ec62271a0d64aeaf570152c773f19316c45a8889666b8506d",
+        "size": 2507
+      },
+      {
+        "id": 688609445,
+        "name": "manifest.json",
+        "label": "CDX-DIST-1.0.0-RC1-manifest.json",
+        "digest": "sha256:f4504dcca9c21b460868c65c1a9aed55cec8a909f5db101588fee57349831ac1",
+        "size": 3256
+      }
+    ]
+  },
+  "publication_workflow": {
+    "workflow": "CDX 1.0 Publication",
+    "run_id": 40879564779,
+    "job_id": 123467133802,
+    "conclusion": "success",
+    "exact_commit_verified": true,
+    "release_preflight": "PASS",
+    "package_verification": "PASS",
+    "preexisting_tag_release_check": "PASS",
+    "tag_creation": "PASS",
+    "github_release_publication": "PASS",
+    "post_publication_verification": "PASS"
+  },
+  "authorization_ref": "GOVERNANCE/orders/CDX-PUBLICATION-1.0.0-AUTHORIZATION-2026-10-29.json",
+  "release_order_ref": "GOVERNANCE/orders/CDX-RELEASE-1.0.0.json",
+  "readiness_ref": "GOVERNANCE/release/CDX-1.0-PUBLICATION-READINESS-2026-10-29.json",
+  "interpretation": "CDX 1.0.0 core release is published and versioned. This evidence does not imply estate-wide ENFORCING or downstream runtime integration."
+}

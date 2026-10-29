@@ -7,7 +7,7 @@
   "observed_at": "2026-10-29",
   "sovereign_release_decision": "RELEASE_1_0_0",
   "publication_authorized": true,
-  "publication_state": "AUTHORIZED_PENDING_PROTECTED_EXECUTION",
+  "publication_state": "PUBLISHED_VERIFIED",
   "verification": {
     "core_release_blockers": [],
     "release_preflight": "PASS",
@@ -30,7 +30,7 @@
   },
   "proposed_publication": {
     "tag": "1.0.0",
-    "source_commit": "TO_BE_BOUND_TO_FINAL_PUBLICATION_PR_MERGE_COMMIT",
+    "source_commit": "6e275dea737d77349ddd1264c4f6ef900904995f",
     "github_release_name": "CDX 1.0.0",
     "prerelease": false,
     "draft": false,
@@ -38,6 +38,15 @@
     "runtime_contract": "RUNTIME-INTEGRATION/CDX-RUNTIME-001.json"
   },
   "rollback_incident_rule": "Publication creates an immutable provenance boundary. If defects are found after publication, preserve the tag/release evidence, open an incident/remediation record, and issue a superseding patch or withdrawal notice rather than rewriting published history.",
-  "remaining_gate": "PROTECTED_PUBLICATION_EXECUTION_AND_POST_PUBLICATION_VERIFICATION",
-  "authorization_ref": "GOVERNANCE/orders/CDX-PUBLICATION-1.0.0-AUTHORIZATION-2026-10-29.json"
+  "remaining_gate": null,
+  "authorization_ref": "GOVERNANCE/orders/CDX-PUBLICATION-1.0.0-AUTHORIZATION-2026-10-29.json",
+  "publication_evidence_ref": "GOVERNANCE/release/CDX-1.0-PUBLICATION-EVIDENCE-2026-10-29.json",
+  "observed_publication": {
+    "tag": "1.0.0",
+    "tag_object_sha": "c0233574e7fb850cb3e358f869c31cb38fe822b9",
+    "github_release_id": 427882220,
+    "github_release_url": "https://github.com/Hybrismannen/Conductellence-/releases/tag/1.0.0",
+    "published_at": "2026-10-29T13:10:59Z",
+    "workflow_run_id": 40879564779
+  }
 }

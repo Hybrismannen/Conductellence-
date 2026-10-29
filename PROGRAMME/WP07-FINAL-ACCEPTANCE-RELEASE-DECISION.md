@@ -1,80 +1,74 @@
 # CDX-WP07 — Final Acceptance & Release Decision
 
-**Status:** PUBLICATION AUTHORIZED — PROTECTED EXECUTION PENDING  
-**Target:** CDX 1.0.0  
-**Candidate:** `CDX-DIST-1.0.0-RC1`  
+**Status:** COMPLETE — CDX 1.0.0 PUBLISHED AND VERIFIED  
+**Release:** `1.0.0`  
+**Publication commit:** `6e275dea737d77349ddd1264c4f6ef900904995f`  
+**GitHub Release:** `CDX 1.0.0` / ID `427882220`  
 **Date:** 2026-10-29
 
-## 1. Final acceptance state
+## 1. WP07 result
 
-WP07 has completed the release-decision stage.
+WP07 is complete.
 
-Canonical state:
+CDX 1.0.0 has passed the full governed release chain:
 
-- constitutional state: `ADOPTED`;
+```text
+zero core blockers
+→ explicit RELEASE_1_0_0 decision
+→ publication readiness verification
+→ separate explicit publication authorization
+→ protected publication PR
+→ exact-commit release preflight
+→ pinned package verification
+→ tag 1.0.0
+→ GitHub Release CDX 1.0.0
+→ independent publication re-read
+→ canonical RELEASED reconciliation
+```
+
+## 2. Published release evidence
+
+- tag: `1.0.0`;
+- annotated tag object: `c0233574e7fb850cb3e358f869c31cb38fe822b9`;
+- tag target commit: `6e275dea737d77349ddd1264c4f6ef900904995f`;
+- publication workflow run: `40879564779`;
+- GitHub Release ID: `427882220`;
+- publication time: `2026-10-29T13:10:59Z`;
+- provenance asset digest: `sha256:a3ac18df7e436a4ec62271a0d64aeaf570152c773f19316c45a8889666b8506d`;
+- RC manifest release-asset digest: `sha256:f4504dcca9c21b460868c65c1a9aed55cec8a909f5db101588fee57349831ac1`.
+
+Canonical evidence:
+
+`GOVERNANCE/release/CDX-1.0-PUBLICATION-EVIDENCE-2026-10-29.json`
+
+## 3. Canonical state after WP07
+
+- constitutional: `ADOPTED`;
 - core runtime: `VERIFIED_REFERENCE_RUNTIME`;
+- release: `RELEASED`;
+- enforcement: `BOOTSTRAP`;
+- estate integration: `PENDING_RUNTIME_BINDINGS`;
 - core release blockers: none;
-- WP04 independent evidence custody: VERIFIED;
-- WP05 native repository protection: VERIFIED;
-- WP06 runtime/distribution closure: complete;
-- sovereign release decision: `RELEASE_1_0_0`;
-- repository release state: `PRE_RELEASE`;
-- enforcement state: `BOOTSTRAP`.
+- estate enforcement blocker: `CDX-BLOCK-ESTATE-RUNTIME-001`.
 
-The sovereign decision was recorded through PR #45 and canonicalized through PR #46.
+## 4. What WP07 does not complete
 
-That decision is intentionally distinct from publication authority.
+CDX 1.0 publication does not automatically complete downstream governance.
 
-## 2. Publication readiness verification
+The release boundary explicitly places the following work outside the 1.0 core closure:
 
-Exact-head publication readiness was verified against main commit:
+- WP08 — Estate Registry v2 applicability classification;
+- WP09 — canonical anchor migration;
+- WP10 — estate anchor verification and reconciliation;
+- WP11 — FFOS first verified runtime binding;
+- WP12 — Pius binding verification;
+- WP13 — FFC admission;
+- WP14 — estate-wide CDX 1.0 propagation.
 
-`c3c751733dbace3e051c628f3d68dc706427eb6f`
+Those are separate release-dependent work packages and may now begin.
 
-Evidence includes:
+## 5. State discipline
 
-- Law Audit run `40869176000` — PASS;
-- release preflight — PASS;
-- `CDX-DIST-1.0.0-RC1` artifact blob set pinned and reproducible — PASS;
-- core blocker set `[]`;
-- SPETL custody verifier run `40869232554` — PASS;
-- protected `main` with all five required CDX status contexts;
-- frozen release boundary with no active exceptions;
-- GitHub Releases collection empty at verification time.
+The governing maxim remains:
 
-Canonical readiness record:
-
-`GOVERNANCE/release/CDX-1.0-PUBLICATION-READINESS-2026-10-29.json`
-
-## 3. Remaining sovereign gate
-
-The only remaining WP07 gate is:
-
-`EXPLICIT_HUMAN_SOVEREIGN_AUTHORIZATION_TO_PUBLISH_CDX_1_0`
-
-A generic proceed instruction, normal PR approval or `/cdx-approve` does not itself create publication authority.
-
-The publication authorization must explicitly authorize publication of CDX 1.0.0.
-
-## 4. Publication operation after authorization
-
-After explicit publication authority:
-
-1. create the final publication-state PR;
-2. bind the release to that exact protected merge commit;
-3. pass all required CDX checks;
-4. receive exact-head `/cdx-approve`;
-5. merge the publication-state transition;
-6. verify the target tag does not already exist;
-7. create tag `1.0.0`;
-8. publish GitHub Release `CDX 1.0.0`;
-9. re-read tag/release provenance;
-10. reconcile canonical state to `RELEASED`.
-
-Publication does not imply estate-wide enforcement or runtime binding.
-
-## 5. Post-release boundary
-
-Only after CDX 1.0.0 publication and post-publication verification may WP08–WP14 proceed as release-dependent estate work.
-
-The estate enforcement blocker remains a separate axis.
+**Maturity is not enforcement. Release is not integration. Integration is not estate-wide enforcement.**

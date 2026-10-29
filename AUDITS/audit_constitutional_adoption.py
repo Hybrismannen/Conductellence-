@@ -121,13 +121,29 @@ else:
 
 expected_other={
     "core_runtime_state":"VERIFIED_REFERENCE_RUNTIME",
-    "release_state":"PRE_RELEASE",
     "enforcement_state":"BOOTSTRAP",
     "estate_integration_state":"PENDING_RUNTIME_BINDINGS",
 }
 for key,val in expected_other.items():
     if system.get(key)!=val:
         fail(f"constitutional transition improperly changed {key}: {system.get(key)}")
+
+release_state=system.get("release_state")
+if release_state not in {"PRE_RELEASE","RELEASED"}:
+    fail(f"unexpected release state on independent release axis: {release_state}")
+if release_state=="RELEASED":
+    evidence_path=Path("GOVERNANCE/release/CDX-1.0-PUBLICATION-EVIDENCE-2026-10-29.json")
+    order_path=Path("GOVERNANCE/orders/CDX-RELEASE-1.0.0.json")
+    if not evidence_path.exists() or not order_path.exists():
+        fail("RELEASED state lacks independent publication evidence/order")
+    publication=json.loads(evidence_path.read_text(encoding="utf-8"))
+    release_order=json.loads(order_path.read_text(encoding="utf-8"))
+    if (publication.get("publication_verified") is not True
+        or publication.get("release_published") is not True
+        or publication.get("tag",{}).get("name")!="1.0.0"
+        or release_order.get("state")!="PUBLISHED"
+        or release_order.get("publication_state")!="PUBLISHED_VERIFIED"):
+        fail("RELEASED state is not supported by verified publication evidence")
 
 core_blockers=set(system.get("core_release_blockers",[]))
 estate_blockers=set(system.get("estate_enforcement_blockers",[]))
@@ -151,5 +167,5 @@ print(f"PASS: constitutional state={state}")
 print("PASS: explicit HUMAN_SOVEREIGN_AUTHORITY authorization present")
 print("PASS: frozen constitutional topology remains 7/131/69/62")
 print("PASS: no WP01 constitutional conflict")
-print("PASS: release/enforcement/integration axes remain independent")
+print(f"PASS: release axis independently evidenced at {release_state}; enforcement/integration remain separate")
 print("PASS: independent blocker state tracks verified external gate state")
