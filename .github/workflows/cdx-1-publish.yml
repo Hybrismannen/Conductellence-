@@ -34,7 +34,7 @@ jobs:
           auth=json.loads(Path("GOVERNANCE/orders/CDX-PUBLICATION-1.0.0-AUTHORIZATION-2026-10-29.json").read_text())
           if order.get("state") == "PUBLISHED":
               print("Publication already reconciled; no publication side effect requested.")
-              with open("$GITHUB_OUTPUT","a") as f:
+              with open(os.environ["GITHUB_OUTPUT"],"a") as f:
                   f.write("publish=false\n")
               raise SystemExit(0)
           required={
