@@ -2,10 +2,7 @@ name: CDX Estate Registry Consistency
 
 on:
   pull_request:
-    paths:
-      - 'ESTATE-REGISTRY/**'
-      - 'GOVERNANCE/system-state.json'
-      - '.github/workflows/cdx-estate-registry-consistency.yml'
+    branches: [main]
   push:
     branches: [main]
     paths:
