@@ -3,7 +3,7 @@
   "preflight_id": "CDX-RELEASE-PREFLIGHT-1.0.0",
   "target_release": "1.0.0",
   "observed_at": "2026-10-29",
-  "decision": "BLOCKED_EXTERNAL_GATES",
+  "decision": "PENDING_FINAL_PREFLIGHT_AND_HUMAN_RELEASE_DECISION",
   "release_authorized": false,
   "state_before_release": {
     "constitutional_state": "ADOPTED",
@@ -20,17 +20,10 @@
     "69 fully automatable controls pass reference-runtime self-tests",
     "SPETL v1.1 canonical and portable runtime compatibility verified",
     "canonical .cdx/anchor.json binding contract defined",
-    "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001 closed by VERIFIED CDX-CUSTODY-GHA-001 independent write/read/verify provenance"
+    "CDX-BLOCK-EVIDENCE-INDEPENDENCE-001 closed by VERIFIED CDX-CUSTODY-GHA-001 independent write/read/verify provenance",
+    "CDX-WP05 repository protection owner-authenticated platform readback and non-draft negative-gate verified"
   ],
-  "blocking_core_conditions": [
-    {
-      "blocker_id": "CDX-BLOCK-REPO-PROTECTION-001",
-      "state": "MAXIMUM_IN_REPO_HARDENING_COMPLETE_PLATFORM_PLAN_GATE_BLOCKED",
-      "owner_action_required": true,
-      "required_action": "Enable private-repository native/equivalent pre-merge protection, apply CDX-REPO-PROTECT-TARGET-001 to main, then independently re-read and verify the platform rule.",
-      "target_profile": "GOVERNANCE/repository-protection-target.json"
-    }
-  ],
+  "blocking_core_conditions": [],
   "non_blocking_repository_hygiene": [
     {
       "issue": "#14",
@@ -57,9 +50,9 @@
       "explicit human-sovereign release decision for CDX 1.0.0"
     ],
     "prohibited_while_blocked": [
-      "create/publish CDX 1.0.0 release tag",
-      "set release_state=RELEASED",
-      "set enforcement_state=ENFORCEMENT_READY or ENFORCING",
+      "create/publish CDX 1.0.0 release tag without explicit authorized release decision",
+      "set release_state=RELEASED before independent final release gate and human decision",
+      "set enforcement_state=ENFORCEMENT_READY or ENFORCING from repository protection alone",
       "begin WP08 estate rollout as if core release were closed"
     ]
   },
