@@ -1,80 +1,80 @@
 # CDX-WP07 — Final Acceptance & Release Decision
 
-**Status:** PREFLIGHT COMPLETE — RELEASE BLOCKED BY EXTERNAL GATES  
+**Status:** RELEASE DECISION RECORDED — PUBLICATION READY, EXPLICIT AUTHORIZATION PENDING  
 **Target:** CDX 1.0.0  
 **Candidate:** `CDX-DIST-1.0.0-RC1`  
-**Date:** 2026-10-28
+**Date:** 2026-10-29
 
-## 1. Preflight result
+## 1. Final acceptance state
 
-The CDX 1.0 core is internally closed enough to make the final release decision mechanically well-defined.
+WP07 has completed the release-decision stage.
 
-The preflight result is nevertheless:
+Canonical state:
 
-`BLOCKED_EXTERNAL_GATES`
+- constitutional state: `ADOPTED`;
+- core runtime: `VERIFIED_REFERENCE_RUNTIME`;
+- core release blockers: none;
+- WP04 independent evidence custody: VERIFIED;
+- WP05 native repository protection: VERIFIED;
+- WP06 runtime/distribution closure: complete;
+- sovereign release decision: `RELEASE_1_0_0`;
+- repository release state: `PRE_RELEASE`;
+- enforcement state: `BOOTSTRAP`.
 
-This is not a failure of the CDX architecture. After WP04 verification, the release remains correctly fail-closed because one release-critical control — native/equivalent repository protection — is still not independently proven.
+The sovereign decision was recorded through PR #45 and canonicalized through PR #46.
 
-## 2. Internal conditions now satisfied
+That decision is intentionally distinct from publication authority.
 
-- constitutional Act: `ADOPTED v1.0.0`;
-- RC-01 boundary: frozen, no exception;
-- reference runtime: verified;
-- `CDX-RUNTIME-001 v1.0.0`: frozen release candidate;
-- 69 machine controls: self-test PASS;
-- review-governed constitutional surface: previously accepted;
-- SPETL v1.1: canonical + portable compatibility PASS;
-- candidate distribution: `CDX-DIST-1.0.0-RC1`;
-- candidate artifacts: pinned by Git blob SHA and reproducibly verifiable;
-- canonical consumer binding contract: `.cdx/anchor.json`.
+## 2. Publication readiness verification
 
-## 3. Core blockers
+Exact-head publication readiness was verified against main commit:
 
-### #5 — Native repository protection
+`c3c751733dbace3e051c628f3d68dc706427eb6f`
 
-State: `PLATFORM_PLAN_GATE_BLOCKED`.
+Evidence includes:
 
-GitHub reports that rulesets for this private repository require an upgraded capability or public visibility. Current integration cannot administer protection. Existing in-repo controls are post-push and therefore not an equivalent pre-merge guarantee.
+- Law Audit run `40869176000` — PASS;
+- release preflight — PASS;
+- `CDX-DIST-1.0.0-RC1` artifact blob set pinned and reproducible — PASS;
+- core blocker set `[]`;
+- SPETL custody verifier run `40869232554` — PASS;
+- protected `main` with all five required CDX status contexts;
+- frozen release boundary with no active exceptions;
+- GitHub Releases collection empty at verification time.
 
-### #17 — Independent SPETL evidence custody
+Canonical readiness record:
 
-State: **CLOSED / VERIFIED REFERENCE CUSTODY**.
+`GOVERNANCE/release/CDX-1.0-PUBLICATION-READINESS-2026-10-29.json`
 
-`CDX-CUSTODY-GHA-001` was verified through an observed main-branch producer → separate custodian → separate verifier chain with immutable artifact digests, custody receipt, re-read verification and the required negative matrix. The long-lived Vercel target remains an optional stronger retention target and is still externally provisioning-blocked, but it is no longer a core-release evidence blocker.
+## 3. Remaining sovereign gate
 
-## 4. Release order
+The only remaining WP07 gate is:
 
-WP07 creates `CDX-RELEASE-1.0.0` in state:
+`EXPLICIT_HUMAN_SOVEREIGN_AUTHORIZATION_TO_PUBLISH_CDX_1_0`
 
-`PENDING_BLOCKER_CLOSURE`
+A generic proceed instruction, normal PR approval or `/cdx-approve` does not itself create publication authority.
 
-No human release decision is requested yet. The decision becomes legitimately requestable only after the remaining repository-protection blocker closes and all final gates pass.
+The publication authorization must explicitly authorize publication of CDX 1.0.0.
 
-## 5. Repository metadata hygiene
+## 4. Publication operation after authorization
 
-Two metadata items remain outside the constitutional/runtime blockers:
+After explicit publication authority:
 
-1. Issue #14: repository description still says “Conduct of Excellence”; canonical derivation is “Code of Conduct + Excellence”.
-2. Repository homepage currently points to `https://udl-twin.vercel.app`.
+1. create the final publication-state PR;
+2. bind the release to that exact protected merge commit;
+3. pass all required CDX checks;
+4. receive exact-head `/cdx-approve`;
+5. merge the publication-state transition;
+6. verify the target tag does not already exist;
+7. create tag `1.0.0`;
+8. publish GitHub Release `CDX 1.0.0`;
+9. re-read tag/release provenance;
+10. reconcile canonical state to `RELEASED`.
 
-The current connector cannot update repository metadata. The homepage is surfaced for owner review rather than changed by assumption.
+Publication does not imply estate-wide enforcement or runtime binding.
 
-## 6. Actions prohibited while blocked
+## 5. Post-release boundary
 
-CDX must not:
+Only after CDX 1.0.0 publication and post-publication verification may WP08–WP14 proceed as release-dependent estate work.
 
-- create/publish the `1.0.0` release tag;
-- set `release_state=RELEASED`;
-- set `enforcement_state=ENFORCEMENT_READY` or `ENFORCING`;
-- begin WP08 estate rollout as if the core release were complete;
-- redefine the remaining external blocker to make the preflight pass.
-
-## 7. Resume path
-
-After owner-side platform actions:
-
-1. complete WP05 native/equivalent repository-protection verification;
-2. merge the repository-protection closure evidence;
-3. rerun WP07 preflight;
-4. if PASS, request explicit human-sovereign decision on `CDX-RELEASE-1.0.0`;
-5. only after that decision and final protected PR: publish CDX 1.0.0 and proceed to WP08.
+The estate enforcement blocker remains a separate axis.
