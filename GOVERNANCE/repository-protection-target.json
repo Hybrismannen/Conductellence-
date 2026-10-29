@@ -8,14 +8,16 @@
     "required": true,
     "approving_reviews": 0,
     "require_code_owner_review": false,
-    "dismiss_stale_reviews": true,
+    "dismiss_stale_reviews": false,
     "require_conversation_resolution": true,
-    "rationale": "Protected constitutional mutations require a human approval event before merge.",
+    "rationale": "Protected constitutional mutations require a human approval event before merge. With required_approving_review_count=0, stale ordinary GitHub reviews are not the sovereign approval mechanism. The independently required human-sovereign-approval status is exact-head bound and must be reissued after each new commit.",
     "human_approval_mode": "OWNER_COMMENT_STATUS",
     "human_approval_command": "/cdx-approve",
     "human_approval_context": "human-sovereign-approval",
     "human_approval_workflow": ".github/workflows/human-sovereign-approval.yml",
-    "human_approval_rule": "Approval must be emitted by the default-branch issue_comment workflow from an OWNER comment and is bound to the exact PR head SHA. Any new commit requires a new approval."
+    "human_approval_rule": "Approval must be emitted by the default-branch issue_comment workflow from an OWNER comment and is bound to the exact PR head SHA. Any new commit requires a new approval.",
+    "required_approving_review_count": 0,
+    "stale_review_disposition": "NOT_APPLICABLE_TO_ZERO_GITHUB_APPROVALS; EXACT_HEAD_HUMAN_STATUS_REQUIRED"
   },
   "required_status_checks": {
     "strict_up_to_date_branch": true,
@@ -62,5 +64,5 @@
     "branch deletion disabled",
     "no uncontrolled bypass path"
   ],
-  "current_state": "PENDING_PLATFORM_CAPABILITY"
+  "current_state": "RULE_CONFIGURED_API_READBACK_VERIFIED_PENDING_NEGATIVE_TEST_AND_INDEPENDENT_ACCEPTANCE"
 }
