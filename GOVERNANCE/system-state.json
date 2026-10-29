@@ -168,13 +168,17 @@
     "wp06_closed": true
   },
   "wp07_release_preflight": {
-    "state": "PENDING_FINAL_RELEASE_PREFLIGHT_AND_HUMAN_DECISION",
+    "state": "RELEASE_DECISION_RECORDED_PUBLICATION_READY_AWAITING_AUTHORIZATION",
     "preflight_id": "CDX-RELEASE-PREFLIGHT-1.0.0",
     "target_release": "1.0.0",
     "release_order": "CDX-RELEASE-1.0.0",
     "release_authorized": false,
     "internal_candidate_ready": true,
     "external_core_blockers": [],
-    "next_state_if_cleared": "READY_FOR_HUMAN_RELEASE_DECISION"
+    "next_state_if_cleared": "READY_FOR_HUMAN_RELEASE_DECISION",
+    "release_decision": "RELEASE_1_0_0",
+    "publication_authorized": false,
+    "publication_readiness_ref": "GOVERNANCE/release/CDX-1.0-PUBLICATION-READINESS-2026-10-29.json",
+    "remaining_gate": "EXPLICIT_HUMAN_SOVEREIGN_AUTHORIZATION_TO_PUBLISH_CDX_1_0"
   }
 }
