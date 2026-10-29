@@ -1,0 +1,50 @@
+{
+  "schema": "cdx.estate-terminology-policy/v1",
+  "policy_id": "CDX-ESTATE-TERMS-001",
+  "version": "1.0",
+  "decision": "OWNER_ACCEPTED_TERMINOLOGY",
+  "engineering_state": "CANDIDATE_PROPAGATION",
+  "authority_source": "CDX-SYS-001",
+  "registry_ref": "ESTATE-REGISTRY/registry-v2.json",
+  "canonical_term": "Estate",
+  "canonical_display_name": "CDX Estate",
+  "definition": "Registry-determined governance applicability collection of digital work surfaces; not a corporate ownership group or a runtime.",
+  "applicable_classes": [
+    "GOVERNED_APPLICABLE"
+  ],
+  "authority_source_class": "AUTHORITY_SOURCE",
+  "excluded_classes": [
+    "EXCLUDED_BY_DECISION"
+  ],
+  "historical_classes": [
+    "HISTORICAL_ALIAS"
+  ],
+  "membership_resolution": "AUTHORITY_REGISTRY_NOT_SELF_DECLARED",
+  "agent_context_required": true,
+  "agent_context_trust": "HOST_VERIFIED_REGISTRY_MEMBERSHIP",
+  "estate_applicable_consumer_binding": "CDX_REQUIRED_AT_ADMISSION",
+  "external_distribution": {
+    "cdx_detachable_when_outside_estate": true,
+    "recipient_governance_must_be_explicit": true,
+    "core_security_remains": true
+  },
+  "explicit_exclusion_continuity": [
+    "Hybrismannen/Barnombudet"
+  ],
+  "non_inferences": [
+    "corporate_ownership",
+    "automatic_internal_classification",
+    "automatic_runtime_admission",
+    "verified_anchor",
+    "verified_runtime_enforcement"
+  ],
+  "local_reference_path": "docs/governance/CDX-ESTATE-POLICY.md",
+  "policy_source_document": "ESTATE-REGISTRY/ESTATE-NAMING-POLICY-v1.md",
+  "status_axes_independent": [
+    "applicability",
+    "anchor_requirement",
+    "anchor_state",
+    "runtime_screening",
+    "runtime_verification"
+  ]
+}
