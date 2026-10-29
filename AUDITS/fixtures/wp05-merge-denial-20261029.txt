@@ -1,0 +1,1 @@
+Synthetic WP05 merge protection fixture. No executable changes. DO NOT MERGE.
