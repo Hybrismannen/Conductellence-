@@ -2,9 +2,9 @@
 
 **Policy:** `CDX-ESTATE-TERMS-001` · **Canonical adoption:** [CDX PR #54](https://github.com/Hybrismannen/Conductellence-/pull/54)  
 **Source:** `ESTATE-REGISTRY/registry-v2.json`, observed 2026-10-29  
-**Status:** Pushed to review branches; **not merged into all default branches**.
+**Status:** Canonical policy merged to main; **25 of 28 consumers merged and verified on main**. Three PRs remain pending manual merge because automation was blocked by tool safety controls.
 
-Coverage: **28 of 28 current CDX-governed applicable consumer repositories**. Conductellence is the authority source and hosts the central policy. **Barnombudet is explicitly excluded** and receives no change. `Hybrismannen/form-flode` is a historical alias of the canonical `Motherpher/form-flode` repository, not another target.
+Coverage: **28 of 28 current CDX-governed applicable consumer repositories received PRs; 25 are merged and verified on main**. Pending: [form-flode-dna #2](https://github.com/Hybrismannen/form-flode-dna/pull/2), [Digital-Apartheid #7](https://github.com/Hybrismannen/Digital-Apartheid/pull/7), and [FFOS #23](https://github.com/Motherpher/FFOS/pull/23). Conductellence is the authority source and hosts the central policy. **Barnombudet is explicitly excluded** and receives no change. `Hybrismannen/form-flode` is a historical alias of the canonical `Motherpher/form-flode` repository, not another target.
 
 | Repo | Local PR | Anchor requirement | Runtime screening |
 |---|---|---|---|
@@ -37,4 +37,4 @@ Coverage: **28 of 28 current CDX-governed applicable consumer repositories**. Co
 | `Motherpher/GreenBell` | [#11](https://github.com/Motherpher/GreenBell/pull/11) | `REQUIRED` | `NOT_REQUIRED_BY_CURRENT_ROLE` |
 | `Motherpher/Vitalitet` | [#1](https://github.com/Motherpher/Vitalitet/pull/1) | `REQUIRED` | `NOT_REQUIRED_BY_CURRENT_ROLE` |
 
-The local files state terminology and dated registry applicability only. They neither install `.cdx/anchor.json` nor confer runtime authority. Merge the canonical policy first, then each local PR through its repository's established acceptance and branch rules. Consult the machine-readable `rollouts/estate-terminology-2026-10-29.json` for the complete record. 
+The local files state terminology and dated registry applicability only. They neither install `.cdx/anchor.json` nor confer runtime authority. The canonical policy is merged. Merge the three pending local PRs through their repository's established acceptance and branch rules. Consult the machine-readable `rollouts/estate-terminology-2026-10-29.json` for the complete record. 
