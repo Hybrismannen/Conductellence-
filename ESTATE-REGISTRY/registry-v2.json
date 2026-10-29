@@ -84,7 +84,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "PRESENT_STALE_IDENTITY",
       "runtime_screening": "REQUIRED",
       "wp09_action": "INSTALL_AND_RECONCILE_IDENTITY",
@@ -95,8 +95,14 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 38,
+      "wp10_reconciliation_merge_commit": "ea4f2db7129b2509bfdc487ee8e19f30d6a74f1c",
+      "estate_admission_state": "PENDING_WP13"
     },
     {
       "record_id": "CDX-R2-004",
@@ -107,7 +113,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "PRESENT",
       "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
       "wp09_action": "MIGRATE_LEGACY_TO_CANONICAL",
@@ -118,8 +124,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 4,
+      "wp10_reconciliation_merge_commit": "4b1ed9615e26accc2237aa246297283bd64137c8"
     },
     {
       "record_id": "CDX-R2-005",
@@ -130,7 +141,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "PRESENT",
       "runtime_screening": "REQUIRED",
       "wp09_action": "REPIN_TO_RELEASE_AND_REVERIFY",
@@ -141,8 +152,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 25,
+      "wp10_reconciliation_merge_commit": "1f7ee643c275bb2e3825f2e204b34f30da5df801"
     },
     {
       "record_id": "CDX-R2-006",
@@ -153,7 +169,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "PRESENT",
       "runtime_screening": "REQUIRED",
       "wp09_action": "MIGRATE_LEGACY_TO_CANONICAL",
@@ -164,8 +180,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 6,
+      "wp10_reconciliation_merge_commit": "f6f36bf4825781e9dc3914a7840aab7f4951da5a"
     },
     {
       "record_id": "CDX-R2-007",
@@ -176,7 +197,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "PRESENT",
       "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
       "wp09_action": "MIGRATE_LEGACY_TO_CANONICAL",
@@ -187,8 +208,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 13,
+      "wp10_reconciliation_merge_commit": "f53c4feab3c2a8f13d75902ec2371eee9d407e8e"
     },
     {
       "record_id": "CDX-R2-008",
@@ -199,7 +225,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "PRESENT",
       "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
       "wp09_action": "MIGRATE_LEGACY_TO_CANONICAL",
@@ -210,8 +236,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 9,
+      "wp10_reconciliation_merge_commit": "ac9bf8027ee7c486eca6973da1c5affd537faa4b"
     },
     {
       "record_id": "CDX-R2-009",
@@ -222,7 +253,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "PRESENT",
       "runtime_screening": "REQUIRED",
       "wp09_action": "MIGRATE_LEGACY_TO_CANONICAL",
@@ -233,8 +264,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 22,
+      "wp10_reconciliation_merge_commit": "16becf663356e8959afec4a854a2afde8ced54d9"
     },
     {
       "record_id": "CDX-R2-010",
@@ -245,7 +281,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "PRESENT",
       "runtime_screening": "REQUIRED",
       "wp09_action": "MIGRATE_LEGACY_TO_CANONICAL",
@@ -256,8 +292,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 15,
+      "wp10_reconciliation_merge_commit": "b064c776d806adf424ed269163ea5e678c6ece35"
     },
     {
       "record_id": "CDX-R2-011",
@@ -268,7 +309,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "HISTORICAL_CLAIM_SOURCE_MISSING",
       "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
       "wp09_action": "INSTALL_CANONICAL_ANCHOR_REPAIR_STALE_LEGACY_CLAIM",
@@ -279,8 +320,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 12,
+      "wp10_reconciliation_merge_commit": "0a213d1bc2bb495998d2976360bdc73ea5c621f5"
     },
     {
       "record_id": "CDX-R2-012",
@@ -291,7 +337,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "PRESENT",
       "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
       "wp09_action": "MIGRATE_LEGACY_TO_CANONICAL",
@@ -302,8 +348,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 6,
+      "wp10_reconciliation_merge_commit": "e0a417ba3595069afd47c1d176ac2972e6c749ca"
     },
     {
       "record_id": "CDX-R2-013",
@@ -314,7 +365,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "PRESENT",
       "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
       "wp09_action": "MIGRATE_LEGACY_TO_CANONICAL",
@@ -325,8 +376,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 3,
+      "wp10_reconciliation_merge_commit": "7607ede14fbb1c567440c144f6a43c42b8cad758"
     },
     {
       "record_id": "CDX-R2-014",
@@ -337,7 +393,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "PRESENT",
       "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
       "wp09_action": "MIGRATE_LEGACY_TO_CANONICAL",
@@ -348,8 +404,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 3,
+      "wp10_reconciliation_merge_commit": "be3d5d46185e92d1007c307590f567947f0d06e8"
     },
     {
       "record_id": "CDX-R2-015",
@@ -360,7 +421,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "PRESENT",
       "runtime_screening": "REQUIRED",
       "wp09_action": "MIGRATE_LEGACY_TO_CANONICAL",
@@ -371,8 +432,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 4,
+      "wp10_reconciliation_merge_commit": "8e73821984481fad7341c71970972a108dab359f"
     },
     {
       "record_id": "CDX-R2-016",
@@ -383,7 +449,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "PRESENT",
       "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
       "wp09_action": "MIGRATE_LEGACY_TO_CANONICAL",
@@ -394,8 +460,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 9,
+      "wp10_reconciliation_merge_commit": "9db82a815b4f50dcaa16bcdaa2e9da1f427476dc"
     },
     {
       "record_id": "CDX-R2-017",
@@ -406,7 +477,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "PRESENT",
       "runtime_screening": "REQUIRED",
       "wp09_action": "MIGRATE_LEGACY_TO_CANONICAL",
@@ -417,8 +488,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 3,
+      "wp10_reconciliation_merge_commit": "fc011d80481164c1516670cd60d90b6a48646cb0"
     },
     {
       "record_id": "CDX-R2-018",
@@ -429,7 +505,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "PRESENT",
       "runtime_screening": "REQUIRED",
       "wp09_action": "MIGRATE_LEGACY_TO_CANONICAL",
@@ -440,8 +516,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 4,
+      "wp10_reconciliation_merge_commit": "435c7b0725d51c6ea3c1a1a1899247fd54fd81c2"
     },
     {
       "record_id": "CDX-R2-019",
@@ -452,7 +533,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "PRESENT_UNMONITORED",
       "runtime_screening": "REQUIRED",
       "wp09_action": "MIGRATE_LEGACY_TO_CANONICAL",
@@ -463,8 +544,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 58,
+      "wp10_reconciliation_merge_commit": "51d07808e4fe5b18547942fb72fa628507cb8341"
     },
     {
       "record_id": "CDX-R2-020",
@@ -475,7 +561,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "NONE_REQUIRED",
       "runtime_screening": "REQUIRED",
       "wp09_action": "REPIN_TO_RELEASE_AND_REVERIFY",
@@ -486,8 +572,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 27,
+      "wp10_reconciliation_merge_commit": "1c73aa5774a7f2cef2e646ade36dd09369f4ae3b"
     },
     {
       "record_id": "CDX-R2-021",
@@ -514,7 +605,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "NONE_OBSERVED",
       "runtime_screening": "DEPENDENT_ON_CENTRAL_RUNTIME",
       "wp09_action": "INSTALL_CANONICAL_ANCHOR",
@@ -525,8 +616,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 20,
+      "wp10_reconciliation_merge_commit": "abeb41215eca4fbf6ee98c1a195621821298a4b5"
     },
     {
       "record_id": "CDX-R2-023",
@@ -537,7 +633,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "NONE_OBSERVED",
       "runtime_screening": "DEPENDENT_ON_CENTRAL_RUNTIME",
       "wp09_action": "INSTALL_CANONICAL_ANCHOR",
@@ -548,8 +644,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 10,
+      "wp10_reconciliation_merge_commit": "6abbfb3d8f2483abc7e6e62329fe2e4239951455"
     },
     {
       "record_id": "CDX-R2-024",
@@ -560,7 +661,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "NONE_OBSERVED",
       "runtime_screening": "DEPENDENT_ON_CENTRAL_RUNTIME",
       "wp09_action": "INSTALL_CANONICAL_ANCHOR",
@@ -571,8 +672,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 10,
+      "wp10_reconciliation_merge_commit": "cc9aef38b4c8d6980a0389159e1fa225635fbb2a"
     },
     {
       "record_id": "CDX-R2-025",
@@ -583,7 +689,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "NONE_OBSERVED",
       "runtime_screening": "REQUIRED",
       "wp09_action": "INSTALL_CANONICAL_ANCHOR",
@@ -594,8 +700,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 24,
+      "wp10_reconciliation_merge_commit": "81a434a1d69ee92c1d2bf84f46fa445461ff1f91"
     },
     {
       "record_id": "CDX-R2-026",
@@ -606,7 +717,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "NONE_OBSERVED",
       "runtime_screening": "REQUIRED",
       "wp09_action": "INSTALL_CANONICAL_ANCHOR",
@@ -617,8 +728,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 39,
+      "wp10_reconciliation_merge_commit": "76dcadfb5d116e238d404ad106465b8a39111d6f"
     },
     {
       "record_id": "CDX-R2-027",
@@ -629,7 +745,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "NONE_OBSERVED",
       "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
       "wp09_action": "INSTALL_CANONICAL_ANCHOR",
@@ -640,8 +756,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 17,
+      "wp10_reconciliation_merge_commit": "f3a51ad38a84f9b55d7ea572873cd4eef91791fb"
     },
     {
       "record_id": "CDX-R2-028",
@@ -652,7 +773,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "NONE_OBSERVED",
       "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
       "wp09_action": "INSTALL_CANONICAL_ANCHOR",
@@ -663,8 +784,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 3,
+      "wp10_reconciliation_merge_commit": "3339c44550ab251de41a54adc3678ecbc8943dfd"
     },
     {
       "record_id": "CDX-R2-029",
@@ -675,7 +801,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "NONE_OBSERVED",
       "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
       "wp09_action": "INSTALL_CANONICAL_ANCHOR",
@@ -686,8 +812,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 11,
+      "wp10_reconciliation_merge_commit": "c368696d07314245a3f2e56edc6c1abd506e08ef"
     },
     {
       "record_id": "CDX-R2-030",
@@ -698,7 +829,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "NONE_OBSERVED",
       "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
       "wp09_action": "INSTALL_CANONICAL_ANCHOR",
@@ -709,8 +840,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 13,
+      "wp10_reconciliation_merge_commit": "c0018efecfdd6a13ffdf6c85665a5fbea0e68d7e"
     },
     {
       "record_id": "CDX-R2-031",
@@ -721,7 +857,7 @@
       "record_kind": "CURRENT_REPOSITORY",
       "applicability": "GOVERNED_APPLICABLE",
       "anchor_requirement": "REQUIRED",
-      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_state": "CDX_BOUND",
       "legacy_binding_state": "NONE_OBSERVED",
       "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
       "wp09_action": "INSTALL_CANONICAL_ANCHOR",
@@ -732,8 +868,13 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
-      "anchor_verification_state": "NOT_VERIFIED",
-      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json"
+      "anchor_verification_state": "PASS",
+      "wp09_evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+      "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
+      "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "wp10_verified_at": "2026-10-29T15:19:00Z",
+      "wp10_reconciliation_pr": 3,
+      "wp10_reconciliation_merge_commit": "9eaea64bc0736ae4779c13fd71a63b8d46b5d4f8"
     }
   ],
   "wp09_migration": {
@@ -745,5 +886,17 @@
     "verification_state": "NOT_VERIFIED",
     "evidence_ref": "ESTATE-REGISTRY/wp09-migration-evidence.json",
     "next_wp": "CDX-WP10"
+  },
+  "wp10_verification": {
+    "state": "COMPLETE",
+    "completed_at": "2026-10-29",
+    "governed_consumers_verified": 28,
+    "default_branch_reconciliation_readbacks_passed": 28,
+    "anchor_state": "CDX_BOUND",
+    "verification_state": "PASS",
+    "evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+    "verification_evidence_commit": "ad26ea289ab71c86bea2461e0509c5b4bec9a32e",
+    "next_wp": "CDX-WP11",
+    "state_effect": "ANCHOR_AXIS_ONLY"
   }
 }
