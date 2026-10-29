@@ -40,13 +40,17 @@
       "binding_manifest": ".security/conductellence.json",
       "binding_verified_at": "2026-09-25",
       "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
-      "runtime_integration_state": "NOT_VERIFIED"
+      "runtime_integration_state": "NOT_VERIFIED",
+      "anchor_state": "CDX_BOUND",
+      "anchor_verification_state": "PASS",
+      "anchor_verified_at": "2026-10-29T15:19:00Z",
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     },
     {
       "system_id": "CDX-EST-003",
       "repository": "Hybrismannen/pius-universe",
       "authority_ref": "CDX-SYS-001",
-      "security_state": "ANCHOR_DECLARED",
+      "security_state": "CDX_BOUND",
       "binding_manifest": ".cdx/anchor.json",
       "binding_verified_at": null,
       "binding_audit_workflow": ".github/workflows/pius-cdx-anchor-precheck.yml",
@@ -54,11 +58,14 @@
       "legacy_manifest": ".security/conductellence.json",
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
-      "anchor_verification_state": "NOT_VERIFIED",
+      "anchor_verification_state": "PASS",
       "estate_admission_state": "PENDING_INDEPENDENT_VERIFICATION",
       "consequential_enforcement_verified": false,
       "reconciliation_note": "WP09 repinned canonical anchor to released CDX 1.0.0. Independent anchor verification is deferred to WP10; legacy manifest remains provenance.",
-      "reconciled_at": "2026-10-29"
+      "reconciled_at": "2026-10-29",
+      "anchor_state": "CDX_BOUND",
+      "anchor_verified_at": "2026-10-29T15:19:00Z",
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     },
     {
       "system_id": "CDX-EST-004",
@@ -68,7 +75,11 @@
       "binding_manifest": ".security/conductellence.json",
       "binding_verified_at": "2026-09-25",
       "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
-      "runtime_integration_state": "NOT_VERIFIED"
+      "runtime_integration_state": "NOT_VERIFIED",
+      "anchor_state": "CDX_BOUND",
+      "anchor_verification_state": "PASS",
+      "anchor_verified_at": "2026-10-29T15:19:00Z",
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     },
     {
       "system_id": "CDX-EST-005",
@@ -78,7 +89,11 @@
       "binding_manifest": ".security/conductellence.json",
       "binding_verified_at": "2026-09-25",
       "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
-      "runtime_integration_state": "NOT_VERIFIED"
+      "runtime_integration_state": "NOT_VERIFIED",
+      "anchor_state": "CDX_BOUND",
+      "anchor_verification_state": "PASS",
+      "anchor_verified_at": "2026-10-29T15:19:00Z",
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     },
     {
       "system_id": "CDX-EST-006",
@@ -88,7 +103,11 @@
       "binding_manifest": ".security/conductellence.json",
       "binding_verified_at": "2026-09-25",
       "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
-      "runtime_integration_state": "NOT_VERIFIED"
+      "runtime_integration_state": "NOT_VERIFIED",
+      "anchor_state": "CDX_BOUND",
+      "anchor_verification_state": "PASS",
+      "anchor_verified_at": "2026-10-29T15:19:00Z",
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     },
     {
       "system_id": "CDX-EST-007",
@@ -98,7 +117,11 @@
       "binding_manifest": ".security/conductellence.json",
       "binding_verified_at": "2026-09-25",
       "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
-      "runtime_integration_state": "NOT_VERIFIED"
+      "runtime_integration_state": "NOT_VERIFIED",
+      "anchor_state": "CDX_BOUND",
+      "anchor_verification_state": "PASS",
+      "anchor_verified_at": "2026-10-29T15:19:00Z",
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     },
     {
       "system_id": "CDX-EST-008",
@@ -108,7 +131,11 @@
       "binding_manifest": ".security/conductellence.json",
       "binding_verified_at": "2026-09-25",
       "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
-      "runtime_integration_state": "NOT_VERIFIED"
+      "runtime_integration_state": "NOT_VERIFIED",
+      "anchor_state": "CDX_BOUND",
+      "anchor_verification_state": "PASS",
+      "anchor_verified_at": "2026-10-29T15:19:00Z",
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     },
     {
       "system_id": "CDX-EST-009",
@@ -122,7 +149,11 @@
       "manifest_observed_on_main": false,
       "reconciled_at": "2026-10-28",
       "reconciliation_status": "STALE_LEGACY_BINDING_CLAIM",
-      "reconciliation_note": "Central registry retains historical registration, but declared legacy binding manifest was not present on main during WP01 live reconciliation. Do not treat as currently governance-bound until repaired or canonically migrated."
+      "reconciliation_note": "Central registry retains historical registration, but declared legacy binding manifest was not present on main during WP01 live reconciliation. Do not treat as currently governance-bound until repaired or canonically migrated.",
+      "anchor_state": "CDX_BOUND",
+      "anchor_verification_state": "PASS",
+      "anchor_verified_at": "2026-10-29T15:19:00Z",
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     },
     {
       "system_id": "CDX-EST-010",
@@ -132,7 +163,11 @@
       "binding_manifest": ".security/conductellence.json",
       "binding_verified_at": "2026-09-25",
       "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
-      "runtime_integration_state": "NOT_VERIFIED"
+      "runtime_integration_state": "NOT_VERIFIED",
+      "anchor_state": "CDX_BOUND",
+      "anchor_verification_state": "PASS",
+      "anchor_verified_at": "2026-10-29T15:19:00Z",
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     },
     {
       "system_id": "CDX-EST-011",
@@ -142,7 +177,11 @@
       "binding_manifest": ".security/conductellence.json",
       "binding_verified_at": "2026-09-25",
       "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
-      "runtime_integration_state": "NOT_VERIFIED"
+      "runtime_integration_state": "NOT_VERIFIED",
+      "anchor_state": "CDX_BOUND",
+      "anchor_verification_state": "PASS",
+      "anchor_verified_at": "2026-10-29T15:19:00Z",
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     },
     {
       "system_id": "CDX-EST-012",
@@ -152,7 +191,11 @@
       "binding_manifest": ".security/conductellence.json",
       "binding_verified_at": "2026-09-25",
       "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
-      "runtime_integration_state": "NOT_VERIFIED"
+      "runtime_integration_state": "NOT_VERIFIED",
+      "anchor_state": "CDX_BOUND",
+      "anchor_verification_state": "PASS",
+      "anchor_verified_at": "2026-10-29T15:19:00Z",
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     },
     {
       "system_id": "CDX-EST-013",
@@ -162,7 +205,11 @@
       "binding_manifest": ".security/conductellence.json",
       "binding_verified_at": "2026-09-25",
       "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
-      "runtime_integration_state": "NOT_VERIFIED"
+      "runtime_integration_state": "NOT_VERIFIED",
+      "anchor_state": "CDX_BOUND",
+      "anchor_verification_state": "PASS",
+      "anchor_verified_at": "2026-10-29T15:19:00Z",
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     },
     {
       "system_id": "CDX-EST-014",
@@ -172,7 +219,11 @@
       "binding_manifest": ".security/conductellence.json",
       "binding_verified_at": "2026-09-25",
       "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
-      "runtime_integration_state": "NOT_VERIFIED"
+      "runtime_integration_state": "NOT_VERIFIED",
+      "anchor_state": "CDX_BOUND",
+      "anchor_verification_state": "PASS",
+      "anchor_verified_at": "2026-10-29T15:19:00Z",
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     },
     {
       "system_id": "CDX-EST-015",
@@ -182,7 +233,11 @@
       "binding_manifest": ".security/conductellence.json",
       "binding_verified_at": "2026-09-25",
       "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
-      "runtime_integration_state": "NOT_VERIFIED"
+      "runtime_integration_state": "NOT_VERIFIED",
+      "anchor_state": "CDX_BOUND",
+      "anchor_verification_state": "PASS",
+      "anchor_verified_at": "2026-10-29T15:19:00Z",
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     },
     {
       "system_id": "CDX-EST-016",
@@ -192,7 +247,11 @@
       "binding_manifest": ".security/conductellence.json",
       "binding_verified_at": "2026-09-25",
       "binding_audit_workflow": ".github/workflows/conductellence-binding-audit.yml",
-      "runtime_integration_state": "NOT_VERIFIED"
+      "runtime_integration_state": "NOT_VERIFIED",
+      "anchor_state": "CDX_BOUND",
+      "anchor_verification_state": "PASS",
+      "anchor_verified_at": "2026-10-29T15:19:00Z",
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     },
     {
       "system_id": "CDX-EST-017",
@@ -212,13 +271,17 @@
       "historical_binding_audit_workflow_claim": ".github/workflows/conductellence-binding-audit.yml",
       "reconciled_at": "2026-10-28",
       "reconciliation_status": "LEGACY_CI_DRIFT",
-      "reconciliation_note": "Legacy Conductellence manifest is present on main, but the historically recorded conductellence-binding-audit workflow was not observed. Runtime remains NOT_VERIFIED."
+      "reconciliation_note": "Legacy Conductellence manifest is present on main, but the historically recorded conductellence-binding-audit workflow was not observed. Runtime remains NOT_VERIFIED.",
+      "anchor_state": "CDX_BOUND",
+      "anchor_verification_state": "PASS",
+      "anchor_verified_at": "2026-10-29T15:19:00Z",
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     },
     {
       "system_id": "FFOS",
       "repository": "Motherpher/FFOS",
       "authority_ref": "CDX-SYS-001",
-      "security_state": "ANCHOR_DECLARED",
+      "security_state": "CDX_BOUND",
       "binding_manifest": ".cdx/anchor.json",
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
@@ -228,13 +291,16 @@
       "consequential_enforcement_verified": false,
       "anchor_last_verified_at": "2026-10-06T19:56:34Z",
       "last_verified_at": null,
-      "anchor_verification_state": "NOT_VERIFIED",
+      "anchor_verification_state": "PASS",
       "reconciled_at": "2026-10-29",
-      "reconciliation_note": "WP09 repinned FFOS to released CDX 1.0.0 and reset anchor verification pending WP10. Runtime remains BOUND_PENDING_RUNTIME_INTEGRATION."
+      "reconciliation_note": "WP09 repinned FFOS to released CDX 1.0.0 and reset anchor verification pending WP10. Runtime remains BOUND_PENDING_RUNTIME_INTEGRATION.",
+      "anchor_state": "CDX_BOUND",
+      "anchor_verified_at": "2026-10-29T15:19:00Z",
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     }
   ],
-  "updated_at": "2026-10-28",
-  "audit_note": "Admitted-system registry preserves historical binding provenance while distinguishing canonical identity, anchor and runtime state. Hybrismannen/form-flode is a historical alias of Motherpher/form-flode (same GitHub repository id 1379622813), not a second repository. No entry certifies consequential runtime enforcement without CDX-RUNTIME-001 evidence.",
+  "updated_at": "2026-10-29",
+  "audit_note": "Admitted-system registry preserves historical binding provenance while distinguishing canonical identity, anchor and runtime state. Hybrismannen/form-flode is a historical alias of Motherpher/form-flode (same GitHub repository id 1379622813), not a second repository. No entry certifies consequential runtime enforcement without CDX-RUNTIME-001 evidence. WP10 independently verified and reconciled the canonical anchor axis for all 28 governed consumers; runtime and estate admission remain separate axes.",
   "pending_admissions": [
     {
       "repository": "Motherpher/form-flode",

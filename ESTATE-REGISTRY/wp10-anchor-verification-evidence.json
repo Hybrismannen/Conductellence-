@@ -24,7 +24,9 @@
     "registry_correspondence_matches": 28,
     "failures": 0,
     "barnombudet_exclusion_reconfirmed": true,
-    "barnombudet_anchor_present": false
+    "barnombudet_anchor_present": false,
+    "governed_consumers_reconciled": 28,
+    "default_branch_reconciliation_readbacks_passed": 28
   },
   "scope_boundary": {
     "advances_anchor_axis_only": true,
@@ -594,5 +596,184 @@
       "recommended_anchor_state": "CDX_BOUND",
       "recommended_verification_state": "PASS"
     }
-  ]
+  ],
+  "reconciliation": {
+    "state": "COMPLETE",
+    "completed_at": "2026-10-29",
+    "local_anchor_prs_merged": 28,
+    "default_branch_readbacks_passed": 28,
+    "post_reconciliation_anchor_state": "CDX_BOUND",
+    "post_reconciliation_verification_state": "PASS",
+    "verification_evidence_commit": "ad26ea289ab71c86bea2461e0509c5b4bec9a32e",
+    "records": [
+      {
+        "repository": "Motherpher/form-flode",
+        "pr": 38,
+        "merge_commit": "ea4f2db7129b2509bfdc487ee8e19f30d6a74f1c",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Hybrismannen/form-flode-dna",
+        "pr": 4,
+        "merge_commit": "4b1ed9615e26accc2237aa246297283bd64137c8",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Hybrismannen/pius-universe",
+        "pr": 25,
+        "merge_commit": "1f7ee643c275bb2e3825f2e204b34f30da5df801",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Hybrismannen/pius-pwe",
+        "pr": 6,
+        "merge_commit": "f6f36bf4825781e9dc3914a7840aab7f4951da5a",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Hybrismannen/pius-codex-5",
+        "pr": 13,
+        "merge_commit": "f53c4feab3c2a8f13d75902ec2371eee9d407e8e",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Hybrismannen/pius-lifetime-audit-2026",
+        "pr": 9,
+        "merge_commit": "ac9bf8027ee7c486eca6973da1c5affd537faa4b",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Hybrismannen/udl-twin",
+        "pr": 22,
+        "merge_commit": "16becf663356e8959afec4a854a2afde8ced54d9",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Hybrismannen/green-bell-statsvault",
+        "pr": 15,
+        "merge_commit": "b064c776d806adf424ed269163ea5e678c6ece35",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Hybrismannen/RFSU-godex",
+        "pr": 12,
+        "merge_commit": "0a213d1bc2bb495998d2976360bdc73ea5c621f5",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Hybrismannen/RFSU-godex-FF",
+        "pr": 6,
+        "merge_commit": "e0a417ba3595069afd47c1d176ac2972e6c749ca",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Hybrismannen/Hy",
+        "pr": 3,
+        "merge_commit": "7607ede14fbb1c567440c144f6a43c42b8cad758",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Hybrismannen/livicity-cwvs-reference",
+        "pr": 3,
+        "merge_commit": "be3d5d46185e92d1007c307590f567947f0d06e8",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Hybrismannen/nsliengine",
+        "pr": 4,
+        "merge_commit": "8e73821984481fad7341c71970972a108dab359f",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Hybrismannen/Digital-Apartheid",
+        "pr": 9,
+        "merge_commit": "9db82a815b4f50dcaa16bcdaa2e9da1f427476dc",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Hybrismannen/NSLI",
+        "pr": 3,
+        "merge_commit": "fc011d80481164c1516670cd60d90b6a48646cb0",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Hybrismannen/metoyo",
+        "pr": 4,
+        "merge_commit": "435c7b0725d51c6ea3c1a1a1899247fd54fd81c2",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Motherpher/CareerHubZero",
+        "pr": 58,
+        "merge_commit": "51d07808e4fe5b18547942fb72fa628507cb8341",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Motherpher/FFOS",
+        "pr": 27,
+        "merge_commit": "1c73aa5774a7f2cef2e646ade36dd09369f4ae3b",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Motherpher/wpb",
+        "pr": 20,
+        "merge_commit": "abeb41215eca4fbf6ee98c1a195621821298a4b5",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Motherpher/Gracey",
+        "pr": 10,
+        "merge_commit": "6abbfb3d8f2483abc7e6e62329fe2e4239951455",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Motherpher/CareerHub-LinusF",
+        "pr": 10,
+        "merge_commit": "cc9aef38b4c8d6980a0389159e1fa225635fbb2a",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Motherpher/Politent",
+        "pr": 24,
+        "merge_commit": "81a434a1d69ee92c1d2bf84f46fa445461ff1f91",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Motherpher/FF-Spatial",
+        "pr": 39,
+        "merge_commit": "76dcadfb5d116e238d404ad106465b8a39111d6f",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Motherpher/BDNA",
+        "pr": 17,
+        "merge_commit": "f3a51ad38a84f9b55d7ea572873cd4eef91791fb",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Motherpher/MusicGenea",
+        "pr": 3,
+        "merge_commit": "3339c44550ab251de41a54adc3678ecbc8943dfd",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Motherpher/Re-Eco",
+        "pr": 11,
+        "merge_commit": "c368696d07314245a3f2e56edc6c1abd506e08ef",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Motherpher/GreenBell",
+        "pr": 13,
+        "merge_commit": "c0018efecfdd6a13ffdf6c85665a5fbea0e68d7e",
+        "default_branch_readback": "PASS"
+      },
+      {
+        "repository": "Motherpher/Vitalitet",
+        "pr": 3,
+        "merge_commit": "9eaea64bc0736ae4779c13fd71a63b8d46b5d4f8",
+        "default_branch_readback": "PASS"
+      }
+    ]
+  }
 }

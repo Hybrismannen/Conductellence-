@@ -66,8 +66,10 @@ for s in systems:
         if state!=a.get("runtime_integration_state"):
             fail(f"{sid}: conflicting runtime status")
         if state=="NOT_VERIFIED":
-            if a.get("anchor_state")!="ANCHOR_DECLARED":
-                fail(f"{sid}: NOT_VERIFIED runtime state is only valid for an unverified ANCHOR_DECLARED binding")
+            if a.get("anchor_state") not in {"ANCHOR_DECLARED","CDX_BOUND"}:
+                fail(f"{sid}: NOT_VERIFIED runtime state requires a declared or independently verified repository anchor")
+            if a.get("anchor_state")=="CDX_BOUND" and a.get("anchor_verification_state")!="PASS":
+                fail(f"{sid}: CDX_BOUND repository anchor requires PASS verification")
         elif state not in {"BOUND_PENDING_RUNTIME_INTEGRATION","RUNTIME_GUARDED_UNVERIFIED",
                            "VERIFIED_REFERENCE_RUNTIME","VERIFIED_RUNTIME_BOUND"}:
             fail(f"{sid}: invalid canonical-anchor runtime state {state}")
@@ -79,13 +81,16 @@ for s in systems:
     else:
         fail(f"{sid}: binding manifest missing or unrecognized")
 
-# Developmental FFC anchor must remain pending until its consumer PR has merged
-# and independent schema/estate verification is performed.
+# FFC may have a verified repository anchor after WP10 while formal estate
+# admission remains pending until WP13.
 ffc=pending.get("Motherpher/form-flode")
-if ffc and ffc.get("verification_state")!="NOT_VERIFIED":
-    fail("pending FFC admission must remain NOT_VERIFIED")
+if ffc:
+    if ffc.get("anchor_state")!="CDX_BOUND" or ffc.get("verification_state")!="PASS":
+        fail("FFC pending admission must carry its WP10-verified CDX_BOUND / PASS anchor")
+    if ffc.get("registry_admission")!="PENDING_WP13_FORMAL_ADMISSION":
+        fail("FFC formal admission boundary must remain pending WP13")
 if ffc and "Motherpher/form-flode" in repos:
-    fail("pending FFC development branch admitted without verification")
+    fail("pending FFC repository admitted to legacy systems registry before WP13")
 
 # Historical Form & Flöde path is a provenance alias of the current Motherpher repository,
 # not a second repository. Both identities must remain explicitly reconciled.
@@ -179,7 +184,8 @@ for x in governed:
     if x.get("wp10_action")!="VERIFY_AFTER_WP09":
         fail(f"{x.get('repository_identifier')}: governed current repository lacks WP10 verification handoff")
 
-# WP09 canonical anchor migration must be complete but not prematurely verified.
+# WP09 migration evidence remains historical ANCHOR_DECLARED / NOT_VERIFIED evidence.
+# Current Registry v2 state must reflect the completed WP10 verification.
 if r2.get("wp09_migration",{}).get("state")!="COMPLETE":
     fail("Registry v2 does not record WP09 completion")
 if r2.get("wp09_migration",{}).get("governed_consumers_migrated")!=28:
@@ -188,20 +194,20 @@ if r2.get("wp09_migration",{}).get("governed_consumers_migrated")!=28:
 expected_digest="git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0"
 for x in governed:
     rep=x.get("repository_identifier")
-    if x.get("anchor_state")!="ANCHOR_DECLARED":
-        fail(f"{rep}: WP09 migrated anchor must remain ANCHOR_DECLARED pending WP10")
+    if x.get("anchor_state")!="CDX_BOUND":
+        fail(f"{rep}: WP10 verified anchor must be CDX_BOUND")
     if x.get("wp09_status")!="COMPLETE_MIGRATED":
         fail(f"{rep}: WP09 migration status incomplete")
     if x.get("anchor_observed_on_default_branch") is not True:
-        fail(f"{rep}: default-branch anchor readback missing")
+        fail(f"{rep}: WP09 default-branch anchor readback missing")
     if x.get("binding_mode")!="PINNED_RELEASE" or x.get("cdx_ref")!="1.0.0":
         fail(f"{rep}: canonical anchor not pinned to released CDX 1.0.0")
     if x.get("policy_digest")!=expected_digest:
         fail(f"{rep}: CDX 1.0.0 policy digest mismatch")
-    if x.get("anchor_verification_state")!="NOT_VERIFIED":
-        fail(f"{rep}: WP09 must not pre-verify anchor before WP10")
-    if x.get("wp10_action")!="VERIFY_AFTER_WP09":
-        fail(f"{rep}: missing WP10 verification handoff")
+    if x.get("anchor_verification_state")!="PASS":
+        fail(f"{rep}: WP10 anchor verification must be PASS")
+    if x.get("wp10_status")!="COMPLETE_VERIFIED_RECONCILED":
+        fail(f"{rep}: WP10 reconciliation incomplete")
 
 if wp09.get("programme")!="CDX-WP09":
     fail("WP09 migration evidence identity mismatch")
@@ -228,6 +234,6 @@ for x in r2_records:
 print(f"PASS: Estate Registry contains {len(systems)} unique governed repository records")
 print(f"PASS: {legacy} legacy bindings + {canonical} canonical anchors differentiated")
 print("PASS: Registry v2 classifies 31 identifiers / 30 current repository objects with explicit applicability")
-print("PASS: WP09 migrated all 28 governed consumers to release-pinned ANCHOR_DECLARED / NOT_VERIFIED state")
+print("PASS: WP09 migration evidence preserved and WP10 reconciled all 28 governed consumers to CDX_BOUND / PASS")
 print("PASS: repository binding separate from application-runtime evidence")
 print("NOTE: registry audit does not by itself establish CDX-RUNTIME-001 verification")
