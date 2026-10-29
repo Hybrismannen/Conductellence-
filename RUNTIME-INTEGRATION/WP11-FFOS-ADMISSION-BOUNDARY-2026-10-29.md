@@ -24,7 +24,7 @@ FFOS `.cdx/anchor.json` on main is release pinned (`PINNED_RELEASE`, `1.0.0`, `g
 
 ## Engineering activity in this session
 
-A candidate FFOS host-attested Estate admission module and eight local negative/positive regression tests were authored and executed with Node 22 (8/8 pass). **The GitHub write for that module was blocked by tool safety controls; the candidate therefore remains a local artifact, not committed, connected, deployed or certified.** This source status must be preserved in all downstream summaries. No host credential service, authentic signed registry feed, live policy engine, custody service, protected branch rule or production execution setting was changed.
+A candidate FFOS host-attested Estate admission module and thirteen local positive/negative regression tests were authored and executed with Node 22 (13/13 pass), including wrappers for the existing effect and classified-read gates. **The GitHub write for that module was blocked by tool safety controls; the candidate therefore remains a local artifact, not committed, connected, deployed or certified.** This source status must be preserved in all downstream summaries. No host credential service, authentic signed registry feed, live policy engine, custody service, protected branch rule or production execution setting was changed.
 
 ## Next independent gates
 
