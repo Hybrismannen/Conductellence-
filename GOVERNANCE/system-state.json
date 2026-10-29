@@ -5,7 +5,7 @@
   "effective_at": "2026-10-05",
   "constitutional_state": "ADOPTED",
   "core_runtime_state": "VERIFIED_REFERENCE_RUNTIME",
-  "release_state": "PRE_RELEASE",
+  "release_state": "RELEASED",
   "enforcement_state": "BOOTSTRAP",
   "estate_integration_state": "PENDING_RUNTIME_BINDINGS",
   "core_release_blockers": [],
@@ -27,7 +27,7 @@
     "Repository metadata hygiene: description derivation remains stale (issue #14); homepage currently points to udl-twin.vercel.app and requires owner review.",
     "WP04 independent evidence custody is VERIFIED through CDX-CUSTODY-GHA-001 with observed producer → separate custodian → separate verifier provenance. The long-lived Vercel custody target remains externally blocked but is not required to keep the verified reference-custody gate open.",
     "WP05 COMPLETE: native classic main protection is VERIFIED; PR #42 promoted the verified protection state and removed CDX-BLOCK-REPO-PROTECTION-001 from the core release blocker set.",
-    "WP07 publication authorization explicitly granted on 2026-10-29; canonical release_state remains PRE_RELEASE until tag and GitHub Release are independently observed and reconciled."
+    "WP07 COMPLETE: CDX 1.0.0 published and independently verified at tag 1.0.0, publication commit 6e275dea737d77349ddd1264c4f6ef900904995f, GitHub Release 427882220. Release does not imply estate-wide enforcement or runtime integration."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
@@ -162,25 +162,28 @@
     "contract_version": "1.0.0",
     "release_candidate": "CDX-DIST-1.0.0-RC1",
     "candidate_manifest": "DISTRIBUTION/releases/1.0.0-rc1/manifest.json",
-    "candidate_status": "RELEASE_CANDIDATE_NOT_RELEASED",
+    "candidate_status": "SUPERSEDED_BY_RELEASE_1_0_0",
     "wp06_closure_if_ci_passes": true,
-    "release_authorized": false,
+    "release_authorized": true,
     "external_core_blockers_still_required": [],
-    "wp06_closed": true
+    "wp06_closed": true,
+    "published_release": "1.0.0"
   },
   "wp07_release_preflight": {
-    "state": "PUBLICATION_AUTHORIZED_PENDING_EXECUTION",
+    "state": "COMPLETE_CDX_1_0_0_RELEASED",
     "preflight_id": "CDX-RELEASE-PREFLIGHT-1.0.0",
     "target_release": "1.0.0",
     "release_order": "CDX-RELEASE-1.0.0",
     "release_authorized": true,
-    "internal_candidate_ready": true,
-    "external_core_blockers": [],
-    "next_state_if_cleared": "READY_FOR_HUMAN_RELEASE_DECISION",
-    "release_decision": "RELEASE_1_0_0",
     "publication_authorized": true,
-    "publication_readiness_ref": "GOVERNANCE/release/CDX-1.0-PUBLICATION-READINESS-2026-10-29.json",
-    "remaining_gate": "PROTECTED_PUBLICATION_EXECUTION_AND_POST_PUBLICATION_VERIFICATION",
-    "publication_authorization_ref": "GOVERNANCE/orders/CDX-PUBLICATION-1.0.0-AUTHORIZATION-2026-10-29.json"
+    "publication_verified": true,
+    "release_decision": "RELEASE_1_0_0",
+    "release_tag": "1.0.0",
+    "publication_commit": "6e275dea737d77349ddd1264c4f6ef900904995f",
+    "github_release_id": 427882220,
+    "github_release_url": "https://github.com/Hybrismannen/Conductellence-/releases/tag/1.0.0",
+    "publication_evidence_ref": "GOVERNANCE/release/CDX-1.0-PUBLICATION-EVIDENCE-2026-10-29.json",
+    "external_core_blockers": [],
+    "remaining_gate": null
   }
 }
