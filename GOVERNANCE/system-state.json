@@ -28,7 +28,8 @@
     "WP04 independent evidence custody is VERIFIED through CDX-CUSTODY-GHA-001 with observed producer → separate custodian → separate verifier provenance. The long-lived Vercel custody target remains externally blocked but is not required to keep the verified reference-custody gate open.",
     "WP05 COMPLETE: native classic main protection is VERIFIED; PR #42 promoted the verified protection state and removed CDX-BLOCK-REPO-PROTECTION-001 from the core release blocker set.",
     "WP07 COMPLETE: CDX 1.0.0 published and independently verified at tag 1.0.0, publication commit 6e275dea737d77349ddd1264c4f6ef900904995f, GitHub Release 427882220. Release does not imply estate-wide enforcement or runtime integration.",
-    "WP08 COMPLETE: Registry v2 classifies all 31 known repository identifiers / 30 current objects. 28 current consumer repositories are CDX-applicable, Barnombudet remains explicitly excluded, and the historical Hybrismannen/form-flode alias is provenance-only. WP09 is the canonical anchor migration handoff."
+    "WP08 COMPLETE: Registry v2 classifies all 31 known repository identifiers / 30 current objects. 28 current consumer repositories are CDX-applicable, Barnombudet remains explicitly excluded, and the historical Hybrismannen/form-flode alias is provenance-only. WP09 is the canonical anchor migration handoff.",
+    "WP08 COMPLETE: Registry v2 classifies all 31 known repository identifiers / 30 current objects. Barnombudet remains explicitly excluded and Hybrismannen/form-flode remains provenance-only. WP09 is the canonical anchor migration handoff."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
@@ -200,13 +201,8 @@
     "current_governed_applicable": 28,
     "current_excluded_by_decision": 1,
     "historical_alias_records": 1,
-    "canonical_anchor_observed": {
-      "Motherpher/FFOS": "CDX_CI_MONITORED",
-      "Hybrismannen/pius-universe": "ANCHOR_DECLARED"
-    },
     "current_governed_without_canonical_anchor": 26,
     "next_wp": "CDX-WP09",
-    "next_work": "Canonical anchor migration across applicable repositories",
     "state_effect": "NONE_ON_RUNTIME_OR_ENFORCEMENT"
   },
   "estate_registry": {
