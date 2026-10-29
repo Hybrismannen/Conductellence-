@@ -1,0 +1,598 @@
+{
+  "schema": "cdx.wp10-anchor-verification-evidence/v1.0",
+  "evidence_id": "CDX-WP10-ANCHOR-VERIFICATION-2026-10-29",
+  "programme": "CDX-WP10",
+  "observed_at": "2026-10-29T15:19:00Z",
+  "source_registry": "ESTATE-REGISTRY/registry-v2.json",
+  "source_migration_evidence": "ESTATE-REGISTRY/wp09-migration-evidence.json",
+  "governance_standard": "CDX-GOV-ANCHOR-001",
+  "release_contract": {
+    "release_ref": "1.0.0",
+    "github_release_id": 427882220,
+    "annotated_tag_object": "c0233574e7fb850cb3e358f869c31cb38fe822b9",
+    "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+    "policy_blob_verified": true,
+    "policy_blob_schema": "cdx.control-registry/v1.0",
+    "policy_version": "1.0.0"
+  },
+  "verification_summary": {
+    "governed_consumers_expected": 28,
+    "governed_consumers_verified": 28,
+    "identity_matches": 28,
+    "release_pin_matches": 28,
+    "policy_digest_matches": 28,
+    "registry_correspondence_matches": 28,
+    "failures": 0,
+    "barnombudet_exclusion_reconfirmed": true,
+    "barnombudet_anchor_present": false
+  },
+  "scope_boundary": {
+    "advances_anchor_axis_only": true,
+    "runtime_state_advanced": false,
+    "ci_monitoring_state_advanced": false,
+    "ffc_admission_advanced": false,
+    "estate_enforcement_advanced": false
+  },
+  "records": [
+    {
+      "repository": "Motherpher/form-flode",
+      "repository_id": "1379622813",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "f5a20dcc0b6f19bfaa84ae9e7ee9f469d5ae3a2f",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Hybrismannen/form-flode-dna",
+      "repository_id": "1379611455",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "2cf86df5a12e0e1f9b7ecf0de709371f7665ca64",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Hybrismannen/pius-universe",
+      "repository_id": "1316351702",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "243e7919fa0940d73f34c30158db9c4e08f6412b",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Hybrismannen/pius-pwe",
+      "repository_id": "1004485845",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "c070dad208cadf51fa218915175562ecaf032fa0",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Hybrismannen/pius-codex-5",
+      "repository_id": "1375178547",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "ed78ebf02ca8c4736daf422df4350138c7853b12",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Hybrismannen/pius-lifetime-audit-2026",
+      "repository_id": "1375180037",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "168f3ceb63c70db79f9e3c0b0cf2a072001a33b4",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Hybrismannen/udl-twin",
+      "repository_id": "1375097591",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "eb53a49a6b5f19fab3d86ae4d13c82dcff3ca237",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Hybrismannen/green-bell-statsvault",
+      "repository_id": "1375194010",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "a26679625b48630b5c36f8f9ec63a85d22f996ba",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Hybrismannen/RFSU-godex",
+      "repository_id": "1380329231",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "7a0bc00a77f0e27097cac7b1d745fb95543d0f83",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Hybrismannen/RFSU-godex-FF",
+      "repository_id": "1380340849",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "8b376605332818f9b1b427b3a7f2cc0ce8f7f91f",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Hybrismannen/Hy",
+      "repository_id": "613877124",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "062e3190d33f6c9ef6fca3be071dd9573e9ebf54",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Hybrismannen/livicity-cwvs-reference",
+      "repository_id": "1159441430",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "956e95924205df73838b079fcabe34b3939a5f2f",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Hybrismannen/nsliengine",
+      "repository_id": "1181170697",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "93f6f8e082b70949ba757cd67714f5c67a80acd4",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Hybrismannen/Digital-Apartheid",
+      "repository_id": "1382226538",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "e944014c40a06dda58b887e81c735cf3bf982eaf",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Hybrismannen/NSLI",
+      "repository_id": "1382454698",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "e5ce76a205ebe3480b0d9e6f4b6bde410bfd88ec",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Hybrismannen/metoyo",
+      "repository_id": "1382456349",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "7669d039baa82d523dee61fa950512c3e15d2241",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Motherpher/CareerHubZero",
+      "repository_id": "1384000420",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "390695f06f1f0a568112f28701186a07ef726a80",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Motherpher/FFOS",
+      "repository_id": "1405938939",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "a1047645911bd5db81b7d1ce2a3c00d5343144ee",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Motherpher/wpb",
+      "repository_id": "1380177865",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "ee789dc19a2d154380865bf88432dd7cf6945f20",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Motherpher/Gracey",
+      "repository_id": "1383826516",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "6c94471861750cce44c3ff5e5165f11a3295289a",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Motherpher/CareerHub-LinusF",
+      "repository_id": "1384272536",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "632cdfd125bf601e6e16613a6741ea175482a5df",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Motherpher/Politent",
+      "repository_id": "1396606050",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "58eff7033e47b513e10f1f4398d6865ff0cc0e83",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Motherpher/FF-Spatial",
+      "repository_id": "1396714840",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "d3b2a0a142f24a71e28506b310225b887fbae7e3",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Motherpher/BDNA",
+      "repository_id": "1405601094",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "d1957ee60dfaeb4f34131c7967def6a9582c8ae5",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Motherpher/MusicGenea",
+      "repository_id": "1410873409",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "64bb2f467c80884e9d2c500861fb068395a54653",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Motherpher/Re-Eco",
+      "repository_id": "1412387651",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "c93f25cbf4d81231b12b631f675b4187a1acc37f",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Motherpher/GreenBell",
+      "repository_id": "1413050066",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "ffe1591fb9d22273aed154305ac805757b58c90d",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    },
+    {
+      "repository": "Motherpher/Vitalitet",
+      "repository_id": "1422097182",
+      "default_branch": "main",
+      "archived": false,
+      "anchor_sha": "aded27dd0e108bf08da0d1f84651ca748b3fcf66",
+      "verification_result": "PASS",
+      "verified_contract": {
+        "schema": "cdx.anchor/v1",
+        "authority_repository": "Hybrismannen/Conductellence-",
+        "law_id": "CDX-LAW-001",
+        "binding_mode": "PINNED_RELEASE",
+        "release_ref": "1.0.0",
+        "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+        "pre_binding_state": "ANCHOR_DECLARED",
+        "pre_verification_state": "NOT_VERIFIED"
+      },
+      "recommended_anchor_state": "CDX_BOUND",
+      "recommended_verification_state": "PASS"
+    }
+  ]
+}
