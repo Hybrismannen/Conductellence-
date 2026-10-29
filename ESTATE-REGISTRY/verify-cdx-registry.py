@@ -40,8 +40,29 @@ assert_check(state.get("consumer_bindings", {}).get("Motherpher/FFOS") == "NOT_S
 binding = state.get("repository_anchor_bindings", {}).get("Motherpher/FFOS", {})
 assert_check(binding.get("state") == "CDX_CI_MONITORED",
              "Central repository axis does not match FFOS anchor registry")
-assert_check(state.get("release_state") == "PRE_RELEASE",
-             "Unexpected CDX release promotion without release evidence")
+release_state=state.get("release_state")
+if release_state=="PRE_RELEASE":
+    pass
+elif release_state=="RELEASED":
+    publication_path=ROOT / "GOVERNANCE/release/CDX-1.0-PUBLICATION-EVIDENCE-2026-10-29.json"
+    order_path=ROOT / "GOVERNANCE/orders/CDX-RELEASE-1.0.0.json"
+    assert_check(publication_path.exists(), "RELEASED CDX state lacks publication evidence")
+    assert_check(order_path.exists(), "RELEASED CDX state lacks release order")
+    if publication_path.exists() and order_path.exists():
+        publication=json.loads(publication_path.read_text(encoding="utf-8"))
+        release_order=json.loads(order_path.read_text(encoding="utf-8"))
+        assert_check(publication.get("publication_verified") is True,
+                     "RELEASED CDX state lacks verified publication")
+        assert_check(publication.get("release_published") is True,
+                     "RELEASED CDX state lacks observed GitHub Release")
+        assert_check(publication.get("tag",{}).get("name") == "1.0.0",
+                     "RELEASED CDX state has unexpected release tag")
+        assert_check(release_order.get("state") == "PUBLISHED",
+                     "RELEASED CDX state release order is not PUBLISHED")
+        assert_check(release_order.get("publication_state") == "PUBLISHED_VERIFIED",
+                     "RELEASED CDX state publication order is not verified")
+else:
+    assert_check(False, f"Unexpected CDX release state: {release_state}")
 assert_check(state.get("enforcement_state") == "BOOTSTRAP",
              "Unexpected CDX enforcement promotion without runtime/protection evidence")
 ffc = pending.get("Motherpher/form-flode", {})
@@ -83,4 +104,4 @@ if issues:
         print("FAIL:", item)
     raise SystemExit(1)
 print("PASS: CDX estate registry axes and admission statuses internally consistent.")
-print("NOTE: No CDX runtime enforcement, branch protection or external anchor verification established.")
+print(f"NOTE: CDX release_state={release_state}; no downstream runtime enforcement or external anchor verification is implied.")
