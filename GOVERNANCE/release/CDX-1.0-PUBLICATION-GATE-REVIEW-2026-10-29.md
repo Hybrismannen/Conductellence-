@@ -1,4 +1,4 @@
-# CDX 1.0 — Publication gate review (NOT AUTHORIZED)
+# CDX 1.0 — Publication gate review (READINESS VERIFIED — AUTHORIZATION PENDING)
 
 **Date:** 2026-10-29  
 **Sovereign decision:** `RELEASE_1_0_0`, recorded in `GOVERNANCE/orders/CDX-RELEASE-1.0.0.json` and attested in `GOVERNANCE/orders/CDX-RELEASE-1.0.0-SOVEREIGN-ATTESTATION-2026-10-29.json`.  
@@ -20,4 +20,5 @@
 
 This checklist PR performs **no** tag creation, GitHub Release publication, release-state promotion, estate rollout, FFOS F8.7 activation, runtime binding or deployment. It changes no frozen constitutional topology and grants no permission by implication.
 
-**Gate:** `PUBLICATION_VERIFICATION_AND_EXPLICIT_AUTHORIZATION_PENDING`.
+**Verification:** COMPLETE through exact-head protected-main evidence.  
+**Remaining gate:** `EXPLICIT_HUMAN_SOVEREIGN_AUTHORIZATION_TO_PUBLISH_CDX_1_0`.

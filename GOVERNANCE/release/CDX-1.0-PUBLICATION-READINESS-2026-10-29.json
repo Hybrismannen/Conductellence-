@@ -1,0 +1,42 @@
+{
+  "schema": "cdx.publication-readiness/v1.0",
+  "readiness_id": "CDX-1.0-PUBLICATION-READINESS-2026-10-29",
+  "target_release": "1.0.0",
+  "candidate": "CDX-DIST-1.0.0-RC1",
+  "observed_main_sha": "c3c751733dbace3e051c628f3d68dc706427eb6f",
+  "observed_at": "2026-10-29",
+  "sovereign_release_decision": "RELEASE_1_0_0",
+  "publication_authorized": false,
+  "publication_state": "AWAITING_EXPLICIT_HUMAN_SOVEREIGN_AUTHORIZATION",
+  "verification": {
+    "core_release_blockers": [],
+    "release_preflight": "PASS",
+    "law_audit_run_id": "40869176000",
+    "artifact_blob_verification": "PASS",
+    "artifact_blob_evidence": "PASS: CDX-DIST-1.0.0-RC1 artifact blob set is pinned and reproducible",
+    "independent_custody": "VERIFIED_REFERENCE_CUSTODY",
+    "custody_verifier_run_id": "40869232554",
+    "branch_protected": true,
+    "required_status_contexts": [
+      "constitutional-audit",
+      "human-sovereign-approval",
+      "mutation-guard",
+      "state-reconciliation",
+      "readiness"
+    ],
+    "active_boundary_exceptions": [],
+    "github_releases_existing": 0,
+    "tag_inventory_note": "GitHub connector cannot enumerate tag refs through its approved endpoint family; no GitHub Releases exist. Final publication operation must fail closed if target tag already exists."
+  },
+  "proposed_publication": {
+    "tag": "1.0.0",
+    "source_commit": "TO_BE_BOUND_TO_FINAL_PUBLICATION_PR_MERGE_COMMIT",
+    "github_release_name": "CDX 1.0.0",
+    "prerelease": false,
+    "draft": false,
+    "package_manifest": "DISTRIBUTION/releases/1.0.0-rc1/manifest.json",
+    "runtime_contract": "RUNTIME-INTEGRATION/CDX-RUNTIME-001.json"
+  },
+  "rollback_incident_rule": "Publication creates an immutable provenance boundary. If defects are found after publication, preserve the tag/release evidence, open an incident/remediation record, and issue a superseding patch or withdrawal notice rather than rewriting published history.",
+  "remaining_gate": "EXPLICIT_HUMAN_SOVEREIGN_AUTHORIZATION_TO_PUBLISH_CDX_1_0"
+}
