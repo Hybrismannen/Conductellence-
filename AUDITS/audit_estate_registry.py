@@ -14,12 +14,15 @@ def fail(message):
 registry_path=Path("ESTATE-REGISTRY/systems.json")
 anchor_path=Path("ESTATE-REGISTRY/cdx-anchors.json")
 registry_v2_path=Path("ESTATE-REGISTRY/registry-v2.json")
+wp09_evidence_path=Path("ESTATE-REGISTRY/wp09-migration-evidence.json")
 if not registry_path.exists():fail("missing estate registry")
 if not anchor_path.exists():fail("missing canonical anchor registry")
 if not registry_v2_path.exists():fail("missing Registry v2 applicability classification")
+if not wp09_evidence_path.exists():fail("missing WP09 migration evidence")
 d=json.loads(registry_path.read_text())
 ar=json.loads(anchor_path.read_text())
 r2=json.loads(registry_v2_path.read_text())
+wp09=json.loads(wp09_evidence_path.read_text())
 systems=d.get("systems",[])
 if not systems:fail("empty estate registry")
 ids=[s.get("system_id") for s in systems]
@@ -176,13 +179,44 @@ for x in governed:
     if x.get("wp10_action")!="VERIFY_AFTER_WP09":
         fail(f"{x.get('repository_identifier')}: governed current repository lacks WP10 verification handoff")
 
-observed_canonical={
-    x.get("repository_identifier"):x.get("anchor_state")
-    for x in current
-    if x.get("anchor_state") in {"ANCHOR_DECLARED","CDX_CI_MONITORED"}
-}
-if observed_canonical!={"Hybrismannen/pius-universe":"ANCHOR_DECLARED","Motherpher/FFOS":"CDX_CI_MONITORED"}:
-    fail(f"Registry v2 canonical-anchor baseline drift: {observed_canonical}")
+# WP09 canonical anchor migration must be complete but not prematurely verified.
+if r2.get("wp09_migration",{}).get("state")!="COMPLETE":
+    fail("Registry v2 does not record WP09 completion")
+if r2.get("wp09_migration",{}).get("governed_consumers_migrated")!=28:
+    fail("WP09 migrated consumer count must be 28")
+
+expected_digest="git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0"
+for x in governed:
+    rep=x.get("repository_identifier")
+    if x.get("anchor_state")!="ANCHOR_DECLARED":
+        fail(f"{rep}: WP09 migrated anchor must remain ANCHOR_DECLARED pending WP10")
+    if x.get("wp09_status")!="COMPLETE_MIGRATED":
+        fail(f"{rep}: WP09 migration status incomplete")
+    if x.get("anchor_observed_on_default_branch") is not True:
+        fail(f"{rep}: default-branch anchor readback missing")
+    if x.get("binding_mode")!="PINNED_RELEASE" or x.get("cdx_ref")!="1.0.0":
+        fail(f"{rep}: canonical anchor not pinned to released CDX 1.0.0")
+    if x.get("policy_digest")!=expected_digest:
+        fail(f"{rep}: CDX 1.0.0 policy digest mismatch")
+    if x.get("anchor_verification_state")!="NOT_VERIFIED":
+        fail(f"{rep}: WP09 must not pre-verify anchor before WP10")
+    if x.get("wp10_action")!="VERIFY_AFTER_WP09":
+        fail(f"{rep}: missing WP10 verification handoff")
+
+if wp09.get("programme")!="CDX-WP09":
+    fail("WP09 migration evidence identity mismatch")
+if wp09.get("governed_consumers_expected")!=28 or wp09.get("governed_consumers_migrated")!=28:
+    fail("WP09 migration evidence does not account for all governed consumers")
+if wp09.get("all_default_branch_readbacks_passed") is not True:
+    fail("WP09 default-branch readbacks not complete")
+if len(wp09.get("migrations",[]))!=28:
+    fail("WP09 migration evidence must contain 28 repository records")
+for m in wp09.get("migrations",[]):
+    if (m.get("binding_mode")!="PINNED_RELEASE" or m.get("release_ref")!="1.0.0"
+        or m.get("policy_digest")!=expected_digest
+        or m.get("anchor_state")!="ANCHOR_DECLARED"
+        or m.get("verification_state")!="NOT_VERIFIED"):
+        fail(f"{m.get('repository')}: invalid WP09 migration evidence")
 
 allowed_runtime=set(r2.get("classification_rules",{}).get("runtime_screening",[]))
 for x in r2_records:
@@ -194,5 +228,6 @@ for x in r2_records:
 print(f"PASS: Estate Registry contains {len(systems)} unique governed repository records")
 print(f"PASS: {legacy} legacy bindings + {canonical} canonical anchors differentiated")
 print("PASS: Registry v2 classifies 31 identifiers / 30 current repository objects with explicit applicability")
+print("PASS: WP09 migrated all 28 governed consumers to release-pinned ANCHOR_DECLARED / NOT_VERIFIED state")
 print("PASS: repository binding separate from application-runtime evidence")
 print("NOTE: registry audit does not by itself establish CDX-RUNTIME-001 verification")
