@@ -4,7 +4,8 @@
 **Name derivation:** **Code of Conduct + Excellence**  
 **Canonical system:** `CDX-SYS-001`  
 **Canonical law:** `CDX-LAW-001`  
-**Current law version:** `1.0.0` *(constitutional law adopted; Conductellence system remains pre-release)*
+**Current law version:** `1.0.0`  
+**Current CDX release:** `1.0.0` — `RELEASED`
 
 > `CDX` is the sole canonical short name for Conductellence in architecture, governance, identifiers and integration language. No parallel system shorthand is permitted.
 
@@ -14,7 +15,7 @@ Conductellence state is represented on independent axes rather than by one overl
 
 - **Constitutional state:** `ADOPTED`
 - **Core runtime state:** `VERIFIED_REFERENCE_RUNTIME`
-- **Release state:** `PRE_RELEASE`
+- **Release state:** `RELEASED`
 - **Enforcement state:** `BOOTSTRAP`
 - **Estate integration state:** `PENDING_RUNTIME_BINDINGS`
 
@@ -24,7 +25,7 @@ Canonical machine-readable state is held in [`GOVERNANCE/system-state.json`](GOV
 
 ## CDX 1.0 closure boundary
 
-The CDX 1.0 core is currently **FROZEN_FOR_CLOSURE** under [`CDX-RC01-BOUNDARY-001`](GOVERNANCE/release-boundary-v1.json). WP03–WP07 may close and harden existing obligations but may not expand the first-class architecture without an explicit human-approved boundary exception. Estate classification, anchor migration and downstream runtime propagation remain WP08–WP14.
+The CDX 1.0 core is **released**. [`CDX-RC01-BOUNDARY-001`](GOVERNANCE/release-boundary-v1.json) preserves the frozen 1.0 core topology and keeps core release separate from estate execution. WP00–WP08 are complete; WP09–WP14 cover canonical anchor migration, verification, first runtime bindings, FFC admission and estate-wide propagation.
 
 Conductellence is the root constitutional, security, legal-governance, assurance and traceability authority for governed non-human digital operation across the estate.
 
