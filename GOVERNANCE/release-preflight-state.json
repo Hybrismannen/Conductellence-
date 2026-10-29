@@ -3,7 +3,7 @@
   "preflight_id": "CDX-RELEASE-PREFLIGHT-1.0.0",
   "target_release": "1.0.0",
   "observed_at": "2026-10-29",
-  "decision": "PUBLICATION_AUTHORIZED_PENDING_EXECUTION",
+  "decision": "PUBLISHED_VERIFIED",
   "release_authorized": true,
   "state_before_release": {
     "constitutional_state": "ADOPTED",
@@ -60,5 +60,12 @@
   "next_state_if_external_gates_close": "READY_FOR_HUMAN_RELEASE_DECISION",
   "publication_authorized": true,
   "publication_authorization_ref": "GOVERNANCE/orders/CDX-PUBLICATION-1.0.0-AUTHORIZATION-2026-10-29.json",
-  "remaining_gate": "PROTECTED_PUBLICATION_EXECUTION_AND_POST_PUBLICATION_VERIFICATION"
+  "remaining_gate": null,
+  "publication_evidence_ref": "GOVERNANCE/release/CDX-1.0-PUBLICATION-EVIDENCE-2026-10-29.json",
+  "release_result": {
+    "tag": "1.0.0",
+    "publication_commit": "6e275dea737d77349ddd1264c4f6ef900904995f",
+    "github_release_id": 427882220,
+    "state": "VERIFIED"
+  }
 }
