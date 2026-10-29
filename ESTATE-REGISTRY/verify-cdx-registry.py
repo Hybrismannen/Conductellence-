@@ -29,7 +29,8 @@ sys_entries = {x["repository"]: x for x in systems.get("systems", [])}
 
 check(state.get("release_state") == "RELEASED", "CDX release must remain RELEASED")
 check(state.get("enforcement_state") == "BOOTSTRAP", "WP10 may not promote estate enforcement")
-check(state.get("estate_integration_state") == "PENDING_RUNTIME_BINDINGS", "WP10 may not promote estate runtime integration")
+check(state.get("estate_integration_state") in {"PENDING_RUNTIME_BINDINGS","BINDINGS_IN_PROGRESS"},
+      "estate integration state exceeds current WP11 boundary")
 check("CDX-BLOCK-ESTATE-RUNTIME-001" in state.get("estate_enforcement_blockers", []), "estate runtime blocker must remain open")
 
 records = registry_v2.get("records", [])
@@ -72,7 +73,17 @@ check(ffos.get("anchor_state") == "CDX_BOUND", "FFOS anchor not verified")
 check(ffos.get("anchor_verification_state") == "PASS", "FFOS anchor verification not PASS")
 check(ffos.get("runtime_integration_state") == "BOUND_PENDING_RUNTIME_INTEGRATION", "FFOS runtime was improperly promoted")
 check(ffos_sys.get("runtime_integration_state") == "BOUND_PENDING_RUNTIME_INTEGRATION", "FFOS systems runtime was improperly promoted")
-check(state.get("consumer_bindings", {}).get("Motherpher/FFOS") == "NOT_STARTED", "WP11 runtime binding must remain not started")
+ffos_consumer_state = state.get("consumer_bindings", {}).get("Motherpher/FFOS")
+check(ffos_consumer_state in {"NOT_STARTED","IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED"},
+      "FFOS consumer binding state exceeds current WP11 evidence")
+if state.get("estate_integration_state") == "BINDINGS_IN_PROGRESS":
+    wp11 = state.get("wp11_ffos_runtime_binding", {})
+    check(wp11.get("state") == "IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED",
+          "BINDINGS_IN_PROGRESS requires explicit WP11 staged/blocker evidence")
+    check(wp11.get("production_deployment_state") == "NOT_DEPLOYED",
+          "WP11 staged state must not claim production deployment")
+    check("CDX-BLOCK-WP11-FFOS-EXECUTION-001" in state.get("estate_enforcement_blockers", []),
+          "WP11 external execution blocker missing")
 ffos_binding = state.get("repository_anchor_bindings", {}).get("Motherpher/FFOS", {})
 check(ffos_binding.get("state") == "CDX_BOUND" and ffos_binding.get("verification") == "PASS", "central FFOS anchor axis not reconciled")
 
@@ -101,4 +112,5 @@ if issues:
 
 print("PASS: WP10 anchor verification and reconciliation are internally consistent.")
 print("PASS: 28/28 governed consumers are CDX_BOUND / PASS on the anchor axis.")
-print("PASS: FFOS runtime, Pius runtime, FFC admission and estate enforcement remain unadvanced.")
+print("PASS: FFOS runtime verification, Pius runtime, FFC admission and estate enforcement remain unadvanced.")
+print(f"PASS: estate integration state={state.get('estate_integration_state')} within WP11 boundary.")
