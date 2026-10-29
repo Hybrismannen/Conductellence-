@@ -1,0 +1,148 @@
+name: CDX 1.0 Publication
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - GOVERNANCE/orders/CDX-PUBLICATION-1.0.0-AUTHORIZATION-2026-10-29.json
+      - .github/workflows/cdx-1-publish.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cdx-1-publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact protected-main publication commit
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate canonical publication authority
+        id: authority
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          order=json.loads(Path("GOVERNANCE/orders/CDX-RELEASE-1.0.0.json").read_text())
+          auth=json.loads(Path("GOVERNANCE/orders/CDX-PUBLICATION-1.0.0-AUTHORIZATION-2026-10-29.json").read_text())
+          if order.get("state") == "PUBLISHED":
+              print("Publication already reconciled; no publication side effect requested.")
+              with open("$GITHUB_OUTPUT","a") as f:
+                  f.write("publish=false\n")
+              raise SystemExit(0)
+          required={
+              "state":"PUBLICATION_AUTHORIZED_PENDING_EXECUTION",
+              "decision":"RELEASE_1_0_0",
+              "release_authorized":True,
+              "publication_authorized":True,
+              "publication_state":"AUTHORIZED_PENDING_EXECUTION",
+          }
+          for k,v in required.items():
+              if order.get(k)!=v:
+                  raise SystemExit(f"FAIL: release order {k}={order.get(k)!r}, expected {v!r}")
+          if auth.get("authorization")!="PUBLISH_CDX_1_0_0":
+              raise SystemExit("FAIL: publication authorization missing")
+          if auth.get("authorization_text")!="I authorize publication of CDX 1.0.0.":
+              raise SystemExit("FAIL: exact sovereign publication authorization missing")
+          with open("$GITHUB_OUTPUT","a") as f:
+              f.write("publish=true\n")
+          print("PASS: explicit human-sovereign CDX 1.0.0 publication authority is canonical")
+          PY
+
+      - name: Re-run CDX release preflight
+        if: steps.authority.outputs.publish == 'true'
+        run: python3 AUDITS/audit_release_preflight.py
+
+      - name: Verify pinned release-candidate artifact set
+        if: steps.authority.outputs.publish == 'true'
+        run: python3 DISTRIBUTION/build_release_package.py --verify-only
+
+      - name: Fail closed if 1.0.0 already exists
+        if: steps.authority.outputs.publish == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          if git ls-remote --exit-code --tags origin refs/tags/1.0.0 >/dev/null 2>&1; then
+            echo "FAIL: tag 1.0.0 already exists"
+            exit 1
+          fi
+          if gh release view 1.0.0 --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "FAIL: GitHub Release 1.0.0 already exists"
+            exit 1
+          fi
+          echo "PASS: target tag and release do not exist"
+
+      - name: Build publication provenance asset
+        if: steps.authority.outputs.publish == 'true'
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os
+          from pathlib import Path
+          manifest_path=Path("DISTRIBUTION/releases/1.0.0-rc1/manifest.json")
+          manifest_bytes=manifest_path.read_bytes()
+          manifest=json.loads(manifest_bytes)
+          out={
+            "schema":"cdx.publication-provenance/v1.0",
+            "system_id":"CDX-SYS-001",
+            "law_id":"CDX-LAW-001",
+            "release":"1.0.0",
+            "tag":"1.0.0",
+            "publication_commit":os.environ["GITHUB_SHA"],
+            "workflow_run_id":os.environ["GITHUB_RUN_ID"],
+            "workflow_run_attempt":os.environ["GITHUB_RUN_ATTEMPT"],
+            "repository":os.environ["GITHUB_REPOSITORY"],
+            "candidate_package":manifest["package_id"],
+            "candidate_manifest_sha256":"sha256:"+hashlib.sha256(manifest_bytes).hexdigest(),
+            "candidate_artifacts":manifest["artifacts"],
+            "publication_authorization_ref":"GOVERNANCE/orders/CDX-PUBLICATION-1.0.0-AUTHORIZATION-2026-10-29.json",
+            "runtime_contract":"CDX-RUNTIME-001@1.0.0",
+            "constitutional_version":"1.0.0"
+          }
+          Path("cdx-1.0.0-publication-provenance.json").write_text(json.dumps(out,indent=2)+"\n")
+          print(json.dumps(out,indent=2))
+          PY
+
+      - name: Create immutable 1.0.0 tag
+        if: steps.authority.outputs.publish == 'true'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a 1.0.0 "$GITHUB_SHA" -m "CDX 1.0.0"
+          git push origin refs/tags/1.0.0
+
+      - name: Publish GitHub Release CDX 1.0.0
+        if: steps.authority.outputs.publish == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          gh release create 1.0.0 \
+            --repo "$GITHUB_REPOSITORY" \
+            --verify-tag \
+            --title "CDX 1.0.0" \
+            --notes-file DISTRIBUTION/releases/1.0.0/RELEASE-NOTES.md \
+            cdx-1.0.0-publication-provenance.json#CDX-1.0.0-publication-provenance.json \
+            DISTRIBUTION/releases/1.0.0-rc1/manifest.json#CDX-DIST-1.0.0-RC1-manifest.json
+
+      - name: Verify published tag and Release
+        if: steps.authority.outputs.publish == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          git fetch --tags origin
+          TAG_COMMIT="$(git rev-list -n 1 1.0.0)"
+          test "$TAG_COMMIT" = "$GITHUB_SHA"
+          gh release view 1.0.0 --repo "$GITHUB_REPOSITORY" \
+            --json tagName,isDraft,isPrerelease,url,targetCommitish
+          echo "PASS: CDX 1.0.0 tag and GitHub Release published from $GITHUB_SHA"
