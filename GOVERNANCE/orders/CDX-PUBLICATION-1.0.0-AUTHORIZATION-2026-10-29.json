@@ -1,0 +1,31 @@
+{
+  "schema": "cdx.publication-authorization/v1.0",
+  "authorization_id": "CDX-PUBLICATION-1.0.0-AUTH-2026-10-29",
+  "order_id": "CDX-RELEASE-1.0.0",
+  "target_release": "1.0.0",
+  "candidate_package": "CDX-DIST-1.0.0-RC1",
+  "authorization": "PUBLISH_CDX_1_0_0",
+  "authorization_text": "I authorize publication of CDX 1.0.0.",
+  "authorization_source": "EXPLICIT_USER_INSTRUCTION_IN_GOVERNING_CONVERSATION",
+  "authority": "HUMAN_SOVEREIGN_AUTHORITY",
+  "authority_attribution": "Hybrismannen",
+  "authorization_date": "2026-10-29",
+  "state": "AUTHORIZED_PENDING_PROTECTED_MERGE_AND_EXECUTION",
+  "canonical_effect": "Effective only after this record passes the protected main branch path and is merged.",
+  "execution_scope": [
+    "record publication authorization",
+    "publish tag 1.0.0 from the protected publication authorization merge commit",
+    "publish GitHub Release CDX 1.0.0",
+    "attach runtime-generated publication provenance",
+    "perform post-publication verification and canonical reconciliation"
+  ],
+  "explicitly_not_authorized": [
+    "estate-wide ENFORCING",
+    "consumer runtime activation",
+    "FFOS F8.7 activation",
+    "WP08-WP14 completion by implication",
+    "rewriting published tag or release history"
+  ],
+  "readiness_ref": "GOVERNANCE/release/CDX-1.0-PUBLICATION-READINESS-2026-10-29.json",
+  "publication_workflow": ".github/workflows/cdx-1-publish.yml"
+}

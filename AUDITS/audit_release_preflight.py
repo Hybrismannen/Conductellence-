@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""AUD-CDX-RELEASE-PREFLIGHT-001 — fail-closed release preflight."""
+"""AUD-CDX-RELEASE-PREFLIGHT-001 — fail-closed release/publication preflight."""
 from pathlib import Path
 import json
 import subprocess
@@ -27,8 +27,9 @@ if adoption.get("current_constitutional_state")!="ADOPTED": fail("adoption recor
 if boundary.get("state")!="FROZEN_FOR_CLOSURE" or boundary.get("active_exceptions"): fail("release boundary not clean/frozen")
 if runtime.get("contract_id")!="CDX-RUNTIME-001" or runtime.get("contract_version")!="1.0.0": fail("runtime contract not 1.0.0")
 if package.get("package_id")!="CDX-DIST-1.0.0-RC1": fail("release candidate package missing")
+# The RC manifest is immutable provenance and remains an unreleased candidate record even after 1.0.0 publication.
 if package.get("status")!="RELEASE_CANDIDATE_NOT_RELEASED" or package.get("release_authorized") is not False:
-    fail("candidate package has been prematurely released")
+    fail("historical release-candidate manifest was mutated")
 
 builder=subprocess.run([sys.executable,"DISTRIBUTION/build_release_package.py","--verify-only"],capture_output=True,text=True)
 if builder.returncode!=0:
@@ -53,23 +54,31 @@ pre_blockers={x.get("blocker_id") for x in pre.get("blocking_core_conditions",[]
 if pre_blockers!=blockers:
     fail(f"release preflight blocker register diverges: {sorted(pre_blockers)} != {sorted(blockers)}")
 if set(order.get("blockers",[]))!=blockers:
-    fail("pending release order blocker set diverges from canonical state")
-
-if state.get("release_state")!="PRE_RELEASE": fail("preflight must remain PRE_RELEASE before human release decision")
-if state.get("enforcement_state")!="BOOTSTRAP": fail("preflight must remain BOOTSTRAP before later enforcement gates")
+    fail("release order blocker set diverges from canonical state")
+if state.get("enforcement_state")!="BOOTSTRAP":
+    fail("CDX core release may not imply estate enforcement")
 
 if blockers:
+    if state.get("release_state")!="PRE_RELEASE":
+        fail("blocked release must remain PRE_RELEASE")
     if pre.get("decision")!="BLOCKED_EXTERNAL_GATES" or pre.get("release_authorized") is not False:
         fail("preflight must remain blocked while core blockers are open")
     if order.get("state")!="PENDING_BLOCKER_CLOSURE" or order.get("decision") is not None:
         fail("release order must remain pending blocker closure")
 else:
-    if pre.get("decision")!="READY_FOR_HUMAN_RELEASE_DECISION" or pre.get("release_authorized") is not False:
-        fail("zero-blocker preflight must hand off to explicit human release decision")
-    if order.get("state")=="READY_FOR_DECISION":
+    order_state=order.get("state")
+
+    if order_state=="READY_FOR_DECISION":
+        if state.get("release_state")!="PRE_RELEASE":
+            fail("undecided release must remain PRE_RELEASE")
+        if pre.get("decision")!="READY_FOR_HUMAN_RELEASE_DECISION" or pre.get("release_authorized") is not False:
+            fail("zero-blocker preflight must hand off to explicit human release decision")
         if order.get("decision") is not None:
             fail("undecided release order has a decision")
-    elif order.get("state")=="DECISION_RECORDED_PENDING_PUBLICATION":
+
+    elif order_state=="DECISION_RECORDED_PENDING_PUBLICATION":
+        if state.get("release_state")!="PRE_RELEASE":
+            fail("recorded release decision must remain PRE_RELEASE before publication")
         att=load("GOVERNANCE/orders/CDX-RELEASE-1.0.0-SOVEREIGN-ATTESTATION-2026-10-29.json")
         if (order.get("decision")!="RELEASE_1_0_0"
             or order.get("decision_by")!="Hybrismannen"
@@ -79,15 +88,59 @@ else:
             or att.get("decision_approval_pr")!=45
             or att.get("recorded_in_canonical_order") is not True
             or att.get("publication_authorized") is not False):
-            fail("recorded sovereign decision lacks matching approved attestation")
+            fail("recorded sovereign release decision lacks matching approved attestation")
         if (order.get("release_authorized") is not False
             or order.get("publication_authorized") is not False
             or order.get("publication_state")!="NOT_AUTHORIZED"):
             fail("recorded release decision improperly authorizes publication")
-    else:
-        fail("unexpected zero-blocker release order state")
+        if pre.get("release_authorized") is not False:
+            fail("preflight improperly authorizes publication")
 
-print("PASS: all internal CDX 1.0 release-candidate conditions are coherent")
+    elif order_state=="PUBLICATION_AUTHORIZED_PENDING_EXECUTION":
+        if state.get("release_state")!="PRE_RELEASE":
+            fail("publication-authorized state must remain PRE_RELEASE until publication is observed")
+        auth=load("GOVERNANCE/orders/CDX-PUBLICATION-1.0.0-AUTHORIZATION-2026-10-29.json")
+        ready=load("GOVERNANCE/release/CDX-1.0-PUBLICATION-READINESS-2026-10-29.json")
+        if (order.get("decision")!="RELEASE_1_0_0"
+            or order.get("release_authorized") is not True
+            or order.get("publication_authorized") is not True
+            or order.get("publication_state")!="AUTHORIZED_PENDING_EXECUTION"):
+            fail("publication order is not explicitly authorized")
+        if (auth.get("authorization")!="PUBLISH_CDX_1_0_0"
+            or auth.get("authorization_text")!="I authorize publication of CDX 1.0.0."
+            or auth.get("authority")!="HUMAN_SOVEREIGN_AUTHORITY"):
+            fail("publication authorization record is invalid")
+        if (ready.get("publication_authorized") is not True
+            or ready.get("publication_state")!="AUTHORIZED_PENDING_PROTECTED_EXECUTION"):
+            fail("publication readiness does not match authorization")
+        if (pre.get("decision")!="PUBLICATION_AUTHORIZED_PENDING_EXECUTION"
+            or pre.get("release_authorized") is not True
+            or pre.get("publication_authorized") is not True):
+            fail("preflight does not match publication authorization")
+
+    elif order_state=="PUBLISHED":
+        if state.get("release_state")!="RELEASED":
+            fail("published order requires RELEASED system state")
+        evidence=load("GOVERNANCE/release/CDX-1.0-PUBLICATION-EVIDENCE-2026-10-29.json")
+        if (order.get("decision")!="RELEASE_1_0_0"
+            or order.get("release_authorized") is not True
+            or order.get("publication_authorized") is not True
+            or order.get("publication_state")!="PUBLISHED_VERIFIED"):
+            fail("published release order is inconsistent")
+        if (evidence.get("tag")!="1.0.0"
+            or evidence.get("release_published") is not True
+            or evidence.get("publication_verified") is not True
+            or not evidence.get("publication_commit")):
+            fail("published release lacks verified publication evidence")
+        if (pre.get("decision")!="PUBLISHED_VERIFIED"
+            or pre.get("release_authorized") is not True
+            or pre.get("publication_authorized") is not True):
+            fail("preflight does not reflect verified publication")
+
+    else:
+        fail("unexpected zero-blocker release order state: "+str(order_state))
+
+print("PASS: all internal CDX 1.0 release/publication conditions are coherent")
 print(f"PASS: live core blocker set derived from verified gate state: {sorted(blockers)}")
-print("PASS: release_state PRE_RELEASE / enforcement_state BOOTSTRAP preserved")
-print("INFO: human release decision recorded separately from publication authority; publication remains prohibited")
+print(f"PASS: release_state={state.get('release_state')} / enforcement_state={state.get('enforcement_state')}")
+print(f"INFO: release order state={order.get('state')}")
