@@ -12,6 +12,7 @@ def load(path):
 state = load("GOVERNANCE/system-state.json")
 anchors = load("ESTATE-REGISTRY/cdx-anchors.json")
 systems = load("ESTATE-REGISTRY/systems.json")
+registry_v2 = load("ESTATE-REGISTRY/registry-v2.json")
 issues = []
 
 def assert_check(condition, message):
@@ -99,9 +100,38 @@ assert_check(anchors.get("canonical_local_anchor") == ".cdx/anchor.json",
 assert_check(not ffos_sys.get("consequential_enforcement_verified", False),
              "FFOS cannot claim runtime verified without tested local enforcement")
 
+r2_records=registry_v2.get("records",[])
+r2_current=[x for x in r2_records if x.get("record_kind")=="CURRENT_REPOSITORY"]
+r2_alias=[x for x in r2_records if x.get("record_kind")=="HISTORICAL_ALIAS"]
+assert_check(registry_v2.get("registry_id")=="CDX-ESTATE-REGISTRY-V2",
+             "Registry v2 canonical identity missing")
+assert_check(len(r2_records)==31 and len(r2_current)==30 and len(r2_alias)==1,
+             "Registry v2 must preserve 31 identifiers / 30 current repositories / 1 alias")
+assert_check(sum(1 for x in r2_current if x.get("applicability")=="GOVERNED_APPLICABLE")==28,
+             "Registry v2 governed-applicable current count must be 28")
+assert_check(sum(1 for x in r2_current if x.get("applicability")=="AUTHORITY_SOURCE")==1,
+             "Registry v2 must contain one authority source")
+assert_check(sum(1 for x in r2_current if x.get("applicability")=="EXCLUDED_BY_DECISION")==1,
+             "Registry v2 must contain one explicit current exclusion")
+bo=next((x for x in r2_current if x.get("repository_identifier")=="Hybrismannen/Barnombudet"),{})
+assert_check(bo.get("applicability")=="EXCLUDED_BY_DECISION",
+             "Barnombudet must remain explicitly excluded from CDX dependency")
+assert_check(bo.get("anchor_requirement")=="NOT_REQUIRED_EXCLUDED",
+             "Barnombudet exclusion must not create anchor dependency")
+wp08=state.get("wp08_estate_registry_v2",{})
+assert_check(wp08.get("state")=="COMPLETE_APPLICABILITY_CLASSIFIED",
+             "system state does not record WP08 completion")
+assert_check(wp08.get("registry_ref")=="ESTATE-REGISTRY/registry-v2.json",
+             "WP08 state does not bind canonical Registry v2")
+assert_check(state.get("estate_integration_state")=="PENDING_RUNTIME_BINDINGS",
+             "WP08 classification may not promote estate integration")
+assert_check("CDX-BLOCK-ESTATE-RUNTIME-001" in state.get("estate_enforcement_blockers",[]),
+             "WP08 classification may not close estate runtime blocker")
+
 if issues:
     for item in issues:
         print("FAIL:", item)
     raise SystemExit(1)
 print("PASS: CDX estate registry axes and admission statuses internally consistent.")
+print("PASS: WP08 Registry v2 applicability classification complete for 31 identifiers / 30 current repositories.")
 print(f"NOTE: CDX release_state={release_state}; no downstream runtime enforcement or external anchor verification is implied.")
