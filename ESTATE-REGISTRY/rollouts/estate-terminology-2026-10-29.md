@@ -2,9 +2,9 @@
 
 **Policy:** `CDX-ESTATE-TERMS-001` · **Canonical adoption:** [CDX PR #54](https://github.com/Hybrismannen/Conductellence-/pull/54)  
 **Source:** `ESTATE-REGISTRY/registry-v2.json`, observed 2026-10-29  
-**Status:** Pushed to review branches; **not merged into all default branches**.
+**Status:** Canonical policy merged to main; **28 of 28 consumers merged and policy reference verified on main**.
 
-Coverage: **28 of 28 current CDX-governed applicable consumer repositories**. Conductellence is the authority source and hosts the central policy. **Barnombudet is explicitly excluded** and receives no change. `Hybrismannen/form-flode` is a historical alias of the canonical `Motherpher/form-flode` repository, not another target.
+Coverage: **28 of 28 current CDX-governed applicable consumer repositories have merged PRs and verified policy references on `main`.** Conductellence is the authority source and hosts the central policy. **Barnombudet is explicitly excluded** and receives no change. `Hybrismannen/form-flode` is a historical alias of the canonical `Motherpher/form-flode` repository, not another target.
 
 | Repo | Local PR | Anchor requirement | Runtime screening |
 |---|---|---|---|
@@ -37,4 +37,4 @@ Coverage: **28 of 28 current CDX-governed applicable consumer repositories**. Co
 | `Motherpher/GreenBell` | [#11](https://github.com/Motherpher/GreenBell/pull/11) | `REQUIRED` | `NOT_REQUIRED_BY_CURRENT_ROLE` |
 | `Motherpher/Vitalitet` | [#1](https://github.com/Motherpher/Vitalitet/pull/1) | `REQUIRED` | `NOT_REQUIRED_BY_CURRENT_ROLE` |
 
-The local files state terminology and dated registry applicability only. They neither install `.cdx/anchor.json` nor confer runtime authority. Merge the canonical policy first, then each local PR through its repository's established acceptance and branch rules. Consult the machine-readable `rollouts/estate-terminology-2026-10-29.json` for the complete record. 
+The local files state terminology and dated registry applicability only. They neither install `.cdx/anchor.json` nor confer runtime authority. The canonical policy and all current applicable consumer references are merged and verified at the repository default branch. This verifies terminology adoption only, not CDX anchors or runtime enforcement. Consult the machine-readable `rollouts/estate-terminology-2026-10-29.json` for the complete record. 
