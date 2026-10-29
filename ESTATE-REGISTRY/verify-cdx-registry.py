@@ -26,10 +26,10 @@ ffos = entries.get("Motherpher/FFOS", {})
 ffos_sys = sys_entries.get("Motherpher/FFOS", {})
 assert_check(bool(ffos), "FFOS missing in anchor estate registry")
 assert_check(bool(ffos_sys), "FFOS missing in systems estate registry")
-assert_check(ffos.get("anchor_state") == "CDX_CI_MONITORED",
-             "FFOS repository-level CDX binding state differs from source evidence")
-assert_check(ffos_sys.get("security_state") == "CDX_CI_MONITORED",
-             "FFOS systems registry repository-level CDX state mismatch")
+assert_check(ffos.get("anchor_state") == "ANCHOR_DECLARED",
+             "FFOS WP09 anchor must remain ANCHOR_DECLARED pending WP10")
+assert_check(ffos_sys.get("security_state") == "ANCHOR_DECLARED",
+             "FFOS systems registry must match WP09 anchor declaration state")
 assert_check(ffos.get("runtime_integration_state") == "BOUND_PENDING_RUNTIME_INTEGRATION",
              "FFOS source runtime integration unexpectedly promoted")
 assert_check(ffos_sys.get("runtime_integration_state") == "BOUND_PENDING_RUNTIME_INTEGRATION",
@@ -39,8 +39,14 @@ assert_check(state.get("consumer_binding_scope") == "RUNTIME_INTEGRATION_ONLY",
 assert_check(state.get("consumer_bindings", {}).get("Motherpher/FFOS") == "NOT_STARTED",
              "No production runtime evidence was supplied to advance the CDX central state")
 binding = state.get("repository_anchor_bindings", {}).get("Motherpher/FFOS", {})
-assert_check(binding.get("state") == "CDX_CI_MONITORED",
-             "Central repository axis does not match FFOS anchor registry")
+assert_check(binding.get("state") == "ANCHOR_DECLARED",
+             "Central repository axis does not match FFOS WP09 declaration")
+assert_check(binding.get("verification") == "NOT_VERIFIED",
+             "FFOS central anchor binding must remain NOT_VERIFIED pending WP10")
+assert_check(binding.get("binding_mode") == "PINNED_RELEASE",
+             "FFOS central anchor binding must use PINNED_RELEASE after WP09")
+assert_check(binding.get("state_source_pin") == "1.0.0",
+             "FFOS central anchor binding must pin CDX release 1.0.0")
 release_state=state.get("release_state")
 if release_state=="PRE_RELEASE":
     pass
@@ -70,8 +76,14 @@ ffc = pending.get("Motherpher/form-flode", {})
 assert_check(bool(ffc), "New FFC source not recorded as a pending admission")
 assert_check(ffc.get("verification_state") == "NOT_VERIFIED",
              "FFC pending declaration must not claim verified binding")
+assert_check(ffc.get("anchor_state") == "ANCHOR_DECLARED",
+             "FFC WP09 anchor installation must be represented as ANCHOR_DECLARED")
+assert_check(ffc.get("main_branch_anchor_present") is True,
+             "FFC WP09 anchor must be observed on current main")
+assert_check(ffc.get("binding_mode") == "PINNED_RELEASE" and ffc.get("cdx_ref") == "1.0.0",
+             "FFC WP09 anchor must pin released CDX 1.0.0")
 assert_check("Motherpher/form-flode" not in entries,
-             "FFC development PR cannot become admitted by premature registry entry")
+             "FFC must remain pending admission until WP13")
 legacy_ff = sys_entries.get("Hybrismannen/form-flode", {})
 legacy_ff_anchor = entries.get("Hybrismannen/form-flode", {})
 assert_check(legacy_ff.get("record_state") == "HISTORICAL_ALIAS",
@@ -90,11 +102,14 @@ assert_check(ffc.get("historical_alias") == "Hybrismannen/form-flode",
              "FFC pending record missing historical repository alias")
 assert_check(ffc.get("migration_kind") == "REPOSITORY_IDENTITY_MIGRATION",
              "FFC must be represented as repository identity migration")
-assert_check(ffos.get("binding_mode") == "PINNED_COMMIT",
-             "Pre-release FFOS anchor source pin altered unexpectedly")
-assert_check(bool(ffos.get("cdx_ref")), "FFOS pinned CDX ref missing")
-assert_check(ffos.get("cdx_ref") == binding.get("state_source_pin", ffos.get("cdx_ref")),
-             "FFOS pinned CDX ref inconsistent")
+assert_check(ffos.get("binding_mode") == "PINNED_RELEASE",
+             "FFOS anchor must be release-pinned after WP09")
+assert_check(ffos.get("cdx_ref") == "1.0.0",
+             "FFOS anchor registry must pin CDX release 1.0.0")
+assert_check(ffos.get("anchor_verification_state") == "NOT_VERIFIED",
+             "FFOS anchor must remain NOT_VERIFIED until WP10")
+assert_check(ffos.get("cdx_ref") == binding.get("state_source_pin"),
+             "FFOS pinned CDX release inconsistent with central state")
 assert_check(anchors.get("canonical_local_anchor") == ".cdx/anchor.json",
              "Unexpected canonical CDX anchor path")
 assert_check(not ffos_sys.get("consequential_enforcement_verified", False),
@@ -121,12 +136,23 @@ assert_check(bo.get("anchor_requirement")=="NOT_REQUIRED_EXCLUDED",
 wp08=state.get("wp08_estate_registry_v2",{})
 assert_check(wp08.get("state")=="COMPLETE_APPLICABILITY_CLASSIFIED",
              "system state does not record WP08 completion")
+wp09=state.get("wp09_anchor_migration",{})
+assert_check(wp09.get("state")=="COMPLETE_ANCHORS_MIGRATED",
+             "system state does not record WP09 completion")
+assert_check(wp09.get("governed_consumers_expected")==28 and wp09.get("governed_consumers_migrated")==28,
+             "WP09 system state does not account for all 28 governed consumers")
+assert_check(wp09.get("default_branch_readbacks_passed")==28,
+             "WP09 system state lacks 28 default-branch readbacks")
+assert_check(wp09.get("binding_mode")=="PINNED_RELEASE" and wp09.get("release_ref")=="1.0.0",
+             "WP09 system state does not bind migration to CDX release 1.0.0")
+assert_check(wp09.get("verification_state")=="NOT_VERIFIED",
+             "WP09 may not pre-verify estate anchors before WP10")
 assert_check(wp08.get("registry_ref")=="ESTATE-REGISTRY/registry-v2.json",
              "WP08 state does not bind canonical Registry v2")
 assert_check(state.get("estate_integration_state")=="PENDING_RUNTIME_BINDINGS",
-             "WP08 classification may not promote estate integration")
+             "WP08/WP09 may not promote estate integration")
 assert_check("CDX-BLOCK-ESTATE-RUNTIME-001" in state.get("estate_enforcement_blockers",[]),
-             "WP08 classification may not close estate runtime blocker")
+             "WP08/WP09 may not close estate runtime blocker")
 
 if issues:
     for item in issues:
@@ -134,4 +160,5 @@ if issues:
     raise SystemExit(1)
 print("PASS: CDX estate registry axes and admission statuses internally consistent.")
 print("PASS: WP08 Registry v2 applicability classification complete for 31 identifiers / 30 current repositories.")
+print("PASS: WP09 canonical anchors migrated across all 28 governed consumers; verification remains WP10.")
 print(f"NOTE: CDX release_state={release_state}; no downstream runtime enforcement or external anchor verification is implied.")
