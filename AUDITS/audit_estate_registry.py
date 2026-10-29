@@ -13,10 +13,13 @@ def fail(message):
 
 registry_path=Path("ESTATE-REGISTRY/systems.json")
 anchor_path=Path("ESTATE-REGISTRY/cdx-anchors.json")
+registry_v2_path=Path("ESTATE-REGISTRY/registry-v2.json")
 if not registry_path.exists():fail("missing estate registry")
 if not anchor_path.exists():fail("missing canonical anchor registry")
+if not registry_v2_path.exists():fail("missing Registry v2 applicability classification")
 d=json.loads(registry_path.read_text())
 ar=json.loads(anchor_path.read_text())
+r2=json.loads(registry_v2_path.read_text())
 systems=d.get("systems",[])
 if not systems:fail("empty estate registry")
 ids=[s.get("system_id") for s in systems]
@@ -105,7 +108,91 @@ if ffc:
     if ffc.get("migration_kind")!="REPOSITORY_IDENTITY_MIGRATION":
         fail("FFC must be modeled as repository identity migration")
 
+# WP08 Registry v2 applicability classification.
+if r2.get("schema")!="cdx.estate-registry/v2.0":
+    fail("Registry v2 schema mismatch")
+if r2.get("registry_id")!="CDX-ESTATE-REGISTRY-V2":
+    fail("Registry v2 identity mismatch")
+top=r2.get("topology",{})
+expected_top={
+    "known_repository_identifiers":31,
+    "unique_current_repository_objects":30,
+    "current_authority_sources":1,
+    "current_governed_applicable":28,
+    "current_excluded_by_decision":1,
+    "historical_alias_records":1,
+}
+if top!=expected_top:
+    fail(f"Registry v2 topology mismatch: {top}")
+r2_records=r2.get("records",[])
+if len(r2_records)!=31:
+    fail(f"Registry v2 must contain 31 identifier records, found {len(r2_records)}")
+rids=[x.get("record_id") for x in r2_records]
+idents=[x.get("repository_identifier") for x in r2_records]
+if len(rids)!=len(set(rids)):
+    fail("Registry v2 duplicate record_id")
+if len(idents)!=len(set(idents)):
+    fail("Registry v2 duplicate repository identifier")
+
+current=[x for x in r2_records if x.get("record_kind")=="CURRENT_REPOSITORY"]
+aliases=[x for x in r2_records if x.get("record_kind")=="HISTORICAL_ALIAS"]
+if len(current)!=30 or len(aliases)!=1:
+    fail("Registry v2 current/alias topology must be 30/1")
+current_repo_ids=[x.get("repository_id") for x in current]
+if len(current_repo_ids)!=len(set(current_repo_ids)):
+    fail("Registry v2 current repository IDs are not unique")
+
+counts={}
+for x in r2_records:
+    counts[x.get("applicability")]=counts.get(x.get("applicability"),0)+1
+if counts!={"AUTHORITY_SOURCE":1,"HISTORICAL_ALIAS":1,"GOVERNED_APPLICABLE":28,"EXCLUDED_BY_DECISION":1}:
+    fail(f"Registry v2 applicability counts invalid: {counts}")
+
+authority=next((x for x in r2_records if x.get("applicability")=="AUTHORITY_SOURCE"),None)
+if not authority or authority.get("repository_identifier")!="Hybrismannen/Conductellence-" or authority.get("anchor_requirement")!="SELF_AUTHORITY_SOURCE":
+    fail("Registry v2 authority source classification invalid")
+
+excluded=next((x for x in r2_records if x.get("applicability")=="EXCLUDED_BY_DECISION"),None)
+if not excluded or excluded.get("repository_identifier")!="Hybrismannen/Barnombudet":
+    fail("Barnombudet explicit exclusion missing from Registry v2")
+if excluded.get("anchor_requirement")!="NOT_REQUIRED_EXCLUDED" or excluded.get("wp09_action")!="NONE":
+    fail("Excluded Barnombudet repository may not be scheduled for CDX anchor migration")
+
+alias=aliases[0]
+ffc_current=next((x for x in current if x.get("repository_identifier")=="Motherpher/form-flode"),None)
+if (alias.get("repository_identifier")!="Hybrismannen/form-flode"
+    or alias.get("canonical_repository")!="Motherpher/form-flode"
+    or alias.get("repository_id")!="1379622813"
+    or not ffc_current
+    or ffc_current.get("repository_id")!="1379622813"):
+    fail("Form & Flöde historical alias/current repository identity reconciliation invalid")
+
+governed=[x for x in current if x.get("applicability")=="GOVERNED_APPLICABLE"]
+for x in governed:
+    if x.get("anchor_requirement")!="REQUIRED":
+        fail(f"{x.get('repository_identifier')}: governed current repository must require canonical anchor")
+    if x.get("wp09_action")=="NONE":
+        fail(f"{x.get('repository_identifier')}: governed current repository lacks WP09 action")
+    if x.get("wp10_action")!="VERIFY_AFTER_WP09":
+        fail(f"{x.get('repository_identifier')}: governed current repository lacks WP10 verification handoff")
+
+observed_canonical={
+    x.get("repository_identifier"):x.get("anchor_state")
+    for x in current
+    if x.get("anchor_state") in {"ANCHOR_DECLARED","CDX_CI_MONITORED"}
+}
+if observed_canonical!={"Hybrismannen/pius-universe":"ANCHOR_DECLARED","Motherpher/FFOS":"CDX_CI_MONITORED"}:
+    fail(f"Registry v2 canonical-anchor baseline drift: {observed_canonical}")
+
+allowed_runtime=set(r2.get("classification_rules",{}).get("runtime_screening",[]))
+for x in r2_records:
+    if x.get("runtime_screening") not in allowed_runtime:
+        fail(f"{x.get('repository_identifier')}: invalid runtime screening class")
+    if x.get("runtime_screening") in {"VERIFIED_RUNTIME_BOUND","VERIFIED_PRODUCTION_RUNTIME"}:
+        fail("Registry v2 classification must not promote runtime verification")
+
 print(f"PASS: Estate Registry contains {len(systems)} unique governed repository records")
 print(f"PASS: {legacy} legacy bindings + {canonical} canonical anchors differentiated")
+print("PASS: Registry v2 classifies 31 identifiers / 30 current repository objects with explicit applicability")
 print("PASS: repository binding separate from application-runtime evidence")
 print("NOTE: registry audit does not by itself establish CDX-RUNTIME-001 verification")
