@@ -1,0 +1,272 @@
+{
+  "schema": "cdx.estate-policy-rollout/v1",
+  "policy_id": "CDX-ESTATE-TERMS-001",
+  "canonical_policy_pr": "https://github.com/Hybrismannen/Conductellence-/pull/54",
+  "canonical_policy_state": "PR_OPEN_PENDING_OWNER_REVIEW",
+  "registry_source": "ESTATE-REGISTRY/registry-v2.json",
+  "registry_observation": "2026-10-29",
+  "scope": "ALL_CURRENT_GOVERNED_APPLICABLE_CONSUMERS_ONLY",
+  "repo_count": 28,
+  "source_authority_repository": "Hybrismannen/Conductellence-",
+  "excluded": [
+    "Hybrismannen/Barnombudet"
+  ],
+  "historical_alias": [
+    "Hybrismannen/form-flode"
+  ],
+  "notice": "Rollout PRs indicate documentation branches only, not default-branch adoption, canonical .cdx anchor installation, or runtime enforcement.",
+  "repositories": [
+    {
+      "repository": "Motherpher/form-flode",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "REQUIRED",
+      "pr_url": "https://github.com/Motherpher/form-flode/pull/36",
+      "pr_number": 36,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Hybrismannen/form-flode-dna",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "pr_url": "https://github.com/Hybrismannen/form-flode-dna/pull/2",
+      "pr_number": 2,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Hybrismannen/pius-universe",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "REQUIRED",
+      "pr_url": "https://github.com/Hybrismannen/pius-universe/pull/23",
+      "pr_number": 23,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Hybrismannen/pius-pwe",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "REQUIRED",
+      "pr_url": "https://github.com/Hybrismannen/pius-pwe/pull/4",
+      "pr_number": 4,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Hybrismannen/pius-codex-5",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "pr_url": "https://github.com/Hybrismannen/pius-codex-5/pull/11",
+      "pr_number": 11,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Hybrismannen/pius-lifetime-audit-2026",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "pr_url": "https://github.com/Hybrismannen/pius-lifetime-audit-2026/pull/7",
+      "pr_number": 7,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Hybrismannen/udl-twin",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "REQUIRED",
+      "pr_url": "https://github.com/Hybrismannen/udl-twin/pull/20",
+      "pr_number": 20,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Hybrismannen/green-bell-statsvault",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "REQUIRED",
+      "pr_url": "https://github.com/Hybrismannen/green-bell-statsvault/pull/13",
+      "pr_number": 13,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Hybrismannen/RFSU-godex",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "pr_url": "https://github.com/Hybrismannen/RFSU-godex/pull/10",
+      "pr_number": 10,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Hybrismannen/RFSU-godex-FF",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "pr_url": "https://github.com/Hybrismannen/RFSU-godex-FF/pull/4",
+      "pr_number": 4,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Hybrismannen/Hy",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "pr_url": "https://github.com/Hybrismannen/Hy/pull/1",
+      "pr_number": 1,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Hybrismannen/livicity-cwvs-reference",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "pr_url": "https://github.com/Hybrismannen/livicity-cwvs-reference/pull/1",
+      "pr_number": 1,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Hybrismannen/nsliengine",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "REQUIRED",
+      "pr_url": "https://github.com/Hybrismannen/nsliengine/pull/2",
+      "pr_number": 2,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Hybrismannen/Digital-Apartheid",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "pr_url": "https://github.com/Hybrismannen/Digital-Apartheid/pull/7",
+      "pr_number": 7,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Hybrismannen/NSLI",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "REQUIRED",
+      "pr_url": "https://github.com/Hybrismannen/NSLI/pull/1",
+      "pr_number": 1,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Hybrismannen/metoyo",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "REQUIRED",
+      "pr_url": "https://github.com/Hybrismannen/metoyo/pull/2",
+      "pr_number": 2,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Motherpher/CareerHubZero",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "REQUIRED",
+      "pr_url": "https://github.com/Motherpher/CareerHubZero/pull/56",
+      "pr_number": 56,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Motherpher/FFOS",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "REQUIRED",
+      "pr_url": "https://github.com/Motherpher/FFOS/pull/23",
+      "pr_number": 23,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Motherpher/wpb",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "DEPENDENT_ON_CENTRAL_RUNTIME",
+      "pr_url": "https://github.com/Motherpher/wpb/pull/18",
+      "pr_number": 18,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Motherpher/Gracey",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "DEPENDENT_ON_CENTRAL_RUNTIME",
+      "pr_url": "https://github.com/Motherpher/Gracey/pull/8",
+      "pr_number": 8,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Motherpher/CareerHub-LinusF",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "DEPENDENT_ON_CENTRAL_RUNTIME",
+      "pr_url": "https://github.com/Motherpher/CareerHub-LinusF/pull/8",
+      "pr_number": 8,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Motherpher/Politent",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "REQUIRED",
+      "pr_url": "https://github.com/Motherpher/Politent/pull/22",
+      "pr_number": 22,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Motherpher/FF-Spatial",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "REQUIRED",
+      "pr_url": "https://github.com/Motherpher/FF-Spatial/pull/37",
+      "pr_number": 37,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Motherpher/BDNA",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "pr_url": "https://github.com/Motherpher/BDNA/pull/15",
+      "pr_number": 15,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Motherpher/MusicGenea",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "pr_url": "https://github.com/Motherpher/MusicGenea/pull/1",
+      "pr_number": 1,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Motherpher/Re-Eco",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "pr_url": "https://github.com/Motherpher/Re-Eco/pull/9",
+      "pr_number": 9,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Motherpher/GreenBell",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "pr_url": "https://github.com/Motherpher/GreenBell/pull/11",
+      "pr_number": 11,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    },
+    {
+      "repository": "Motherpher/Vitalitet",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "runtime_screening": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "pr_url": "https://github.com/Motherpher/Vitalitet/pull/1",
+      "pr_number": 1,
+      "state": "PUSHED_PR_OPEN_PENDING_OWNER_REVIEW"
+    }
+  ]
+}
