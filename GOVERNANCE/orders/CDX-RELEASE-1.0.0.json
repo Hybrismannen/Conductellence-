@@ -21,5 +21,7 @@
   "release_authorized": false,
   "publication_authorized": false,
   "publication_state": "NOT_AUTHORIZED",
-  "decision_scope": "GOVERNED_RELEASE_DECISION_ONLY_NO_TAG_OR_PUBLICATION"
+  "decision_scope": "GOVERNED_RELEASE_DECISION_ONLY_NO_TAG_OR_PUBLICATION",
+  "publication_readiness_ref": "GOVERNANCE/release/CDX-1.0-PUBLICATION-READINESS-2026-10-29.json",
+  "publication_readiness_state": "VERIFIED_AWAITING_EXPLICIT_AUTHORIZATION"
 }
