@@ -26,7 +26,8 @@
     "WP06 found and is repairing a SPETL v1.1 compatibility defect in the canonical/distributed runtime before assembling the CDX 1.0 release candidate.",
     "Repository metadata hygiene: description derivation remains stale (issue #14); homepage currently points to udl-twin.vercel.app and requires owner review.",
     "WP04 independent evidence custody is VERIFIED through CDX-CUSTODY-GHA-001 with observed producer → separate custodian → separate verifier provenance. The long-lived Vercel custody target remains externally blocked but is not required to keep the verified reference-custody gate open.",
-    "WP05 COMPLETE: native classic main protection is VERIFIED; PR #42 promoted the verified protection state and removed CDX-BLOCK-REPO-PROTECTION-001 from the core release blocker set."
+    "WP05 COMPLETE: native classic main protection is VERIFIED; PR #42 promoted the verified protection state and removed CDX-BLOCK-REPO-PROTECTION-001 from the core release blocker set.",
+    "WP07 publication authorization explicitly granted on 2026-10-29; canonical release_state remains PRE_RELEASE until tag and GitHub Release are independently observed and reconciled."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
@@ -168,17 +169,18 @@
     "wp06_closed": true
   },
   "wp07_release_preflight": {
-    "state": "RELEASE_DECISION_RECORDED_PUBLICATION_READY_AWAITING_AUTHORIZATION",
+    "state": "PUBLICATION_AUTHORIZED_PENDING_EXECUTION",
     "preflight_id": "CDX-RELEASE-PREFLIGHT-1.0.0",
     "target_release": "1.0.0",
     "release_order": "CDX-RELEASE-1.0.0",
-    "release_authorized": false,
+    "release_authorized": true,
     "internal_candidate_ready": true,
     "external_core_blockers": [],
     "next_state_if_cleared": "READY_FOR_HUMAN_RELEASE_DECISION",
     "release_decision": "RELEASE_1_0_0",
-    "publication_authorized": false,
+    "publication_authorized": true,
     "publication_readiness_ref": "GOVERNANCE/release/CDX-1.0-PUBLICATION-READINESS-2026-10-29.json",
-    "remaining_gate": "EXPLICIT_HUMAN_SOVEREIGN_AUTHORIZATION_TO_PUBLISH_CDX_1_0"
+    "remaining_gate": "PROTECTED_PUBLICATION_EXECUTION_AND_POST_PUBLICATION_VERIFICATION",
+    "publication_authorization_ref": "GOVERNANCE/orders/CDX-PUBLICATION-1.0.0-AUTHORIZATION-2026-10-29.json"
   }
 }
