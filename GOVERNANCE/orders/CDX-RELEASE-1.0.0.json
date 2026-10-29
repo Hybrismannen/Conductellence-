@@ -2,7 +2,7 @@
   "schema": "cdx.release-decision/v1.0",
   "order_id": "CDX-RELEASE-1.0.0",
   "target_release": "1.0.0",
-  "state": "DECISION_RECORDED_PENDING_PUBLICATION",
+  "state": "PUBLICATION_AUTHORIZED_PENDING_EXECUTION",
   "decision": "RELEASE_1_0_0",
   "decision_by": "Hybrismannen",
   "decision_at": "2026-10-29",
@@ -18,10 +18,12 @@
   ],
   "decision_attestation_ref": "GOVERNANCE/orders/CDX-RELEASE-1.0.0-SOVEREIGN-ATTESTATION-2026-10-29.json",
   "decision_approval_pr": 45,
-  "release_authorized": false,
-  "publication_authorized": false,
-  "publication_state": "NOT_AUTHORIZED",
-  "decision_scope": "GOVERNED_RELEASE_DECISION_ONLY_NO_TAG_OR_PUBLICATION",
+  "release_authorized": true,
+  "publication_authorized": true,
+  "publication_state": "AUTHORIZED_PENDING_EXECUTION",
+  "decision_scope": "GOVERNED_RELEASE_AND_PUBLICATION_AUTHORIZED_NO_ESTATE_ENFORCEMENT",
   "publication_readiness_ref": "GOVERNANCE/release/CDX-1.0-PUBLICATION-READINESS-2026-10-29.json",
-  "publication_readiness_state": "VERIFIED_AWAITING_EXPLICIT_AUTHORIZATION"
+  "publication_readiness_state": "VERIFIED_AWAITING_EXPLICIT_AUTHORIZATION",
+  "publication_authorization_ref": "GOVERNANCE/orders/CDX-PUBLICATION-1.0.0-AUTHORIZATION-2026-10-29.json",
+  "publication_execution_workflow": ".github/workflows/cdx-1-publish.yml"
 }
