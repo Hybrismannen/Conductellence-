@@ -134,7 +134,7 @@ if estate_state=="BINDINGS_IN_PROGRESS":
     wp11=system.get("wp11_ffos_runtime_binding",{})
     if wp11.get("state")!="IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED":
         fail("BINDINGS_IN_PROGRESS lacks explicit WP11 staged/blocker evidence")
-    if wp11.get("production_deployment_state") not in {"NOT_DEPLOYED","NOT_DEPLOYED_CURRENT_IMPLEMENTATION"}:
+    if wp11.get("production_deployment_state") not in {"NOT_DEPLOYED","NOT_DEPLOYED_CURRENT_IMPLEMENTATION","NOT_REQUIRED_FOR_RUNTIME_VERIFICATION"}:
         fail("WP11 staged state cannot claim production deployment")
     if system.get("consumer_bindings",{}).get("Motherpher/FFOS")!="IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED":
         fail("FFOS consumer binding state does not match WP11 staged state")

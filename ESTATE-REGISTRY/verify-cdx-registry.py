@@ -98,13 +98,13 @@ if state.get("estate_integration_state") == "BINDINGS_IN_PROGRESS":
     wp11 = state.get("wp11_ffos_runtime_binding", {})
     check(wp11.get("state") == "IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED",
           "BINDINGS_IN_PROGRESS requires explicit WP11 staged/blocker evidence")
-    check(wp11.get("production_deployment_state") in {"NOT_DEPLOYED","NOT_DEPLOYED_CURRENT_IMPLEMENTATION"},
+    check(wp11.get("production_deployment_state") in {"NOT_DEPLOYED","NOT_DEPLOYED_CURRENT_IMPLEMENTATION","NOT_REQUIRED_FOR_RUNTIME_VERIFICATION"},
           "WP11 staged state must not claim production deployment")
     check(wp11.get("implementation_pr") == 35,
           "WP11 current implementation must resolve to FFOS PR #35")
     check(wp11.get("proposed_runtime_state") == "RUNTIME_GUARDED_UNVERIFIED",
           "WP11 blocked implementation may not claim verified runtime")
-    check({x.get("id") for x in wp11.get("blockers", [])} == {"FFOS-GHA-RUNNER-001","VERCEL-BILLING-001"},
+    check({x.get("id") for x in wp11.get("blockers", [])} == {"FFOS-GHA-RUNNER-001"},
           "WP11 current external blocker set is incomplete")
     check("CDX-BLOCK-WP11-FFOS-EXECUTION-001" in state.get("estate_enforcement_blockers", []),
           "WP11 external execution blocker missing")

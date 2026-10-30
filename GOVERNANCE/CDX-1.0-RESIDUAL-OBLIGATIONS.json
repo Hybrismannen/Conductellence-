@@ -28,7 +28,7 @@
         "FFOS CDX_RUNTIME_VERIFIED",
         "FFOS VERIFIED_RUNTIME_BOUND"
       ],
-      "disposition": "Implementation rebuilt on current FFOS architecture. Do not promote or merge as verified until executable build/tests and production ALLOW/DENY/POLICY_UNAVAILABLE plus SPETL evidence succeed.",
+      "disposition": "Current FFOS implementation is staged in PR #35. Runtime verification is deployment-independent: execute exact-head GitHub CI HTTP effect tests, preserve SPETL evidence, merge, re-verify merged main, then independently reconcile to VERIFIED_RUNTIME_BOUND if evidence passes.",
       "current_implementation": {
         "repository": "Motherpher/FFOS",
         "pr": 35,
@@ -39,8 +39,7 @@
         "proposed_runtime_state": "RUNTIME_GUARDED_UNVERIFIED"
       },
       "external_blockers": [
-        "FFOS-GHA-RUNNER-001",
-        "VERCEL-BILLING-001"
+        "FFOS-GHA-RUNNER-001"
       ]
     },
     {
