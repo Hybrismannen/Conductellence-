@@ -1,6 +1,6 @@
 # CDX-WP15 — Final Programme Acceptance & Operational Handover
 
-**Status:** COMPLETE — FINAL ACCEPTANCE STAGED  
+**Status:** COMPLETE — FINAL ACCEPTED  
 **Date:** 2026-10-30  
 **Programme:** CDX 1.0
 
