@@ -98,8 +98,14 @@ if state.get("estate_integration_state") == "BINDINGS_IN_PROGRESS":
     wp11 = state.get("wp11_ffos_runtime_binding", {})
     check(wp11.get("state") == "IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED",
           "BINDINGS_IN_PROGRESS requires explicit WP11 staged/blocker evidence")
-    check(wp11.get("production_deployment_state") == "NOT_DEPLOYED",
+    check(wp11.get("production_deployment_state") in {"NOT_DEPLOYED","NOT_DEPLOYED_CURRENT_IMPLEMENTATION"},
           "WP11 staged state must not claim production deployment")
+    check(wp11.get("implementation_pr") == 35,
+          "WP11 current implementation must resolve to FFOS PR #35")
+    check(wp11.get("proposed_runtime_state") == "RUNTIME_GUARDED_UNVERIFIED",
+          "WP11 blocked implementation may not claim verified runtime")
+    check({x.get("id") for x in wp11.get("blockers", [])} == {"FFOS-GHA-RUNNER-001","VERCEL-BILLING-001"},
+          "WP11 current external blocker set is incomplete")
     check("CDX-BLOCK-WP11-FFOS-EXECUTION-001" in state.get("estate_enforcement_blockers", []),
           "WP11 external execution blocker missing")
 ffos_binding = state.get("repository_anchor_bindings", {}).get("Motherpher/FFOS", {})
@@ -179,8 +185,10 @@ check(residual.get("programme_state") == "FINAL_ACCEPTED_WITH_RESIDUAL_DOWNSTREA
 open_residual = {x.get("id"): x for x in residual.get("obligations", [])}
 check(open_residual.get("CDX-RESIDUAL-RUNTIME-001", {}).get("state") == "OPEN",
       "estate runtime residual obligation must remain open")
-check(open_residual.get("CDX-RESIDUAL-WP11-FFOS-001", {}).get("state") == "OPEN",
+check(open_residual.get("CDX-RESIDUAL-WP11-FFOS-001", {}).get("state") in {"OPEN","OPEN_IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED"},
       "WP11 FFOS residual obligation must remain open")
+check(open_residual.get("CDX-RESIDUAL-WP11-FFOS-001", {}).get("current_implementation", {}).get("pr") == 35,
+      "WP11 residual must point to current FFOS PR #35")
 check(state.get("estate_integration_state") == "BINDINGS_IN_PROGRESS",
       "WP15 must not promote estate integration")
 check(state.get("enforcement_state") == "BOOTSTRAP",

@@ -73,13 +73,17 @@ for wp, row in rows.items():
 
 obligations = {x.get("id"): x for x in residual.get("obligations", [])}
 required = {
-    "CDX-RESIDUAL-RUNTIME-001": "OPEN",
-    "CDX-RESIDUAL-WP11-FFOS-001": "OPEN",
-    "CDX-RESIDUAL-METADATA-001": "OPEN_NON_BLOCKING",
+    "CDX-RESIDUAL-RUNTIME-001": {"OPEN"},
+    "CDX-RESIDUAL-WP11-FFOS-001": {"OPEN","OPEN_IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED"},
+    "CDX-RESIDUAL-METADATA-001": {"OPEN_NON_BLOCKING"},
 }
-for oid, expected in required.items():
-    if obligations.get(oid, {}).get("state") != expected:
+for oid, allowed in required.items():
+    if obligations.get(oid, {}).get("state") not in allowed:
         fail(f"{oid}: residual state mismatch")
+if obligations.get("CDX-RESIDUAL-WP11-FFOS-001", {}).get("current_implementation", {}).get("pr") != 35:
+    fail("WP11 residual must point to FFOS PR #35")
+if state.get("wp11_ffos_runtime_binding", {}).get("proposed_runtime_state") != "RUNTIME_GUARDED_UNVERIFIED":
+    fail("terminal state must preserve unverified FFOS runtime standing")
 if len(obligations) != 3:
     fail("terminal residual register must contain exactly three classified obligations")
 
