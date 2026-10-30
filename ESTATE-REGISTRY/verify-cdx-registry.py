@@ -170,4 +170,5 @@ print("PASS: WP10 anchor verification and reconciliation are internally consiste
 print("PASS: 28/28 governed consumers are CDX_BOUND / PASS on the anchor axis.")
 print("PASS: FFC formal admission is complete; FFOS runtime verification and estate enforcement remain unadvanced.")
 print("PASS: Pius is independently verified only at repository-CI reference-runtime scope; consequential enforcement remains false.")
-print("PASS: WP14 estate-governance propagation is complete with 28/28 governed repositories CDX_BOUND / PASS and zero pending admissions.")\nprint(f"PASS: estate integration state={state.get('estate_integration_state')} and enforcement={state.get('enforcement_state')} remain correctly bounded.")
+print("PASS: WP14 estate-governance propagation is complete with 28/28 governed repositories CDX_BOUND / PASS and zero pending admissions.")
+print(f"PASS: estate integration state={state.get('estate_integration_state')} and enforcement={state.get('enforcement_state')} remain correctly bounded.")
