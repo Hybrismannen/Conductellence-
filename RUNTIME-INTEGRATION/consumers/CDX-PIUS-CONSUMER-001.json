@@ -1,0 +1,56 @@
+{
+  "schema": "cdx.consumer-profile/v1.0",
+  "profile_id": "CDX-PIUS-CONSUMER-001",
+  "profile_version": "1.0.0",
+  "status": "ADMITTED_REFERENCE_CONSUMER_PROFILE",
+  "authority": "CDX-SYS-001",
+  "consumer": {
+    "repository": "Hybrismannen/pius-universe",
+    "repository_id": "1316351702",
+    "system_id": "CDX-EST-003",
+    "local_enforcement_owner": "Hybrismannen/pius-universe"
+  },
+  "governing_contract": {
+    "contract_id": "CDX-RUNTIME-001",
+    "contract_version": "1.0.0",
+    "release_ref": "1.0.0",
+    "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0"
+  },
+  "admitted_scope": {
+    "repository_anchor": "CDX_BOUND_PASS",
+    "reference_runtime": "VERIFIED_REFERENCE_RUNTIME_REPOSITORY_CI_ONLY",
+    "consequential_runtime": "NOT_IMPLEMENTED_NOT_VERIFIED",
+    "operational_effect_endpoints": 0
+  },
+  "authority_model": {
+    "human_sovereign_authority_superior": true,
+    "explicit_authority_ref_required": true,
+    "explicit_mandate_ref_required": true,
+    "content_may_grant_authority": false,
+    "consumer_owns_local_effect_gate": true,
+    "cdx_profile_grants_execution_authority": false
+  },
+  "future_effectful_runtime_requirements": [
+    "real local Pius consequential enforcement point",
+    "CDX-RUNTIME-001 decision context at the effect boundary",
+    "current release/policy pin verification",
+    "revocation recheck",
+    "ALLOW and DENY consequential-effect tests",
+    "POLICY_UNAVAILABLE no-effect test",
+    "SPETL v1.1 evidence before consequential completion",
+    "independent evidence preservation",
+    "independent verification and separate human release/activation decision"
+  ],
+  "construction_entry": {
+    "cdx_foundation_state": "READY_FOR_SEPARATE_DIRECTOR_REVIEW",
+    "interpretation": "CDX release, native protection, independent reference custody and a versioned admitted Pius consumer profile are present. This permits a separate review of Pius construction entry; it does not activate or deploy Pius."
+  },
+  "downstream_ci_drift": {
+    "state": "KNOWN_STALE_PRECHECK",
+    "note": "Pius precheck still requires ANCHOR_DECLARED and rejects WP10 CDX_BOUND. CDX WP12 records the defect but does not mutate the consumer repository."
+  },
+  "production_effect_authorization": false,
+  "downstream_mutation_authorization": false,
+  "acceptance_ref": "GOVERNANCE/orders/CDX-WP12-PIUS-REFERENCE-CONSUMER-ACCEPTANCE-2026-10-30.json",
+  "evidence_ref": "ESTATE-REGISTRY/wp12-pius-verification-evidence.json"
+}
