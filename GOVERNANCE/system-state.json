@@ -35,7 +35,8 @@
     "WP10 COMPLETE: all 28 governed consumer anchors independently verified against Registry v2 and CDX 1.0.0, reconciled on default branches as CDX_BOUND / PASS. Runtime, CI-monitoring, FFC admission and estate enforcement remain separate and unadvanced.",
     "WP12 COMPLETE: Pius Universe reference consumer binding independently verified against CDX 1.0.0. Repository-CI reference runtime is VERIFIED_REFERENCE_RUNTIME only; no consequential Pius effect endpoint is implemented or VERIFIED_RUNTIME_BOUND.",
     "WP13 COMPLETE: Motherpher/form-flode formally admitted as canonical FFC estate identity after repository-ID reconciliation and WP10-verified CDX_BOUND / PASS anchor. Historical Hybrismannen/form-flode remains provenance-only; FFC runtime remains NOT_VERIFIED.",
-    "WP14 COMPLETE: estate-governance propagation closed centrally with 28/28 governed current repositories CDX_BOUND / PASS, zero pending admissions, Barnombudet explicitly excluded and the historical form-flode alias preserved. Runtime enforcement remains a separate downstream obligation and is not promoted."
+    "WP14 COMPLETE: estate-governance propagation closed centrally with 28/28 governed current repositories CDX_BOUND / PASS, zero pending admissions, Barnombudet explicitly excluded and the historical form-flode alias preserved. Runtime enforcement remains a separate downstream obligation and is not promoted.",
+    "WP15 COMPLETE: final CDX 1.0 programme acceptance and operational handover records the canonical construction programme as terminally accepted. WP11/estate runtime enforcement is transferred to the residual-obligation register and remains explicitly open; repository metadata hygiene remains non-blocking."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
@@ -79,7 +80,7 @@
       "admission_evidence": "ESTATE-REGISTRY/wp13-ffc-admission-evidence.json"
     }
   },
-  "reconciliation_note": "CDX 1.0 core, estate registry, canonical anchor propagation, Pius reference verification and FFC formal admission are centrally closed through WP14. Runtime rollout remains downstream/incomplete: WP11 FFOS is verification-blocked, no governed consequential runtime is VERIFIED_RUNTIME_BOUND, estate integration remains BINDINGS_IN_PROGRESS and enforcement remains BOOTSTRAP.",
+  "reconciliation_note": "WP15 terminally accepts the CDX 1.0 canonical governance programme. WP00-WP10 and WP12-WP15 are complete. WP11 remains a separately governed downstream runtime obligation, not a blocker to canonical CDX construction closure. Estate integration remains BINDINGS_IN_PROGRESS and enforcement remains BOOTSTRAP until runtime evidence supports promotion.",
   "updated_at": "2026-10-30",
   "repository_identity_reconciliation": {
     "Motherpher/form-flode": {
@@ -371,9 +372,10 @@
     "state_effect": "GOVERNANCE_PROPAGATION_PROGRAMME_CLOSED_NO_RUNTIME_PROMOTION"
   },
   "programme_closure": {
-    "scope": "CDX_1_0_CORE_AND_ESTATE_GOVERNANCE_PROPAGATION",
-    "state": "COMPLETE_WITH_DOWNSTREAM_RUNTIME_OBLIGATIONS",
+    "scope": "CDX_1_0_CANONICAL_GOVERNANCE_CONSTRUCTION_AND_ESTATE_PROPAGATION",
+    "state": "FINAL_ACCEPTED_WITH_RESIDUAL_DOWNSTREAM_OBLIGATIONS",
     "completed_at": "2026-10-30",
+    "final_work_package": "WP15",
     "closed_work_packages": [
       "WP00",
       "WP01",
@@ -388,9 +390,36 @@
       "WP10",
       "WP12",
       "WP13",
-      "WP14"
+      "WP14",
+      "WP15"
     ],
-    "open_downstream_dependency": "WP11_FFOS_RUNTIME_BINDING",
-    "interpretation": "Canonical CDX 1.0 source and estate-governance propagation are complete. Consumer consequential runtime implementation/verification remains separately gated and does not keep the CDX canonical governance repository in an unfinished construction state."
+    "transferred_work_packages": [
+      {
+        "work_package": "WP11",
+        "state": "IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED",
+        "disposition": "TRANSFERRED_TO_RESIDUAL_DOWNSTREAM_RUNTIME_OBLIGATION",
+        "blocker": "CDX-BLOCK-WP11-FFOS-EXECUTION-001"
+      }
+    ],
+    "residual_obligations_ref": "GOVERNANCE/CDX-1.0-RESIDUAL-OBLIGATIONS.json",
+    "interpretation": "Canonical CDX 1.0 construction and estate-governance propagation are final-accepted. Runtime implementation and estate enforcement remain independently gated operational obligations."
+  },
+  "wp15_final_programme_acceptance": {
+    "programme": "CDX-WP15",
+    "state": "COMPLETE_FINAL_PROGRAMME_ACCEPTANCE",
+    "completed_at": "2026-10-30",
+    "accepted_scope": "CDX_1_0_CANONICAL_GOVERNANCE_CONSTRUCTION_AND_ESTATE_PROPAGATION",
+    "work_package_ledger_ref": "PROGRAMME/CDX-1.0-WORK-PACKAGE-LEDGER.json",
+    "residual_obligations_ref": "GOVERNANCE/CDX-1.0-RESIDUAL-OBLIGATIONS.json",
+    "acceptance_order_ref": "GOVERNANCE/orders/CDX-WP15-FINAL-PROGRAMME-ACCEPTANCE-2026-10-30.json",
+    "terminal_audit_required": true,
+    "terminal_end_report_required": true,
+    "downstream_runtime_transfer": "WP11_AND_CDX_BLOCK_ESTATE_RUNTIME_001",
+    "estate_integration_state": "BINDINGS_IN_PROGRESS",
+    "enforcement_state": "BOOTSTRAP",
+    "verified_runtime_bound_claim": false,
+    "enforcing_claim": false,
+    "production_effect_authorization": false,
+    "state_effect": "FINAL_CENTRAL_PROGRAMME_ACCEPTANCE_NO_RUNTIME_PROMOTION"
   }
 }
