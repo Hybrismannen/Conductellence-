@@ -27,20 +27,21 @@
     "job_logs_available": false,
     "interpretation": "No code/test conclusion may be drawn from these failures because no runner steps executed."
   },
-  "vercel": {
-    "team": "team_3CWSOO9ePljnKvDPHctIaNCy",
-    "project": "prj_gNrAedybaimsH8wuE2yMTG4ATm2b",
-    "deployment_attempt_head": "e48b2de8c8a163f07125243a94c5907c6e028854",
-    "deployment_attempt_result": "HTTP_402_RESOURCE_CREATION_BLOCKED_OVERDUE_BALANCE",
-    "existing_production_state": "READY",
-    "existing_production_commit": "3a93eb3d7a5195232acc850c7d301bf901014306",
-    "current_implementation_deployed": false
-  },
   "claim_boundary": {
     "runtime_verified": false,
     "verified_runtime_bound": false,
     "estate_partially_bound": false,
     "enforcing": false
   },
-  "next_gate": "Resolve external execution/account blocks, execute exact-head build and acceptance, deploy merged current implementation, then independently reconcile production evidence."
+  "next_gate": "Restore FFOS GitHub Actions runner execution, run exact-head build and HTTP effect acceptance, merge reviewed implementation, re-verify merged main, then independently reconcile runtime evidence.",
+  "verification_model": {
+    "deployment_required": false,
+    "required_surface": "EXACT_FFOS_HTTP_RUNTIME_IN_GITHUB_CI",
+    "required_cases": [
+      "ALLOW_EFFECT",
+      "DENY_NO_EFFECT",
+      "POLICY_UNAVAILABLE_SECURITY_STOP_NO_EFFECT"
+    ],
+    "evidence": "SPETL_PRE_EFFECT_BLOCKED_POST_EFFECT_PLUS_EXACT_HEAD_CI"
+  }
 }
