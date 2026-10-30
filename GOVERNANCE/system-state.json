@@ -37,7 +37,7 @@
     "WP13 COMPLETE: Motherpher/form-flode formally admitted as canonical FFC estate identity after repository-ID reconciliation and WP10-verified CDX_BOUND / PASS anchor. Historical Hybrismannen/form-flode remains provenance-only; FFC runtime remains NOT_VERIFIED.",
     "WP14 COMPLETE: estate-governance propagation closed centrally with 28/28 governed current repositories CDX_BOUND / PASS, zero pending admissions, Barnombudet explicitly excluded and the historical form-flode alias preserved. Runtime enforcement remains a separate downstream obligation and is not promoted.",
     "WP15 COMPLETE: final CDX 1.0 programme acceptance and operational handover records the canonical construction programme as terminally accepted. WP11/estate runtime enforcement is transferred to the residual-obligation register and remains explicitly open; repository metadata hygiene remains non-blocking.",
-    "Runtime reconciliation 2026-10-30: FFOS PR #35 supersedes historical PR #29 and stages current-architecture CDX production gates for Director-session issuance plus a non-privileged runtime proof effect. Exact-head verification remains externally blocked by GitHub Actions pre-run failure and Vercel HTTP 402; FFOS remains BOUND_PENDING_RUNTIME_INTEGRATION."
+    "Runtime reconciliation 2026-10-30: FFOS PR #35 supersedes historical PR #29 and stages current-architecture CDX gates for Director-session issuance plus a non-privileged runtime proof effect. Vercel is not part of the runtime acceptance contract. Exact-head verification remains blocked only by FFOS GitHub Actions failing before runner steps execute; FFOS remains BOUND_PENDING_RUNTIME_INTEGRATION."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
@@ -81,7 +81,7 @@
       "admission_evidence": "ESTATE-REGISTRY/wp13-ffc-admission-evidence.json"
     }
   },
-  "reconciliation_note": "CDX 1.0 canonical governance is final-accepted and its front presentation is current. FFOS production runtime implementation has been rebuilt on current architecture in PR #35, but independent execution is blocked before tests by FFOS GitHub Actions infrastructure and Vercel HTTP 402 billing state. No runtime or enforcement promotion is claimed.",
+  "reconciliation_note": "CDX 1.0 canonical governance is final-accepted and its front presentation is current. FFOS PR #35 rebuilds the first consequential runtime binding on current architecture. Runtime verification is deployment-independent and does not require Vercel. The remaining blocker is FFOS GitHub Actions failing before runner steps execute; no runtime promotion is claimed.",
   "updated_at": "2026-10-30",
   "repository_identity_reconciliation": {
     "Motherpher/form-flode": {
@@ -276,31 +276,24 @@
     "target_effect": "ISSUE_DIRECTOR_SESSION",
     "proposed_anchor_state": "CDX_RUNTIME_GUARDED",
     "proposed_runtime_state": "RUNTIME_GUARDED_UNVERIFIED",
-    "production_deployment_state": "NOT_DEPLOYED_CURRENT_IMPLEMENTATION",
-    "production_current_commit": "3a93eb3d7a5195232acc850c7d301bf901014306",
+    "production_deployment_state": "NOT_REQUIRED_FOR_RUNTIME_VERIFICATION",
     "blockers": [
       {
         "id": "FFOS-GHA-RUNNER-001",
         "kind": "EXTERNAL_EXECUTION_INFRASTRUCTURE",
         "evidence": "FFOS PR #35 diagnostic workflow run 41079620757 failed all six independent jobs before any runner steps executed; each job returned steps=null and logs_url=null. The exact runtime head therefore has no executable GitHub Actions acceptance evidence."
-      },
-      {
-        "id": "VERCEL-BILLING-001",
-        "kind": "EXTERNAL_ACCOUNT",
-        "evidence": "Vercel project prj_gNrAedybaimsH8wuE2yMTG4ATm2b rejected a preview deployment of FFOS PR #35 head e48b2de8c8a163f07125243a94c5907c6e028854 with HTTP 402 resource_creation_blocked because the team has an overdue balance. Existing production remains READY on old commit 3a93eb3d7a5195232acc850c7d301bf901014306."
       }
     ],
     "completion_requires": [
       "FFOS execution infrastructure permits the exact current implementation to build and run acceptance tests",
       "Reviewed PR #35 or its reconciled successor merges to current FFOS main",
-      "Exact merged commit reaches READY on Vercel production",
-      "Production runtime proof demonstrates ALLOW with bounded proof effect",
-      "Production runtime proof demonstrates DENY with no effect",
-      "Production runtime proof demonstrates POLICY_UNAVAILABLE -> SECURITY_STOP with no effect",
+      "Runtime proof demonstrates ALLOW with bounded proof effect",
+      "Runtime proof demonstrates DENY with no effect",
+      "Runtime proof demonstrates POLICY_UNAVAILABLE -> SECURITY_STOP with no effect",
       "SPETL PRE_EFFECT/BLOCKED/POST_EFFECT production evidence is independently read back",
       "FFOS anchor/runtime state is independently promoted to CDX_RUNTIME_VERIFIED / VERIFIED_RUNTIME_BOUND"
     ],
-    "state_effect": "NO_RUNTIME_PROMOTION_EXTERNAL_EXECUTION_BLOCKED",
+    "state_effect": "NO_RUNTIME_PROMOTION_GITHUB_EXECUTION_BLOCKED",
     "implementation_branch": "cdx-production-runtime-binding-20261030",
     "superseded_implementation_pr": 29,
     "target_effects": [
