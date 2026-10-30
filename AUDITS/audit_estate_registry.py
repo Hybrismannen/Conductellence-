@@ -81,16 +81,16 @@ for s in systems:
     else:
         fail(f"{sid}: binding manifest missing or unrecognized")
 
-# FFC may have a verified repository anchor after WP10 while formal estate
-# admission remains pending until WP13.
-ffc=pending.get("Motherpher/form-flode")
-if ffc:
-    if ffc.get("anchor_state")!="CDX_BOUND" or ffc.get("verification_state")!="PASS":
-        fail("FFC pending admission must carry its WP10-verified CDX_BOUND / PASS anchor")
-    if ffc.get("registry_admission")!="PENDING_WP13_FORMAL_ADMISSION":
-        fail("FFC formal admission boundary must remain pending WP13")
-if ffc and "Motherpher/form-flode" in repos:
-    fail("pending FFC repository admitted to legacy systems registry before WP13")
+# WP13 formally admits canonical FFC identity on the repository/anchor axis only.
+ffc=anchors.get("Motherpher/form-flode")
+ffc_system=next((x for x in systems if x.get("repository")=="Motherpher/form-flode"),None)
+if not ffc: fail("FFC canonical anchor entry missing after WP13")
+if "Motherpher/form-flode" in pending: fail("FFC must not remain pending after WP13")
+if ffc.get("system_id")!="FFC" or ffc.get("repository_id")!="1379622813": fail("FFC canonical identity mismatch")
+if ffc.get("anchor_state")!="CDX_BOUND" or ffc.get("anchor_verification_state")!="PASS": fail("FFC admitted anchor must remain CDX_BOUND / PASS")
+if ffc.get("estate_admission_state")!="FORMALLY_ADMITTED_WP13": fail("FFC formal admission state missing")
+if ffc.get("runtime_integration_state")!="NOT_VERIFIED": fail("FFC runtime must remain NOT_VERIFIED")
+if not ffc_system or ffc_system.get("system_id")!="FFC": fail("canonical FFC systems entry missing")
 
 # Historical Form & Flöde path is a provenance alias of the current Motherpher repository,
 # not a second repository. Both identities must remain explicitly reconciled.
@@ -108,13 +108,8 @@ if legacy_ff_anchor:
         fail("historical form-flode anchor record must be marked HISTORICAL_ALIAS")
     if legacy_ff_anchor.get("anchor_state")!="UNBOUND":
         fail("historical alias cannot claim canonical CDX binding")
-if ffc:
-    if ffc.get("repository_id")!="1379622813":
-        fail("FFC pending record repository id mismatch")
-    if ffc.get("historical_alias")!="Hybrismannen/form-flode":
-        fail("FFC pending record must preserve historical alias")
-    if ffc.get("migration_kind")!="REPOSITORY_IDENTITY_MIGRATION":
-        fail("FFC must be modeled as repository identity migration")
+if ffc.get("historical_alias")!="Hybrismannen/form-flode":
+    fail("FFC admitted record must preserve historical alias")
 
 # WP08 Registry v2 applicability classification.
 if r2.get("schema")!="cdx.estate-registry/v2.0":

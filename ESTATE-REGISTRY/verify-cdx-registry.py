@@ -19,6 +19,7 @@ registry_v2 = load("ESTATE-REGISTRY/registry-v2.json")
 wp10_evidence = load("ESTATE-REGISTRY/wp10-anchor-verification-evidence.json")
 wp12_evidence = load("ESTATE-REGISTRY/wp12-pius-verification-evidence.json")
 pius_profile = load("RUNTIME-INTEGRATION/consumers/CDX-PIUS-CONSUMER-001.json")
+wp13_evidence = load("ESTATE-REGISTRY/wp13-ffc-admission-evidence.json")
 issues = []
 
 def check(condition, message):
@@ -60,6 +61,17 @@ check(bo.get("anchor_requirement") == "NOT_REQUIRED_EXCLUDED", "Barnombudet must
 legacy = entries.get("Hybrismannen/form-flode", {})
 check(legacy.get("record_state") == "HISTORICAL_ALIAS", "historical form-flode alias provenance lost")
 check(legacy.get("anchor_state") == "UNBOUND", "historical alias cannot claim canonical binding")
+
+ffc = entries.get("Motherpher/form-flode", {})
+ffc_sys = sys_entries.get("Motherpher/form-flode", {})
+check("Motherpher/form-flode" not in pending, "FFC must leave pending admissions after WP13")
+check(ffc.get("system_id") == "FFC", "FFC canonical system identity missing")
+check(ffc.get("repository_id") == "1379622813", "FFC repository identity mismatch")
+check(ffc.get("estate_admission_state") == "FORMALLY_ADMITTED_WP13", "FFC formal admission state missing")
+check(ffc.get("runtime_integration_state") == "NOT_VERIFIED", "FFC runtime must remain NOT_VERIFIED")
+check(ffc_sys.get("system_id") == "FFC", "canonical FFC systems entry missing")
+check(wp13_evidence.get("result", {}).get("formal_admission") == "PASS", "WP13 evidence not PASS")
+
 
 ffos = entries.get("Motherpher/FFOS", {})
 ffos_sys = sys_entries.get("Motherpher/FFOS", {})
