@@ -244,5 +244,6 @@ print(f"PASS: Estate Registry contains {len(systems)} unique governed repository
 print(f"PASS: {legacy} legacy bindings + {canonical} canonical anchors differentiated")
 print("PASS: Registry v2 classifies 31 identifiers / 30 current repository objects with explicit applicability")
 print("PASS: WP09 migration evidence preserved and WP10 reconciled all 28 governed consumers to CDX_BOUND / PASS")
-print("PASS: repository binding/admission remain separate from application-runtime evidence")\nprint("PASS: WP14 governance propagation closure is complete with zero pending admissions")
+print("PASS: repository binding/admission remain separate from application-runtime evidence")
+print("PASS: WP14 governance propagation closure is complete with zero pending admissions")
 print("NOTE: registry audit does not by itself establish CDX-RUNTIME-001 verification")
