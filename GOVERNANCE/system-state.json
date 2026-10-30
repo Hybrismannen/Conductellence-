@@ -36,7 +36,8 @@
     "WP12 COMPLETE: Pius Universe reference consumer binding independently verified against CDX 1.0.0. Repository-CI reference runtime is VERIFIED_REFERENCE_RUNTIME only; no consequential Pius effect endpoint is implemented or VERIFIED_RUNTIME_BOUND.",
     "WP13 COMPLETE: Motherpher/form-flode formally admitted as canonical FFC estate identity after repository-ID reconciliation and WP10-verified CDX_BOUND / PASS anchor. Historical Hybrismannen/form-flode remains provenance-only; FFC runtime remains NOT_VERIFIED.",
     "WP14 COMPLETE: estate-governance propagation closed centrally with 28/28 governed current repositories CDX_BOUND / PASS, zero pending admissions, Barnombudet explicitly excluded and the historical form-flode alias preserved. Runtime enforcement remains a separate downstream obligation and is not promoted.",
-    "WP15 COMPLETE: final CDX 1.0 programme acceptance and operational handover records the canonical construction programme as terminally accepted. WP11/estate runtime enforcement is transferred to the residual-obligation register and remains explicitly open; repository metadata hygiene remains non-blocking."
+    "WP15 COMPLETE: final CDX 1.0 programme acceptance and operational handover records the canonical construction programme as terminally accepted. WP11/estate runtime enforcement is transferred to the residual-obligation register and remains explicitly open; repository metadata hygiene remains non-blocking.",
+    "Runtime reconciliation 2026-10-30: FFOS PR #35 supersedes historical PR #29 and stages current-architecture CDX production gates for Director-session issuance plus a non-privileged runtime proof effect. Exact-head verification remains externally blocked by GitHub Actions pre-run failure and Vercel HTTP 402; FFOS remains BOUND_PENDING_RUNTIME_INTEGRATION."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
@@ -80,7 +81,7 @@
       "admission_evidence": "ESTATE-REGISTRY/wp13-ffc-admission-evidence.json"
     }
   },
-  "reconciliation_note": "WP15 terminally accepts the CDX 1.0 canonical governance programme. WP00-WP10 and WP12-WP15 are complete. WP11 remains a separately governed downstream runtime obligation, not a blocker to canonical CDX construction closure. Estate integration remains BINDINGS_IN_PROGRESS and enforcement remains BOOTSTRAP until runtime evidence supports promotion.",
+  "reconciliation_note": "CDX 1.0 canonical governance is final-accepted and its front presentation is current. FFOS production runtime implementation has been rebuilt on current architecture in PR #35, but independent execution is blocked before tests by FFOS GitHub Actions infrastructure and Vercel HTTP 402 billing state. No runtime or enforcement promotion is claimed.",
   "updated_at": "2026-10-30",
   "repository_identity_reconciliation": {
     "Motherpher/form-flode": {
@@ -267,37 +268,47 @@
   "wp11_ffos_runtime_binding": {
     "programme": "CDX-WP11",
     "state": "IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED",
-    "observed_at": "2026-10-29",
+    "observed_at": "2026-10-30",
     "ffos_repository": "Motherpher/FFOS",
-    "implementation_pr": 29,
-    "implementation_head": "8c98fc70aff1705fd490977489be2cda8069a07c",
+    "implementation_pr": 35,
+    "implementation_head": "e48b2de8c8a163f07125243a94c5907c6e028854",
     "target_contract": "CDX-RUNTIME-001@1.0.0",
     "target_effect": "ISSUE_DIRECTOR_SESSION",
     "proposed_anchor_state": "CDX_RUNTIME_GUARDED",
     "proposed_runtime_state": "RUNTIME_GUARDED_UNVERIFIED",
-    "production_deployment_state": "NOT_DEPLOYED",
+    "production_deployment_state": "NOT_DEPLOYED_CURRENT_IMPLEMENTATION",
     "production_current_commit": "3a93eb3d7a5195232acc850c7d301bf901014306",
     "blockers": [
       {
         "id": "FFOS-GHA-RUNNER-001",
         "kind": "EXTERNAL_EXECUTION_INFRASTRUCTURE",
-        "evidence": "FFOS GitHub Actions workflows fail before runner steps execute across WP11 and unrelated AMA PRs; last observed successful FFOS workflows were 2026-10-29T14:04Z."
+        "evidence": "FFOS PR #35 diagnostic workflow run 41079620757 failed all six independent jobs before any runner steps executed; each job returned steps=null and logs_url=null. The exact runtime head therefore has no executable GitHub Actions acceptance evidence."
       },
       {
         "id": "VERCEL-BILLING-001",
         "kind": "EXTERNAL_ACCOUNT",
-        "evidence": "Vercel create deployment rejected with HTTP 402 resource_creation_blocked: team has overdue balance."
+        "evidence": "Vercel project prj_gNrAedybaimsH8wuE2yMTG4ATm2b rejected a preview deployment of FFOS PR #35 head e48b2de8c8a163f07125243a94c5907c6e028854 with HTTP 402 resource_creation_blocked because the team has an overdue balance. Existing production remains READY on old commit 3a93eb3d7a5195232acc850c7d301bf901014306."
       }
     ],
     "completion_requires": [
-      "FFOS PR #29 acceptance workflow executes and passes",
-      "Exact FFOS WP11 commit builds successfully",
-      "Reviewed implementation merges to FFOS main",
-      "Production deployment of merged main commit reaches READY",
-      "Runtime evidence demonstrates ALLOW, DENY, POLICY_UNAVAILABLE and consequential effect mediation",
-      "FFOS anchor/runtime state independently promoted to CDX_RUNTIME_VERIFIED / VERIFIED_RUNTIME_BOUND"
+      "FFOS execution infrastructure permits the exact current implementation to build and run acceptance tests",
+      "Reviewed PR #35 or its reconciled successor merges to current FFOS main",
+      "Exact merged commit reaches READY on Vercel production",
+      "Production runtime proof demonstrates ALLOW with bounded proof effect",
+      "Production runtime proof demonstrates DENY with no effect",
+      "Production runtime proof demonstrates POLICY_UNAVAILABLE -> SECURITY_STOP with no effect",
+      "SPETL PRE_EFFECT/BLOCKED/POST_EFFECT production evidence is independently read back",
+      "FFOS anchor/runtime state is independently promoted to CDX_RUNTIME_VERIFIED / VERIFIED_RUNTIME_BOUND"
     ],
-    "state_effect": "ESTATE_INTEGRATION_ADVANCED_TO_BINDINGS_IN_PROGRESS_ONLY"
+    "state_effect": "NO_RUNTIME_PROMOTION_EXTERNAL_EXECUTION_BLOCKED",
+    "implementation_branch": "cdx-production-runtime-binding-20261030",
+    "superseded_implementation_pr": 29,
+    "target_effects": [
+      "ISSUE_DIRECTOR_SESSION",
+      "ISSUE_RUNTIME_PROOF_RECEIPT"
+    ],
+    "current_ffos_main_observed": "05d0d058c3286733a5fd453135fa62a28b7873f6",
+    "current_implementation_note": "PR #35 rebuilds the first production binding against the current FFOS architecture. It does not activate Household Family or any other agent."
   },
   "wp12_pius_verification": {
     "programme": "CDX-WP12",
