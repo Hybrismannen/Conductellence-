@@ -51,3 +51,7 @@ WP13 advances only the FFC identity/admission axis.
 - WP14 remains the estate-wide propagation/closure stage
 
 **Next target:** `CDX-WP14`.
+
+## Validation note
+
+The central estate-registry reconciliation validator was updated for the WP13 admitted state; it continues to reject runtime promotion from formal admission.
