@@ -21,8 +21,8 @@
       "historical_binding_verified_at": "2026-09-25",
       "manifest_observed_on_main": true,
       "reconciled_at": "2026-10-28",
-      "reconciliation_status": "HISTORICAL_ALIAS_IDENTITY_MIGRATION_REQUIRED",
-      "reconciliation_note": "GitHub resolves Hybrismannen/form-flode to Motherpher/form-flode with repository id 1379622813. The legacy manifest exists on current main but still names the historical path. Preserve this entry as provenance; do not model it as a second current repository.",
+      "reconciliation_status": "HISTORICAL_ALIAS_IDENTITY_MIGRATION_COMPLETE_WP13",
+      "reconciliation_note": "Historical alias of Motherpher/form-flode, repository id 1379622813. Canonical current identity is formally admitted as FFC by WP13; retain this record as provenance only.",
       "repository_id": "1379622813",
       "canonical_repository": "Motherpher/form-flode",
       "repository_aliases": [
