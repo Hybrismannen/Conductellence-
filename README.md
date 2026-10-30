@@ -204,18 +204,27 @@ CDX state is deliberately represented on independent axes.
 | Release | **RELEASED** | CDX 1.0.0 is a published stable release. |
 | Estate governance | **COMPLETE** | Registry, anchors, verification and admissions are complete. |
 | Programme | **FINAL_ACCEPTED_WITH_RESIDUAL_DOWNSTREAM_OBLIGATIONS** | CDX 1.0 construction is finished. |
-| Estate integration | **BINDINGS_IN_PROGRESS** | Production consumer runtime rollout is still being completed. |
+| Estate integration | **PARTIALLY_BOUND** | FFOS is the first independently verified consequential consumer; the wider estate remains incomplete. |
 | Enforcement | **BOOTSTRAP** | Estate-wide consequential enforcement is not yet claimed. |
 
 Machine-readable truth is [GOVERNANCE/system-state.json](GOVERNANCE/system-state.json).
 
 ### Runtime rollout status
 
-The first real production consumer binding is currently staged in **Motherpher/FFOS PR #35** against the current FFOS architecture. It gates Director-session issuance and provides a separate non-privileged production proof effect.
+**Motherpher/FFOS is now the first verified consequential CDX consumer runtime.**
 
-It is **not yet verified** because FFOS GitHub Actions is still failing before runner steps execute. Vercel is not required for this runtime acceptance path. CDX therefore remains **BINDINGS_IN_PROGRESS / BOOTSTRAP** until the exact implementation can execute the HTTP ALLOW / DENY / POLICY_UNAVAILABLE tests and preserve SPETL evidence.
+FFOS mediates Director-session issuance and a bounded runtime-proof effect through CDX policy and SPETL evidence. ALLOW, DENY and POLICY_UNAVAILABLE → SECURITY_STOP paths were exercised against the real HTTP effect boundary, and the verified implementation tree was merged unchanged.
 
-Canonical status evidence: [RUNTIME-INTEGRATION/FFOS-RUNTIME-BINDING-STATUS-2026-10-30.json](RUNTIME-INTEGRATION/FFOS-RUNTIME-BINDING-STATUS-2026-10-30.json).
+Current aggregate state:
+
+```text
+FFOS runtime        VERIFIED_RUNTIME_BOUND
+verified consumers  1
+estate integration  PARTIALLY_BOUND
+estate enforcement  BOOTSTRAP
+```
+
+The wider estate is not yet fully runtime-bound. Canonical verification evidence: [RUNTIME-INTEGRATION/FFOS-RUNTIME-VERIFICATION-2026-10-30.json](RUNTIME-INTEGRATION/FFOS-RUNTIME-VERIFICATION-2026-10-30.json).
 
 
 **Maturity is not enforcement. Release is not integration. Integration is not estate-wide enforcement.**
