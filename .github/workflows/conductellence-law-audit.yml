@@ -84,3 +84,6 @@ jobs:
 
       - name: Audit enforcement transition readiness
         run: python3 AUDITS/audit_enforcement_transition.py
+
+      - name: Audit terminal CDX 1.0 programme acceptance
+        run: python3 AUDITS/audit_terminal_programme.py
