@@ -89,7 +89,7 @@
       "runtime_screening": "REQUIRED",
       "wp09_action": "INSTALL_AND_RECONCILE_IDENTITY",
       "wp10_action": "VERIFY_AFTER_WP09",
-      "basis": "Canonical FFC repository; operational Corpus with automation/agent surfaces. Main has legacy binding naming the historical path and no canonical anchor.",
+      "basis": "Canonical FFC repository and operational Corpus. Identity is reconciled to repository id 1379622813; canonical CDX 1.0.0 anchor is WP10-verified and formally admitted by WP13. Legacy binding remains provenance only.",
       "wp09_status": "COMPLETE_MIGRATED",
       "anchor_observed_on_default_branch": true,
       "binding_mode": "PINNED_RELEASE",
@@ -102,7 +102,11 @@
       "wp10_verified_at": "2026-10-29T15:19:00Z",
       "wp10_reconciliation_pr": 38,
       "wp10_reconciliation_merge_commit": "ea4f2db7129b2509bfdc487ee8e19f30d6a74f1c",
-      "estate_admission_state": "PENDING_WP13"
+      "estate_admission_state": "FORMALLY_ADMITTED_WP13",
+      "wp13_status": "COMPLETE_FORMALLY_ADMITTED",
+      "runtime_integration_state": "NOT_VERIFIED",
+      "consequential_enforcement_verified": false,
+      "wp13_evidence_ref": "ESTATE-REGISTRY/wp13-ffc-admission-evidence.json"
     },
     {
       "record_id": "CDX-R2-004",
@@ -913,5 +917,20 @@
     "evidence_ref": "ESTATE-REGISTRY/wp12-pius-verification-evidence.json",
     "next_wp": "CDX-WP13",
     "state_effect": "PIUS_REFERENCE_RUNTIME_AXIS_ONLY"
+  },
+  "wp13_ffc_admission": {
+    "state": "COMPLETE",
+    "completed_at": "2026-10-30",
+    "repository": "Motherpher/form-flode",
+    "repository_id": "1379622813",
+    "system_id": "FFC",
+    "historical_alias": "Hybrismannen/form-flode",
+    "anchor_state": "CDX_BOUND",
+    "anchor_verification_state": "PASS",
+    "runtime_integration_state": "NOT_VERIFIED",
+    "consequential_enforcement_verified": false,
+    "evidence_ref": "ESTATE-REGISTRY/wp13-ffc-admission-evidence.json",
+    "next_wp": "CDX-WP14",
+    "state_effect": "FFC_ESTATE_ADMISSION_AXIS_ONLY"
   }
 }
