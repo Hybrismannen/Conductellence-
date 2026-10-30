@@ -1,0 +1,46 @@
+{
+  "schema": "cdx.ffos-runtime-binding-status/v1.0",
+  "evidence_id": "CDX-FFOS-RUNTIME-BINDING-STATUS-2026-10-30",
+  "observed_at": "2026-10-30",
+  "cdx_release": "1.0.0",
+  "contract": "CDX-RUNTIME-001@1.0.0",
+  "ffos": {
+    "repository": "Motherpher/FFOS",
+    "main_observed": "05d0d058c3286733a5fd453135fa62a28b7873f6",
+    "current_runtime_pr": 35,
+    "branch": "cdx-production-runtime-binding-20261030",
+    "observed_head": "e48b2de8c8a163f07125243a94c5907c6e028854",
+    "superseded_pr": 29,
+    "staged_effects": [
+      "ISSUE_DIRECTOR_SESSION",
+      "ISSUE_RUNTIME_PROOF_RECEIPT"
+    ],
+    "proposed_anchor_state": "CDX_RUNTIME_GUARDED",
+    "proposed_runtime_state": "RUNTIME_GUARDED_UNVERIFIED"
+  },
+  "github_actions": {
+    "status": "BLOCKED_BEFORE_RUNNER_STEPS",
+    "diagnostic_run_id": "41079620757",
+    "job_count": 6,
+    "all_jobs_failed": true,
+    "runner_steps_observed": false,
+    "job_logs_available": false,
+    "interpretation": "No code/test conclusion may be drawn from these failures because no runner steps executed."
+  },
+  "vercel": {
+    "team": "team_3CWSOO9ePljnKvDPHctIaNCy",
+    "project": "prj_gNrAedybaimsH8wuE2yMTG4ATm2b",
+    "deployment_attempt_head": "e48b2de8c8a163f07125243a94c5907c6e028854",
+    "deployment_attempt_result": "HTTP_402_RESOURCE_CREATION_BLOCKED_OVERDUE_BALANCE",
+    "existing_production_state": "READY",
+    "existing_production_commit": "3a93eb3d7a5195232acc850c7d301bf901014306",
+    "current_implementation_deployed": false
+  },
+  "claim_boundary": {
+    "runtime_verified": false,
+    "verified_runtime_bound": false,
+    "estate_partially_bound": false,
+    "enforcing": false
+  },
+  "next_gate": "Resolve external execution/account blocks, execute exact-head build and acceptance, deploy merged current implementation, then independently reconcile production evidence."
+}
