@@ -339,16 +339,20 @@
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "binding_audit_workflow": ".github/workflows/cdx-binding-audit.yml",
-      "runtime_integration_state": "BOUND_PENDING_RUNTIME_INTEGRATION",
+      "runtime_integration_state": "VERIFIED_RUNTIME_BOUND",
       "last_verified_at": "2026-10-06T19:56:34Z",
       "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
       "anchor_verification_state": "PASS",
       "migration_state": "COMPLETE_WP09",
       "wp10_action": "COMPLETE",
-      "note": "WP09 release-pinned the repository anchor to CDX 1.0.0 and reset repository-anchor verification pending WP10. Consequential FFOS runtime remains BOUND_PENDING_RUNTIME_INTEGRATION and is not promoted.",
+      "note": "Repository anchor remains CDX_BOUND / PASS from WP10. Post-programme reconciliation independently verifies the bounded FFOS consequential runtime under CDX-RUNTIME-001; this does not imply estate-wide enforcement.",
       "wp10_status": "COMPLETE_VERIFIED_RECONCILED",
       "verified_at": "2026-10-29T15:19:00Z",
-      "verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
+      "verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "consequential_enforcement_verified": true,
+      "runtime_verified_at": "2026-10-30",
+      "runtime_verified_main_commit": "76374e2a45f4195ffc443df7ba716eb8284acaeb",
+      "spetl_runtime_evidence_ref": "RUNTIME-INTEGRATION/FFOS-RUNTIME-VERIFICATION-2026-10-30.json"
     },
     {
       "repository": "Motherpher/wpb",
