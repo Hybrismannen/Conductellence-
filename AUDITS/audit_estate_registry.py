@@ -16,16 +16,19 @@ anchor_path=Path("ESTATE-REGISTRY/cdx-anchors.json")
 registry_v2_path=Path("ESTATE-REGISTRY/registry-v2.json")
 wp09_evidence_path=Path("ESTATE-REGISTRY/wp09-migration-evidence.json")
 wp14_evidence_path=Path("ESTATE-REGISTRY/wp14-estate-propagation-closure-evidence.json")
+ffos_runtime_evidence_path=Path("RUNTIME-INTEGRATION/FFOS-RUNTIME-VERIFICATION-2026-10-30.json")
 if not registry_path.exists():fail("missing estate registry")
 if not anchor_path.exists():fail("missing canonical anchor registry")
 if not registry_v2_path.exists():fail("missing Registry v2 applicability classification")
 if not wp09_evidence_path.exists():fail("missing WP09 migration evidence")
 if not wp14_evidence_path.exists():fail("missing WP14 closure evidence")
+if not ffos_runtime_evidence_path.exists():fail("missing FFOS runtime verification evidence")
 d=json.loads(registry_path.read_text())
 ar=json.loads(anchor_path.read_text())
 r2=json.loads(registry_v2_path.read_text())
 wp09=json.loads(wp09_evidence_path.read_text())
 wp14=json.loads(wp14_evidence_path.read_text())
+ffos_runtime=json.loads(ffos_runtime_evidence_path.read_text())
 systems=d.get("systems",[])
 if not systems:fail("empty estate registry")
 ids=[s.get("system_id") for s in systems]
@@ -94,6 +97,20 @@ if ffc.get("anchor_state")!="CDX_BOUND" or ffc.get("anchor_verification_state")!
 if ffc.get("estate_admission_state")!="FORMALLY_ADMITTED_WP13": fail("FFC formal admission state missing")
 if ffc.get("runtime_integration_state")!="NOT_VERIFIED": fail("FFC runtime must remain NOT_VERIFIED")
 if not ffc_system or ffc_system.get("system_id")!="FFC": fail("canonical FFC systems entry missing")
+
+ffos_anchor=anchors.get("Motherpher/FFOS")
+ffos_system=next((x for x in systems if x.get("repository")=="Motherpher/FFOS"),None)
+if not ffos_anchor or not ffos_system: fail("FFOS canonical registry records missing")
+if ffos_anchor.get("runtime_integration_state")!="VERIFIED_RUNTIME_BOUND":
+    fail("FFOS verified runtime registry reconciliation missing")
+if ffos_anchor.get("consequential_enforcement_verified") is not True:
+    fail("FFOS anchor registry lacks consequential verification")
+if ffos_system.get("runtime_integration_state")!="VERIFIED_RUNTIME_BOUND":
+    fail("FFOS systems registry verified runtime reconciliation missing")
+if ffos_system.get("consequential_enforcement_verified") is not True:
+    fail("FFOS systems registry lacks consequential verification")
+if ffos_runtime.get("independent_reconciliation",{}).get("result")!="PASS":
+    fail("FFOS central runtime evidence not PASS")
 
 # Historical Form & Flöde path is a provenance alias of the current Motherpher repository,
 # not a second repository. Both identities must remain explicitly reconciled.
@@ -244,6 +261,6 @@ print(f"PASS: Estate Registry contains {len(systems)} unique governed repository
 print(f"PASS: {legacy} legacy bindings + {canonical} canonical anchors differentiated")
 print("PASS: Registry v2 classifies 31 identifiers / 30 current repository objects with explicit applicability")
 print("PASS: WP09 migration evidence preserved and WP10 reconciled all 28 governed consumers to CDX_BOUND / PASS")
-print("PASS: repository binding/admission remain separate from application-runtime evidence")
+print("PASS: repository binding/admission remain separate from application-runtime evidence; FFOS has independently reconciled runtime evidence")
 print("PASS: WP14 governance propagation closure is complete with zero pending admissions")
 print("NOTE: registry audit does not by itself establish CDX-RUNTIME-001 verification")
