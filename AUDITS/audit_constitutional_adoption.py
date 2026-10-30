@@ -128,16 +128,22 @@ for key,val in expected_other.items():
         fail(f"constitutional transition improperly changed {key}: {system.get(key)}")
 
 estate_state=system.get("estate_integration_state")
-if estate_state not in {"PENDING_RUNTIME_BINDINGS","BINDINGS_IN_PROGRESS"}:
+if estate_state not in {"PENDING_RUNTIME_BINDINGS","BINDINGS_IN_PROGRESS","PARTIALLY_BOUND"}:
     fail(f"estate integration axis exceeds current governed rollout boundary: {estate_state}")
 if estate_state=="BINDINGS_IN_PROGRESS":
     wp11=system.get("wp11_ffos_runtime_binding",{})
     if wp11.get("state")!="IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED":
         fail("BINDINGS_IN_PROGRESS lacks explicit WP11 staged/blocker evidence")
-    if wp11.get("production_deployment_state") not in {"NOT_DEPLOYED","NOT_DEPLOYED_CURRENT_IMPLEMENTATION","NOT_REQUIRED_FOR_RUNTIME_VERIFICATION"}:
-        fail("WP11 staged state cannot claim production deployment")
-    if system.get("consumer_bindings",{}).get("Motherpher/FFOS")!="IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED":
-        fail("FFOS consumer binding state does not match WP11 staged state")
+if estate_state=="PARTIALLY_BOUND":
+    wp11=system.get("wp11_ffos_runtime_binding",{})
+    if wp11.get("state")!="COMPLETE_FFOS_RUNTIME_VERIFIED":
+        fail("PARTIALLY_BOUND requires verified WP11 closure")
+    if system.get("consumer_bindings",{}).get("Motherpher/FFOS")!="VERIFIED_RUNTIME_BOUND":
+        fail("PARTIALLY_BOUND requires FFOS VERIFIED_RUNTIME_BOUND")
+    if system.get("consequential_verified_runtime_count")!=1:
+        fail("PARTIALLY_BOUND current evidence requires one verified consequential runtime")
+    if "CDX-BLOCK-WP11-FFOS-EXECUTION-001" in system.get("estate_enforcement_blockers",[]):
+        fail("verified WP11 blocker remains open")
 
 release_state=system.get("release_state")
 if release_state not in {"PRE_RELEASE","RELEASED"}:
