@@ -1,0 +1,20 @@
+{
+  "schema": "cdx.governance-order/v1.0",
+  "order_id": "CDX-WP15-FINAL-PROGRAMME-ACCEPTANCE-2026-10-30",
+  "programme": "CDX-WP15",
+  "authority": "HUMAN_SOVEREIGN_AUTHORITY",
+  "decision": "FINAL_ACCEPT_CDX_1_0_CANONICAL_GOVERNANCE_PROGRAMME",
+  "decided_at": "2026-10-30",
+  "scope": "CDX_REPOSITORY_ONLY",
+  "accepted_state": "FINAL_ACCEPTED_WITH_RESIDUAL_DOWNSTREAM_OBLIGATIONS",
+  "work_package_ledger_ref": "PROGRAMME/CDX-1.0-WORK-PACKAGE-LEDGER.json",
+  "residual_obligations_ref": "GOVERNANCE/CDX-1.0-RESIDUAL-OBLIGATIONS.json",
+  "runtime_integration_state": "BINDINGS_IN_PROGRESS",
+  "enforcement_state": "BOOTSTRAP",
+  "verified_runtime_bound_claim": false,
+  "enforcing_claim": false,
+  "production_effect_authorization": false,
+  "downstream_repository_mutation_authorized": false,
+  "terminal_audit_required": true,
+  "terminal_end_report_required": true
+}
