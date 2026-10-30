@@ -14,7 +14,8 @@
     "CDX-BLOCK-WP11-FFOS-EXECUTION-001"
   ],
   "consumer_bindings": {
-    "Motherpher/FFOS": "IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED"
+    "Motherpher/FFOS": "IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED",
+    "Hybrismannen/pius-universe": "VERIFIED_REFERENCE_RUNTIME_REPOSITORY_CI_ONLY"
   },
   "canonical_rule": "Maturity is not enforcement. Release is not integration. Integration is not estate-wide enforcement.",
   "notes": [
@@ -31,7 +32,8 @@
     "WP07 COMPLETE: CDX 1.0.0 published and independently verified at tag 1.0.0, publication commit 6e275dea737d77349ddd1264c4f6ef900904995f, GitHub Release 427882220. Release does not imply estate-wide enforcement or runtime integration.",
     "WP08 COMPLETE: Registry v2 classifies 31 identifiers / 30 current repository objects, with 28 governed consumers, one explicit Barnombudet exclusion and one historical Form & Flöde alias.",
     "WP09 COMPLETE: all 28 governed consumer repositories carry .cdx/anchor.json on their default branch, pinned to CDX release 1.0.0; all remain ANCHOR_DECLARED / NOT_VERIFIED and are handed to WP10.",
-    "WP10 COMPLETE: all 28 governed consumer anchors independently verified against Registry v2 and CDX 1.0.0, reconciled on default branches as CDX_BOUND / PASS. Runtime, CI-monitoring, FFC admission and estate enforcement remain separate and unadvanced."
+    "WP10 COMPLETE: all 28 governed consumer anchors independently verified against Registry v2 and CDX 1.0.0, reconciled on default branches as CDX_BOUND / PASS. Runtime, CI-monitoring, FFC admission and estate enforcement remain separate and unadvanced.",
+    "WP12 COMPLETE: Pius Universe reference consumer binding independently verified against CDX 1.0.0. Repository-CI reference runtime is VERIFIED_REFERENCE_RUNTIME only; no consequential Pius effect endpoint is implemented or VERIFIED_RUNTIME_BOUND."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
@@ -55,14 +57,14 @@
       "binding_mode": "PINNED_RELEASE",
       "state_source_pin": "1.0.0",
       "runtime_enforcement": "VERIFIED_REFERENCE_RUNTIME_REPOSITORY_CI_ONLY",
-      "estate_admission_state": "PENDING_INDEPENDENT_VERIFICATION",
+      "estate_admission_state": "REFERENCE_CONSUMER_VERIFIED_WP12",
       "source": "ESTATE-REGISTRY/cdx-anchors.json",
       "verified_at": "2026-10-29T15:19:00Z",
       "verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     }
   },
-  "reconciliation_note": "WP11 implementation is staged in Motherpher/FFOS PR #29 against CDX-RUNTIME-001@1.0.0. Verification and production deployment are externally blocked; no VERIFIED_RUNTIME_BOUND claim is permitted. Estate integration is BINDINGS_IN_PROGRESS.",
-  "updated_at": "2026-10-29",
+  "reconciliation_note": "WP11 FFOS implementation remains verification-blocked and independent. WP12 independently verifies the Pius Universe reference consumer binding without claiming consequential runtime enforcement. Estate integration remains BINDINGS_IN_PROGRESS.",
+  "updated_at": "2026-10-30",
   "pending_anchor_candidates": {
     "Motherpher/form-flode": {
       "main_branch_anchor_state": "CDX_BOUND",
@@ -292,5 +294,30 @@
       "FFOS anchor/runtime state independently promoted to CDX_RUNTIME_VERIFIED / VERIFIED_RUNTIME_BOUND"
     ],
     "state_effect": "ESTATE_INTEGRATION_ADVANCED_TO_BINDINGS_IN_PROGRESS_ONLY"
+  },
+  "wp12_pius_verification": {
+    "programme": "CDX-WP12",
+    "state": "COMPLETE_PIUS_REFERENCE_BINDING_VERIFIED",
+    "completed_at": "2026-10-30",
+    "consumer_repository": "Hybrismannen/pius-universe",
+    "consumer_system_id": "CDX-EST-003",
+    "observed_consumer_main_commit": "1f7ee643c275bb2e3825f2e204b34f30da5df801",
+    "anchor_blob_sha": "fc721d20b4afa935943d4ce90aba3463a84165ff",
+    "anchor_state": "CDX_BOUND",
+    "anchor_verification_state": "PASS",
+    "release_ref": "1.0.0",
+    "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+    "reference_runtime_state": "VERIFIED_REFERENCE_RUNTIME_REPOSITORY_CI_ONLY",
+    "runtime_integration_state": "VERIFIED_REFERENCE_RUNTIME",
+    "consequential_enforcement_verified": false,
+    "operational_consequential_effect_endpoints": 0,
+    "consumer_profile_ref": "RUNTIME-INTEGRATION/consumers/CDX-PIUS-CONSUMER-001.json",
+    "evidence_ref": "ESTATE-REGISTRY/wp12-pius-verification-evidence.json",
+    "acceptance_order_ref": "GOVERNANCE/orders/CDX-WP12-PIUS-REFERENCE-CONSUMER-ACCEPTANCE-2026-10-30.json",
+    "downstream_ci_drift": "OPEN_NON_BLOCKING_FOR_CDX_REFERENCE_VERIFICATION",
+    "construction_foundation_state": "READY_FOR_SEPARATE_DIRECTOR_REVIEW",
+    "production_effect_authorization": false,
+    "next_wp": "CDX-WP13",
+    "state_effect": "PIUS_REFERENCE_RUNTIME_AXIS_ONLY"
   }
 }

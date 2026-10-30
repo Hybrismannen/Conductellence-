@@ -146,7 +146,7 @@
       "runtime_screening": "REQUIRED",
       "wp09_action": "REPIN_TO_RELEASE_AND_REVERIFY",
       "wp10_action": "VERIFY_AFTER_WP09",
-      "basis": "Pius 6/agent development authority surface; canonical anchor exists but is pinned to a pre-release commit and remains unverified.",
+      "basis": "Pius 6/agent development authority surface; CDX 1.0.0 anchor is WP10-verified and WP12 independently verifies the repository-CI reference runtime only. Consequential application runtime remains unimplemented/unverified.",
       "wp09_status": "COMPLETE_MIGRATED",
       "anchor_observed_on_default_branch": true,
       "binding_mode": "PINNED_RELEASE",
@@ -158,7 +158,12 @@
       "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
       "wp10_verified_at": "2026-10-29T15:19:00Z",
       "wp10_reconciliation_pr": 25,
-      "wp10_reconciliation_merge_commit": "1f7ee643c275bb2e3825f2e204b34f30da5df801"
+      "wp10_reconciliation_merge_commit": "1f7ee643c275bb2e3825f2e204b34f30da5df801",
+      "wp12_status": "COMPLETE_REFERENCE_BINDING_VERIFIED",
+      "reference_runtime_verification_state": "VERIFIED_REFERENCE_RUNTIME",
+      "consequential_enforcement_verified": false,
+      "wp12_evidence_ref": "ESTATE-REGISTRY/wp12-pius-verification-evidence.json",
+      "consumer_profile_ref": "RUNTIME-INTEGRATION/consumers/CDX-PIUS-CONSUMER-001.json"
     },
     {
       "record_id": "CDX-R2-006",
@@ -898,5 +903,15 @@
     "verification_evidence_commit": "ad26ea289ab71c86bea2461e0509c5b4bec9a32e",
     "next_wp": "CDX-WP11",
     "state_effect": "ANCHOR_AXIS_ONLY"
+  },
+  "wp12_pius_verification": {
+    "state": "COMPLETE",
+    "completed_at": "2026-10-30",
+    "repository": "Hybrismannen/pius-universe",
+    "reference_runtime_state": "VERIFIED_REFERENCE_RUNTIME",
+    "consequential_enforcement_verified": false,
+    "evidence_ref": "ESTATE-REGISTRY/wp12-pius-verification-evidence.json",
+    "next_wp": "CDX-WP13",
+    "state_effect": "PIUS_REFERENCE_RUNTIME_AXIS_ONLY"
   }
 }

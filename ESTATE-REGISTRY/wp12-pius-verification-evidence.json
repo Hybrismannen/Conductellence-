@@ -1,0 +1,97 @@
+{
+  "schema": "cdx.wp12-pius-verification-evidence/v1.0",
+  "evidence_id": "CDX-WP12-PIUS-REFERENCE-VERIFICATION-2026-10-30",
+  "programme": "CDX-WP12",
+  "observed_at": "2026-10-30",
+  "verification_scope": "CDX_CENTRAL_INDEPENDENT_REFERENCE_CONSUMER_VERIFICATION",
+  "downstream_mutation_performed": false,
+  "consumer": {
+    "repository": "Hybrismannen/pius-universe",
+    "repository_id": "1316351702",
+    "system_id": "CDX-EST-003",
+    "observed_main_commit": "1f7ee643c275bb2e3825f2e204b34f30da5df801",
+    "anchor": {
+      "path": ".cdx/anchor.json",
+      "git_blob_sha": "fc721d20b4afa935943d4ce90aba3463a84165ff",
+      "state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "release_ref": "1.0.0",
+      "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0"
+    }
+  },
+  "reference_runtime": {
+    "declared_state": "VERIFIED_REFERENCE_RUNTIME",
+    "declared_scope": [
+      "REPOSITORY_CI"
+    ],
+    "runtime_class": "REFERENCE_REPOSITORY_GUARD",
+    "runtime_source_blob": "3a5cedcd1cf42b501493f8fda93590945881f5d8",
+    "policy_blob": "55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+    "runtime_integration_blob": "c507cc63fb66b06f68c772c708c35a417018d34f",
+    "binding_workflow_blob": "c03d80719cbd9033abc2df345f7b914d7ed6033c",
+    "successful_reference_audit": {
+      "workflow_run_id": 40895924794,
+      "head_commit": "813992c815dfb98341c76059f177899709b56c55",
+      "conclusion": "success",
+      "checks": {
+        "binding_check": "PASS",
+        "selftest": "PASS",
+        "policy_unavailable_test": "PASS"
+      }
+    },
+    "current_main_continuity": {
+      "compared_from_commit": "813992c815dfb98341c76059f177899709b56c55",
+      "compared_to_commit": "1f7ee643c275bb2e3825f2e204b34f30da5df801",
+      "runtime_source_unchanged": true,
+      "policy_unchanged": true,
+      "runtime_integration_declaration_unchanged": true,
+      "binding_workflow_unchanged": true
+    }
+  },
+  "current_consumer_ci_drift": {
+    "state": "OPEN_NON_BLOCKING_FOR_CDX_REFERENCE_VERIFICATION",
+    "latest_anchor_precheck_run": 40902456178,
+    "latest_p5_preparation_run": 40902456160,
+    "failure_cause": ".security/cdx-anchor-precheck.py still asserts binding_state == ANCHOR_DECLARED and therefore rejects the valid WP10 CDX_BOUND promotion.",
+    "precheck_blob": "c0b59dbe4d7e7e6961626d6f21064c9fe02b2498",
+    "interpretation": "STALE_PRE_WP10_INVARIANT_NOT_REFERENCE_RUNTIME_CODE_FAILURE",
+    "downstream_repair_performed": false
+  },
+  "cdx_prerequisites": {
+    "release": {
+      "state": "RELEASED",
+      "release": "1.0.0",
+      "evidence_ref": "GOVERNANCE/release/CDX-1.0-PUBLICATION-EVIDENCE-2026-10-29.json"
+    },
+    "native_repository_protection": {
+      "state": "VERIFIED_NATIVE_PROTECTION",
+      "evidence_ref": "GOVERNANCE/repository-protection-state.json"
+    },
+    "independent_reference_custody": {
+      "state": "VERIFIED_REFERENCE_CUSTODY",
+      "custody_id": "CDX-CUSTODY-GHA-001",
+      "evidence_ref": "SPETL/evidence-preservation-state.json"
+    },
+    "consumer_contract": {
+      "state": "ADMITTED_REFERENCE_CONSUMER_PROFILE",
+      "ref": "RUNTIME-INTEGRATION/consumers/CDX-PIUS-CONSUMER-001.json"
+    }
+  },
+  "consequential_runtime": {
+    "operational_effect_endpoints": 0,
+    "installed_effect_guards": 0,
+    "verified_runtime_effects": 0,
+    "evidence_source": "Hybrismannen/pius-universe:devops-galaxy/cdx-p5-preparation/inventories/PIUS_CONSEQUENTIAL_EFFECT_SURFACES_v0.1.json",
+    "state": "NOT_IMPLEMENTED_NOT_VERIFIED"
+  },
+  "result": {
+    "reference_binding_verification": "PASS",
+    "runtime_integration_state": "VERIFIED_REFERENCE_RUNTIME",
+    "reference_scope": "REPOSITORY_CI_ONLY",
+    "consequential_runtime_verification": "NOT_VERIFIED_NOT_IMPLEMENTED",
+    "verified_runtime_bound_claim": false,
+    "production_effect_authorization": false,
+    "cdx_construction_foundation": "READY_FOR_SEPARATE_DIRECTOR_REVIEW",
+    "estate_enforcement_effect": "NONE"
+  }
+}

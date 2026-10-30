@@ -54,18 +54,21 @@
       "binding_manifest": ".cdx/anchor.json",
       "binding_verified_at": null,
       "binding_audit_workflow": ".github/workflows/pius-cdx-anchor-precheck.yml",
-      "runtime_integration_state": "NOT_VERIFIED",
+      "runtime_integration_state": "VERIFIED_REFERENCE_RUNTIME",
       "legacy_manifest": ".security/conductellence.json",
       "binding_mode": "PINNED_RELEASE",
       "cdx_ref": "1.0.0",
       "anchor_verification_state": "PASS",
-      "estate_admission_state": "PENDING_INDEPENDENT_VERIFICATION",
+      "estate_admission_state": "REFERENCE_CONSUMER_VERIFIED_WP12",
       "consequential_enforcement_verified": false,
-      "reconciliation_note": "WP09 repinned canonical anchor to released CDX 1.0.0. Independent anchor verification is deferred to WP10; legacy manifest remains provenance.",
+      "reconciliation_note": "WP12 independently verifies the Pius repository-CI reference runtime against released CDX 1.0.0. This is not consequential application-runtime mediation; no Pius effect endpoint is VERIFIED_RUNTIME_BOUND.",
       "reconciled_at": "2026-10-29",
       "anchor_state": "CDX_BOUND",
       "anchor_verified_at": "2026-10-29T15:19:00Z",
-      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "reference_runtime_verified_at": "2026-10-30",
+      "reference_runtime_evidence_ref": "ESTATE-REGISTRY/wp12-pius-verification-evidence.json",
+      "consumer_profile_ref": "RUNTIME-INTEGRATION/consumers/CDX-PIUS-CONSUMER-001.json"
     },
     {
       "system_id": "CDX-EST-004",
@@ -299,8 +302,8 @@
       "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
     }
   ],
-  "updated_at": "2026-10-29",
-  "audit_note": "Admitted-system registry preserves historical binding provenance while distinguishing canonical identity, anchor and runtime state. Hybrismannen/form-flode is a historical alias of Motherpher/form-flode (same GitHub repository id 1379622813), not a second repository. No entry certifies consequential runtime enforcement without CDX-RUNTIME-001 evidence. WP10 independently verified and reconciled the canonical anchor axis for all 28 governed consumers; runtime and estate admission remain separate axes.",
+  "updated_at": "2026-10-30",
+  "audit_note": "Admitted-system registry preserves historical binding provenance while distinguishing canonical identity, anchor, reference runtime and consequential runtime state. WP10 verified all canonical anchors. WP12 independently verifies Pius Universe as VERIFIED_REFERENCE_RUNTIME at repository-CI scope only; consequential enforcement remains false.",
   "pending_admissions": [
     {
       "repository": "Motherpher/form-flode",

@@ -1,0 +1,18 @@
+{
+  "schema": "cdx.governance-order/v1.0",
+  "order_id": "CDX-WP12-PIUS-REFERENCE-CONSUMER-ACCEPTANCE-2026-10-30",
+  "programme": "CDX-WP12",
+  "authority": "HUMAN_SOVEREIGN_AUTHORITY",
+  "decision": "ADMIT_REFERENCE_CONSUMER_PROFILE",
+  "decided_at": "2026-10-30",
+  "scope": "CDX_REPOSITORY_ONLY",
+  "consumer": "Hybrismannen/pius-universe",
+  "consumer_profile_ref": "RUNTIME-INTEGRATION/consumers/CDX-PIUS-CONSUMER-001.json",
+  "evidence_ref": "ESTATE-REGISTRY/wp12-pius-verification-evidence.json",
+  "accepted_state": "VERIFIED_REFERENCE_RUNTIME_REPOSITORY_CI_ONLY",
+  "consequential_runtime_state": "NOT_VERIFIED_NOT_IMPLEMENTED",
+  "production_effect_authorization": false,
+  "downstream_repository_mutation_authorized": false,
+  "activation_authorized": false,
+  "interpretation": "Accept the CDX-owned versioned Pius reference consumer profile and independent reference-binding verification. This is not Pius runtime activation, consequential-effect authorization or permission to alter the downstream Pius repository."
+}
