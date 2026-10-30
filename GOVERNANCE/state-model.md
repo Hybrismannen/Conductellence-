@@ -28,7 +28,7 @@ Describes whether a stable, distributable canonical Conductellence release exist
 
 `DEVELOPMENT → PRE_RELEASE → RELEASED → SUPERSEDED → RETIRED`
 
-The current release state is `PRE_RELEASE`. A repository version identifier or bootstrap law version does not by itself constitute a stable system release.
+The current release state is `RELEASED`. CDX 1.0.0 was published and independently verified by WP07. A repository version identifier or bootstrap law version alone would not constitute a stable system release.
 
 ### Enforcement state
 
@@ -57,7 +57,7 @@ Describes the deployment of Conductellence into governed consumer runtimes.
 - `PARTIALLY_BOUND`: at least one declared governed runtime has reached verified binding while the declared estate scope is incomplete.
 - `VERIFIED_RUNTIME_BOUND`: the declared estate-integration scope has satisfied its verified runtime-binding criteria.
 
-The current estate integration state is `PENDING_RUNTIME_BINDINGS`. This value is an aggregate pre-binding state and does not imply release or enforcement readiness.
+The current estate integration state is `BINDINGS_IN_PROGRESS`. WP11 has staged a first consumer runtime binding but consequential verification remains blocked; WP12 reference-runtime verification does not count as application-runtime mediation. This aggregate state does not imply estate enforcement.
 
 ## Separation rule
 
@@ -80,3 +80,9 @@ Core release closure may complete when the constitutional source, reference runt
 ## Constitutional adoption separation
 
 A transition to `ADOPTED` establishes the internal normative status of `CDX-LAW-001`. It does not by itself move the core runtime, release, enforcement or estate-integration axes. Constitutional adoption therefore cannot be used to bypass repository protection, independent evidence preservation, runtime integration or release acceptance gates.
+
+## Governance propagation closure
+
+WP14 closes the CDX 1.0 **estate-governance propagation programme** when every governed current repository is centrally classified, carries a verified canonical anchor, and all dedicated admission/identity reconciliations are complete. This closure is deliberately independent of consequential-runtime verification.
+
+At WP14 closure, 28/28 governed current repositories are `CDX_BOUND / PASS`, pending admissions are zero, Barnombudet remains explicitly excluded, and the historical `Hybrismannen/form-flode` identity remains provenance-only. No consequential consumer runtime is yet `VERIFIED_RUNTIME_BOUND`; therefore `estate_integration_state` remains `BINDINGS_IN_PROGRESS`, `enforcement_state` remains `BOOTSTRAP`, and the estate runtime blocker remains open.
