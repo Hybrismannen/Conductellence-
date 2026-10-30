@@ -1,0 +1,351 @@
+{
+  "schema": "cdx.wp14-estate-propagation-closure-evidence/v1.0",
+  "evidence_id": "CDX-WP14-ESTATE-PROPAGATION-CLOSURE-2026-10-30",
+  "programme": "CDX-WP14",
+  "observed_at": "2026-10-30",
+  "scope": "CDX_1_0_ESTATE_GOVERNANCE_PROPAGATION",
+  "authority_repository": "Hybrismannen/Conductellence-",
+  "release": {
+    "version": "1.0.0",
+    "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+    "state": "RELEASED"
+  },
+  "topology": {
+    "known_repository_identifiers": 31,
+    "unique_current_repository_objects": 30,
+    "authority_sources": 1,
+    "governed_current_repositories": 28,
+    "excluded_by_decision": 1,
+    "historical_alias_records": 1
+  },
+  "propagation_result": {
+    "governed_repositories_expected": 28,
+    "governed_repositories_cdxb_bound_pass": 28,
+    "pending_admissions": 0,
+    "failed_anchor_verifications": 0,
+    "canonical_admissions_complete": true,
+    "identity_reconciliations_complete": true,
+    "historical_alias_preserved": true,
+    "excluded_repository": "Hybrismannen/Barnombudet"
+  },
+  "repository_evidence": [
+    {
+      "repository": "Motherpher/form-flode",
+      "system_id": "FFC",
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_VERIFIED",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Hybrismannen/form-flode-dna",
+      "system_id": "CDX-EST-002",
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Hybrismannen/pius-universe",
+      "system_id": "CDX-EST-003",
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "VERIFIED_REFERENCE_RUNTIME",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Hybrismannen/pius-pwe",
+      "system_id": "CDX-EST-004",
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_VERIFIED",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Hybrismannen/pius-codex-5",
+      "system_id": "CDX-EST-005",
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Hybrismannen/pius-lifetime-audit-2026",
+      "system_id": "CDX-EST-006",
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Hybrismannen/udl-twin",
+      "system_id": "CDX-EST-007",
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_VERIFIED",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Hybrismannen/green-bell-statsvault",
+      "system_id": "CDX-EST-008",
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_VERIFIED",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Hybrismannen/RFSU-godex",
+      "system_id": "CDX-EST-009",
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Hybrismannen/RFSU-godex-FF",
+      "system_id": "CDX-EST-010",
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Hybrismannen/Hy",
+      "system_id": "CDX-EST-011",
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Hybrismannen/livicity-cwvs-reference",
+      "system_id": "CDX-EST-012",
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Hybrismannen/nsliengine",
+      "system_id": "CDX-EST-013",
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_VERIFIED",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Hybrismannen/Digital-Apartheid",
+      "system_id": "CDX-EST-014",
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Hybrismannen/NSLI",
+      "system_id": "CDX-EST-015",
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_VERIFIED",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Hybrismannen/metoyo",
+      "system_id": "CDX-EST-016",
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_VERIFIED",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Motherpher/CareerHubZero",
+      "system_id": "CDX-EST-017",
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_VERIFIED",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Motherpher/FFOS",
+      "system_id": "FFOS",
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "BOUND_PENDING_RUNTIME_INTEGRATION",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Motherpher/wpb",
+      "system_id": null,
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "DEPENDENT_ON_CENTRAL_RUNTIME_NOT_VERIFIED",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Motherpher/Gracey",
+      "system_id": null,
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "DEPENDENT_ON_CENTRAL_RUNTIME_NOT_VERIFIED",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Motherpher/CareerHub-LinusF",
+      "system_id": null,
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "DEPENDENT_ON_CENTRAL_RUNTIME_NOT_VERIFIED",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Motherpher/Politent",
+      "system_id": null,
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_VERIFIED",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Motherpher/FF-Spatial",
+      "system_id": null,
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_VERIFIED",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Motherpher/BDNA",
+      "system_id": null,
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Motherpher/MusicGenea",
+      "system_id": null,
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Motherpher/Re-Eco",
+      "system_id": null,
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Motherpher/GreenBell",
+      "system_id": null,
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "consequential_enforcement_verified": false
+    },
+    {
+      "repository": "Motherpher/Vitalitet",
+      "system_id": null,
+      "anchor_state": "CDX_BOUND",
+      "verification_state": "PASS",
+      "binding_mode": "PINNED_RELEASE",
+      "release_ref": "1.0.0",
+      "runtime_integration_state": "NOT_REQUIRED_BY_CURRENT_ROLE",
+      "consequential_enforcement_verified": false
+    }
+  ],
+  "special_reconciliations": {
+    "pius": {
+      "repository": "Hybrismannen/pius-universe",
+      "state": "VERIFIED_REFERENCE_RUNTIME_REPOSITORY_CI_ONLY",
+      "consequential_enforcement_verified": false,
+      "evidence_ref": "ESTATE-REGISTRY/wp12-pius-verification-evidence.json"
+    },
+    "ffc": {
+      "repository": "Motherpher/form-flode",
+      "state": "FORMALLY_ADMITTED_WP13",
+      "runtime_integration_state": "NOT_VERIFIED",
+      "consequential_enforcement_verified": false,
+      "evidence_ref": "ESTATE-REGISTRY/wp13-ffc-admission-evidence.json"
+    },
+    "ffos": {
+      "repository": "Motherpher/FFOS",
+      "state": "IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED",
+      "runtime_integration_state": "BOUND_PENDING_RUNTIME_INTEGRATION",
+      "consequential_enforcement_verified": false,
+      "blocker": "CDX-BLOCK-WP11-FFOS-EXECUTION-001"
+    }
+  },
+  "runtime_boundary": {
+    "consequential_verified_runtime_count": 0,
+    "estate_integration_state": "BINDINGS_IN_PROGRESS",
+    "enforcement_state": "BOOTSTRAP",
+    "estate_runtime_blocker": "CDX-BLOCK-ESTATE-RUNTIME-001",
+    "estate_runtime_blocker_closed": false,
+    "production_effect_authorization": false,
+    "interpretation": "Estate-governance propagation is complete; consequential runtime verification is not."
+  },
+  "result": {
+    "governance_propagation_closure": "PASS",
+    "cdx_canonical_governance_programme": "COMPLETE_WITH_DOWNSTREAM_RUNTIME_OBLIGATIONS",
+    "runtime_rollout": "OPEN",
+    "verified_runtime_bound_claim": false,
+    "enforcing_claim": false
+  }
+}
