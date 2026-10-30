@@ -300,28 +300,31 @@
       "anchor_state": "CDX_BOUND",
       "anchor_verified_at": "2026-10-29T15:19:00Z",
       "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
+    },
+    {
+      "system_id": "FFC",
+      "repository": "Motherpher/form-flode",
+      "repository_id": "1379622813",
+      "authority_ref": "CDX-SYS-001",
+      "security_state": "CDX_BOUND",
+      "binding_manifest": ".cdx/anchor.json",
+      "binding_mode": "PINNED_RELEASE",
+      "cdx_ref": "1.0.0",
+      "anchor_state": "CDX_BOUND",
+      "anchor_verification_state": "PASS",
+      "binding_verified_at": "2026-10-29T15:19:00Z",
+      "anchor_verified_at": "2026-10-29T15:19:00Z",
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "runtime_integration_state": "NOT_VERIFIED",
+      "consequential_enforcement_verified": false,
+      "estate_admission_state": "FORMALLY_ADMITTED_WP13",
+      "historical_alias": "Hybrismannen/form-flode",
+      "admission_evidence_ref": "ESTATE-REGISTRY/wp13-ffc-admission-evidence.json",
+      "reconciliation_note": "WP13 formally admits the canonical Motherpher/form-flode identity. Historical Hybrismannen/form-flode / CDX-EST-001 remains a provenance-only alias of the same GitHub repository object. Runtime remains NOT_VERIFIED."
     }
   ],
   "updated_at": "2026-10-30",
-  "audit_note": "Admitted-system registry preserves historical binding provenance while distinguishing canonical identity, anchor, reference runtime and consequential runtime state. WP10 verified all canonical anchors. WP12 independently verifies Pius Universe as VERIFIED_REFERENCE_RUNTIME at repository-CI scope only; consequential enforcement remains false.",
-  "pending_admissions": [
-    {
-      "repository": "Motherpher/form-flode",
-      "system_id": "FFC",
-      "status": "PENDING_CANONICAL_IDENTITY_MIGRATION_AND_CDX_VERIFICATION",
-      "evidence": "https://github.com/Motherpher/form-flode/pull/34",
-      "anchor_state": "UNBOUND",
-      "runtime_integration_state": "NOT_VERIFIED",
-      "draft_anchor_state": "ANCHOR_DECLARED",
-      "main_branch_anchor_present": false,
-      "legacy_manifest_present": true,
-      "legacy_manifest_repository_identity": "Hybrismannen/form-flode",
-      "identity_reconciliation": "REQUIRED_BEFORE_CANONICAL_READMISSION",
-      "repository_id": "1379622813",
-      "historical_alias": "Hybrismannen/form-flode",
-      "migration_kind": "REPOSITORY_IDENTITY_MIGRATION",
-      "note": "Same GitHub repository object as historical Hybrismannen/form-flode. Draft PR #34 proposes FFC canonical identity/anchor; current main remains legacy-identified and not canonically anchored."
-    }
-  ],
+  "audit_note": "Admitted-system registry preserves historical provenance while separating canonical identity, anchor, admission and runtime states. WP13 formally admits Motherpher/form-flode as FFC using repository id 1379622813; Hybrismannen/form-flode remains provenance-only. FFC runtime remains NOT_VERIFIED.",
+  "pending_admissions": [],
   "reconciled_at": "2026-10-28"
 }

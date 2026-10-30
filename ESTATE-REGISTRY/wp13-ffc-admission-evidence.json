@@ -1,0 +1,51 @@
+{
+  "schema": "cdx.wp13-ffc-admission-evidence/v1.0",
+  "evidence_id": "CDX-WP13-FFC-ADMISSION-2026-10-30",
+  "programme": "CDX-WP13",
+  "observed_at": "2026-10-30",
+  "downstream_mutation_performed": false,
+  "canonical_repository": {
+    "repository": "Motherpher/form-flode",
+    "repository_id": "1379622813",
+    "system_id": "FFC",
+    "observed_main_commit": "96e7e73cb81865b15917cb914e6f2110312189bb"
+  },
+  "identity_reconciliation": {
+    "historical_alias": "Hybrismannen/form-flode",
+    "historical_system_id": "CDX-EST-001",
+    "relation": "SAME_GITHUB_REPOSITORY_OBJECT",
+    "github_alias_observation": "REST lookup of Hybrismannen/form-flode returns Moved Permanently to repository id 1379622813",
+    "duplicate_current_repository": false
+  },
+  "anchor": {
+    "path": ".cdx/anchor.json",
+    "current_blob_sha": "9b9fa1de1ea63ea746148c1eb7d8d7fedbc3df00",
+    "wp10_reconciliation_commit": "ea4f2db7129b2509bfdc487ee8e19f30d6a74f1c",
+    "wp10_blob_sha": "9b9fa1de1ea63ea746148c1eb7d8d7fedbc3df00",
+    "unchanged_since_wp10": true,
+    "state": "CDX_BOUND",
+    "verification_state": "PASS",
+    "release_ref": "1.0.0",
+    "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+    "verification_ref": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
+  },
+  "legacy_provenance": {
+    "manifest": ".security/conductellence.json",
+    "internal_repository_identity": "Hybrismannen/form-flode",
+    "treatment": "PRESERVE_AS_HISTORICAL_PROVENANCE_NOT_CANONICAL_IDENTITY"
+  },
+  "runtime_boundary": {
+    "canonical_anchor_runtime_state": "NOT_VERIFIED",
+    "consequential_enforcement_verified": false,
+    "production_effect_authorization": false,
+    "interpretation": "Formal estate admission does not verify or authorize FFC consequential runtime."
+  },
+  "result": {
+    "formal_admission": "PASS",
+    "estate_admission_state": "FORMALLY_ADMITTED_WP13",
+    "runtime_integration_state": "NOT_VERIFIED",
+    "consequential_enforcement_verified": false,
+    "historical_alias_preserved": true,
+    "estate_enforcement_effect": "NONE"
+  }
+}

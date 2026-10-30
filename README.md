@@ -25,7 +25,7 @@ Canonical machine-readable state is held in [`GOVERNANCE/system-state.json`](GOV
 
 ## CDX 1.0 closure boundary
 
-The CDX 1.0 core is **released**. [`CDX-RC01-BOUNDARY-001`](GOVERNANCE/release-boundary-v1.json) preserves the frozen 1.0 core topology and keeps core release separate from estate execution. WP00–WP10 and WP12 are complete. WP11 remains active with the FFOS runtime binding implementation staged but externally verification-blocked. WP12 independently verified the Pius repository-CI reference consumer binding without claiming consequential runtime enforcement. WP13–WP14 cover FFC admission and estate-wide propagation.
+The CDX 1.0 core is **released**. [`CDX-RC01-BOUNDARY-001`](GOVERNANCE/release-boundary-v1.json) preserves the frozen 1.0 core topology and keeps core release separate from estate execution. WP00–WP10 and WP12–WP13 are complete. WP11 remains active with the FFOS runtime binding implementation staged but externally verification-blocked. WP12 independently verified the Pius repository-CI reference consumer binding without claiming consequential runtime enforcement. WP13 formally admitted FFC on the canonical repository/identity/anchor axis without promoting runtime enforcement. WP14 covers estate-wide propagation and closure.
 
 Conductellence is the root constitutional, security, legal-governance, assurance and traceability authority for governed non-human digital operation across the estate.
 

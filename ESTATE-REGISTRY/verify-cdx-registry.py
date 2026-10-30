@@ -19,6 +19,7 @@ registry_v2 = load("ESTATE-REGISTRY/registry-v2.json")
 wp10_evidence = load("ESTATE-REGISTRY/wp10-anchor-verification-evidence.json")
 wp12_evidence = load("ESTATE-REGISTRY/wp12-pius-verification-evidence.json")
 pius_profile = load("RUNTIME-INTEGRATION/consumers/CDX-PIUS-CONSUMER-001.json")
+wp13_evidence = load("ESTATE-REGISTRY/wp13-ffc-admission-evidence.json")
 issues = []
 
 def check(condition, message):
@@ -46,20 +47,12 @@ for rec in governed:
     check(rec.get("anchor_state") == "CDX_BOUND", f"{repo}: Registry v2 anchor not CDX_BOUND")
     check(rec.get("anchor_verification_state") == "PASS", f"{repo}: Registry v2 verification not PASS")
     check(rec.get("wp10_status") == "COMPLETE_VERIFIED_RECONCILED", f"{repo}: WP10 reconciliation missing")
-    if repo == "Motherpher/form-flode":
-        ffc = pending.get(repo, {})
-        check(bool(ffc), "FFC must remain pending formal admission until WP13")
-        check(ffc.get("anchor_state") == "CDX_BOUND", "FFC verified anchor state missing")
-        check(ffc.get("verification_state") == "PASS", "FFC anchor verification not PASS")
-        check(ffc.get("registry_admission") == "PENDING_WP13_FORMAL_ADMISSION", "FFC admission boundary violated")
-        check(repo not in entries, "FFC must not be moved into admitted anchor entries before WP13")
-    else:
-        e = entries.get(repo, {})
-        check(bool(e), f"{repo}: missing anchor registry entry")
-        check(e.get("anchor_state") == "CDX_BOUND", f"{repo}: anchor registry not CDX_BOUND")
-        check(e.get("anchor_verification_state") == "PASS", f"{repo}: anchor registry verification not PASS")
-        check(e.get("binding_mode") == "PINNED_RELEASE", f"{repo}: binding mode drift")
-        check(e.get("cdx_ref") == "1.0.0", f"{repo}: release pin drift")
+    e = entries.get(repo, {})
+    check(bool(e), f"{repo}: missing anchor registry entry")
+    check(e.get("anchor_state") == "CDX_BOUND", f"{repo}: anchor registry not CDX_BOUND")
+    check(e.get("anchor_verification_state") == "PASS", f"{repo}: anchor registry verification not PASS")
+    check(e.get("binding_mode") == "PINNED_RELEASE", f"{repo}: binding mode drift")
+    check(e.get("cdx_ref") == "1.0.0", f"{repo}: release pin drift")
 
 bo = next((x for x in current if x.get("repository_identifier") == "Hybrismannen/Barnombudet"), {})
 check(bo.get("applicability") == "EXCLUDED_BY_DECISION", "Barnombudet exclusion drift")
@@ -68,6 +61,17 @@ check(bo.get("anchor_requirement") == "NOT_REQUIRED_EXCLUDED", "Barnombudet must
 legacy = entries.get("Hybrismannen/form-flode", {})
 check(legacy.get("record_state") == "HISTORICAL_ALIAS", "historical form-flode alias provenance lost")
 check(legacy.get("anchor_state") == "UNBOUND", "historical alias cannot claim canonical binding")
+
+ffc = entries.get("Motherpher/form-flode", {})
+ffc_sys = sys_entries.get("Motherpher/form-flode", {})
+check("Motherpher/form-flode" not in pending, "FFC must leave pending admissions after WP13")
+check(ffc.get("system_id") == "FFC", "FFC canonical system identity missing")
+check(ffc.get("repository_id") == "1379622813", "FFC repository identity mismatch")
+check(ffc.get("estate_admission_state") == "FORMALLY_ADMITTED_WP13", "FFC formal admission state missing")
+check(ffc.get("runtime_integration_state") == "NOT_VERIFIED", "FFC runtime must remain NOT_VERIFIED")
+check(ffc_sys.get("system_id") == "FFC", "canonical FFC systems entry missing")
+check(wp13_evidence.get("result", {}).get("formal_admission") == "PASS", "WP13 evidence not PASS")
+
 
 ffos = entries.get("Motherpher/FFOS", {})
 ffos_sys = sys_entries.get("Motherpher/FFOS", {})
