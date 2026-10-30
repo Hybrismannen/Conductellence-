@@ -10,37 +10,13 @@
       "class": "DOWNSTREAM_RUNTIME_ENFORCEMENT",
       "blocking_canonical_cdx_completion": false,
       "blocking_enforcement_transition": true,
-      "state": "OPEN",
+      "state": "OPEN_PARTIALLY_BOUND",
       "required_for": [
-        "PARTIALLY_BOUND/VERIFIED_RUNTIME_BOUND progression",
+        "Additional governed consequential runtime verification",
+        "VERIFIED_RUNTIME_BOUND estate progression",
         "BOOTSTRAP→ENFORCING transition"
       ],
-      "disposition": "Retain as operational/runtime programme. Verify consequential consumers under CDX-RUNTIME-001 before any runtime/enforcement promotion."
-    },
-    {
-      "id": "CDX-RESIDUAL-WP11-FFOS-001",
-      "source": "CDX-BLOCK-WP11-FFOS-EXECUTION-001",
-      "class": "DOWNSTREAM_CONSUMER_RUNTIME",
-      "blocking_canonical_cdx_completion": false,
-      "blocking_first_verified_ffos_runtime": true,
-      "state": "OPEN_IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED",
-      "required_for": [
-        "FFOS CDX_RUNTIME_VERIFIED",
-        "FFOS VERIFIED_RUNTIME_BOUND"
-      ],
-      "disposition": "Current FFOS implementation is staged in PR #35. Runtime verification is deployment-independent: execute exact-head GitHub CI HTTP effect tests, preserve SPETL evidence, merge, re-verify merged main, then independently reconcile to VERIFIED_RUNTIME_BOUND if evidence passes.",
-      "current_implementation": {
-        "repository": "Motherpher/FFOS",
-        "pr": 35,
-        "branch": "cdx-production-runtime-binding-20261030",
-        "observed_head": "e48b2de8c8a163f07125243a94c5907c6e028854",
-        "supersedes_pr": 29,
-        "proposed_anchor_state": "CDX_RUNTIME_GUARDED",
-        "proposed_runtime_state": "RUNTIME_GUARDED_UNVERIFIED"
-      },
-      "external_blockers": [
-        "FFOS-GHA-RUNNER-001"
-      ]
+      "disposition": "Estate has reached PARTIALLY_BOUND through verified FFOS runtime. Continue consumer-by-consumer CDX-RUNTIME-001 verification; do not infer estate-wide enforcement."
     },
     {
       "id": "CDX-RESIDUAL-METADATA-001",
@@ -62,12 +38,19 @@
       "source": "CDX PR #59",
       "disposition": "CLOSE_AS_SUPERSEDED",
       "rationale": "Its WP11 boundary record is superseded by the canonical merged WP11 programme record and later WP12-WP15 state."
+    },
+    {
+      "source": "CDX-RESIDUAL-WP11-FFOS-001",
+      "disposition": "CLOSED_VERIFIED_2026_10_30",
+      "rationale": "FFOS PR #35 passed real HTTP ALLOW/DENY/POLICY_UNAVAILABLE effect mediation with SPETL evidence; verified code tree was merged unchanged; PR #36 promoted the local anchor to CDX_RUNTIME_VERIFIED / VERIFIED_RUNTIME_BOUND.",
+      "evidence_ref": "RUNTIME-INTEGRATION/FFOS-RUNTIME-VERIFICATION-2026-10-30.json",
+      "verified_main_commit": "76374e2a45f4195ffc443df7ba716eb8284acaeb"
     }
   ],
   "forbidden_inferences": [
-    "Final CDX programme acceptance does not mean VERIFIED_RUNTIME_BOUND.",
-    "Final CDX programme acceptance does not mean ENFORCING.",
-    "Transferred WP11 is not equivalent to completed WP11.",
-    "Repository metadata hygiene does not block CDX 1.0 governance acceptance."
+    "Final CDX programme acceptance does not mean estate-wide VERIFIED_RUNTIME_BOUND.",
+    "A single VERIFIED_RUNTIME_BOUND consumer does not mean ENFORCING.",
+    "The WP15 ledger remains historical: WP11 was transferred at programme closure even though the post-programme residual obligation is now satisfied.",
+    "Repository metadata hygiene does not block CDX runtime standing."
   ]
 }
