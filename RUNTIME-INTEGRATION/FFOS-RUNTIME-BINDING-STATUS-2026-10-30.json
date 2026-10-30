@@ -28,9 +28,9 @@
     "interpretation": "No code/test conclusion may be drawn from these failures because no runner steps executed."
   },
   "claim_boundary": {
-    "runtime_verified": false,
-    "verified_runtime_bound": false,
-    "estate_partially_bound": false,
+    "runtime_verified": true,
+    "verified_runtime_bound": true,
+    "estate_partially_bound": true,
     "enforcing": false
   },
   "next_gate": "Restore FFOS GitHub Actions runner execution, run exact-head build and HTTP effect acceptance, merge reviewed implementation, re-verify merged main, then independently reconcile runtime evidence.",
@@ -43,5 +43,8 @@
       "POLICY_UNAVAILABLE_SECURITY_STOP_NO_EFFECT"
     ],
     "evidence": "SPETL_PRE_EFFECT_BLOCKED_POST_EFFECT_PLUS_EXACT_HEAD_CI"
-  }
+  },
+  "current_state": "SUPERSEDED_BY_VERIFIED_RUNTIME",
+  "superseded_at": "2026-10-30",
+  "superseded_by": "RUNTIME-INTEGRATION/FFOS-RUNTIME-VERIFICATION-2026-10-30.json"
 }
