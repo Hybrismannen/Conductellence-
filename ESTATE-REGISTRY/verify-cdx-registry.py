@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Validate CDX estate registry axes after WP10/WP12 without false runtime promotion.
+"""Validate CDX estate registry axes through WP14 without false runtime promotion.
 
-This audit validates central reconciliation against persisted WP10 anchor evidence and
-WP12 Pius reference-binding evidence. It does not itself perform remote GitHub verification.
+This audit validates central reconciliation against persisted anchor, admission and
+estate-propagation evidence. It does not itself perform remote GitHub verification.
 """
 import json
 from pathlib import Path
@@ -20,6 +20,7 @@ wp10_evidence = load("ESTATE-REGISTRY/wp10-anchor-verification-evidence.json")
 wp12_evidence = load("ESTATE-REGISTRY/wp12-pius-verification-evidence.json")
 pius_profile = load("RUNTIME-INTEGRATION/consumers/CDX-PIUS-CONSUMER-001.json")
 wp13_evidence = load("ESTATE-REGISTRY/wp13-ffc-admission-evidence.json")
+wp14_evidence = load("ESTATE-REGISTRY/wp14-estate-propagation-closure-evidence.json")
 issues = []
 
 def check(condition, message):
@@ -35,6 +36,13 @@ check(state.get("enforcement_state") == "BOOTSTRAP", "WP10 may not promote estat
 check(state.get("estate_integration_state") in {"PENDING_RUNTIME_BINDINGS","BINDINGS_IN_PROGRESS"},
       "estate integration state exceeds current WP11 boundary")
 check("CDX-BLOCK-ESTATE-RUNTIME-001" in state.get("estate_enforcement_blockers", []), "estate runtime blocker must remain open")
+check(state.get("wp14_estate_propagation_closure", {}).get("state") == "COMPLETE_ESTATE_GOVERNANCE_PROPAGATION",
+      "WP14 central closure missing")
+check(state.get("programme_closure", {}).get("state") == "COMPLETE_WITH_DOWNSTREAM_RUNTIME_OBLIGATIONS",
+      "CDX programme closure state missing")
+check(state.get("enforcement_state") == "BOOTSTRAP", "WP14 may not promote enforcement")
+check(state.get("estate_integration_state") == "BINDINGS_IN_PROGRESS", "WP14 may not promote estate integration")
+check(len(pending) == 0, "WP14 requires zero pending admissions")
 
 records = registry_v2.get("records", [])
 current = [x for x in records if x.get("record_kind") == "CURRENT_REPOSITORY"]
@@ -141,6 +149,18 @@ check(recon.get("state") == "COMPLETE", "WP10 evidence reconciliation incomplete
 check(recon.get("local_anchor_prs_merged") == 28, "WP10 evidence local merge count mismatch")
 check(recon.get("default_branch_readbacks_passed") == 28, "WP10 evidence readback count mismatch")
 
+wp14_result = wp14_evidence.get("result", {})
+wp14_prop = wp14_evidence.get("propagation_result", {})
+check(wp14_evidence.get("programme") == "CDX-WP14", "WP14 evidence identity mismatch")
+check(wp14_result.get("governance_propagation_closure") == "PASS", "WP14 closure evidence not PASS")
+check(wp14_prop.get("governed_repositories_expected") == 28, "WP14 evidence governed count mismatch")
+check(wp14_prop.get("governed_repositories_cdxb_bound_pass") == 28, "WP14 evidence bound/PASS count mismatch")
+check(wp14_prop.get("pending_admissions") == 0, "WP14 evidence pending admission count mismatch")
+check(wp14_evidence.get("runtime_boundary", {}).get("consequential_verified_runtime_count") == 0,
+      "WP14 evidence falsely claims verified consequential runtime")
+check(wp14_result.get("verified_runtime_bound_claim") is False, "WP14 may not claim VERIFIED_RUNTIME_BOUND")
+check(wp14_result.get("enforcing_claim") is False, "WP14 may not claim ENFORCING")
+
 if issues:
     for item in issues:
         print("FAIL:", item)
@@ -148,6 +168,6 @@ if issues:
 
 print("PASS: WP10 anchor verification and reconciliation are internally consistent.")
 print("PASS: 28/28 governed consumers are CDX_BOUND / PASS on the anchor axis.")
-print("PASS: FFOS runtime verification, FFC admission and estate enforcement remain unadvanced.")
+print("PASS: FFC formal admission is complete; FFOS runtime verification and estate enforcement remain unadvanced.")
 print("PASS: Pius is independently verified only at repository-CI reference-runtime scope; consequential enforcement remains false.")
-print(f"PASS: estate integration state={state.get('estate_integration_state')} within current rollout boundary.")
+print("PASS: WP14 estate-governance propagation is complete with 28/28 governed repositories CDX_BOUND / PASS and zero pending admissions.")\nprint(f"PASS: estate integration state={state.get('estate_integration_state')} and enforcement={state.get('enforcement_state')} remain correctly bounded.")
