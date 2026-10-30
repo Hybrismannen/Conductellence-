@@ -2,7 +2,7 @@
   "schema": "cdx.estate-registry/v2.0",
   "registry_id": "CDX-ESTATE-REGISTRY-V2",
   "authority_ref": "CDX-SYS-001",
-  "observed_at": "2026-10-29",
+  "observed_at": "2026-10-30",
   "source_main_sha": "ce7dde1bf147d1a5e762fabf3395198055927055",
   "purpose": "Canonical WP08 applicability classification for the complete known CDX estate identifier set. Registry inclusion, canonical anchoring and runtime verification remain distinct axes.",
   "topology": {
@@ -932,5 +932,19 @@
     "evidence_ref": "ESTATE-REGISTRY/wp13-ffc-admission-evidence.json",
     "next_wp": "CDX-WP14",
     "state_effect": "FFC_ESTATE_ADMISSION_AXIS_ONLY"
+  },
+  "wp14_estate_propagation": {
+    "state": "COMPLETE",
+    "completed_at": "2026-10-30",
+    "governed_current_repositories": 28,
+    "governed_cdxb_bound_pass": 28,
+    "pending_admissions": 0,
+    "excluded_by_decision": 1,
+    "historical_alias_records": 1,
+    "consequential_verified_runtime_count": 0,
+    "estate_integration_state": "BINDINGS_IN_PROGRESS",
+    "enforcement_state": "BOOTSTRAP",
+    "evidence_ref": "ESTATE-REGISTRY/wp14-estate-propagation-closure-evidence.json",
+    "state_effect": "GOVERNANCE_PROPAGATION_ONLY"
   }
 }
