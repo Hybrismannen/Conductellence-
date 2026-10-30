@@ -1,0 +1,61 @@
+{
+  "schema": "cdx.residual-obligations/v1.0",
+  "register_id": "CDX-1.0-RESIDUAL-OBLIGATIONS",
+  "effective_at": "2026-10-30",
+  "programme_state": "FINAL_ACCEPTED_WITH_RESIDUAL_DOWNSTREAM_OBLIGATIONS",
+  "obligations": [
+    {
+      "id": "CDX-RESIDUAL-RUNTIME-001",
+      "source": "CDX-BLOCK-ESTATE-RUNTIME-001",
+      "class": "DOWNSTREAM_RUNTIME_ENFORCEMENT",
+      "blocking_canonical_cdx_completion": false,
+      "blocking_enforcement_transition": true,
+      "state": "OPEN",
+      "required_for": [
+        "PARTIALLY_BOUND/VERIFIED_RUNTIME_BOUND progression",
+        "BOOTSTRAP→ENFORCING transition"
+      ],
+      "disposition": "Retain as operational/runtime programme. Verify consequential consumers under CDX-RUNTIME-001 before any runtime/enforcement promotion."
+    },
+    {
+      "id": "CDX-RESIDUAL-WP11-FFOS-001",
+      "source": "CDX-BLOCK-WP11-FFOS-EXECUTION-001",
+      "class": "DOWNSTREAM_CONSUMER_RUNTIME",
+      "blocking_canonical_cdx_completion": false,
+      "blocking_first_verified_ffos_runtime": true,
+      "state": "OPEN",
+      "required_for": [
+        "FFOS CDX_RUNTIME_VERIFIED",
+        "FFOS VERIFIED_RUNTIME_BOUND"
+      ],
+      "disposition": "Resume against current FFOS architecture only after re-read/reconciliation; legacy candidate PR must not be blindly merged."
+    },
+    {
+      "id": "CDX-RESIDUAL-METADATA-001",
+      "source": "GitHub issue #14",
+      "class": "REPOSITORY_METADATA_HYGIENE",
+      "blocking_canonical_cdx_completion": false,
+      "blocking_runtime_or_enforcement": false,
+      "state": "OPEN_NON_BLOCKING",
+      "disposition": "Correct GitHub repository description to canonical derivation when repository metadata mutation capability is available."
+    }
+  ],
+  "closed_residue": [
+    {
+      "source": "GitHub issue #15",
+      "disposition": "CLOSE_AS_COMPLETED_BY_WP09_WP10_WP13_WP14",
+      "rationale": "All 28 governed current repositories are CDX_BOUND / PASS and no admissions remain pending."
+    },
+    {
+      "source": "CDX PR #59",
+      "disposition": "CLOSE_AS_SUPERSEDED",
+      "rationale": "Its WP11 boundary record is superseded by the canonical merged WP11 programme record and later WP12-WP15 state."
+    }
+  ],
+  "forbidden_inferences": [
+    "Final CDX programme acceptance does not mean VERIFIED_RUNTIME_BOUND.",
+    "Final CDX programme acceptance does not mean ENFORCING.",
+    "Transferred WP11 is not equivalent to completed WP11.",
+    "Repository metadata hygiene does not block CDX 1.0 governance acceptance."
+  ]
+}
