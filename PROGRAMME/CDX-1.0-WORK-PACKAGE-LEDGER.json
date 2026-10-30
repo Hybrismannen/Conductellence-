@@ -1,0 +1,98 @@
+{
+  "schema": "cdx.work-package-ledger/v1.0",
+  "programme": "CDX_1_0",
+  "ledger_id": "CDX-1.0-WP-LEDGER-FINAL",
+  "accepted_at": "2026-10-30",
+  "canonical_repository": "Hybrismannen/Conductellence-",
+  "final_work_package": "WP15",
+  "work_packages": [
+    {
+      "work_package": "WP00",
+      "state": "COMPLETE",
+      "scope": "Historical source consolidation / decision ledger"
+    },
+    {
+      "work_package": "WP01",
+      "state": "COMPLETE",
+      "scope": "Canonical state reconciliation"
+    },
+    {
+      "work_package": "WP02",
+      "state": "COMPLETE",
+      "scope": "Core boundary freeze"
+    },
+    {
+      "work_package": "WP03",
+      "state": "COMPLETE",
+      "scope": "Constitutional closure"
+    },
+    {
+      "work_package": "WP04",
+      "state": "COMPLETE",
+      "scope": "Independent SPETL evidence custody"
+    },
+    {
+      "work_package": "WP05",
+      "state": "COMPLETE",
+      "scope": "Native repository protection"
+    },
+    {
+      "work_package": "WP06",
+      "state": "COMPLETE",
+      "scope": "Distribution/runtime closure"
+    },
+    {
+      "work_package": "WP07",
+      "state": "COMPLETE",
+      "scope": "Final acceptance / CDX 1.0 release decision"
+    },
+    {
+      "work_package": "WP08",
+      "state": "COMPLETE",
+      "scope": "Estate Registry v2"
+    },
+    {
+      "work_package": "WP09",
+      "state": "COMPLETE",
+      "scope": "Canonical anchor migration"
+    },
+    {
+      "work_package": "WP10",
+      "state": "COMPLETE",
+      "scope": "Estate anchor verification and reconciliation"
+    },
+    {
+      "work_package": "WP11",
+      "state": "TRANSFERRED_RESIDUAL_OBLIGATION",
+      "scope": "FFOS production runtime binding; implementation staged and verification blocked"
+    },
+    {
+      "work_package": "WP12",
+      "state": "COMPLETE",
+      "scope": "Pius reference consumer binding verification"
+    },
+    {
+      "work_package": "WP13",
+      "state": "COMPLETE",
+      "scope": "FFC formal admission"
+    },
+    {
+      "work_package": "WP14",
+      "state": "COMPLETE",
+      "scope": "Estate governance propagation and canonical closure"
+    },
+    {
+      "work_package": "WP15",
+      "state": "COMPLETE",
+      "scope": "Final programme acceptance and operational handover"
+    }
+  ],
+  "completion_summary": {
+    "total_work_packages": 16,
+    "complete": 15,
+    "transferred_residual_obligation": 1,
+    "abandoned": 0,
+    "cancelled": 0
+  },
+  "terminal_interpretation": "WP11 is not falsely marked complete. It is transferred from canonical construction into the residual runtime-obligation register. This permits final acceptance of the CDX 1.0 governance programme without claiming runtime enforcement."
+}

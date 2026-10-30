@@ -21,6 +21,8 @@ wp12_evidence = load("ESTATE-REGISTRY/wp12-pius-verification-evidence.json")
 pius_profile = load("RUNTIME-INTEGRATION/consumers/CDX-PIUS-CONSUMER-001.json")
 wp13_evidence = load("ESTATE-REGISTRY/wp13-ffc-admission-evidence.json")
 wp14_evidence = load("ESTATE-REGISTRY/wp14-estate-propagation-closure-evidence.json")
+wp15_ledger = load("PROGRAMME/CDX-1.0-WORK-PACKAGE-LEDGER.json")
+residual = load("GOVERNANCE/CDX-1.0-RESIDUAL-OBLIGATIONS.json")
 issues = []
 
 def check(condition, message):
@@ -38,8 +40,10 @@ check(state.get("estate_integration_state") in {"PENDING_RUNTIME_BINDINGS","BIND
 check("CDX-BLOCK-ESTATE-RUNTIME-001" in state.get("estate_enforcement_blockers", []), "estate runtime blocker must remain open")
 check(state.get("wp14_estate_propagation_closure", {}).get("state") == "COMPLETE_ESTATE_GOVERNANCE_PROPAGATION",
       "WP14 central closure missing")
-check(state.get("programme_closure", {}).get("state") == "COMPLETE_WITH_DOWNSTREAM_RUNTIME_OBLIGATIONS",
-      "CDX programme closure state missing")
+check(state.get("programme_closure", {}).get("state") == "FINAL_ACCEPTED_WITH_RESIDUAL_DOWNSTREAM_OBLIGATIONS",
+      "CDX final programme acceptance state missing")
+check(state.get("wp15_final_programme_acceptance", {}).get("state") == "COMPLETE_FINAL_PROGRAMME_ACCEPTANCE",
+      "WP15 final acceptance state missing")
 check(state.get("enforcement_state") == "BOOTSTRAP", "WP14 may not promote enforcement")
 check(state.get("estate_integration_state") == "BINDINGS_IN_PROGRESS", "WP14 may not promote estate integration")
 check(len(pending) == 0, "WP14 requires zero pending admissions")
@@ -161,6 +165,27 @@ check(wp14_evidence.get("runtime_boundary", {}).get("consequential_verified_runt
 check(wp14_result.get("verified_runtime_bound_claim") is False, "WP14 may not claim VERIFIED_RUNTIME_BOUND")
 check(wp14_result.get("enforcing_claim") is False, "WP14 may not claim ENFORCING")
 
+wp15_summary = wp15_ledger.get("completion_summary", {})
+check(wp15_ledger.get("final_work_package") == "WP15", "WP15 ledger final work-package mismatch")
+check(wp15_summary.get("total_work_packages") == 16, "WP15 ledger total mismatch")
+check(wp15_summary.get("complete") == 15, "WP15 ledger complete-count mismatch")
+check(wp15_summary.get("transferred_residual_obligation") == 1,
+      "WP15 ledger must preserve exactly one transferred residual work package")
+wp11_row = next((x for x in wp15_ledger.get("work_packages", []) if x.get("work_package") == "WP11"), {})
+check(wp11_row.get("state") == "TRANSFERRED_RESIDUAL_OBLIGATION",
+      "WP11 must remain transferred residual obligation, not falsely complete")
+check(residual.get("programme_state") == "FINAL_ACCEPTED_WITH_RESIDUAL_DOWNSTREAM_OBLIGATIONS",
+      "residual-obligation register programme state mismatch")
+open_residual = {x.get("id"): x for x in residual.get("obligations", [])}
+check(open_residual.get("CDX-RESIDUAL-RUNTIME-001", {}).get("state") == "OPEN",
+      "estate runtime residual obligation must remain open")
+check(open_residual.get("CDX-RESIDUAL-WP11-FFOS-001", {}).get("state") == "OPEN",
+      "WP11 FFOS residual obligation must remain open")
+check(state.get("estate_integration_state") == "BINDINGS_IN_PROGRESS",
+      "WP15 must not promote estate integration")
+check(state.get("enforcement_state") == "BOOTSTRAP",
+      "WP15 must not promote enforcement")
+
 if issues:
     for item in issues:
         print("FAIL:", item)
@@ -171,4 +196,5 @@ print("PASS: 28/28 governed consumers are CDX_BOUND / PASS on the anchor axis.")
 print("PASS: FFC formal admission is complete; FFOS runtime verification and estate enforcement remain unadvanced.")
 print("PASS: Pius is independently verified only at repository-CI reference-runtime scope; consequential enforcement remains false.")
 print("PASS: WP14 estate-governance propagation is complete with 28/28 governed repositories CDX_BOUND / PASS and zero pending admissions.")
+print("PASS: WP15 final-accepts the central programme while preserving WP11 and estate runtime as residual obligations.")
 print(f"PASS: estate integration state={state.get('estate_integration_state')} and enforcement={state.get('enforcement_state')} remain correctly bounded.")
