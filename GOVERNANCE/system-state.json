@@ -438,7 +438,7 @@
   "end_report": {
     "state": "ISSUED",
     "issued_at": "2026-10-30",
-    "report_ref": "REPORTS/CDX-1.0-END-REPORT-2026-10-30.md",
+    "report_ref": "PROGRAMME/CDX-1.0-END-REPORT-2026-10-30.md",
     "programme_boundary": "CDX_1_0_CANONICAL_GOVERNANCE_CONSTRUCTION"
   }
 }
