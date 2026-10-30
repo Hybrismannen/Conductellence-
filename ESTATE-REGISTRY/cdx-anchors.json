@@ -9,7 +9,7 @@
   "governance_standard": "CDX-GOV-ANCHOR-001",
   "canonical_local_anchor": ".cdx/anchor.json",
   "migration_source": "ESTATE-REGISTRY/systems.json",
-  "updated_at": "2026-10-29",
+  "updated_at": "2026-10-30",
   "entries": [
     {
       "repository": "Hybrismannen/Conductellence-",
@@ -529,12 +529,12 @@
   "pending_admissions": [],
   "registration_semantics": {
     "effective_entries": "entries records declared anchor state for authority and governed surfaces; ANCHOR_DECLARED does not mean independently verified or runtime-bound",
-    "pending_entries": "pending_admissions may already carry an installed anchor but remain not admitted until their dedicated admission and verification gates are satisfied",
-    "repository_anchor_vs_runtime": "FFOS CDX_CI_MONITORED is repository-level CI monitoring; actual runtime BOUND_PENDING_RUNTIME_INTEGRATION remains unverified",
+    "pending_entries": "pending_admissions is empty after WP13; future admissions require a separate governed admission decision.",
+    "repository_anchor_vs_runtime": "Repository CDX_BOUND / PASS is governance propagation evidence only; runtime state remains independently gated under CDX-RUNTIME-001.",
     "projecthub_scope": "ProjectHub is inside Motherpher/FFOS and is covered by its repository anchor; consequential ProjectHub effects require separate local enforcement evidence",
     "repository_identity_aliases": "Historical repository names resolving to the same GitHub repository object are provenance aliases, not distinct current repositories."
   },
-  "reconciled_at": "2026-10-29",
+  "reconciled_at": "2026-10-30",
   "wp09_migration": {
     "state": "COMPLETE",
     "migrated_consumers": 28,
@@ -549,6 +549,17 @@
     "default_branch_readbacks_passed": 28,
     "evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
     "verification_evidence_commit": "ad26ea289ab71c86bea2461e0509c5b4bec9a32e",
-    "ffc_admission_state": "PENDING_WP13"
+    "ffc_admission_state": "COMPLETE_WP13"
+  },
+  "wp14_estate_propagation": {
+    "state": "COMPLETE",
+    "completed_at": "2026-10-30",
+    "governed_consumers": 28,
+    "cdxb_bound_pass": 28,
+    "pending_admissions": 0,
+    "excluded_by_decision": 1,
+    "historical_alias_records": 1,
+    "runtime_promotion": false,
+    "evidence_ref": "ESTATE-REGISTRY/wp14-estate-propagation-closure-evidence.json"
   }
 }

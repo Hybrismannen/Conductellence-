@@ -324,7 +324,15 @@
     }
   ],
   "updated_at": "2026-10-30",
-  "audit_note": "Admitted-system registry preserves historical provenance while separating canonical identity, anchor, admission and runtime states. WP13 formally admits Motherpher/form-flode as FFC using repository id 1379622813; Hybrismannen/form-flode remains provenance-only. FFC runtime remains NOT_VERIFIED.",
+  "audit_note": "WP14 central closure: all 28 governed current repositories are represented with verified CDX_BOUND / PASS canonical anchors; no pending admissions remain. Barnombudet remains excluded, Hybrismannen/form-flode remains provenance-only, and no consequential runtime is promoted. Runtime rollout remains separately gated.",
   "pending_admissions": [],
-  "reconciled_at": "2026-10-28"
+  "reconciled_at": "2026-10-28",
+  "wp14_estate_propagation": {
+    "state": "COMPLETE",
+    "completed_at": "2026-10-30",
+    "governed_cdxb_bound_pass": 28,
+    "pending_admissions": 0,
+    "consequential_verified_runtime_count": 0,
+    "evidence_ref": "ESTATE-REGISTRY/wp14-estate-propagation-closure-evidence.json"
+  }
 }

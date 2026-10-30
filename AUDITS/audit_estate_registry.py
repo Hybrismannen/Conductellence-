@@ -15,14 +15,17 @@ registry_path=Path("ESTATE-REGISTRY/systems.json")
 anchor_path=Path("ESTATE-REGISTRY/cdx-anchors.json")
 registry_v2_path=Path("ESTATE-REGISTRY/registry-v2.json")
 wp09_evidence_path=Path("ESTATE-REGISTRY/wp09-migration-evidence.json")
+wp14_evidence_path=Path("ESTATE-REGISTRY/wp14-estate-propagation-closure-evidence.json")
 if not registry_path.exists():fail("missing estate registry")
 if not anchor_path.exists():fail("missing canonical anchor registry")
 if not registry_v2_path.exists():fail("missing Registry v2 applicability classification")
 if not wp09_evidence_path.exists():fail("missing WP09 migration evidence")
+if not wp14_evidence_path.exists():fail("missing WP14 closure evidence")
 d=json.loads(registry_path.read_text())
 ar=json.loads(anchor_path.read_text())
 r2=json.loads(registry_v2_path.read_text())
 wp09=json.loads(wp09_evidence_path.read_text())
+wp14=json.loads(wp14_evidence_path.read_text())
 systems=d.get("systems",[])
 if not systems:fail("empty estate registry")
 ids=[s.get("system_id") for s in systems]
@@ -219,6 +222,17 @@ for m in wp09.get("migrations",[]):
         or m.get("verification_state")!="NOT_VERIFIED"):
         fail(f"{m.get('repository')}: invalid WP09 migration evidence")
 
+if pending:
+    fail("WP14 closure requires zero pending admissions")
+if wp14.get("programme")!="CDX-WP14":
+    fail("WP14 closure evidence identity mismatch")
+if wp14.get("result",{}).get("governance_propagation_closure")!="PASS":
+    fail("WP14 closure evidence is not PASS")
+if wp14.get("propagation_result",{}).get("governed_repositories_cdxb_bound_pass")!=28:
+    fail("WP14 closure evidence must record 28/28 CDX_BOUND / PASS")
+if wp14.get("runtime_boundary",{}).get("consequential_verified_runtime_count")!=0:
+    fail("WP14 closure must not claim verified consequential runtime")
+
 allowed_runtime=set(r2.get("classification_rules",{}).get("runtime_screening",[]))
 for x in r2_records:
     if x.get("runtime_screening") not in allowed_runtime:
@@ -230,5 +244,6 @@ print(f"PASS: Estate Registry contains {len(systems)} unique governed repository
 print(f"PASS: {legacy} legacy bindings + {canonical} canonical anchors differentiated")
 print("PASS: Registry v2 classifies 31 identifiers / 30 current repository objects with explicit applicability")
 print("PASS: WP09 migration evidence preserved and WP10 reconciled all 28 governed consumers to CDX_BOUND / PASS")
-print("PASS: repository binding separate from application-runtime evidence")
+print("PASS: repository binding/admission remain separate from application-runtime evidence")
+print("PASS: WP14 governance propagation closure is complete with zero pending admissions")
 print("NOTE: registry audit does not by itself establish CDX-RUNTIME-001 verification")
