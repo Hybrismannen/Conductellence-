@@ -209,6 +209,15 @@ CDX state is deliberately represented on independent axes.
 
 Machine-readable truth is [GOVERNANCE/system-state.json](GOVERNANCE/system-state.json).
 
+### Runtime rollout status
+
+The first real production consumer binding is currently staged in **Motherpher/FFOS PR #35** against the current FFOS architecture. It gates Director-session issuance and provides a separate non-privileged production proof effect.
+
+It is **not yet verified or deployed**: FFOS GitHub Actions is failing before runner steps execute, and Vercel currently rejects new deployments because the owning team has an overdue balance. CDX therefore correctly remains **BINDINGS_IN_PROGRESS / BOOTSTRAP** until those external gates are resolved and live production evidence exists.
+
+Canonical status evidence: [RUNTIME-INTEGRATION/FFOS-RUNTIME-BINDING-STATUS-2026-10-30.json](RUNTIME-INTEGRATION/FFOS-RUNTIME-BINDING-STATUS-2026-10-30.json).
+
+
 **Maturity is not enforcement. Release is not integration. Integration is not estate-wide enforcement.**
 
 ---
