@@ -23,7 +23,7 @@ Canonical machine-readable state is held in [`GOVERNANCE/system-state.json`](GOV
 
 **Maturity is not enforcement. Release is not integration. Integration is not estate-wide enforcement.**
 
-**CDX 1.0 canonical governance construction is final-accepted.** WP15 is the final numbered construction work package. Consumer consequential-runtime rollout continues under the residual-obligation register and separate binding/verification gates.
+**CDX 1.0 canonical governance construction is final-accepted.** WP15 is the final numbered construction work package. The terminal audit is recorded in [`AUDITS/CDX-1.0-TERMINAL-AUDIT-2026-10-30.md`](AUDITS/CDX-1.0-TERMINAL-AUDIT-2026-10-30.md) and the programme end report in [`REPORTS/CDX-1.0-END-REPORT-2026-10-30.md`](REPORTS/CDX-1.0-END-REPORT-2026-10-30.md). Consumer consequential-runtime rollout continues under the residual-obligation register and separate binding/verification gates.
 
 ## CDX 1.0 closure boundary
 
