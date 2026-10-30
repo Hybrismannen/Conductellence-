@@ -1,6 +1,6 @@
 # CDX-WP13 — FFC Formal Admission
 
-**Status:** COMPLETE — FORMAL ADMISSION STAGED  
+**Status:** COMPLETE — FORMALLY ADMITTED  
 **Date:** 2026-10-30  
 **Canonical repository:** `Motherpher/form-flode`  
 **System ID:** `FFC`
