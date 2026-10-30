@@ -7,14 +7,13 @@
   "core_runtime_state": "VERIFIED_REFERENCE_RUNTIME",
   "release_state": "RELEASED",
   "enforcement_state": "BOOTSTRAP",
-  "estate_integration_state": "BINDINGS_IN_PROGRESS",
+  "estate_integration_state": "PARTIALLY_BOUND",
   "core_release_blockers": [],
   "estate_enforcement_blockers": [
-    "CDX-BLOCK-ESTATE-RUNTIME-001",
-    "CDX-BLOCK-WP11-FFOS-EXECUTION-001"
+    "CDX-BLOCK-ESTATE-RUNTIME-001"
   ],
   "consumer_bindings": {
-    "Motherpher/FFOS": "IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED",
+    "Motherpher/FFOS": "VERIFIED_RUNTIME_BOUND",
     "Hybrismannen/pius-universe": "VERIFIED_REFERENCE_RUNTIME_REPOSITORY_CI_ONLY"
   },
   "canonical_rule": "Maturity is not enforcement. Release is not integration. Integration is not estate-wide enforcement.",
@@ -37,21 +36,25 @@
     "WP13 COMPLETE: Motherpher/form-flode formally admitted as canonical FFC estate identity after repository-ID reconciliation and WP10-verified CDX_BOUND / PASS anchor. Historical Hybrismannen/form-flode remains provenance-only; FFC runtime remains NOT_VERIFIED.",
     "WP14 COMPLETE: estate-governance propagation closed centrally with 28/28 governed current repositories CDX_BOUND / PASS, zero pending admissions, Barnombudet explicitly excluded and the historical form-flode alias preserved. Runtime enforcement remains a separate downstream obligation and is not promoted.",
     "WP15 COMPLETE: final CDX 1.0 programme acceptance and operational handover records the canonical construction programme as terminally accepted. WP11/estate runtime enforcement is transferred to the residual-obligation register and remains explicitly open; repository metadata hygiene remains non-blocking.",
-    "Runtime reconciliation 2026-10-30: FFOS PR #35 supersedes historical PR #29 and stages current-architecture CDX gates for Director-session issuance plus a non-privileged runtime proof effect. Vercel is not part of the runtime acceptance contract. Exact-head verification remains blocked only by FFOS GitHub Actions failing before runner steps execute; FFOS remains BOUND_PENDING_RUNTIME_INTEGRATION."
+    "Runtime reconciliation 2026-10-30 COMPLETE: FFOS PR #35 effect mediation passed ALLOW/DENY/POLICY_UNAVAILABLE and SPETL checks; merged runtime tree is identical to the verified head; FFOS PR #36 promoted the local anchor to CDX_RUNTIME_VERIFIED / VERIFIED_RUNTIME_BOUND. Estate integration is now PARTIALLY_BOUND; estate enforcement remains BOOTSTRAP."
   ],
   "consumer_binding_scope": "RUNTIME_INTEGRATION_ONLY",
   "repository_anchor_bindings": {
     "Motherpher/FFOS": {
       "state": "CDX_BOUND",
       "local_anchor_ref": "Motherpher/FFOS/.cdx/anchor.json",
-      "observed_at": "2026-10-29",
+      "observed_at": "2026-10-30",
       "verification": "PASS",
       "binding_mode": "PINNED_RELEASE",
       "state_source_pin": "1.0.0",
-      "runtime_enforcement": "BOUND_PENDING_RUNTIME_INTEGRATION",
+      "runtime_enforcement": "VERIFIED_RUNTIME_BOUND",
       "source": "ESTATE-REGISTRY/cdx-anchors.json",
       "verified_at": "2026-10-29T15:19:00Z",
-      "verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
+      "verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "consequential_enforcement_verified": true,
+      "runtime_verified_at": "2026-10-30",
+      "runtime_verified_main_commit": "76374e2a45f4195ffc443df7ba716eb8284acaeb",
+      "runtime_evidence_ref": "RUNTIME-INTEGRATION/FFOS-RUNTIME-VERIFICATION-2026-10-30.json"
     },
     "Hybrismannen/pius-universe": {
       "state": "CDX_BOUND",
@@ -81,7 +84,7 @@
       "admission_evidence": "ESTATE-REGISTRY/wp13-ffc-admission-evidence.json"
     }
   },
-  "reconciliation_note": "CDX 1.0 canonical governance is final-accepted and its front presentation is current. FFOS PR #35 rebuilds the first consequential runtime binding on current architecture. Runtime verification is deployment-independent and does not require Vercel. The remaining blocker is FFOS GitHub Actions failing before runner steps execute; no runtime promotion is claimed.",
+  "reconciliation_note": "Post-programme runtime reconciliation verifies Motherpher/FFOS as the first consequential CDX consumer runtime. Estate integration advances to PARTIALLY_BOUND; enforcement remains BOOTSTRAP and CDX-BLOCK-ESTATE-RUNTIME-001 remains open.",
   "updated_at": "2026-10-30",
   "repository_identity_reconciliation": {
     "Motherpher/form-flode": {
@@ -267,41 +270,43 @@
   },
   "wp11_ffos_runtime_binding": {
     "programme": "CDX-WP11",
-    "state": "IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED",
-    "observed_at": "2026-10-30",
+    "state": "COMPLETE_FFOS_RUNTIME_VERIFIED",
+    "completed_at": "2026-10-30",
     "ffos_repository": "Motherpher/FFOS",
-    "implementation_pr": 35,
-    "implementation_head": "e48b2de8c8a163f07125243a94c5907c6e028854",
     "target_contract": "CDX-RUNTIME-001@1.0.0",
-    "target_effect": "ISSUE_DIRECTOR_SESSION",
-    "proposed_anchor_state": "CDX_RUNTIME_GUARDED",
-    "proposed_runtime_state": "RUNTIME_GUARDED_UNVERIFIED",
-    "production_deployment_state": "NOT_REQUIRED_FOR_RUNTIME_VERIFICATION",
-    "blockers": [
-      {
-        "id": "FFOS-GHA-RUNNER-001",
-        "kind": "EXTERNAL_EXECUTION_INFRASTRUCTURE",
-        "evidence": "FFOS PR #35 diagnostic workflow run 41079620757 failed all six independent jobs before any runner steps executed; each job returned steps=null and logs_url=null. The exact runtime head therefore has no executable GitHub Actions acceptance evidence."
-      }
-    ],
-    "completion_requires": [
-      "FFOS execution infrastructure permits the exact current implementation to build and run acceptance tests",
-      "Reviewed PR #35 or its reconciled successor merges to current FFOS main",
-      "Runtime proof demonstrates ALLOW with bounded proof effect",
-      "Runtime proof demonstrates DENY with no effect",
-      "Runtime proof demonstrates POLICY_UNAVAILABLE -> SECURITY_STOP with no effect",
-      "SPETL PRE_EFFECT/BLOCKED/POST_EFFECT production evidence is independently read back",
-      "FFOS anchor/runtime state is independently promoted to CDX_RUNTIME_VERIFIED / VERIFIED_RUNTIME_BOUND"
-    ],
-    "state_effect": "NO_RUNTIME_PROMOTION_GITHUB_EXECUTION_BLOCKED",
-    "implementation_branch": "cdx-production-runtime-binding-20261030",
-    "superseded_implementation_pr": 29,
+    "implementation_pr": 35,
+    "verified_pr_head": "a524f18bd0f860d07280c5405d8b83a37264c216",
+    "implementation_merge_commit": "5d5024078074c3ad00d454964357e546d2e6dac7",
+    "promotion_pr": 36,
+    "verified_main_commit": "76374e2a45f4195ffc443df7ba716eb8284acaeb",
+    "anchor_state": "CDX_RUNTIME_VERIFIED",
+    "runtime_state": "VERIFIED_RUNTIME_BOUND",
     "target_effects": [
       "ISSUE_DIRECTOR_SESSION",
       "ISSUE_RUNTIME_PROOF_RECEIPT"
     ],
-    "current_ffos_main_observed": "05d0d058c3286733a5fd453135fa62a28b7873f6",
-    "current_implementation_note": "PR #35 rebuilds the first production binding against the current FFOS architecture. It does not activate Household Family or any other agent."
+    "effect_evidence": {
+      "workflow_run_id": "41086856528",
+      "artifact_id": "12992671446",
+      "artifact_digest": "sha256:f4c50555f27a15752195c0f881bf34c6cc8b5ae71233153923d804f7eb4cd354",
+      "verified_tree_sha": "f5593da8ef1e99f23bf34afd8ab3d3b939dbd0ce",
+      "merged_tree_sha": "f5593da8ef1e99f23bf34afd8ab3d3b939dbd0ce",
+      "tree_identity_verified": true,
+      "allow_effect_verified": true,
+      "deny_no_effect_verified": true,
+      "policy_unavailable_security_stop_verified": true,
+      "spetl_pre_blocked_post_verified": true
+    },
+    "push_runner_limitation": {
+      "state": "NON_BLOCKING_INFRASTRUCTURE_OBSERVATION",
+      "merged_main_push_run_id": "41087294299",
+      "runner_steps_executed": false,
+      "disposition": "Runtime code identity is proven by exact Git tree equality between verified PR head and merged implementation. Promotion metadata changes no runtime blobs."
+    },
+    "blockers": [],
+    "state_effect": "FIRST_CONSEQUENTIAL_CONSUMER_VERIFIED_ESTATE_PARTIALLY_BOUND_NO_ENFORCEMENT_PROMOTION",
+    "production_effect_authorization": "BOUND_EFFECTS_ONLY",
+    "agent_activation": false
   },
   "wp12_pius_verification": {
     "programme": "CDX-WP12",
@@ -444,5 +449,21 @@
     "issued_at": "2026-10-30",
     "report_ref": "PROGRAMME/CDX-1.0-END-REPORT-2026-10-30.md",
     "programme_boundary": "CDX_1_0_CANONICAL_GOVERNANCE_CONSTRUCTION"
+  },
+  "consequential_verified_runtime_count": 1,
+  "post_programme_runtime_reconciliation": {
+    "reconciliation_id": "CDX-POST-1.0-FFOS-RUNTIME-2026-10-30",
+    "state": "COMPLETE",
+    "reconciled_at": "2026-10-30",
+    "verified_consequential_consumers": 1,
+    "verified_consumers": [
+      "Motherpher/FFOS"
+    ],
+    "estate_integration_transition": "BINDINGS_IN_PROGRESS -> PARTIALLY_BOUND",
+    "enforcement_state": "BOOTSTRAP",
+    "estate_runtime_blocker_open": true,
+    "wp11_ffos_blocker_closed": true,
+    "evidence_ref": "RUNTIME-INTEGRATION/FFOS-RUNTIME-VERIFICATION-2026-10-30.json",
+    "interpretation": "One governed consequential runtime is independently verified. The declared estate remains incomplete, so estate-wide VERIFIED_RUNTIME_BOUND and ENFORCING are not claimed."
   }
 }

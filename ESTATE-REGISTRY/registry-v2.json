@@ -587,7 +587,12 @@
       "wp10_evidence_ref": "ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
       "wp10_verified_at": "2026-10-29T15:19:00Z",
       "wp10_reconciliation_pr": 27,
-      "wp10_reconciliation_merge_commit": "1c73aa5774a7f2cef2e646ade36dd09369f4ae3b"
+      "wp10_reconciliation_merge_commit": "1c73aa5774a7f2cef2e646ade36dd09369f4ae3b",
+      "runtime_integration_state": "VERIFIED_RUNTIME_BOUND",
+      "consequential_enforcement_verified": true,
+      "runtime_verified_at": "2026-10-30",
+      "runtime_verified_main_commit": "76374e2a45f4195ffc443df7ba716eb8284acaeb",
+      "runtime_evidence_ref": "RUNTIME-INTEGRATION/FFOS-RUNTIME-VERIFICATION-2026-10-30.json"
     },
     {
       "record_id": "CDX-R2-021",
@@ -946,5 +951,14 @@
     "enforcement_state": "BOOTSTRAP",
     "evidence_ref": "ESTATE-REGISTRY/wp14-estate-propagation-closure-evidence.json",
     "state_effect": "GOVERNANCE_PROPAGATION_ONLY"
+  },
+  "post_programme_runtime_reconciliation": {
+    "observed_at": "2026-10-30",
+    "verified_consequential_consumers": 1,
+    "verified_consumers": [
+      "Motherpher/FFOS"
+    ],
+    "estate_integration_state": "PARTIALLY_BOUND",
+    "enforcement_state": "BOOTSTRAP"
   }
 }

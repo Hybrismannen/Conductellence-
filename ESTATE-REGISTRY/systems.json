@@ -290,16 +290,18 @@
       "cdx_ref": "1.0.0",
       "binding_audit_workflow": ".github/workflows/cdx-binding-audit.yml",
       "repository_binding_verification_source": "ESTATE-REGISTRY/cdx-anchors.json",
-      "runtime_integration_state": "BOUND_PENDING_RUNTIME_INTEGRATION",
-      "consequential_enforcement_verified": false,
+      "runtime_integration_state": "VERIFIED_RUNTIME_BOUND",
+      "consequential_enforcement_verified": true,
       "anchor_last_verified_at": "2026-10-06T19:56:34Z",
-      "last_verified_at": null,
+      "last_verified_at": "2026-10-30",
       "anchor_verification_state": "PASS",
       "reconciled_at": "2026-10-29",
-      "reconciliation_note": "WP09 repinned FFOS to released CDX 1.0.0 and reset anchor verification pending WP10. Runtime remains BOUND_PENDING_RUNTIME_INTEGRATION.",
+      "reconciliation_note": "Post-programme CDX reconciliation verifies bounded FFOS consequential runtime mediation. Estate-wide enforcement remains separately blocked.",
       "anchor_state": "CDX_BOUND",
       "anchor_verified_at": "2026-10-29T15:19:00Z",
-      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json"
+      "anchor_verified_against": "Hybrismannen/Conductellence-@ad26ea289ab71c86bea2461e0509c5b4bec9a32e:ESTATE-REGISTRY/wp10-anchor-verification-evidence.json",
+      "spetl_runtime_evidence_ref": "RUNTIME-INTEGRATION/FFOS-RUNTIME-VERIFICATION-2026-10-30.json",
+      "runtime_verified_main_commit": "76374e2a45f4195ffc443df7ba716eb8284acaeb"
     },
     {
       "system_id": "FFC",

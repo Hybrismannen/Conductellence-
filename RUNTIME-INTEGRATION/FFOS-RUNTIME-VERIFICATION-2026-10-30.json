@@ -1,0 +1,89 @@
+{
+  "schema": "cdx.consumer-runtime-verification/v1.0",
+  "evidence_id": "CDX-FFOS-RUNTIME-VERIFICATION-2026-10-30",
+  "observed_at": "2026-10-30",
+  "consumer": {
+    "repository": "Motherpher/FFOS",
+    "system_id": "FFOS",
+    "main_commit": "76374e2a45f4195ffc443df7ba716eb8284acaeb",
+    "local_anchor_state": "CDX_RUNTIME_VERIFIED",
+    "local_runtime_state": "VERIFIED_RUNTIME_BOUND",
+    "local_evidence_ref": "Motherpher/FFOS@76374e2a45f4195ffc443df7ba716eb8284acaeb:integrations/cdx/runtime-verification-2026-10-30.json"
+  },
+  "contract": {
+    "id": "CDX-RUNTIME-001",
+    "version": "1.0.0",
+    "release": "1.0.0",
+    "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0"
+  },
+  "implementation": {
+    "source_pr": 35,
+    "verified_pr_head": "a524f18bd0f860d07280c5405d8b83a37264c216",
+    "verified_tree_sha": "f5593da8ef1e99f23bf34afd8ab3d3b939dbd0ce",
+    "implementation_merge_commit": "5d5024078074c3ad00d454964357e546d2e6dac7",
+    "merged_tree_sha": "f5593da8ef1e99f23bf34afd8ab3d3b939dbd0ce",
+    "exact_tree_identity": true,
+    "promotion_pr": 36,
+    "promotion_merge_commit": "76374e2a45f4195ffc443df7ba716eb8284acaeb",
+    "runtime_blobs_unchanged_by_promotion": true
+  },
+  "effect_evidence": {
+    "workflow": "CDX Runtime Binding",
+    "run_id": "41086856528",
+    "result": "PASS",
+    "artifact_id": "12992671446",
+    "artifact_digest": "sha256:f4c50555f27a15752195c0f881bf34c6cc8b5ae71233153923d804f7eb4cd354",
+    "artifact_retention_until": "2027-01-28",
+    "cases": {
+      "director_allow": {
+        "http_status": 303,
+        "effect_cookie": "PRESENT"
+      },
+      "director_deny": {
+        "http_status": 303,
+        "effect_cookie": "ABSENT"
+      },
+      "probe_allow": {
+        "http_status": 200,
+        "effect_cookie": "PRESENT"
+      },
+      "probe_deny": {
+        "http_status": 403,
+        "effect_cookie": "ABSENT"
+      },
+      "policy_unavailable": {
+        "http_status": 503,
+        "decision": "SECURITY_STOP",
+        "effect_cookie": "ABSENT"
+      }
+    },
+    "spetl": {
+      "pre_effect": true,
+      "blocked": true,
+      "post_effect": true,
+      "schema_version": "1.1"
+    }
+  },
+  "infrastructure_observation": {
+    "merged_main_push_run_id": "41087294299",
+    "result": "RUNNER_ALLOCATION_FAILURE",
+    "runner_steps_executed": false,
+    "effect_on_runtime_verification": "NONE",
+    "rationale": "The merged implementation tree is byte-for-byte identical to the successfully verified PR head. Promotion changed only runtime-state/evidence metadata; the verified runtime blobs remained identical."
+  },
+  "independent_reconciliation": {
+    "result": "PASS",
+    "consumer_runtime_state": "VERIFIED_RUNTIME_BOUND",
+    "consequential_verified_runtime_count": 1,
+    "estate_integration_state": "PARTIALLY_BOUND",
+    "enforcement_state": "BOOTSTRAP",
+    "wp11_blocker_closed": true,
+    "estate_runtime_blocker_open": true
+  },
+  "forbidden_inferences": [
+    "FFOS VERIFIED_RUNTIME_BOUND does not mean the entire estate is VERIFIED_RUNTIME_BOUND.",
+    "PARTIALLY_BOUND does not mean ENFORCING.",
+    "This evidence does not activate Household Family or any other agent.",
+    "Repository anchor verification alone is not the basis of this runtime claim."
+  ]
+}

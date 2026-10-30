@@ -57,7 +57,7 @@ Describes the deployment of Conductellence into governed consumer runtimes.
 - `PARTIALLY_BOUND`: at least one declared governed runtime has reached verified binding while the declared estate scope is incomplete.
 - `VERIFIED_RUNTIME_BOUND`: the declared estate-integration scope has satisfied its verified runtime-binding criteria.
 
-The current estate integration state is `BINDINGS_IN_PROGRESS`. WP11 has staged a first consumer runtime binding but consequential verification remains blocked; WP12 reference-runtime verification does not count as application-runtime mediation. This aggregate state does not imply estate enforcement.
+The current estate integration state is `PARTIALLY_BOUND`. Post-programme WP11 reconciliation independently verified the first consequential consumer runtime in `Motherpher/FFOS`; WP12 Pius reference-runtime verification remains repository-CI/reference scope only. The declared estate is still incomplete, so this aggregate state does not imply estate enforcement.
 
 ## Separation rule
 
@@ -86,3 +86,12 @@ A transition to `ADOPTED` establishes the internal normative status of `CDX-LAW-
 WP14 closes the CDX 1.0 **estate-governance propagation programme** when every governed current repository is centrally classified, carries a verified canonical anchor, and all dedicated admission/identity reconciliations are complete. This closure is deliberately independent of consequential-runtime verification.
 
 At WP14 closure, 28/28 governed current repositories are `CDX_BOUND / PASS`, pending admissions are zero, Barnombudet remains explicitly excluded, and the historical `Hybrismannen/form-flode` identity remains provenance-only. No consequential consumer runtime is yet `VERIFIED_RUNTIME_BOUND`; therefore `estate_integration_state` remains `BINDINGS_IN_PROGRESS`, `enforcement_state` remains `BOOTSTRAP`, and the estate runtime blocker remains open.
+
+
+## Post-programme first runtime verification
+
+On 2026-10-30, `Motherpher/FFOS` became the first governed consequential consumer reconciled as `VERIFIED_RUNTIME_BOUND` under `CDX-RUNTIME-001@1.0.0`.
+
+This changes the current estate-integration axis from `BINDINGS_IN_PROGRESS` to `PARTIALLY_BOUND`.
+
+It does not rewrite WP14/WP15 historical closure evidence, and it does not move `enforcement_state` beyond `BOOTSTRAP`. The estate runtime blocker remains open until the declared enforcement scope satisfies its runtime-binding criteria.

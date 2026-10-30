@@ -23,6 +23,7 @@ wp13_evidence = load("ESTATE-REGISTRY/wp13-ffc-admission-evidence.json")
 wp14_evidence = load("ESTATE-REGISTRY/wp14-estate-propagation-closure-evidence.json")
 wp15_ledger = load("PROGRAMME/CDX-1.0-WORK-PACKAGE-LEDGER.json")
 residual = load("GOVERNANCE/CDX-1.0-RESIDUAL-OBLIGATIONS.json")
+ffos_runtime_evidence = load("RUNTIME-INTEGRATION/FFOS-RUNTIME-VERIFICATION-2026-10-30.json")
 issues = []
 
 def check(condition, message):
@@ -35,8 +36,8 @@ sys_entries = {x["repository"]: x for x in systems.get("systems", [])}
 
 check(state.get("release_state") == "RELEASED", "CDX release must remain RELEASED")
 check(state.get("enforcement_state") == "BOOTSTRAP", "WP10 may not promote estate enforcement")
-check(state.get("estate_integration_state") in {"PENDING_RUNTIME_BINDINGS","BINDINGS_IN_PROGRESS"},
-      "estate integration state exceeds current WP11 boundary")
+check(state.get("estate_integration_state") in {"PENDING_RUNTIME_BINDINGS","BINDINGS_IN_PROGRESS","PARTIALLY_BOUND"},
+      "estate integration state exceeds current verified-consumer boundary")
 check("CDX-BLOCK-ESTATE-RUNTIME-001" in state.get("estate_enforcement_blockers", []), "estate runtime blocker must remain open")
 check(state.get("wp14_estate_propagation_closure", {}).get("state") == "COMPLETE_ESTATE_GOVERNANCE_PROPAGATION",
       "WP14 central closure missing")
@@ -45,7 +46,8 @@ check(state.get("programme_closure", {}).get("state") == "FINAL_ACCEPTED_WITH_RE
 check(state.get("wp15_final_programme_acceptance", {}).get("state") == "COMPLETE_FINAL_PROGRAMME_ACCEPTANCE",
       "WP15 final acceptance state missing")
 check(state.get("enforcement_state") == "BOOTSTRAP", "WP14 may not promote enforcement")
-check(state.get("estate_integration_state") == "BINDINGS_IN_PROGRESS", "WP14 may not promote estate integration")
+check(state.get("wp14_estate_propagation_closure", {}).get("estate_integration_state") == "BINDINGS_IN_PROGRESS",
+      "WP14 historical estate-integration state drift")
 check(len(pending) == 0, "WP14 requires zero pending admissions")
 
 records = registry_v2.get("records", [])
@@ -89,25 +91,29 @@ ffos = entries.get("Motherpher/FFOS", {})
 ffos_sys = sys_entries.get("Motherpher/FFOS", {})
 check(ffos.get("anchor_state") == "CDX_BOUND", "FFOS anchor not verified")
 check(ffos.get("anchor_verification_state") == "PASS", "FFOS anchor verification not PASS")
-check(ffos.get("runtime_integration_state") == "BOUND_PENDING_RUNTIME_INTEGRATION", "FFOS runtime was improperly promoted")
-check(ffos_sys.get("runtime_integration_state") == "BOUND_PENDING_RUNTIME_INTEGRATION", "FFOS systems runtime was improperly promoted")
+check(ffos.get("runtime_integration_state") == "VERIFIED_RUNTIME_BOUND", "FFOS runtime verification not reconciled")
+check(ffos.get("consequential_enforcement_verified") is True, "FFOS consequential enforcement evidence flag missing")
+check(ffos_sys.get("runtime_integration_state") == "VERIFIED_RUNTIME_BOUND", "FFOS systems runtime verification not reconciled")
+check(ffos_sys.get("consequential_enforcement_verified") is True, "FFOS systems consequential verification missing")
 ffos_consumer_state = state.get("consumer_bindings", {}).get("Motherpher/FFOS")
-check(ffos_consumer_state in {"NOT_STARTED","IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED"},
-      "FFOS consumer binding state exceeds current WP11 evidence")
-if state.get("estate_integration_state") == "BINDINGS_IN_PROGRESS":
-    wp11 = state.get("wp11_ffos_runtime_binding", {})
-    check(wp11.get("state") == "IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED",
-          "BINDINGS_IN_PROGRESS requires explicit WP11 staged/blocker evidence")
-    check(wp11.get("production_deployment_state") in {"NOT_DEPLOYED","NOT_DEPLOYED_CURRENT_IMPLEMENTATION","NOT_REQUIRED_FOR_RUNTIME_VERIFICATION"},
-          "WP11 staged state must not claim production deployment")
-    check(wp11.get("implementation_pr") == 35,
-          "WP11 current implementation must resolve to FFOS PR #35")
-    check(wp11.get("proposed_runtime_state") == "RUNTIME_GUARDED_UNVERIFIED",
-          "WP11 blocked implementation may not claim verified runtime")
-    check({x.get("id") for x in wp11.get("blockers", [])} == {"FFOS-GHA-RUNNER-001"},
-          "WP11 current external blocker set is incomplete")
-    check("CDX-BLOCK-WP11-FFOS-EXECUTION-001" in state.get("estate_enforcement_blockers", []),
-          "WP11 external execution blocker missing")
+check(ffos_consumer_state == "VERIFIED_RUNTIME_BOUND",
+      "FFOS consumer binding must be VERIFIED_RUNTIME_BOUND after reconciliation")
+wp11 = state.get("wp11_ffos_runtime_binding", {})
+check(wp11.get("state") == "COMPLETE_FFOS_RUNTIME_VERIFIED",
+      "WP11 verified closure missing")
+check(wp11.get("runtime_state") == "VERIFIED_RUNTIME_BOUND",
+      "WP11 runtime state mismatch")
+check(wp11.get("blockers") == [], "WP11 blocker set must be empty after verification")
+check("CDX-BLOCK-WP11-FFOS-EXECUTION-001" not in state.get("estate_enforcement_blockers", []),
+      "WP11 execution blocker must be closed after verification")
+check(state.get("estate_integration_state") == "PARTIALLY_BOUND",
+      "first verified consequential consumer must advance estate to PARTIALLY_BOUND")
+check(state.get("consequential_verified_runtime_count") == 1,
+      "current consequential verified runtime count must be 1")
+check(state.get("post_programme_runtime_reconciliation", {}).get("state") == "COMPLETE",
+      "post-programme runtime reconciliation missing")
+check(ffos_runtime_evidence.get("independent_reconciliation", {}).get("result") == "PASS",
+      "central FFOS runtime evidence is not PASS")
 ffos_binding = state.get("repository_anchor_bindings", {}).get("Motherpher/FFOS", {})
 check(ffos_binding.get("state") == "CDX_BOUND" and ffos_binding.get("verification") == "PASS", "central FFOS anchor axis not reconciled")
 
@@ -183,14 +189,15 @@ check(wp11_row.get("state") == "TRANSFERRED_RESIDUAL_OBLIGATION",
 check(residual.get("programme_state") == "FINAL_ACCEPTED_WITH_RESIDUAL_DOWNSTREAM_OBLIGATIONS",
       "residual-obligation register programme state mismatch")
 open_residual = {x.get("id"): x for x in residual.get("obligations", [])}
-check(open_residual.get("CDX-RESIDUAL-RUNTIME-001", {}).get("state") == "OPEN",
+check(open_residual.get("CDX-RESIDUAL-RUNTIME-001", {}).get("state") in {"OPEN","OPEN_PARTIALLY_BOUND"},
       "estate runtime residual obligation must remain open")
-check(open_residual.get("CDX-RESIDUAL-WP11-FFOS-001", {}).get("state") in {"OPEN","OPEN_IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED"},
-      "WP11 FFOS residual obligation must remain open")
-check(open_residual.get("CDX-RESIDUAL-WP11-FFOS-001", {}).get("current_implementation", {}).get("pr") == 35,
-      "WP11 residual must point to current FFOS PR #35")
-check(state.get("estate_integration_state") == "BINDINGS_IN_PROGRESS",
-      "WP15 must not promote estate integration")
+check("CDX-RESIDUAL-WP11-FFOS-001" not in open_residual,
+      "verified WP11 FFOS residual must no longer be open")
+check(any(x.get("source") == "CDX-RESIDUAL-WP11-FFOS-001" and x.get("disposition") == "CLOSED_VERIFIED_2026_10_30"
+          for x in residual.get("closed_residue", [])),
+      "verified WP11 residual closure record missing")
+check(state.get("estate_integration_state") == "PARTIALLY_BOUND",
+      "current estate integration must be PARTIALLY_BOUND after FFOS verification")
 check(state.get("enforcement_state") == "BOOTSTRAP",
       "WP15 must not promote enforcement")
 
@@ -201,8 +208,8 @@ if issues:
 
 print("PASS: WP10 anchor verification and reconciliation are internally consistent.")
 print("PASS: 28/28 governed consumers are CDX_BOUND / PASS on the anchor axis.")
-print("PASS: FFC formal admission is complete; FFOS runtime verification and estate enforcement remain unadvanced.")
+print("PASS: FFC admission remains valid; FFOS is the first VERIFIED_RUNTIME_BOUND consequential consumer.")
 print("PASS: Pius is independently verified only at repository-CI reference-runtime scope; consequential enforcement remains false.")
 print("PASS: WP14 estate-governance propagation is complete with 28/28 governed repositories CDX_BOUND / PASS and zero pending admissions.")
-print("PASS: WP15 final-accepts the central programme while preserving WP11 and estate runtime as residual obligations.")
+print("PASS: WP15 historical ledger is preserved while post-programme WP11 runtime obligation is now verified and closed.")
 print(f"PASS: estate integration state={state.get('estate_integration_state')} and enforcement={state.get('enforcement_state')} remain correctly bounded.")

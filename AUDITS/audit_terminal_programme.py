@@ -27,7 +27,7 @@ expected_axes = {
     "constitutional_state": "ADOPTED",
     "core_runtime_state": "VERIFIED_REFERENCE_RUNTIME",
     "release_state": "RELEASED",
-    "estate_integration_state": "BINDINGS_IN_PROGRESS",
+    "estate_integration_state": "PARTIALLY_BOUND",
     "enforcement_state": "BOOTSTRAP",
 }
 for key, expected in expected_axes.items():
@@ -73,19 +73,23 @@ for wp, row in rows.items():
 
 obligations = {x.get("id"): x for x in residual.get("obligations", [])}
 required = {
-    "CDX-RESIDUAL-RUNTIME-001": {"OPEN"},
-    "CDX-RESIDUAL-WP11-FFOS-001": {"OPEN","OPEN_IMPLEMENTATION_STAGED_VERIFICATION_BLOCKED"},
+    "CDX-RESIDUAL-RUNTIME-001": {"OPEN","OPEN_PARTIALLY_BOUND"},
     "CDX-RESIDUAL-METADATA-001": {"OPEN_NON_BLOCKING"},
 }
 for oid, allowed in required.items():
     if obligations.get(oid, {}).get("state") not in allowed:
         fail(f"{oid}: residual state mismatch")
-if obligations.get("CDX-RESIDUAL-WP11-FFOS-001", {}).get("current_implementation", {}).get("pr") != 35:
-    fail("WP11 residual must point to FFOS PR #35")
-if state.get("wp11_ffos_runtime_binding", {}).get("proposed_runtime_state") != "RUNTIME_GUARDED_UNVERIFIED":
-    fail("terminal state must preserve unverified FFOS runtime standing")
-if len(obligations) != 3:
-    fail("terminal residual register must contain exactly three classified obligations")
+if "CDX-RESIDUAL-WP11-FFOS-001" in obligations:
+    fail("verified WP11 residual must not remain open")
+if not any(x.get("source") == "CDX-RESIDUAL-WP11-FFOS-001" and x.get("disposition") == "CLOSED_VERIFIED_2026_10_30"
+           for x in residual.get("closed_residue", [])):
+    fail("verified WP11 residual closure evidence missing")
+if state.get("wp11_ffos_runtime_binding", {}).get("state") != "COMPLETE_FFOS_RUNTIME_VERIFIED":
+    fail("current post-programme WP11 verified state missing")
+if state.get("consequential_verified_runtime_count") != 1:
+    fail("current consequential verified runtime count must be 1")
+if len(obligations) != 2:
+    fail("current residual register must contain estate-runtime and metadata obligations only")
 
 records = registry.get("records", [])
 governed = [x for x in records if x.get("record_kind") == "CURRENT_REPOSITORY" and x.get("applicability") == "GOVERNED_APPLICABLE"]
@@ -106,11 +110,12 @@ if wp14.get("runtime_boundary", {}).get("consequential_verified_runtime_count") 
     fail("terminal state must not invent verified consequential runtimes")
 
 blockers = set(state.get("estate_enforcement_blockers", []))
-for blocker in {"CDX-BLOCK-ESTATE-RUNTIME-001", "CDX-BLOCK-WP11-FFOS-EXECUTION-001"}:
-    if blocker not in blockers:
-        fail(f"required residual blocker missing: {blocker}")
+if "CDX-BLOCK-ESTATE-RUNTIME-001" not in blockers:
+    fail("estate runtime blocker must remain open")
+if "CDX-BLOCK-WP11-FFOS-EXECUTION-001" in blockers:
+    fail("WP11 FFOS blocker must close after verified runtime reconciliation")
 
 print("PASS: CDX 1.0 terminal programme acceptance is internally consistent.")
 print("PASS: WP00-WP10 and WP12-WP15 are complete; WP11 is preserved as transferred residual obligation.")
 print("PASS: 28/28 governed repositories remain CDX_BOUND / PASS with zero pending admissions.")
-print("PASS: runtime and enforcement axes remain BINDINGS_IN_PROGRESS / BOOTSTRAP with zero false consequential-runtime claims.")
+print("PASS: post-programme runtime evolution is PARTIALLY_BOUND / BOOTSTRAP with one verified consequential consumer and no estate-wide overclaim.")

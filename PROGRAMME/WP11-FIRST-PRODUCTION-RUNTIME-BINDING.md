@@ -1,100 +1,105 @@
 # CDX-WP11 — First Consequential Runtime Binding (FFOS)
 
-**Status:** IMPLEMENTATION STAGED — VERIFICATION BLOCKED AT GITHUB ACTIONS  
+**Status:** COMPLETE — VERIFIED RUNTIME BOUND  
 **Consumer:** `Motherpher/FFOS`  
 **Contract:** `CDX-RUNTIME-001@1.0.0`  
-**Current implementation PR:** `Motherpher/FFOS#35`  
-**Superseded implementation:** `Motherpher/FFOS#29`
+**Implementation PR:** `Motherpher/FFOS#35`  
+**Runtime-state promotion PR:** `Motherpher/FFOS#36`  
+**Verified FFOS main:** `76374e2a45f4195ffc443df7ba716eb8284acaeb`
 
-## Objective
+## Result
 
-Verify the first real FFOS consequential application-runtime effect under the released CDX runtime contract without conflating repository anchoring, implementation, runtime verification, deployment or estate-wide enforcement.
+WP11 is complete as a post-programme downstream runtime obligation.
 
-A Vercel deployment is **not** part of the WP11 acceptance contract.
-
-## Current implementation
-
-FFOS PR #35 rebuilds the binding against current FFOS `main` and stages:
-
-- immutable CDX 1.0 policy, runtime-contract and SPETL pins;
-- fail-closed CDX policy integrity and decision evaluation;
-- the real Director-session issuance effect gate;
-- a separate non-privileged runtime-proof HTTP effect;
-- SPETL 1.1 PRE_EFFECT, BLOCKED and POST_EFFECT evidence;
-- ALLOW, DENY and POLICY_UNAVAILABLE → SECURITY_STOP acceptance paths;
-- real HTTP assertions that an effect occurs only after permissive CDX evaluation;
-- explicit proof that restrictive/unavailable-policy paths produce no effect.
-
-The staged anchor remains:
-
-`CDX_RUNTIME_GUARDED / RUNTIME_GUARDED_UNVERIFIED`
-
-No agent activation is implied. Household Family and other agents remain governed by their own lifecycle/acceptance state.
-
-## Verification model
-
-Runtime verification is deployment-independent.
-
-The required evidence chain is:
+FFOS is now independently reconciled as:
 
 ```text
-exact FFOS implementation
-→ successful build
-→ real HTTP runtime starts
-→ ALLOW produces bounded effect
-→ DENY produces no effect
-→ POLICY_UNAVAILABLE produces SECURITY_STOP and no effect
-→ SPETL PRE_EFFECT / BLOCKED / POST_EFFECT evidence
-→ reviewed merge to FFOS main
-→ exact merged-main re-verification
-→ independent CDX reconciliation
+binding_state: CDX_RUNTIME_VERIFIED
+runtime_state: VERIFIED_RUNTIME_BOUND
 ```
 
-This is sufficient for the FFOS runtime claim because `CDX-RUNTIME-001` requires consequential-effect mediation evidence; it does not require a Vercel deployment.
+This is the first verified consequential consumer runtime in the declared CDX estate.
 
-## Current blocker
+## Verified runtime effects
 
-### FFOS GitHub Actions execution
+The bound runtime mediates:
 
-Fresh PR #35 workflow runs still fail before any runner step executes.
+1. `ISSUE_DIRECTOR_SESSION` — a real FFOS Director-session cookie;
+2. `ISSUE_RUNTIME_PROOF_RECEIPT` — a non-privileged bounded verification effect.
 
-Observed characteristics:
+The effect chain is:
 
-- workflow jobs are created;
-- each job concludes `failure`;
-- `steps = null`;
-- `logs_url = null`;
-- no checkout, build, test or runtime command starts.
+```text
+authenticated / bounded FFOS intent
+→ explicit authority_ref + mandate_ref
+→ pinned CDX 1.0 policy integrity
+→ CDX decision
+→ PRE_EFFECT SPETL 1.1
+→ local FFOS effect
+→ POST_EFFECT SPETL 1.1
+```
 
-Therefore the failures are execution-infrastructure failures, not failed runtime assertions.
+Restrictive or unavailable-policy paths fail closed.
 
-Canonical blocker:
+## Effect evidence
 
-`FFOS-GHA-RUNNER-001`
+The exact implementation head `a524f18bd0f860d07280c5405d8b83a37264c216` passed CDX Runtime Binding run `41086856528`.
 
-## State discipline
+Observed effect assertions:
 
-While this blocker exists:
+| Case | HTTP | Effect |
+|---|---:|---|
+| Director valid credentials | 303 | session cookie present |
+| Director invalid credentials | 303 | session cookie absent |
+| Runtime proof valid token | 200 | bounded proof cookie present |
+| Runtime proof invalid token | 403 | proof cookie absent |
+| Policy unavailable | 503 / SECURITY_STOP | proof cookie absent |
 
-- FFOS remains `CDX_BOUND / PASS` on the repository-anchor axis;
-- staged runtime remains `RUNTIME_GUARDED_UNVERIFIED`;
-- CDX estate integration remains `BINDINGS_IN_PROGRESS`;
-- CDX enforcement remains `BOOTSTRAP`;
-- `CDX-BLOCK-ESTATE-RUNTIME-001` stays open;
-- `CDX-BLOCK-WP11-FFOS-EXECUTION-001` stays open.
+SPETL PRE_EFFECT, BLOCKED and POST_EFFECT evidence was preserved in artifact `12992671446`, digest `sha256:f4c50555f27a15752195c0f881bf34c6cc8b5ae71233153923d804f7eb4cd354`.
 
-No deployment blocker is part of WP11.
+## Merge identity
 
-## Completion gate
+PR #35 merged as:
 
-WP11 can close when:
+`5d5024078074c3ad00d454964357e546d2e6dac7`
 
-1. GitHub Actions can execute runner steps for the exact current PR #35 implementation;
-2. static acceptance and production build pass;
-3. the HTTP runtime exercises ALLOW, DENY and POLICY_UNAVAILABLE cases;
-4. SPETL runtime evidence is preserved;
-5. reviewed implementation is merged to current FFOS `main`;
-6. the exact merged main commit is re-verified;
-7. independent CDX reconciliation promotes FFOS to `CDX_RUNTIME_VERIFIED / VERIFIED_RUNTIME_BOUND`.
+The verified PR head and that merge commit have the identical Git tree:
 
-Once one consequential governed runtime is independently verified, the estate integration axis may be reconsidered for `PARTIALLY_BOUND`. Estate-wide `ENFORCING` does not follow automatically.
+`f5593da8ef1e99f23bf34afd8ab3d3b939dbd0ce`
+
+The runtime-state promotion changed no runtime blobs and merged through PR #36 as:
+
+`76374e2a45f4195ffc443df7ba716eb8284acaeb`
+
+This establishes that the runtime code on the verified main lineage is exactly the effect-tested code.
+
+## GitHub runner observation
+
+Push/promotion jobs intermittently failed before runner allocation (`steps=null`). This is recorded as an execution-infrastructure observation, not as a runtime assertion failure. It does not replace the effect evidence; it explains why the post-merge identity proof uses exact Git tree/blob identity.
+
+## CDX state effect
+
+WP11 closure advances the current estate integration state from:
+
+`BINDINGS_IN_PROGRESS → PARTIALLY_BOUND`
+
+because at least one governed consequential runtime is now verified.
+
+It does **not** advance estate enforcement:
+
+```text
+enforcement_state: BOOTSTRAP
+CDX-BLOCK-ESTATE-RUNTIME-001: OPEN
+```
+
+Additional governed consequential runtimes must be verified before any estate-wide `VERIFIED_RUNTIME_BOUND` or `ENFORCING` claim.
+
+## Evidence
+
+Canonical CDX reconciliation evidence:
+
+`RUNTIME-INTEGRATION/FFOS-RUNTIME-VERIFICATION-2026-10-30.json`
+
+Local FFOS evidence:
+
+`Motherpher/FFOS@76374e2a45f4195ffc443df7ba716eb8284acaeb:integrations/cdx/runtime-verification-2026-10-30.json`
