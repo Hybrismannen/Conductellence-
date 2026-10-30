@@ -421,5 +421,24 @@
     "enforcing_claim": false,
     "production_effect_authorization": false,
     "state_effect": "FINAL_CENTRAL_PROGRAMME_ACCEPTANCE_NO_RUNTIME_PROMOTION"
+  },
+  "terminal_audit": {
+    "audit_id": "CDX-1.0-TERMINAL-AUDIT-2026-10-30",
+    "state": "PASS",
+    "recorded_at": "2026-10-30",
+    "audit_ref": "AUDITS/CDX-1.0-TERMINAL-AUDIT-2026-10-30.md",
+    "audit_script": "AUDITS/audit_terminal_programme.py",
+    "initial_audit_head": "688b1702595fb6b7e2b3524919d21b385974d1d2",
+    "law_audit_run_id": "41076977267",
+    "registry_run_id": "41076977171",
+    "mutation_guard_run_id": "41076977307",
+    "readiness_run_id": "41076977463",
+    "verdict": "FINAL_ACCEPTANCE_VALID_WITH_RESIDUAL_DOWNSTREAM_OBLIGATIONS"
+  },
+  "end_report": {
+    "state": "ISSUED",
+    "issued_at": "2026-10-30",
+    "report_ref": "REPORTS/CDX-1.0-END-REPORT-2026-10-30.md",
+    "programme_boundary": "CDX_1_0_CANONICAL_GOVERNANCE_CONSTRUCTION"
   }
 }
