@@ -1,0 +1,167 @@
+{
+  "schema": "cdx.2.0.acceptance-framework/v1",
+  "id": "CDX-2.0-ACCEPTANCE-001",
+  "status": "CANDIDATE_NOT_APPROVED",
+  "source": "CDX-EXWO-2.0-001",
+  "authority": "HUMAN_SOVEREIGN_AUTHORITY",
+  "approval_mechanism": {
+    "repository": "Hybrismannen/Conductellence-",
+    "command": "/cdx-approve",
+    "github_required_context": "human-sovereign-approval",
+    "bound_to": "EXACT_HEAD_SHA",
+    "chat_instruction_is_not_platform_approval": true,
+    "new_commit_requires_new_approval": true
+  },
+  "common_gate": [
+    "source and exact-head provenance",
+    "security/constitutional tests",
+    "independent technical or qualified legal/ethical review where appropriate",
+    "documented blockers and limitations",
+    "GitHub owner exact-head approval and protected merge",
+    "main readback before COMPLETE"
+  ],
+  "packages": [
+    {
+      "wp": "WP00",
+      "deliverables": [
+        "D00.1",
+        "D00.2",
+        "D00.3",
+        "D00.4",
+        "D00.5"
+      ],
+      "proof": [
+        "main snapshot blob SHAs re-read",
+        "7 WP IDs/dependencies reconciled",
+        "historical 1.0 untouched",
+        "passed PR CI and exact-head human approval",
+        "merged main and source readback"
+      ],
+      "forbidden": [
+        "branch_is_complete",
+        "target_release_is_published"
+      ]
+    },
+    {
+      "wp": "WP01",
+      "deliverables": [
+        "D01.1",
+        "D01.2",
+        "D01.3",
+        "D01.4",
+        "D01.5"
+      ],
+      "proof": [
+        "primary-source legal applicability tests for declared scope",
+        "missing facts / exceptions / not applicable / effective date / conflict cases",
+        "qualified human legal review"
+      ],
+      "forbidden": [
+        "global_legal_coverage",
+        "citation_is_applicability"
+      ]
+    },
+    {
+      "wp": "WP02",
+      "deliverables": [
+        "D02.1",
+        "D02.2",
+        "D02.3",
+        "D02.4",
+        "D02.5"
+      ],
+      "proof": [
+        "all Act sections mapped to known interpretation/assurance route",
+        "selected consequential cases independently substantively reviewed",
+        "risk-mandatory evidence and review authority"
+      ],
+      "forbidden": [
+        "schema_valid_means_legally_compliant"
+      ]
+    },
+    {
+      "wp": "WP03",
+      "deliverables": [
+        "D03.1",
+        "D03.2",
+        "D03.3",
+        "D03.4",
+        "D03.5"
+      ],
+      "proof": [
+        "HCC source pin and doctrinal identity maintained",
+        "affected-human consequence assessment and HCC restrictions tested",
+        "legal and ethical findings separate",
+        "Pius6 successor review explicitly deferred"
+      ],
+      "forbidden": [
+        "hcc_clear_makes_unlawful_lawful",
+        "unaccepted_pius6_adopted"
+      ]
+    },
+    {
+      "wp": "WP04",
+      "deliverables": [
+        "D04.1",
+        "D04.2",
+        "D04.3",
+        "D04.4",
+        "D04.5",
+        "D04.6"
+      ],
+      "proof": [
+        "bounded LACE command/invocation validated",
+        "distinct legal/ethical/conduct/evidence findings",
+        "reproducible end-to-end audit case and restrictions",
+        "no independent agent or authority"
+      ],
+      "forbidden": [
+        "LACE_is_separate_system",
+        "invocation_grants_execution"
+      ]
+    },
+    {
+      "wp": "WP05",
+      "deliverables": [
+        "D05.1",
+        "D05.2",
+        "D05.3",
+        "D05.4",
+        "D05.5",
+        "D05.6"
+      ],
+      "proof": [
+        "exact implementation tested under negative/adversarial cases",
+        "SPETL pre/post/blocked evidence preserved",
+        "migration/rollback or compatibility evidence",
+        "independent reference vs consumer runtime claims"
+      ],
+      "forbidden": [
+        "one_consumer_is_estate_enforcing"
+      ]
+    },
+    {
+      "wp": "WP06",
+      "deliverables": [
+        "D06.1",
+        "D06.2",
+        "D06.3",
+        "D06.4",
+        "D06.5",
+        "D06.6",
+        "D06.7"
+      ],
+      "proof": [
+        "all earlier WPs independently accepted",
+        "chapter-19 constitutional change/no-change resolution",
+        "independent terminal technical/legal/ethical audit",
+        "Director formal final acceptance and verified release readback"
+      ],
+      "forbidden": [
+        "target_release_published_without_actual_tag"
+      ]
+    }
+  ],
+  "state_promotion_rule": "WP state COMPLETE iff exact governing approvals + accepted evidence + main readback. A source-controlled candidate is not evidence of operational acceptance.",
+  "scope_rule": "Acceptance claims limited to tested declared source/risk/jurisdiction scope. Do not self-certify broad legal or moral authority."
+}

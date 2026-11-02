@@ -1,0 +1,116 @@
+{
+  "schema": "cdx.2.0.programme-state/v1",
+  "programme_id": "CDX_2_0",
+  "work_order_id": "CDX-EXWO-2.0-001",
+  "target_release": "2.0.0",
+  "product_release_state": "TARGET_NOT_RELEASED",
+  "source_baseline_main_commit": "ddd04c150e721679505fc310c9f76c47f875d29e",
+  "recorded_date": "2026-11-02",
+  "programme_authorization": "DIRECTOR_EXECUTION_INSTRUCTION_RECEIVED",
+  "canonical_acceptance": "PENDING_REQUIRED_PR_APPROVAL_AND_MERGE",
+  "constitutional_effect": "NONE",
+  "release_effect": "NONE",
+  "estate_enforcement_effect": "NONE",
+  "github_exact_head_approval": "PENDING",
+  "wp_states": [
+    {
+      "work_package": "WP00",
+      "title": "Programme Authority, Baseline & Version Control",
+      "dependencies": [],
+      "state": "IMPLEMENTED_PENDING_INDEPENDENT_REVIEW_AND_HUMAN_APPROVAL",
+      "accepted": false,
+      "acceptance_evidence": []
+    },
+    {
+      "work_package": "WP01",
+      "title": "Legal Authority & Applicability Assurance",
+      "dependencies": [
+        "WP00"
+      ],
+      "state": "NOT_STARTED",
+      "accepted": false,
+      "acceptance_evidence": []
+    },
+    {
+      "work_package": "WP02",
+      "title": "Interpretation, Review & Decision Integrity",
+      "dependencies": [
+        "WP00"
+      ],
+      "state": "NOT_STARTED",
+      "accepted": false,
+      "acceptance_evidence": []
+    },
+    {
+      "work_package": "WP03",
+      "title": "Human Rights, HCC & Ethical Assurance",
+      "dependencies": [
+        "WP00"
+      ],
+      "state": "NOT_STARTED",
+      "accepted": false,
+      "acceptance_evidence": []
+    },
+    {
+      "work_package": "WP04",
+      "title": "LACE Procedural Audit Construction",
+      "dependencies": [
+        "WP01",
+        "WP02",
+        "WP03"
+      ],
+      "state": "NOT_STARTED",
+      "accepted": false,
+      "acceptance_evidence": []
+    },
+    {
+      "work_package": "WP05",
+      "title": "Runtime Binding, Assurance & Adversarial Verification",
+      "dependencies": [
+        "WP04"
+      ],
+      "state": "NOT_STARTED",
+      "accepted": false,
+      "acceptance_evidence": []
+    },
+    {
+      "work_package": "WP06",
+      "title": "Constitutional Reconciliation, Release & Final Acceptance",
+      "dependencies": [
+        "WP05"
+      ],
+      "state": "NOT_STARTED",
+      "accepted": false,
+      "acceptance_evidence": []
+    }
+  ],
+  "pending_external_decisions": [
+    {
+      "id": "WP00-PR-APPROVAL",
+      "action": "Owner exact-head /cdx-approve and applicable CI",
+      "state": "PENDING"
+    },
+    {
+      "id": "HCC-CDX-PR71",
+      "action": "Independent review/adoption of existing draft bidirectional HCC relationship note",
+      "state": "UNMERGED_DRAFT"
+    },
+    {
+      "id": "PIUS6-HCC",
+      "action": "Accepted Pius 6 source followed by separately authorized HCC doctrinal review",
+      "state": "DEFERRED"
+    }
+  ],
+  "historical_release_preservation": {
+    "version": "1.0.0",
+    "ledger": "PROGRAMME/CDX-1.0-WORK-PACKAGE-LEDGER.json",
+    "rewritten": false
+  },
+  "forbidden_claims": [
+    "WP00 COMPLETE before exact-head approval, merge and readback",
+    "CDX 2.0 RELEASED before authorized release artifact",
+    "LACE operational by programme text alone",
+    "HCC-S1-V1.0 automatically modernized",
+    "estate ENFORCING from product release or single consumer binding"
+  ]
+}
