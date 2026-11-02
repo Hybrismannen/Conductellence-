@@ -1,0 +1,100 @@
+{
+  "schema": "cdx.2.0.source-baseline/v1",
+  "record": "CDX-2.0-BL-001",
+  "snapshot_date": "2026-11-02",
+  "canonical_repo": "Hybrismannen/Conductellence-",
+  "canonical_branch": "main",
+  "canonical_main_commit": "ddd04c150e721679505fc310c9f76c47f875d29e",
+  "source_policy": "READ_ONLY_PINNED_SOURCE; release_1.0_immutable",
+  "prior_product_release": "1.0.0",
+  "prior_constitution": "CDX-LAW-001@1.0.0",
+  "historical_wp_ledger": "PROGRAMME/CDX-1.0-WORK-PACKAGE-LEDGER.json",
+  "state_axes": {
+    "constitutional": "ADOPTED",
+    "reference_runtime": "VERIFIED_REFERENCE_RUNTIME",
+    "release": "RELEASED",
+    "estate_integration": "PARTIALLY_BOUND",
+    "enforcement": "BOOTSTRAP",
+    "source_last_updated": "2026-10-30"
+  },
+  "observed_structure": {
+    "law_sections": 131,
+    "reference_control_bindings": 69,
+    "review_governed_bindings": 62,
+    "scope_profiles": 5,
+    "temporal_provision_records": 146,
+    "admitted_exact_provision_rules": 0
+  },
+  "interpretation": "Structural bindings and scope/temporal entries are not substantive legal case assurance. Adopted 1.0 is not universal estate enforcement.",
+  "source_file_blobs": [
+    {
+      "path": "LAW/CONDUCTELLENCE-ACT.md",
+      "blob_sha": "8d71c2b3ee492b95fe1d0b9c4018d3bb3b73e248",
+      "content_chars": 212039
+    },
+    {
+      "path": "GOVERNANCE/system-state.json",
+      "blob_sha": "89cddb337fa463559c07d7a738b977b0c203f169",
+      "content_chars": 24089
+    },
+    {
+      "path": "GOVERNANCE/CDX-1.0-RESIDUAL-OBLIGATIONS.json",
+      "blob_sha": "c019f5ace04b7400aa810534afffa74db4110337",
+      "content_chars": 2714
+    },
+    {
+      "path": "PROGRAMME/CDX-1.0-WORK-PACKAGE-LEDGER.json",
+      "blob_sha": "9b173a20ce28cf0cfcec8aa6584f375211576989",
+      "content_chars": 2709
+    },
+    {
+      "path": "PROGRAMME/CDX-1.0-END-REPORT-2026-10-30.md",
+      "blob_sha": "858dddd326d6e90454af257029f5785c08c6fd18",
+      "content_chars": 8838
+    },
+    {
+      "path": "AUDITS/CDX-1.0-TERMINAL-AUDIT-2026-10-30.md",
+      "blob_sha": "15c167924efc7e122df6021955629763f4044e5b",
+      "content_chars": 5159
+    },
+    {
+      "path": "INTERPRETATION/INTERPRETATION-GUIDE.md",
+      "blob_sha": "cdab52cf429a704712ca175f88294e9fed7c3ad1",
+      "content_chars": 8325
+    },
+    {
+      "path": "LEGAL-RESOLVER/applicability-rules.json",
+      "blob_sha": "b003cc59158f8bbe9d301053feac7a4dc691a6bc",
+      "content_chars": 799
+    },
+    {
+      "path": "LEGAL-RESOLVER/scope-profiles.json",
+      "blob_sha": "54b1eec594723b540227220411198a5ce93c1581",
+      "content_chars": 14955
+    },
+    {
+      "path": "REGULATORY-DRIFT/provision-temporal-state.json",
+      "blob_sha": "f020445efc36e4ebb70feebe89ad94a1a1996afd",
+      "content_chars": 48347
+    },
+    {
+      "path": "CONTROL-CATALOGUE/law-bindings.json",
+      "blob_sha": "76714735698c3904d5d4cff0edd2b57ec6836102",
+      "content_chars": 41206
+    },
+    {
+      "path": "RUNTIME-INTEGRATION/CDX-RUNTIME-001.json",
+      "blob_sha": "ad0c01d997c1db8ac73681566b4934f1b76f7141",
+      "content_chars": 3069
+    },
+    {
+      "path": "appendices/APP-A-HCC/README.md",
+      "blob_sha": "0a3204798c870bc5745f66b9bcc70ed9dff18ae9",
+      "content_chars": 7044
+    }
+  ],
+  "pending_hcc_review_source": "https://github.com/Hybrismannen/Conductellence-/pull/71",
+  "hcc_source_version": "HCC-S1-V1.0",
+  "pius_6_dependency": "ACCEPTED_PIUS_6_PRODUCT_RELEASE_REQUIRED_BEFORE_HCC_DOCTRINAL_RECONCILIATION",
+  "wp00_state": "SNAPSHOT_PREPARED_PENDING_REVIEW"
+}
