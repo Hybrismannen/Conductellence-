@@ -131,7 +131,11 @@ This Conductellence legal ordering does not erase the Pius source lineage above.
 
 Where HCC identifies a material rights or legal concern that cannot be resolved mechanically, the result shall include `LEGAL_REVIEW_REQUIRED`.
 
-## 8. Source-preservation rule
+## 8. Forward relationship and post-Pius 6 review (documentation pointer)
+
+A separate [CDX–HCC Relationship and Post-Pius 6 Reconciliation Note](../HCC-CDX-RELATIONSHIP-AND-POST-PIUS6-REVIEW.md) records proposed **bidirectional** CDX/HCC responsibilities, future human-rights and ethical-adequacy review criteria, and explicit post-Pius-6 eligibility and acceptance gates. It also identifies LACE as a **proposed CDX-owned audit procedure, not an implemented command or separate system**. This pointer does **not** amend or reversion HCC-S1-V1.0, adopt a Pius 6 successor, alter CDX law or confer runtime authority.
+
+## 9. Source-preservation rule
 
 This appendix incorporates the source doctrine into Conductellence without claiming that every historic Pius implementation detail is already deployed in Conductellence. Historic Pius-specific names, examples and internal modules remain provenance, not automatically current Conductellence runtime components.
 
