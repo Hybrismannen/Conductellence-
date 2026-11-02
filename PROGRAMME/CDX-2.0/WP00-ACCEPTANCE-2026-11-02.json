@@ -56,5 +56,5 @@
   "hcc_preservation": "HCC-S1-V1.0 unchanged; PR71 separate unmerged",
   "runtime_claims": "No new CDX LACE runtime or estate enforcement state asserted",
   "future_dependency": "WP01 eligible to begin after this closure record is merged and independently read back",
-  "record_status": "PENDING_SOURCE_CONTROL_MERGE_IN_THIS_PR"
+  "record_status": "ACCEPTED_BY_DIRECTOR_RECORDED_WITH_PR72_MERGED_EVIDENCE"
 }
