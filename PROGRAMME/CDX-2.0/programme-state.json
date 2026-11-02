@@ -7,19 +7,24 @@
   "source_baseline_main_commit": "ddd04c150e721679505fc310c9f76c47f875d29e",
   "recorded_date": "2026-11-02",
   "programme_authorization": "DIRECTOR_EXECUTION_INSTRUCTION_RECEIVED",
-  "canonical_acceptance": "PENDING_REQUIRED_PR_APPROVAL_AND_MERGE",
+  "canonical_acceptance": "WP00_ACCEPTED_BY_HUMAN_DIRECTOR_WITH_PROTECTED_PR_MERGED",
   "constitutional_effect": "NONE",
   "release_effect": "NONE",
   "estate_enforcement_effect": "NONE",
-  "github_exact_head_approval": "PENDING",
+  "github_exact_head_approval": "WP00_PR72_SUCCESS_EXACT_HEAD",
   "wp_states": [
     {
       "work_package": "WP00",
       "title": "Programme Authority, Baseline & Version Control",
       "dependencies": [],
-      "state": "IMPLEMENTED_PENDING_INDEPENDENT_REVIEW_AND_HUMAN_APPROVAL",
-      "accepted": false,
-      "acceptance_evidence": []
+      "state": "COMPLETE",
+      "accepted": true,
+      "acceptance_evidence": [
+        "PROGRAMME/CDX-2.0/WP00-ACCEPTANCE-2026-11-02.json",
+        "https://github.com/Hybrismannen/Conductellence-/pull/72",
+        "https://github.com/Hybrismannen/Conductellence-/pull/72#issuecomment-6589605401",
+        "a40029ba4f1884647679d6e908b2c9c3bf1dd35f"
+      ]
     },
     {
       "work_package": "WP01",
@@ -86,11 +91,6 @@
   ],
   "pending_external_decisions": [
     {
-      "id": "WP00-PR-APPROVAL",
-      "action": "Owner exact-head /cdx-approve and applicable CI",
-      "state": "PENDING"
-    },
-    {
       "id": "HCC-CDX-PR71",
       "action": "Independent review/adoption of existing draft bidirectional HCC relationship note",
       "state": "UNMERGED_DRAFT"
@@ -112,5 +112,7 @@
     "LACE operational by programme text alone",
     "HCC-S1-V1.0 automatically modernized",
     "estate ENFORCING from product release or single consumer binding"
-  ]
+  ],
+  "acceptance_record": "PROGRAMME/CDX-2.0/WP00-ACCEPTANCE-2026-11-02.json",
+  "next_eligible_work_package": "WP01"
 }
