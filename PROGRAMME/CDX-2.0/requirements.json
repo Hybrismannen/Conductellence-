@@ -1,0 +1,310 @@
+{
+  "schema": "cdx.2.0.requirements/v1",
+  "id": "CDX-2.0-REQ-001",
+  "version": "0.1.0-wp00-candidate",
+  "source_snapshot": "PROGRAMME/CDX-2.0/baseline.json",
+  "basis": "CDX 2.0 Executive Work Order and inspected pinned CDX 1.0 source; proposed requirements are not implemented outcomes.",
+  "independent_reconciliation_required": true,
+  "groups": [
+    {
+      "wp": "WP00",
+      "count": 5
+    },
+    {
+      "wp": "WP01",
+      "count": 4
+    },
+    {
+      "wp": "WP02",
+      "count": 4
+    },
+    {
+      "wp": "WP03",
+      "count": 5
+    },
+    {
+      "wp": "WP04",
+      "count": 4
+    },
+    {
+      "wp": "WP05",
+      "count": 4
+    },
+    {
+      "wp": "WP06",
+      "count": 4
+    }
+  ],
+  "items": [
+    {
+      "id": "D00.1",
+      "work_package": "WP00",
+      "requirement": "Executive mandate and explicit scope boundaries",
+      "current_classification": "NEW",
+      "source": "2026-11-02 Director instruction",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "D00.2",
+      "work_package": "WP00",
+      "requirement": "Immutable CDX 1.0 baseline and exact file SHA manifest",
+      "current_classification": "PRESERVE",
+      "source": "CDX terminal audit, release state, main snapshot",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "D00.3",
+      "work_package": "WP00",
+      "requirement": "Evidence-grounded requirements and gaps mapped to all WP",
+      "current_classification": "NEW",
+      "source": "Source inspection and CDX 2.0 work order",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "D00.4",
+      "work_package": "WP00",
+      "requirement": "Independent product/constitutional/runtime/HCC compatibility policy",
+      "current_classification": "NEW",
+      "source": "CDX constitutional change and runtime rules",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "D00.5",
+      "work_package": "WP00",
+      "requirement": "Explicit exact-head acceptance, audit and sovereign decision gates",
+      "current_classification": "NEW",
+      "source": "GOVERNANCE/constitutional-change-policy.md",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "L01",
+      "work_package": "WP01",
+      "requirement": "Implement reviewed exact-provision applicability determinations for bounded legal scope",
+      "current_classification": "VERIFIED_GAP",
+      "source": "LEGAL-RESOLVER/applicability-rules.json has zero admitted rules",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "L02",
+      "work_package": "WP01",
+      "requirement": "Keep jurisdiction/subject/scope/temporal/substantive legal conditions distinct",
+      "current_classification": "PARTIAL_FOUNDATION",
+      "source": "Five scope profiles and 146 provision-temporal records",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "L03",
+      "work_package": "WP01",
+      "requirement": "Admit exceptions, conflicting classification and legal-review escalation without model-created authority",
+      "current_classification": "SHARPEN",
+      "source": "Legal Resolver fail-safe policy",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "L04",
+      "work_package": "WP01",
+      "requirement": "Determine material legal change from authoritative sources; distinguish drift detection from legal effect",
+      "current_classification": "PARTIAL_FOUNDATION",
+      "source": "REGULATORY-DRIFT/README.md initially only auto-identifies source/reachability",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "I01",
+      "work_package": "WP02",
+      "requirement": "Operationalize interpretation records and precedents for consequential sections",
+      "current_classification": "BOOTSTRAP",
+      "source": "INTERPRETATION/INTERPRETATION-GUIDE.md 0.1.0-bootstrap",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "I02",
+      "work_package": "WP02",
+      "requirement": "Keep 131 Act sections mapped to review/control route, never claim unverified coverage",
+      "current_classification": "PRESERVE_AND_EXPAND",
+      "source": "CONTROL-CATALOGUE/law-bindings.json 69 implemented/62 review-bound",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "I03",
+      "work_package": "WP02",
+      "requirement": "Require evidence, legal basis, temporal snapshot and competent review on material cases",
+      "current_classification": "SHARPEN",
+      "source": "REVIEW-CATALOGUE/review-record.schema.json",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "I04",
+      "work_package": "WP02",
+      "requirement": "Demonstrate review's substantive quality, not merely record-schema validity",
+      "current_classification": "GAP_TO_VERIFY",
+      "source": "REVIEW-CATALOGUE/README.md distinguishes human review",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "H01",
+      "work_package": "WP03",
+      "requirement": "Preserve source-pinned HCC moral doctrine and differentiate from applicable law",
+      "current_classification": "EXISTING_TO_HARDEN",
+      "source": "appendices/APP-A-HCC/README.md",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "H02",
+      "work_package": "WP03",
+      "requirement": "Establish human-consequence case records, representation gaps, proportionality and harm",
+      "current_classification": "GAP_TO_IMPLEMENT",
+      "source": "HCC incorporation and post-audit executive mandate",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "H03",
+      "work_package": "WP03",
+      "requirement": "Define separate ethics stops, conflict-handling, accountability, challenge and remedy",
+      "current_classification": "NEW_OPERATIONAL_SCOPE",
+      "source": "HCC decision grammar; Executive Work Order",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "H04",
+      "work_package": "WP03",
+      "requirement": "Reconcile draft reciprocal CDX/HCC note only upon governed approval",
+      "current_classification": "PENDING_PR",
+      "source": "CDX HCC PR #71 open draft at baseline",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "H05",
+      "work_package": "WP03",
+      "requirement": "Defer HCC doctrinal re-authorization until separately accepted Pius 6 HCC source",
+      "current_classification": "EXTERNAL_DEPENDENCY",
+      "source": "Pius 6 product releases placeholder",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "A01",
+      "work_package": "WP04",
+      "requirement": "Implement LACE as CDX-owned command-invoked procedural audit",
+      "current_classification": "NOT_IMPLEMENTED",
+      "source": "CDX 2.0 Executive Work Order WP04",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "A02",
+      "work_package": "WP04",
+      "requirement": "Separate findings: legal applicability/compliance, ethics, conduct, evidence",
+      "current_classification": "NOT_IMPLEMENTED",
+      "source": "Executive Work Order five assurance dimensions",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "A03",
+      "work_package": "WP04",
+      "requirement": "Preserve LACE no independent system, anchor, permission or agent",
+      "current_classification": "MANDATED_BOUNDARY",
+      "source": "Director architecture clarification; CDX authority rule",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "A04",
+      "work_package": "WP04",
+      "requirement": "Define gated intake, audit, review, disposition, closure and follow-up cases",
+      "current_classification": "NOT_IMPLEMENTED",
+      "source": "Executive Work Order LACE lifecycle",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "T01",
+      "work_package": "WP05",
+      "requirement": "Verify exact-head integrated adversarial and negative legal/ethical cases",
+      "current_classification": "NEW_TEST_SCOPE",
+      "source": "CDX reference runtime, SPETL and red-team controls",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "T02",
+      "work_package": "WP05",
+      "requirement": "Verify absent mandate, unlawful-but-HCC-cleared, lawful-but-HCC-stopped, legal unknown",
+      "current_classification": "NEW_TEST_SCOPE",
+      "source": "Executive Work Order WP05 test matrix",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "T03",
+      "work_package": "WP05",
+      "requirement": "Produce independent runtime evidence, custody and consumer compatibility/rollback",
+      "current_classification": "EXISTING_FOUNDATION_TO_EXTEND",
+      "source": "CDX-RUNTIME-001@1.0.0, SPETL",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "T04",
+      "work_package": "WP05",
+      "requirement": "Do not overclaim estate-wide enforcing from one verified consumer",
+      "current_classification": "PRESERVE",
+      "source": "GOVERNANCE/system-state.json BOOTSTRAP/PARTIALLY_BOUND",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "R01",
+      "work_package": "WP06",
+      "requirement": "Independent technical/legal/ethical terminal audit and scope/limitations",
+      "current_classification": "NEW",
+      "source": "CDX 1.0 terminal audit precedent",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "R02",
+      "work_package": "WP06",
+      "requirement": "Separate chapter-19 constitutional amendment/no-change disposition",
+      "current_classification": "MANDATED_GOVERNANCE",
+      "source": "CDX-LAW-001 19 kap.",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "R03",
+      "work_package": "WP06",
+      "requirement": "Publish verified CDX 2.0.0 only on Director authorization and evidence",
+      "current_classification": "NEW",
+      "source": "CDX constitutional change policy + release rules",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    },
+    {
+      "id": "R04",
+      "work_package": "WP06",
+      "requirement": "Retain immutable 1.0 evidence, staged HCC review and honest residual obligations",
+      "current_classification": "PRESERVE",
+      "source": "CDX 1.0 ledger and HCC/Pius source status",
+      "admission": "REQUIRES_WP_EVIDENCE_AND_APPROVAL",
+      "status": "NOT_ACCEPTED"
+    }
+  ]
+}
