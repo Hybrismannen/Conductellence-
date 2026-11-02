@@ -1,0 +1,60 @@
+{
+  "schema": "cdx.2.0.work-package-acceptance/v1",
+  "id": "CDX-2.0-WP00-ACCEPTANCE-2026-11-02",
+  "work_package": "WP00",
+  "decision": "ACCEPTED",
+  "authorized_by": "Human Director, confirmed in conversation 2026-11-02 and owner-authenticated GitHub /cdx-approve",
+  "github_pr": "https://github.com/Hybrismannen/Conductellence-/pull/72",
+  "github_approval_comment_url": "https://github.com/Hybrismannen/Conductellence-/pull/72#issuecomment-6589605401",
+  "approved_pr_head": "a83a5854c605e4b6b5fc34789f7936bbd3d07bc1",
+  "exact_head_status": "human-sovereign-approval:success",
+  "merged_main_commit": "a40029ba4f1884647679d6e908b2c9c3bf1dd35f",
+  "verified_source_refs": [
+    "PROGRAMME/CDX-2.0/README.md",
+    "PROGRAMME/CDX-2.0/WP00-EXECUTIVE-MANDATE.md",
+    "PROGRAMME/CDX-2.0/baseline.json",
+    "PROGRAMME/CDX-2.0/requirements.json",
+    "PROGRAMME/CDX-2.0/version-compatibility.md",
+    "PROGRAMME/CDX-2.0/acceptance-framework.json",
+    "PROGRAMME/CDX-2.0/programme-state.json"
+  ],
+  "static_verification": {
+    "result": "PASS",
+    "facts": [
+      "7 files read and valid",
+      "13 pinned source blobs",
+      "131 Act provisions / 69 implemented / 62 review-bound",
+      "30 requirements mapped to WP00–WP06",
+      "1.0 source immutable and HCC/Pius deferral explicit"
+    ]
+  },
+  "required_workflow_results": [
+    {
+      "workflow": "Conductellence Law Audit",
+      "conclusion": "success"
+    },
+    {
+      "workflow": "Conductellence Constitutional Mutation Guard",
+      "conclusion": "success"
+    },
+    {
+      "workflow": "Conductellence Remediation Readiness",
+      "conclusion": "success"
+    },
+    {
+      "workflow": "CDX Estate Registry Consistency",
+      "conclusion": "success"
+    }
+  ],
+  "unrelated_status": {
+    "provider": "Vercel",
+    "result": "failure",
+    "interpretation": "Not among the five required CDX native-protection status contexts; does not imply passing a Vercel deployment"
+  },
+  "scope": "AUTHORIZE_WP00_CLOSURE_ONLY_NO_RELEASE",
+  "version_preservation": "CDX 1.0.0 remains published; 2.0.0 is target",
+  "hcc_preservation": "HCC-S1-V1.0 unchanged; PR71 separate unmerged",
+  "runtime_claims": "No new CDX LACE runtime or estate enforcement state asserted",
+  "future_dependency": "WP01 eligible to begin after this closure record is merged and independently read back",
+  "record_status": "ACCEPTED_BY_DIRECTOR_RECORDED_WITH_PR72_MERGED_EVIDENCE"
+}

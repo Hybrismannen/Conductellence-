@@ -2,6 +2,8 @@
 
 **CDX-EXWO-2.0-001** · **WP00–WP06** · **Target: CDX 2.0.0 (unreleased)**
 
+**WP00 formally accepted by Human Director; owner-authenticated PR #72 merged with required CI.** [WP00 acceptance record](WP00-ACCEPTANCE-2026-11-02.json). WP01 is the next eligible package. CDX 2.0 is not released.
+
 CDX 2.0 extends accepted CDX 1.0 with substantive legal applicability, interpretation and qualified review, HCC human-consequence assessment, internal LACE procedural audit, adversarial verification, and an independently governed release.
 
 ## WP00 deliverables
