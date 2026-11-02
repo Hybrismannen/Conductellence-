@@ -96,5 +96,6 @@
   "pending_hcc_review_source": "https://github.com/Hybrismannen/Conductellence-/pull/71",
   "hcc_source_version": "HCC-S1-V1.0",
   "pius_6_dependency": "ACCEPTED_PIUS_6_PRODUCT_RELEASE_REQUIRED_BEFORE_HCC_DOCTRINAL_RECONCILIATION",
-  "wp00_state": "SNAPSHOT_PREPARED_PENDING_REVIEW"
+  "wp00_state": "SNAPSHOT_PREPARED_PENDING_REVIEW",
+  "historic_release_no_rewrite": true
 }
