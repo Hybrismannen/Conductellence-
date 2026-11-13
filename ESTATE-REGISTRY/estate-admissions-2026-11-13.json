@@ -1,0 +1,61 @@
+{
+  "schema": "cdx.estate-admission-addendum/v1.0",
+  "record_id": "CDX-ESTATE-ADMISSIONS-2026-11-13",
+  "base_registry": "ESTATE-REGISTRY/registry-v2.json",
+  "base_registry_snapshot_date": "2026-10-30",
+  "decision": {
+    "authority": "Human Director",
+    "decision_date": "2026-11-13",
+    "instruction": "CDX is the control system for both Ideburen and Opal Sense I",
+    "classification": "GOVERNED_APPLICABLE",
+    "scope": "CDX governance applicable; technical effects remain gated by demonstrated local enforcement"
+  },
+  "records": [
+    {
+      "record_id": "CDX-ADM-2026-11-13-001",
+      "repository_identifier": "Motherpher/Ideburen",
+      "repository_id": "1456473281",
+      "system_id": "IDEBUREN",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_location": ".cdx/anchor.json",
+      "policy_release": "1.0.0",
+      "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+      "verification_state": "NOT_VERIFIED",
+      "runtime_state": "NOT_VERIFIED",
+      "binding_pr": "https://github.com/Motherpher/Ideburen/pull/1",
+      "binding_merge": "90fcaeb4c2f66589a80db93ab7032b687f3780c7",
+      "conformance_workflow": ".github/workflows/cdx-anchor-audit.yml",
+      "conformance_review_pr": "https://github.com/Motherpher/Ideburen/pull/2",
+      "conformance_merge_commit": "9505a0813cb6626277596761cf5d92daa88cc5bb",
+      "conformance_evidence_run": "https://github.com/Motherpher/Ideburen/actions/runs/43458964194",
+      "conformance_result": "PASS_ON_PR_HEAD"
+    },
+    {
+      "record_id": "CDX-ADM-2026-11-13-002",
+      "repository_identifier": "Hybrismannen/Opal-Sense-I",
+      "repository_id": "1443529278",
+      "system_id": "OPAL-SENSE-I",
+      "applicability": "GOVERNED_APPLICABLE",
+      "anchor_requirement": "REQUIRED",
+      "anchor_state": "ANCHOR_DECLARED",
+      "anchor_location": ".cdx/anchor.json",
+      "policy_release": "1.0.0",
+      "policy_digest": "git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0",
+      "verification_state": "NOT_VERIFIED",
+      "runtime_state": "NOT_VERIFIED",
+      "binding_pr": "https://github.com/Hybrismannen/Opal-Sense-I/pull/18",
+      "binding_merge": "ded08cd9f8846186f173a3a306d24bc643207e9c",
+      "conformance_workflow": ".github/workflows/cdx-anchor-audit.yml",
+      "conformance_review_pr": "https://github.com/Hybrismannen/Opal-Sense-I/pull/19",
+      "conformance_merge_commit": "4994c208df30cc4a953434641171c81af60d6356",
+      "conformance_evidence_run": "https://github.com/Hybrismannen/Opal-Sense-I/actions/runs/43458973071",
+      "conformance_result": "PASS_ON_PR_HEAD"
+    }
+  ],
+  "exclusions_preserved": [
+    "Hybrismannen/Barnombudet"
+  ],
+  "notes": "Prospective admission of newer repositories; preserves historical registry v2 membership and WP09/WP10 evidence. Does not claim CI conformance or production runtime enforcement. CDX anchor CI passed on the two conformance PR heads and was merged; no central admission/anchor-bound promotion or consequential runtime verification is inferred."
+}
