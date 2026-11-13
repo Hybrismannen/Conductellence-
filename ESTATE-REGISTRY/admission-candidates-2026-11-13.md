@@ -10,8 +10,8 @@ On 2026-11-13 the Director explicitly decided: **CDX is the control system for b
 
 | Repository | Local PR | Anchor state | Existing registry state | Recommended next action |
 |---|---|---|---|---|
-| `Motherpher/Ideburen` | [#1](https://github.com/Motherpher/Ideburen/pull/1) | `ANCHOR_DECLARED`, merged into main | Admitted by prospective addendum, not historical registry v2 | in inspected registry v2 | Verify repository authority, register as governed applicable if Director admits, then validate binding |
-| `Hybrismannen/Opal-Sense-I` | [#18](https://github.com/Hybrismannen/Opal-Sense-I/pull/18) | `ANCHOR_DECLARED`, pending merge | No existing entry in inspected registry v2 | Confirm estate scope and publishing domain, register if Director admits, validate binding |
+| `Motherpher/Ideburen` | [#1](https://github.com/Motherpher/Ideburen/pull/1), merged | `ANCHOR_DECLARED` | Director admitted via prospective addendum; not historical registry v2 | Verify schema/pin, CI and applicable runtime controls |
+| `Hybrismannen/Opal-Sense-I` | [#18](https://github.com/Hybrismannen/Opal-Sense-I/pull/18), merged | `ANCHOR_DECLARED` | Director admitted via prospective addendum; not historical registry v2 | Verify schema/pin, CI and applicable runtime controls |
 
 These declarations use the canonical `cdx.anchor/v1` schema, `CDX-LAW-001`, `CDX-GOV-ANCHOR-001`, and release `1.0.0` with the verified prior WP10 digest `git-blob-sha1:55dbcdac2f822b59a5a5f0f19eeadfa61d2c7ed0`. **The previous digest was verified for the historical WP10 set, not for these new anchors**. Their validity is not presumed.
 
