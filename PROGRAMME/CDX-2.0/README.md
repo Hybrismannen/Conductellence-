@@ -2,7 +2,15 @@
 
 **CDX-EXWO-2.0-001** · **WP00–WP06** · **Target: CDX 2.0.0 (unreleased)**
 
-**WP00 formally accepted by Human Director; owner-authenticated PR #72 merged with required CI.** [WP00 acceptance record](WP00-ACCEPTANCE-2026-11-02.json). WP01 is the next eligible package. CDX 2.0 is not released.
+**WP00 formally accepted by Human Director; owner-authenticated PR #72 merged with required CI.** [WP00 acceptance record](WP00-ACCEPTANCE-2026-11-02.json). CDX 2.0 is not released.
+
+## Current status — DEFERRED
+
+On **2026-11-18**, the Human Director explicitly deferred CDX 2.0/LACE development because too many other processes are active. The programme is therefore **DORMANT / NOT IN EXECUTION**.
+
+WP01 remains dependency-eligible after WP00, but **eligibility is not execution authority**. No WP01–WP06 work is currently dispatched or authorized. Reactivation requires a new explicit Director instruction.
+
+See [Director Deferral Decision — 2026-11-18](DEFERRED-BY-DIRECTOR-2026-11-18.md).
 
 CDX 2.0 extends accepted CDX 1.0 with substantive legal applicability, interpretation and qualified review, HCC human-consequence assessment, internal LACE procedural audit, adversarial verification, and an independently governed release.
 
