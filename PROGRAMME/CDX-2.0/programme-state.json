@@ -114,5 +114,14 @@
     "estate ENFORCING from product release or single consumer binding"
   ],
   "acceptance_record": "PROGRAMME/CDX-2.0/WP00-ACCEPTANCE-2026-11-02.json",
-  "next_eligible_work_package": "WP01"
+  "next_eligible_work_package": "WP01",
+  "current_programme_state": "DEFERRED_BY_DIRECTOR",
+  "current_execution_authority": "NONE",
+  "current_active_frontier": null,
+  "deferred_at": "2026-11-18",
+  "deferred_by": "Human Director",
+  "deferral_reason": "Too many concurrent active processes; CDX 2.0/LACE development intentionally parked.",
+  "reactivation_rule": "New explicit Director instruction required before any WP01-WP06 execution.",
+  "next_eligible_work_package_execution_state": "ELIGIBLE_BUT_NOT_AUTHORIZED",
+  "deferral_record": "PROGRAMME/CDX-2.0/DEFERRED-BY-DIRECTOR-2026-11-18.md"
 }
