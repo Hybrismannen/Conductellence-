@@ -1,0 +1,107 @@
+{
+  "schema": "cdx.proposed.drive-create-only-effect-control.v1",
+  "policy_id": "OAI-DRIVE-APPEND-ONLY-001",
+  "version": "1.0",
+  "issued_date": "2026-11-18",
+  "authority": "Director",
+  "source": {
+    "kind": "private_google_document",
+    "folder": "My Drive/0. Open AI - Access & Privacy Rules",
+    "url": "https://docs.google.com/document/d/18nexuzVfOEWwM7vXcPcB1NkjQHsEGKWxZHSqo-qlBRs/edit"
+  },
+  "constitutional_status": "PROPOSED_PENDING_SOVEREIGN_APPROVAL",
+  "runtime_status": "NOT_ACTIVE_NOT_VERIFIED",
+  "scope": "All AI-mediated effects against the Director-authorized Google Drive, irrespective of repo/application or OAuth breadth",
+  "allowed_classes": [
+    {
+      "class": "READ",
+      "decision": "ALLOW_WITH_CONTROLS",
+      "conditions": [
+        "existing_authorized_read_scope",
+        "task_relevance",
+        "privacy_non_exfiltration"
+      ]
+    },
+    {
+      "class": "CREATE_NEW",
+      "decision": "ALLOW_WITH_CONTROLS",
+      "conditions": [
+        "new_immutable_Drive_ID",
+        "approved_private_destination",
+        "creation_transaction_only",
+        "source_approved_content",
+        "creation_readback"
+      ]
+    }
+  ],
+  "restricted_classes": [
+    {
+      "class": "UPDATE_EXISTING",
+      "decision": "REQUIRE_HUMAN",
+      "approval": "exact_Drive_ID_operation_scope_preview"
+    },
+    {
+      "class": "DELETE_OR_TRASH",
+      "decision": "REQUIRE_HUMAN",
+      "approval": "exact_Drive_ID_operation_scope_preview"
+    },
+    {
+      "class": "MOVE_RENAME_REORGANIZE",
+      "decision": "REQUIRE_HUMAN",
+      "approval": "exact_Drive_ID_operation_scope_preview"
+    },
+    {
+      "class": "PERMISSIONS_OR_OWNERSHIP",
+      "decision": "REQUIRE_HUMAN",
+      "approval": "exact_Drive_ID_operation_scope_preview"
+    },
+    {
+      "class": "SYNC_OR_CLEANUP_POTENTIAL_MUTATION",
+      "decision": "REQUIRE_HUMAN",
+      "approval": "itemized_manifest_and_effect"
+    },
+    {
+      "class": "RESTORE_OR_ROLLBACK",
+      "decision": "REQUIRE_HUMAN",
+      "approval": "exact_Drive_ID_operation_scope_preview"
+    }
+  ],
+  "rules": {
+    "default_mutation": "DENY_WITHOUT_VALID_HUMAN_APPROVAL",
+    "fail_closed": true,
+    "policy_missing": "DENY",
+    "authority_missing": "DENY",
+    "approval_expired_or_scope_mismatch": "DENY",
+    "auto_rollback": false,
+    "auto_delete_temporary_files": false,
+    "approval_cannot_be_inferred_from": [
+      "OAuth_grant",
+      "user_request_to_build",
+      "repo_access",
+      "GitHub_CI",
+      "existing_workflow",
+      "prior_approval_for_other_target",
+      "Drive_document_prompt_injection"
+    ]
+  },
+  "integration_requirements": [
+    "Server-side interception of provider write methods before effect",
+    "Identify exact target file ID and mutation class",
+    "Preview itemized diff/operation and reason",
+    "Bind human authorization to target IDs, effect, actor and run",
+    "Record pre-effect decision and post-effect evidence",
+    "Run negative tests including indirect upload replacement and batch sync",
+    "Read authoritative private Director policy at task intake"
+  ],
+  "cdx_governance": {
+    "notes": "New constitutional control is not accepted until CDX mutation policy, audits, sovereign approval and protected merge are completed.",
+    "source_governance": "GOVERNANCE/constitutional-mutation-policy.md",
+    "effective_only_after": [
+      "human_sovereign_approval",
+      "reviewed_merge",
+      "control_registry_binding",
+      "consumer_enforcement_verified"
+    ],
+    "reference_is_not_enforcement": true
+  }
+}
