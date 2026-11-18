@@ -1,0 +1,377 @@
+{
+  "schema": "cdx.proposed.control-extension/v1",
+  "status": "CANDIDATE_NOT_ACTIVE",
+  "authority_ref": "OAI-DRIVE-APPEND-ONLY-001",
+  "version": "1.1-draft",
+  "canonical_law": "CDX-LAW-001@1.0.0",
+  "surface": "EXTERNAL_EFFECT",
+  "proposed_control": {
+    "control_id": "CDX-CTL-GDRIVE-001-PROPOSED",
+    "section_id": "CDX-LAW-001-14-04",
+    "title": "Director Google Drive create-only local effect gate",
+    "status": "PROPOSED_NOT_IN_RELEASE",
+    "enforcement_surface": "EXTERNAL_EFFECT",
+    "decision_on_fail": "DENY",
+    "predicate": {
+      "op": "implies",
+      "if": {
+        "op": "equals",
+        "path": "provider_id",
+        "value": "google_drive"
+      },
+      "then": {
+        "op": "all",
+        "rules": [
+          {
+            "op": "equals",
+            "path": "drive_guard.policy_id",
+            "value": "OAI-DRIVE-APPEND-ONLY-001"
+          },
+          {
+            "op": "equals",
+            "path": "drive_guard.policy_pinned_verified",
+            "value": true
+          },
+          {
+            "op": "equals",
+            "path": "drive_guard.credential_isolated",
+            "value": true
+          },
+          {
+            "op": "equals",
+            "path": "drive_guard.target_id_verified",
+            "value": true
+          },
+          {
+            "op": "equals",
+            "path": "drive_guard.pre_effect_evidence_ready",
+            "value": true
+          },
+          {
+            "op": "equals",
+            "path": "drive_guard.revocation_checked",
+            "value": true
+          },
+          {
+            "op": "any",
+            "rules": [
+              {
+                "op": "all",
+                "rules": [
+                  {
+                    "op": "equals",
+                    "path": "drive_guard.operation",
+                    "value": "READ"
+                  },
+                  {
+                    "op": "equals",
+                    "path": "drive_guard.read_scope_verified",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "op": "all",
+                "rules": [
+                  {
+                    "op": "equals",
+                    "path": "drive_guard.operation",
+                    "value": "CREATE_NEW"
+                  },
+                  {
+                    "op": "equals",
+                    "path": "drive_guard.parent_id_allowlisted",
+                    "value": true
+                  },
+                  {
+                    "op": "equals",
+                    "path": "drive_guard.new_object_verified",
+                    "value": true
+                  },
+                  {
+                    "op": "equals",
+                    "path": "drive_guard.session_bound",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "op": "all",
+                "rules": [
+                  {
+                    "op": "equals",
+                    "path": "drive_guard.operation",
+                    "value": "MUTATE_EXISTING"
+                  },
+                  {
+                    "op": "equals",
+                    "path": "drive_guard.exact_target_signed_human_approval",
+                    "value": true
+                  },
+                  {
+                    "op": "equals",
+                    "path": "drive_guard.approval_one_time_consumed",
+                    "value": true
+                  },
+                  {
+                    "op": "equals",
+                    "path": "drive_guard.current_target_rechecked",
+                    "value": true
+                  },
+                  {
+                    "op": "equals",
+                    "path": "drive_guard.mutation_executor_isolated",
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "description": "Applies only to provider=google_drive. For non-Drive effects it does not add requirements. Existing Drive object mutation must pass exact-scope signed Director approval in a separate isolated executor; issuer cannot be agent-controlled.",
+    "evidence_requirements": [
+      "policy_decision",
+      "SPETL PRE_EFFECT",
+      "SPETL POST_EFFECT",
+      "independent_custody"
+    ],
+    "test_vectors": [
+      {
+        "name": "allowed_create",
+        "context": {
+          "surface": "EXTERNAL_EFFECT",
+          "provider_id": "google_drive",
+          "drive_guard": {
+            "policy_id": "OAI-DRIVE-APPEND-ONLY-001",
+            "policy_pinned_verified": true,
+            "credential_isolated": true,
+            "target_id_verified": true,
+            "pre_effect_evidence_ready": true,
+            "revocation_checked": true,
+            "operation": "CREATE_NEW",
+            "parent_id_allowlisted": true,
+            "new_object_verified": true,
+            "session_bound": true
+          }
+        },
+        "expected": "ALLOW"
+      },
+      {
+        "name": "allow_unrelated_provider",
+        "context": {
+          "surface": "EXTERNAL_EFFECT",
+          "provider_id": "github"
+        },
+        "expected": "ALLOW"
+      },
+      {
+        "name": "deny_unknown_create_root",
+        "context": {
+          "surface": "EXTERNAL_EFFECT",
+          "provider_id": "google_drive",
+          "drive_guard": {
+            "policy_id": "OAI-DRIVE-APPEND-ONLY-001",
+            "policy_pinned_verified": true,
+            "credential_isolated": true,
+            "target_id_verified": true,
+            "pre_effect_evidence_ready": true,
+            "revocation_checked": true,
+            "operation": "CREATE_NEW",
+            "parent_id_allowlisted": false,
+            "new_object_verified": true,
+            "session_bound": true
+          }
+        },
+        "expected": "DENY"
+      },
+      {
+        "name": "deny_unbound_upload_session",
+        "context": {
+          "surface": "EXTERNAL_EFFECT",
+          "provider_id": "google_drive",
+          "drive_guard": {
+            "policy_id": "OAI-DRIVE-APPEND-ONLY-001",
+            "policy_pinned_verified": true,
+            "credential_isolated": true,
+            "target_id_verified": true,
+            "pre_effect_evidence_ready": true,
+            "revocation_checked": true,
+            "operation": "CREATE_NEW",
+            "parent_id_allowlisted": true,
+            "new_object_verified": true,
+            "session_bound": false
+          }
+        },
+        "expected": "DENY"
+      },
+      {
+        "name": "deny_mutation_without_approval",
+        "context": {
+          "surface": "EXTERNAL_EFFECT",
+          "provider_id": "google_drive",
+          "drive_guard": {
+            "policy_id": "OAI-DRIVE-APPEND-ONLY-001",
+            "policy_pinned_verified": true,
+            "credential_isolated": true,
+            "target_id_verified": true,
+            "pre_effect_evidence_ready": true,
+            "revocation_checked": true,
+            "operation": "MUTATE_EXISTING",
+            "parent_id_allowlisted": true,
+            "new_object_verified": true,
+            "session_bound": true
+          }
+        },
+        "expected": "DENY"
+      },
+      {
+        "name": "deny_credential_not_isolated",
+        "context": {
+          "surface": "EXTERNAL_EFFECT",
+          "provider_id": "google_drive",
+          "drive_guard": {
+            "policy_id": "OAI-DRIVE-APPEND-ONLY-001",
+            "policy_pinned_verified": true,
+            "credential_isolated": false,
+            "target_id_verified": true,
+            "pre_effect_evidence_ready": true,
+            "revocation_checked": true,
+            "operation": "CREATE_NEW",
+            "parent_id_allowlisted": true,
+            "new_object_verified": true,
+            "session_bound": true
+          }
+        },
+        "expected": "DENY"
+      },
+      {
+        "name": "deny_policy_absent",
+        "context": {
+          "surface": "EXTERNAL_EFFECT",
+          "provider_id": "google_drive",
+          "drive_guard": {
+            "policy_id": "OAI-DRIVE-APPEND-ONLY-001",
+            "policy_pinned_verified": false,
+            "credential_isolated": true,
+            "target_id_verified": true,
+            "pre_effect_evidence_ready": true,
+            "revocation_checked": true,
+            "operation": "CREATE_NEW",
+            "parent_id_allowlisted": true,
+            "new_object_verified": true,
+            "session_bound": true
+          }
+        },
+        "expected": "DENY"
+      },
+      {
+        "name": "deny_evidence_absent",
+        "context": {
+          "surface": "EXTERNAL_EFFECT",
+          "provider_id": "google_drive",
+          "drive_guard": {
+            "policy_id": "OAI-DRIVE-APPEND-ONLY-001",
+            "policy_pinned_verified": true,
+            "credential_isolated": true,
+            "target_id_verified": true,
+            "pre_effect_evidence_ready": false,
+            "revocation_checked": true,
+            "operation": "CREATE_NEW",
+            "parent_id_allowlisted": true,
+            "new_object_verified": true,
+            "session_bound": true
+          }
+        },
+        "expected": "DENY"
+      },
+      {
+        "name": "deny_unknown_operation",
+        "context": {
+          "surface": "EXTERNAL_EFFECT",
+          "provider_id": "google_drive",
+          "drive_guard": {
+            "policy_id": "OAI-DRIVE-APPEND-ONLY-001",
+            "policy_pinned_verified": true,
+            "credential_isolated": true,
+            "target_id_verified": true,
+            "pre_effect_evidence_ready": true,
+            "revocation_checked": true,
+            "operation": "SYNC",
+            "parent_id_allowlisted": true,
+            "new_object_verified": true,
+            "session_bound": true
+          }
+        },
+        "expected": "DENY"
+      },
+      {
+        "name": "allow_scoped_read",
+        "context": {
+          "surface": "EXTERNAL_EFFECT",
+          "provider_id": "google_drive",
+          "drive_guard": {
+            "policy_id": "OAI-DRIVE-APPEND-ONLY-001",
+            "policy_pinned_verified": true,
+            "credential_isolated": true,
+            "target_id_verified": true,
+            "pre_effect_evidence_ready": true,
+            "revocation_checked": true,
+            "operation": "READ",
+            "parent_id_allowlisted": true,
+            "new_object_verified": true,
+            "session_bound": true,
+            "read_scope_verified": true
+          }
+        },
+        "expected": "ALLOW"
+      },
+      {
+        "name": "deny_unscoped_read",
+        "context": {
+          "surface": "EXTERNAL_EFFECT",
+          "provider_id": "google_drive",
+          "drive_guard": {
+            "policy_id": "OAI-DRIVE-APPEND-ONLY-001",
+            "policy_pinned_verified": true,
+            "credential_isolated": true,
+            "target_id_verified": true,
+            "pre_effect_evidence_ready": true,
+            "revocation_checked": true,
+            "operation": "READ",
+            "parent_id_allowlisted": true,
+            "new_object_verified": true,
+            "session_bound": true,
+            "read_scope_verified": false
+          }
+        },
+        "expected": "DENY"
+      },
+      {
+        "name": "allow_exact_human_approved_mutation_candidate",
+        "context": {
+          "surface": "EXTERNAL_EFFECT",
+          "provider_id": "google_drive",
+          "drive_guard": {
+            "policy_id": "OAI-DRIVE-APPEND-ONLY-001",
+            "policy_pinned_verified": true,
+            "credential_isolated": true,
+            "target_id_verified": true,
+            "pre_effect_evidence_ready": true,
+            "revocation_checked": true,
+            "operation": "MUTATE_EXISTING",
+            "parent_id_allowlisted": true,
+            "new_object_verified": true,
+            "session_bound": true,
+            "exact_target_signed_human_approval": true,
+            "approval_one_time_consumed": true,
+            "current_target_rechecked": true,
+            "mutation_executor_isolated": true
+          }
+        },
+        "expected": "ALLOW"
+      }
+    ]
+  }
+}
