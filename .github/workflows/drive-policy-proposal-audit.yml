@@ -1,0 +1,24 @@
+name: Drive policy candidate conformance (non-authoritative)
+on:
+  pull_request:
+    paths:
+      - 'POLICY/proposals/OAI-DRIVE-EXTERNAL-EFFECT-CONTROL-v1.1.json'
+      - 'AUDITS/test_drive_control_candidate.py'
+      - '.github/workflows/drive-policy-proposal-audit.yml'
+  push:
+    paths:
+      - 'POLICY/proposals/OAI-DRIVE-EXTERNAL-EFFECT-CONTROL-v1.1.json'
+      - 'AUDITS/test_drive_control_candidate.py'
+permissions:
+  contents: read
+jobs:
+  offline-drive-policy-proposal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check draft CDX Drive effect control; NO external effects
+        run: python -m unittest discover -s AUDITS -p 'test_drive_control_candidate.py' -v
